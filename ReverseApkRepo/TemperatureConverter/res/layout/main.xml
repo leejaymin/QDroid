@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0px" android:text="@string/message" />
+    <TextView android:textSize="@dimen/label_text_size" android:id="@id/celsius_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:text="@string/celsius" />
+    <com.example.aatg.tc.EditNumber android:gravity="right|center" android:id="@id/celsius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin" android:text="" />
+    <TextView android:textSize="@dimen/label_text_size" android:id="@id/fahrenheit_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin" android:text="@string/fahrenheit" />
+    <com.example.aatg.tc.EditNumber android:gravity="right|center" android:id="@id/fahrenheit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin" android:text="" />
+    <Button android:id="@id/TestButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Generated Error Button" />
+</LinearLayout>
