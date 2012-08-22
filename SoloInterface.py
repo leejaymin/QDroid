@@ -47,10 +47,11 @@ class SoloInterface():
         self.tree_nodes_list = None
         
         # object of View Controller 
-        self.event_controller = EventController(self.m_logger)
+        self.event_controller = EventController(self.m_logger, self.device_name)
         # init event controller
         self.event_controller.open()
-    
+
+        
     def setUp(self):
         data = self.device.getDumpData()
         # key point

@@ -21,8 +21,8 @@ class ManifestHandler(handler.ContentHandler):
     def startElement(self, name, attrs):
         if name == 'manifest':
             self.packageName = attrs.getValue('package')
-            print self.packageName
+            #print self.packageName
             
         if name == self.componentName:
             self.activityList.append(attrs.getValue('android:name'))
-            print self.activityList
+            #print self.activityList

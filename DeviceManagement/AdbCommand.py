@@ -6,6 +6,7 @@
 
 import os
 from subprocess import check_output, Popen, PIPE
+from Utility import TimeoutFunctionException, TimeoutFunction
 
 run = lambda cmd: Popen(cmd, shell=True, stdout=PIPE, executable='/bin/bash' )
 class AdbCommand():
@@ -21,15 +22,25 @@ class AdbCommand():
         
     def executeCommand(self, cmd):
         try:
+            #command 실행이 오래 걸릴 경우, 타임아웃을 발생 시키기 위함이다.
+            timemer = TimeoutFunction(5)
+            timemer.timeStart()
+            
             out = run(cmd)
             res = out.stdout.read()
             out.stdout.close()
+            print res
+            #timeout을 정지 시킨다. 
+            timemer.timeEnd()
             return res
+        except TimeoutFunctionException:
+            out.kill
+            print 'kill process pid:%s'%(out.pid)
         except Exception, e:
             msg = "[%s] Failed execute cmd [%s]: [%s]" %(self.class_name, cmd, str(e))
             self.m_logger.error(msg)
             return ""
-        
+
     def installPkg(self, package_name):
         # 安装 package的时候就不需要判断之前有没有安装package 
         # 参数 -r 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">jaynux hello race game !!</string>
+    <string name="app_name">삼국지 복불복</string>
+    <string name="play">PLAY!</string>
+    <string name="gamestart">게임시작</string>
+    <string name="retry">RETRY</string>
+    <string name="restart">RETURN</string>
+    <string name="helpText">안녕하세요 삼국지 경마 게임에 오신것을 환영 합니다. 시작 하실려면 하단의 PLAY! 버튼을 눌러 주세요. PLAYER1, PLAYER2, PLAYER3, PLAYER4 순서 입니다.</string>
+    <string name="winText">"You win, You are the master of the Universe!
+
+JETBOY by SONiVOX®
+
+Produced by Jennifer Hruska
+Music by Eric Barlaan
+Graphics by Randy O’Connor
+Programming by MageTech"</string>
+    <string name="loseText">Sorry, you lose.</string>
+    <string name="timer">1:12</string>
+    <string name="g">유일하게 중국에서 일개 장수가 신의 대접을 받는 인물이다. 관성대제라고 하여 죽은뒤 신이 되었다고 할정도로 중국인들에게 많은 사랑을 받는 인물이다. 동탁의 최고의 무장중 한명인 화웅을 단 1합에 수급을 배어온 일화로 유명하다.</string>
+    <string name="j">본디 공손찬 진영에 있다가 공손찬이 원소에의해 멸망한뒤 유비에게 몸을 담았다. 장판파 전투에서 어린 유선을 않고 조조의 60만 대군을 종횡무진 누비며 유비의 아들 유선을 구해낸 일화는 매우 유명하다. 창과 검을 동시에 다루며 싸우는것으로 유명하다.</string>
+    <string name="u">싸움에 있어서 그 누구에게도 지지않는다. 호로관 전투에서 유비,관우,장비 3인과 대등하게 싸운 일화가 있다. 하지만 충의를 모르고 배신을 거듭하다 결국 조조와 유비 손책에게 포위 당하여 죽임을 당한다.</string>
+    <string name="h">유비에게 관우가 있다면 조조에게 하후돈이 있다는 말이 있을만큼 용맹하기 이를때 없는 장수이다. 전투중 눈에 박힌 화살을 눈알 통채로 뽑고 다시 싸움에 임한 일화로 유명하다.</string>
+    <string name="k">게임에서 주어지는 가장 기본적인 장수이다</string>
+    <string name="ma_cho_description">뛰어난 무예를 지녀 촉한의 오호대장의 지위까지 올랐다. 아버지 서량태수 마등이 조조에게 불려 처형당하자 마초는 의숙부 서량자사 한수와 함께 20만 서량병을 일으켜 장안, 동관을 함락시켜 조조를 순식간에 궁지로 몰아 넣지만 결국 가후의 이간계에 빠져 패하고 만다.</string>
+    <string name="yu_bi_description">중산정황의 후예로 후한 황제 헌제의 황숙이다. 도원에서 결의를 맺고 관우 장비와 거병하여 촉한의 황제에 오른다. 관우의 복수를 하기위해 60만 대군을 이끌고 오를 공격하나 결국 육손의 계략에 막혀 이릉에서 패하고 이에 시름하다 병사한다.</string>
+    <string name="jang_bi_description">오호대장군중 1명이며 유비의 의형제이다. 지략이 낮고 성격이 불같지만 무예만큼을 출중하다. 장판교에서 조조의 60만대군을 단신으로 막아내 조자룡이 무사히 도망칠수 있도록한 일화로 유명하다.</string>
+    <string name="hwang_chung_description">황충의 자는 한승이며 백발백중의 명궁이라고 한다. 오호대장군중 1명이며 한중정벌에서 조조의 맹장 하후연의 수급을 배고 정군산, 천탕산등을 점령한 일화로 유명하다.</string>
+    <string name="measuretext">흔든횟수 :0, 흔든파워 :0, 터치횟수 :0</string>
+    <string name="messageText1">흔들기횟수, 흔들기파워, 터치횟수 3가지 측정 MOD를 통해서 확률적으로 Hidden 장수가 OPEN 되어 집니다. (단, Hidden 장수는 각각의 측정값에 종속적인 확률을 가집니다. 각각의 측정에 3명의 Hidden 장수가 배정되어 있습니다.)</string>
+    <string name="messageText2" />
+    <string name="messageText3">측정을 시작 하시려면 상단의 측정 버튼을 눌러주세요. 측정 시작전 3초간의 준비 시간을 드립니다. 측정값을 게임에 적용하면 모두 초기화 됩니다. 그전 까지는 최고 측정 기록이 상단에 표시되어 집니다.</string>
+    <string name="messageText4" />
+    <string name="progress_title">Please wait...</string>
+    <string name="write_progress_message">측정한 값을 토대로 확률적으로 계산 하고 있습니다.</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="ok">OK</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="cancel_massage">취소 하였습니다.</string>
+    <string name="measurebtn">측정</string>
+</resources>

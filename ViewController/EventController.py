@@ -25,7 +25,7 @@ run_call = lambda cmd: call(cmd, shell=True, executable='/bin/bash' )
 # this thread will bind monkey server with port to listen
 #------------------------------------------------------------------------------ 
 class SocketBinder(threading.Thread):
-    '''
+    ''' 
     Socket Binder
     '''
     
@@ -239,7 +239,6 @@ if __name__=="__main__":
         sender.longClickByKeyCode("home")
         time.sleep(3)
         sender.press("back")
-        
         time.sleep(1)
         sender.drag(100, 20, 100, 500)
         

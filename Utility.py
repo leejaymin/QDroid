@@ -4,6 +4,7 @@
 ## kun for Apk View Tracing
 ## Utility.py
 import os
+import signal
 
 def str2int(s):
     return int(s,10)
@@ -28,3 +29,24 @@ def getToolsDir():
 
 def getPlatformToolsDir():
     return os.getcwd() + os.path.sep + "platform-tools"
+
+#===================================================
+# Timeout Signal과 관련된 코드이다.
+#===================================================
+class TimeoutFunctionException(Exception):
+    """Exception to raise on a timeout"""
+    pass 
+
+class TimeoutFunction: 
+    def __init__(self, timeout):
+        self.timeout = timeout
+
+    def handle_timeout(self, signum, frame):
+        raise TimeoutFunctionException()
+
+    def timeStart(self):
+        signal.signal(signal.SIGALRM, self.handle_timeout)
+        signal.alarm(self.timeout)
+ 
+    def timeEnd(self):
+        signal.alarm(0)

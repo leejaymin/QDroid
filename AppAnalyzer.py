@@ -29,6 +29,9 @@ ismount = path.ismount
 run = lambda cmd: check_output(cmd, shell=True, executable='/bin/bash')
 run_wait = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash').wait()
 #run = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash' )
+
+#check_output은 출력 결과를 바로 String byte로 출력을 하는 함수이다.
+#Popen은 출력 결과를 하위 프로세스를 나타내는 객체로 반환하게 된다. 
 #################################################################
 
 class ApkTest:
@@ -39,12 +42,12 @@ class ApkTest:
 
     result = {}
 
-    def __init__(self, apk, device_name="emulator-5554", device_port=5554, device_address="127.0.0.1",):
+    def __init__(self, apk):
         self.apk = apk
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         #오류를 기록해줄 로거를 생성 한다. 
-        self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
-        self.solo = SoloInterface()
+        #self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
+        self.solo = SoloInterface(device_name="12B9WE630015")
         self.solo.setUp()
         
     def init(self):
@@ -53,7 +56,7 @@ class ApkTest:
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and   len(i) > 4 and  i[4].isupper())
-        print dir(ApkTest)
+        
     def reverseApk(self):
         try:
             run('./apktool d -f ./apkRepo/%s ./ReverseApkRepo/%s' % (self.apk, (self.apk).split('.')[0]))
@@ -61,13 +64,17 @@ class ApkTest:
             return
         
     def parsingManifestXml(self):
-        f = open('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
-        manifest = f.read()
-        print manifest
+        #f = open('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
+        #manifest = f.read()
+        #print manifest
         handler = ManifestHandler.ManifestHandler('activity')
         parser = make_parser()
         parser.setContentHandler(handler)
         parser.parse('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
+        
+        for activity in ManifestHandler.ManifestHandler.activityList:
+            print activity
+        print 'complete parsing xml'
          
     def GenerateTestingScript(self):
         #읽고 쓰고 이며 기존 파일을 삭제 한다. 
@@ -99,7 +106,7 @@ class ApkTest:
         self.testReinstall()
         self.testActivity()
         #self.testStress()
-        #self.testUninstall()
+        self.testUninstall()
         self.summary()
 
     def getApkInfo(self):
@@ -132,19 +139,23 @@ class ApkTest:
 
     #activity 테스팅을 하는 코드이다.
     def testActivity(self):
+#       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
+            self.solo.event_controller.press('power')
+            self.solo.event_controller.wake()
             self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
+            self.testStress()
             
-            
-        
-        
     def testStress(self):
-        run_wait('adb shell am kill %s'% (self.pkgName))
-        run_wait('adb shell am force-stop %s'% (self.pkgName))        
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 200 -p %s 1000' %( self.pkgName)).lower()
+#        run_wait('adb shell am kill %s'% (self.pkgName))
+#        run_wait('adb shell am force-stop %s'% (self.pkgName))        
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 200 -p %s -v -v 1000' %( self.pkgName)).lower()
         self.result['Stress'][0] =  all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
-        run_wait('adb shell am kill %s'% (self.pkgName))
-        run_wait('adb shell am force-stop %s'% (self.pkgName))   
+        print self.result['Stress'][0]
+        # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
+        
+#        run_wait('adb shell am kill %s'% (self.pkgName))
+#        run_wait('adb shell am force-stop %s'% (self.pkgName))   
         
     def testUninstall(self):
         while True:
@@ -159,7 +170,8 @@ class ApkTest:
                 continue
 
     def summary(self):
-        self.solo.startActivity(component='edu.umich.PowerTutor/.ui.Help')
+        #result에는 test로 시작하고 5번째 글자가 대문자인 모든 함수에 대한 False,''의 결과가 들어 있다.
+        #이 부분을 모두 탐색하여서, [0]의 값이 False라면 뒤의 문자열을 출력하는 로직이다. 
         for i in ((k, self.result[k][1]) for k in self.result if k[0].isupper() and self.result[k][0] != True):
             print 'FAILED:%s %s' % (i[0], i[1])
 
