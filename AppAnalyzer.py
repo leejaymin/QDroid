@@ -47,7 +47,8 @@ class ApkTest:
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         #오류를 기록해줄 로거를 생성 한다. 
         #self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
-        self.solo = SoloInterface(device_name="12B9WE630015")
+        #HTC Desire device_name="12B9WE630015"
+        self.solo = SoloInterface()
         self.solo.setUp()
         
     def init(self):
@@ -55,7 +56,7 @@ class ApkTest:
         #isupper()의 경우 그냥 대문자인지 판단하는 거이다.
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
-        self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and   len(i) > 4 and  i[4].isupper())
+        self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         
     def reverseApk(self):
         try:
@@ -107,7 +108,6 @@ class ApkTest:
         self.testActivity()
         #self.testStress()
         self.testUninstall()
-        self.summary()
 
     def getApkInfo(self):
         fmt = lambda key: dict((i.split('=')[0], i.split('=')[1].strip("'"))   for i in key.split()  if i.find('=') != -1)
@@ -141,9 +141,13 @@ class ApkTest:
     def testActivity(self):
 #       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
+            self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
+            if self.result['Activity'][1][0:4] == 'Start':
+                self.result['Activity'][0] = True
+                
             self.solo.event_controller.press('home')
-            self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
             self.testStress()
+            self.summary()
             
     def testStress(self):
 #        run_wait('adb shell am kill %s'% (self.pkgName))

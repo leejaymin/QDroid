@@ -35,7 +35,9 @@ class AdbCommand():
             return res
         except TimeoutFunctionException:
             out.kill
-            print 'kill process pid:%s'%(out.pid)
+            res ='Failed: Activity Not response for call.. and then we killed process pid:%s'%(out.pid)
+            print res
+            return res
         except Exception, e:
             msg = "[%s] Failed execute cmd [%s]: [%s]" %(self.class_name, cmd, str(e))
             self.m_logger.error(msg)
