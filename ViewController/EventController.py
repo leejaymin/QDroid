@@ -97,9 +97,6 @@ class EventController():
     
     def open(self):
         if self.initService():
-            #time_out = config.getServerTimeOut()
-            #tn = telnetlib.Telnet(host=host, port=port, timeout=time_out) # this telnetlib is from python lib
-            self.tn = telnetlib.Telnet(host=self.device_address, port=self.monkey_server_port) # this telnetlib is from jython.jar lib
             return True
         else:
             msg = "[%s] Failed to open Event Controller" %self.class_name
@@ -107,17 +104,60 @@ class EventController():
             return False
         
     def sendEventByTelnet(self, command):
-        try:   
-            self.tn.write(command + "\n")
+        try:
+            #time_out = config.getServerTimeOut()
+            #tn = telnetlib.Telnet(host=host, port=port, timeout=time_out) # this telnetlib is from python lib
+            tn = telnetlib.Telnet(host=self.device_address, port=self.monkey_server_port) # this telnetlib is from jython.jar lib   
+            tn.write(command + "\n")
+            time.sleep(1)
+            tn.close()
             return True
         except Exception, e:
             msg = "[%s] Failed to send event `%s`: [%s] " %(self.class_name, command, str(e))
             self.m_logger.error(msg)
             return False
+        
+    def getPropertiesByTelnet(self, command):
+        try:
+            tn = telnetlib.Telnet(host=self.device_address, port=self.monkey_server_port)
+            tn.write("getvar %s\n" %command)
+            time.sleep(1)
+            res = tn.read_until("\n")
+            tn.close()
+            return res
+        except Exception, e:
+            msg = ""
+            self.m_logger.error(msg)
+            return None        
 
     def close(self):
         self.quit()
-        self.tn.close()
+
+#===============================================================================
+# get Properties
+#===============================================================================
+    # example: 'OK:480\n'
+    def getDisplayWidth(self, retry_time = 3):
+        while retry_time>0:
+            res = self.getPropertiesByTelnet("display.width")
+            if None == res or 0 == len(res):
+                time.sleep(1)
+                retry_time -= 1
+                continue
+            else:      
+                return int(res.rstrip("\n").lstrip("OK:"))
+        return None
+    
+    def getDisplayHeight(self, retry_time = 3):
+        while retry_time>0:
+            res = self.getPropertiesByTelnet("display.height")
+            if None == res or 0 == len(res):
+                time.sleep(1)
+                retry_time -= 1
+                continue
+            else:
+                return int(res.rstrip("\n").lstrip("OK:"))
+        return None
 
 #------------------------------------------------------------------------------ 
 # basic event
@@ -239,9 +279,10 @@ if __name__=="__main__":
         sender.longClickByKeyCode("home")
         time.sleep(3)
         sender.press("back")
+        
         time.sleep(1)
         sender.drag(100, 20, 100, 500)
         
     sender.close()
-    
+      
     

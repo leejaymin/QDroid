@@ -141,8 +141,7 @@ class ApkTest:
     def testActivity(self):
 #       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
-            self.solo.event_controller.press('power')
-            self.solo.event_controller.wake()
+            self.solo.event_controller.press('home')
             self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
             self.testStress()
             
