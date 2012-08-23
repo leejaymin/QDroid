@@ -7,7 +7,7 @@
 # Version: 1.3
 ################################################################
 import logging, time
-import Logger
+import TestingLogger
 
 from sys import exit
 from os import path
@@ -49,14 +49,18 @@ class ApkTest:
         #self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
         #HTC Desire device_name="12B9WE630015"
         self.solo = SoloInterface()
-        self.solo.setUp()
+#        self.solo.setUp()
         
     def init(self):
         self.getApkInfo()
+        self.loggingInit()
         #isupper()의 경우 그냥 대문자인지 판단하는 거이다.
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
+        
+    def loggingInit(self):
+        self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk), logging.getLogger("%s"%(self.apk)))
         
     def reverseApk(self):
         try:
@@ -73,9 +77,12 @@ class ApkTest:
         parser.setContentHandler(handler)
         parser.parse('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
         
+        self.m_logger.info("Reversing Activity List")
         for activity in ManifestHandler.ManifestHandler.activityList:
             print activity
-        print 'complete parsing xml'
+            self.m_logger.info(activity)
+        self.m_logger.info('======== complete parsing xml ===========')
+        print '======== complete parsing xml ==========='
          
     def GenerateTestingScript(self):
         #읽고 쓰고 이며 기존 파일을 삭제 한다. 
@@ -129,6 +136,9 @@ class ApkTest:
         
         if self.result['Install'][1][-9:-2] == 'Success':
             self.result['Install'][0] = True
+            self.m_logger.info(self.result['Install'][1])
+        else:
+            self.m_logger.error(self.result['Install'][1])
 
     def testReinstall(self):
         self.result['Reinstall'][1] = check_output('adb install -r ./apkRepo/%s' % (self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
@@ -136,29 +146,35 @@ class ApkTest:
         
         if self.result['Reinstall'][1][-9:-2] == 'Success':
             self.result['Reinstall'][0] = True
+            self.m_logger.info(self.result['Reinstall'][1])
+        else:
+            self.m_logger.error(self.result['Reinstall'][1])
 
     #activity 테스팅을 하는 코드이다.
     def testActivity(self):
 #       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
-            if self.result['Activity'][1][0:4] == 'Start':
+            print self.result['Activity'][1]
+            if self.result['Activity'][1][0:5] == 'Start':
                 self.result['Activity'][0] = True
-                
-            self.solo.event_controller.press('home')
+                self.m_logger.info(self.result['Activity'][1])
+            else:
+                self.m_logger.error(self.result['Activity'][1])                    
+#           self.solo.event_controller.press('home')
             self.testStress()
-            self.summary()
+#           self.summary()
             
     def testStress(self):
-#        run_wait('adb shell am kill %s'% (self.pkgName))
-#        run_wait('adb shell am force-stop %s'% (self.pkgName))        
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 200 -p %s -v -v 1000' %( self.pkgName)).lower()
-        self.result['Stress'][0] =  all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
-        print self.result['Stress'][0]
-        # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 500 -p %s -v -v 1000' %( self.pkgName)).lower()
+        self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
+        print self.result['Stress'][1]
+        if(self.result['Stress'][0] == True):
+            self.m_logger.info(self.result['Stress'][1])
+        else:
+            self.m_logger.error(self.result['Stress'][1])
         
-#        run_wait('adb shell am kill %s'% (self.pkgName))
-#        run_wait('adb shell am force-stop %s'% (self.pkgName))   
+        # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         
     def testUninstall(self):
         while True:
@@ -168,6 +184,9 @@ class ApkTest:
                 
                 if self.result['Uninstall'][1][-9:-2] == 'Success':
                     self.result['Uninstall'][0] = True
+                    self.m_logger.info(self.result['Uninstall'][1])
+                else:
+                    self.m_logger.error(self.result['Uninstall'][1])
                 break
             except (IOError):
                 continue
