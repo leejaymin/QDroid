@@ -41,7 +41,8 @@ class ApkTest:
     actName = ''
 
     result = {}
-
+    errorReport = {}
+    
     def __init__(self, apk):
         self.apk = apk
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
@@ -58,7 +59,9 @@ class ApkTest:
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
-        
+        #서머리를 위해서 사용하는 변수들의 정의
+        self.errorReport = {'activity':'','monkey':0}
+
     def loggingInit(self):
         self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk), logging.getLogger("%s"%(self.apk)))
         
@@ -115,7 +118,7 @@ class ApkTest:
         self.testActivity()
         #self.testStress()
         self.testUninstall()
-
+        self.summary()
     def getApkInfo(self):
         fmt = lambda key: dict((i.split('=')[0], i.split('=')[1].strip("'"))   for i in key.split()  if i.find('=') != -1)
         try:
@@ -160,7 +163,10 @@ class ApkTest:
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
             else:
-                self.m_logger.error(self.result['Activity'][1])                    
+                self.m_logger.error(self.result['Activity'][1])
+                self.m_logger.error(self.pkgName+activity)
+                #실패한 activity에 대해서 기록을 해준다. 
+                self.errorReport['activity'] += activity                         
 #           self.solo.event_controller.press('home')
             self.testStress()
 #           self.summary()
@@ -173,7 +179,7 @@ class ApkTest:
             self.m_logger.info(self.result['Stress'][1])
         else:
             self.m_logger.error(self.result['Stress'][1])
-        
+            self.errorReport['monkey'] += 1
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         
     def testUninstall(self):
@@ -192,10 +198,10 @@ class ApkTest:
                 continue
 
     def summary(self):
-        #result에는 test로 시작하고 5번째 글자가 대문자인 모든 함수에 대한 False,''의 결과가 들어 있다.
-        #이 부분을 모두 탐색하여서, [0]의 값이 False라면 뒤의 문자열을 출력하는 로직이다. 
-        for i in ((k, self.result[k][1]) for k in self.result if k[0].isupper() and self.result[k][0] != True):
-            print 'FAILED:%s %s' % (i[0], i[1])
+        #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
+        print '===================|| summary ||==================='
+        print 'Failed Activity: '+self.errorReport['activity']
+        print 'moneky error: '+self.errorReport['monkey']
 
 if __name__ == '__main__':
 #    kwargs = dict(i.strip('\'"').split('=') for i in sys.argv if i.find('=') > 0)
