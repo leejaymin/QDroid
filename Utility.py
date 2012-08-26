@@ -29,6 +29,25 @@ def getToolsDir():
 
 def getPlatformToolsDir():
     return os.getcwd() + os.path.sep + "platform-tools"
+#===============================================================================
+# # compare to string (diff)
+#===============================================================================
+def diffError(argX, argY):
+    sameRate = 0 #문자열이 얼마나 같은지를 카운팅 한다.
+    compareRange =0 # out of string을 예방하기 위해서, 길이가 작은 스트링이 무엇인지 판별 한다.
+    dvidedNum = 0 # 두개의 스트링중 길이가 더 큰 쪽을 저장 한다.
+    if len(argX) >= len(argY):
+        compareRange = len(argY)
+        dividedNum = len(argX) * 1.0
+    else:
+        compareRange = len(argX)
+        dividedNum = len(argY) * 1.0
+    for i in range(compareRange):
+        if argX[i] == argY[i]:
+            sameRate += 1
+            
+    result = sameRate / dividedNum *100
+    return result
 
 #===================================================
 # Timeout Signal과 관련된 코드이다.

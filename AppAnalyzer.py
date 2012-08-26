@@ -8,6 +8,7 @@
 ################################################################
 import logging, time
 import TestingLogger
+from Utility import diffError
 
 from sys import exit
 from os import path
@@ -60,8 +61,9 @@ class ApkTest:
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         #서머리를 위해서 사용하는 변수들의 정의
-        self.errorReport = {'activity':'','monkey':0}
-
+        self.errorReport = {'activity':'','monkey':[0,0]}
+        self.startTime = time.time()
+        self.errorList = [' ']
     def loggingInit(self):
         self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk), logging.getLogger("%s"%(self.apk)))
         
@@ -158,30 +160,51 @@ class ApkTest:
 #       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
-            print self.result['Activity'][1]
+#            print self.result['Activity'][1]
             if self.result['Activity'][1][0:5] == 'Start':
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
+                #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
+                self.testStress()
             else:
                 self.m_logger.error(self.result['Activity'][1])
                 self.m_logger.error(self.pkgName+activity)
                 #실패한 activity에 대해서 기록을 해준다. 
-                self.errorReport['activity'] += activity                         
-#           self.solo.event_controller.press('home')
-            self.testStress()
+                self.errorReport['activity'] += activity 
+                                        
+#           self.solo.event_controller.press('home')            
 #           self.summary()
             
     def testStress(self):
+        overlapError = False
+             
         self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 500 -p %s -v -v 1000' %( self.pkgName)).lower()
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
+        # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         print self.result['Stress'][1]
+        
+        #실제 monkey 에러만을 구분하여 나눠 준다.
+        if self.result['Stress'][1].find('crash:') != -1:
+            monkeyError = self.result['Stress'][1].split('crash:')
+        
         if(self.result['Stress'][0] == True):
             self.m_logger.info(self.result['Stress'][1])
         else:
             self.m_logger.error(self.result['Stress'][1])
-            self.errorReport['monkey'] += 1
-        # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
-        
+            #에러가 발생하면 무조건 카운팅 해준다. 
+            self.errorReport['monkey'][0] += 1     
+              
+            #같은 에러인지를 판별해주는 루틴이다.
+            for preError in self.errorList:
+                if diffError(preError,monkeyError[1]) >= 80: 
+                    overlapError = True
+                    break
+            
+            if overlapError == False:
+                self.errorReport['monkey'][1] += 1
+                #현재 에러를 반영 시켜 준다.         
+                self.errorList.append(monkeyError[1])
+                     
     def testUninstall(self):
         while True:
             try:
@@ -198,11 +221,14 @@ class ApkTest:
                 continue
 
     def summary(self):
+        self.EndTime = time.time()
         #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
         print '===================|| summary ||==================='
-        print 'Failed Activity: '+self.errorReport['activity']
-        print 'moneky error: '+self.errorReport['monkey']
-
+        print 'Testing Duration Time: %f'%(self.EndTime-self.startTime)
+        print 'Failed Activity: %s'%(self.errorReport['activity'])
+        print 'moneky error: %d'%(self.errorReport['monkey'][0])
+        print 'No overlap moneky error: %d'%(self.errorReport['monkey'][1])
+        
 if __name__ == '__main__':
 #    kwargs = dict(i.strip('\'"').split('=') for i in sys.argv if i.find('=') > 0)
 #    if not kwargs.has_key('apk'):
