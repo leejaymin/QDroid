@@ -1,0 +1,23 @@
+[ 2012-08-26 02:08:07,028 ][ INFO ] Reversing Activity List
+
+[ 2012-08-26 02:08:07,028 ][ INFO ] com.example.aatg.tc.TemperatureConverterActivity
+
+[ 2012-08-26 02:08:07,028 ][ INFO ] ======== complete parsing xml ===========
+
+[ 2012-08-26 02:08:09,621 ][ ERROR ] 451 KB/s (18637 bytes in 0.040s)
+	pkg: /data/local/tmp/TemperatureConverter.apk
+Failure [INSTALL_FAILED_ALREADY_EXISTS]
+
+
+[ 2012-08-26 02:08:13,816 ][ INFO ] 451 KB/s (18637 bytes in 0.040s)
+	pkg: /data/local/tmp/TemperatureConverter.apk
+Success
+
+
+[ 2012-08-26 02:08:19,819 ][ ERROR ] Failed: Activity Not response for call.. and then we killed process pid:17548
+
+[ 2012-08-26 02:08:19,819 ][ ERROR ] com.example.aatg.tccom.example.aatg.tc.TemperatureConverterActivity
+
+[ 2012-08-26 02:08:24,454 ][ INFO ] Success
+
+
