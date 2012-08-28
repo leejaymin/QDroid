@@ -1,0 +1,3521 @@
+[ 2012-08-27 19:23:44,757 ][ INFO ] Reversing Activity List
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] .HostList
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] .HostEditor
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] .SettingsActivity
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] .WizardActivity
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] org.connectbot.Console
+
+[ 2012-08-27 19:23:44,757 ][ INFO ] ======== complete parsing xml ===========
+
+[ 2012-08-27 19:23:49,140 ][ INFO ] 587 KB/s (238964 bytes in 0.397s)
+	pkg: /data/local/tmp/ConnectBot-100.apk
+Success
+
+
+[ 2012-08-27 19:23:55,027 ][ INFO ] 536 KB/s (238964 bytes in 0.434s)
+	pkg: /data/local/tmp/ConnectBot-100.apk
+Success
+
+
+[ 2012-08-27 19:23:57,395 ][ INFO ] Starting: Intent { cmp=org.connectbot/.HostList }
+Status: ok
+Activity: org.connectbot/.WizardActivity
+ThisTime: 217
+TotalTime: 622
+Complete
+
+
+[ 2012-08-27 19:25:06,231 ][ INFO ] :monkey: seed=0 count=1000
+:allowpackage: org.connectbot
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity org.connectbot.hostlist (from package org.connectbot)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 15.0%
+//   3: 25.0%
+//   4: 15.0%
+//   5: 2.0%
+//   6: 2.0%
+//   7: 1.0%
+//   8: 15.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=234.0 y=197.0
+:sending pointer action_move x=238.0 y=190.0
+:sending pointer action_move x=238.0 y=190.0
+:sending pointer action_up x=238.0 y=190.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=56.0 y=280.0
+:sending pointer action_move x=62.0 y=275.0
+:sending pointer action_move x=62.0 y=267.0
+:sending pointer action_move x=57.0 y=264.0
+:sending pointer action_move x=58.0 y=273.0
+:sending pointer action_move x=66.0 y=271.0
+:sending pointer action_move x=69.0 y=271.0
+:sending pointer action_up x=69.0 y=271.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_down x=28.0 y=490.0
+:sending pointer action_up x=28.0 y=490.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_down x=403.0 y=645.0
+:sending pointer action_move x=407.0 y=650.0
+:sending pointer action_move x=401.0 y=651.0
+:sending pointer action_move x=405.0 y=653.0
+:sending pointer action_move x=399.0 y=655.0
+:sending pointer action_move x=399.0 y=647.0
+:sending pointer action_move x=392.0 y=651.0
+:sending pointer action_move x=386.0 y=660.0
+:sending pointer action_move x=391.0 y=669.0
+:sending pointer action_move x=397.0 y=661.0
+:sending pointer action_up x=397.0 y=661.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_down x=98.0 y=752.0
+:sending pointer action_up x=98.0 y=752.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_down x=264.0 y=458.0
+:sending pointer action_up x=264.0 y=458.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=113.0 y=170.0
+:sending pointer action_move x=105.0 y=173.0
+:sending pointer action_move x=108.0 y=169.0
+:sending pointer action_move x=110.0 y=169.0
+:sending pointer action_move x=107.0 y=169.0
+:sending pointer action_move x=107.0 y=168.0
+:sending pointer action_move x=99.0 y=166.0
+:sending pointer action_move x=93.0 y=161.0
+:sending pointer action_move x=91.0 y=153.0
+:sending pointer action_move x=98.0 y=156.0
+:sending pointer action_up x=98.0 y=156.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+    //[calendar_time:2012-08-28 11:22:59.033  system_uptime:456019]
+    // sending event #100
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=196.0 y=463.0
+:sending pointer action_move x=195.0 y=463.0
+:sending pointer action_move x=201.0 y=463.0
+:sending pointer action_move x=210.0 y=456.0
+:sending pointer action_move x=219.0 y=456.0
+:sending pointer action_move x=227.0 y=454.0
+:sending pointer action_move x=228.0 y=448.0
+:sending pointer action_move x=236.0 y=454.0
+:sending pointer action_up x=236.0 y=454.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=107.0 y=579.0
+:sending pointer action_up x=107.0 y=579.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sendkey (action_down): 53    // keycode_y
+:sendkey (action_up): 53    // keycode_y
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sendkey (action_down): 70    // keycode_equals
+:sendkey (action_up): 70    // keycode_equals
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+    // activityresuming(org.connectbot)
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+    // activityresuming(org.connectbot)
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=304.0 y=685.0
+:sending pointer action_move x=306.0 y=694.0
+:sending pointer action_move x=312.0 y=686.0
+:sending pointer action_move x=317.0 y=677.0
+:sending pointer action_move x=314.0 y=681.0
+:sending pointer action_move x=320.0 y=672.0
+:sending pointer action_move x=317.0 y=674.0
+:sending pointer action_up x=317.0 y=674.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=0.0
+:sendkey (action_down): 94    // keycode_pictsymbols
+:sendkey (action_up): 94    // keycode_pictsymbols
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=1.0 y=1.0
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=102.0 y=574.0
+:sending pointer action_up x=102.0 y=574.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=106.0 y=130.0
+:sending pointer action_move x=110.0 y=136.0
+:sending pointer action_move x=112.0 y=142.0
+:sending pointer action_move x=108.0 y=136.0
+:sending pointer action_move x=102.0 y=127.0
+:sending pointer action_move x=101.0 y=127.0
+    //[calendar_time:2012-08-28 11:23:04.056  system_uptime:461035]
+    // sending event #200
+:sending pointer action_move x=106.0 y=129.0
+:sending pointer action_move x=115.0 y=120.0
+:sending pointer action_up x=115.0 y=120.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_down x=339.0 y=689.0
+:sending pointer action_up x=339.0 y=689.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=311.0 y=44.0
+:sending pointer action_up x=311.0 y=44.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=337.0 y=221.0
+:sending pointer action_up x=337.0 y=221.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=3.0 y=-3.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 57    // keycode_alt_left
+:sendkey (action_up): 57    // keycode_alt_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sending pointer action_down x=249.0 y=342.0
+:sending pointer action_up x=249.0 y=342.0
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.view dat=http://www.gnu.org/licenses/gpl-3.0.txt cmp=com.android.browser/.browseractivity } in package com.android.browser
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=437.0 y=183.0
+:sending pointer action_move x=439.0 y=178.0
+:sending pointer action_move x=446.0 y=169.0
+:sending pointer action_move x=455.0 y=162.0
+:sending pointer action_move x=449.0 y=157.0
+:sending pointer action_move x=450.0 y=158.0
+:sending pointer action_up x=450.0 y=158.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 81    // keycode_plus
+:sendkey (action_up): 81    // keycode_plus
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=5.0 y=58.0
+:sending pointer action_move x=-4.0 y=58.0
+:sending pointer action_up x=-4.0 y=58.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sendkey (action_down): 79    // keycode_headsethook
+:sendkey (action_up): 79    // keycode_headsethook
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=80.0 y=200.0
+:sending pointer action_up x=80.0 y=200.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+    //[calendar_time:2012-08-28 11:23:11.989  system_uptime:468968]
+    // sending event #300
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:23:12.190  system_uptime:469169]
+    // sending event #300
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // activityresuming(org.connectbot)
+    // activityresuming(org.connectbot)
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=1.0
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=278.0 y=104.0
+:sending pointer action_up x=278.0 y=104.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 107    // keycode_button_thumbr
+:sendkey (action_up): 107    // keycode_button_thumbr
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_down x=380.0 y=319.0
+:sending pointer action_up x=380.0 y=319.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_down x=318.0 y=142.0
+:sending pointer action_up x=318.0 y=142.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_down x=417.0 y=796.0
+:sending pointer action_move x=425.0 y=1.0
+:sending pointer action_move x=421.0 y=6.0
+:sending pointer action_move x=413.0 y=7.0
+:sending pointer action_move x=420.0 y=-1.0
+:sending pointer action_move x=429.0 y=-9.0
+:sending pointer action_move x=424.0 y=-9.0
+:sending pointer action_move x=416.0 y=-3.0
+:sending pointer action_move x=418.0 y=-7.0
+:sending pointer action_move x=412.0 y=-14.0
+:sending pointer action_up x=412.0 y=-14.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+    // rejecting start of intent { act=android.intent.action.view dat=http://www.gnu.org/licenses/gpl-3.0.txt cmp=com.android.browser/.browseractivity } in package com.android.browser
+sleeping for 200 milliseconds
+:sending pointer action_down x=182.0 y=84.0
+:sending pointer action_up x=182.0 y=84.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=19.0 y=228.0
+:sending pointer action_move x=13.0 y=237.0
+:sending pointer action_move x=11.0 y=239.0
+:sending pointer action_move x=18.0 y=231.0
+:sending pointer action_move x=23.0 y=237.0
+:sending pointer action_up x=23.0 y=237.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=11.0 y=702.0
+    //[calendar_time:2012-08-28 11:23:17.589  system_uptime:474572]
+    // sending event #400
+:sending pointer action_up x=11.0 y=702.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=424.0 y=48.0
+:sending pointer action_move x=415.0 y=43.0
+:sending pointer action_move x=417.0 y=43.0
+:sending pointer action_move x=408.0 y=38.0
+:sending pointer action_move x=408.0 y=39.0
+:sending pointer action_move x=416.0 y=33.0
+:sending pointer action_move x=415.0 y=28.0
+:sending pointer action_up x=415.0 y=28.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=1.0 y=-2.0
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=306.0 y=601.0
+:sending pointer action_up x=306.0 y=601.0
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.view dat=http://www.gnu.org/licenses/gpl-3.0.txt cmp=com.android.browser/.browseractivity } in package com.android.browser
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=116.0 y=449.0
+:sending pointer action_move x=111.0 y=449.0
+:sending pointer action_move x=114.0 y=443.0
+:sending pointer action_move x=122.0 y=440.0
+:sending pointer action_move x=126.0 y=437.0
+:sending pointer action_move x=126.0 y=434.0
+:sending pointer action_up x=126.0 y=434.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=336.0 y=525.0
+:sending pointer action_up x=336.0 y=525.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=27.0 y=609.0
+:sending pointer action_up x=27.0 y=609.0
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.view dat=http://www.gnu.org/licenses/gpl-3.0.txt cmp=com.android.browser/.browseractivity } in package com.android.browser
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=44.0 y=89.0
+:sending pointer action_move x=46.0 y=89.0
+:sending pointer action_move x=46.0 y=90.0
+:sending pointer action_move x=54.0 y=91.0
+:sending pointer action_move x=51.0 y=89.0
+:sending pointer action_move x=44.0 y=87.0
+:sending pointer action_move x=53.0 y=95.0
+:sending pointer action_move x=53.0 y=96.0
+:sending pointer action_move x=51.0 y=97.0
+:sending pointer action_move x=53.0 y=99.0
+:sending pointer action_up x=53.0 y=99.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 65    // keycode_envelope
+:sendkey (action_up): 65    // keycode_envelope
+sleeping for 200 milliseconds
+:sending pointer action_down x=126.0 y=450.0
+:sending pointer action_up x=126.0 y=450.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=231.0 y=14.0
+:sending pointer action_up x=231.0 y=14.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sendkey (action_down): 29    // keycode_a
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sending pointer action_down x=278.0 y=582.0
+:sending pointer action_up x=278.0 y=582.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=451.0 y=437.0
+:sending pointer action_up x=451.0 y=437.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=98.0 y=44.0
+:sending pointer action_up x=98.0 y=44.0
+    //[calendar_time:2012-08-28 11:23:25.256  system_uptime:482236]
+    // sending event #500
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:23:25.459  system_uptime:482438]
+    // sending event #500
+:sending pointer action_down x=472.0 y=768.0
+:sending pointer action_up x=472.0 y=768.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=103.0 y=92.0
+:sending pointer action_up x=103.0 y=92.0
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=216.0 y=252.0
+:sending pointer action_up x=216.0 y=252.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_down x=428.0 y=212.0
+:sending pointer action_up x=428.0 y=212.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=164.0 y=545.0
+:sending pointer action_move x=161.0 y=541.0
+:sending pointer action_move x=169.0 y=542.0
+:sending pointer action_move x=168.0 y=536.0
+:sending pointer action_move x=177.0 y=541.0
+:sending pointer action_move x=185.0 y=547.0
+:sending pointer action_move x=176.0 y=541.0
+:sending pointer action_move x=176.0 y=546.0
+:sending pointer action_move x=182.0 y=550.0
+:sending pointer action_move x=176.0 y=559.0
+:sending pointer action_up x=176.0 y=559.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=367.0 y=799.0
+:sending pointer action_up x=367.0 y=799.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 85    // keycode_playpause
+:sendkey (action_up): 85    // keycode_playpause
+sleeping for 200 milliseconds
+:sending pointer action_down x=57.0 y=269.0
+:sending pointer action_up x=57.0 y=269.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 17    // keycode_star
+:sendkey (action_up): 17    // keycode_star
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=128.0 y=32.0
+:sending pointer action_up x=128.0 y=32.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+    // activityresuming(org.connectbot)
+sleeping for 200 milliseconds
+    // activityresuming(org.connectbot)
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=3.0
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=429.0 y=152.0
+:sending pointer action_up x=429.0 y=152.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=326.0 y=249.0
+:sending pointer action_up x=326.0 y=249.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+    //[calendar_time:2012-08-28 11:23:33.438  system_uptime:490418]
+    // sending event #600
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=67.0 y=402.0
+:sending pointer action_up x=67.0 y=402.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-3.0 y=4.0
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 60    // keycode_shift_right
+:sendkey (action_up): 60    // keycode_shift_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 12    // keycode_5
+:sendkey (action_up): 12    // keycode_5
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 69    // keycode_minus
+:sendkey (action_up): 69    // keycode_minus
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=347.0 y=391.0
+:sending pointer action_move x=341.0 y=391.0
+:sending pointer action_move x=345.0 y=398.0
+:sending pointer action_move x=342.0 y=390.0
+:sending pointer action_move x=348.0 y=397.0
+:sending pointer action_move x=339.0 y=389.0
+:sending pointer action_move x=345.0 y=398.0
+:sending pointer action_move x=351.0 y=396.0
+:sending pointer action_move x=350.0 y=396.0
+:sending pointer action_move x=344.0 y=405.0
+:sending pointer action_up x=344.0 y=405.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=4.0 y=-1.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+    //[calendar_time:2012-08-28 11:23:39.194  system_uptime:496173]
+    // sending event #700
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:23:39.395  system_uptime:496375]
+    // sending event #700
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=4.0
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sendkey (action_down): 95    // keycode_switch_charset
+:sendkey (action_up): 95    // keycode_switch_charset
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=-3.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 83    // keycode_notification
+:sendkey (action_up): 83    // keycode_notification
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=211.0 y=767.0
+:sending pointer action_up x=211.0 y=767.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 56    // keycode_period
+:sendkey (action_up): 56    // keycode_period
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // activityresuming(org.connectbot)
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=461.0 y=17.0
+:sending pointer action_move x=458.0 y=8.0
+:sending pointer action_up x=458.0 y=8.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=256.0 y=464.0
+:sending pointer action_up x=256.0 y=464.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 88    // keycode_previoussong
+:sendkey (action_up): 88    // keycode_previoussong
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 76    // keycode_slash
+:sendkey (action_up): 76    // keycode_slash
+sleeping for 200 milliseconds
+:sendkey (action_down): 52    // keycode_x
+:sendkey (action_up): 52    // keycode_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 84    // keycode_search
+    //[calendar_time:2012-08-28 11:23:47.108  system_uptime:504088]
+    // sending event #800
+:sendkey (action_up): 84    // keycode_search
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_down x=471.0 y=215.0
+:sending pointer action_move x=467.0 y=215.0
+:sending pointer action_move x=458.0 y=214.0
+:sending pointer action_move x=458.0 y=214.0
+:sending pointer action_up x=458.0 y=214.0
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://connectbot@192.168.254.230:22/#connectbot@bravo cmp=org.connectbot/.console } in package org.connectbot
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-5.0 y=0.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 15    // keycode_8
+:sendkey (action_up): 15    // keycode_8
+sleeping for 200 milliseconds
+:sendkey (action_down): 92    // keycode_page_up
+:sendkey (action_up): 92    // keycode_page_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=307.0 y=312.0
+:sending pointer action_move x=310.0 y=321.0
+:sending pointer action_move x=304.0 y=323.0
+:sending pointer action_move x=306.0 y=315.0
+:sending pointer action_move x=299.0 y=317.0
+:sending pointer action_move x=297.0 y=322.0
+:sending pointer action_up x=297.0 y=322.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 80    // keycode_focus
+:sendkey (action_up): 80    // keycode_focus
+sleeping for 200 milliseconds
+:sending pointer action_down x=118.0 y=67.0
+:sending pointer action_move x=114.0 y=65.0
+:sending pointer action_move x=114.0 y=74.0
+:sending pointer action_move x=118.0 y=71.0
+:sending pointer action_move x=123.0 y=72.0
+:sending pointer action_move x=131.0 y=78.0
+:sending pointer action_move x=135.0 y=73.0
+:sending pointer action_move x=127.0 y=81.0
+:sending pointer action_up x=127.0 y=81.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=252.0 y=242.0
+:sending pointer action_move x=253.0 y=242.0
+:sending pointer action_move x=255.0 y=245.0
+:sending pointer action_move x=255.0 y=248.0
+:sending pointer action_move x=262.0 y=255.0
+:sending pointer action_move x=270.0 y=257.0
+:sending pointer action_move x=269.0 y=256.0
+:sending pointer action_move x=265.0 y=261.0
+:sending pointer action_move x=256.0 y=264.0
+:sending pointer action_move x=249.0 y=271.0
+:sending pointer action_up x=249.0 y=271.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=774.0 y=16.0
+:sending pointer action_up x=774.0 y=16.0
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 106    // keycode_button_thumbl
+:sendkey (action_up): 106    // keycode_button_thumbl
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 7    // keycode_0
+:sendkey (action_up): 7    // keycode_0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://backup@example.net:22/#backup@example.net cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_down x=55.0 y=389.0
+:sending pointer action_move x=51.0 y=396.0
+    //[calendar_time:2012-08-28 11:23:54.614  system_uptime:511594]
+    // sending event #900
+:sending pointer action_up x=51.0 y=396.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=83.0 y=322.0
+:sending pointer action_up x=83.0 y=322.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=109.0 y=97.0
+:sending pointer action_up x=109.0 y=97.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+sleeping for 200 milliseconds
+:sending pointer action_down x=345.0 y=239.0
+:sending pointer action_move x=349.0 y=230.0
+:sending pointer action_move x=357.0 y=228.0
+:sending pointer action_move x=357.0 y=235.0
+:sending pointer action_move x=349.0 y=240.0
+:sending pointer action_up x=349.0 y=240.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 71    // keycode_left_bracket
+:sendkey (action_up): 71    // keycode_left_bracket
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=0.0 y=-5.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=358.0 y=32.0
+:sending pointer action_move x=362.0 y=27.0
+:sending pointer action_move x=356.0 y=28.0
+:sending pointer action_move x=349.0 y=23.0
+:sending pointer action_move x=341.0 y=15.0
+:sending pointer action_move x=341.0 y=15.0
+:sending pointer action_move x=341.0 y=17.0
+:sending pointer action_move x=333.0 y=15.0
+:sending pointer action_move x=333.0 y=8.0
+:sending pointer action_move x=341.0 y=14.0
+:sending pointer action_up x=341.0 y=14.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 67    // keycode_del
+:sendkey (action_up): 67    // keycode_del
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 97    // keycode_button_b
+:sendkey (action_up): 97    // keycode_button_b
+events injected: 1000
+:dropped: keys=0 pointers=6 trackballs=0 flips=0
+## network stats: elapsed time=68103ms (0ms mobile, 68103ms wifi, 0ms not connected)
+// monkey finished
+
+
+[ 2012-08-27 19:25:12,237 ][ ERROR ] Failed: Activity Not response for call.. and then we killed process pid:4876
+
+[ 2012-08-27 19:25:12,238 ][ ERROR ] org.connectbot.HostEditor
+
+[ 2012-08-27 19:25:17,807 ][ INFO ] Starting: Intent { cmp=org.connectbot/.SettingsActivity }
+Status: timeout
+Activity: org.connectbot/.HostEditor
+Complete
+
+
+[ 2012-08-27 19:26:24,683 ][ INFO ] :monkey: seed=0 count=1000
+:allowpackage: org.connectbot
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity org.connectbot.hostlist (from package org.connectbot)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 15.0%
+//   3: 25.0%
+//   4: 15.0%
+//   5: 2.0%
+//   6: 2.0%
+//   7: 1.0%
+//   8: 15.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // activityresuming(org.connectbot)
+:sending pointer action_down x=234.0 y=197.0
+:sending pointer action_move x=238.0 y=190.0
+:sending pointer action_move x=238.0 y=190.0
+:sending pointer action_up x=238.0 y=190.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=56.0 y=280.0
+:sending pointer action_move x=62.0 y=275.0
+:sending pointer action_move x=62.0 y=267.0
+:sending pointer action_move x=57.0 y=264.0
+:sending pointer action_move x=58.0 y=273.0
+:sending pointer action_move x=66.0 y=271.0
+:sending pointer action_move x=69.0 y=271.0
+:sending pointer action_up x=69.0 y=271.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_down x=28.0 y=490.0
+:sending pointer action_up x=28.0 y=490.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_down x=403.0 y=645.0
+:sending pointer action_move x=407.0 y=650.0
+:sending pointer action_move x=401.0 y=651.0
+:sending pointer action_move x=405.0 y=653.0
+:sending pointer action_move x=399.0 y=655.0
+:sending pointer action_move x=399.0 y=647.0
+:sending pointer action_move x=392.0 y=651.0
+:sending pointer action_move x=386.0 y=660.0
+:sending pointer action_move x=391.0 y=669.0
+:sending pointer action_move x=397.0 y=661.0
+:sending pointer action_up x=397.0 y=661.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_down x=98.0 y=752.0
+:sending pointer action_up x=98.0 y=752.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_down x=264.0 y=458.0
+:sending pointer action_up x=264.0 y=458.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=113.0 y=170.0
+:sending pointer action_move x=105.0 y=173.0
+:sending pointer action_move x=108.0 y=169.0
+:sending pointer action_move x=110.0 y=169.0
+:sending pointer action_move x=107.0 y=169.0
+:sending pointer action_move x=107.0 y=168.0
+:sending pointer action_move x=99.0 y=166.0
+:sending pointer action_move x=93.0 y=161.0
+:sending pointer action_move x=91.0 y=153.0
+:sending pointer action_move x=98.0 y=156.0
+:sending pointer action_up x=98.0 y=156.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+    //[calendar_time:2012-08-28 11:24:19.197  system_uptime:536183]
+    // sending event #100
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=196.0 y=463.0
+:sending pointer action_move x=195.0 y=463.0
+:sending pointer action_move x=201.0 y=463.0
+:sending pointer action_move x=210.0 y=456.0
+:sending pointer action_move x=219.0 y=456.0
+:sending pointer action_move x=227.0 y=454.0
+:sending pointer action_move x=228.0 y=448.0
+:sending pointer action_move x=236.0 y=454.0
+:sending pointer action_up x=236.0 y=454.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=107.0 y=579.0
+:sending pointer action_up x=107.0 y=579.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sendkey (action_down): 53    // keycode_y
+:sendkey (action_up): 53    // keycode_y
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sendkey (action_down): 70    // keycode_equals
+:sendkey (action_up): 70    // keycode_equals
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=304.0 y=685.0
+:sending pointer action_move x=306.0 y=694.0
+:sending pointer action_move x=312.0 y=686.0
+:sending pointer action_move x=317.0 y=677.0
+:sending pointer action_move x=314.0 y=681.0
+:sending pointer action_move x=320.0 y=672.0
+:sending pointer action_move x=317.0 y=674.0
+:sending pointer action_up x=317.0 y=674.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=0.0
+:sendkey (action_down): 94    // keycode_pictsymbols
+:sendkey (action_up): 94    // keycode_pictsymbols
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=1.0 y=1.0
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=102.0 y=574.0
+:sending pointer action_up x=102.0 y=574.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=106.0 y=130.0
+:sending pointer action_move x=110.0 y=136.0
+:sending pointer action_move x=112.0 y=142.0
+:sending pointer action_move x=108.0 y=136.0
+:sending pointer action_move x=102.0 y=127.0
+:sending pointer action_move x=101.0 y=127.0
+    //[calendar_time:2012-08-28 11:24:23.817  system_uptime:540798]
+    // sending event #200
+:sending pointer action_move x=106.0 y=129.0
+:sending pointer action_move x=115.0 y=120.0
+:sending pointer action_up x=115.0 y=120.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_down x=339.0 y=689.0
+:sending pointer action_up x=339.0 y=689.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=311.0 y=44.0
+:sending pointer action_up x=311.0 y=44.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=337.0 y=221.0
+:sending pointer action_up x=337.0 y=221.0
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://connectbot@192.168.254.230:22/#connectbot@bravo cmp=org.connectbot/.console } in package org.connectbot
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=3.0 y=-3.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 57    // keycode_alt_left
+:sendkey (action_up): 57    // keycode_alt_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sending pointer action_down x=89.0 y=22.0
+:sending pointer action_up x=89.0 y=22.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=757.0 y=23.0
+:sending pointer action_move x=759.0 y=18.0
+:sending pointer action_move x=766.0 y=9.0
+:sending pointer action_move x=775.0 y=2.0
+:sending pointer action_move x=769.0 y=-3.0
+:sending pointer action_move x=770.0 y=-2.0
+:sending pointer action_up x=770.0 y=-2.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 81    // keycode_plus
+:sendkey (action_up): 81    // keycode_plus
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=165.0 y=218.0
+:sending pointer action_move x=156.0 y=218.0
+:sending pointer action_up x=156.0 y=218.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sendkey (action_down): 79    // keycode_headsethook
+:sendkey (action_up): 79    // keycode_headsethook
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=80.0 y=200.0
+:sending pointer action_up x=80.0 y=200.0
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://connectbot@192.168.254.230:22/#connectbot@bravo cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+    //[calendar_time:2012-08-28 11:24:32.481  system_uptime:549460]
+    // sending event #300
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:24:32.684  system_uptime:549663]
+    // sending event #300
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=1.0
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=758.0 y=104.0
+:sending pointer action_up x=758.0 y=104.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 107    // keycode_button_thumbr
+:sendkey (action_up): 107    // keycode_button_thumbr
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_down x=380.0 y=479.0
+:sending pointer action_up x=380.0 y=479.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_down x=478.0 y=142.0
+:sending pointer action_up x=478.0 y=142.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_down x=417.0 y=316.0
+:sending pointer action_move x=425.0 y=321.0
+:sending pointer action_move x=421.0 y=326.0
+:sending pointer action_move x=413.0 y=327.0
+:sending pointer action_move x=420.0 y=319.0
+:sending pointer action_move x=429.0 y=311.0
+:sending pointer action_move x=424.0 y=311.0
+:sending pointer action_move x=416.0 y=317.0
+:sending pointer action_move x=418.0 y=313.0
+:sending pointer action_move x=412.0 y=306.0
+:sending pointer action_up x=412.0 y=306.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=22.0 y=404.0
+:sending pointer action_up x=22.0 y=404.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=499.0 y=228.0
+:sending pointer action_move x=493.0 y=237.0
+:sending pointer action_move x=491.0 y=239.0
+:sending pointer action_move x=498.0 y=231.0
+:sending pointer action_move x=503.0 y=237.0
+:sending pointer action_up x=503.0 y=237.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=331.0 y=222.0
+    //[calendar_time:2012-08-28 11:24:37.569  system_uptime:554550]
+    // sending event #400
+:sending pointer action_up x=331.0 y=222.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=584.0 y=48.0
+:sending pointer action_move x=575.0 y=43.0
+:sending pointer action_move x=577.0 y=43.0
+:sending pointer action_move x=568.0 y=38.0
+:sending pointer action_move x=568.0 y=39.0
+:sending pointer action_move x=576.0 y=33.0
+:sending pointer action_move x=575.0 y=28.0
+:sending pointer action_up x=575.0 y=28.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=1.0 y=-2.0
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=786.0 y=281.0
+:sending pointer action_up x=786.0 y=281.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=756.0 y=129.0
+:sending pointer action_move x=751.0 y=129.0
+:sending pointer action_move x=754.0 y=123.0
+:sending pointer action_move x=762.0 y=120.0
+:sending pointer action_move x=766.0 y=117.0
+:sending pointer action_move x=766.0 y=114.0
+:sending pointer action_up x=766.0 y=114.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=336.0 y=45.0
+:sending pointer action_up x=336.0 y=45.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=27.0 y=289.0
+:sending pointer action_up x=27.0 y=289.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=204.0 y=249.0
+:sending pointer action_move x=206.0 y=249.0
+:sending pointer action_move x=206.0 y=250.0
+:sending pointer action_move x=214.0 y=251.0
+:sending pointer action_move x=211.0 y=249.0
+:sending pointer action_move x=204.0 y=247.0
+:sending pointer action_move x=213.0 y=255.0
+:sending pointer action_move x=213.0 y=256.0
+:sending pointer action_move x=211.0 y=257.0
+:sending pointer action_move x=213.0 y=259.0
+:sending pointer action_up x=213.0 y=259.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 65    // keycode_envelope
+:sendkey (action_up): 65    // keycode_envelope
+sleeping for 200 milliseconds
+:sending pointer action_down x=286.0 y=290.0
+:sending pointer action_up x=286.0 y=290.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=231.0 y=14.0
+:sending pointer action_up x=231.0 y=14.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sendkey (action_down): 29    // keycode_a
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sending pointer action_down x=278.0 y=582.0
+:sending pointer action_up x=278.0 y=582.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=451.0 y=437.0
+:sending pointer action_up x=451.0 y=437.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=98.0 y=44.0
+:sending pointer action_up x=98.0 y=44.0
+    //[calendar_time:2012-08-28 11:24:45.282  system_uptime:562261]
+    // sending event #500
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:24:45.483  system_uptime:562462]
+    // sending event #500
+:sending pointer action_down x=472.0 y=768.0
+:sending pointer action_up x=472.0 y=768.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=103.0 y=92.0
+:sending pointer action_up x=103.0 y=92.0
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=216.0 y=252.0
+:sending pointer action_up x=216.0 y=252.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_down x=428.0 y=212.0
+:sending pointer action_up x=428.0 y=212.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=164.0 y=545.0
+:sending pointer action_move x=161.0 y=541.0
+:sending pointer action_move x=169.0 y=542.0
+:sending pointer action_move x=168.0 y=536.0
+:sending pointer action_move x=177.0 y=541.0
+:sending pointer action_move x=185.0 y=547.0
+:sending pointer action_move x=176.0 y=541.0
+:sending pointer action_move x=176.0 y=546.0
+:sending pointer action_move x=182.0 y=550.0
+:sending pointer action_move x=176.0 y=559.0
+:sending pointer action_up x=176.0 y=559.0
+    // rejecting start of intent { act=android.intent.action.view dat=market://search?q=connectbot cmp=com.android.vending/com.google.android.finsky.activities.mainactivity } in package com.android.vending
+sleeping for 200 milliseconds
+:sending pointer action_down x=367.0 y=799.0
+:sending pointer action_up x=367.0 y=799.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 85    // keycode_playpause
+:sendkey (action_up): 85    // keycode_playpause
+sleeping for 200 milliseconds
+:sending pointer action_down x=57.0 y=269.0
+:sending pointer action_up x=57.0 y=269.0
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://connectbot@192.168.254.230:22/#connectbot@bravo cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 17    // keycode_star
+:sendkey (action_up): 17    // keycode_star
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=768.0 y=32.0
+:sending pointer action_up x=768.0 y=32.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+    // activityresuming(org.connectbot)
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=3.0
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://backup@example.net:22/#backup@example.net cmp=org.connectbot/.console } in package org.connectbot
+:sending pointer action_down x=269.0 y=472.0
+:sending pointer action_up x=269.0 y=472.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=326.0 y=249.0
+:sending pointer action_up x=326.0 y=249.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+    //[calendar_time:2012-08-28 11:24:54.197  system_uptime:571188]
+    // sending event #600
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=227.0 y=82.0
+:sending pointer action_up x=227.0 y=82.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-3.0 y=4.0
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 60    // keycode_shift_right
+:sendkey (action_up): 60    // keycode_shift_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 12    // keycode_5
+:sendkey (action_up): 12    // keycode_5
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 69    // keycode_minus
+:sendkey (action_up): 69    // keycode_minus
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=667.0 y=231.0
+:sending pointer action_move x=661.0 y=231.0
+:sending pointer action_move x=665.0 y=238.0
+:sending pointer action_move x=662.0 y=230.0
+:sending pointer action_move x=668.0 y=237.0
+:sending pointer action_move x=659.0 y=229.0
+:sending pointer action_move x=665.0 y=238.0
+:sending pointer action_move x=671.0 y=236.0
+:sending pointer action_move x=670.0 y=236.0
+:sending pointer action_move x=664.0 y=245.0
+:sending pointer action_up x=664.0 y=245.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=4.0 y=-1.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+    //[calendar_time:2012-08-28 11:24:59.454  system_uptime:576437]
+    // sending event #700
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:24:59.660  system_uptime:576640]
+    // sending event #700
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=4.0
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sendkey (action_down): 95    // keycode_switch_charset
+:sendkey (action_up): 95    // keycode_switch_charset
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=-3.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 83    // keycode_notification
+:sendkey (action_up): 83    // keycode_notification
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=211.0 y=287.0
+:sending pointer action_up x=211.0 y=287.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 56    // keycode_period
+:sendkey (action_up): 56    // keycode_period
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=781.0 y=17.0
+:sending pointer action_move x=778.0 y=8.0
+:sending pointer action_up x=778.0 y=8.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=256.0 y=304.0
+:sending pointer action_up x=256.0 y=304.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 88    // keycode_previoussong
+:sendkey (action_up): 88    // keycode_previoussong
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 76    // keycode_slash
+:sendkey (action_up): 76    // keycode_slash
+sleeping for 200 milliseconds
+:sendkey (action_down): 52    // keycode_x
+:sendkey (action_up): 52    // keycode_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 84    // keycode_search
+    //[calendar_time:2012-08-28 11:25:07.093  system_uptime:584073]
+    // sending event #800
+:sendkey (action_up): 84    // keycode_search
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_down x=151.0 y=375.0
+:sending pointer action_move x=147.0 y=375.0
+:sending pointer action_move x=138.0 y=374.0
+:sending pointer action_move x=138.0 y=374.0
+:sending pointer action_up x=138.0 y=374.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-5.0 y=0.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 15    // keycode_8
+:sendkey (action_up): 15    // keycode_8
+sleeping for 200 milliseconds
+:sendkey (action_down): 92    // keycode_page_up
+:sendkey (action_up): 92    // keycode_page_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=307.0 y=312.0
+:sending pointer action_move x=310.0 y=321.0
+:sending pointer action_move x=304.0 y=323.0
+:sending pointer action_move x=306.0 y=315.0
+:sending pointer action_move x=299.0 y=317.0
+:sending pointer action_move x=297.0 y=322.0
+:sending pointer action_up x=297.0 y=322.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 80    // keycode_focus
+:sendkey (action_up): 80    // keycode_focus
+sleeping for 200 milliseconds
+:sending pointer action_down x=118.0 y=67.0
+:sending pointer action_move x=114.0 y=65.0
+:sending pointer action_move x=114.0 y=74.0
+:sending pointer action_move x=118.0 y=71.0
+:sending pointer action_move x=123.0 y=72.0
+:sending pointer action_move x=131.0 y=78.0
+:sending pointer action_move x=135.0 y=73.0
+:sending pointer action_move x=127.0 y=81.0
+:sending pointer action_up x=127.0 y=81.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=252.0 y=242.0
+:sending pointer action_move x=253.0 y=242.0
+:sending pointer action_move x=255.0 y=245.0
+:sending pointer action_move x=255.0 y=248.0
+:sending pointer action_move x=262.0 y=255.0
+:sending pointer action_move x=270.0 y=257.0
+:sending pointer action_move x=269.0 y=256.0
+:sending pointer action_move x=265.0 y=261.0
+:sending pointer action_move x=256.0 y=264.0
+:sending pointer action_move x=249.0 y=271.0
+:sending pointer action_up x=249.0 y=271.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=774.0 y=16.0
+:sending pointer action_up x=774.0 y=16.0
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 106    // keycode_button_thumbl
+:sendkey (action_up): 106    // keycode_button_thumbl
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 7    // keycode_0
+:sendkey (action_up): 7    // keycode_0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://backup@example.net:22/#backup@example.net cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_down x=55.0 y=389.0
+:sending pointer action_move x=51.0 y=396.0
+    //[calendar_time:2012-08-28 11:25:13.246  system_uptime:590225]
+    // sending event #900
+:sending pointer action_up x=51.0 y=396.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=83.0 y=322.0
+:sending pointer action_up x=83.0 y=322.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=109.0 y=97.0
+:sending pointer action_up x=109.0 y=97.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+sleeping for 200 milliseconds
+:sending pointer action_down x=345.0 y=239.0
+:sending pointer action_move x=349.0 y=230.0
+:sending pointer action_move x=357.0 y=228.0
+:sending pointer action_move x=357.0 y=235.0
+:sending pointer action_move x=349.0 y=240.0
+:sending pointer action_up x=349.0 y=240.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 71    // keycode_left_bracket
+:sendkey (action_up): 71    // keycode_left_bracket
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=0.0 y=-5.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=358.0 y=32.0
+:sending pointer action_move x=362.0 y=27.0
+:sending pointer action_move x=356.0 y=28.0
+:sending pointer action_move x=349.0 y=23.0
+:sending pointer action_move x=341.0 y=15.0
+:sending pointer action_move x=341.0 y=15.0
+:sending pointer action_move x=341.0 y=17.0
+:sending pointer action_move x=333.0 y=15.0
+:sending pointer action_move x=333.0 y=8.0
+:sending pointer action_move x=341.0 y=14.0
+:sending pointer action_up x=341.0 y=14.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 67    // keycode_del
+:sendkey (action_up): 67    // keycode_del
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 97    // keycode_button_b
+:sendkey (action_up): 97    // keycode_button_b
+events injected: 1000
+:dropped: keys=3 pointers=20 trackballs=0 flips=0
+## network stats: elapsed time=66155ms (0ms mobile, 66155ms wifi, 0ms not connected)
+// monkey finished
+
+
+[ 2012-08-27 19:26:26,402 ][ INFO ] Starting: Intent { cmp=org.connectbot/.WizardActivity }
+Status: ok
+Activity: org.connectbot/.WizardActivity
+ThisTime: 251
+TotalTime: 251
+Complete
+
+
+[ 2012-08-27 19:27:06,018 ][ ERROR ] :monkey: seed=0 count=1000
+:allowpackage: org.connectbot
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity org.connectbot.hostlist (from package org.connectbot)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 15.0%
+//   3: 25.0%
+//   4: 15.0%
+//   5: 2.0%
+//   6: 2.0%
+//   7: 1.0%
+//   8: 15.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://backup@example.net:22/#backup@example.net cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=554.0 y=357.0
+:sending pointer action_move x=558.0 y=350.0
+:sending pointer action_move x=558.0 y=350.0
+:sending pointer action_up x=558.0 y=350.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=696.0 y=280.0
+:sending pointer action_move x=702.0 y=275.0
+:sending pointer action_move x=702.0 y=267.0
+:sending pointer action_move x=697.0 y=264.0
+:sending pointer action_move x=698.0 y=273.0
+:sending pointer action_move x=706.0 y=271.0
+:sending pointer action_move x=709.0 y=271.0
+:sending pointer action_up x=709.0 y=271.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_down x=348.0 y=10.0
+:sending pointer action_up x=348.0 y=10.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_down x=563.0 y=165.0
+:sending pointer action_move x=567.0 y=170.0
+:sending pointer action_move x=561.0 y=171.0
+:sending pointer action_move x=565.0 y=173.0
+:sending pointer action_move x=559.0 y=175.0
+:sending pointer action_move x=559.0 y=167.0
+:sending pointer action_move x=552.0 y=171.0
+:sending pointer action_move x=546.0 y=180.0
+:sending pointer action_move x=551.0 y=189.0
+:sending pointer action_move x=557.0 y=181.0
+:sending pointer action_up x=557.0 y=181.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_down x=98.0 y=112.0
+:sending pointer action_up x=98.0 y=112.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_down x=744.0 y=458.0
+:sending pointer action_up x=744.0 y=458.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=593.0 y=170.0
+:sending pointer action_move x=585.0 y=173.0
+:sending pointer action_move x=588.0 y=169.0
+:sending pointer action_move x=590.0 y=169.0
+:sending pointer action_move x=587.0 y=169.0
+:sending pointer action_move x=587.0 y=168.0
+:sending pointer action_move x=579.0 y=166.0
+:sending pointer action_move x=573.0 y=161.0
+:sending pointer action_move x=571.0 y=153.0
+:sending pointer action_move x=578.0 y=156.0
+:sending pointer action_up x=578.0 y=156.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+    //[calendar_time:2012-08-28 11:25:28.079  system_uptime:605063]
+    // sending event #100
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=356.0 y=303.0
+:sending pointer action_move x=355.0 y=303.0
+:sending pointer action_move x=361.0 y=303.0
+:sending pointer action_move x=370.0 y=296.0
+:sending pointer action_move x=379.0 y=296.0
+:sending pointer action_move x=387.0 y=294.0
+:sending pointer action_move x=388.0 y=288.0
+:sending pointer action_move x=396.0 y=294.0
+:sending pointer action_up x=396.0 y=294.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=587.0 y=259.0
+:sending pointer action_up x=587.0 y=259.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sendkey (action_down): 53    // keycode_y
+:sendkey (action_up): 53    // keycode_y
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sendkey (action_down): 70    // keycode_equals
+:sendkey (action_up): 70    // keycode_equals
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+    // activityresuming(org.connectbot)
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=304.0 y=685.0
+:sending pointer action_move x=306.0 y=694.0
+:sending pointer action_move x=312.0 y=686.0
+:sending pointer action_move x=317.0 y=677.0
+:sending pointer action_move x=314.0 y=681.0
+:sending pointer action_move x=320.0 y=672.0
+:sending pointer action_move x=317.0 y=674.0
+:sending pointer action_up x=317.0 y=674.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=0.0
+:sendkey (action_down): 94    // keycode_pictsymbols
+:sendkey (action_up): 94    // keycode_pictsymbols
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=1.0 y=1.0
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=102.0 y=574.0
+:sending pointer action_up x=102.0 y=574.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=106.0 y=130.0
+:sending pointer action_move x=110.0 y=136.0
+:sending pointer action_move x=112.0 y=142.0
+:sending pointer action_move x=108.0 y=136.0
+:sending pointer action_move x=102.0 y=127.0
+:sending pointer action_move x=101.0 y=127.0
+    //[calendar_time:2012-08-28 11:25:32.826  system_uptime:609806]
+    // sending event #200
+:sending pointer action_move x=106.0 y=129.0
+:sending pointer action_move x=115.0 y=120.0
+:sending pointer action_up x=115.0 y=120.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:sending pointer action_down x=339.0 y=689.0
+:sending pointer action_up x=339.0 y=689.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=311.0 y=44.0
+:sending pointer action_up x=311.0 y=44.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=337.0 y=221.0
+:sending pointer action_up x=337.0 y=221.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=3.0 y=-3.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 57    // keycode_alt_left
+:sendkey (action_up): 57    // keycode_alt_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sending pointer action_down x=249.0 y=342.0
+:sending pointer action_up x=249.0 y=342.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=437.0 y=183.0
+:sending pointer action_move x=439.0 y=178.0
+:sending pointer action_move x=446.0 y=169.0
+:sending pointer action_move x=455.0 y=162.0
+:sending pointer action_move x=449.0 y=157.0
+:sending pointer action_move x=450.0 y=158.0
+:sending pointer action_up x=450.0 y=158.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 81    // keycode_plus
+:sendkey (action_up): 81    // keycode_plus
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // rejecting start of intent { act=android.intent.action.view dat=market://search?q=connectbot cmp=com.android.vending/com.google.android.finsky.activities.mainactivity } in package com.android.vending
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=5.0 y=58.0
+:sending pointer action_move x=-4.0 y=58.0
+:sending pointer action_up x=-4.0 y=58.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sendkey (action_down): 79    // keycode_headsethook
+:sendkey (action_up): 79    // keycode_headsethook
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=android/com.android.internal.app.resolveractivity } in package android
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=80.0 y=200.0
+:sending pointer action_up x=80.0 y=200.0
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://connectbot@192.168.254.230:22/#connectbot@bravo cmp=org.connectbot/.console } in package org.connectbot
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+    //[calendar_time:2012-08-28 11:25:40.692  system_uptime:617671]
+    // sending event #300
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:25:40.893  system_uptime:617877]
+    // sending event #300
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=1.0
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=758.0 y=104.0
+:sending pointer action_up x=758.0 y=104.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 107    // keycode_button_thumbr
+:sendkey (action_up): 107    // keycode_button_thumbr
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_down x=380.0 y=479.0
+:sending pointer action_up x=380.0 y=479.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_down x=478.0 y=142.0
+:sending pointer action_up x=478.0 y=142.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_down x=417.0 y=316.0
+:sending pointer action_move x=425.0 y=321.0
+:sending pointer action_move x=421.0 y=326.0
+:sending pointer action_move x=413.0 y=327.0
+:sending pointer action_move x=420.0 y=319.0
+:sending pointer action_move x=429.0 y=311.0
+:sending pointer action_move x=424.0 y=311.0
+:sending pointer action_move x=416.0 y=317.0
+:sending pointer action_move x=418.0 y=313.0
+:sending pointer action_move x=412.0 y=306.0
+:sending pointer action_up x=412.0 y=306.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=22.0 y=404.0
+:sending pointer action_up x=22.0 y=404.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=499.0 y=228.0
+:sending pointer action_move x=493.0 y=237.0
+:sending pointer action_move x=491.0 y=239.0
+:sending pointer action_move x=498.0 y=231.0
+:sending pointer action_move x=503.0 y=237.0
+:sending pointer action_up x=503.0 y=237.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sendkey (action_down): 5    // keycode_call
+:sendkey (action_up): 5    // keycode_call
+    // rejecting start of intent { act=android.intent.action.call_button cmp=com.android.contacts/.dialtactsactivity } in package com.android.contacts
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=331.0 y=222.0
+    //[calendar_time:2012-08-28 11:25:45.906  system_uptime:622886]
+    // sending event #400
+:sending pointer action_up x=331.0 y=222.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=584.0 y=48.0
+:sending pointer action_move x=575.0 y=43.0
+:sending pointer action_move x=577.0 y=43.0
+:sending pointer action_move x=568.0 y=38.0
+:sending pointer action_move x=568.0 y=39.0
+:sending pointer action_move x=576.0 y=33.0
+:sending pointer action_move x=575.0 y=28.0
+:sending pointer action_up x=575.0 y=28.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=1.0 y=-2.0
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=786.0 y=281.0
+:sending pointer action_up x=786.0 y=281.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=756.0 y=129.0
+:sending pointer action_move x=751.0 y=129.0
+:sending pointer action_move x=754.0 y=123.0
+:sending pointer action_move x=762.0 y=120.0
+:sending pointer action_move x=766.0 y=117.0
+:sending pointer action_move x=766.0 y=114.0
+:sending pointer action_up x=766.0 y=114.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=336.0 y=45.0
+:sending pointer action_up x=336.0 y=45.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=27.0 y=289.0
+:sending pointer action_up x=27.0 y=289.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=204.0 y=249.0
+:sending pointer action_move x=206.0 y=249.0
+:sending pointer action_move x=206.0 y=250.0
+:sending pointer action_move x=214.0 y=251.0
+:sending pointer action_move x=211.0 y=249.0
+:sending pointer action_move x=204.0 y=247.0
+:sending pointer action_move x=213.0 y=255.0
+:sending pointer action_move x=213.0 y=256.0
+:sending pointer action_move x=211.0 y=257.0
+:sending pointer action_move x=213.0 y=259.0
+:sending pointer action_up x=213.0 y=259.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 65    // keycode_envelope
+:sendkey (action_up): 65    // keycode_envelope
+sleeping for 200 milliseconds
+:sending pointer action_down x=286.0 y=290.0
+:sending pointer action_up x=286.0 y=290.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=231.0 y=14.0
+:sending pointer action_up x=231.0 y=14.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sendkey (action_down): 29    // keycode_a
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sending pointer action_down x=278.0 y=582.0
+:sending pointer action_up x=278.0 y=582.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=451.0 y=437.0
+:sending pointer action_up x=451.0 y=437.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=98.0 y=44.0
+:sending pointer action_up x=98.0 y=44.0
+    //[calendar_time:2012-08-28 11:25:53.596  system_uptime:630576]
+    // sending event #500
+sleeping for 200 milliseconds
+    //[calendar_time:2012-08-28 11:25:53.799  system_uptime:630779]
+    // sending event #500
+:sending pointer action_down x=472.0 y=768.0
+:sending pointer action_up x=472.0 y=768.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=103.0 y=92.0
+:sending pointer action_up x=103.0 y=92.0
+sleeping for 200 milliseconds
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=216.0 y=252.0
+:sending pointer action_up x=216.0 y=252.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_down x=428.0 y=212.0
+:sending pointer action_up x=428.0 y=212.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=164.0 y=545.0
+:sending pointer action_move x=161.0 y=541.0
+:sending pointer action_move x=169.0 y=542.0
+:sending pointer action_move x=168.0 y=536.0
+:sending pointer action_move x=177.0 y=541.0
+:sending pointer action_move x=185.0 y=547.0
+:sending pointer action_move x=176.0 y=541.0
+:sending pointer action_move x=176.0 y=546.0
+:sending pointer action_move x=182.0 y=550.0
+:sending pointer action_move x=176.0 y=559.0
+:sending pointer action_up x=176.0 y=559.0
+    // rejecting start of intent { act=android.intent.action.view dat=market://search?q=connectbot cmp=com.android.vending/com.google.android.finsky.activities.mainactivity } in package com.android.vending
+sleeping for 200 milliseconds
+:sending pointer action_down x=367.0 y=799.0
+:sending pointer action_up x=367.0 y=799.0
+    // allowing start of intent { cmp=org.connectbot/.wizardactivity } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 85    // keycode_playpause
+:sendkey (action_up): 85    // keycode_playpause
+sleeping for 200 milliseconds
+:sending pointer action_down x=57.0 y=269.0
+:sending pointer action_up x=57.0 y=269.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 17    // keycode_star
+:sendkey (action_up): 17    // keycode_star
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=128.0 y=32.0
+:sending pointer action_up x=128.0 y=32.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+    // activityresuming(org.connectbot)
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=3.0
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=org.connectbot/.hostlist;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=org.connectbot/.hostlist } in package org.connectbot
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+    // allowing start of intent { act=android.intent.action.view dat=ssh://backup@example.net:22/#backup@example.net cmp=org.connectbot/.console } in package org.connectbot
+:sending pointer action_down x=269.0 y=472.0
+// crash: org.connectbot (pid 1067)
+// short msg: android.view.windowmanager$badtokenexception
+// long msg: android.view.windowmanager$badtokenexception: unable to add window -- token android.os.binderproxy@407b9850 is not valid; is your activity running?
+// build label: htc_wwe/htc_bravo/bravo:2.3.3/gri40/96875.1:user/release-keys
+// build changelist: eng.vdupre.20111107.062148
+// build time: 0
+// android.view.windowmanager$badtokenexception: unable to add window -- token android.os.binderproxy@407b9850 is not valid; is your activity running?
+// 	at android.view.viewroot.setview(viewroot.java:528)
+// 	at android.view.windowmanagerimpl.addview(windowmanagerimpl.java:177)
+// 	at android.view.windowmanagerimpl.addview(windowmanagerimpl.java:91)
+// 	at android.view.window$localwindowmanager.addview(window.java:465)
+// 	at android.app.dialog.show(dialog.java:241)
+// 	at org.connectbot.hostlist$1.handlemessage(hostlist.java:87)
+// 	at android.os.handler.dispatchmessage(handler.java:99)
+// 	at android.os.looper.loop(looper.java:130)
+// 	at android.app.activitythread.main(activitythread.java:3835)
+// 	at java.lang.reflect.method.invokenative(native method)
+// 	at java.lang.reflect.method.invoke(method.java:507)
+// 	at com.android.internal.os.zygoteinit$methodandargscaller.run(zygoteinit.java:858)
+// 	at com.android.internal.os.zygoteinit.main(zygoteinit.java:616)
+// 	at dalvik.system.nativestart.main(native method)
+// 
+** monkey aborted due to error.
+events injected: 586
+:dropped: keys=0 pointers=0 trackballs=0 flips=0
+## network stats: elapsed time=38835ms (0ms mobile, 38835ms wifi, 0ms not connected)
+** system appears to have crashed at event 586 of 1000 using seed 0
+
+
+[ 2012-08-27 19:27:12,023 ][ ERROR ] Failed: Activity Not response for call.. and then we killed process pid:4905
+
+[ 2012-08-27 19:27:12,023 ][ ERROR ] org.connectbotorg.connectbot.Console
+
+[ 2012-08-27 19:27:13,311 ][ INFO ] Success
+
+
+[ 2012-08-27 19:27:21,416 ][ INFO ] ===================|| summary ||===================
+
+[ 2012-08-27 19:27:21,417 ][ INFO ] Testing Duration Time: 216.237496
+
+[ 2012-08-27 19:27:21,417 ][ INFO ] Failed Activity: .HostEditororg.connectbot.Console
+
+[ 2012-08-27 19:27:21,417 ][ INFO ] moneky error: 1
+
+[ 2012-08-27 19:27:21,417 ][ INFO ] No overlap moneky error: 1
+
+[ 2012-08-27 19:27:21,566 ][ INFO ] CPU Average Usage :52.000000
+
+

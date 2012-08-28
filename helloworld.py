@@ -6,6 +6,8 @@ import os
 from subprocess import check_output, Popen, PIPE
 import logging, time
 import TestingLogger
+from SoloInterface import SoloInterface
+from TestingToolkit import PerformanceCounter
 
 run = lambda cmd: check_output(cmd, shell=True, executable='/bin/bash')
 
@@ -35,7 +37,6 @@ if __name__ == '__main__':
     m_logger = TestingLogger.InitLog("./TestingResult/PowerTutor2.log", logging.getLogger("PowerTutor2"))
     msg = "hello log msg !!!"
     m_logger.info(msg)
- 
     endtime = time.time()
     print 'time : %f'%(endtime - startime)
     
@@ -44,4 +45,20 @@ if __name__ == '__main__':
 #    print run('adb shell monkey --kill-process-after-error  --throttle 500 -p edu.umich.PowerTutor -v -v 10')
 #    check_output('adb shell monkey --kill-process-after-error  --throttle 500 -p edu.umich.PowerTutor -v -v 10', shell=True, executable='/bin/bash')
 
+
+    solo = SoloInterface(device_name='12B9WE630015')
+#    solo.setUp()
+#   solo.clickViewById("counter_start_btn")
+#    solo.event_controller.press('dpad_down')
+#    solo.event_controller.press('enter')     
+    apk='test'
+    perforCounter = PerformanceCounter.PerformanceCounter(solo, m_logger, apk)
+    perforCounter.startPerforCounter()
+    time.sleep(2)
+    perforCounter.stopPerforCounter()
+    print perforCounter.loadPerforResult()
+    solo.close()
+    
+    
+    
     

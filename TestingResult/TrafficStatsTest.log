@@ -1,0 +1,188 @@
+[ 2012-08-27 05:04:02,235 ][ INFO ] Reversing Activity List
+
+[ 2012-08-27 05:04:02,235 ][ INFO ] .TrafficStatsTest
+
+[ 2012-08-27 05:04:02,235 ][ INFO ] .ApplicationList
+
+[ 2012-08-27 05:04:02,235 ][ INFO ] ======== complete parsing xml ===========
+
+[ 2012-08-27 05:04:04,416 ][ INFO ] 408 KB/s (20037 bytes in 0.047s)
+	pkg: /data/local/tmp/TrafficStatsTest.apk
+Success
+
+
+[ 2012-08-27 05:04:07,108 ][ INFO ] 408 KB/s (20037 bytes in 0.047s)
+	pkg: /data/local/tmp/TrafficStatsTest.apk
+Success
+
+
+[ 2012-08-27 05:04:09,176 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.TrafficStatsTest }
+Status: ok
+Activity: com.trafficStats.test/.TrafficStatsTest
+ThisTime: 541
+TotalTime: 541
+Complete
+
+
+[ 2012-08-27 05:04:11,619 ][ ERROR ] :monkey: seed=0 count=1000
+:allowpackage: com.trafficstats.test
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity com.trafficstats.test.trafficstatstest (from package com.trafficstats.test)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 15.0%
+//   3: 25.0%
+//   4: 15.0%
+//   5: 2.0%
+//   6: 2.0%
+//   7: 1.0%
+//   8: 15.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=com.trafficstats.test/.trafficstatstest;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=com.trafficstats.test/.trafficstatstest } in package com.trafficstats.test
+sleeping for 500 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 500 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 500 milliseconds
+// crash: com.trafficstats.test (pid 18284)
+// short msg: java.lang.numberformatexception
+// long msg: java.lang.numberformatexception: unable to parse '' as integer
+// build label: htc_wwe/htc_bravo/bravo:2.3.3/gri40/96875.1:user/release-keys
+// build changelist: eng.vdupre.20111107.062148
+// build time: 0
+// java.lang.numberformatexception: unable to parse '' as integer
+// 	at java.lang.integer.parseint(integer.java:362)
+// 	at java.lang.integer.parseint(integer.java:332)
+// 	at com.trafficstats.test.trafficstatstest$3.onclick(trafficstatstest.java:100)
+// 	at android.view.view.performclick(view.java:2501)
+// 	at android.view.view.onkeyup(view.java:4274)
+// 	at android.widget.textview.onkeyup(textview.java:4521)
+// 	at android.view.keyevent.dispatch(keyevent.java:1350)
+// 	at android.view.view.dispatchkeyevent(view.java:3871)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at com.android.internal.policy.impl.phonewindow$decorview.superdispatchkeyevent(phonewindow.java:1733)
+// 	at com.android.internal.policy.impl.phonewindow.superdispatchkeyevent(phonewindow.java:1148)
+// 	at android.app.activity.dispatchkeyevent(activity.java:2073)
+// 	at com.android.internal.policy.impl.phonewindow$decorview.dispatchkeyevent(phonewindow.java:1709)
+// 	at android.view.viewroot.deliverkeyeventtoviewhierarchy(viewroot.java:2566)
+// 	at android.view.viewroot.handlefinishedevent(viewroot.java:2541)
+// 	at android.view.viewroot.handlemessage(viewroot.java:1873)
+// 	at android.os.handler.dispatchmessage(handler.java:99)
+// 	at android.os.looper.loop(looper.java:130)
+// 	at android.app.activitythread.main(activitythread.java:3835)
+// 	at java.lang.reflect.method.invokenative(native method)
+// 	at java.lang.reflect.method.invoke(method.java:507)
+// 	at com.android.internal.os.zygoteinit$methodandargscaller.run(zygoteinit.java:858)
+// 	at com.android.internal.os.zygoteinit.main(zygoteinit.java:616)
+// 	at dalvik.system.nativestart.main(native method)
+// 
+** monkey aborted due to error.
+events injected: 5
+:dropped: keys=0 pointers=0 trackballs=0 flips=0
+## network stats: elapsed time=1768ms (0ms mobile, 1768ms wifi, 0ms not connected)
+** system appears to have crashed at event 5 of 1000 using seed 0
+
+
+[ 2012-08-27 05:04:13,478 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.ApplicationList }
+Status: ok
+Activity: com.trafficStats.test/.ApplicationList
+ThisTime: 383
+TotalTime: 383
+Complete
+
+
+[ 2012-08-27 05:04:15,919 ][ ERROR ] :monkey: seed=0 count=1000
+:allowpackage: com.trafficstats.test
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity com.trafficstats.test.trafficstatstest (from package com.trafficstats.test)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 15.0%
+//   1: 10.0%
+//   2: 15.0%
+//   3: 25.0%
+//   4: 15.0%
+//   5: 2.0%
+//   6: 2.0%
+//   7: 1.0%
+//   8: 15.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=com.trafficstats.test/.trafficstatstest;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=com.trafficstats.test/.trafficstatstest } in package com.trafficstats.test
+sleeping for 500 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 500 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 500 milliseconds
+// crash: com.trafficstats.test (pid 18302)
+// short msg: java.lang.numberformatexception
+// long msg: java.lang.numberformatexception: unable to parse '' as integer
+// build label: htc_wwe/htc_bravo/bravo:2.3.3/gri40/96875.1:user/release-keys
+// build changelist: eng.vdupre.20111107.062148
+// build time: 0
+// java.lang.numberformatexception: unable to parse '' as integer
+// 	at java.lang.integer.parseint(integer.java:362)
+// 	at java.lang.integer.parseint(integer.java:332)
+// 	at com.trafficstats.test.trafficstatstest$3.onclick(trafficstatstest.java:100)
+// 	at android.view.view.performclick(view.java:2501)
+// 	at android.view.view.onkeyup(view.java:4274)
+// 	at android.widget.textview.onkeyup(textview.java:4521)
+// 	at android.view.keyevent.dispatch(keyevent.java:1350)
+// 	at android.view.view.dispatchkeyevent(view.java:3871)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at android.view.viewgroup.dispatchkeyevent(viewgroup.java:789)
+// 	at com.android.internal.policy.impl.phonewindow$decorview.superdispatchkeyevent(phonewindow.java:1733)
+// 	at com.android.internal.policy.impl.phonewindow.superdispatchkeyevent(phonewindow.java:1148)
+// 	at android.app.activity.dispatchkeyevent(activity.java:2073)
+// 	at com.android.internal.policy.impl.phonewindow$decorview.dispatchkeyevent(phonewindow.java:1709)
+// 	at android.view.viewroot.deliverkeyeventtoviewhierarchy(viewroot.java:2566)
+// 	at android.view.viewroot.handlefinishedevent(viewroot.java:2541)
+// 	at android.view.viewroot.handlemessage(viewroot.java:1873)
+// 	at android.os.handler.dispatchmessage(handler.java:99)
+// 	at android.os.looper.loop(looper.java:130)
+// 	at android.app.activitythread.main(activitythread.java:3835)
+// 	at java.lang.reflect.method.invokenative(native method)
+// 	at java.lang.reflect.method.invoke(method.java:507)
+// 	at com.android.internal.os.zygoteinit$methodandargscaller.run(zygoteinit.java:858)
+// 	at com.android.internal.os.zygoteinit.main(zygoteinit.java:616)
+// 	at dalvik.system.nativestart.main(native method)
+// 
+** monkey aborted due to error.
+events injected: 5
+:dropped: keys=0 pointers=0 trackballs=0 flips=0
+## network stats: elapsed time=1760ms (0ms mobile, 1760ms wifi, 0ms not connected)
+** system appears to have crashed at event 5 of 1000 using seed 0
+
+
+[ 2012-08-27 05:04:17,512 ][ INFO ] Success
+
+
+[ 2012-08-27 05:04:25,549 ][ INFO ] ===================|| summary ||===================
+
+[ 2012-08-27 05:04:25,549 ][ INFO ] Testing Duration Time: 22.343941
+
+[ 2012-08-27 05:04:25,549 ][ INFO ] Failed Activity: 
+
+[ 2012-08-27 05:04:25,549 ][ INFO ] moneky error: 2
+
+[ 2012-08-27 05:04:25,549 ][ INFO ] No overlap moneky error: 1
+
+[ 2012-08-27 05:04:25,699 ][ INFO ] CPU Average Usage :63.000000
+
+

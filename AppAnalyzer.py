@@ -18,6 +18,7 @@ import sys
 from ApkAnalyzer import ManifestHandler
 from TestingCodeForm import StaticTestingForm
 from SoloInterface import SoloInterface
+from TestingToolkit import PerformanceCounter
 
 ################################################################
 
@@ -50,7 +51,7 @@ class ApkTest:
         #오류를 기록해줄 로거를 생성 한다. 
         #self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
         #HTC Desire device_name="12B9WE630015"
-        self.solo = SoloInterface()
+        self.solo = SoloInterface(device_name='12B9WE630015')
 #        self.solo.setUp()
         
     def init(self):
@@ -62,11 +63,25 @@ class ApkTest:
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         #서머리를 위해서 사용하는 변수들의 정의
         self.errorReport = {'activity':'','monkey':[0,0]}
-        self.startTime = time.time()
         self.errorList = [' ']
+        self.perforResult = {'cpu':0.0,'wifi':0.0}
+        self.startTime = time.time()
+        self.InitPerformnaceCounter()
+    
+    def finished(self):
+        self.solo.close()
+          
     def loggingInit(self):
-        self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk), logging.getLogger("%s"%(self.apk)))
+        self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk).split('.')[0], logging.getLogger("%s"%(self.apk)))
         
+    def InitPerformnaceCounter(self):
+        self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.m_logger, self.apk.split('.')[0])
+        self.perforCounter.startPerforCounter()
+    
+    def FnishedPerforCounter(self):
+        self.perforCounter.stopPerforCounter()
+        self.perforResult['cpu'] = self.perforCounter.loadPerforResult()
+    
     def reverseApk(self):
         try:
             run('./apktool d -f ./apkRepo/%s ./ReverseApkRepo/%s' % (self.apk, (self.apk).split('.')[0]))
@@ -106,7 +121,6 @@ class ApkTest:
         run('monkeyrunner %s.py'% (self.apk))    
                           
     def runTests(self): 
-     
         self.init()
         #monkeyrunner 테스팅 코드를 만드는 부분
         self.reverseApk()   
@@ -121,6 +135,8 @@ class ApkTest:
         #self.testStress()
         self.testUninstall()
         self.summary()
+        self.finished()
+        
     def getApkInfo(self):
         fmt = lambda key: dict((i.split('=')[0], i.split('=')[1].strip("'"))   for i in key.split()  if i.find('=') != -1)
         try:
@@ -170,7 +186,7 @@ class ApkTest:
                 self.m_logger.error(self.result['Activity'][1])
                 self.m_logger.error(self.pkgName+activity)
                 #실패한 activity에 대해서 기록을 해준다. 
-                self.errorReport['activity'] += activity 
+                self.errorReport['activity'] += ' '+activity 
                                         
 #           self.solo.event_controller.press('home')            
 #           self.summary()
@@ -178,7 +194,7 @@ class ApkTest:
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 500 -p %s -v -v 1000' %( self.pkgName)).lower()
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 200 -p %s -v -v 1000' %( self.pkgName)).lower()
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         print self.result['Stress'][1]
@@ -221,13 +237,26 @@ class ApkTest:
                 continue
 
     def summary(self):
+        #테스팅 종료 시간이다.
         self.EndTime = time.time()
+        #성능 계측기를 정지 시킨다. 
+        self.perforCounter.stopPerforCounter()
+        
         #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
         print '===================|| summary ||==================='
         print 'Testing Duration Time: %f'%(self.EndTime-self.startTime)
         print 'Failed Activity: %s'%(self.errorReport['activity'])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
         print 'No overlap moneky error: %d'%(self.errorReport['monkey'][1])
+        print self.perforCounter.loadPerforResult()
+        
+        #마지막으로 로그에 기록을 해준다.
+        self.m_logger.info('===================|| summary ||===================')
+        self.m_logger.info('Testing Duration Time: %f'%(self.EndTime-self.startTime))
+        self.m_logger.info('Failed Activity: %s'%(self.errorReport['activity']))
+        self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
+        self.m_logger.info('No overlap moneky error: %d'%(self.errorReport['monkey'][1]))
+        self.m_logger.info(self.perforCounter.loadPerforResult())
         
 if __name__ == '__main__':
 #    kwargs = dict(i.strip('\'"').split('=') for i in sys.argv if i.find('=') > 0)

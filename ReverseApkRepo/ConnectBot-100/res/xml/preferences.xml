@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/list_emulation_modes" android:title="Emulation mode" android:key="emulation" android:summary="Terminal emulation mode to use for PTY connections" android:defaultValue="screen" android:entryValues="@array/list_emulation_modes" />
+    <EditTextPreference android:title="Scrollback size" android:key="scrollback" android:summary="Size of scrollback buffer to keep in memory for each console" android:defaultValue="140" />
+</PreferenceScreen>

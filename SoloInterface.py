@@ -54,12 +54,13 @@ class SoloInterface():
         
     def setUp(self):
         pass
-#        data = self.device.getDumpData()
+    '''
+        data = self.device.getDumpData()
         # key point
-#       if None!=self.tree_nodes_list and 0!=len(self.tree_nodes_list):
-#            del self.tree_nodes_list     
-#        self.tree_nodes_list = self.vt.build(data)
-        
+        if None!=self.tree_nodes_list and 0!=len(self.tree_nodes_list):
+            del self.tree_nodes_list     
+        self.tree_nodes_list = self.vt.build(data)
+        '''
         
     def tearDown(self):
         # do nothing

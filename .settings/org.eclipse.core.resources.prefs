@@ -1,10 +1,11 @@
-#Sat Aug 25 20:47:49 PDT 2012
+#Sun Aug 26 18:25:07 PDT 2012
 eclipse.preferences.version=1
 encoding//ApkAnalyzer/ManifestHandler.py=euc-kr
 encoding//DeviceManagement/AdbCommand.py=utf-8
 encoding//DeviceManagement/Device.py=utf-8
 encoding//DeviceManagement/ViewServerCommand.py=utf-8
 encoding//SystemComponent/Home.py=utf-8
+encoding//TestingToolkit/PerformanceCounter.py=euc-kr
 encoding//ViewController/EventController.py=utf-8
 encoding//ViewManagement/ViewTree.py=utf-8
 encoding/AppAnalyzer.py=euc-kr

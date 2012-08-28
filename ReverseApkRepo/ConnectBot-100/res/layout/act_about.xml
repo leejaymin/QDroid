@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ConnectBot" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Copyright (c) 2007-2008 Kenny Root http://the-b.org/, Jeffrey Sharkey http://jsharkey.org/\nReleased under the GPLv3 license.\n\nBased in part on the Trilead SSH2 client, provided under a BSD-style license.  Copyright (c) 2007 Trilead AG.  http://www.trilead.com/\n\nAlso based on JTA Telnet/SSH client, provided under the GPLv2 license.  Copyright (c) Matthias L. Jugel, Marcus Meiner 1996-2005.  http://www.javassh.org/" />
+    </LinearLayout>
+</ScrollView>
