@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListView android:id="@id/gamesavelistview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <com.cauly.android.ad.AdView android:id="@id/ad_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:appcode="Hnr7Wxk6r" app:adtype="cpc" app:gender="all" app:age="all" app:reloadInterval="0" app:gps="off" app:effect="half" app:allowcall="yes"
-      xmlns:app="http://schemas.android.com/apk/res/com.jaynux.app" />
-</RelativeLayout>

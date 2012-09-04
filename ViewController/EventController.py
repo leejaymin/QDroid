@@ -178,6 +178,12 @@ class EventController():
         command = "press back"
         return self.sendEventByTelnet(command)        
     
+    def twentyBack(self):
+        command = "press back"
+        for i in range(20):
+            self.sendEventByTelnet(command)
+        return self.sendEventByTelnet(command)
+        
     def wake(self):
         return self.sendEventByTelnet("wake")
 

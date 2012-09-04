@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="OPEN한 히든 장수를 사용할지를 선택">
-        <CheckBoxPreference android:title="히든장수 적용" android:key="HiddenState" android:summary="히든장수를 게임에 영구적으로 등장 시킵니다." android:defaultValue="false" />
-    </PreferenceCategory>
-</PreferenceScreen>

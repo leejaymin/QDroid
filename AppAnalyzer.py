@@ -62,7 +62,7 @@ class ApkTest:
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         #서머리를 위해서 사용하는 변수들의 정의
-        self.errorReport = {'activity':'','broadcast':'','service':'','monkey':[0,0]}
+        self.errorReport = {'activity':['',0],'broadcast':'','service':'','monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'wifi':0.0}
         self.startTime = time.time()
@@ -188,6 +188,7 @@ class ApkTest:
 
     def testActivity(self):
         for activity in ManifestHandler.ManifestHandler.activityList:
+            print '====== Starting Activity Testing:'+activity+' ======='
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity.split('.')[1])
             
@@ -201,10 +202,6 @@ class ApkTest:
             #self.solo.event_controller.singleEnter()
             
             self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))        
-            self.solo.event_controller.singleBack()
-            snapshot.DeviceTakeSnapshot('onDestroy')
-            #self.solo.event_controller.singleEnter()
-            
             #메시지 에러를 검출하는 작업을 한다. 추후에 이것을 보고 해당 스크린샷만을 판독 한다. 
             if self.result['Activity'][1][0:5] == 'Start':
                 self.result['Activity'][0] = True
@@ -215,7 +212,11 @@ class ApkTest:
                 self.m_logger.error(self.result['Activity'][1])
                 self.m_logger.error(self.pkgName+activity)
                 #실패한 activity에 대해서 기록을 해준다. 
-                self.errorReport['activity'] += ' '+activity 
+                self.errorReport['activity'][0] += ' '+activity 
+                self.errorReport['activity'][1] += 1 
+            #정리 한다.
+            self.solo.event_controller.twentyBack()
+            print '====== finished Activity Testing:'+activity+' ======='
                                               
     def testBroadCast(self):
         print '=============Start testBroadCast !============='    
@@ -262,7 +263,7 @@ class ApkTest:
                 self.m_logger.error(self.result['Activity'][1])
                 self.m_logger.error(self.pkgName+activity)
                 #실패한 activity에 대해서 기록을 해준다. 
-                self.errorReport['activity'] += ' '+activity 
+                self.errorReport['activity'][0] += ' '+activity 
                                                 
     def testStress(self):
         overlapError = False
@@ -321,7 +322,7 @@ class ApkTest:
         print 'Install: %s'%self.result['Install'][0]
         print 'Reinstall: %s'%self.result['Reinstall'][0]
         print 'Uninstall: %s'%self.result['Uninstall'][0] 
-        print 'Failed Activity: %s'%(self.errorReport['activity'])
+        print 'Failed Activity: %d/ %s'%(self.errorReport['activity'][1],self.errorReport['activity'][0])
         print 'Failed BroadCast: %s'%(self.errorReport['broadcast'])
         print 'Failed Service: %s'%(self.errorReport['service'])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
@@ -334,7 +335,7 @@ class ApkTest:
         self.m_logger.info('Install: %s'%self.result['Install'][0])
         self.m_logger.info('Reinstall: %s'%self.result['Reinstall'][0])
         self.m_logger.info('Uninstall: %s'%self.result['Uninstall'][0])
-        self.m_logger.info('Failed Activity: %s'%(self.errorReport['activity']))
+        self.m_logger.info('Failed Activity: %d/ %s'%(self.errorReport['activity'][1],self.errorReport['activity'][0]))
         self.m_logger.info('Failed BroadCast: %s'%(self.errorReport['broadcast']))
         self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))

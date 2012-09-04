@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="id" name="celsius_label">false</item>
-    <item type="id" name="celsius">false</item>
-    <item type="id" name="fahrenheit_label">false</item>
-    <item type="id" name="fahrenheit">false</item>
-    <item type="id" name="TestButton">false</item>
-</resources>
