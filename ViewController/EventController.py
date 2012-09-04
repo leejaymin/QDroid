@@ -62,7 +62,7 @@ class EventController():
                      "dpad_right": "dpad_right",
                      "dpad_center": "dpad_center"}
     
-    def __init__(self, logger, device_name="emulator-5554", device_port=5554, device_address="127.0.0.1", monkey_server_port=12345):
+    def __init__(self, logger, device_name="emulator-5554", device_port=5554, device_address="127.0.0.1", monkey_server_port=22345):
         self.class_name = "EventSender"
         self.m_logger = logger
         
@@ -169,6 +169,14 @@ class EventController():
     # close current session, but it will not close socket binding
     def done(self):
         return self.sendEventByTelnet("done")
+    
+    def singleEnter(self):
+        command = "press enter"
+        return self.sendEventByTelnet(command)
+    
+    def singleBack(self):
+        command = "press back"
+        return self.sendEventByTelnet(command)        
     
     def wake(self):
         return self.sendEventByTelnet("wake")

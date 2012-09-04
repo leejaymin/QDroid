@@ -13,16 +13,49 @@ class ManifestHandler(handler.ContentHandler):
 
     packageName=''
     activityList = []
+    receiverList = []
+    serviceList = []
+    CPList = []
     
     def __init__(self, componentName):
         self.componentName = componentName
-        self.componentList=[]
+        
+        #Receiver 인지를 판단해서, 아래의 action을 수집 한다.
+        self.searchReceiverActive = 0;
+        #Service 인지를 판단해서, 아래의 action을 수집 한다.
+        self.searchServiceActive = 0;
     
     def startElement(self, name, attrs):
         if name == 'manifest':
             self.packageName = attrs.getValue('package')
-            #print self.packageName
+            print self.packageName
             
-        if name == self.componentName:
+        if name == 'activity':
             self.activityList.append(attrs.getValue('android:name'))
-            #print self.activityList
+            self.searchReceiverActive = 0;
+            print self.activityList
+        
+        if name == 'receiver':
+            self.searchReceiverActive = 1
+            
+        if name == 'service':
+            self.searchServiceActive = 1
+            
+        if self.searchReceiverActive == 1:
+            if name == 'action':
+                self.receiverList.append(attrs.getValue('android:name'))
+                self.searchReceiverActive = 0
+                
+        if self.searchServiceActive == 1:
+            if name == 'action':
+                self.serviceList.append(attrs.getValue('android:name'))
+                self.searchServiceActive = 0
+                
+            
+if __name__ == '__main__':
+
+        handler = ManifestHandler('receiver')
+        parser = make_parser()
+        parser.setContentHandler(handler)
+        parser.parse('../ReverseApkRepo/dealdroid/AndroidManifest.xml')
+                

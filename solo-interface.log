@@ -107822,3 +107822,15 @@
 
 [ 2012-08-26 03:56:35,501 ][ ERROR ] [EventSender] Failed to send event `press home`: [[Errno 111] Connection refused] 
 
+[ 2012-08-28 07:12:58,759 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-08-28 07:13:01,814 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [[Errno 111] Connection refused] 
+
+[ 2012-08-28 07:13:01,815 ][ ERROR ] [EventSender] Failed to send event `press enter`: [[Errno 111] Connection refused] 
+
+[ 2012-08-28 07:13:01,815 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2012-08-28 07:13:01,815 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2012-09-02 23:44:12,657 ][ ERROR ] Please check whether your device or emulator is running?
+

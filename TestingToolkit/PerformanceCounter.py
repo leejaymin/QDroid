@@ -51,9 +51,13 @@ class PerformanceCounter():
         self.solo.event_controller.press('back')   
     
     def loadPerforResult(self):
-        self.solo.pullFile('/mnt/sdcard/%s.log'%(self.apkName),'/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
-        f = file('/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
-        performanceReuslt = f.read()
-        return performanceReuslt
+        try:
+            self.solo.pullFile('/mnt/sdcard/%s.log'%(self.apkName),'/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
+            f = file('/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
+            performanceReuslt = f.read()
+            return performanceReuslt
+        except IOError:
+            print 'No such file or directory: /root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName)
+            return 'No such file: '+self.apkName
     
         

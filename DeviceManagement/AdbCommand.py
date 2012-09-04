@@ -35,7 +35,7 @@ class AdbCommand():
             return res
         except TimeoutFunctionException:
             out.kill
-            res ='Failed: Activity Not response for call.. and then we killed process pid:%s'%(out.pid)
+            res ='Failed: Not response for call.. and then we killed process pid:%s'%(out.pid)
             print res
             return res
         except Exception, e:
@@ -135,11 +135,11 @@ class AdbCommand():
         return self.executeCommand(startPhoneDialerCmd)
     
     def startService(self, service_name):
-        startServiceCmd = "adb -s %s shell am startservice %s" %(self.device_name, service_name)
+        startServiceCmd = "adb -s %s shell am startservice -W -a %s" %(self.device_name, service_name)
         return self.executeCommand(startServiceCmd)
         
     def sendBroadcastIntent(self, broadcast_name):
-        sendIntentCmd = "adb -s %s shell am broadcast %s" %(self.device_name, broadcast_name)
+        sendIntentCmd = "adb -s %s shell am broadcast -W -a %s" %(self.device_name, broadcast_name)
         return self.executeCommand(sendIntentCmd)
     
     def startInstrumentation(self, component_name):

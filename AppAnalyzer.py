@@ -17,6 +17,7 @@ from xml.sax import make_parser, handler
 import sys
 from ApkAnalyzer import ManifestHandler
 from TestingCodeForm import StaticTestingForm
+from TestingCodeForm import takeSnapshot
 from SoloInterface import SoloInterface
 from TestingToolkit import PerformanceCounter
 
@@ -55,22 +56,20 @@ class ApkTest:
 #        self.solo.setUp()
         
     def init(self):
-        self.getApkInfo()
         self.loggingInit()
         #isupper()의 경우 그냥 대문자인지 판단하는 거이다.
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         #서머리를 위해서 사용하는 변수들의 정의
-        self.errorReport = {'activity':'','monkey':[0,0]}
+        self.errorReport = {'activity':'','broadcast':'','service':'','monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'wifi':0.0}
         self.startTime = time.time()
-        self.InitPerformnaceCounter()
     
     def finished(self):
         self.solo.close()
-          
+        
     def loggingInit(self):
         self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk).split('.')[0], logging.getLogger("%s"%(self.apk)))
         
@@ -101,6 +100,8 @@ class ApkTest:
         for activity in ManifestHandler.ManifestHandler.activityList:
             print activity
             self.m_logger.info(activity)
+            
+        self.pkgName = handler.packageName
         self.m_logger.info('======== complete parsing xml ===========')
         print '======== complete parsing xml ==========='
          
@@ -120,23 +121,37 @@ class ApkTest:
     def Monkeyrunner(self):
         run('monkeyrunner %s.py'% (self.apk))    
                           
-    def runTests(self): 
+    def runApkTests(self): 
         self.init()
         #monkeyrunner 테스팅 코드를 만드는 부분
         self.reverseApk()   
         self.parsingManifestXml() 
-        self.GenerateTestingScript()
-        #self.Monkeyrunner() #monkeyrunner를 통하여 실행을 할 경우이다.
         
         #monkey를 단독으로 실행하는 코드 
         self.testInstall()
         self.testReinstall()
+        self.InitPerformnaceCounter()
         self.testActivity()
-        #self.testStress()
+        self.testBroadCast()
+        self.testService()
         self.testUninstall()
         self.summary()
         self.finished()
-        
+    
+    def runPackageTests(self):
+        self.init()
+        self.parsingManifestXml() 
+        #monkey를 단독으로 실행하는 코드 
+        #self.testInstall()
+        #self.testReinstall()
+        self.InitPerformnaceCounter()
+        self.testActivity()
+     #   self.testBroadCast()
+     #   self.testService()
+        #self.testUninstall()
+        self.summary()
+        self.finished()
+                
     def getApkInfo(self):
         fmt = lambda key: dict((i.split('=')[0], i.split('=')[1].strip("'"))   for i in key.split()  if i.find('=') != -1)
         try:
@@ -171,12 +186,26 @@ class ApkTest:
         else:
             self.m_logger.error(self.result['Reinstall'][1])
 
-    #activity 테스팅을 하는 코드이다.
     def testActivity(self):
-#       self.solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
         for activity in ManifestHandler.ManifestHandler.activityList:
-            self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
-#            print self.result['Activity'][1]
+            #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
+            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity.split('.')[1])
+            
+            self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))         
+            snapshot.DeviceTakeSnapshot('onCreate')
+            #self.solo.event_controller.singleEnter()
+            
+            self.solo.device.adb_console.startPhoneDialer('01044445555')
+            snapshot.DeviceTakeSnapshot('onPause')
+            #back키를 눌러서 현재 상태를 클린 한다. 
+            #self.solo.event_controller.singleEnter()
+            
+            self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))        
+            self.solo.event_controller.singleBack()
+            snapshot.DeviceTakeSnapshot('onDestroy')
+            #self.solo.event_controller.singleEnter()
+            
+            #메시지 에러를 검출하는 작업을 한다. 추후에 이것을 보고 해당 스크린샷만을 판독 한다. 
             if self.result['Activity'][1][0:5] == 'Start':
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
@@ -187,10 +216,54 @@ class ApkTest:
                 self.m_logger.error(self.pkgName+activity)
                 #실패한 activity에 대해서 기록을 해준다. 
                 self.errorReport['activity'] += ' '+activity 
-                                        
-#           self.solo.event_controller.press('home')            
-#           self.summary()
+                                              
+    def testBroadCast(self):
+        print '=============Start testBroadCast !============='    
+        for broadCast in ManifestHandler.ManifestHandler.receiverList:
+            self.result['BroadCast'][1] = self.solo.device.adb_console.sendBroadcastIntent(broadCast)
+            if self.result['BroadCast'][1].find('completed') == -1:
+                self.result['BroadCast'][0] = False
+                self.m_logger.error(self.result['BroadCast'][1])
+                self.errorReport['broadcast'] += ' '+broadCast 
+            else:
+                self.result['BroadCast'][0] = True
+                self.m_logger.info(self.result['BroadCast'][1])
+                
+            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], broadCast)
+            snapshot.DeviceTakeSnapshot('send')
+        print '=============Finished testBroadCast !============='  
+
+    def testService(self):
+        print '=============Start testService !=============' 
+        for service in ManifestHandler.ManifestHandler.serviceList:
+            self.result['Service'][1] = self.solo.device.adb_console.startService(service)
+            if self.result['Service'][1].find('Starting') == -1:
+                self.result['Service'][0] = False
+                self.m_logger.error(self.result['Service'][1])
+                self.errorReport['Service'] += ' '+service 
+            else:
+                self.result['Service'][0] = True
+                self.m_logger.info(self.result['Service'][1])
             
+            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], service)
+            snapshot.DeviceTakeSnapshot('start')
+        print '=============Finished testService !=============' 
+        
+    #activity 테스팅을 하는 코드이다.
+    def ActivityTesting(self):
+        for activity in ManifestHandler.ManifestHandler.activityList:
+            self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
+            if self.result['Activity'][1][0:5] == 'Start':
+                self.result['Activity'][0] = True
+                self.m_logger.info(self.result['Activity'][1])
+                #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
+                self.testStress()
+            else:
+                self.m_logger.error(self.result['Activity'][1])
+                self.m_logger.error(self.pkgName+activity)
+                #실패한 activity에 대해서 기록을 해준다. 
+                self.errorReport['activity'] += ' '+activity 
+                                                
     def testStress(self):
         overlapError = False
              
@@ -245,7 +318,12 @@ class ApkTest:
         #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
         print '===================|| summary ||==================='
         print 'Testing Duration Time: %f'%(self.EndTime-self.startTime)
+        print 'Install: %s'%self.result['Install'][0]
+        print 'Reinstall: %s'%self.result['Reinstall'][0]
+        print 'Uninstall: %s'%self.result['Uninstall'][0] 
         print 'Failed Activity: %s'%(self.errorReport['activity'])
+        print 'Failed BroadCast: %s'%(self.errorReport['broadcast'])
+        print 'Failed Service: %s'%(self.errorReport['service'])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
         print 'No overlap moneky error: %d'%(self.errorReport['monkey'][1])
         print self.perforCounter.loadPerforResult()
@@ -253,7 +331,12 @@ class ApkTest:
         #마지막으로 로그에 기록을 해준다.
         self.m_logger.info('===================|| summary ||===================')
         self.m_logger.info('Testing Duration Time: %f'%(self.EndTime-self.startTime))
+        self.m_logger.info('Install: %s'%self.result['Install'][0])
+        self.m_logger.info('Reinstall: %s'%self.result['Reinstall'][0])
+        self.m_logger.info('Uninstall: %s'%self.result['Uninstall'][0])
         self.m_logger.info('Failed Activity: %s'%(self.errorReport['activity']))
+        self.m_logger.info('Failed BroadCast: %s'%(self.errorReport['broadcast']))
+        self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
         self.m_logger.info('No overlap moneky error: %d'%(self.errorReport['monkey'][1]))
         self.m_logger.info(self.perforCounter.loadPerforResult())
@@ -263,10 +346,23 @@ if __name__ == '__main__':
 #    if not kwargs.has_key('apk'):
 #        print 'Usage: main.py   apk=<APK_FILE>'
 #        exit(-1)
-    apkName = raw_input('Pleace input apk name? ')
-    
-    if not isfile('./apkRepo/%s'%(apkName)):
-        print 'ERROR: apk file does not exist:' + apkName
-        exit(-1)
-    p = ApkTest(apkName)
-    p.runTests()
+    mode = raw_input("Please choose mode: 1)apk 2)package ")
+    if mode == '1':
+        apkName = raw_input('1) Please input apk name? ')
+        if not isfile('./apkRepo/%s'%(apkName)):
+            print 'ERROR: apk file does not exist:' + apkName
+            exit(-1)
+        p = ApkTest(apkName)
+        p.runApkTests()
+    elif mode == '2':
+        apkName = raw_input('2) Please input apk name? ')
+        if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
+            print 'ERROR: apk file does not exist:' + apkName
+            exit(-1)
+        p = ApkTest(apkName)
+        p.runPackageTests()
+    else:
+        print 'Please check your chosen mode !'
+        
+
+

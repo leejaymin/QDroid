@@ -1,30 +1,30 @@
-[ 2012-08-27 05:04:02,235 ][ INFO ] Reversing Activity List
+[ 2012-09-03 23:41:04,670 ][ INFO ] Reversing Activity List
 
-[ 2012-08-27 05:04:02,235 ][ INFO ] .TrafficStatsTest
+[ 2012-09-03 23:41:04,671 ][ INFO ] .TrafficStatsTest
 
-[ 2012-08-27 05:04:02,235 ][ INFO ] .ApplicationList
+[ 2012-09-03 23:41:04,671 ][ INFO ] .ApplicationList
 
-[ 2012-08-27 05:04:02,235 ][ INFO ] ======== complete parsing xml ===========
+[ 2012-09-03 23:41:04,671 ][ INFO ] ======== complete parsing xml ===========
 
-[ 2012-08-27 05:04:04,416 ][ INFO ] 408 KB/s (20037 bytes in 0.047s)
+[ 2012-09-03 23:41:08,311 ][ INFO ] 408 KB/s (20037 bytes in 0.047s)
 	pkg: /data/local/tmp/TrafficStatsTest.apk
 Success
 
 
-[ 2012-08-27 05:04:07,108 ][ INFO ] 408 KB/s (20037 bytes in 0.047s)
+[ 2012-09-03 23:41:11,006 ][ INFO ] 448 KB/s (20037 bytes in 0.043s)
 	pkg: /data/local/tmp/TrafficStatsTest.apk
 Success
 
 
-[ 2012-08-27 05:04:09,176 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.TrafficStatsTest }
+[ 2012-09-03 23:41:40,372 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.TrafficStatsTest }
 Status: ok
 Activity: com.trafficStats.test/.TrafficStatsTest
-ThisTime: 541
-TotalTime: 541
+ThisTime: 410
+TotalTime: 410
 Complete
 
 
-[ 2012-08-27 05:04:11,619 ][ ERROR ] :monkey: seed=0 count=1000
+[ 2012-09-03 23:41:41,983 ][ ERROR ] :monkey: seed=0 count=1000
 :allowpackage: com.trafficstats.test
 :includecategory: android.intent.category.launcher
 :includecategory: android.intent.category.monkey
@@ -44,14 +44,14 @@ Complete
 //   8: 15.0%
 :switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=com.trafficstats.test/.trafficstatstest;end
     // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=com.trafficstats.test/.trafficstatstest } in package com.trafficstats.test
-sleeping for 500 milliseconds
+sleeping for 200 milliseconds
 :sendkey (action_down): 22    // keycode_dpad_right
 :sendkey (action_up): 22    // keycode_dpad_right
-sleeping for 500 milliseconds
+sleeping for 200 milliseconds
 :sendkey (action_down): 23    // keycode_dpad_center
 :sendkey (action_up): 23    // keycode_dpad_center
-sleeping for 500 milliseconds
-// crash: com.trafficstats.test (pid 18284)
+sleeping for 200 milliseconds
+// crash: com.trafficstats.test (pid 5320)
 // short msg: java.lang.numberformatexception
 // long msg: java.lang.numberformatexception: unable to parse '' as integer
 // build label: htc_wwe/htc_bravo/bravo:2.3.3/gri40/96875.1:user/release-keys
@@ -89,19 +89,19 @@ sleeping for 500 milliseconds
 ** monkey aborted due to error.
 events injected: 5
 :dropped: keys=0 pointers=0 trackballs=0 flips=0
-## network stats: elapsed time=1768ms (0ms mobile, 1768ms wifi, 0ms not connected)
+## network stats: elapsed time=957ms (0ms mobile, 957ms wifi, 0ms not connected)
 ** system appears to have crashed at event 5 of 1000 using seed 0
 
 
-[ 2012-08-27 05:04:13,478 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.ApplicationList }
+[ 2012-09-03 23:42:05,059 ][ INFO ] Starting: Intent { cmp=com.trafficStats.test/.ApplicationList }
 Status: ok
 Activity: com.trafficStats.test/.ApplicationList
-ThisTime: 383
-TotalTime: 383
+ThisTime: 377
+TotalTime: 377
 Complete
 
 
-[ 2012-08-27 05:04:15,919 ][ ERROR ] :monkey: seed=0 count=1000
+[ 2012-09-03 23:42:06,673 ][ ERROR ] :monkey: seed=0 count=1000
 :allowpackage: com.trafficstats.test
 :includecategory: android.intent.category.launcher
 :includecategory: android.intent.category.monkey
@@ -121,14 +121,14 @@ Complete
 //   8: 15.0%
 :switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=com.trafficstats.test/.trafficstatstest;end
     // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=com.trafficstats.test/.trafficstatstest } in package com.trafficstats.test
-sleeping for 500 milliseconds
+sleeping for 200 milliseconds
 :sendkey (action_down): 22    // keycode_dpad_right
 :sendkey (action_up): 22    // keycode_dpad_right
-sleeping for 500 milliseconds
+sleeping for 200 milliseconds
 :sendkey (action_down): 23    // keycode_dpad_center
 :sendkey (action_up): 23    // keycode_dpad_center
-sleeping for 500 milliseconds
-// crash: com.trafficstats.test (pid 18302)
+sleeping for 200 milliseconds
+// crash: com.trafficstats.test (pid 5432)
 // short msg: java.lang.numberformatexception
 // long msg: java.lang.numberformatexception: unable to parse '' as integer
 // build label: htc_wwe/htc_bravo/bravo:2.3.3/gri40/96875.1:user/release-keys
@@ -166,23 +166,34 @@ sleeping for 500 milliseconds
 ** monkey aborted due to error.
 events injected: 5
 :dropped: keys=0 pointers=0 trackballs=0 flips=0
-## network stats: elapsed time=1760ms (0ms mobile, 1760ms wifi, 0ms not connected)
+## network stats: elapsed time=945ms (0ms mobile, 945ms wifi, 0ms not connected)
 ** system appears to have crashed at event 5 of 1000 using seed 0
 
 
-[ 2012-08-27 05:04:17,512 ][ INFO ] Success
+[ 2012-09-03 23:42:07,723 ][ INFO ] Success
 
 
-[ 2012-08-27 05:04:25,549 ][ INFO ] ===================|| summary ||===================
+[ 2012-09-03 23:42:15,564 ][ INFO ] ===================|| summary ||===================
 
-[ 2012-08-27 05:04:25,549 ][ INFO ] Testing Duration Time: 22.343941
+[ 2012-09-03 23:42:15,564 ][ INFO ] Testing Duration Time: 63.067265
 
-[ 2012-08-27 05:04:25,549 ][ INFO ] Failed Activity: 
+[ 2012-09-03 23:42:15,564 ][ INFO ] Install: True
 
-[ 2012-08-27 05:04:25,549 ][ INFO ] moneky error: 2
+[ 2012-09-03 23:42:15,564 ][ INFO ] Reinstall: True
 
-[ 2012-08-27 05:04:25,549 ][ INFO ] No overlap moneky error: 1
+[ 2012-09-03 23:42:15,564 ][ INFO ] Uninstall: True
 
-[ 2012-08-27 05:04:25,699 ][ INFO ] CPU Average Usage :63.000000
+[ 2012-09-03 23:42:15,565 ][ INFO ] Failed Activity: 
+
+[ 2012-09-03 23:42:15,565 ][ INFO ] Failed BroadCast: 
+
+[ 2012-09-03 23:42:15,565 ][ INFO ] Failed Service: 
+
+[ 2012-09-03 23:42:15,565 ][ INFO ] moneky error: 2
+
+[ 2012-09-03 23:42:15,565 ][ INFO ] No overlap moneky error: 1
+
+[ 2012-09-03 23:42:15,714 ][ INFO ] CPU Average Usage: 41.000000
+total packet amount: 0
 
 
