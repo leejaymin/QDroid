@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/rappername/GeneratorActivity_onPause','png')
+result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/dealdroid/Preferences_onCreate','png')

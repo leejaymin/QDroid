@@ -133,6 +133,9 @@ class ApkTest:
         self.reverseApk()   
         self.parsingManifestXml() 
         
+        #스마트폰의 환경을 설정 한다.
+        self.enviromentControl()
+        
         #monkey를 단독으로 실행하는 코드 
         self.testInstall()
         self.testReinstall()
@@ -147,14 +150,15 @@ class ApkTest:
     def runPackageTests(self):
         self.init()
         self.parsingManifestXml() 
-        #monkey를 단독으로 실행하는 코드 
-        #self.testInstall()
-        #self.testReinstall()
+
+        #스마트폰의 환경을 설정 한다.
+        self.enviromentControl()
+        
         self.InitPerformnaceCounter()
         self.testActivity()
-     #   self.testBroadCast()
-     #   self.testService()
-        #self.testUninstall()
+        self.testBroadCast()
+        self.testService()
+
         self.summary()
         self.finished()
                 
@@ -347,7 +351,7 @@ class ApkTest:
         self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
         self.m_logger.info('No overlap moneky error: %d'%(self.errorReport['monkey'][1]))
-        self.m_logger.info('Network Condition: %s'(self.enviromentResult['wifi']))
+        self.m_logger.info('Network Condition: %s'%(self.enviromentResult['wifi']))
         self.m_logger.info(self.perforCounter.loadPerforResult())
         
 if __name__ == '__main__':
