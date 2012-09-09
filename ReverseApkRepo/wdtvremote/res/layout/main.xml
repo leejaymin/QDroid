@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonPower" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/power" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonHome" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonUp" android:layout_width="40.0pt" android:layout_height="wrap_content" android:src="@drawable/uph" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/lefth" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonEnter" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/enterh" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonRight" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/righth" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonDown" android:layout_width="40.0pt" android:layout_height="wrap_content" android:src="@drawable/downh" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonBack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/back" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonStop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/stop" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonOption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/option" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonRew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/rew" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonPausePlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/pauseplay" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonFf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ff" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonPrev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/prev" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonNext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/next" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ButtonSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/search" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ButtonEject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/eject" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

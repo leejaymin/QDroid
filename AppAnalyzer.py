@@ -65,7 +65,13 @@ class ApkTest:
         self.errorReport = {'activity':['',0],'broadcast':'','service':'','monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'wifi':0.0}
+        self.enviromentResult = {'wifi':False}
         self.startTime = time.time()
+    
+    def enviromentControl(self):
+        for permission in ManifestHandler.ManifestHandler.permissionList:
+            if permission.find('android.permission.INTERNET') != -1:
+                self.enviromentResult['wifi'] = True
     
     def finished(self):
         self.solo.close()
@@ -268,7 +274,7 @@ class ApkTest:
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error  --throttle 200 -p %s -v -v 1000' %( self.pkgName)).lower()
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-motion 25 --pct-trackball 25 --pct-majornav 25 --pct-anyevent 25 -p %s -v -v 3000' %( self.pkgName)).lower()
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         print self.result['Stress'][1]
@@ -327,6 +333,7 @@ class ApkTest:
         print 'Failed Service: %s'%(self.errorReport['service'])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
         print 'No overlap moneky error: %d'%(self.errorReport['monkey'][1])
+        print "Network Condition: %s"%(self.enviromentResult['wifi'])
         print self.perforCounter.loadPerforResult()
         
         #마지막으로 로그에 기록을 해준다.
@@ -340,6 +347,7 @@ class ApkTest:
         self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
         self.m_logger.info('No overlap moneky error: %d'%(self.errorReport['monkey'][1]))
+        self.m_logger.info('Network Condition: %s'(self.enviromentResult['wifi']))
         self.m_logger.info(self.perforCounter.loadPerforResult())
         
 if __name__ == '__main__':

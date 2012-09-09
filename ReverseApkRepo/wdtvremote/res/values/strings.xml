@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, remote!</string>
+    <string name="app_name">wdtvremote</string>
+    <string name="settings_save_button">Save</string>
+    <string name="settings_description">"Please insert the telnet IP, Example: 
+(192.168.1.120)"</string>
+    <string name="settings_username">username:</string>
+    <string name="settings_password">password:</string>
+    <string name="settings_port">Port: (23)</string>
+    <string name="menue_settings">settings</string>
+</resources>

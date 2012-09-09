@@ -10,12 +10,11 @@ import sys
 """
 
 class ManifestHandler(handler.ContentHandler):
-
-    packageName=''
+    
     activityList = []
+    permissionList = []
     receiverList = []
     serviceList = []
-    CPList = []
     
     def __init__(self, componentName):
         self.componentName = componentName
@@ -33,6 +32,7 @@ class ManifestHandler(handler.ContentHandler):
         if name == 'activity':
             self.activityList.append(attrs.getValue('android:name'))
             self.searchReceiverActive = 0;
+            self.searchServiceActive = 0;
             print self.activityList
         
         if name == 'receiver':
@@ -40,6 +40,9 @@ class ManifestHandler(handler.ContentHandler):
             
         if name == 'service':
             self.searchServiceActive = 1
+        
+        if name == 'uses-permission':
+            self.permissionList.append(attrs.getValue('android:name'))
             
         if self.searchReceiverActive == 1:
             if name == 'action':
@@ -51,11 +54,15 @@ class ManifestHandler(handler.ContentHandler):
                 self.serviceList.append(attrs.getValue('android:name'))
                 self.searchServiceActive = 0
                 
-            
+        
+        
 if __name__ == '__main__':
 
         handler = ManifestHandler('receiver')
         parser = make_parser()
         parser.setContentHandler(handler)
-        parser.parse('../ReverseApkRepo/dealdroid/AndroidManifest.xml')
-                
+        parser.parse('../ReverseApkRepo/opensudoku/AndroidManifest.xml')
+        print handler.permissionList
+#        for permission in handler.permissionList:
+ #           if permission.find('android.permission.INTERNET') != -1:
+   
