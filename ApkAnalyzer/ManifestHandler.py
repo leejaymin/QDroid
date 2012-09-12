@@ -15,10 +15,12 @@ class ManifestHandler(handler.ContentHandler):
     permissionList = []
     receiverList = []
     serviceList = []
+    numberOfActivity = 0
+    numberOfService = 0
+    numberOfBroadCast = 0
     
     def __init__(self, componentName):
-        self.componentName = componentName
-        
+        self.componentName = componentName   
         #Receiver 인지를 판단해서, 아래의 action을 수집 한다.
         self.searchReceiverActive = 0;
         #Service 인지를 판단해서, 아래의 action을 수집 한다.
@@ -27,19 +29,25 @@ class ManifestHandler(handler.ContentHandler):
     def startElement(self, name, attrs):
         if name == 'manifest':
             self.packageName = attrs.getValue('package')
-            print self.packageName
+            self.version = attrs.getValue('android:versionName')
             
         if name == 'activity':
-            self.activityList.append(attrs.getValue('android:name'))
+            if attrs.getValue('android:name').find('.') != -1:
+                self.activityList.append(attrs.getValue('android:name'))
+            else:
+                self.activityList.append('.'+attrs.getValue('android:name'))
+            self.numberOfActivity += 1
+            
             self.searchReceiverActive = 0;
             self.searchServiceActive = 0;
-            print self.activityList
         
         if name == 'receiver':
             self.searchReceiverActive = 1
+            self.numberOfBroadCast += 1
             
         if name == 'service':
             self.searchServiceActive = 1
+            self.numberOfService += 1
         
         if name == 'uses-permission':
             self.permissionList.append(attrs.getValue('android:name'))
@@ -61,8 +69,9 @@ if __name__ == '__main__':
         handler = ManifestHandler('receiver')
         parser = make_parser()
         parser.setContentHandler(handler)
-        parser.parse('../ReverseApkRepo/opensudoku/AndroidManifest.xml')
-        print handler.permissionList
+        parser.parse('../ReverseApkRepo/PocketSeven/AndroidManifest.xml')
+
+        print handler.numberOfActivity
 #        for permission in handler.permissionList:
  #           if permission.find('android.permission.INTERNET') != -1:
    

@@ -26,12 +26,7 @@ if not device:
     print >> sys.stderr, "Couldn't get connection"
     sys.exit(1)
         '''
-        try:
-            os.mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(self.apk))
-        except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/'+self.apk
-            
-        
+                
     def header(self):
         return self.header
     

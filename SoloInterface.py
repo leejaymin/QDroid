@@ -54,13 +54,12 @@ class SoloInterface():
         
     def setUp(self):
         pass
-    '''
-        data = self.device.getDumpData()
+#        data = self.device.getDumpData()
         # key point
-        if None!=self.tree_nodes_list and 0!=len(self.tree_nodes_list):
-            del self.tree_nodes_list     
-        self.tree_nodes_list = self.vt.build(data)
-        '''
+#        if None!=self.tree_nodes_list and 0!=len(self.tree_nodes_list):
+#            del self.tree_nodes_list     
+#        self.tree_nodes_list = self.vt.build(data)
+        
         
     def tearDown(self):
         # do nothing
@@ -608,7 +607,7 @@ Scroll Operation
            
 if __name__=="__main__":
     
-    solo = SoloInterface()
+    solo = SoloInterface(device_name="12B9WE630015")
     solo.setUp()
 
 #------------------------------------------------------------------------------ 
@@ -637,7 +636,7 @@ if __name__=="__main__":
 #------------------------------------------------------------------------------ 
 
 #    solo.clickViewByText("Mobile Security")
-    solo.startActivity(component='edu.umich.PowerTutor/.ui.Help')
+#    solo.startActivity(component='com.example.aatg.tc/com.example.aatg.tc.TemperatureConverterActivity')
  #   solo.startActivity(component='edu.umich.PowerTutor/.widget.Configure')
     solo.close()
         

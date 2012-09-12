@@ -12,6 +12,7 @@ from Utility import diffError
 
 from sys import exit
 from os import path
+from os import mkdir
 from subprocess import check_output, Popen, STDOUT
 from xml.sax import make_parser, handler
 import sys
@@ -42,18 +43,20 @@ class ApkTest:
     apkInfo = ''
     pkgName = ''
     actName = ''
-
+    currentProgress = 0
+    complteProgress = 0
+    
     result = {}
     errorReport = {}
     
-    def __init__(self, apk):
+    def __init__(self, apk, monkeyIteration):
         self.apk = apk
+        self.monkeyIteration = monkeyIteration
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         #오류를 기록해줄 로거를 생성 한다. 
-        #self.m_logger = Logger.InitLog("solo-interface.log", logging.getLogger("solo-interface.thread"))
         #HTC Desire device_name="12B9WE630015"
         self.solo = SoloInterface(device_name='12B9WE630015')
-#        self.solo.setUp()
+        self.solo.setUp()
         
     def init(self):
         self.loggingInit()
@@ -77,7 +80,23 @@ class ApkTest:
         self.solo.close()
         
     def loggingInit(self):
-        self.m_logger = TestingLogger.InitLog("./TestingResult/%s.log"%(self.apk).split('.')[0], logging.getLogger("%s"%(self.apk)))
+        #apk 이름으로 디렉터리를 생성 한다. 
+        FileCount = 0
+        try:     
+            FileName = self.apk.split('.')[0]
+            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(FileName))
+        except AttributeError:
+            print 'tuple object has no attribute split'
+        except OSError:
+            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/'+FileName
+            
+        while True:   
+            if path.isfile("./TestingResult/%s(%s).log" %(FileName,FileCount)):
+                FileCount += 1
+            else:
+                break;               
+           
+        self.m_logger = TestingLogger.InitLog("./TestingResult/%s/%s(%s).log" % (FileName, FileName, FileCount), logging.getLogger("%s"%self.apk))
         
     def InitPerformnaceCounter(self):
         self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.m_logger, self.apk.split('.')[0])
@@ -108,6 +127,13 @@ class ApkTest:
             self.m_logger.info(activity)
             
         self.pkgName = handler.packageName
+        self.version = handler.version
+        self.numberOfActivity = handler.numberOfActivity
+        self.numberOfBroadCast = handler.numberOfBroadCast
+        self.numberOfService = handler.numberOfService
+        #최종적으로 수행해야할 목록을 출력하기 위
+        self.complteProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
+        
         self.m_logger.info('======== complete parsing xml ===========')
         print '======== complete parsing xml ==========='
          
@@ -121,7 +147,7 @@ class ApkTest:
         for activity in ManifestHandler.ManifestHandler.activityList:
             print >> f, 'device.startActivity(component="'"%s"'")' % (self.pkgName+activity)
             print >> f , 'MonkeyRunner.sleep(1.0)'
-        
+            
         f.close()
         
     def Monkeyrunner(self):
@@ -199,8 +225,10 @@ class ApkTest:
     def testActivity(self):
         for activity in ManifestHandler.ManifestHandler.activityList:
             print '====== Starting Activity Testing:'+activity+' ======='
+            self.currentProgress += 1
+            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
-            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity.split('.')[1])
+            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
             
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))         
             snapshot.DeviceTakeSnapshot('onCreate')
@@ -213,7 +241,7 @@ class ApkTest:
             
             self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))        
             #메시지 에러를 검출하는 작업을 한다. 추후에 이것을 보고 해당 스크린샷만을 판독 한다. 
-            if self.result['Activity'][1][0:5] == 'Start':
+            if self.result['Activity'][1][0:5] == 'Start' and self.result['Activity'][1].find('Error') == -1: 
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
                 #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
@@ -229,8 +257,10 @@ class ApkTest:
             print '====== finished Activity Testing:'+activity+' ======='
                                               
     def testBroadCast(self):
-        print '=============Start testBroadCast !============='    
         for broadCast in ManifestHandler.ManifestHandler.receiverList:
+            print '=============Start testBroadCast !============='  
+            self.currentProgress += 1
+            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
             self.result['BroadCast'][1] = self.solo.device.adb_console.sendBroadcastIntent(broadCast)
             if self.result['BroadCast'][1].find('completed') == -1:
                 self.result['BroadCast'][0] = False
@@ -242,11 +272,13 @@ class ApkTest:
                 
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], broadCast)
             snapshot.DeviceTakeSnapshot('send')
-        print '=============Finished testBroadCast !============='  
+            print '=============Finished testBroadCast !============='  
 
     def testService(self):
-        print '=============Start testService !=============' 
         for service in ManifestHandler.ManifestHandler.serviceList:
+            print '=============Start testService !=============' 
+            self.currentProgress += 1
+            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
             self.result['Service'][1] = self.solo.device.adb_console.startService(service)
             if self.result['Service'][1].find('Starting') == -1:
                 self.result['Service'][0] = False
@@ -258,7 +290,8 @@ class ApkTest:
             
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], service)
             snapshot.DeviceTakeSnapshot('start')
-        print '=============Finished testService !=============' 
+            print '=============Finished testService !=============' 
+
         
     #activity 테스팅을 하는 코드이다.
     def ActivityTesting(self):
@@ -278,9 +311,11 @@ class ApkTest:
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-motion 25 --pct-trackball 25 --pct-majornav 25 --pct-anyevent 25 -p %s -v -v 3000' %( self.pkgName)).lower()
-        self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-motion 25 --pct-trackball 25 --pct-majornav 25 --pct-anyevent 25 -p %s -v -v %s' %(self.pkgName,self.monkeyIteration)).lower()
+        #crash인것만 하기 위해서 변경 한다.
+        #self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
+        self.result['Stress'][0] = self.result['Stress'][1].find(' crashed') == -1
         print self.result['Stress'][1]
         
         #실제 monkey 에러만을 구분하여 나눠 준다.
@@ -293,7 +328,6 @@ class ApkTest:
             self.m_logger.error(self.result['Stress'][1])
             #에러가 발생하면 무조건 카운팅 해준다. 
             self.errorReport['monkey'][0] += 1     
-              
             #같은 에러인지를 판별해주는 루틴이다.
             for preError in self.errorList:
                 if diffError(preError,monkeyError[1]) >= 80: 
@@ -325,14 +359,16 @@ class ApkTest:
         self.EndTime = time.time()
         #성능 계측기를 정지 시킨다. 
         self.perforCounter.stopPerforCounter()
-        
+                    
         #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
         print '===================|| summary ||==================='
+        print 'App: %s'%(self.apk)
+        print 'version: %s'%(self.version)
         print 'Testing Duration Time: %f'%(self.EndTime-self.startTime)
         print 'Install: %s'%self.result['Install'][0]
         print 'Reinstall: %s'%self.result['Reinstall'][0]
         print 'Uninstall: %s'%self.result['Uninstall'][0] 
-        print 'Failed Activity: %d/ %s'%(self.errorReport['activity'][1],self.errorReport['activity'][0])
+        print 'Failed Activity: %d(%d): %s'%(self.complteProgress, self.errorReport['activity'][1], self.errorReport['activity'][0])
         print 'Failed BroadCast: %s'%(self.errorReport['broadcast'])
         print 'Failed Service: %s'%(self.errorReport['service'])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
@@ -342,11 +378,13 @@ class ApkTest:
         
         #마지막으로 로그에 기록을 해준다.
         self.m_logger.info('===================|| summary ||===================')
+        self.m_logger.info('App: %s'%(self.apk))
+        self.m_logger.info('version: %s'%(self.version))
         self.m_logger.info('Testing Duration Time: %f'%(self.EndTime-self.startTime))
         self.m_logger.info('Install: %s'%self.result['Install'][0])
         self.m_logger.info('Reinstall: %s'%self.result['Reinstall'][0])
         self.m_logger.info('Uninstall: %s'%self.result['Uninstall'][0])
-        self.m_logger.info('Failed Activity: %d/ %s'%(self.errorReport['activity'][1],self.errorReport['activity'][0]))
+        self.m_logger.info('Failed Activity: %d(%d): %s'%(self.complteProgress, self.errorReport['activity'][1], self.errorReport['activity'][0]))
         self.m_logger.info('Failed BroadCast: %s'%(self.errorReport['broadcast']))
         self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
@@ -362,17 +400,19 @@ if __name__ == '__main__':
     mode = raw_input("Please choose mode: 1)apk 2)package ")
     if mode == '1':
         apkName = raw_input('1) Please input apk name? ')
+        iteration = raw_input('monkey iteration: ')
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName)
+        p = ApkTest(apkName,iteration)
         p.runApkTests()
     elif mode == '2':
         apkName = raw_input('2) Please input apk name? ')
+        iteration = raw_input('monkey iteration: ')
         if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName)
+        p = ApkTest(apkName,iteration)
         p.runPackageTests()
     else:
         print 'Please check your chosen mode !'

@@ -11,7 +11,7 @@ from TestingToolkit import PerformanceCounter
 from TestingCodeForm import takeSnapshot
 
 run = lambda cmd: check_output(cmd, shell=True, executable='/bin/bash')
-run = lambda cmd: check_output(cmd, shell=True)
+#run = lambda cmd: check_output(cmd, shell=True)
 def diffError(argX, argY):
     sameRate = 0 #문자열이 얼마나 같은지를 카운팅 한다.
     compareRange =0 # out of string을 예방하기 위해서, 길이가 작은 스트링이 무엇인지 판별 한다.
@@ -51,17 +51,23 @@ if __name__ == '__main__':
 #    solo.clickViewById("counter_start_btn")
 #    solo.event_controller.press('dpad_down')
 #    solo.event_controller.press('enter')     
-    apk='TrafficStatsTest_PauseBug'
-    perforCounter = PerformanceCounter.PerformanceCounter(solo, m_logger, apk)
-    perforCounter.startPerforCounter()
-    time.sleep(10)
+    apk='testtest.apk'
+#    perforCounter = PerformanceCounter.PerformanceCounter(solo, m_logger, apk)
+#    perforCounter.startPerforCounter()
+#    time.sleep(10)
     
     #takeSnapshot2 = takeSnapshot.takeSnapshot('cc','testActivity')
     #takeSnapshot2.DeviceTakeSnapshot('onCreate')
     
-    perforCounter.stopPerforCounter()
-    print perforCounter.loadPerforResult()
-    solo.close()
+#    perforCounter.stopPerforCounter()
+#    print perforCounter.loadPerforResult()
+    pkgName ='testtest.apk'
+    iteration = 100
+#    solo.close()
+#    run('adb shell monkey -p %s -v -v %d' %((pkgName).lower(),iteration))
+    #기존에 같은 파일이 있는지를 확인 한다.
+    
+
 
 
     
