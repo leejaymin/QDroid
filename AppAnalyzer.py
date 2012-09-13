@@ -65,7 +65,7 @@ class ApkTest:
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         #서머리를 위해서 사용하는 변수들의 정의
-        self.errorReport = {'activity':['',0],'broadcast':'','service':'','monkey':[0,0]}
+        self.errorReport = {'activity':['',0],'broadcast':['',0],'service':['',0],'monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'wifi':0.0}
         self.enviromentResult = {'wifi':False}
@@ -133,9 +133,17 @@ class ApkTest:
         self.numberOfService = handler.numberOfService
         #최종적으로 수행해야할 목록을 출력하기 위
         self.complteProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
-        
-        self.m_logger.info('======== complete parsing xml ===========')
+        print 'Total Activity: %d'%(self.numberOfActivity)
+        print 'Total Service: %d'%(self.numberOfBroadCast)
+        print 'Total BroadCast: %d'%(self.numberOfService)
+        print 'completeProgress: %d'%(self.complteProgress)
         print '======== complete parsing xml ==========='
+        
+        self.m_logger.info('Total Activity: %d'%(self.numberOfActivity))
+        self.m_logger.info('Total Service: %d'%(self.numberOfBroadCast))
+        self.m_logger.info('Total BroadCast: %d'%(self.numberOfService))
+        self.m_logger.info('completeProgress: %d'%(self.complteProgress))
+        self.m_logger.info('======== complete parsing xml ===========')
          
     def GenerateTestingScript(self):
         #읽고 쓰고 이며 기존 파일을 삭제 한다. 
@@ -224,9 +232,11 @@ class ApkTest:
 
     def testActivity(self):
         for activity in ManifestHandler.ManifestHandler.activityList:
-            print '====== Starting Activity Testing:'+activity+' ======='
             self.currentProgress += 1
+            print '====== Starting Activity Testing:'+activity+' ======='    
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
             
@@ -255,43 +265,53 @@ class ApkTest:
             #정리 한다.
             self.solo.event_controller.twentyBack()
             print '====== finished Activity Testing:'+activity+' ======='
+            self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
                                               
     def testBroadCast(self):
         for broadCast in ManifestHandler.ManifestHandler.receiverList:
-            print '=============Start testBroadCast !============='  
             self.currentProgress += 1
+            print '=============Start testBroadCast:'+broadCast+'============='  
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            self.m_logger.info('=============Start testBroadCast:'+broadCast+'=============')
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            
             self.result['BroadCast'][1] = self.solo.device.adb_console.sendBroadcastIntent(broadCast)
             if self.result['BroadCast'][1].find('completed') == -1:
                 self.result['BroadCast'][0] = False
                 self.m_logger.error(self.result['BroadCast'][1])
-                self.errorReport['broadcast'] += ' '+broadCast 
+                self.errorReport['broadcast'][0] += ' '+broadCast 
+                self.errorReport['broadcast'][1] += 1 
             else:
                 self.result['BroadCast'][0] = True
                 self.m_logger.info(self.result['BroadCast'][1])
                 
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], broadCast)
             snapshot.DeviceTakeSnapshot('send')
-            print '=============Finished testBroadCast !============='  
+            print '=============Finished testBroadCast:'+broadCast+'============='   
+            self.m_logger.info('=============Finished testBroadCast:'+broadCast+'=============')
 
     def testService(self):
         for service in ManifestHandler.ManifestHandler.serviceList:
-            print '=============Start testService !=============' 
             self.currentProgress += 1
+            print '=============Start testService:'+service+'=============' 
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            self.m_logger.info('=============Start testService:'+service+'=============')
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            
             self.result['Service'][1] = self.solo.device.adb_console.startService(service)
             if self.result['Service'][1].find('Starting') == -1:
                 self.result['Service'][0] = False
                 self.m_logger.error(self.result['Service'][1])
-                self.errorReport['service'] += ' '+service 
+                self.errorReport['service'][0] += ' '+service
+                self.errorReport['service'][1] += 1 
             else:
                 self.result['Service'][0] = True
                 self.m_logger.info(self.result['Service'][1])
             
             snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], service)
             snapshot.DeviceTakeSnapshot('start')
-            print '=============Finished testService !=============' 
-
+            print '=============Finished testService'+service+'=============' 
+            self.m_logger.info('=============Finished testService'+service+'=============')
         
     #activity 테스팅을 하는 코드이다.
     def ActivityTesting(self):
@@ -369,9 +389,9 @@ class ApkTest:
         print 'Install: %s'%self.result['Install'][0]
         print 'Reinstall: %s'%self.result['Reinstall'][0]
         print 'Uninstall: %s'%self.result['Uninstall'][0] 
-        print 'Failed Activity: %d(%d): %s'%(self.complteProgress, self.errorReport['activity'][1], self.errorReport['activity'][0])
-        print 'Failed BroadCast: %s'%(self.errorReport['broadcast'])
-        print 'Failed Service: %s'%(self.errorReport['service'])
+        print 'Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0])
+        print 'Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0])
+        print 'Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0])
         print 'moneky error: %d'%(self.errorReport['monkey'][0])
         print 'No overlap moneky error: %d'%(self.errorReport['monkey'][1])
         print "Network Condition: %s"%(self.enviromentResult['wifi'])
@@ -385,9 +405,9 @@ class ApkTest:
         self.m_logger.info('Install: %s'%self.result['Install'][0])
         self.m_logger.info('Reinstall: %s'%self.result['Reinstall'][0])
         self.m_logger.info('Uninstall: %s'%self.result['Uninstall'][0])
-        self.m_logger.info('Failed Activity: %d(%d): %s'%(self.complteProgress, self.errorReport['activity'][1], self.errorReport['activity'][0]))
-        self.m_logger.info('Failed BroadCast: %s'%(self.errorReport['broadcast']))
-        self.m_logger.info('Failed Service: %s'%(self.errorReport['service']))
+        self.m_logger.info('Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0]))
+        self.m_logger.info('Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0]))
+        self.m_logger.info('Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0]))
         self.m_logger.info('moneky error: %d'%(self.errorReport['monkey'][0]))
         self.m_logger.info('No overlap moneky error: %d'%(self.errorReport['monkey'][1]))
         self.m_logger.info('Network Condition: %s'%(self.enviromentResult['wifi']))
