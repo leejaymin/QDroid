@@ -283,7 +283,7 @@ class ApkTest:
             if self.result['Service'][1].find('Starting') == -1:
                 self.result['Service'][0] = False
                 self.m_logger.error(self.result['Service'][1])
-                self.errorReport['Service'] += ' '+service 
+                self.errorReport['service'] += ' '+service 
             else:
                 self.result['Service'][0] = True
                 self.m_logger.info(self.result['Service'][1])
@@ -313,14 +313,15 @@ class ApkTest:
              
         self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-motion 25 --pct-trackball 25 --pct-majornav 25 --pct-anyevent 25 -p %s -v -v %s' %(self.pkgName,self.monkeyIteration)).lower()
         #crash인것만 하기 위해서 변경 한다.
-        #self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
+        self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
-        self.result['Stress'][0] = self.result['Stress'][1].find(' crashed') == -1
+        #self.result['Stress'][0] = self.result['Stress'][1].find('crash:') == -1
         print self.result['Stress'][1]
         
         #실제 monkey 에러만을 구분하여 나눠 준다.
-        if self.result['Stress'][1].find('crash:') != -1:
-            monkeyError = self.result['Stress'][1].split('crash:')
+        #이 부분에서 monkey 자체가 뻗어서 죽는 경우에도 monkeyError를 초기화 해줘야 한다.
+        #if self.result['Stress'][1].find('crash:') != -1:
+        #    monkeyError = self.result['Stress'][1].split('crash:')
         
         if(self.result['Stress'][0] == True):
             self.m_logger.info(self.result['Stress'][1])
@@ -330,14 +331,14 @@ class ApkTest:
             self.errorReport['monkey'][0] += 1     
             #같은 에러인지를 판별해주는 루틴이다.
             for preError in self.errorList:
-                if diffError(preError,monkeyError[1]) >= 80: 
+                if diffError(preError,self.result['Stress'][1]) >= 80: 
                     overlapError = True
                     break
             
             if overlapError == False:
                 self.errorReport['monkey'][1] += 1
                 #현재 에러를 반영 시켜 준다.         
-                self.errorList.append(monkeyError[1])
+                self.errorList.append(self.result['Stress'][1])
                      
     def testUninstall(self):
         while True:
