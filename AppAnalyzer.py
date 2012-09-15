@@ -72,7 +72,7 @@ class ApkTest:
         self.startTime = time.time()
     
     def enviromentControl(self):
-        for permission in ManifestHandler.ManifestHandler.permissionList:
+        for permission in self.permissionList:
             if permission.find('android.permission.INTERNET') != -1:
                 self.enviromentResult['wifi'] = True
     
@@ -91,7 +91,7 @@ class ApkTest:
             print 'File exists: /root/python_source/AutoTestingModule/TestingResult/'+FileName
             
         while True:   
-            if path.isfile("./TestingResult/%s(%s).log" %(FileName,FileCount)):
+            if path.isfile("./TestingResult/%s/%s(%s).log" %(FileName,FileName,FileCount)):
                 FileCount += 1
             else:
                 break;               
@@ -120,17 +120,31 @@ class ApkTest:
         parser = make_parser()
         parser.setContentHandler(handler)
         parser.parse('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
-        
-        self.m_logger.info("Reversing Activity List")
-        for activity in ManifestHandler.ManifestHandler.activityList:
-            print activity
-            self.m_logger.info(activity)
-            
+                
+        #파싱 결과를 저장 한다.    
         self.pkgName = handler.packageName
         self.version = handler.version
         self.numberOfActivity = handler.numberOfActivity
         self.numberOfBroadCast = handler.numberOfBroadCast
         self.numberOfService = handler.numberOfService
+        
+        self.activityList = handler.activityList
+        self.receiverList = handler.receiverList
+        self.serviceList = handler.serviceList
+        self.permissionList = handler.permissionList
+        
+        #파싱 결과를 출력 한다.
+        self.m_logger.info("Reversing Activity / BoradCast / Service List")
+        for activity in self.activityList:
+            print activity
+            self.m_logger.info(activity)
+        for receiver in self.receiverList:
+            print receiver
+            self.m_logger.info(receiver)
+        for service in self.serviceList:
+            print service
+            self.m_logger.info(service)
+        
         #최종적으로 수행해야할 목록을 출력하기 위
         self.complteProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
         print 'Total Activity: %d'%(self.numberOfActivity)
@@ -231,7 +245,7 @@ class ApkTest:
             self.m_logger.error(self.result['Reinstall'][1])
 
     def testActivity(self):
-        for activity in ManifestHandler.ManifestHandler.activityList:
+        for activity in self.activityList:
             self.currentProgress += 1
             print '====== Starting Activity Testing:'+activity+' ======='    
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
@@ -268,7 +282,7 @@ class ApkTest:
             self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
                                               
     def testBroadCast(self):
-        for broadCast in ManifestHandler.ManifestHandler.receiverList:
+        for broadCast in self.receiverList:
             self.currentProgress += 1
             print '=============Start testBroadCast:'+broadCast+'============='  
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
@@ -291,7 +305,7 @@ class ApkTest:
             self.m_logger.info('=============Finished testBroadCast:'+broadCast+'=============')
 
     def testService(self):
-        for service in ManifestHandler.ManifestHandler.serviceList:
+        for service in self.serviceList:
             self.currentProgress += 1
             print '=============Start testService:'+service+'=============' 
             print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
@@ -315,7 +329,7 @@ class ApkTest:
         
     #activity 테스팅을 하는 코드이다.
     def ActivityTesting(self):
-        for activity in ManifestHandler.ManifestHandler.activityList:
+        for activity in self.activityList:
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))
             if self.result['Activity'][1][0:5] == 'Start':
                 self.result['Activity'][0] = True
@@ -331,13 +345,14 @@ class ApkTest:
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-motion 25 --pct-trackball 25 --pct-majornav 25 --pct-anyevent 25 -p %s -v -v %s' %(self.pkgName,self.monkeyIteration)).lower()
+        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.pkgName,self.monkeyIteration)).lower()
         #crash인것만 하기 위해서 변경 한다.
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
         #self.result['Stress'][0] = self.result['Stress'][1].find('crash:') == -1
-        print self.result['Stress'][1]
         
+#       print self.result['Stress'][1]
+        print '========== monkey test !!! ========='
         #실제 monkey 에러만을 구분하여 나눠 준다.
         #이 부분에서 monkey 자체가 뻗어서 죽는 경우에도 monkeyError를 초기화 해줘야 한다.
         #if self.result['Stress'][1].find('crash:') != -1:
@@ -414,11 +429,8 @@ class ApkTest:
         self.m_logger.info(self.perforCounter.loadPerforResult())
         
 if __name__ == '__main__':
-#    kwargs = dict(i.strip('\'"').split('=') for i in sys.argv if i.find('=') > 0)
-#    if not kwargs.has_key('apk'):
-#        print 'Usage: main.py   apk=<APK_FILE>'
-#        exit(-1)
-    mode = raw_input("Please choose mode: 1)apk 2)package ")
+    
+    mode = raw_input("Please choose mode: 1)apk 2)package 3)a lot of apk")
     if mode == '1':
         apkName = raw_input('1) Please input apk name? ')
         iteration = raw_input('monkey iteration: ')
@@ -435,6 +447,25 @@ if __name__ == '__main__':
             exit(-1)
         p = ApkTest(apkName,iteration)
         p.runPackageTests()
+    elif mode == '3':
+        try:
+            f = open('./apkList', 'r')
+            listData = f.read()
+            apkList = listData.split('\n')
+            #apkList에 있는 app만큼 반복하면서 실행 한다.
+            for apkName in apkList:
+                if(apkName.find('.') != -1):
+                    print 'Test App:'+apkName
+                    p = ApkTest(apkName,1500)
+                    p.runApkTests()
+                else:
+                    print 'Apk name format error: '+apkName
+                       
+            f.close()
+        except (IOError):
+            print 'ERROR: Failed open file: apkList.txt'
+            exit(-1)   
+    
     else:
         print 'Please check your chosen mode !'
         

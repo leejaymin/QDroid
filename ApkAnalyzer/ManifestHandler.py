@@ -11,13 +11,13 @@ import sys
 
 class ManifestHandler(handler.ContentHandler):
     
-    activityList = []
-    permissionList = []
-    receiverList = []
-    serviceList = []
-    numberOfActivity = 0
-    numberOfService = 0
-    numberOfBroadCast = 0
+#    activityList = []
+#    permissionList = []
+#    receiverList = []
+#    serviceList = []
+#    numberOfActivity = 0
+#    numberOfService = 0
+#    numberOfBroadCast = 0
     
     def __init__(self, componentName):
         self.componentName = componentName   
@@ -25,6 +25,14 @@ class ManifestHandler(handler.ContentHandler):
         self.searchReceiverActive = 0;
         #Service 인지를 판단해서, 아래의 action을 수집 한다.
         self.searchServiceActive = 0;
+        
+        self.activityList = []
+        self.permissionList = []
+        self.receiverList = []
+        self.serviceList = []
+        self.numberOfActivity = 0
+        self.numberOfService = 0
+        self.numberOfBroadCast = 0
     
     def startElement(self, name, attrs):
         if name == 'manifest':
