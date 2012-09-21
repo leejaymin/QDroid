@@ -9,7 +9,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Settings">
+        <activity android:name="Settings">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
                 <action android:name="at.hochi.wdtvremote.Settings" />

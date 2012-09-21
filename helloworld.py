@@ -46,12 +46,11 @@ if __name__ == '__main__':
 #    print run('adb shell monkey --kill-process-after-error  --throttle 500 -p edu.umich.PowerTutor -v -v 10')
 #    check_output('adb shell monkey --kill-process-after-error  --throttle 500 -p edu.umich.PowerTutor -v -v 10', shell=True, executable='/bin/bash')
 
-    solo = SoloInterface(device_name='12B9WE630015')
+    
 #    solo.setUp()
 #    solo.clickViewById("counter_start_btn")
 #    solo.event_controller.press('dpad_down')
 #    solo.event_controller.press('enter')     
-    apk='testtest.apk'
 #    perforCounter = PerformanceCounter.PerformanceCounter(solo, m_logger, apk)
 #    perforCounter.startPerforCounter()
 #    time.sleep(10)
@@ -61,12 +60,14 @@ if __name__ == '__main__':
     
 #    perforCounter.stopPerforCounter()
 #    print perforCounter.loadPerforResult()
-    pkgName ='testtest.apk'
-    iteration = 100
 #    solo.close()
-#    run('adb shell monkey -p %s -v -v %d' %((pkgName).lower(),iteration))
-    #기존에 같은 파일이 있는지를 확인 한다.
+#    run('adb shell reboot')
+ #   time.sleep(55)
     
+    solo = SoloInterface(device_name='12B9WE630015')
+    solo.event_controller.drag_start(50, 600)
+    solo.event_controller.drag_end(380, 600)
+    solo.close()
 
 
 

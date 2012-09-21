@@ -53,9 +53,12 @@ class ApkTest:
         self.apk = apk
         self.monkeyIteration = monkeyIteration
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
+
         #오류를 기록해줄 로거를 생성 한다. 
         #HTC Desire device_name="12B9WE630015"
-        self.solo = SoloInterface(device_name='12B9WE630015')
+        #Galaxy Nexus device_name="0149C7A518014011"
+        self.deviceName= 'GalaxyNexus'
+        self.solo = SoloInterface(device_name='0149C7A518014011')
         self.solo.setUp()
         
     def init(self):
@@ -84,19 +87,19 @@ class ApkTest:
         FileCount = 0
         try:     
             FileName = self.apk.split('.')[0]
-            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(FileName))
+            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s/%s'%(self.deviceName,FileName))
         except AttributeError:
             print 'tuple object has no attribute split'
         except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/'+FileName
+            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName) +FileName
             
         while True:   
-            if path.isfile("./TestingResult/%s/%s(%s).log" %(FileName,FileName,FileCount)):
+            if path.isfile("./TestingResult/%s/%s/%s(%s).log" %(self.deviceName,FileName,FileName,FileCount)):
                 FileCount += 1
             else:
                 break;               
            
-        self.m_logger = TestingLogger.InitLog("./TestingResult/%s/%s(%s).log" % (FileName, FileName, FileCount), logging.getLogger("%s"%self.apk))
+        self.m_logger = TestingLogger.InitLog("./TestingResult/%s/%s/%s(%s).log"%(self.deviceName, FileName, FileName, FileCount), logging.getLogger("%s"%self.apk))
         
     def InitPerformnaceCounter(self):
         self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.m_logger, self.apk.split('.')[0])
@@ -147,12 +150,14 @@ class ApkTest:
         
         #최종적으로 수행해야할 목록을 출력하기 위
         self.complteProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
+        print 'pacakge name: %s'%(self.pkgName)
         print 'Total Activity: %d'%(self.numberOfActivity)
         print 'Total Service: %d'%(self.numberOfBroadCast)
         print 'Total BroadCast: %d'%(self.numberOfService)
         print 'completeProgress: %d'%(self.complteProgress)
         print '======== complete parsing xml ==========='
         
+        self.m_logger.info('pacakge name: %s'%(self.pkgName))
         self.m_logger.info('Total Activity: %d'%(self.numberOfActivity))
         self.m_logger.info('Total Service: %d'%(self.numberOfBroadCast))
         self.m_logger.info('Total BroadCast: %d'%(self.numberOfService))
@@ -252,18 +257,18 @@ class ApkTest:
             self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
             self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
-            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
+            #snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
             
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))         
-            snapshot.DeviceTakeSnapshot('onCreate')
+            #snapshot.DeviceTakeSnapshot('onCreate')
             #self.solo.event_controller.singleEnter()
             
-            self.solo.device.adb_console.startPhoneDialer('01044445555')
-            snapshot.DeviceTakeSnapshot('onPause')
+            #self.solo.device.adb_console.startPhoneDialer('01044445555')
+            #snapshot.DeviceTakeSnapshot('onPause')
             #back키를 눌러서 현재 상태를 클린 한다. 
             #self.solo.event_controller.singleEnter()
             
-            self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))        
+            #self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))        
             #메시지 에러를 검출하는 작업을 한다. 추후에 이것을 보고 해당 스크린샷만을 판독 한다. 
             if self.result['Activity'][1][0:5] == 'Start' and self.result['Activity'][1].find('Error') == -1: 
                 self.result['Activity'][0] = True
@@ -299,8 +304,8 @@ class ApkTest:
                 self.result['BroadCast'][0] = True
                 self.m_logger.info(self.result['BroadCast'][1])
                 
-            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], broadCast)
-            snapshot.DeviceTakeSnapshot('send')
+            #snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], broadCast)
+            #snapshot.DeviceTakeSnapshot('send')
             print '=============Finished testBroadCast:'+broadCast+'============='   
             self.m_logger.info('=============Finished testBroadCast:'+broadCast+'=============')
 
@@ -322,8 +327,8 @@ class ApkTest:
                 self.result['Service'][0] = True
                 self.m_logger.info(self.result['Service'][1])
             
-            snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], service)
-            snapshot.DeviceTakeSnapshot('start')
+            #snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], service)
+            #snapshot.DeviceTakeSnapshot('start')
             print '=============Finished testService'+service+'=============' 
             self.m_logger.info('=============Finished testService'+service+'=============')
         
@@ -456,11 +461,17 @@ if __name__ == '__main__':
             for apkName in apkList:
                 if(apkName.find('.') != -1):
                     print 'Test App:'+apkName
-                    p = ApkTest(apkName,1500)
+                    p = ApkTest(apkName,3000)
                     p.runApkTests()
                 else:
                     print 'Apk name format error: '+apkName
-                       
+                #reboot and unlock screen
+                run('adb shell reboot')
+                time.sleep(60)
+                solo = SoloInterface(device_name='12B9WE630015')
+                solo.event_controller.drag_start(50, 600)
+                solo.event_controller.drag_end(380, 600)
+                solo.close()
             f.close()
         except (IOError):
             print 'ERROR: Failed open file: apkList.txt'

@@ -10,9 +10,10 @@ class takeSnapshot:
     header = ''
     deviceConnection = ''
     
-    def __init__(self, apk, filename):
+    def __init__(self,deviceName, apk, filename):
         self.apk = apk
         self.filename = filename
+        self.deviceName = deviceName
         
         self.header = '''import sys
 # Imports the monkeyrunner modules used by this program
@@ -37,7 +38,7 @@ if not device:
         try:
             self.takeSnapshot = '''
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/%s/%s_%s','png')''' % (self.apk, self.filename, mode)
+result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s_%s','png')''' % (self.deviceName, self.apk, self.filename, mode)
         
             f = open('./SnapshotScript.py', 'w+')     
             print >> f, self.header
