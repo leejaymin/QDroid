@@ -97160,3 +97160,1211 @@
 
 [ 2012-09-20 20:46:56,759 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
 
+[ 2012-09-22 07:15:20,439 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:15:20,439 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:15:22,467 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,467 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,467 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,467 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:15:22,468 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:21,788 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:22:21,788 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:22:21,788 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:22:21,788 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-09-22 07:22:23,816 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,816 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,816 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,816 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,817 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-09-22 07:22:23,818 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2012-11-22 06:55:11,308 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2012-11-22 06:55:13,373 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-11-22 06:55:13,374 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2012-11-22 06:55:13,375 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-11-22 06:55:13,375 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2012-11-22 06:55:13,375 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 20:18:38,003 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:18:40,053 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:18:40,053 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:31,245 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:31,245 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:31,245 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:59,314 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:59,314 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:59,314 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:45:59,314 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:46:01,350 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:46:01,350 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:46:01,350 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:46:01,350 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:46:01,350 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:55:12,205 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:55:12,205 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 20:55:12,205 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 21:02:13,363 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-12 22:31:51,667 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,667 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,667 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,667 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,668 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,668 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,668 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,668 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,669 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,670 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,671 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,672 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,672 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,672 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,672 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:51,674 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,687 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,687 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,688 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,688 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,688 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,688 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,689 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,690 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,690 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,690 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,690 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,691 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,692 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,692 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,692 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,692 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,693 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,694 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,695 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,695 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,695 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 22:31:52,695 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,467 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,467 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,467 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,467 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,468 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,468 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,468 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,468 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,469 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,470 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,470 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,470 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,470 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,471 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,471 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,471 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,471 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,472 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,473 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,474 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,475 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,477 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,478 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:03,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,495 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,495 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,495 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,495 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,496 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,497 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,498 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,498 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,498 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,498 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,499 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-12 23:25:04,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [[Errno 111] Connection refused] 
+
+[ 2013-03-13 22:17:19,584 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-13 22:17:19,584 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-13 22:17:19,584 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:19,972 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:19,972 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:19,972 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:49,081 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:49,081 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:49,081 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:49,081 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:51,117 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:51,117 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:51,117 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:51,117 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-14 19:51:51,117 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-15 01:33:14,901 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-15 01:33:14,901 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-15 01:33:14,901 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-15 01:38:45,954 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:30:41,845 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:30:41,845 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:30:41,845 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:30:43,863 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,863 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,863 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,864 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,864 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,864 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,865 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,866 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,866 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:30:43,866 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:48,959 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:52:48,959 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:52:48,959 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,987 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,988 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,989 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,989 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 03:52:50,989 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:15,640 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,669 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,670 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,671 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:00:17,672 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:46,750 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,766 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,768 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,769 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:09:48,770 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:51,517 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:51,517 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:51,517 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:53,554 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:53,554 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:53,554 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:53,554 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:55,591 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:55,591 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:55,591 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:55,591 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:55,591 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:17:57,611 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,611 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,611 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,611 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,611 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,612 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,612 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,612 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,612 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,612 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,613 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,614 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,614 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,614 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,614 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:17:57,614 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:14,101 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:14,101 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:14,101 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:16,139 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:16,139 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:16,139 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:16,139 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 04:27:18,166 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,166 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,166 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,166 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,168 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,168 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,168 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,168 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 04:27:18,169 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:41,893 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:41,893 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:41,893 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:43,932 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:43,932 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:43,932 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:43,932 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-16 05:04:45,961 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,961 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,961 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,961 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,962 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,963 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,963 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,963 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-16 05:04:45,963 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:22,273 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:05:22,273 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:05:24,299 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,299 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,300 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,300 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:05:24,301 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:48,155 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:12:48,155 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:12:50,181 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,181 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,182 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,183 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:12:50,183 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:22:15,705 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:22:17,735 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:22:17,736 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:22:17,737 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:22:17,737 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:22:17,738 ][ ERROR ] [EventSender] Failed to send event `quit`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:22,075 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:22,075 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:22,075 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:24,115 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:24,115 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:24,115 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:24,115 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-03-17 18:36:26,143 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,143 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,143 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,143 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,144 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,145 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,145 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,145 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-03-17 18:36:26,145 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:40,849 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:25:42,903 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:25:42,903 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:25:44,932 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,932 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,932 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,932 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,933 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,933 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,933 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:25:44,933 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:20,319 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:32:22,355 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:32:22,355 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:32:24,382 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,382 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,382 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,382 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,383 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,383 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,383 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:32:24,383 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:32,812 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:34:34,848 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:34:34,848 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:34:36,874 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,874 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,875 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,875 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,875 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,875 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,876 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:34:36,876 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:30,235 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:35:32,272 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:35:32,272 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-21 19:35:34,298 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,298 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,299 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,299 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,299 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,299 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,300 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-21 19:35:34,300 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-04-24 08:39:22,803 ][ ERROR ] Failed to check whether device has IWindowService: other errors
+
+[ 2013-04-24 08:39:24,875 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-04-24 08:39:24,875 ][ ERROR ] Please check whether your device or emulator is running?
+

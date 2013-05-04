@@ -64,7 +64,7 @@ if __name__ == '__main__':
 #    run('adb shell reboot')
  #   time.sleep(55)
     
-    solo = SoloInterface(device_name='12B9WE630015')
+    solo = SoloInterface(device_name='192.168.0.3:5555')
     solo.event_controller.drag_start(50, 600)
     solo.event_controller.drag_end(380, 600)
     solo.close()
