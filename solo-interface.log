@@ -98368,3 +98368,25 @@
 
 [ 2013-04-24 08:39:24,875 ][ ERROR ] Please check whether your device or emulator is running?
 
+[ 2013-05-15 19:00:15,573 ][ ERROR ] Failed to check whether device has IWindowService: other errors
+
+[ 2013-05-15 19:00:17,627 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-05-15 19:00:17,627 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-05-15 19:00:19,673 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,673 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,674 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,674 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,674 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,674 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,675 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-05-15 19:00:19,675 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+

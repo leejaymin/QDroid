@@ -97,6 +97,7 @@ class ApkTest:
         #power conumpstion member
         self.ListOfCurrent = []
         self.ListOfVoltage = []
+        self.ListOfPower = []
         self.mTotalCurrent = 0
         self.mAvePower = 0.0
         
@@ -492,6 +493,8 @@ class ApkTest:
                     self.mTotalCurrent += int(current)
                     self.ListOfCurrent.append(int(current))
                     self.ListOfVoltage.append(int(voltage))
+                    self.ListOfPower.append(power)
+                    
         except ValueError:
             print 'invalid literal'
         
@@ -554,7 +557,7 @@ class ApkTest:
         print 'No overlap monkey error: %d'%(self.errorReport['monkey'][1])
         print "Network Condition: %s"%(self.enviromentResult['wifi'])
         print "Total Current: %d"%(self.mTotalCurrent)
-        print "Current List: %s"%(self.ListOfCurrent)
+        print "Power List: %s"%(self.ListOfPower)
         print self.perforCounter.loadPerforResult()
         
         #마지막으로 로그에 기록을 해준다.
@@ -572,7 +575,7 @@ class ApkTest:
         self.m_logger.info('No overlap monkey error: %d'%(self.errorReport['monkey'][1]))
         self.m_logger.info('Network Condition: %s'%(self.enviromentResult['wifi']))
         self.m_logger.info('Total Current: %d'%(self.mTotalCurrent))
-        self.m_logger.info('Current List: %s'%(self.ListOfCurrent))
+        self.m_logger.info('Power List: %s'%(self.ListOfPower))
         self.m_logger.info(self.perforCounter.loadPerforResult())
         
         #마지막으로 Database에 기록을 한다. 
