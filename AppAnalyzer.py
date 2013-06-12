@@ -71,13 +71,14 @@ class ApkTest:
             time.sleep(5)
             
         #오류를 기록해줄 로거를 생성 한다. 
-        #Nexus one device name="HT0A1P800732"
+        #Nexus one device name="HT0A1P800732" Buy lab
+        #Nexus one device name="HT08DP802665" Borrow kim
         #HTCDesire device_name="12B9WE630015"
         #Galaxy Nexus device_name="0149C7A518014011"
         #Network Wi-Fi="192.168.0.3:5555"
         self.deviceName= 'HTCNexusOne'
         self.solo = SoloInterface(device_name='HT0A1P800732')
-        self.soloSecond = SoloInterface(device_name='HT0A1P800732', device_port=5553)
+        self.soloSecond = SoloInterface(device_name='HT08DP802665', device_port=5553)
         self.solo.setUp()
         self.soloSecond.setUp()
             
@@ -147,7 +148,6 @@ class ApkTest:
         self.finished()
     
     def runCompatibility(self):
-
         self.init()
         self.reverseApk()
         self.parsingManifestXml()
@@ -157,6 +157,11 @@ class ApkTest:
         self.DisplayCompatibility()
         self.testUninstall()
         self.finished()
+        
+    def runDebug(self):
+        self.init()
+        self.reverseApk()
+        self.parsingManifestXml()
            
     def enviromentControl(self):
         for permission in self.permissionList:
@@ -177,6 +182,14 @@ class ApkTest:
             print 'tuple object has no attribute split'
         except OSError:
             print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName) +FileName
+       
+        #Derectoriy for Image
+        try:     
+            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s/%s'%(self.deviceName,FileName))
+        except AttributeError:
+            print 'tuple object has no attribute split'
+        except OSError:
+            print 'File exists: /root/python_source/AutoTestingModule/ImageStore/%s/'%(self.deviceName) +FileName    
             
         while True:   
             if path.isfile("./TestingResult/%s/%s/%s(%s).log" %(self.deviceName,FileName,FileName,FileCount)):
@@ -411,7 +424,7 @@ class ApkTest:
                 self.m_logger.info(self.result['Activity'][1])
                 #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
                 snapshot = takeSnapshot.takeSnapshot(self.deviceName, self.apk.split('.')[0], activity)
-                snapshot.DeviceTakeSnapshot('onCreate')
+                snapshot.DeviceTakeSnapshot()
                 
             else:
                 self.m_logger.error(self.result['Activity'][1])
@@ -608,7 +621,7 @@ class ApkTest:
         
 if __name__ == '__main__':
     
-    mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility")
+    mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility 5) debug mode")
     envirMode = raw_input("Please choose Environment: 1)TCPIP 2)USB")
     iteration = raw_input('monkey iteration: ')
     if mode == '1':
@@ -675,7 +688,15 @@ if __name__ == '__main__':
         except (IOError):
             print 'ERROR: Failed open file: apkList.txt'
             exit(-1)
-    
+            
+    elif mode == '5':
+        apkName = raw_input('1) Please input apk name? ')
+        if not isfile('./apkRepo/%s'%(apkName)):
+            print 'ERROR: apk file does not exist:' + apkName
+            exit(-1)
+        p = ApkTest(apkName,iteration,envirMode)
+        p.runApkTests()
+        
     else:
         print 'Please check your chosen mode !'
         

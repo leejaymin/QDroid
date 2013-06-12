@@ -60,7 +60,9 @@ class SoloInterface():
 #            del self.tree_nodes_list     
 #        self.tree_nodes_list = self.vt.build(data)
         
-        
+    def getDeviceName(self):
+        return self.device_name
+    
     def tearDown(self):
         # do nothing
         pass

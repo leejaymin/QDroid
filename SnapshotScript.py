@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/HTCDesire/Air_Hockey_1_1_1/.MultitouchTestActivity_onCreate','png')
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/HTCNexusOne/WargmesWOPR/com.unity3d.player.UnityPlayerActivity','png')

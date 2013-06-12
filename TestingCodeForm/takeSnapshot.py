@@ -34,11 +34,11 @@ if not device:
     def deviceConnection(self):
         return self.deviceConnection
     
-    def DeviceTakeSnapshot(self, mode):
+    def DeviceTakeSnapshot(self):
         try:
             self.takeSnapshot = '''
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s_%s','png')''' % (self.deviceName, self.apk, self.filename, mode)
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/%s/%s/%s','png')''' % (self.deviceName, self.apk, self.filename)
         
             f = open('./SnapshotScript.py', 'w+')     
             print >> f, self.header
@@ -46,7 +46,7 @@ result.writeToFile('/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s
             print >> f, self.takeSnapshot
             f.close()
             run_wait('monkeyrunner SnapshotScript.py')
-            print 'Success Snapshot %s/%s_%s'%(self.apk, self.filename, mode)
+            print 'Success Snapshot %s/%s'%(self.apk, self.filename)
             
         except (IOError):
             print 'ERROR: Failed open file:' + self.apk
