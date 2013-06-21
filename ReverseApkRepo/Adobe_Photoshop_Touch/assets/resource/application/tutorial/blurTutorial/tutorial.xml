@@ -1,0 +1,11 @@
+<tutorial>
+	<step text="$$$/Tutorial/Tap the top layer and choose the Scribble Selection tool.=Tap the top layer and choose the Scribble Selection tool." tipid="scribbleSelectionTool" tiptext="$$$/Tutorial/Scribble Selection tool=Scribble Selection tool"/>
+	<step text="$$$/Tutorial/Tap Keep and paint around the edges inside the woman’s shape.=Tap Keep and paint around the edges inside the woman’s shape." tipid="keepScribblesButton" tiptext="$$$/Tutorial/Keep selection=Keep selection"/>
+	<step text="$$$/Tutorial/Tap Remove and paint around the edge outside the woman’s shape to isolate her from the background.=Tap Remove and paint around the edge outside the woman’s shape to isolate her from the background." tipid="removeScribblesButton" tiptext="$$$/Tutorial/Remove from selection=Remove from selection"/>
+	<step text="$$$/Tutorial/Choose Select > Refine Edge. Reduce the size of the brush and paint along the edge of the woman’s shape.=Choose Select > Refine Edge. Reduce the size of the brush and paint along the edge of the woman’s shape." tipid="selectMenuButton" tiptext="$$$/Tutorial/Refine Edge=Refine Edge"/>
+	<step text="$$$/Tutorial/Once the background has been masked, tap OK.=Once the background has been masked, tap OK."/>
+	<step text="$$$/Tutorial/Tap Add Layer > Layer from Selection. Tap the target icon on the middle layer to hide it.=Tap Add Layer > Layer from Selection. Tap the target icon on the middle layer to hide it." tipid="addLayerButton" tiptext="$$$/Tutorial/Layer from Selection=Layer from Selection"/>
+	<step text="$$$/Tutorial/Tap Effects > Photo > Sleepy Hollow. Set the intensity to about 50% and tap Apply.=Tap Effects > Photo > Sleepy Hollow. Set the intensity to about 50% and tap Apply." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Sleepy Hollow effect=Sleepy Hollow effect" />
+	<step text="$$$/Tutorial/Tap Select > Deselect.=Tap Select > Deselect." tipid="selectMenuButton" tiptext="$$$/Tutorial/Deselect=Deselect"/>
+	<step text="$$$/Tutorial/Select the bottom layer. Tap Effects > Basic > Directional Blur. Enter a blur of 50 and tap Apply.=Select the bottom layer. Tap Effects > Basic > Directional Blur. Enter a blur of 50 and tap Apply." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Directional Blur effect=Directional Blur effect" />
+</tutorial>

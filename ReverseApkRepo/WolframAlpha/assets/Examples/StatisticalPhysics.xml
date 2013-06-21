@@ -1,0 +1,1 @@
+<?xml version='1.0'?><example><link ref="Physics">Physics</link><category>Statistical Physics</category><section-title>Statistical Physics</section-title><caption>do an ideal gas law computation</caption><input>ideal gas law 2.2mol, 2.0atm, 500K</input><caption>compute with Raoult's law</caption><input>Raoult's law benzene, toluene</input></example>

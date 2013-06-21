@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: AndroLibWallpapers1_0_10.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

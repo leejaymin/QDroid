@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame_whitelist_ll" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/custom" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/whitelist_user_ll" android:background="@drawable/base_tab_state_1" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/startup_user_icon" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/whitelist_user_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whitelist_tab_1" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/whitelist_system_ll" android:background="@drawable/base_tab_state_2" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/startup_system_icon" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/whitelist_system_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/whitelist_tab_2" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/base_tab_bg" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffcfcfcf" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/whitelist_subtitle" />
+    </LinearLayout>
+    <ListView android:id="@id/processList" android:background="@drawable/ob_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@xml/action_item_bg" android:cacheColorHint="#00000000" android:divider="@drawable/examination_pane_horizontal_separator" android:dividerHeight="1.0dip" android:layout_weight="1.0" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/titlebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/whitelist_restore_ll" android:background="@drawable/base_long_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whitelist_restore_normal" />
+            <TextView android:textColor="#ff53beea" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/whitelist_button_1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/whitelist_save_ll" android:background="@drawable/base_long_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/whitelist_save_normal" />
+            <TextView android:textColor="#ff53beea" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/whitelist_button_2" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/process_list_checkbox_checked" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Alles scannen</item>
+        <item>Ordner scannen</item>
+        <item>Speicher scannen</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Aus</item>
+        <item>Sofort</item>
+        <item>Nach 5 Minuten</item>
+        <item>Nach 10 Minuten</item>
+        <item>Nach 15 Minuten</item>
+        <item>Nach 30 Minuten</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Kontakt</item>
+        <item>Telefonnummer</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Alle Dateien</item>
+        <item>Nur ausführbare</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Alle Dateien</item>
+        <item>Nur ausführbare</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Löschen</item>
+        <item>Überspringen</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Aktion erfragen</item>
+        <item>Löschen</item>
+        <item>Überspringen</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>1x wöchentlich</item>
+        <item>1x täglich</item>
+        <item>Aus</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>1x wöchentlich</item>
+        <item>1x täglich</item>
+        <item>Aus</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Montag</item>
+        <item>Dienstag</item>
+        <item>Mittwoch</item>
+        <item>Donnerstag</item>
+        <item>Freitag</item>
+        <item>Samstag</item>
+        <item>Sonntag</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Kontakte</item>
+        <item>SMS-Verlauf</item>
+        <item>Eingehende SMS</item>
+        <item>Anrufverlauf</item>
+        <item>Eingehende Anrufe</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Löschen</item>
+        <item>Überspringen</item>
+        <item>Hilfe</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Löschen</item>
+        <item>Überspringen</item>
+        <item>Hilfe</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Löschen</item>
+        <item>Alle löschen</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Ändern</item>
+        <item>Löschen</item>
+        <item>Alle löschen</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Löschen</item>
+        <item>Alle löschen</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Aus</item>
+        <item>Verbotene Kontakte</item>
+        <item>Erlaubte Kontakte</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Immer verbieten</item>
+        <item>Immer erlauben</item>
+        <item>Überspringen</item>
+        <item>Hilfe</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Anrufe</item>
+        <item>Anrufe und SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Ändern</item>
+        <item>Löschen</item>
+        <item>Alle löschen</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Löschen</item>
+        <item>Alle löschen</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Gerätesperre</item>
+        <item>Ausgewählte Daten löschen</item>
+        <item>Ortung</item>
+        <item>Kontakte und entsprechende Informationen ausblenden</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Anruf- und SMS-Filter</item>
+        <item>"Der Anruf- und SMS-Filter kann unerwünschte eingehende Anrufe und SMS blockieren.
+
+Wählen Sie dazu Filterregeln (Modus) aus und erstellen Sie Listen für verbotene und erlaubte Kontakte."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Anti-Virus</item>
+        <item>"Anti-Virus schützt Ihr Gerät vor Viren und anderen Schadprogrammen. Anti-Virus umfasst die Komponenten Schutz, Scan und Update. Hier können Sie die Einstellungen für die einzelnen Komponenten anpassen.
+
+Der Schutz erkennt Bedrohungen und untersucht neue Programme im Echtzeitmodus.
+
+Der Scan wird auf Befehl gestartet und hilft, Bedrohungen auf Ihrem Gerät zu finden und zu beseitigen (beispielsweise installierte und nicht installierte, in ein Archiv gepackte Dateien, die Bedrohungen enthalten). Als Scanbereich sind möglich: gesamtes Dateisystem des Geräts, Inhalt des internen Gerätespeichers oder konkreter Ordner.
+
+Das Update der Antiviren-Datenbanken und das Programm-Upgrade halten den Schutz Ihres Geräts auf dem neuesten Stand."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Privatsphäre</item>
+        <item>"Die Komponente Privatsphäre kann vertrauliche Kontakte sowie die Anrufliste und SMS-Nachrichten dieser Kontakte verbergen. Folgende Aktionen sind möglich:
+
+ - Typen der Informationen auswählen, die für diese Kontakte verborgen werden sollen.
+ - Aktivieren des automatischen Verbergens, nachdem das Gerät in den Stromsparmodus wechselt.
+ - Erlaubnis zum ferngesteuerten Verbergen von Informationen über Kontakte mithilfe des SMS-Befehls \"hide:[Code]\" von einem anderen Gerät aus (wobei [Code] für den Geheimcode Ihres Exemplars von Kaspersky Mobile Security steht)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Gerätesperre</item>
+        <item>"Sie können die Gerätesperre aktivieren. Mit dieser Funktion kann Ihr Gerät bei Diebstahl oder Verlust ferngesteuert gesperrt werden.
+
+Um Ihr Gerät ferngesteuert zu sperren, senden Sie von einem beliebigen Gerät aus den SMS-Befehl \"lock:[Code]\" an Ihr Gerät (wobei [Code] fur den Geheimcode Ihres Exemplars von Kaspersky Mobile Security steht).
+
+Geben Sie den Geheimcode für Kaspersky Mobile Security an, um das Gerät zu entsperren."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Datenlöschung</item>
+        <item>"Sie können die Informationen auswählen, die Sie bei Diebstahl oder Verlust Ihres Geräts ferngesteuert löschen wollen. Sie können das Löschen für konkrete Informationen (beispielsweise Kontakte, SMS, Kalender oder Ordner) festlegen.
+
+Um die ausgewählten Informationen ferngesteuert zu löschen, senden Sie von einem beliebigen Gerat aus den SMS-Befehl \"wipe:[Code]\" ([Code] steht für den Geheimcode Ihres Exemplars von Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM-Kontrolle</item>
+        <item>"Sie können eine Funktion aktivieren, mit der Sie die neue Telefonnummer erhalten und das Gerät sperren können, wenn die SIM-Karte gewechselt oder das Gerät ohne SIM eingeschaltet wird.
+
+Damit Sie beim Wechsel der SIM-Karte über die neue Telefonnummer informiert werden, geben Sie eine E-Mail-Adresse und (oder) eine andere Telefonnummer an. Damit das Gerät automatisch gesperrt wird, wenn die SIM-Karte gewechselt oder es ohne SIM eingeschaltet wird, aktivieren Sie die Gerätesperre in den Einstellungen für die SIM-Kontrolle."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Ortung</item>
+        <item>"Sie können eine Funktion aktivieren, mit der Sie Ihr Gerät bei Diebstahl oder Verlust ferngesteuert orten können.
+
+Um das Gerät zu orten, senden Sie von einem beliebigen Gerät aus den SMS-Befehl \"locate:[Code]\" an Ihr Gerät (wobei [Code] für den Geheimcode Ihres Exemplars von Kaspersky Mobile Security steht). Das Programm teilt Ihnen per Antwort-SMS oder E-Mail an eine festgelegte Adresse die Gerätekoordinaten mit.
+
+Zum Senden einer E-Mail-Nachricht schickt das Programm eine SMS an eine spezielle Nummer des Mobilfunkanbieters MTS (Russland). Für diese SMS fallen Gebühren gemäß Ihres Mobilfunktarifes an. Der Mobilfunkanbieter MTS (Russland) schickt die Gerätekoordinaten an Ihre E-Mail-Adresse."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Erweitert</item>
+        <item>Empfohlen</item>
+        <item>Aus</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Neu installierte Programme untersuchen und Dateioperationen überwachen.</item>
+        <item>Nur neue Programme untersuchen.</item>
+        <item>Schutz deaktiviert.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Erweitert</item>
+        <item>Empfohlen</item>
+        <item>Aus</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Anrufliste</item>
+        <item>Eingehende SMS</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Alle Ereignisse</item>
+        <item>Anti-Virus</item>
+        <item>Anruf- und SMS-Filter</item>
+        <item>Web-Filter</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Scan-Ergebnisse, Update</item>
+        <item>Blockierte Anrufe und Nachrichten</item>
+        <item>Blockierte Webseiten</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Heute</item>
+        <item>In den letzten 7 Tagen</item>
+        <item>In den letzten 30 Tagen</item>
+        <item>Langer Zeitraum</item>
+    </string-array>
+</resources>

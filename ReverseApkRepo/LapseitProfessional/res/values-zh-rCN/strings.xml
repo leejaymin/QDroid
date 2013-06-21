@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="faq_string">" "<Data> &lt;b>&lt;font color=#ffba00>这是什么应用?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>延时摄影是安卓手机设备拍照更加简单更加准确.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>我使用in-app billing购买完整版但是却没有任何改变! &lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>有事可能会是google的延迟，可以重启程序，如果仍旧没有改变，请与我们联系&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>那个是渲染模式?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>你可以渲染你的的视频在不同格式下，如MP4 MOV FLV,在不同分辨率下你可以得到更多的结果。&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>我收到的视频无法在设备中播放&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>不同设备的视频编码不同，你可以试试下载播放器，像是Rock Player.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>是否有拍摄时间的限制?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>应用软件是不受限制的，但是电池和磁盘空间是有限的。&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>那个计划时可用的?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>完整版支持720P播放.而使用版只有240P可用。如果喜欢此程序，请支持下载完整版&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>怎样才能设置相机快门声&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>快门声在软件中被禁用，不过由于一些隐私权问题，一些设备中，依旧存在，如果想要禁用，需手机root&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>当改变设备或卸载软件后，The In-app Billing仍旧支付？&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>答案是肯定的，你们还得付款将被储存在你的谷歌账户，而且每一次你所打开的应用程序从一个新的安装它会检查你以前的订单谷歌帐户,你将可以选择自动激活后由专业的方式将工作在任何地方。&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>文件的储存位置?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>在sdcard/LapseIt 目录.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>怎样删除这个文件夹?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>点击列表按钮，点击删除按钮确认删除&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>免费版有什么限制?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>拍摄像素为240P.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>怎样能使电池和拍摄时价更长?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>如果不能够连接至电源设备，最好的做法是关闭所有其他应用程序模式，gps，wifi，降低屏幕的亮度&lt;/font>&lt;br>&lt;br> </Data>" "</string>
+    <string name="dialog_outofmemory_title">能存不足</string>
+    <string name="dialog_outofmemory_message_capture">"对不起，没有足够的内存拍摄照片，请使用低分辨率，然后再试一次，如果问题仍未解决，请和我们联系.
+
+谢谢 !"</string>
+    <string name="dialog_outofmemory_message_render">"对不起，没有足够内存渲染目前所使用的设置，请使用低分辨率，然后再试一次，如果问题仍未解决，请和我们联系.
+
+谢谢 !"</string>
+    <string name="dialog_rate_title">给我们评分</string>
+    <string name="dialog_rate_message">"你的反馈对我们非常重要
+
+你能给我们的作品评分吗?"</string>
+    <string name="dialog_rate_done">否</string>
+    <string name="dialog_rate_later">稍后</string>
+    <string name="dialog_rate_now">是</string>
+    <string name="dialog_general_ok">确定</string>
+    <string name="dialog_connerror_title">连接错误</string>
+    <string name="dialog_connerror_message">"无法创建连接服务 !
+
+请检测信号，稍后再试!"</string>
+    <string name="toast_camera_error">初始化相继失败，请关闭其他应用程序或重新启动你的相机设备</string>
+    <string name="info_ads_title">延时摄影专业版</string>
+    <string name="info_ads_first">• 完全版本</string>
+    <string name="info_ads_sec">• 720p</string>
+    <string name="info_ads_third">• 声道</string>
+    <string name="info_ads_fourth">• 更多 ...</string>
+    <string name="soundtrack_noinfo">没有可用的ID3标签</string>
+    <string name="dialog_nofiletitle">声音错误</string>
+    <string name="dialog_nofilemusic">无法获取指定的音乐，请试试不同的文件管理器!</string>
+    <string name="description_resolution_full">" "<Data> &lt;b>&lt;font color=#efefef>确定拍摄的分辨率&lt;/font>&lt;br>&lt;br> 我们提供一系列从低到高的选择来满足你的需要&lt;br>&lt;br> &lt;font color=#eaeaea>低分辨率&lt;/font> 有利于更好地拍摄长时间或是高速拍摄（系统可以用更少的时间处理DE图像）&lt;br>&lt;br> &lt;font color=#eaeaea>高分辨率&lt;/font> 提供更准确的图像质量，视频得文件大小和需要的磁盘空间，渲染时间会更大&lt;br>&lt;br> &lt;font color=#eaeaea>全部传感器&lt;/font> 添加是为了那些想通过手机拍摄和通过脑渲染的人们，你可以使用软件渲染，不过拍摄分辨率将会是720P&lt;br>&lt;br> </Data>" "</string>
+    <string name="description_resolution_lite">" "<Data>&lt;b>&lt;font color=#efefef>确定拍摄分辨率&lt;/font>&lt;br>&lt;br> &lt;font color=#AAAAAA>用户通常会捕获尽可能最高分辨率的图像，但我们提供了一个从低到最高得选择范围来满足您的需求&lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>低分辨率&lt;/font> &lt;font color=#AAAAAA> 有利于长时间拍摄并且可以在手机上播放&lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>高分辨率&lt;/font> &lt;font color=#AAAAAA> 提供更准确的图像质量，&lt;br>&lt;br>&lt;/font> &lt;font color=#efefef>试用版&lt;/font>&lt;br> &lt;font color=#AAAAAA>我们提供免费试用版来测试软件，在此版本中，你只能使用低分辨率&lt;br>&lt;br>&lt;/font> &lt;font color=#ffba00>如果你喜欢这个软件并且肯定我们的工作，可以点击此文本得到更多关于专业版的信息&lt;/font>&lt;/font> </Data>" "</string>
+    <string name="description_timescale">" "<Data>" &lt;b>&lt;font color=#efefef>确定定时拍摄&lt;/font>&lt;br>&lt;br> 参数将配合帧间隔来确定拍摄两张图片中间得间隔时间
+"</Data>" "</string>
+    <string name="description_limitmode">" "<Data> &lt;b>&lt;font color=#efefef>限制帧数&lt;/font>&lt;br> 在这种模式下，你可以确定拍摄的帧数，当到达显示的数字，会自动停止拍摄&lt;br>&lt;br> &lt;font color=#efefef>限制时间&lt;/font>&lt;br> 在这种模式下,你可以确定拍摄的最长时间,当到达显示的时间,会自动停止拍摄&lt;br>&lt;br> &lt;font color=#efefef>限制用户&lt;/font>&lt;br> 在这种模式下，拍摄长度由用户控制，点击停止。 </Data>" "</string>
+    <string name="description_geolocation">" "<Data> &lt;b>&lt;font color=#efefef>确定是否提供地理位置信息&lt;/font>&lt;br>&lt;br> 激活地理位置，将会显示你拍摄时的位置。&lt;br>&lt;br> 在移动环境下有用，例如驾驶时 </Data>" "</string>
+    <string name="description_encoder">" "<Data> &lt;b>&lt;font color=#efefef>确定编码器用于渲染这个项目&lt;/font>&lt;br>&lt;br> &lt;font color=#ff5400>确定使用MP4编码器将导致视频在某些设备上无法播放&lt;br>&lt;br>&lt;/font>&lt;/b>如果你收到信息 &lt;b>&lt;font color=#efefef size=7>视频无法播放&lt;/b>&lt;/font> 你可以试着下载第三方软件像是 &lt;b>Rock Player&lt;/b> </Data>" "</string>
+    <string name="description_quality">" "<Data> &lt;b>&lt;font color=#efefef>确定渲染视频的质量&lt;/font>&lt;br>&lt;br> 高质量意味着比特率和文件将会更大&lt;/b> </Data>" "</string>
+    <string name="description_framespersecond">" "<Data> &lt;b>&lt;font color=#efefef>确定渲染视频帧率&lt;/font>&lt;br>&lt;br> 帧率是非常重要的，他将影响你在存档时候的速度&lt;br>&lt;br> 你可以多次使用不同的渲染看看那个效果更好&lt;/b> </Data>" "</string>
+    <string name="description_shutter">" "<Data> &lt;b>&lt;font color=#efefef>确定照相机拍摄时的快门声音&lt;/font>&lt;br>&lt;br> I如果你不希望听到，你可以设置禁用&lt;br>&lt;br> &lt;font color=#ff5400>如果这个选项被设置为禁用后你仍能听到，你就需要尝试其他方法&lt;br>&lt;br>&lt;/font> &lt;font color=#777777>一些手机又安全政策限制更改拍照的设置，在这种情况下，&lt;br>&lt;br> 如果你的手机已经root, 在文件夹 /system/media/audio/ui/ 你会发现一个命名为 camera_click.ogg的文件, 你只需要重命名为 camera_click.old 就行了. &lt;/font>&lt;/b> </Data>" "</string>
+    <string name="description_dim">" "<Data> &lt;b>&lt;font color=#efefef>拍摄时得对比度&lt;/font>&lt;br>&lt;br> 在拍摄时屏幕将会变暗来保护电池，你可以调整屏幕亮度&lt;/b> </Data>" "</string>
+    <string name="description_full_version">" "<Data> &lt;b>&lt;font color=#eaeaea>延时摄影&lt;/font> 开发是为了提供一个简单的方法去拍摄，我们努力提供一个专业且兼顾优质用户界面得作品&lt;br>&lt;br> 我们继续更新，并且我们将会带来更好的性能和特性.&lt;br>&lt;br> &lt;font color=#ffba00>如果你喜欢这个软件并且肯定我们的工作，点击下方标志购买 &lt;b>专业版&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>如果你喜欢使用In-App Billing 请点击 菜单键选择&lt;/b>&lt;br>&lt;br>&lt;/font> 在购买软件时，记得要给我们的产品打分 &lt;font color=#eaeaea>延时摄影&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>谢谢&lt;/font>&lt;/b>&lt;br> </Data>" "</string>
+    <string name="description_full_inapp_version">" "<Data> &lt;b>&lt;font color=#eaeaea>延时摄影&lt;/font> 开发是为了提供一个简单的方法去拍摄，我们努力提供一个专业且兼顾优质用户界面得作品&lt;br>&lt;br> 我们继续更新，并且我们将会带来更好的性能和特性.&lt;br>&lt;br> &lt;font color=#ffba00>如果你喜欢这个软件并且肯定我们的工作，点击下方标志购买&lt;b>专业版&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>如果你有任何问题，或你更喜欢使用In-App Billing 请点击 菜单键选择&lt;/b>&lt;br>&lt;br>&lt;/font> 在购买软件时，记得要给我们的产品打分 &lt;font color=#eaeaea>延时摄影&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>谢谢&lt;/font>&lt;/b>&lt;br> </Data>" "</string>
+    <string name="settingsitem_capture_header">拍照设置</string>
+    <string name="settingsitem_capture_interval">帧间隔</string>
+    <string name="settingsitem_capture_timescale">时间比例</string>
+    <string name="settingsitem_capture_limitmode">限制模式</string>
+    <string name="settingsitem_capture_limitvalue"><Data>Limit value </Data></string>
+    <string name="settingsitem_capture_delay"><Data>Initial delay &lt;small>&lt;font size=1>&lt;i>in Millisecs&lt;/i>&lt;/font>&lt;/small> </Data></string>
+    <string name="settingsitem_capture_resolution">分辨率</string>
+    <string name="settingsitem_capture_dim">对比度</string>
+    <string name="settingsitem_capture_shutter">快门声</string>
+    <string name="settingsitem_capture_schedule">目录</string>
+    <string name="settingsitem_capture_directory">输出文件夹</string>
+    <string name="settingsitem_render_header">渲染设置</string>
+    <string name="settingsitem_render_encoder">编码器</string>
+    <string name="settingsitem_render_quality">质量</string>
+    <string name="settingsitem_render_fps">每秒帧数</string>
+    <string name="settingsitem_other_header">关于延时摄影</string>
+    <string name="settingsitem_other_buy">购买延时摄影</string>
+    <string name="settingsitem_other_rate">评分</string>
+    <string name="settingsitem_other_share">分享</string>
+    <string name="settingsitem_other_feedback">反馈</string>
+    <string name="settingsitem_other_faq">常见问题</string>
+    <string name="settingsitem_detail_yes">是</string>
+    <string name="settingsitem_detail_no">否</string>
+    <string name="settingsitem_detail_enabled">启用</string>
+    <string name="settingsitem_detail_disabled">不可用</string>
+    <string name="settingsitem_detail_fullsensor">全部传感器</string>
+    <string name="settingsitem_detail_1080p">1080P</string>
+    <string name="settingsitem_detail_720p">720P</string>
+    <string name="settingsitem_detail_480p">480P</string>
+    <string name="settingsitem_detail_360p">360P</string>
+    <string name="settingsitem_detail_240p">240P</string>
+    <string name="settingsitem_detail_minutes">分</string>
+    <string name="settingsitem_detail_seconds">秒</string>
+    <string name="settingsitem_detail_frames">帧</string>
+    <string name="settingsitem_detail_timer">延时调节器</string>
+    <string name="settingsitem_detail_user">用户</string>
+    <string name="settingsitem_detail_mp4">MP4</string>
+    <string name="settingsitem_detail_mov">MOV</string>
+    <string name="settingsitem_detail_flv">FLV</string>
+    <string name="settingsitem_detail_low">低</string>
+    <string name="settingsitem_detail_medium">中</string>
+    <string name="settingsitem_detail_high">高</string>
+    <string name="settings_other_none">无</string>
+    <string name="app_name">延时摄影</string>
+    <string name="app_description">延时摄影</string>
+    <string name="btn_startcapture">拍摄</string>
+    <string name="btn_listcaptured">图库</string>
+    <string name="btn_settings">设置</string>
+    <string name="btn_proversion">专业版</string>
+    <string name="pref_capturevery">间隔</string>
+    <string name="view_start">开始</string>
+    <string name="view_faq">常见问题</string>
+    <string name="view_fullversion">支持延时摄影 • 专业版</string>
+    <string name="view_capture">拍摄</string>
+    <string name="view_preview">预览</string>
+    <string name="view_list">出错</string>
+    <string name="view_settings">设置</string>
+    <string name="view_player">播放</string>
+    <string name="view_info">细节</string>
+    <string name="view_trim">微调</string>
+    <string name="view_effect">效果</string>
+    <string name="view_render">着色</string>
+    <string name="view_project">项目</string>
+    <string name="view_schedule">编辑照片</string>
+    <string name="view_remote">远程浏览你的项目</string>
+    <string name="view_upload">图库</string>
+    <string name="preview_loop">Loop</string>
+    <string name="preview_rendersequence">影像序列</string>
+    <string name="preview_rendervideo">录像</string>
+    <string name="preview_render">着色</string>
+    <string name="effectssaturation">饱和度</string>
+    <string name="search_hint">搜索</string>
+    <string name="error_sdcard_notfound">先安装SD卡</string>
+    <string name="error_capture">程序出错</string>
+    <string name="dialog_lowbattery">电池电量过低</string>
+    <string name="dialog_cancelcapturetitle">正在拍摄</string>
+    <string name="dialog_cancelcapturemessage">你想要取消并且返回桌面?</string>
+    <string name="dialog_deleteprojecttitle">确定排除</string>
+    <string name="dialog_deleteprojectmessage">确定永久删除此项目?</string>
+    <string name="dialog_deleterenderedtitle">确定排除</string>
+    <string name="dialog_deleterenderedmessage">确定永久删除此视频?</string>
+    <string name="dialog_cancelscheduletitle">确定取消</string>
+    <string name="dialog_cancelschedulemessage">你真的要取消这个预定?</string>
+    <string name="dialog_defaulttitle">默认设置</string>
+    <string name="dialog_defaultmessage">更改为默认设置?</string>
+    <string name="dialog_warningoutputtitle">高级设置警告</string>
+    <string name="dialog_warningoutputmessage">"请确保是有效路径
+
+这种变化只会影响到创建的项目"</string>
+    <string name="dialog_foldermessage">项目文件夹</string>
+    <string name="schedulenostartmessage">请先选择开始日期</string>
+    <string name="scheduleendandstart">然后再设置结束日期</string>
+    <string name="restoringtransactions">恢复处理</string>
+    <string name="projectportraitoptions">使用肖像模式获得更多选择</string>
+    <string name="dialog_quickrendertitle">快速渲染设置?</string>
+    <string name="dialog_quickrendermessage">"Encoder: @encoder@
+Quality: @quality@
+FPS: @fps@"</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_continue">继续</string>
+    <string name="dialog_understand">明白</string>
+    <string name="dialog_default">使用默认</string>
+    <string name="dialog_set">设置</string>
+    <string name="schedule_schedule">预定</string>
+    <string name="schedule_capture">预定拍摄</string>
+    <string name="schedule_noschedule">你没有任何预定的拍摄</string>
+    <string name="not_set">未设置</string>
+    <string name="start_at">开始于</string>
+    <string name="end_at">结束于</string>
+    <string name="new_schedule">新预定</string>
+    <string name="home_visitus">访问 www.lapseit.com</string>
+    <string name="home_thanks">感谢支持</string>
+    <string name="content_title">我的图片</string>
+    <string name="content_desc">由延时摄影拍摄</string>
+    <string name="list_mygallery">我的图库</string>
+    <string name="list_lapseitgallery">延时摄影图库</string>
+    <string name="list_displayingproject">显示 XXX 延时摄影项目</string>
+    <string name="list_displayingprojects">显示 XXX 延时摄影项目</string>
+    <string name="list_nopersonalprojects">没有任何项目</string>
+    <string name="gallery_sortingby">排序</string>
+    <string name="gallery_sortby">排序</string>
+    <string name="gallery_lapsesfrom">来自 XXX</string>
+    <string name="gallery_fetchinguser">吸引人的 XXX 项目</string>
+    <string name="gallery_displayingproject">显示 XXX 项目</string>
+    <string name="gallery_displayingprojects">显示 XXX 项目</string>
+    <string name="gallery_votes">投票</string>
+    <string name="gallery_vote">投票</string>
+    <string name="gallery_mode_best">最高评价</string>
+    <string name="gallery_mode_view">最多浏览</string>
+    <string name="gallery_mode_time">最近添加</string>
+    <string name="gallery_mode_user">来自用户</string>
+    <string name="list_framecaptured">拍摄帧</string>
+    <string name="list_framescaptured">拍摄帧</string>
+    <string name="list_noframescaptured">无拍摄帧</string>
+    <string name="list_videorendered">视频渲染</string>
+    <string name="list_videosrendered">视频渲染</string>
+    <string name="list_framespersecond">帧每秒</string>
+    <string name="list_project">项目</string>
+    <string name="list_video">视频</string>
+    <string name="list_hideallvideos">隐藏所有渲染视频</string>
+    <string name="list_showallvideos">显示所有渲染视频</string>
+    <string name="menu_capture">拍摄</string>
+    <string name="menu_everysecs">间隔 XXX 秒</string>
+    <string name="menu_everymins">间隔 XXX 分</string>
+    <string name="menu_pause">暂停</string>
+    <string name="menu_cancel">取消</string>
+    <string name="menu_stop">停止</string>
+    <string name="menu_more">更多</string>
+    <string name="menu_fullsensor">全部传感器</string>
+    <string name="menu_autofocus">自动对焦</string>
+    <string name="menu_focus_mode">对焦模式</string>
+    <string name="menu_coloreffects">色彩效果</string>
+    <string name="menu_scenemode">场景模式</string>
+    <string name="menu_whitebalance">白平衡</string>
+    <string name="gallery_fetching">吸引人的项目</string>
+    <string name="project_info">信息</string>
+    <string name="project_trim">修剪</string>
+    <string name="project_effects">效果</string>
+    <string name="project_soundtrack">音乐</string>
+    <string name="project_render">渲染</string>
+    <string name="info_loop">光圈</string>
+    <string name="info_flipx">镜像 X</string>
+    <string name="info_flipy">镜像 Y</string>
+    <string name="info_backwards">向后翻转</string>
+    <string name="info_framesin">进入</string>
+    <string name="info_using">在 RESXXX 使用 MBXXX mb</string>
+    <string name="trim_startframe">起始帧</string>
+    <string name="trim_endframe">结束帧</string>
+    <string name="trim_trim">修剪</string>
+    <string name="soundtrack_add">添加音乐</string>
+    <string name="soundtrack_remove">删除音乐</string>
+    <string name="soundtrack_pro">专业版</string>
+    <string name="soundtrack_analyze">分析音乐</string>
+    <string name="soundtrack_selecttitle">选择一段 MP3 音乐</string>
+    <string name="soundtrack_analyze_message">分析音乐 ...</string>
+    <string name="soundtrack_notrack">无音乐选择</string>
+    <string name="soundtrack_clipduration">持续时间</string>
+    <string name="soundtrack_musicduration">音乐时间</string>
+    <string name="soundtrack_range">跟踪范围</string>
+    <string name="soundtrack_sample">样品</string>
+    <string name="soundtrack_sample_notrack">没有轨迹增加</string>
+    <string name="soundtrack_info">这只是增加特征允许你插入一个声道，妙极了不是吗?</string>
+    <string name="soundtrack_infolite">"我们也在不断改进和增加新特性，所以请支持我们的工作购买专业版。
+
+谢谢 !"</string>
+    <string name="soundtrack_infopro">选择音乐并且滑动音条来移动开始位置.</string>
+    <string name="render_rendername">渲染的名字 ...</string>
+    <string name="render_renderbutton">渲染</string>
+    <string name="render_format">格式</string>
+    <string name="render_fps">帧率</string>
+    <string name="render_resolution">分辨率</string>
+    <string name="render_quality">质量</string>
+    <string name="render_effect">效果</string>
+    <string name="render_duration">持续</string>
+    <string name="render_range">延伸</string>
+    <string name="render_rangeto">到</string>
+    <string name="quick_details">"查看
+细节"</string>
+    <string name="quick_showrendered">"显示
+已渲染的"</string>
+    <string name="quick_hiderendered">"隐藏
+已渲染的"</string>
+    <string name="quick_notrendered">"无
+已渲染的"</string>
+    <string name="quick_watch">"看
+视频"</string>
+    <string name="quick_deleteproject">"删除
+项目"</string>
+    <string name="quick_zipsend">"压缩并且
+发送"</string>
+    <string name="quick_lapseitgallery">"
+图库"</string>
+    <string name="quick_shareonline">"分享
+在线"</string>
+    <string name="quick_deleterendered">"删除
+已渲染的"</string>
+    <string name="quick_projectrating">"项目
+评分"</string>
+    <string name="quick_socialshare">"社交
+分享"</string>
+    <string name="quick_userlist">"用户
+列表"</string>
+    <string name="menu_contextplay">播放</string>
+    <string name="menu_contextpublish">出版</string>
+    <string name="menu_contextclose">关闭</string>
+    <string name="menu_contextnonnative">非原生</string>
+    <string name="menu_renderingsuccess">成功渲染</string>
+</resources>

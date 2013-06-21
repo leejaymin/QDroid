@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Světlý (výchozí)</item>
+        <item>Tmavý</item>
+        <item>Modrý</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automaticky (standardně)</item>
+        <item>Vodorovně</item>
+        <item>Svisle</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Výchozí</item>
+        <item>Větší</item>
+        <item>Největší</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Domovská obrazovka</item>
+        <item>Nastavení</item>
+    </string-array>
+</resources>

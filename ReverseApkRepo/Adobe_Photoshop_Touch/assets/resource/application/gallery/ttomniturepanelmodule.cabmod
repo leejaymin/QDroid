@@ -1,0 +1,42 @@
+<ttbasepanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="619" height="458" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="400" height="240" x="15" y="20" module="module" whiteBackground="true">
+        <button id="buttonttblue" width="175" height="40" sizeX="right" sizeY="bottom" x="205" y="180" target="referenceDispatcher" selector="yes" title="$$$/ttomniturepanelmodule/button/title/Allow=Allow"/>
+        <button id="button1" width="175" height="40" sizeY="bottom" x="20" y="180" target="referenceDispatcher" selector="no" title="$$$/ttomniturepanelmodule/button/title/Don#{acute}t Allow=Don#{acute}t Allow"/>
+        <text id="ttblack2" width="360" height="80" sizeX="scale" sizeY="scale" x="20" y="50" text="$$$/ttomniturepanelmodule/text/text/Text=Text" small="true"/>
+        <ttactiontext id="ttactiontext" width="360" height="22" sizeX="scale" sizeY="bottom" x="20" y="133" text="$$$/ttomniturepanelmodule/text/text/Learn More=Learn More" small="true" target="referenceDispatcher" selector="learnMore"/>
+        <text id="ttblackttboldttlarge" width="360" height="25" sizeX="scale" x="20" y="19" text="$$$/ttomniturepanelmodule/text/text/Title=Title"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="ttblackttboldttlarge" refName="titleText"/>
+      <objRef refId="ttblack2" refName="messageText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+    <class className="ttpickercontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTPickerControl"/>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+    </class>
+    <class className="ttactiontext" superClassName="text" packageName="" codeName="TTActionText">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="selector" type="string" defaultValue="" codeName="iSelector"/>
+      <var name="enabled" type="boolean" defaultValue="true" codeName="iEnabled"/>
+      <var name="color" type="number" defaultValue="-1" codeName="iColor"/>
+    </class>
+  </classes>
+</ttbasepanelmodule>

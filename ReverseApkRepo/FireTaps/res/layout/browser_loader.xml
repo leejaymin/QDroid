@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/FlippingPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <org.tf.ui.FTextView android:text="@string/loading_songs" style="@style/HeadText" />
+        <org.tf.ui.FTextView android:textColor="#ffffff80" android:ellipsize="end" android:id="@id/songs_loaded" android:text="@string/songs_loaded_fmt" android:singleLine="true" style="@style/NormalText" />
+        <org.tf.ui.FTextView android:textColor="#ffffff80" android:ellipsize="end" android:id="@id/song_0" android:singleLine="true" style="@style/SmallText" />
+        <org.tf.ui.FTextView android:textColor="#80ffff80" android:ellipsize="end" android:id="@id/song_1" android:singleLine="true" style="@style/SmallText" />
+        <org.tf.ui.FTextView android:textColor="#40ffff80" android:ellipsize="end" android:id="@id/song_2" android:singleLine="true" style="@style/SmallText" />
+        <org.tf.ui.FTextView android:textColor="#20ffff80" android:ellipsize="end" android:id="@id/song_3" android:singleLine="true" style="@style/SmallText" />
+    </LinearLayout>
+</RelativeLayout>

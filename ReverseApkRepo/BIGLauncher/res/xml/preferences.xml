@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="preferenceScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/preferencesWizardTitle" android:key="wizard" />
+    <ListPreference android:enabled="true" android:entries="@array/languagesReturnValue" android:title="@string/preferencesLanguageSelectTitle" android:key="language" android:defaultValue="" android:positiveButtonText="@string/dialogYes" android:negativeButtonText="@string/dialogCancel" android:entryValues="@array/languagesReturnValue" />
+    <PreferenceScreen android:title="@string/preferencesThemeCategory" android:key="themePreferenceScreen">
+        <ListPreference android:entries="@array/preferencesThemeEntries" android:title="@string/preferencesThemeTitle" android:key="theme" android:defaultValue="0" android:positiveButtonText="@string/dialogYes" android:negativeButtonText="@string/dialogCancel" android:entryValues="@array/themesReturnValue" />
+        <ListPreference android:entries="@array/preferencesTextSizeEntries" android:title="@string/preferencesTextSizeTitle" android:key="textSize" android:defaultValue="30" android:positiveButtonText="@string/dialogYes" android:negativeButtonText="@string/dialogCancel" android:entryValues="@array/textSizeReturnValue" />
+        <ListPreference android:entries="@array/preferencesScreenOrientationEntries" android:title="@string/preferencesScreenOrientationTitle" android:key="screenOrientation" android:defaultValue="-1" android:positiveButtonText="@string/dialogYes" android:negativeButtonText="@string/dialogCancel" android:entryValues="@array/screenOrientationReturnValue" />
+        <CheckBoxPreference android:title="@string/preferencesThemesApplyTextSizeToPreferencesTitle" android:key="textSizeApplyToPreferences" android:summary="@string/preferencesThemesApplyTextSizeToPreferencesSummary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/preferencesHapticFeedbackTitle" android:key="hapticFeedback" android:summary="@string/preferencesHapticFeedbackSummary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/preferencesFullScreenTitle" android:key="fullScreen" android:summary="@string/preferencesFullScreenSummary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preferencesIconSignalTitle" android:key="iconSignalShow" android:summary="@string/preferencesIconSignalSummary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preferencesIconBatteryTitle" android:key="iconBatteryShow" android:summary="@string/preferencesIconBatterySummary" android:defaultValue="false" />
+        <ListPreference android:entries="@array/safeBordersEntries" android:title="@string/preferencesSafeBordersTitle" android:key="safeBorders" android:summary="@string/preferencesSafeBordersSummary" android:defaultValue="0" android:positiveButtonText="@string/dialogYes" android:negativeButtonText="@string/dialogCancel" android:entryValues="@array/safeBordersValues" />
+        <CheckBoxPreference android:title="@string/preferencesTalkbackTitleWithProgramNameTitle" android:key="talkbackWithoutProgramName" android:summary="@string/preferencesTalkbackTitleWithProgramNameSummary" android:defaultValue="false" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/preferencesPreferencesMenuTitle" android:key="preferencesMenuPreferencesScreen">
+        <CheckBoxPreference android:title="@string/preferencesPreferencesMenuShowSystemSettingsTitle" android:key="preferencesMenuAddSystemSettings" android:summary="@string/preferencesPreferencesMenuShowSystemSettingsSummary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/preferencesPreferencesMenuProtectTitle" android:key="preferencesMenuProtect" android:summary="@string/preferencesPreferencesMenuProtectSummary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preferencesPreferencesMenuProtectSystemSettingsTitle" android:key="preferencesMenuProtectSystemSettingsMenu" android:summary="@string/preferencesPreferencesMenuProtectSystemSettingsSummary" android:defaultValue="false" />
+        <EditTextPreference android:singleLine="true" android:title="@string/preferencesPreferencesMenuPasswordTitle" android:key="preferencesMenuPassword" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/preferencesScreensCategory" android:key="screensPreferenceCategory">
+        <Preference android:title="@string/preferencesCustomizeScreensCategory" android:key="customizeScreens" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferencesSubAplicationsCategory" android:key="subapplicationsPreferenceCategory">
+        <PreferenceScreen android:title="@string/preferencesPhoneCategory" android:key="phonePreferenceScreen">
+            <Preference android:title="@string/preferencesButtonContactsSetApplicationTitle" android:key="buttonMyContactsApplication" />
+            <Preference android:title="@string/preferencesButtonDialerSetApplicationTitle" android:key="buttonDialerApplication" />
+            <CheckBoxPreference android:title="@string/preferencesContactsShowPhoneOnlyTitle" android:key="contactsShowWithPhoneOnly" android:summary="@string/preferencesContactsShowPhoneOnlySummary" android:defaultValue="true" />
+            <PreferenceCategory android:title="@string/preferencesContactDetailCategory" android:key="contactDetailPreferenceScreen">
+                <CheckBoxPreference android:title="@string/preferencesContactDetailSystemTitle" android:key="contactDetailSystem" android:summary="@string/preferencesContactDetailSystemSummary" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/preferencesContactDetailMoreTitle" android:key="contactDetailMore" android:summary="@string/preferencesContactDetailMoreSummary" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/preferencesContactDetailDeleteTitle" android:key="contactDetailDelete" android:summary="@string/preferencesContactDetailDeleteSummary" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/preferencesContactDetailShowOptionsForPhoneTitleTitle" android:key="contactShowPhoneOptionsTitle" android:summary="@string/preferencesContactDetailShowOptionsForPhoneTitleSummary" android:defaultValue="false" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/preferencesCallLogCategory" android:key="callLogPreferenceScreen">
+                <CheckBoxPreference android:title="@string/preferencesCallLogDeleteTitle" android:key="callLogDeleteSystem" android:summary="@string/preferencesCallLogDeleteSummary" android:defaultValue="false" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/preferencesMessagesCategory" android:key="phoneMessageScreen">
+            <PreferenceCategory android:title="@string/preferencesMessageWriterCategory" android:key="messageWriterPreferenceScreen" />
+            <CheckBoxPreference android:title="@string/preferencesMessageWriteDefaultApplicationTitle" android:key="messageWriteDefaultApplication" android:summary="@string/preferencesMessageWriteDefaultApplicationSummary" />
+            <CheckBoxPreference android:title="@string/preferencesMessageWriteToSystemApplicationTitle" android:key="messageWriteToSystemApplication" android:summary="@string/preferencesMessageWriteToSystemApplicationSummary" />
+            <CheckBoxPreference android:title="@string/preferencesMessageWriteStickyLayoutTitle" android:key="messageWriteStickyLayout" android:summary="@string/preferencesMessageWriteStickyLayoutSummary" />
+            <PreferenceCategory android:title="@string/preferencesMessageDetailCategory" android:key="messageDetailPreferenceScreen" />
+            <CheckBoxPreference android:title="@string/preferencesMessageDetailShowDeleteTitle" android:key="messageDetailDelete" android:summary="@string/preferencesMessageDetailShowDeleteSummary" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/preferencesSosCategory" android:key="sosPreferenceScreen">
+            <PreferenceCategory android:title="@string/preferencesSosSmsCategory" android:key="sosSmsPreferenceCategory">
+                <CheckBoxPreference android:title="@string/preferencesSosSmsAutomaticTitle" android:key="sosSmsAutomatic" android:summary="@string/preferencesSosSmsAutomaticSummary" android:defaultValue="false" />
+                <EditTextPreference android:title="@string/preferencesSosSmsAutomaticPhoneTitle" android:key="sosSmsPhone" android:summary="@string/preferencesSosSmsAutomaticPhoneSummary" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" />
+                <EditTextPreference android:maxLength="100" android:title="@string/preferencesSosSmsAutomaticTextTitle" android:key="sosSmsText" android:summary="@string/preferencesSosSmsAutomaticTextSummary" android:defaultValue="@string/preferencesSosSmsAutomaticTextDefault" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" android:inputType="textMultiLine" />
+                <EditTextPreference android:title="@string/preferencesSosSmsAutomaticWaitTitle" android:key="sosSmsWait" android:summary="@string/preferencesSosSmsAutomaticWaitSummary" android:defaultValue="30" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" android:inputType="numberSigned|numberDecimal" />
+                <CheckBoxPreference android:title="@string/preferencesSosSmsAutomaticGpsLocationTitle" android:key="sosSmsGsmLocation" android:summary="@string/preferencesSosSmsAutomaticGpsLocationSummary" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/preferencesSosSmsAutomaticGpsLocationWhenFixDelayTitle" android:key="sosSmsGsmLocationWhenFixDelay" android:summary="@string/preferencesSosSmsAutomaticGpsLocationWhenFixDelaySummary" android:defaultValue="true" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/preferencesSosCallCategory" android:key="sosCallPreferenceCategory">
+                <CheckBoxPreference android:title="@string/preferencesSosCallAutomaticTitle" android:key="sosCallAutomatic" android:summary="@string/preferencesSosCallAutomaticSummary" android:defaultValue="false" />
+                <EditTextPreference android:title="@string/preferencesSosCallAutomaticPhoneTitle" android:key="sosCallPhone" android:summary="@string/preferencesSosCallAutomaticPhoneSummary" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" android:inputType="phone" />
+                <EditTextPreference android:title="@string/preferencesSosCallAutomaticWaitTitle" android:key="sosCallWait" android:summary="@string/preferencesSosCallAutomaticWaitSummary" android:defaultValue="30" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" android:inputType="numberSigned|numberDecimal" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/preferencesApplicationsCategory" android:key="applicationsPreferenceScreen">
+            <CheckBoxPreference android:title="@string/preferencesApplicationsShowRecentTitle" android:key="applicationsRecentShow" android:defaultValue="true" />
+            <EditTextPreference android:maxLength="1" android:title="@string/preferencesApplicationsRecentCountTitle" android:key="applicationsRecentCount" android:summary="@string/preferencesApplicationsRecentCountSummary" android:defaultValue="5" android:positiveButtonText="@string/dialogOk" android:negativeButtonText="@string/dialogCancel" android:inputType="numberSigned|numberDecimal" />
+            <Preference android:title="@string/preferencesApplicationsAllowedTitle" android:key="applicationsAllowed" android:summary="@string/preferencesApplicationsAllowedSummary" />
+            <CheckBoxPreference android:title="@string/preferencesApplicationsSearchShowTitle" android:key="applicationsSearchShow" android:summary="@string/preferencesApplicationsSearchShowSummary" android:defaultValue="true" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferencesDefaultsCategory" android:key="defaultPreferenceCategory">
+        <PreferenceScreen android:title="@string/preferencesFixesTitle" android:summary="@string/preferencesFixesSummary">
+            <CheckBoxPreference android:title="@string/preferencesMessagesThreadFoxTitle" android:key="messagesThreadFix" android:summary="@string/preferencesMessagesThreadFoxSummary" />
+            <CheckBoxPreference android:title="@string/preferencesFixIconsTitle" android:key="fixIcons" android:summary="@string/preferencesFixIconsSummary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/preferencesFixImageButtonTalkbackTitle" android:key="fixTalkbackImageButton" android:summary="@string/preferencesFixImageButtonTalkbackSummary" android:defaultValue="false" />
+        </PreferenceScreen>
+        <Preference android:title="@string/preferencesCleanDefaultLauncherTitle" android:key="cleanDefaultLauncher" android:summary="@string/preferencesCleanDefaultLauncherSummary" />
+        <Preference android:title="@string/preferencesUpdateTitle" android:key="update" />
+    </PreferenceCategory>
+</PreferenceScreen>

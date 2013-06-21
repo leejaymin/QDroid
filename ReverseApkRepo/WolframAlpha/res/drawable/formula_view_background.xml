@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/highlight_pressed" />
+    <item android:state_focused="true" android:drawable="@drawable/highlight_selected" />
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient android:shape="rectangle" android:startColor="@color/formula_orange_gradient_light" android:endColor="@color/formula_orange_gradient_dark" android:angle="90.0" />
+        </shape>
+    </item>
+</selector>

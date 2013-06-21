@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/overlay" android:background="#aa000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/overlay_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/overlay_tap_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/overlay_msg" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="55.0dip" />
+    <ImageView android:id="@id/main_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_reset_off" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/main_redo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_redo_off" android:layout_toLeftOf="@id/main_reset" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/main_undo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_undo_off" android:layout_toLeftOf="@id/main_redo" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/main_redo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/main_reset" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/main_undo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/main_redo" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/main_compare_info" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:shadowColor="#ff404040" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="0.5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/main_button_camera" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_camera" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_button_fx" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_fx" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_button_crop" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_crop" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_button_color" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_color" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_button_border" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_border" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_button_save" android:background="@drawable/main_button_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_button_save" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_bar_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/main_button_layout">
+        <ImageView android:id="@id/main_bar_1" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_bar_2" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_bar_3" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_bar_4" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_bar_5" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/main_bar_6" android:background="@drawable/main_bar_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ViewFlipper android:id="@id/flipper_SubMenu" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="29.5dip" android:layout_above="@id/main_button_layout">
+        <include layout="@layout/main_submenu1" />
+        <include layout="@layout/main_submenu2" />
+        <include layout="@layout/main_submenu3" />
+        <include layout="@layout/main_submenu4" />
+        <include layout="@layout/main_submenu5" />
+        <include layout="@layout/main_submenu6" />
+    </ViewFlipper>
+    <RelativeLayout android:id="@id/save_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/save_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" />
+        <LinearLayout android:gravity="center" android:id="@id/save_compare" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/save_img1" android:padding="1.0dip" android:layout_width="150.0dip" android:layout_height="150.0dip" android:cropToPadding="true" android:layout_weight="1.0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/save_ar" android:layout_weight="1.0" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/save_img2" android:padding="1.0dip" android:layout_width="150.0dip" android:layout_height="150.0dip" android:cropToPadding="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/save_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/save_1" android:layout_below="@id/save_compare" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@android:color/white" android:id="@id/save_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/save_bar" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

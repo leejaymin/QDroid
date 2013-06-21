@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/full_container" android:background="@drawable/interfacebackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/title" android:scaleType="centerInside" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <Button android:id="@id/one_player_game" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/one_player_game" style="@style/button" />
+            <Button android:id="@id/two_player_game" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/two_player_game" style="@style/button" />
+            <Button android:id="@id/web_site_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/titlescreen_link_spacing" android:text="@string/web_site_link" style="@style/button" />
+        </LinearLayout>
+        <TextView android:gravity="right" android:id="@id/about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

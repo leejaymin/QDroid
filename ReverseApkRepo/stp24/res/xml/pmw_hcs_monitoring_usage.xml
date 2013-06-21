@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/prefs_title_show_cpu_usage" android:key="@string/PREFSKEY_SHOW_CPU" android:defaultValue="true" android:summaryOn="@string/prefs_show_cpu_usage_on" android:summaryOff="@string/prefs_show_cpu_usage_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_cpu_freq" android:key="@string/PREFSKEY_SHOW_CPU_FREQ" android:defaultValue="false" android:summaryOn="@string/prefs_show_cpu_freq_on" android:summaryOff="@string/prefs_show_cpu_freq_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_memory_usage" android:key="@string/PREFSKEY_SHOW_MEMORY" android:defaultValue="true" android:summaryOn="@string/prefs_show_memory_usage_on" android:summaryOff="@string/prefs_show_memory_usage_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_sd_usage" android:key="@string/PREFSKEY_SHOW_SD" android:defaultValue="true" android:summaryOn="@string/prefs_show_sd_usage_on" android:summaryOff="@string/prefs_show_sd_usage_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_internal_usage" android:key="@string/PREFSKEY_SHOW_INTERNAL" android:defaultValue="false" android:summaryOn="@string/prefs_show_internal_usage_on" android:summaryOff="@string/prefs_show_internal_usage_off" />
+</PreferenceScreen>

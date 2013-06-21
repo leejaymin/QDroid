@@ -1,0 +1,34 @@
+<module id="module" mainObject="view1">
+  <windows>
+    <window id="window" width="140" height="360" x="0" y="0" initVisible="false">
+      <view id="view1" height="300" x="20" y="10">
+        <text id="text1ttbold" height="18" x="0" y="52" text="$$$/ttmarqueeselectiontoolsettings/text/text/Mode=Mode" textSize="12" align="center"/>
+        <ttplainbutton id="plusSelectionModeButton" width="50" height="50" x="0" y="0" target="referenceDispatcher" selector="modeAdd" toggles="true" type="tool" image="settingsModeAdd"/>
+        <ttplainbutton id="minusSelectionModeButton" width="50" height="50" x="50" y="0" target="referenceDispatcher" selector="modeRemove" toggles="true" type="tool" image="settingsModeRemove"/>
+      </view>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="plusSelectionModeButton" refName="modeAddButton"/>
+      <objRef refId="minusSelectionModeButton" refName="modeRemoveButton"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttpanelbutton" superClassName="ttbasepanelbutton" packageName="com.adobe.ttpixel.ui" codeName="TTPanelButton">
+      <var name="model" type="object" defaultValue="" codeName="iModel" className="TTModel"/>
+    </class>
+    <class className="ttbasepanelbutton" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelButton">
+      <var name="iconID" type="string" defaultValue="" codeName="iIconID"/>
+      <var name="panelModuleID" type="string" defaultValue="" codeName="iPanelModuleID"/>
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTContainerView"/>
+      <var name="positionMode" type="int" defaultValue="0" codeName="iPositionMode"/>
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton">
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+    </class>
+  </classes>
+</module>

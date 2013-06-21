@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="2" android:versionName="2.0" package="com.appycity.suckbangblow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="4" />
+    <supports-screens android:anyDensity="false" android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" />
+    <application android:label="Suck Bang Blow" android:icon="@drawable/appicon" android:name="SuckBangBlowApplication" android:debuggable="false">
+        <activity android:theme="@style/Theme.Titanium" android:label="Suck Bang Blow" android:name=".SuckBangBlowActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.appcelerator.titanium.TiActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="org.appcelerator.titanium.TiModalActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="ti.modules.titanium.ui.TiTabActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="ti.modules.titanium.media.TiVideoActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity" />
+        <service android:name="org.appcelerator.titanium.analytics.TiAnalyticsService" android:exported="false" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

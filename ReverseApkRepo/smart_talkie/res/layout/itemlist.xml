@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ilist_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ilist_layout_ad" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+            <ImageView android:gravity="center" android:id="@id/adview" android:layout_width="108.0dip" android:layout_height="81.0dip" android:scaleType="fitXY" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ilist_objects_line" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <view android:id="@id/ilist_help" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_help" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_item" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_item" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_ask" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_question" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_event" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_event" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_people" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_people" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_blog" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_blog" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_gossip" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_gossip" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <view android:id="@id/ilist_new" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_new" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_match" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_match" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <view android:id="@id/ilist_map" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_map" android:scaleType="fitXY" class="com.fleapapa.util.MyImageButton" />
+                    <Spinner android:id="@id/ilist_sortby" android:layout_width="168.0px" android:layout_height="64.0px" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ilist_match_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ilist_match_line1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:textColor="#ffffffff" android:id="@id/ilist_post" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <CheckBox android:textColor="#ffffffff" android:id="@id/ilist_poll" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+            <TextView android:textColor="#ffffffff" android:layout_gravity="right|center" android:id="@id/ilist_distance1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_distance_text1" />
+            <EditText android:id="@id/ilist_distance" android:layout_width="64.0px" android:layout_height="wrap_content" android:singleLine="true" android:numeric="integer" />
+            <TextView android:textColor="#ffffffff" android:id="@id/ilist_distance2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_distance_text2" />
+            <Button android:id="@id/ilist_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilist_reset" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ilist_match_line2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iselect_keyword" />
+            <EditText android:id="@id/ilist_keyword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="9.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ilist_match_line3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilist_route_fm" />
+            <EditText android:id="@id/ilist_route_fm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ilist_match_line4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilist_route_to" />
+            <AutoCompleteTextView android:id="@id/ilist_route_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="9.0" />
+            <Button android:id="@id/ilist_go" android:layout_width="64.0px" android:layout_height="wrap_content" android:text="@string/ilist_go" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/background2" android:scaleType="fitXY" />
+    <com.admob.android.ads.AdView android:id="@id/ilist_admob" android:layout_width="fill_parent" android:layout_height="48.0px" />
+    <TextView android:textColor="#ffffff00" android:gravity="center" android:id="@id/ilist_no_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ilist_no_item" />
+    <ListView android:id="@id/itemlist" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

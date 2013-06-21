@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/relativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout01" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:gravity="center" android:id="@id/pointsTextView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:id="@id/offers_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Marketplace" />
+            <Button android:id="@id/buy_1500" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Buy 1500 rubys" />
+            <Button android:id="@id/buy_500" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Buy 500 rubys" />
+            <Button android:id="@id/song_categories" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="More song categories" />
+            <TextView android:gravity="center" android:id="@id/tapjoySDKVersionView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Rubys: " />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/adLinearLayout" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentTop="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

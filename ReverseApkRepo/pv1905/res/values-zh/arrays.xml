@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page_transition_list">
+        <item>無</item>
+        <item>滑入</item>
+        <item>覆蓋</item>
+        <item>淡入</item>
+    </string-array>
+    <string-array name="slideshow_transition_list">
+        <item>無</item>
+        <item>滑入</item>
+        <item>覆蓋</item>
+        <item>淡入</item>
+        <item>隨機</item>
+    </string-array>
+    <string-array name="file_sort_type">
+        <item>檔名排序(數字,遞增)</item>
+        <item>檔名排序(文字,遞增)</item>
+        <item>日期排序(遞增)</item>
+        <item>檔案大小排序(遞增)</item>
+        <item>檔名排序(數字,遞減)</item>
+        <item>檔名排序(文字,遞減)</item>
+        <item>日期排序(遞減)</item>
+        <item>檔案大小排序(遞減)</item>
+    </string-array>
+    <string-array name="view_mode_list">
+        <item>清單</item>
+        <item>詳細資料</item>
+        <item>縮圖</item>
+    </string-array>
+    <string-array name="behavior_list">
+        <item>列出所有檔案</item>
+        <item>檢視內容</item>
+    </string-array>
+    <string-array name="pageinfo_list">
+        <item>無</item>
+        <item>頁次</item>
+        <item>檔名</item>
+        <item>書名</item>
+    </string-array>
+    <string-array name="change_page_method">
+        <item>左右</item>
+        <item>上下</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+    <string-array name="effect_array">
+        <item>無</item>
+        <item>陰影</item>
+        <item>凹陷</item>
+        <item>邊框</item>
+    </string-array>
+    <string-array name="background_array">
+        <item>無</item>
+        <item>類型 1</item>
+        <item>類型 2</item>
+        <item>類型 3</item>
+        <item>類型 4</item>
+        <item>類型 5</item>
+    </string-array>
+</resources>

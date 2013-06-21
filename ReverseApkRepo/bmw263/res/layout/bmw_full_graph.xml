@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ccc71.utils.ccc71_graph_view android:id="@id/bmw_graph" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="100.0" />
+        <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/bmw_graphic_length" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageButton android:id="@id/previous_history" android:background="@drawable/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/previous" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="right" android:id="@id/next_history" android:background="@drawable/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/next" android:scaleType="fitCenter" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="design_names">
+        <item>Black</item>
+        <item>Blue</item>
+        <item>Gray</item>
+        <item>Green</item>
+        <item>Pink</item>
+        <item>Red</item>
+    </string-array>
+    <string-array name="design_keys">
+        <item>black</item>
+        <item>blue</item>
+        <item>gray</item>
+        <item>green</item>
+        <item>pink</item>
+        <item>red</item>
+    </string-array>
+    <string-array name="antishake_labels">
+        <item>Low sensitivity</item>
+        <item>Medium sensitivity</item>
+        <item>High sensitivity</item>
+    </string-array>
+    <string-array name="antishake_keys">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="capturebtn_labels">
+        <item>Capture only</item>
+        <item>Focus and capture on success</item>
+        <item>Focus and capture everytime</item>
+    </string-array>
+    <string-array name="capturebtn_keys">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

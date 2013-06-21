@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/ScrollView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/FlippingPage">
+        <org.tf.ui.FTextView android:text="How to play" style="@style/HeadText" />
+        <TextView android:text="@string/how_to_play" style="@style/ParagraphText" />
+        <org.tf.ui.ImageTutorialView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin" android:layout_marginBottom="@dimen/margin" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subtitle_encodings">
+        <item>默認</item>
+        <item>UTF-8</item>
+        <item>euc-kr</item>
+        <item>iso8859-1</item>
+    </string-array>
+    <string-array name="subtitle_synctimes">
+        <item>0.1 秒</item>
+        <item>0.2 秒</item>
+        <item>0.3 秒</item>
+        <item>0.4 秒</item>
+        <item>0.5 秒</item>
+        <item>1 秒</item>
+    </string-array>
+    <string-array name="subtitle_synctimes_value">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="rotations">
+        <item>橫向重力感應</item>
+        <item>橫屏模式</item>
+        <item>反向橫屏</item>
+        <item>全局重力感應</item>
+    </string-array>
+    <string-array name="rotations_value">
+        <item>sensorLandscape</item>
+        <item>landscape</item>
+        <item>reverseLandscape</item>
+        <item>fullSensor</item>
+    </string-array>
+    <string-array name="players">
+        <item>默認</item>
+        <item>硬解</item>
+        <item>軟解</item>
+    </string-array>
+    <string-array name="players_network">
+        <item>默認</item>
+        <item>軟解</item>
+    </string-array>
+    <string-array name="players_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="subtitle_modes">
+        <item>關閉</item>
+        <item>開啟</item>
+    </string-array>
+    <string-array name="subtitle_modes_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="screen_sizes">
+        <item>默認</item>
+        <item>4:3</item>
+        <item>16:9</item>
+        <item>2.35:1</item>
+        <item>螢幕自適</item>
+        <item>全屏</item>
+    </string-array>
+    <string-array name="screen_sizes_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="file_extension_value">
+        <item>wmv</item>
+        <item>asf</item>
+        <item>mp4</item>
+        <item>asx</item>
+        <item>avi</item>
+        <item>mkv</item>
+        <item>f4v</item>
+        <item>flv</item>
+        <item>m4v</item>
+        <item>mov</item>
+        <item>mpeg</item>
+        <item>mpg</item>
+        <item>rm</item>
+        <item>rmvb</item>
+        <item>ts</item>
+        <item>mts</item>
+        <item>m2ts</item>
+        <item>gt</item>
+        <item>3gp</item>
+        <item>3g2</item>
+        <item>3gpp</item>
+        <item>3gp2</item>
+        <item>wtv</item>
+        <item>divx</item>
+        <item>webm</item>
+    </string-array>
+    <string-array name="file_extension_audio_value">
+        <item>aac</item>
+        <item>ac3</item>
+        <item>aif</item>
+        <item>amr</item>
+        <item>au</item>
+        <item>flac</item>
+        <item>m4a</item>
+        <item>mp2</item>
+        <item>mp3</item>
+        <item>ogg</item>
+        <item>ra</item>
+        <item>vqf</item>
+        <item>wav</item>
+        <item>wma</item>
+    </string-array>
+    <string-array name="gestureseek_ranges">
+        <item>3 分鐘</item>
+        <item>5 分鐘</item>
+        <item>10 分鐘</item>
+        <item>15 分鐘</item>
+        <item>30 分鐘</item>
+        <item>1 小時</item>
+        <item>一半時長</item>
+        <item>完整時長</item>
+    </string-array>
+    <string-array name="gestureseek_ranges_value">
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="subtitle_fonts">
+        <item>自定義 ...</item>
+        <item>默認</item>
+        <item>無襯線字體</item>
+        <item>襯線字體</item>
+        <item>等寬字體</item>
+    </string-array>
+    <string-array name="subtitle_borders">
+        <item>默認</item>
+        <item>細</item>
+        <item>粗</item>
+        <item>無</item>
+    </string-array>
+    <string-array name="gesture_settings_row">
+        <item>無</item>
+        <item>快轉</item>
+    </string-array>
+    <string-array name="gesture_settings_column">
+        <item>無</item>
+        <item>音量</item>
+        <item>亮度</item>
+    </string-array>
+    <string-array name="subtitle_extension">
+        <item>SMI</item>
+        <item>SRT</item>
+        <item>ASS</item>
+    </string-array>
+    <string-array name="embededsubtitle_option">
+        <item>外部字幕優先</item>
+        <item>內部字幕優先</item>
+        <item>僅使用外部字幕</item>
+    </string-array>
+    <string-array name="subtitle_gravity">
+        <item>中間</item>
+        <item>左部</item>
+        <item>右部</item>
+    </string-array>
+    <string-array name="subtitle_save_position">
+        <item>常規位置</item>
+        <item>單獨位置</item>
+        <item>不保存</item>
+    </string-array>
+    <string-array name="sort_type">
+        <item>名稱</item>
+        <item>時間</item>
+        <item>大小</item>
+    </string-array>
+    <string-array name="streaming_type">
+        <item>本地文件夾</item>
+        <item>Samba 服務器</item>
+        <item>FTP 服務器</item>
+        <item>HTTP 的書籤</item>
+    </string-array>
+    <string-array name="theme_entries">
+        <item>亮色</item>
+        <item>暗色</item>
+    </string-array>
+    <string-array name="theme_entry_values">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="volume_booster_entries">
+        <item>100%</item>
+        <item>200%</item>
+        <item>300%</item>
+        <item>400%</item>
+    </string-array>
+    <string-array name="volume_booster_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="popup_ratio_entries">
+        <item>Half width</item>
+        <item>2/3 width</item>
+        <item>3/4 width</item>
+        <item>Full width</item>
+    </string-array>
+    <string-array name="popup_ratio_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

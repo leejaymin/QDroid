@@ -1,0 +1,23 @@
+<ttbaselistpanelmodule id="module" view="baseListPanelView" refDispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttbaselistpanelview id="baseListPanelView" width="276" height="262" x="10" y="10" module="module" whiteBackground="true"/>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher"/>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refDispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttbaselistpanelmodule" superClassName="ttbasepanelmodule" packageName="" codeName="TTBaseListPanelModule"/>
+    <class className="ttbaselistpanelview" superClassName="ttpanelview" packageName="" codeName="TTBaseListPanelView"/>
+  </classes>
+</ttbaselistpanelmodule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="50.0">
+        <LinearLayout android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+            <ImageView android:id="@id/ImageView01" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_dialog_arrow_30" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="left|center" android:id="@id/title1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_phone_number_title" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@id/TextView01" android:background="@drawable/white_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <EditText android:id="@id/phone_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:inputType="phone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/LinearLayout05" android:background="@drawable/dialog_footer" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/Button01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_save_button" android:layout_weight="50.0" style="@style/KMSDialogBtn" />
+        <Button android:id="@id/Button02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_activation_cancel_button" android:layout_weight="50.0" style="@style/KMSDialogBtn" />
+    </LinearLayout>
+</LinearLayout>

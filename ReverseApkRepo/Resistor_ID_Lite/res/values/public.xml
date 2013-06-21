@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="blackband" id="0x7f020000" />
+    <public type="drawable" name="blankband" id="0x7f020001" />
+    <public type="drawable" name="blueband" id="0x7f020002" />
+    <public type="drawable" name="brownband" id="0x7f020003" />
+    <public type="drawable" name="btn" id="0x7f020004" />
+    <public type="drawable" name="dimimg" id="0x7f020005" />
+    <public type="drawable" name="goldband" id="0x7f020006" />
+    <public type="drawable" name="greenband" id="0x7f020007" />
+    <public type="drawable" name="greyband" id="0x7f020008" />
+    <public type="drawable" name="icon" id="0x7f020009" />
+    <public type="drawable" name="menu_about" id="0x7f02000a" />
+    <public type="drawable" name="menu_calc" id="0x7f02000b" />
+    <public type="drawable" name="menu_close" id="0x7f02000c" />
+    <public type="drawable" name="menu_options" id="0x7f02000d" />
+    <public type="drawable" name="menu_resistor" id="0x7f02000e" />
+    <public type="drawable" name="menu_upgrade" id="0x7f02000f" />
+    <public type="drawable" name="orangeband" id="0x7f020010" />
+    <public type="drawable" name="purpleband" id="0x7f020011" />
+    <public type="drawable" name="redband" id="0x7f020012" />
+    <public type="drawable" name="resistortrns" id="0x7f020013" />
+    <public type="drawable" name="resistortrnsfixed" id="0x7f020014" />
+    <public type="drawable" name="silverband" id="0x7f020015" />
+    <public type="drawable" name="whiteband" id="0x7f020016" />
+    <public type="drawable" name="yellowband" id="0x7f020017" />
+    <public type="layout" name="calc_reverse" id="0x7f030000" />
+    <public type="layout" name="main" id="0x7f030001" />
+    <public type="layout" name="options" id="0x7f030002" />
+    <public type="layout" name="reverse_resistor" id="0x7f030003" />
+    <public type="string" name="hello" id="0x7f040000" />
+    <public type="string" name="app_name" id="0x7f040001" />
+    <public type="string" name="r4band" id="0x7f040002" />
+    <public type="string" name="r5band" id="0x7f040003" />
+    <public type="string" name="backtoresistor" id="0x7f040004" />
+    <public type="id" name="LinearLayout02" id="0x7f050000" />
+    <public type="id" name="TextView02" id="0x7f050001" />
+    <public type="id" name="TextView03" id="0x7f050002" />
+    <public type="id" name="LinearLayout01" id="0x7f050003" />
+    <public type="id" name="TextView01" id="0x7f050004" />
+    <public type="id" name="txtRevLookupOhm" id="0x7f050005" />
+    <public type="id" name="LinearLayout03" id="0x7f050006" />
+    <public type="id" name="btnRevLookupShowResistor" id="0x7f050007" />
+    <public type="id" name="chkOptionLockBand" id="0x7f050008" />
+    <public type="id" name="chkOptionDimDrag" id="0x7f050009" />
+    <public type="id" name="chkOptionSaveResistorState" id="0x7f05000a" />
+</resources>

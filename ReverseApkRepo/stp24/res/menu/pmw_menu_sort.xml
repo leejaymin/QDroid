@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_sort_cpu_time" android:title="@string/menu_sort_cpu_time" />
+    <item android:id="@id/menu_sort_cpu_percent" android:title="@string/menu_sort_cpu_percent" />
+    <item android:id="@id/menu_sort_total_cpu_time" android:title="@string/menu_sort_total_cpu_time" />
+    <item android:id="@id/menu_sort_start" android:title="@string/menu_sort_start" />
+    <item android:id="@id/menu_sort_cpu_consume" android:title="@string/menu_sort_total_cpu_consume" />
+    <item android:id="@id/menu_sort_memory" android:title="@string/menu_sort_memory" />
+    <item android:id="@id/menu_sort_name" android:title="@string/menu_sort_name" />
+</menu>

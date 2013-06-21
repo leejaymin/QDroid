@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/keyboard_container_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/top_level_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/banner_view" android:padding="@dimen/main_imageview_banner_view_padding" android:src="@drawable/wolfram_alpha_logo" android:scaleType="centerInside" android:adjustViewBounds="true" style="@style/ActivityTitle" />
+                <include layout="@layout/black_1_px_horizontal_line" />
+            </LinearLayout>
+            <include layout="@layout/instantmath_view" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.wolfram.android.alpha.view.QueryResultView android:id="@id/query_results_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/white" android:divider="@null" />
+            <ListView android:id="@id/pod_docked_title_bar_listview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="@android:color/white" android:divider="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

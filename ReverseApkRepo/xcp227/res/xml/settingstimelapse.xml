@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/set_tl_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/set_tl_interval_title" android:key="timelapseinterval" android:summary="@string/set_tl_interval_summary" />
+    <CheckBoxPreference android:title="@string/set_tl_af_title" android:key="timelapse_af" android:summary="@string/set_tl_af_summary" />
+</PreferenceScreen>

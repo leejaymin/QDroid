@@ -1,0 +1,33 @@
+<ttbasepanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="550" height="620" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="520" height="520" x="10" y="10" module="module" whiteBackground="true">
+        <tttutorialbrowserview id="view2" width="500" height="500" mask="true" x="10" y="10"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view2" refName="browserView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+    </class>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="tttutorialbrowserview" superClassName="view" packageName="com.adobe.ttpixel.tutorial" codeName="TTTutorialBrowserView"/>
+  </classes>
+</ttbasepanelmodule>

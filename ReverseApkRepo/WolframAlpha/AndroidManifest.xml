@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3475034" android:versionName="@string/version_number" android:installLocation="auto" package="com.wolfram.android.alpha"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:theme="@android:style/Theme.NoTitleBar" android:label="@string/app_label" android:icon="@drawable/launcher_icon" android:name=".WolframAlphaApplication" android:debuggable="true">
+        <activity android:label="@string/app_label" android:name=".activity.WolframAlpha" android:launchMode="singleTask" android:screenOrientation="sensor" android:configChanges="keyboard|keyboardHidden|orientation" android:allowTaskReparenting="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="wolframalpha" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/prefs_activity_label" android:name=".activity.PrefsActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.AboutActivity" android:configChanges="orientation" />
+        <activity android:label="@string/debug_activity_label" android:name=".activity.DebugActivity" android:configChanges="orientation" />
+        <activity android:label="@string/history_activity_label" android:name=".activity.HistoryActivity" android:configChanges="orientation" />
+        <activity android:label="@string/assumptions_activity_label" android:name=".activity.AssumptionsActivity" android:configChanges="orientation" />
+        <activity android:label="@string/info_activity_label" android:name=".activity.InfoActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.WebViewActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.FeedbackActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.RelatedLinksActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.VideoActivity" android:screenOrientation="portrait" android:configChanges="orientation" />
+        <activity android:name=".activity.FavoritesActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.SourceInformationActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.ExamplesActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.MapActivity" android:configChanges="orientation" />
+        <activity android:name=".activity.SearchResultsActivity" android:launchMode="singleTop" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.wolfram.android.alpha.intent.action.DO_QUERY_SUGGESTION" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <meta-data android:name="android.app.default_searchable" android:value=".activity.SearchResultsActivity" />
+        <provider android:name="com.wolfram.android.alpha.SearchSuggestionProvider" android:authorities="com.wolfram.android.alpha.searchsuggestionprovider" />
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+</manifest>

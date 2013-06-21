@@ -1,0 +1,15 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Coordinate Geometry</category><section-title>Lines</section-title><caption>specify a line through two points</caption><input>line through (1,2) and (2,1)</input><caption>specify a line by slope and intercept</caption><input>line, slope=1/5, y-intercept=3</input><section-title>Planes</section-title><caption>specify a plane through three points</caption><input>plane through (0, 1, 0), (5, 6, 7), and (6, 7, 8)</input><section-title>
+ <link ref="ConicSections">Conic Sections </link>
+</section-title><caption>plot a conic section and identify its type</caption><input>x^2 - 2 y^2 = 1</input><caption>find a circle passing through three points</caption><input>circle through (0,0), (1,0), (0,1)</input><caption>compute properties of a parabola</caption><input>parabola with focus (3,4) and vertex (-4,5)</input><section-title>
+ <link ref="AreaBetweenCurves">Area Between Curves </link>
+</section-title><caption>compute the area bounded by two curves</caption><input>compute the area between y=|x| and y=x^2-6</input><caption>specify limits on a variable</caption><input>area between y=sinc(x) and the x-axis from x=-4pi to 4pi</input><section-title>
+ <link ref="StationaryPoints">Stationary Points </link>
+</section-title><caption>locate stationary points of a function</caption><input>stationary points of (x^5+x^9-x-1)^3</input><caption>find stationary points of a function of several variables</caption><input>stationary points (3x+1)y^3 + x^2 y</input><section-title>
+ <link ref="InflectionPoints">Inflection Points </link>
+</section-title><caption>locate inflection points of a function</caption><input>inflection points of x+sin(x)</input><caption>find inflection points in a specified domain</caption><input>inflection points of e^sin(x^3) with -2&lt;=x&lt;=2</input><section-title>
+ <link ref="SaddlePoints">Saddle Points </link>
+</section-title><caption>locate saddle points of a function</caption><input>saddle points of x^3 - y^3 - 2xy + 6</input><caption>find the saddle point nearest to a specified point</caption><input>saddle point of sin(x y)-tan x near (5,6)</input><section-title>
+ <link ref="Asymptotes">Asymptotes </link>
+</section-title><caption>compute asymptotes of a function</caption><input>asymptotes (2x^3 + 4x^2 - 9)/(3 - x^2)</input><input>asymptotes of erf(x)</input><section-title>
+ <link ref="CuspsCorners">Cusps &amp; Corners </link>
+</section-title><caption>find cusps on the graph of a function</caption><input>cusps of sqrt |x-2| - cbrt |x+2|</input><caption>find corners on the graph of a function</caption><input>corners of x + 2 |sin x|</input></example>

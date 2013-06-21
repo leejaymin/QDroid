@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="layout" name="anr" id="0x7f030000" />
+    <public type="layout" name="crash" id="0x7f030001" />
+    <public type="string" name="crash_activity" id="0x7f040000" />
+    <public type="string" name="anr_activity" id="0x7f040001" />
+    <public type="string" name="anr" id="0x7f040002" />
+    <public type="id" name="Button1" id="0x7f050000" />
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialogbackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/upperbuttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="30.0">
+            <TextView android:textSize="13.0dip" android:textColor="#fff0f0f0" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Drum name" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="13.0dip" android:id="@id/drumname" android:padding="5.0dip" android:focusable="true" android:layout_width="120.0dip" android:layout_height="wrap_content">
+                    <requestFocus />
+                </EditText>
+                <Button android:id="@id/copybutton" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="copy" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/SampleLeft" android:background="@drawable/customsampleprev" android:layout_width="60.0dip" android:layout_height="45.0dip" />
+                <Button android:id="@id/SampleRight" android:background="@drawable/customsamplenext" android:layout_width="60.0dip" android:layout_height="45.0dip" />
+                <Button android:id="@id/pastebutton" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="Paste" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/drumplaybutton" android:background="@drawable/customplaybutton" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+                <Button android:id="@id/drumstopbutton" android:background="@drawable/customstopbutton" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+                <Button android:id="@id/drumrecordbutton" android:background="@drawable/customrecordbutton" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="80.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <electrum2.drums.wavedisplay android:id="@id/wavegraph" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <ImageView android:id="@id/volumeknob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/adjustknob" />
+                <TextView android:textSize="12.0dip" android:textColor="#fff0a080" android:layout_gravity="center" android:id="@id/volumetext" android:padding="5.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="Vol: 100%" />
+                <Button android:id="@id/reversebutton" android:layout_width="60.0dip" android:layout_height="55.0dip" android:text="REV" />
+                <Button android:id="@id/fxsettingbutton" android:layout_width="60.0dip" android:layout_height="55.0dip" android:text="DLY" />
+                <Button android:id="@id/fxdistbutton" android:layout_width="60.0dip" android:layout_height="55.0dip" android:text="DIST" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#fff0f0f0" android:id="@id/samplefiletext1" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Sample file:" android:layout_below="@id/upperbuttons" />
+    <TextView android:textSize="10.0dip" android:textColor="#fff0f0f0" android:id="@id/drumsamplefile" android:padding="2.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/samplefiletext1" />
+    <TableLayout android:orientation="horizontal" android:id="@id/bottombuttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minWidth="250.0dip" android:stretchColumns="*" android:shrinkColumns="*" android:layout_alignParentBottom="true">
+        <TableRow>
+            <Button android:textSize="12.0dip" android:id="@id/loadsamplebutton" android:padding="5.0dip" android:layout_width="60.0dip" android:layout_height="58.0dip" android:text="Load..." />
+            <Button android:textSize="12.0dip" android:id="@id/retrigbutton" android:layout_width="60.0dip" android:layout_height="58.0dip" android:text="Retrig" />
+            <Button android:textSize="12.0dip" android:id="@id/testbutton" android:layout_width="60.0dip" android:layout_height="58.0dip" android:text="Pitch -" />
+            <Button android:textSize="12.0dip" android:id="@id/test2button" android:layout_width="60.0dip" android:layout_height="58.0dip" android:text="Pitch +" />
+            <CheckBox android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff404040" android:id="@id/bpmbutton" android:background="@drawable/btn_custom" android:layout_width="wrap_content" android:layout_height="58.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:button="@drawable/customcheck" android:text="           Fit BPM" />
+            <Button android:textSize="12.0dip" android:id="@id/drumokbutton" android:layout_width="58.0dip" android:layout_height="58.0dip" android:text="Ok" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="356" height="388" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="320" height="305" x="10" y="10" module="module" whiteBackground="true">
+        <button id="addEmptyLayerButton" width="290" height="40" x="15" y="50" target="module" selector="Rotate90CW" title="$$$/ttrotateimagepanelmodule/button/title/Rotate 90° CW=Rotate 90° CW"/>
+        <button id="addPhotoLayerButton" width="290" height="40" x="15" y="150" target="module" selector="Rotate180" title="$$$/ttrotateimagepanelmodule/button/title/Rotate 180°=Rotate 180°"/>
+        <button id="FlipVerticalButton" width="290" height="40" x="15" y="250" target="module" selector="FlipVertical" title="$$$/ttrotateimagepanelmodule/button/title/Flip Vertical=Flip Vertical"/>
+        <button id="layerFromSelectionButton" width="290" height="40" x="15" y="200" target="module" selector="FlipHorizontal" title="$$$/ttrotateimagepanelmodule/button/title/Flip Horizontal=Flip Horizontal"/>
+        <button id="duplicateLayerButton" width="290" height="40" x="15" y="100" target="module" selector="Rotate90CCW" title="$$$/ttrotateimagepanelmodule/button/title/Rotate 90° CCW=Rotate 90° CCW"/>
+        <text id="ttboldttblack" width="285" height="30" sizeX="scale" x="20" y="7" text="$$$/ttrotateimagepanelmodule/text/text/Rotate=Rotate" textSize="18" align="left"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher"/>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+  </classes>
+</ttpanelmodule>

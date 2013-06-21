@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="key_label_text_size_upper">18.0dip</dimen>
+    <dimen name="key_label_text_size_lower">18.0dip</dimen>
+    <dimen name="key_key_text_size_upper">18.0dip</dimen>
+    <dimen name="key_key_text_size_lower">18.0dip</dimen>
+    <dimen name="key_label_text_size_upper_kindlefire">18.0dip</dimen>
+    <dimen name="key_label_text_size_lower_kindlefire">18.0dip</dimen>
+    <dimen name="key_key_text_size_upper_kindlefire">26.0dip</dimen>
+    <dimen name="key_key_text_size_lower_kindlefire">26.0dip</dimen>
+    <dimen name="key_key_text_special_size_lower_kindlefire">20.0dip</dimen>
+    <dimen name="key_key_text_special_size_lower">20.0dip</dimen>
+</resources>

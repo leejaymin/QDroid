@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="layout" name="application_list" id="0x7f030000" />
+    <public type="layout" name="main" id="0x7f030001" />
+    <public type="string" name="hello" id="0x7f040000" />
+    <public type="string" name="app_name" id="0x7f040001" />
+    <public type="id" name="application_list" id="0x7f050000" />
+    <public type="id" name="loadtrafficstats" id="0x7f050001" />
+    <public type="id" name="socket_test_btn" id="0x7f050002" />
+    <public type="id" name="socket_stop_btn" id="0x7f050003" />
+    <public type="id" name="UidTextEidt" id="0x7f050004" />
+    <public type="id" name="MyUid" id="0x7f050005" />
+    <public type="id" name="MobileRxBytes" id="0x7f050006" />
+    <public type="id" name="MobileRxPackets" id="0x7f050007" />
+    <public type="id" name="MobileTxBytes" id="0x7f050008" />
+    <public type="id" name="MobileTxPackets" id="0x7f050009" />
+    <public type="id" name="TotalRxBytes" id="0x7f05000a" />
+    <public type="id" name="TotalRxPackets" id="0x7f05000b" />
+    <public type="id" name="TotalTxBytes" id="0x7f05000c" />
+    <public type="id" name="TotalTxPackets" id="0x7f05000d" />
+    <public type="id" name="package_name" id="0x7f05000e" />
+    <public type="id" name="tx_traffic" id="0x7f05000f" />
+    <public type="id" name="rx_traffic" id="0x7f050010" />
+</resources>

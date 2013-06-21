@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/sl_header_caption" android:background="@drawable/sl_header_caption_background" android:paddingLeft="5.0dip" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/sl_text_big_bold_inverted"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <TableLayout android:id="@id/sl_header_layout" android:background="@drawable/sl_header_background" android:layout_width="fill_parent" android:layout_height="70.0dip" android:stretchColumns="1" android:shrinkColumns="1"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow>
+            <ImageView android:id="@id/sl_header_image" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/sl_margin_default" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/sl_margin_default">
+                <TextView android:ellipsize="marquee" android:id="@id/sl_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/sl_text_huge_bold" />
+                <TextView android:ellipsize="marquee" android:id="@id/sl_header_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/sl_text_normal_normal" />
+            </LinearLayout>
+            <ImageView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/sl_control_icon" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="@dimen/sl_margin_default" android:layout_marginRight="@dimen/sl_margin_default" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

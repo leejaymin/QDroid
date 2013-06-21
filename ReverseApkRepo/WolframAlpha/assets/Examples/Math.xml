@@ -1,0 +1,29 @@
+<?xml version='1.0'?><example><category>Mathematics</category><section-title>
+ <link ref="ElementaryMath">Elementary Mathematics </link>
+</section-title><caption>do basic arithmetic</caption><input>125 + 375</input><caption>do exact arithmetic with fractions</caption><input>1/4 * (4 - 1/2)</input><section-title>
+ <link ref="Numbers">Numbers </link>
+</section-title><caption>compute a decimal approximation of a specified number of digits</caption><input>pi to 1000 digits</input><caption>convert a decimal number to another base</caption><input>219 to binary</input><section-title>
+ <link ref="PlottingAndGraphics">Plotting &amp; Graphics </link>
+</section-title><caption>plot a function </caption><input>plot x^3 - 6x^2 + 4x + 12</input><caption>plot a region satisfying multiple inequalities</caption><input>plot x^2+y^2&lt;1 and y&gt;x</input><section-title>
+ <link ref="Algebra">Algebra </link>
+</section-title><caption>solve an equation</caption><input>x^3 - 4x^2 + 6x - 24 = 0</input><caption>factor a polynomial</caption><input>factor 2x^5 - 19x^4 + 58x^3 - 67x^2 + 56x - 48</input><caption>compute eigenvalues and eigenvectors of a matrix</caption><input>eigenvalues {{4,1},{2,-1}}</input><section-title>
+ <link ref="Calculus">Calculus &amp; Analysis </link>
+</section-title><caption>calculate a derivative</caption><input>derivative of x^4 sin x</input><caption>compute an integral</caption><input>integrate sin x dx from x=0 to pi</input><caption>solve an ordinary differential equation</caption><input>y'' + y = 0</input><section-title>
+ <link ref="Geometry">Geometry </link>
+</section-title><caption>compute properties of a geometric figure</caption><input>annulus, inner radius=2, outer radius=5</input><caption>plot a conic section and identify its type</caption><input>2x^2 - 3xy + 4y^2 + 6x - 3y - 4 = 0</input><caption>compute properties of a polyhedron</caption><input>dodecahedron</input><section-title>
+ <link ref="NumberTheory">Number Theory </link>
+</section-title><caption>compute a prime factorization</caption><input>factor 70560</input><caption>solve a Diophantine equation</caption><input>solve 3x+4y=5 over the integers</input><section-title>
+ <link ref="DiscreteMath">Discrete Mathematics </link>
+</section-title><caption>compute a possible formula and continuation for a sequence</caption><input>5, 14, 23, 32, 41, ...</input><caption>analyze a graph specified by adjacency rules</caption><input>1-&gt;2, 2-&gt;3, 3-&gt;1, 3-&gt;4, 4-&gt;1</input><caption>solve a recurrence</caption><input>f(n)=f(n-1)+f(n-2), f(1)=1, f(2)=2</input><section-title>
+ <link ref="AppliedMath">Applied Mathematics </link>
+</section-title><caption>minimize or maximize a function</caption><input>maximize x(1-x)e^x</input><caption>numerically integrate functions that cannot be integrated symbolically</caption><input>integrate sin(cos x) from x=0 to 1</input><section-title>
+ <link ref="LogicSetTheory">Logic &amp; Set Theory </link>
+</section-title><caption>compute a truth table</caption><input>P &amp;&amp; (Q || R)</input><caption>generate a Venn diagram </caption><input>(complement S) intersect (A union B)</input><section-title>
+ <link ref="MathematicalFunctions">Mathematical Functions </link>
+</section-title><caption>do computations with special functions</caption><input>d/dx Si(x)^2</input><caption>do computations with number-theoretic functions</caption><input>phi(110)</input><caption>find representations for a function</caption><input>gamma(x) integral representation</input><section-title>
+ <link ref="AdvancedMath">Advanced Mathematics </link>
+</section-title><caption>compute properties of a function of a complex variable (use the variable z) </caption><input>e^z</input><caption>do vector analysis computations</caption><input>div (x^3 y, y^3 z, z^3 x)</input><caption>compute properties of a knot</caption><input>8_1 knot</input><section-title>
+ <link ref="MathematicalDefinitions">Mathematical Definitions </link>
+</section-title><caption>find information about a math concept</caption><input>tangram</input><caption>get a brief definition </caption><input>basic definition of prime number</input><section-title>
+ <link ref="FamousMathProblems">Famous Math Problems </link>
+</section-title><caption>get information about a mathematical conjecture</caption><input>Riemann Hypothesis</input><caption>get historical information about a theorem</caption><input>Fermat's little theorem</input></example>

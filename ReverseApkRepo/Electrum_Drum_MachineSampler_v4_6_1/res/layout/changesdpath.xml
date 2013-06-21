@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialogbackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#fff0f0f0" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New path to external sdcard" />
+        <EditText android:id="@id/sdpathtext" android:padding="5.0dip" android:paddingRight="5.0dip" android:layout_width="350.0dip" android:layout_height="wrap_content" />
+        <TextView android:id="@id/textView700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="For Advanced use only!" />
+        <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:text="This dialog allows you to switch the root path to the sdcard that Electrum uses. This is useful if your device has more than one sdcard." />
+        <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:text="Manually enter the path, such as &quot;/mnt/sdcard&quot;, or &quot;/mnt/ext_sd&quot;, etc. and press OK to set it" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout32" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/LinearLayout56" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="right" android:id="@id/pathokbutton" android:padding="20.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="Ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version='1.0'?><example><category>Materials</category><section-title>
+ <link ref="Alloys">Alloys </link>
+</section-title><caption>get information about an alloy</caption><input>carbon steel</input><caption>compare several alloys</caption><input>UNS A92024, UNS G10800</input><caption>request a property of an alloy</caption><input>thermal expansion coefficient of UNS S21900 stainless steel </input><caption>compare alloy types on a particular property</caption><input>1050 steel vs. AA 2090 knoop hardness</input><section-title>
+ <link ref="Minerals">Minerals </link>
+</section-title><caption>get information about a mineral</caption><input>topaz</input><caption>compare several minerals</caption><input>hematite, magnetite, chromite</input><caption>do computations with mineral properties</caption><input>molecular weight curetonite / celestine</input><section-title>
+ <link ref="Plastics">Plastics </link>
+</section-title><caption>get information about a type of plastic</caption><input>Biomax</input><input>DuPont Surlyn</input><section-title>
+ <link ref="Woods">Woods </link>
+</section-title><caption>get information about a type of wood</caption><input>white pine wood</input><caption>compare multiple types of wood</caption><input>sugar maple, black maple</input><caption>do computations with wood properties</caption><input>shear strength elm / spruce</input><section-title>
+ <link ref="BulkMaterials">Bulk Materials </link>
+</section-title><caption>get information about a bulk material</caption><input>asphalt</input><caption>compute properties of a stockpile</caption><input>1000 m^3 dry sand</input><section-title>Physical Properties</section-title><caption>determine an optical property of a material</caption><input>refractive index of natural diamond</input></example>

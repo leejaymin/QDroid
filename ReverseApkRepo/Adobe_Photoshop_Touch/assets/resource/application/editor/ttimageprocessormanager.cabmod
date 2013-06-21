@@ -1,0 +1,121 @@
+<ttimageprocessormanager id="module">
+  <windows/>
+  <menus/>
+  <objects>
+    <ttlevelsprocessor id="levelsProcessor" processormanager="module"/>
+    <ttcurvesprocessor id="curvesProcessor" processormanager="module"/>
+    <tttextprocessor id="textProcessor" processormanager="module"/>
+    <ttwebtextprocessor id="webTextProcessor" processormanager="module"/>
+    <ttshaderprocessor id="saturationProcessor" processormanager="module" label="$$$/TTImageProcessor/Saturation=Saturation" shaderID="saturationShader" previewImage="saturationPreviewImage" moduleID="intensityModule"/>
+    <ttshaderprocessor id="temperatureProcessor" processormanager="module" label="$$$/TTImageProcessor/Temperature=Temperature" shaderID="temperatureShader" previewImage="temperaturePreviewImage" moduleID="intensityModule"/>
+    <ttshaderprocessor id="toneCurveProcessor" processormanager="module" label="Shadow/Hilite" shaderID="toneCurveShader" previewImage="shadowHilitePreviewImage" moduleID="toneCurveModule"/>
+    <ttshaderprocessor id="colorBalanceProcessor" processormanager="module" label="Color Balance" shaderID="colorBalanceShader" previewImage="colorBalancePreviewImage" moduleID="colorBalanceModule"/>
+    <ttshaderprocessor id="contrastBrightnessProcessor" processormanager="module" label="Contrast/Brightness" shaderID="contrastBrightnessShader" previewImage="brightnessPreviewImage" moduleID="contrastBrightnessModule"/>
+    <tttransformprocessor id="transformProcessor" processormanager="module"/>
+    <ttautofixprocessor id="autoFixProcessor" processormanager="module"/>
+    <ttbasiccolorprocessor id="basicColorProcessor" processormanager="module"/>
+    <ttshaderprocessor id="replaceColorProcessor" processormanager="module" label="Replace Color" shaderID="replaceColorShader" previewImage="replaceColorPreviewImage" moduleID="replaceColorModule"/>
+    <ttgradientprocessor id="gradientProcessor" processormanager="module"/>
+    <ttshaderprocessor id="medianProcessor" processormanager="module" label="$$$/TTImageProcessor/Reduce Noise=Reduce Noise" shaderID="medianShader" previewImage="denoisePreviewImage" moduleID="intensityModule"/>
+    <ttcropprocessor id="cropProcessor" processormanager="module"/>
+    <ttgradientprocessor id="alphaMaskProcessor" isAlpha="true"/>
+    <ttrefineedgeprocessor id="refineEdgeProcessor" processormanager="module"/>
+    <ttmatchcolorprocessor id="matchColorProcessor" processormanager="module" label="$$$/TTImageProcessor/Match Color=Match Color" shaderID="matchColorShader" previewImage="matchColorPreviewImage" moduleID="intensityModule"/>
+    <ttwarpprocessor id="warpProcessor" processormanager="module"/>
+    <ttdropshadowglowbevelprocessor id="dropShadowProcessor" processormanager="module"/>
+    <ttdropshadowglowbevelprocessor id="glowProcessor" processormanager="module" type="glow"/>
+    <ttdropshadowglowbevelprocessor id="bevelProcessor" processormanager="module" type="bevel"/>
+    <ttdropshadowglowbevelprocessor id="blurProcessor" processormanager="module" type="blur"/>
+    <ttshaderprocessor id="directionalBlurProcessor" processormanager="module" label="Directional Blur" shaderID="directionalBlurShader" previewImage="fxDirectionalBlurPreviewImage" moduleID="directionalBlurModule"/>
+    <ttshaderprocessor id="sharpenProcessor" processormanager="module" label="Sharpen" shaderID="sharpenShader" previewImage="fxSharpenPreviewImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="graphicPenProcessor" processormanager="module" label="Graphic Pen" shaderID="graphicPenShader" previewImage="fxGraphicPenImage" moduleID="graphicPenModule"/>
+    <ttshaderprocessor id="oldSepiaProcessor" processormanager="module" label="Old Sepia" shaderID="oldSepiaShader" previewImage="fxOldSepiaImage" moduleID="oldSepiaModule"/>
+    <ttshaderprocessor id="multiGradientMapProcessor" processormanager="module" label="Multi Gradient Map" shaderID="multiGradientMapShader" previewImage="fxMultiGradientMapImage" moduleID="multiGradientMapModule"/>
+    <ttshaderprocessor id="halftoneProcessor" processormanager="module" label="Halftone Pattern" shaderID="halftoneShader" previewImage="fxHalftoneImage" moduleID="graphicPenModule"/>
+    <ttshaderprocessor id="thresholdProcessor" processormanager="module" label="Threshold" shaderID="thresholdShader" previewImage="fxThresholdImage" moduleID="thresholdModule"/>
+    <ttshaderprocessor id="posterizeProcessor" processormanager="module" label="Posterize Color" shaderID="posterizeShader" previewImage="fxPosterizeColorImage" moduleID="posterizeModule"/>
+    <ttshaderprocessor id="glassProcessor" processormanager="module" label="Glass" shaderID="glassShader" previewImage="fxGlassImage" moduleID="glassModule"/>
+    <ttshaderprocessor id="brushShapeProcessor" processormanager="module" label="Brush Shape" shaderID="brushShapeShader"/>
+    <ttshaderprocessor id="sleepyHollowProcessor" processormanager="module" label="Sleepy Hollow" shaderID="sleepyHollowShader" previewImage="fxHollowImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="sunnyAfternoonProcessor" processormanager="module" label="Sunny Afternoon" shaderID="sunnyAfternoonShader" previewImage="fxSunnyImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="monitorProcessor" processormanager="module" label="TV Monitor" shaderID="monitorShader" previewImage="fxMonitorImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="oldPhotoCopyProcessor" processormanager="module" label="Old Photocopy" shaderID="oldPhotoCopyShader" previewImage="fxOldPhotoImage" moduleID="photocopyModule"/>
+    <ttshaderprocessor id="charcoalProcessor" processormanager="module" label="Chalk &amp; Charcoal" shaderID="charcoalShader" previewImage="fxCharcoalImage" moduleID="charcoalModule"/>
+    <ttshaderprocessor id="pencilProcessor" processormanager="module" label="Pencil" shaderID="pencilShader" previewImage="fxPencilImage" moduleID="pencilModule"/>
+    <ttshaderprocessor id="grainyNightProcessor" processormanager="module" label="Grainy Night" shaderID="grainyNightShader" previewImage="fxGrainyNightImage" moduleID="grainyNightModule"/>
+    <ttshaderprocessor id="moonlightProcessor" processormanager="module" label="Moonlight" shaderID="moonlightShader" previewImage="fxMoonlightImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="tintProcessor" processormanager="module" label="Tint" shaderID="tintShader" previewImage="fxTintImage" moduleID="tintModule"/>
+    <ttshaderprocessor id="dodgeBurnProcessor" processormanager="module" label="Dodge &amp; Burn" shaderID="dodgeBurnShader" previewImage="fxDodgeBurnPreviewImage" moduleID="shaderIntensityModule"/>
+    <ttrenderprocessor id="renderProcessor" processormanager="module"/>
+    <ttdropsprocessor id="dropsProcessor" processormanager="module"/>
+    <ttshaderprocessor id="comicProcessor" processormanager="module" label="Comic" shaderID="comicShader" previewImage="fxComicImage" moduleID="comicModule"/>
+    <ttscratchesprocessor id="scratchesProcessor" processormanager="module" label="Scratches" shaderID="scratchesShader" previewImage="fxScratchesImage" moduleID="scratchModule"/>
+    <ttedgeprocessor id="edgesProcessor" processormanager="module"/>
+    <ttoilpaintprocessor id="oilPaintProcessor" processormanager="module"/>
+    <ttcameraprocessor id="cameraProcessor" processormanager="module"/>
+    <ttfeatherselectionprocessor id="featherSelectionProcessor"/>
+    <ttlightingprocessor id="lightingProcessor" processormanager="module" label="Lighting" shaderID="lightingShader" previewImage="fxLightingImage" moduleID="lightingModule"/>
+    <ttaquarellprocessor id="aquarellProcessor" processormanager="module" label="Watercolor" shaderID="aquarellShader" previewImage="fxWatercolorImage" moduleID="aquarellModule"/>
+    <ttshaderprocessor id="hdrLookProcessor" processormanager="module" label="HDR Look" shaderID="hdrLookShader" previewImage="fxHDRImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="softLightProcessor" processormanager="module" label="Soft Light" shaderID="softlightShader" previewImage="fxSoftlightImage" moduleID="shaderIntensityModule"/>
+    <ttshaderprocessor id="softSkinProcessor" processormanager="module" label="Soft Skin" shaderID="softSkinShader" previewImage="fxSkinImage" moduleID="softSkinModule"/>
+    <ttcollageprocessor id="collageProcessor" processormanager="module"/>
+    <ttshaderprocessor id="colorizeProcessor" processormanager="module" label="Colorize" shaderID="colorizeShader" previewImage="fxColorizeImage" moduleID="colorizeModule"/>
+    <ttselectiontransformprocessor id="selectionTransformProcessor"/>
+    <ttsizeselectionprocessor id="sizeSelectionProcessor" processormanager="module"/>
+  </objects>
+  <classes>
+    <class className="ttimageprocessormanager" superClassName="module" packageName="com.adobe.ttpixel.editor.processor" codeName="TTImageProcessorManager"/>
+    <class className="ttimageprocessor" superClassName="messageHandler" packageName="com.adobe.ttpixel.editor.processor" codeName="TTImageProcessor">
+      <var name="processormanager" type="object" defaultValue="" codeName="iProcessorManager" className="TTImageProcessorManager"/>
+    </class>
+    <class className="ttpanelimageprocessor" superClassName="ttimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTPanelImageProcessor"/>
+    <class className="ttlevelsprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTLevelsProcessor"/>
+    <class className="ttsaturationprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTSaturationProcessor"/>
+    <class className="ttcurvesprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTCurvesProcessor"/>
+    <class className="tttextprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTTextProcessor"/>
+    <class className="ttwebtextprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTWebTextProcessor"/>
+    <class className="ttintensityprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTIntensityProcessor">
+      <var name="label" type="string" defaultValue="" codeName="iLabel"/>
+      <var name="shaderID" type="string" defaultValue="" codeName="iShaderID"/>
+      <var name="previewImageID" type="string" defaultValue="" codeName="iPreviewImageID"/>
+    </class>
+    <class className="tttonecurveprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTToneCurveProcessor"/>
+    <class className="ttcolorbalanceprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTColorBalanceProcessor"/>
+    <class className="ttcontrastbrightnessprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTContrastBrightnessProcessor"/>
+    <class className="ttbasetransformprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTBaseTransformProcessor"/>
+    <class className="ttautofixprocessor" superClassName="ttimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTAutoFixProcessor"/>
+    <class className="ttbasiccolorprocessor" superClassName="ttimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTBasicColorProcessor"/>
+    <class className="ttreplacecolorprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTReplaceColorProcessor"/>
+    <class className="ttgradientprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTGradientProcessor">
+      <var name="isAlpha" type="boolean" defaultValue="false" codeName="iIsAlpha"/>
+    </class>
+    <class className="ttcropprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTCropProcessor"/>
+    <class className="ttrefineedgeprocessor" superClassName="ttpanelimageprocessor" packageName="" codeName="TTRefineEdgeProcessor"/>
+    <class className="ttwarpprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTWarpProcessor"/>
+    <class className="ttdropshadowglowbevelprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTDropShadowGlowBevelProcessor">
+      <var name="type" type="string" defaultValue="dropshadow" codeName="iType"/>
+    </class>
+    <class className="ttdirectionalblurprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTDirectionalBlurProcessor"/>
+    <class className="ttshaderprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTShaderProcessor">
+      <var name="label" type="string" defaultValue="" codeName="iLabel"/>
+      <var name="shaderID" type="string" defaultValue="" codeName="iShaderID"/>
+      <var name="previewImage" type="string" defaultValue="" codeName="iPreviewImage"/>
+      <var name="moduleID" type="string" defaultValue="" codeName="iModuleID"/>
+    </class>
+    <class className="ttrenderprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.processor" codeName="TTRenderProcessor"/>
+    <class className="ttdropsprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTDropsProcessor"/>
+    <class className="ttscratchesprocessor" superClassName="ttshaderprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTScratchesProcessor"/>
+    <class className="ttedgeprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTEdgesProcessor"/>
+    <class className="ttoilpaintprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTOilPaintProcessor"/>
+    <class className="ttcameraprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTCameraProcessor"/>
+    <class className="tttransformprocessor" superClassName="ttbasetransformprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTTransformProcessor"/>
+    <class className="ttfeatherselectionprocessor" superClassName="ttpanelimageprocessor" packageName="" codeName="TTFeatherSelectionProcessor"/>
+    <class className="ttlightingprocessor" superClassName="ttshaderprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTLightingProcessor"/>
+    <class className="ttcollageprocessor" superClassName="ttpanelimageprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTCollageProcessor"/>
+    <class className="ttselectiontransformprocessor" superClassName="ttbasetransformprocessor" packageName="" codeName="TTSelectionTransformProcessor"/>
+    <class className="ttsizeselectionprocessor" superClassName="ttpanelimageprocessor" packageName="" codeName="TTSizeSelectionProcessor"/>
+    <class className="ttmatchcolorprocessor" superClassName="ttshaderprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTMatchColorProcessor"/>
+    <class className="ttaquarellprocessor" superClassName="ttshaderprocessor" packageName="com.adobe.ttpixel.editor.processor" codeName="TTAquarellProcessor"/>
+  </classes>
+</ttimageprocessormanager>

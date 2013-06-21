@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ad">false</item>
+    <item type="id" name="widget27">false</item>
+    <item type="id" name="ScrollView01">false</item>
+    <item type="id" name="xBackButton">false</item>
+    <item type="id" name="xplay">false</item>
+    <item type="id" name="xstop">false</item>
+    <item type="id" name="hymn">false</item>
+    <item type="id" name="rifle">false</item>
+    <item type="id" name="nco">false</item>
+    <item type="id" name="snco">false</item>
+    <item type="id" name="drill">false</item>
+    <item type="id" name="generalorders">false</item>
+    <item type="id" name="traits">false</item>
+    <item type="id" name="principles">false</item>
+    <item type="id" name="exit">false</item>
+    <item type="id" name="widget48">false</item>
+</resources>

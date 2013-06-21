@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="design_names">
+        <item>NEGRO</item>
+        <item>Azul</item>
+        <item>Gris</item>
+        <item>Verde</item>
+        <item>Rosa</item>
+        <item>Rojo</item>
+    </string-array>
+    <string-array name="design_keys">
+        <item>black</item>
+        <item>blue</item>
+        <item>gray</item>
+        <item>green</item>
+        <item>pink</item>
+        <item>red</item>
+    </string-array>
+    <string-array name="antishake_labels">
+        <item>Baja sensibilidad</item>
+        <item>Sensibilidad media</item>
+        <item>Alta sensibilidad:</item>
+    </string-array>
+    <string-array name="antishake_keys">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="capturebtn_labels">
+        <item>Capturar solamente</item>
+        <item>Capturar solo con enfoque exitoso</item>
+        <item>Enfocar y Capturar siempre</item>
+    </string-array>
+    <string-array name="capturebtn_keys">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

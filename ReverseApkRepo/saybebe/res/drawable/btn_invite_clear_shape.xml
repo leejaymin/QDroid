@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="3.2999878dip" android:topRightRadius="3.2999878dip" android:bottomLeftRadius="3.2999878dip" android:bottomRightRadius="3.2999878dip" />
+    <gradient android:startColor="@color/invite_btn_clear_start_color" android:endColor="@color/invite_btn_clear_end_color" android:angle="90.0" android:centerColor="@color/invite_btn_clear_center_color" />
+</shape>

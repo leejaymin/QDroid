@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="9.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/menu_layout" android:background="@drawable/menubar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="7.0">
+        <ImageButton android:id="@id/instrument_btn" android:background="@drawable/instrument_bass_btn_selector" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onMenuButtonClick" />
+        <ImageView android:id="@id/separator" android:background="@drawable/line_header" android:layout_width="2.0dip" android:layout_height="80.0dip" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/instrument_btn" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/beatsong_button" android:background="@drawable/beatsong_btn_selector" android:layout_width="170.0dip" android:layout_height="60.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/separator" android:layout_centerVertical="true" android:onClick="onMenuButtonClick" />
+        <ImageButton android:id="@id/show_list_button" android:background="@drawable/show_list_btn_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/beatsong_button" android:layout_centerVertical="true" android:onClick="onMenuButtonClick" />
+        <ImageView android:id="@id/separator2" android:background="@drawable/line_header" android:layout_width="wrap_content" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/show_list_button" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/setting_btn" android:background="@drawable/setting_btn_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onMenuButtonClick" />
+        <ImageView android:id="@id/record_btn" android:background="@drawable/recording_normal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/setting_btn" android:layout_centerVertical="true" android:onClick="onMenuButtonClick" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.rubycell.pianisthd.ui.PianoView3 android:id="@id/full_piano" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/fade" android:background="@drawable/horizontal_fade_down" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

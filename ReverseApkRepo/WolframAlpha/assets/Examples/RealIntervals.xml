@@ -1,0 +1,1 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Real Intervals</category><section-title>Real Intervals</section-title><caption>compute properties of an interval of real numbers</caption><input>[3,8)</input><input>interval [-sqrt(5), 1+sqrt(5)]</input><caption>compare intervals</caption><input>intervals [0,1), (1,oo)</input></example>

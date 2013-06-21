@@ -1,0 +1,11 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Discrete Mathematics</category><section-title>
+ <link ref="Combinatorics">Combinatorics </link>
+</section-title><caption>compute binomial coefficients (combinations)</caption><input>30 choose 18</input><caption>compute a Frobenius number</caption><input>Frobenius number {4, 7, 12}</input><caption>find partitions of an integer</caption><input>integer partitions of 10</input><section-title>
+ <link ref="GraphTheory">Graph Theory </link>
+</section-title><caption>compute properties of a named graph</caption><input>Pappus graph</input><caption>compare several graphs</caption><input>Petersen graph, icosahedral graph</input><caption>analyze a graph specified by adjacency rules</caption><input>1-&gt;2, 2-&gt;3, 3-&gt;1, 3-&gt;4, 4-&gt;1</input><section-title>
+ <link ref="PointLattices">Point Lattices </link>
+</section-title><caption>compute properties of a lattice</caption><input>face-centered cubic</input><caption>compute properties of a root lattice</caption><input>A4 root lattice</input><caption>compare several lattices</caption><input>simple cubic, simple hexagonal</input><section-title>
+ <link ref="Sequences">Sequences </link>
+</section-title><caption>compute a possible formula and continuation for a sequence</caption><input>1, 4, 9, 16, 25, ...</input><caption>sum an incompletely specified infinite series</caption><input>1/2 + 1/4 + 1/8 + 1/16 + ...</input><section-title>
+ <link ref="Recurrences">Recurrences </link>
+</section-title><caption>solve a recurrence</caption><input>g(n+1)=n^2+g(n)</input><caption>specify initial values</caption><input>f(n)=f(n-1)+f(n-2), f(1)=1, f(2)=2</input><caption>find a recurrence satisfied by a given sequence</caption><input>fibonacci(n) recurrence</input></example>

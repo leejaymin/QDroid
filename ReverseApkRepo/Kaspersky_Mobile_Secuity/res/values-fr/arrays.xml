@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Analyse complète</item>
+        <item>Analyse de dossiers</item>
+        <item>Analyse de la mémoire</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Désactivé</item>
+        <item>Sans délai</item>
+        <item>Dans 5 minutes</item>
+        <item>Dans 10 minutes</item>
+        <item>Dans 15 minutes</item>
+        <item>Dans 30 minutes</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Contact</item>
+        <item>Numéro de téléphone</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Tous les fichiers</item>
+        <item>Exécutables seulement</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Tous les fichiers</item>
+        <item>Exécutables seulement</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Supprimer</item>
+        <item>Ignorer</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Confirmer</item>
+        <item>Supprimer</item>
+        <item>Ignorer</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Une fois par semaine</item>
+        <item>Une fois par jour</item>
+        <item>Désactivée</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Une fois par semaine</item>
+        <item>Une fois par jour</item>
+        <item>Désactivée</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Contacts</item>
+        <item>Histoire SMS</item>
+        <item>SMS entrant</item>
+        <item>Histoire des appels</item>
+        <item>Appels entrants</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Supprimer</item>
+        <item>Ignorer</item>
+        <item>Aide</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Supprimer</item>
+        <item>Ignorer</item>
+        <item>Aide</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Supprimer</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Modifier</item>
+        <item>Supprimer</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Supprimer</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Désactivé</item>
+        <item>Contacts interdits</item>
+        <item>Contacts autorisés</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Toujours interdire</item>
+        <item>Toujours autoriser</item>
+        <item>Ignorer</item>
+        <item>Aide</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Appels</item>
+        <item>Appels et SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Modifier</item>
+        <item>Supprimer</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Supprimer</item>
+        <item>Supprimer tout</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Verrouillage</item>
+        <item>Suppression des données sélectionnées</item>
+        <item>Localisation</item>
+        <item>Dissimulation des contacts et de leurs données</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Filtre des appels et SMS</item>
+        <item>"Le Filtre des appels et des SMS vous permet de bloquer les appels entrants et les SMS non sollicités.
+
+Pour ce faire, vous devez sélectionner les règles de filtrage (mode), et créer des listes de contacts interdits et autorisés."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Anti-Virus</item>
+        <item>"L'Anti-Virus protège l'appareil contre les virus et autres programmes malveillants. L'Anti-Virus comprend la protection, l'analyse et la mise à jour. Vous pouvez configurer ici les paramètres de chaque composant.
+
+La protection permet de découvrir les menaces et d'analyser les nouvelles applications en temps réel. 
+
+L'analyse est lancée à la demande et aide à découvrir et à neutraliser les menaces sur votre appareil (il s'agit, par exemple, des fichiers installés ou simplement archivés qui présentent une menace). Vous pouvez décider d'analyser l'ensemble du système de fichiers, le contenu de la mémoire intégré de l'appareil ou un dossier spécifique.
+
+La mise à jour des bases antivirus et la mise à niveau de l'application garantit l'actualité de la protection de votre appareil."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Contacts personnels</item>
+        <item>"Les contacts personnels permettent de masquer les contacts confidentiels ainsi que l'historique des appels et des échanges SMS avec ceux-ci. Vous pouvez réaliser ici les opérations suivantes :
+
+ - sélectionner les types d'informations à masquer pour ces contacts ;
+ - activer la dissimulation automatique après la mise en veille de l'appareil ;
+ - autoriser la dissimulation à distance des informations relatives aux contacts en envoyant l'instruction SMS \"hide:[code]\" depuis un autre appareil (où [code] est le code secret de votre Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Verrouillage</item>
+        <item>"Vous pouvez activer la fonction Verrouillage qui permet de verrouiller à distance votre appareil en cas de perte ou de vol.
+
+Pour verrouiller votre appareil à distance, envoyez l'instruction SMS \"lock:[code]\" depuis un autre appareil (où [code] est le code secret de votre Kaspersky Mobile Security).
+
+Pour déverrouiller l'appareil, saisissez le code secret de Kaspersky Mobile Security."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Suppression</item>
+        <item>"Vous pouvez sélectionner les informations que vous souhaitez supprimer a distance en cas de perte ou de vol de votre appareil. Vous pouvez activer la suppression des informations spécifiques (par exemple, contacts, SMS, calendrier ou dossier) .
+
+Pour supprimer à distance les informations sélectionnées, envoyez sur votre appareil l'instruction SMS \"wipe:[code]\" depuis tout autre appareil (où [code] est le code secret de votre Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM-Surveillance</item>
+        <item>"Vous pouvez activer la fonction qui permet d'obtenir le nouveau numéro de téléphone et verrouiller l'appareil en cas de remplacement de la carte SIM ou utilisation de l'appareil sans celle-ci.
+
+Pour recevoir le nouveau numéro de téléphone en cas de remplacement de la carte SIM , indiquez l'adresse électronique et (ou) un autre numéro de téléphone. Pour verrouiller automatiquement l'appareil en cas de remplacement de la carte SIM ou utilisation de l'appareil sans celle-ci, activez le verrouillage de l'appareil dans les paramètres de SIM-Surveillance."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Localisation</item>
+        <item>"Vous pouvez activer la fonction qui permet d'obtenir à distance les coordonnées de l'appareil en cas de perte ou de vol.
+
+Pour obtenir les coordonnées, envoyez vers votre appareil l'instruction SMS \"locate:[code]\" depuis un autre appareil (où [code] est le code secret de votre Kaspersky Mobile Security). L'application envoie un message avec les coordonnées de l'appareil par SMS ou à l'adresse électronique indiquée.
+
+Pour envoyer le message électronique, l'application envoie un SMS à un numéro spécial de l'opérateur MTS (Russie). Le coût de l'envoi du SMS au numéro spécial dépend des tarifs pratiqués par votre opérateur. L'opérateur MTS (Russie) envoie ensuite les coordonnées de l'appareil à votre adresse électronique."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Avancé</item>
+        <item>Recommandé</item>
+        <item>Désactivé</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Analyse de nouvelles applications et contrôle des actions sur les fichiers.</item>
+        <item>Analyse de nouvelles applications uniquement.</item>
+        <item>Protection désactivée.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Avancé</item>
+        <item>Recommandé</item>
+        <item>Désactivé</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Journal des appels</item>
+        <item>SMS entrant</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Tous les événements</item>
+        <item>Anti-Virus</item>
+        <item>Filtre des appels et SMS</item>
+        <item>Protection Internet</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Résultats des analyses et de la mise à jour</item>
+        <item>Appels et messages bloqués</item>
+        <item>Sites Internet bloqués</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>"Aujourd'hui"</item>
+        <item>Au cours des 7 derniers jours</item>
+        <item>Au cours des 30 derniers jours</item>
+        <item>Il y a très longtemps</item>
+    </string-array>
+</resources>

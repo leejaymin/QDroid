@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Deschis (implicit)</item>
+        <item>Întunecat</item>
+        <item>Albastru</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automat (implicit)</item>
+        <item>Orizontal</item>
+        <item>Vertical</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Implicit</item>
+        <item>Mai mare</item>
+        <item>Cel mai mare</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Ecranul</item>
+        <item>Preferinţe</item>
+    </string-array>
+</resources>

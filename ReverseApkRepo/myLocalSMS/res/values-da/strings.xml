@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Settings!</string>
+    <string name="app_name">myLocaleSMS</string>
+    <string name="checkBoxTitle">Aktiver Oversættelse</string>
+    <string name="checkBoxSummary">Aktiverer Oversættelse af modtagne SMS til det sæt sprog</string>
+    <string name="listTitle">Sprog</string>
+    <string name="listSummary">Vælg dit foretrukne sprog, som SMS-er, der skal oversættes</string>
+    <string name="checkBoxPopup">Omogući Popup</string>
+    <string name="checkBoxPopupSummary">Omogućuje Popup obavijest</string>
+    <string name="donate">Darovati</string>
+    <string name="donateSummary">Kupi vino za developer</string>
+    <string name="dialog_activity_text" />
+    <string name="messageNotificationTitle">Nova poruka</string>
+    <string name="butSent">Slati</string>
+    <string name="butReply">Odgovoriti</string>
+    <string name="butClose">Zatvoriti</string>
+    <string name="butCalendar">Kalendar</string>
+    <string name="butInbox">Inbox</string>
+    <string name="butBack">Natrag</string>
+    <string name="from">Iz</string>
+</resources>

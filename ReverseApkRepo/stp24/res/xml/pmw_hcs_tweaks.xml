@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/prefs_screen_screen_off" android:summary="@string/prefs_screen_screen_off_summary" android:fragment="ccc71.pmw.lib.pmw_settings$PrefsTweaksScreenOff" />
+    <PreferenceScreen android:title="@string/prefs_screen_governors" android:summary="@string/prefs_screen_governors_summary" android:fragment="ccc71.pmw.lib.pmw_settings$PrefsTweaksGovs" />
+    <CheckBoxPreference android:title="@string/prefs_oc_deamon" android:key="@string/PREFSKEY_DISABLE_OCDEAMON" android:defaultValue="false" android:summaryOn="@string/prefs_oc_deamon_on" android:summaryOff="@string/prefs_oc_deamon_off" />
+    <PreferenceCategory android:title="@string/prefs_category_boot">
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sd_set_boot" android:key="@string/PREFSKEY_SD_BOOT" android:summary="@string/prefs_sd_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_memory_set_boot" android:key="@string/PREFSKEY_MEMORY_BOOT" android:summary="@string/prefs_memory_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_cpu_set_boot" android:key="@string/PREFSKEY_CPU_BOOT" android:summary="@string/prefs_cpu_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sysctl_set_boot" android:key="@string/PREFSKEY_SYSCTL_BOOT" android:summary="@string/prefs_sysctl_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_force_all_cpus" android:key="@string/PREFSKEY_CPU_ALL_ONLINE" android:summary="@string/prefs_force_all_cpus_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_app_boost" android:key="@string/PREFSKEY_APP_BOOST" android:summary="@string/prefs_app_boost_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_clear_cache" android:key="@string/PREFSKEY_CLEAR_CACHE" android:summary="@string/prefs_clear_cache_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

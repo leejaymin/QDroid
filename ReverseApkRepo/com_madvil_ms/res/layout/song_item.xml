@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout02" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/ImageView01" android:background="@drawable/def_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/DurationTextView" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/SongTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Song title" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textColor="#ffdddddd" android:id="@id/ArtistTextView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Artist name" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textColor="#ffffffff" android:id="@id/DurationTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="00:00" android:layout_alignTop="@id/LinearLayout01" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

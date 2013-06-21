@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="LinearLayout02">false</item>
+    <item type="id" name="TextView02">false</item>
+    <item type="id" name="TextView03">false</item>
+    <item type="id" name="LinearLayout01">false</item>
+    <item type="id" name="TextView01">false</item>
+    <item type="id" name="txtRevLookupOhm">false</item>
+    <item type="id" name="LinearLayout03">false</item>
+    <item type="id" name="btnRevLookupShowResistor">false</item>
+    <item type="id" name="chkOptionLockBand">false</item>
+    <item type="id" name="chkOptionDimDrag">false</item>
+    <item type="id" name="chkOptionSaveResistorState">false</item>
+</resources>

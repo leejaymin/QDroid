@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="CheckedTextNotificationNoisyVibrate">Ring and Vibrate</string>
+    <string name="CheckedTextNotificationVibrateString">Vibrate Notifications</string>
+    <string name="CheckedTextSilentNotificationString">Silent Notificiations</string>
+    <string name="subTitle2Text">Notifications in Holstered Mode</string>
+    <string name="subTitle1Text">Holster or Dock Selection</string>
+    <string name="RadioTextCarOrDeskDock">Use Car or Desk Dock</string>
+    <string name="RadioTextMagHolster">Use Magnetic Holster</string>
+    <string name="RadioButtonTextDockingDisabled">Let Car Home and Desk Dock handle Events</string>
+    <string name="RadioButtonDockEnable">Intercept Docking Events</string>
+    <string name="avrserviceCheckBox">Holster Buddy Service</string>
+    <string name="WidgetButtonText">Holster Buddy</string>
+    <string name="widgetCheckBox">AVRService</string>
+    <string name="hideButtonText">Minimize Window</string>
+    <string name="quitText">Quit Holster Buddy</string>
+    <string name="ExitText">Exit</string>
+    <string name="adnoticeText">The following are paid advertisements:</string>
+    <string name="InstructionsText">While app is open, placing phone in holster sets ringer to vibrate silently. Removing from holster re-enables audible ringer. Free version must remain open to function, Full Paid version does not have this limitation or ads.</string>
+    <string name="hello">Holster Buddy</string>
+    <string name="app_name">Holster Buddy Settings</string>
+</resources>

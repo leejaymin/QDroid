@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_dim_dark" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_mode" />
+        <RadioGroup android:orientation="vertical" android:id="@id/RGModeSelect" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/RadioButton01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qs_comic_mode" />
+            <RadioButton android:id="@id/RadioButton02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qs_novel_mode" />
+            <RadioButton android:id="@id/RadioButton03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qs_image_mode" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/perf_reading_direction" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/RGReadDirection" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/RadioButton04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_nagivate_right" android:layout_weight="1.0" />
+            <RadioButton android:id="@id/RadioButton05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_nagivate_left" android:layout_weight="1.0" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <Button android:gravity="center" android:id="@id/button1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/choose_bookshelf_folder" />
+        <TextView android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip" android:text="" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_dim_dark" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/SetupOKButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_weight="1.0" />
+        <Button android:id="@id/SetupCalcelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="600" height="500" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttaview id="view1" width="576" height="452" sizeX="scale" sizeY="scale" x="10" y="10">
+        <ttnavigationview id="view2" width="576" height="452" sizeX="scale" sizeY="scale" x="0" y="0">
+          <ttatablecontrol id="control" width="576" height="452" sizeX="scale" sizeY="scale" x="0" y="0" target="referenceDispatcher" selector="tableControl" itemWidth="256" itemHeight="256" itemTopOffset="30" itemLeftOffset="0" itemSpace="0" rowLeftOffsetRelative="30"/>
+        </ttnavigationview>
+        <text id="textttalphattbold" width="479" height="22" sizeX="center" sizeY="center" acceptsMouse="false" x="48" y="221" align="center"/>
+      </ttaview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view2" refName="navigationView"/>
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="textttalphattbold" refName="messageText"/>
+      <objRef refId="control" refName="tableControl"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttnavigationview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTNavigationView"/>
+    <class className="tttablecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTTableControl"/>
+    <class className="ttaview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTAView"/>
+    <class className="ttafillview" superClassName="ttacceleratedview" packageName="com.adobe.ttpixel.ui" codeName="TTAFillView">
+      <var name="colorvalue" type="uint" defaultValue="0" codeName="iColorValue"/>
+    </class>
+    <class className="ttacontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAControl"/>
+    <class className="ttatablecontrol" superClassName="ttacontrol" packageName="com.adobe.ttpixel.ui" codeName="TTATableControl">
+      <var name="itemWidth" type="number" defaultValue="0" codeName="iItemWidth"/>
+      <var name="itemHeight" type="number" defaultValue="0" codeName="iItemHeight"/>
+      <var name="itemTopOffset" type="number" defaultValue="20" codeName="iItemTopOffset"/>
+      <var name="itemLeftOffset" type="number" defaultValue="20" codeName="iItemLeftOffset"/>
+      <var name="itemSpace" type="number" defaultValue="20" codeName="iItemSpace"/>
+      <var name="rowLeftOffsetRelative" type="number" defaultValue="0" codeName="iRowLeftOffsetRelative"/>
+    </class>
+  </classes>
+</module>

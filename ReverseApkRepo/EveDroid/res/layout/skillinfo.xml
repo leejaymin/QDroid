@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/skillinfo" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0px" android:textStyle="bold" android:gravity="center" android:id="@id/txtSkillName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/skillinfo" />
+    <TextView android:textSize="15.0px" android:textStyle="italic" android:gravity="center" android:id="@id/txtSkillGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/txtSkillName" />
+    <TextView android:id="@id/txtSkillAtts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:layout_below="@id/txtSkillGroup" />
+    <TextView android:id="@id/txtSkillDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:layout_below="@id/txtSkillAtts" />
+    <TextView android:textSize="20.0px" android:textStyle="bold" android:gravity="center" android:id="@id/txtReqLabel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:text="Required Skills" android:layout_below="@id/txtSkillDesc" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0px" android:layout_below="@id/txtReqLabel" />
+    <Spinner android:id="@id/spinPlans" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

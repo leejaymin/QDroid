@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="1" android:versionName="1.0" package="exam.AndroidExam"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/app_name" android:name=".AndroidExam">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> // Layout
+<activity android:label="TextViewTest" android:name="exam.Layout.TextViewTest" />
+        <activity android:label="ImageViewTest" android:name="exam.Layout.ImageViewTest" />
+        <activity android:label="ButtonEdit" android:name="exam.Layout.ButtonEdit" />
+        <activity android:label="Horizontal" android:name="exam.Layout.Horizontal" />
+        <activity android:label="Horizontal2" android:name="exam.Layout.Horizontal2" />
+        <activity android:label="Horizontal3" android:name="exam.Layout.Horizontal3" />
+        <activity android:label="Gravity1" android:name="exam.Layout.Gravity1" />
+        <activity android:label="Gravity2" android:name="exam.Layout.Gravity2" />
+        <activity android:label="Gravity3" android:name="exam.Layout.Gravity3" />
+        <activity android:label="Gravity4" android:name="exam.Layout.Gravity4" />
+        <activity android:label="lGravity1" android:name="exam.Layout.lGravity1" />
+        <activity android:label="lGravity2" android:name="exam.Layout.lGravity2" />
+        <activity android:label="lGravity3" android:name="exam.Layout.lGravity3" />
+        <activity android:label="lGravity4" android:name="exam.Layout.lGravity4" />
+        <activity android:label="Base1" android:name="exam.Layout.Base1" />
+        <activity android:label="Base2" android:name="exam.Layout.Base2" />
+        <activity android:label="Weight1" android:name="exam.Layout.Weight1" />
+        <activity android:label="Weight2" android:name="exam.Layout.Weight2" />
+        <activity android:label="Weight3" android:name="exam.Layout.Weight3" />
+        <activity android:label="Padding1" android:name="exam.Layout.Padding1" />
+        <activity android:label="Padding2" android:name="exam.Layout.Padding2" />
+        <activity android:label="Padding3" android:name="exam.Layout.Padding3" />
+        <activity android:label="Relative1" android:name="exam.Layout.Relative1" />
+        <activity android:label="NameCard" android:name="exam.Layout.NameCard" />
+        <activity android:label="Absolute" android:name="exam.Layout.Absolute" />
+        <activity android:label="Frame" android:name="exam.Layout.Frame" />
+        <activity android:label="Table" android:name="exam.Layout.Table" />
+        <activity android:label="NestLayout" android:name="exam.Layout.NestLayout" />
+        <activity android:label="MultiPage" android:name="exam.Layout.MultiPage" />
+        <activity android:label="CodeLayout" android:name="exam.Layout.CodeLayout" />
+        <activity android:label="CodeLayout2" android:name="exam.Layout.CodeLayout2" />
+        <activity android:label="Inflation" android:name="exam.Layout.Inflation" />
+        <activity android:label="Inflation2" android:name="exam.Layout.Inflation2" />
+        <activity android:label="Inflation3" android:name="exam.Layout.Inflation3" />
+        <activity android:label="Inflation4" android:name="exam.Layout.Inflation4" />
+        <activity android:label="LayoutParameter" android:name="exam.Layout.LayoutParameter" />
+        <activity android:label="LayoutParameter2" android:name="exam.Layout.LayoutParameter2" />
+        <activity android:label="MarginParameter" android:name="exam.Layout.MarginParameter" />
+        <activity android:label="MarginParameter2" android:name="exam.Layout.MarginParameter2" /> // Output
+<activity android:label="CustomView" android:name="exam.Output.CustomView" />
+        <activity android:label="Primitive1" android:name="exam.Output.Primitive1" />
+        <activity android:label="Primitive2" android:name="exam.Output.Primitive2" />
+        <activity android:label="AntiAlias" android:name="exam.Output.AntiAlias" />
+        <activity android:label="PaintTest" android:name="exam.Output.PaintTest" />
+        <activity android:label="DrawBitmap" android:name="exam.Output.DrawBitmap" />
+        <activity android:label="DrawText" android:name="exam.Output.DrawText" />
+        <activity android:label="TypeFace" android:name="exam.Output.TypeFace" />
+        <activity android:label="CustomFont" android:name="exam.Output.CustomFont" />
+        <activity android:label="DrawPath" android:name="exam.Output.DrawPath" />
+        <activity android:label="ToastTest" android:name="exam.Output.ToastTest" />
+        <activity android:label="MessageBeep" android:name="exam.Output.MessageBeep" />
+        <activity android:label="SoundPoolTest" android:name="exam.Output.SoundPoolTest" /> // Input
+<activity android:label="HandleEvent" android:name="exam.Input.HandleEvent" />
+        <activity android:label="HandlerOrder" android:name="exam.Input.HandlerOrder" />
+        <activity android:label="HandlerAccess" android:name="exam.Input.HandlerAccess" />
+        <activity android:label="MoveCircle" android:name="exam.Input.MoveCircle" />
+        <activity android:label="FreeLine" android:name="exam.Input.FreeLine" />
+        <activity android:label="Fruit" android:name="exam.Input.Fruit" />
+        <activity android:label="FocusTest" android:name="exam.Input.FocusTest" />
+        <activity android:label="FocusTest2" android:name="exam.Input.FocusTest2" />
+        <activity android:label="Timer" android:name="exam.Input.Timer" />
+        <activity android:label="OptionMenu" android:name="exam.Input.OptionMenu" />
+        <activity android:label="OptionMenu2" android:name="exam.Input.OptionMenu2" />
+        <activity android:label="MenuCheck" android:name="exam.Input.MenuCheck" />
+        <activity android:label="ContextMenuTest" android:name="exam.Input.ContextMenuTest" />
+        <activity android:label="MemoryPower" android:name="exam.Input.MemoryPower" />
+        <activity android:label="MemoryPower2" android:name="exam.Input.MemoryPower2" />
+        <activity android:label="LogTest" android:name="exam.Input.LogTest" /> // Widget
+<activity android:label="ReadResource" android:name="exam.Widget.ReadResource" />
+        <activity android:label="ReadResource2" android:name="exam.Widget.ReadResource2" />
+        <activity android:label="StyleTest" android:name="exam.Widget.StyleTest" />
+        <activity android:theme="@style/mytheme" android:label="ThemeTest" android:name="exam.Widget.ThemeTest" />
+        <activity android:theme="@android:style/Theme.Dialog" android:label="SystemTheme" android:name="exam.Widget.SystemTheme" />
+        <activity android:label="LandPort" android:name="exam.Widget.LandPort" />
+        <activity android:label="TextViewAttr" android:name="exam.Widget.TextViewAttr" />
+        <activity android:label="EditableTest" android:name="exam.Widget.EditableTest" />
+        <activity android:label="SpannableTest" android:name="exam.Widget.SpannableTest" />
+        <activity android:label="TextChange" android:name="exam.Widget.TextChange" />
+        <activity android:label="EditLimit" android:name="exam.Widget.EditLimit" />
+        <activity android:label="EditSelect" android:name="exam.Widget.EditSelect" />
+        <activity android:label="InputType" android:name="exam.Widget.InputType" />
+        <activity android:label="ShowHideKey" android:name="exam.Widget.ShowHideKey" />
+        <activity android:label="AdjustKey1" android:name="exam.Widget.AdjustKey1" />
+        <activity android:label="AdjustKey2" android:name="exam.Widget.AdjustKey2" android:windowSoftInputMode="adjustResize" />
+        <activity android:label="NoNinePatch" android:name="exam.Widget.NoNinePatch" />
+        <activity android:label="NinePatch" android:name="exam.Widget.NinePatch" />
+        <activity android:label="RadioTest" android:name="exam.Widget.RadioTest" />
+        <activity android:label="ArrowButton" android:name="exam.Widget.ArrowButton" />
+        <activity android:label="ImageButtonTest" android:name="exam.Widget.ImageButtonTest" />
+        <activity android:label="ListTest" android:name="exam.Widget.ListTest" />
+        <activity android:label="ListFromArray" android:name="exam.Widget.ListFromArray" />
+        <activity android:label="ListAttr" android:name="exam.Widget.ListAttr" />
+        <activity android:label="ListAddDel" android:name="exam.Widget.ListAddDel" />
+        <activity android:label="ListIconText" android:name="exam.Widget.ListIconText" />
+        <activity android:label="ListOfViews" android:name="exam.Widget.ListOfViews" />
+        <activity android:label="ListOnly" android:name="exam.Widget.ListOnly" />
+        <activity android:label="SpinnerTest" android:name="exam.Widget.SpinnerTest" />
+        <activity android:label="GridTest" android:name="exam.Widget.GridTest" />
+        <activity android:label="GalleryTest" android:name="exam.Widget.GalleryTest" />
+        <activity android:label="ProgressBarTest" android:name="exam.Widget.ProgressBarTest" />
+        <activity android:label="ProgressTitle" android:name="exam.Widget.ProgressTitle" />
+        <activity android:label="ProgressTitle2" android:name="exam.Widget.ProgressTitle2" />
+        <activity android:label="SeekBarTest" android:name="exam.Widget.SeekBarTest" />
+        <activity android:label="Rating" android:name="exam.Widget.Rating" />
+        <activity android:label="SoundEdit" android:name="exam.Widget.SoundEdit" />
+        <activity android:label="NumEdit" android:name="exam.Widget.NumEdit" />
+        <activity android:label="Attribute" android:name="exam.Widget.Attribute" />
+        <activity android:label="SoundEdit2" android:name="exam.Widget.SoundEdit2" />
+        <activity android:label="Measuring" android:name="exam.Widget.Measuring" />
+        <activity android:label="RainbowTest" android:name="exam.Widget.RainbowTest" />
+        <activity android:label="ScrollViewTest" android:name="exam.Widget.ScrollViewTest" />
+        <activity android:label="HScrollViewTest" android:name="exam.Widget.HScrollViewTest" />
+        <activity android:label="WebViewTest" android:name="exam.Widget.WebViewTest" /> // Data
+<activity android:label="FileIO" android:name="exam.Data.FileIO" />
+        <activity android:label="ShareFile" android:name="exam.Data.ShareFile" />
+        <activity android:label="SDCard" android:name="exam.Data.SDCard" />
+        <activity android:label="TextLogTest" android:name="exam.Data.TextLogTest" />
+        <activity android:label="PrefTest" android:name="exam.Data.PrefTest" />
+        <activity android:label="PrefActivity" android:name="exam.Data.PrefActivity" />
+        <activity android:label="EnglishWord" android:name="exam.Data.EnglishWord" />
+        <activity android:label="ProductList" android:name="exam.Data.ProductList" />
+        <provider android:name="exam.Data.EWProvider" android:authorities="exam.Data.EnglishWord" />
+        <activity android:label="CallWordCP" android:name="exam.Data.CallWordCP" /> // activity
+<activity android:label="CallActivity" android:name="exam.activity.CallActivity" />
+        <activity android:label="SubActivity" android:name="exam.activity.SubActivity" />
+        <activity android:label="CallOther" android:name="exam.activity.CallOther" />
+        <activity android:label="CommActivity" android:name="exam.activity.CommActivity" />
+        <activity android:label="ActEdit" android:name="exam.activity.ActEdit" />
+        <activity android:label="SaveState" android:name="exam.activity.SaveState" />
+        <activity android:label="SaveState2" android:name="exam.activity.SaveState2" />
+        <activity android:label="SaveState3" android:name="exam.activity.SaveState3" />
+        <activity android:label="SaveCurve" android:name="exam.activity.SaveCurve" />
+        <activity android:label="SaveCurve2" android:name="exam.activity.SaveCurve2" />
+        <activity android:label="SaveCurve3" android:name="exam.activity.SaveCurve3" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="TabTest" android:name="exam.activity.TabTest" />
+        <activity android:label="TabTest2" android:name="exam.activity.TabTest2" />
+        <activity android:label="TabTest3" android:name="exam.activity.TabTest3" />
+        <activity android:label="CustomTab" android:name="exam.activity.CustomTab" /> // dialog
+<activity android:label="DialogTest" android:name="exam.dialog.DialogTest" />
+        <activity android:label="DialogButton" android:name="exam.dialog.DialogButton" />
+        <activity android:label="Cancelable" android:name="exam.dialog.Cancelable" />
+        <activity android:label="ShowDialog" android:name="exam.dialog.ShowDialog" />
+        <activity android:label="ErrorMessage1" android:name="exam.dialog.ErrorMessage1" />
+        <activity android:label="ErrorMessage2" android:name="exam.dialog.ErrorMessage2" />
+        <activity android:label="Question1" android:name="exam.dialog.Question1" />
+        <activity android:label="Question2" android:name="exam.dialog.Question2" />
+        <activity android:label="SelectDialog1" android:name="exam.dialog.SelectDialog1" />
+        <activity android:label="SelectDialog2" android:name="exam.dialog.SelectDialog2" />
+        <activity android:label="SelectDialog3" android:name="exam.dialog.SelectDialog3" />
+        <activity android:label="OrderDialog" android:name="exam.dialog.OrderDialog" />
+        <activity android:label="PopupTest" android:name="exam.dialog.PopupTest" /> // thread
+<activity android:label="ThreadTest" android:name="exam.thread.ThreadTest" />
+        <activity android:label="HandlerTest" android:name="exam.thread.HandlerTest" />
+        <activity android:label="LooperTest" android:name="exam.thread.LooperTest" />
+        <activity android:label="Upload" android:name="exam.thread.Upload" />
+        <activity android:label="Post" android:name="exam.thread.Post" />
+        <activity android:label="ANR" android:name="exam.thread.ANR" />
+        <activity android:label="ANR2" android:name="exam.thread.ANR2" />
+        <activity android:label="LongTime" android:name="exam.thread.LongTime" />
+        <activity android:label="LongTime2" android:name="exam.thread.LongTime2" />
+        <activity android:label="LongTime3" android:name="exam.thread.LongTime3" />
+        <activity android:label="LongTime4" android:name="exam.thread.LongTime4" />
+        <activity android:label="LongTime5" android:name="exam.thread.LongTime5" />
+        <activity android:label="BackWork" android:name="exam.thread.BackWork" />
+        <activity android:label="BackWork2" android:name="exam.thread.BackWork2" />
+        <activity android:label="BackWork3" android:name="exam.thread.BackWork3" /> // Draw <activity android:label="LinearGrad" android:name="exam.Draw.LinearGrad" />
+        <activity android:label="RadialGrad" android:name="exam.Draw.RadialGrad" />
+        <activity android:label="SweepGrad" android:name="exam.Draw.SweepGrad" />
+        <activity android:label="BitmapSdr" android:name="exam.Draw.BitmapSdr" />
+        <activity android:label="ComposeSdr" android:name="exam.Draw.ComposeSdr" />
+        <activity android:label="ShapeTest" android:name="exam.Draw.ShapeTest" />
+        <activity android:label="BlurFlt" android:name="exam.Draw.BlurFlt" />
+        <activity android:label="EmbossFlt" android:name="exam.Draw.EmbossFlt" />
+        <activity android:label="ColorFlt" android:name="exam.Draw.ColorFlt" />
+        <activity android:label="ColorM" android:name="exam.Draw.ColorM" />
+        <activity android:label="GrayScale" android:name="exam.Draw.GrayScale" />
+        <activity android:label="Porter" android:name="exam.Draw.Porter" />
+        <activity android:label="DashPathEft" android:name="exam.Draw.DashPathEft" />
+        <activity android:label="CornerPathEft" android:name="exam.Draw.CornerPathEft" />
+        <activity android:label="PathDashEft" android:name="exam.Draw.PathDashEft" />
+        <activity android:label="DashAnim" android:name="exam.Draw.DashAnim" />
+        <activity android:label="Xfer" android:name="exam.Draw.Xfer" />
+        <activity android:label="Dither" android:name="exam.Draw.Dither" />
+        <activity android:label="Translate" android:name="exam.Draw.Translate" />
+        <activity android:label="Translate2" android:name="exam.Draw.Translate2" />
+        <activity android:label="SaveCanvas" android:name="exam.Draw.SaveCanvas" />
+        <activity android:label="Skew" android:name="exam.Draw.Skew" />
+        <activity android:label="Scale" android:name="exam.Draw.Scale" />
+        <activity android:label="TransOrder" android:name="exam.Draw.TransOrder" />
+        <activity android:label="Rotate" android:name="exam.Draw.Rotate" />
+        <activity android:label="FrameAni" android:name="exam.Draw.FrameAni" />
+        <activity android:label="Tween" android:name="exam.Draw.Tween" />
+        <activity android:label="TweenListener" android:name="exam.Draw.TweenListener" />
+        <activity android:label="Reflection" android:name="exam.Draw.Reflection" />
+        <activity android:label="Reflection2" android:name="exam.Draw.Reflection2" />
+        <activity android:label="ReDraw1" android:name="exam.Draw.ReDraw1" />
+        <activity android:label="ReDraw2" android:name="exam.Draw.ReDraw2" />
+        <activity android:label="ReDraw3" android:name="exam.Draw.ReDraw3" />
+        <activity android:label="ReDraw4" android:name="exam.Draw.ReDraw4" />
+        <activity android:label="ReDraw5" android:name="exam.Draw.ReDraw5" /> // network
+<activity android:label="ConMgr" android:name="exam.Network.ConMgr" />
+        <activity android:label="DownHtml" android:name="exam.Network.DownHtml" />
+        <activity android:label="AsyncDownHtml" android:name="exam.Network.AsyncDownHtml" />
+        <activity android:label="DownImage" android:name="exam.Network.DownImage" />
+        <activity android:label="WebService" android:name="exam.Network.WebService" />
+        <activity android:label="DomParser" android:name="exam.Network.DomParser" />
+        <activity android:label="DomParser2" android:name="exam.Network.DomParser2" />
+        <activity android:label="SaxParser" android:name="exam.Network.SaxParser" />
+        <activity android:label="PullParser" android:name="exam.Network.PullParser" />
+        <activity android:label="JSONArrayTest" android:name="exam.Network.JSONArrayTest" />
+        <activity android:label="JSONObjectTest" android:name="exam.Network.JSONObjectTest" />
+        <receiver android:name="exam.Network.FreeBR">
+            <intent-filter>
+                <action android:name="exam.service.FREEWIFI" />
+            </intent-filter>
+        </receiver> // service
+<activity android:label="NapAlarm" android:name="exam.service.NapAlarm" />
+        <activity android:label="NapEnd" android:name="exam.service.NapEnd" />
+        <activity android:label="CustomNotiView" android:name="exam.service.CustomNotiView" />
+        <activity android:label="DetectFree" android:name="exam.service.DetectFree" />
+        <activity android:label="DetectSaveZone" android:name="exam.service.DetectSaveZone" />
+        <activity android:label="OnSaveZone" android:name="exam.service.OnSaveZone" />
+        <activity android:label="WatchBattery" android:name="exam.service.WatchBattery" />
+        <activity android:label="WatchSdcard" android:name="exam.service.WatchSdcard" />
+        <activity android:label="AlarmTest" android:name="exam.service.AlarmTest" />
+        <receiver android:name="exam.service.AlarmReceiver" />
+        <receiver android:name="exam.service.DisplayScore" />
+        <service android:name="exam.service.NewsService" android:enabled="true">
+            <intent-filter>
+                <action android:name="exam.service.NEWS" />
+            </intent-filter>
+        </service>
+        <activity android:label="NewsController" android:name="exam.service.NewsController" />
+        <service android:name="exam.service.CalcService" android:enabled="true">
+            <intent-filter>
+                <action android:name="exam.service.CALC" />
+            </intent-filter>
+        </service>
+        <activity android:label="CalcClient" android:name="exam.service.CalcClient" /> // external
+<activity android:label="NewsController" android:name="exam.external.NewsController" />
+        <activity android:label="CalcClient" android:name="exam.external.CalcClient" />
+    </application>
+    <uses-sdk android:minSdkVersion="7" /> // Permission
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

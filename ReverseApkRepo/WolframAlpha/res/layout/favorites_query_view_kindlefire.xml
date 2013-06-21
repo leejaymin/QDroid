@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/two_line_list_item_relativelayout_paddingTop" android:paddingBottom="@dimen/two_line_list_item_relativelayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:id="@id/query_text" android:paddingLeft="@dimen/history_query_view_textview_query_text_paddingLeft" android:paddingTop="@dimen/history_query_view_textview_query_text_paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/favorites_assumptions_layout" android:paddingTop="@dimen/history_query_view_linearlayout_history_assumptions_layout_padddingTop" android:paddingBottom="@dimen/history_query_view_linearlayout_history_assumptions_layout_padddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/query_text" android:layout_alignLeft="@id/query_text" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version='1.0'?><example><link ref="SocioeconomicData">Socioeconomic Data</link><category>Energy Data</category><section-title>
+ <link ref="EnergyResources">Energy Resources </link>
+</section-title><caption>get data on energy resources</caption><input>China energy production</input><caption>compare energy sources for a country</caption><input>US hydroelectric vs wind electricity generation</input><section-title>
+ <link ref="EnergyPrices">Energy Prices </link>
+</section-title><caption>get energy price data</caption><input>price of electricity in Illinois</input><caption>compute cost for a specified quantity</caption><input>cost of 300 kWh of electricity in Georgia</input><section-title>
+ <link ref="GasolinePrices">Gasoline Prices </link>
+</section-title><caption>get gasoline price data</caption><input>price of gasoline in Dallas</input><caption>specify a grade of gasoline</caption><input>price of premium gas in California</input><section-title>
+ <link ref="NuclearPower">Nuclear Power </link>
+</section-title><caption>get data on a nuclear power station</caption><input>Three Mile Island</input><caption>get energy production data for a reactor</caption><input>annual energy production of Diablo Canyon 2</input></example>

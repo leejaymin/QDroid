@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Toy Story Soundboard</string>
+    <string name="app_name">IT Crowd Soundboard</string>
+    <string name="main_title">IT Crowd Soundboard</string>
+    <string name="button0_label">Hello IT</string>
+    <string name="button1_label">Died Of Stress</string>
+    <string name="button2_label">Off And On</string>
+    <string name="button3_label">Reboot</string>
+    <string name="button4_label">Sticking It Up</string>
+    <string name="button5_label">Bastard</string>
+    <string name="button6_label">Loosing Blood</string>
+    <string name="button7_label">From The Past</string>
+    <string name="button9_label">Slept With</string>
+    <string name="about_label">About...</string>
+    <string name="about_title">About...</string>
+    <string name="about_ok">Ok</string>
+    <string name="quit_label">Quit</string>
+    <string name="button10_label">Told Her</string>
+    <string name="button11_label">WAR!!</string>
+    <string name="button12_label">Turn It On</string>
+    <string name="button13_label">Flip Off</string>
+    <string name="button14_label">Remember</string>
+    <string name="button15_label">Are you Sure</string>
+    <string name="button16_label">Cant Be Done</string>
+    <string name="button18_label">Not Afraid</string>
+    <string name="button19_label">I Lie</string>
+    <string name="button20_label">Nice Screensaver</string>
+    <string name="button21_label">Email</string>
+    <string name="button22_label">You Berk</string>
+    <string name="button23_label">Stressed?</string>
+    <string name="button24_label">Fire!!</string>
+    <string name="button25_label">Make Me</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 segundos</item>
+        <item>30 segundos</item>
+        <item>60 segundos</item>
+        <item>2 minutos</item>
+        <item>3 minutos</item>
+        <item>4 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Nome da Aplicação</item>
+        <item>Estimativa Global</item>
+        <item>Estimativa Média</item>
+        <item>Estimativa Actual</item>
+        <item>Estimativa em Tempo Real</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>Sem marcadores verticais</item>
+        <item>Marcador para cada hora</item>
+        <item>cada 2 horas</item>
+        <item>cada 3 horas</item>
+        <item>cada 4 horas</item>
+        <item>cada 5 horas</item>
+        <item>cada 6 horas</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Removidas</item>
+        <item>Realista 1</item>
+        <item>Realista 2</item>
+        <item>Preto e Branco</item>
+        <item>Verde/Encarnado 1</item>
+        <item>Verde/Encarnado 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>Estilo HTC</item>
+        <item>Estilo Sense 3</item>
+        <item>Estilo Google</item>
+        <item>Estilo Glass</item>
+        <item>Estilo ICS</item>
+        <item>Estilo HTC Transparente</item>
+        <item>Estilo Sense 3 Transparente</item>
+        <item>Estilo Google Transparente</item>
+        <item>Estilo Glass Transparente</item>
+        <item>Estilo ICS Transparente</item>
+        <item>Estilo HTC Escondido</item>
+        <item>Estilo Sense 3 Escondido</item>
+        <item>Estilo Google Escondido</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>Removidas</item>
+        <item>Nada</item>
+        <item>Disponível (%)</item>
+        <item>Uso (%/h)</item>
+        <item>Uso (mA)</item>
+        <item>Uso (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltagem (mV)</item>
+        <item>Estimativa Global</item>
+        <item>Estimativa em Tempo Real</item>
+        <item>Estimativa Média</item>
+        <item>Estimativa Actual</item>
+        <item>Desde (des)conectado</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Exibir Ícone</item>
+        <item>Disponível (%)</item>
+        <item>Uso (%/h)</item>
+        <item>Uso (mA)</item>
+        <item>Uso (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltagem (mV)</item>
+        <item>Estimativa Global</item>
+        <item>Estimativa em Tempo Real</item>
+        <item>Estimativa Média</item>
+        <item>Estimativa Actual</item>
+        <item>Desde (des)conectado</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Exibido</item>
+        <item>Escondidos</item>
+        <item>Apagado</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Disponível (%)</item>
+        <item>Uso (%/h)</item>
+        <item>Uso (mA)</item>
+        <item>Uso (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltagem (mV)</item>
+        <item>Estimativas</item>
+    </string-array>
+</resources>

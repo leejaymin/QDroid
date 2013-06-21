@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/custom" />
+    <LinearLayout android:orientation="vertical" android:id="@id/frame_advanced_ll" android:background="@drawable/base_pane_middle_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="15.0">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title1_ll" android:background="@drawable/base_title_bg2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/kit_bar_indicator" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff5cccfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/setting_subtitle_1" android:layout_weight="1.0" />
+                            <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/system_expand" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/content1_ll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_notification_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_notification_title" android:layout_weight="1.0" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_notification_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_notification_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/whitelist_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_whitelist_title" android:layout_weight="1.0" />
+                                    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_whitelist_subtitle" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_security_ll" android:background="@drawable/setting_item_bg_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Security Level" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Security Level is ..." android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_security_iv" android:focusable="true" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@id/setting_security_suboption_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_security1_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Low" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_security1_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_security2_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Middle" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_security2_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_security3_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="high" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_security3_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_temperature_ll" android:background="@drawable/setting_item_bg_selector" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Temperature Unit" android:layout_weight="1.0" />
+                                    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:id="@id/setting_temperature_detail_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Temperature Unit: C" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_optimize_notification_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_send_boost" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_send_boost2" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_optimize_notification_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/base_title_bg2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/kit_bar_indicator" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff5cccfc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/setting_subtitle_2" android:layout_weight="1.0" />
+                            <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/system_expand" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_auto_mode_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/killer_autokill_enable" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/killer_autokill_enable_content" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_auto_mode_iv" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_auto_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/setting_interval_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_interval_title" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_interval_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_auto_toggle_iv" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_threshold_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/setting_threshold_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_threshold_title" android:layout_weight="1.0" />
+                                    <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/setting_threshold_subtitle" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/setting_auto_suboption_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_auto_interval1_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="5min" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_interval1_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_auto_interval2_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="10min" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_interval2_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:id="@id/setting_auto_interval3_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="15min" />
+                                        </LinearLayout>
+                                        <RadioButton android:id="@id/setting_interval3_rb" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_startup_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/setting_startup_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_startup_title" android:layout_weight="1.0" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_startup_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_startup_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_screenoff_ll" android:background="@drawable/setting_item_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/setting_screenoff_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_screenoff_title" android:layout_weight="1.0" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_screenoff_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_screenoff_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_cache_ll" android:background="@drawable/setting_item_bg_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_cache_title" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_cache_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_cache_toggle_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:background="@drawable/examination_pane_horizontal_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <LinearLayout android:orientation="horizontal" android:id="@id/setting_optimize_toast_ll" android:background="@drawable/setting_item_bg_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="Send Aoto Boost Toast" />
+                                        <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:text="@string/setting_cache_subtitle" android:layout_weight="1.0" />
+                                    </LinearLayout>
+                                    <ImageView android:layout_gravity="center" android:id="@id/setting_optimize_toast_iv" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_toggle_selector" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

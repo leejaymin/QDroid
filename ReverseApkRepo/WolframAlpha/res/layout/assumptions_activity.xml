@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/assumptions_activity_top_view" android:background="@color/assumptions_activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/activity_title" android:text="@string/assumptions_activity_label" style="@style/ActivityTitle" />
+        <Button android:id="@id/go_button" android:visibility="gone" android:layout_marginRight="@dimen/margin_right_entire_app" android:text="@string/go_button_label" android:onClick="onClick" style="@style/ActivityTitleButton" />
+    </RelativeLayout>
+    <include layout="@layout/black_1_px_horizontal_line" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/assumption_choices_panel" android:padding="@dimen/assumptions_activity_scrollview_linearlayout_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

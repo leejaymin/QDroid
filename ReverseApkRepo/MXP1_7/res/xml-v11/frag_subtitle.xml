@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/load" android:key="category_subtitle_load">
+        <CheckBoxPreference android:title="@string/cfg_subtitle_auto_display" android:key="subtitle_auto_display" android:summary="@string/cfg_subtitle_auto_display_summary" android:defaultValue="true" android:disableDependentsState="false" />
+        <CheckBoxPreference android:title="@string/cfg_subtitle_auto_display_embedded" android:key="subtitle_auto_display_embedded" android:summary="@string/cfg_subtitle_auto_display_embedded_summary" android:dependency="subtitle_auto_display" android:defaultValue="false" />
+        <Preference android:title="@string/subtitle_folder" android:key="subtitle_folder" android:summary="@string/subtitle_folder_summary" />
+        <ListPreference android:title="@string/cfg_subtitle_charset" android:key="subtitle_charset" android:summary="@string/cfg_subtitle_charset_summary" android:defaultValue="" android:dialogTitle="@string/cfg_subtitle_charset" />
+        <CheckBoxPreference android:title="@string/subtitle_show_hw" android:key="subtitle_show_hw" android:summary="@string/subtitle_show_hw_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/appearance" android:key="category_subtitle_appearance">
+        <com.mxtech.videoplayer.TunerSubtitleText android:title="@string/cfg_tuner_subtitle_text" android:summary="@string/cfg_tuner_subtitle_text_summary" android:dialogLayout="@layout/tuner_subtitle_text" />
+        <com.mxtech.videoplayer.TunerSubtitleLayout android:title="@string/cfg_tuner_subtitle_layout" android:summary="@string/cfg_tuner_subtitle_layout_summary" android:dialogLayout="@layout/tuner_subtitle_layout" />
+        <com.mxtech.videoplayer.TunerSSA android:title="@string/ssa_long" android:summary="@string/ssa_summary" android:dialogLayout="@layout/tuner_ssa" />
+        <Preference android:title="@string/font_folder" android:key="typeface_dir" />
+        <CheckBoxPreference android:title="@string/hw_accel" android:key="subtitle_hw_accel" android:summary="@string/subtitle_hw_accel_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/text_processing">
+        <CheckBoxPreference android:title="@string/cfg_italic_tag" android:key="italic_tag" android:summary="@string/cfg_italic_tag_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

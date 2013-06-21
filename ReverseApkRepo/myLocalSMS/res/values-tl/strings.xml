@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Settings!</string>
+    <string name="app_name">myLocaleSMS</string>
+    <string name="checkBoxTitle">Paganahin Translation</string>
+    <string name="checkBoxSummary">Nagbibigay-kakayahan sa Translation natanggap ng SMS sa ang itakda ang wika</string>
+    <string name="listTitle">Wika</string>
+    <string name="listSummary">Piliin ang iyong ginustong wika na kung saan ang SMS text na ito ay na isinalin</string>
+    <string name="checkBoxPopup">Payagan ang Popup</string>
+    <string name="checkBoxPopupSummary">Pinapayagan ang Popup notification</string>
+    <string name="donate">Donate</string>
+    <string name="donateSummary">Bumili ng alak para sa mga developer</string>
+    <string name="dialog_activity_text" />
+    <string name="messageNotificationTitle">Bagong Mensahe</string>
+    <string name="butSent">Ipadala</string>
+    <string name="butReply">Tugon</string>
+    <string name="butClose">Magsara</string>
+    <string name="butCalendar">Kalendaryo</string>
+    <string name="butInbox">Inbox</string>
+    <string name="butBack">Balik</string>
+    <string name="from">Mula</string>
+</resources>

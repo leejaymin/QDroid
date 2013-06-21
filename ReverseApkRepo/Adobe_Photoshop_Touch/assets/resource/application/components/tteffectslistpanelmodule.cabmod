@@ -1,0 +1,40 @@
+<ttcolumnlistpanelmodule id="module" view="view2" refdispatcher="referenceDispatcher" listView="columnListPanelView">
+  <windows>
+    <window id="window" width="570" height="400" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view2" width="530" height="290" sizeX="right" x="20" y="10" module="module" whiteBackground="true">
+        <ttcolumnlistpanelview id="columnListPanelView" width="510" height="180" sizeX="scale" sizeY="scale" minWidth="510" x="10" y="100" module="module"/>
+        <text id="ttblack" width="490" height="30" sizeX="scale" x="20" y="11" text="$$$/tteffectslistpanelmodule/text/text/Effects=Effects" textSize="18" align="left"/>
+        <switchBar id="switchBar" width="490" height="40" sizeX="scale" x="20" y="50" target="referenceDispatcher" selector="fxCategoryChange">
+          <part selected="true" title="$$$/tteffectslistpanelmodule/switchBar/title/Basic=Basic"/>
+          <part title="$$$/tteffectslistpanelmodule/switchBar/title/Stylize=Stylize"/>
+          <part image="null" title="$$$/tteffectslistpanelmodule/switchBar/title/Artistic=Artistic"/>
+          <part image="null" title="$$$/tteffectslistpanelmodule/switchBar/title/Photo=Photo"/>
+        </switchBar>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="module" refName="module"/>
+      <objRef refId="switchBar" refName="switchBar"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttcolumnlistpanelmodule" superClassName="ttbasepanelmodule" packageName="" codeName="TTColumnListPanelModule">
+      <var name="listView" type="object" defaultValue="" codeName="iListView" className="TTBaseListPanelView"/>
+    </class>
+    <class className="ttbaselistpanelview" superClassName="ttpanelview" packageName="com.adobe.ttpixel.ui" codeName="TTBaseListPanelView"/>
+    <class className="ttcolumnlistpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTColumnListPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTColumnListPanelModule"/>
+    </class>
+  </classes>
+</ttcolumnlistpanelmodule>

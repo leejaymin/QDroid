@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_boot" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/titleLinear" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff98c8f8" android:gravity="center" android:layout_gravity="center_vertical" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ffffde45" android:gravity="center_horizontal" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bootlist_info" android:layout_below="@id/titleLinear" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomLinear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:textSize="16.0dip" android:layout_gravity="center_horizontal" android:id="@id/exit" android:layout_width="1.0dip" android:layout_height="wrap_content" android:text="@string/bootlist_close" android:layout_weight="2.0" />
+        <TextView android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/line" android:layout_above="@id/bottomLinear" android:layout_below="@id/info" />
+</RelativeLayout>

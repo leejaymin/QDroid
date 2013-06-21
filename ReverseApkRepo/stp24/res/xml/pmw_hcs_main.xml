@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/prefs_screen_main_tm" android:key="@string/PREFSKEY_MAIN_TM" android:defaultValue="false" android:summaryOn="@string/prefs_screen_main_tm_on" android:summaryOff="@string/prefs_screen_main_tm_off" />
+    <CheckBoxPreference android:title="@string/prefs_screen_main_popup" android:key="@string/PREFSKEY_MAIN_POPUP" android:defaultValue="false" android:summaryOn="@string/prefs_screen_main_popup_on" android:summaryOff="@string/prefs_screen_main_popup_off" />
+    <CheckBoxPreference android:title="@string/prefs_main_auto_close" android:key="@string/PREFSKEY_AUTO_CLOSE_MAIN" android:defaultValue="false" android:summaryOn="@string/prefs_main_auto_close_on" android:summaryOff="@string/prefs_main_auto_close_off" />
+    <ListPreference android:entries="@array/settings_button_entries" android:title="@string/prefs_screen_main_button" android:key="@string/PREFSKEY_MAIN_BUTTONS" android:summary="@string/prefs_screen_main_button_summary" android:defaultValue="8" android:entryValues="@array/settings_button_values" />
+    <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_MAIN_FONT" android:summary="@string/prefs_summary_font_size" android:defaultValue="1" android:entryValues="@array/settings_font_size_values" />
+</PreferenceScreen>

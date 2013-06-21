@@ -32,7 +32,7 @@ def diffError(argX, argY):
 if __name__ == '__main__':
 
 #    startime = time.time()
-    m_logger = TestingLogger.InitLog("./TestingResult/PowerTutor.log", logging.getLogger("PowerTutor"))
+#    m_logger = TestingLogger.InitLog("./TestingResult/PowerTutor.log", logging.getLogger("PowerTutor"))
 #    msg = "hello log msg !!!"
 #    m_logger.info(msg)
 #    m_logger = TestingLogger.InitLog("./TestingResult/PowerTutor2.log", logging.getLogger("PowerTutor2"))
@@ -64,10 +64,14 @@ if __name__ == '__main__':
 #    run('adb shell reboot')
  #   time.sleep(55)
     
-    solo = SoloInterface(device_name='192.168.0.3:5555')
-    solo.event_controller.drag_start(50, 600)
-    solo.event_controller.drag_end(380, 600)
-    solo.close()
+#    solo = SoloInterface(device_name='192.168.0.3:5555')
+#    solo.event_controller.drag_start(50, 600)
+#    solo.event_controller.drag_end(380, 600)
+#    solo.close()
+
+    targetInfo = [{'deviceName':'HT0A1P800732','port':5554},{'deviceName':'HT08DP802665','port':5553}]
+    print targetInfo[0]['deviceName']
+    print targetInfo[0]['port']
 
 
 

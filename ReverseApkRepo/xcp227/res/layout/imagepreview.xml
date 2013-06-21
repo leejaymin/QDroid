@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/prev_imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_ab_01" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageButton android:id="@id/prev_btnSave" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="5.0dip" android:src="@drawable/btn_webupload_01" />
+            <ImageButton android:id="@id/prev_btnDelete" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="5.0dip" android:src="@drawable/btn_webupload_01" />
+            <ImageButton android:id="@id/prev_btnWebUpload" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="5.0dip" android:src="@drawable/btn_webupload_01" />
+            <ImageButton android:id="@id/prev_btnGallery" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="5.0dip" android:src="@drawable/btn_webupload_01" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/prev_edtTimer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Medium Text" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

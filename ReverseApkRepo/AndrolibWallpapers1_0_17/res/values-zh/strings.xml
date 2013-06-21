@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androlib Wallpapers</string>
+    <string name="whatsnew">更新了哪些内容</string>
+    <string name="whatsnewhead">"若您喜爱本软件并乐意分享它带给您的喜悦，请记得在Android市场为它评分，谢谢:)
+"</string>
+    <string name="close">关闭</string>
+    <string name="noWallpaper">未发现对应此查询的墙纸</string>
+    <string name="XtoYwallpapersOnZ">%1$s 到 %2$s 张墙纸 于 %3$s</string>
+    <string name="loadingLastSubmited">正在载入上次提交的墙纸</string>
+    <string name="loadingTopFavorites">正在载入最喜爱的墙纸</string>
+    <string name="loadingMostInstalled">正在载入装机最多的墙纸</string>
+    <string name="loadingTopRated">正在载入评分最高的墙纸</string>
+    <string name="loadingYourFavs">正在载入您最喜爱的墙纸</string>
+    <string name="loading10Random">正在载入10张随机墙纸</string>
+    <string name="loading">载入中...</string>
+    <string name="pleaseWait">请稍候...</string>
+    <string name="menuSubmitWall">提交墙纸</string>
+    <string name="menuOurOthersApps">我们其他的应用软件</string>
+    <string name="marketNotFound">未找到Android市场</string>
+    <string name="menuQuit">退出</string>
+    <string name="alertTitleQuit">退出程序？</string>
+    <string name="alertTitleSubmit">提交墙纸</string>
+    <string name="alertMessageSubmit">要提交墙纸，请打开http://wallpapers.androlib.com/，点击位于页面上层菜单的[submit a wallaper]，接下来简单照着说明做即可，您的墙纸很快能为程序所用。</string>
+    <string name="searchHint">搜索墙纸</string>
+    <string name="searchEmpty">您的查询是空的</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="canceled">已取消</string>
+    <string name="wallGlobalRating">全球评分：</string>
+    <string name="wallSubmitedBy">提交人：</string>
+    <string name="wallCategory">类别:</string>
+    <string name="wallBtnSetThisWall">设为墙纸</string>
+    <string name="wallBtnDownloadOnSD">下载墙纸到SD卡</string>
+    <string name="wallAlertTitleAddFav">添加到收藏？</string>
+    <string name="wallAlertTitleRemoveFav">从收藏删除？</string>
+    <string name="errorWhileDownload">\### ERROR ### 下载墙纸时出错，请重试。</string>
+    <string name="mailSubject">Android Wallpaper - %1$s</string>
+    <string name="mailMessage">"您可能对这张Android墙纸感兴趣!
+
+%1$s
+%2$s
+
+获取地址为:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">分享给朋友</string>
+    <string name="wallMenuSetWall">设为手机墙纸</string>
+    <string name="wallMenuSendToFriend">发送给朋友</string>
+    <string name="wallAlertTitleDownload">下载这张墙纸?</string>
+    <string name="wallAlertMessageDownload">"墙纸将被保存到SD卡上。(sdcard/AndroLibWallpapers).
+请确保SD卡可以写入。"</string>
+    <string name="DownloadingPleaseWait">下载墙纸中，请稍候...</string>
+    <string name="wallAlertTitleSetWall">设为墙纸?</string>
+    <string name="ratingDeleted">评分已删除</string>
+    <string name="ratingSubmited">%1$s/5 评分已提交</string>
+    <string name="menuLanguage">语言</string>
+    <string name="catLastSubmit">上次提交</string>
+    <string name="catMyFav">我的收藏</string>
+    <string name="catTopRated">评分最高</string>
+    <string name="cat10Random">随机10张</string>
+    <string name="catTopFav">收藏最多</string>
+    <string name="catMostInstalled">装机最多</string>
+    <string name="NoWallDownFound">未找到已下载的壁纸</string>
+    <string name="wallBtnDeleteThisWall">删除本壁纸</string>
+    <string name="loadingYourDownloaded">正在载入您已下载的壁纸</string>
+    <string name="menuDownloaded">已下载</string>
+</resources>

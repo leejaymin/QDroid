@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="key_label_text_size_upper">18.0dip</dimen>
+    <dimen name="key_label_text_size_lower">16.0dip</dimen>
+    <dimen name="key_key_text_size_upper">15.0dip</dimen>
+    <dimen name="key_key_text_size_lower">15.0dip</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cbursts_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cburst_select_all" android:clickable="true" android:layout_width="48.0px" android:layout_height="48.0px" android:src="@drawable/icon_select_all" android:scaleType="fitXY" />
+    <ListView android:id="@id/cbursts_list" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#ff000000" android:layout_weight="99.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cbursts_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <view android:id="@id/cbursts_play" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_play" android:scaleType="centerInside" class="com.fleapapa.util.MyImageButton" />
+        <view android:id="@id/cbursts_pause" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_pause" android:scaleType="centerInside" class="com.fleapapa.util.MyImageButton" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/cbursts_progress" android:layout_width="fill_parent" android:layout_height="48.0px" android:indeterminate="false" android:layout_weight="99.0" style="?android:attr/progressBarStyleHorizontal" />
+        <view android:id="@id/cbursts_stop" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_rewind" class="com.fleapapa.util.MyImageButton" />
+    </LinearLayout>
+</LinearLayout>

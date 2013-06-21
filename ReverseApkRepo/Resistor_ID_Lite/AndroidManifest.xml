@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="253" android:versionName="2.5.3" package="ten.thirty.three.resistoridlite"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:debuggable="false">
+        <activity android:label="@string/app_name" android:name=".ResistorId">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ReverseCalcAct">
+            <action android:name="android.intent.action.RIDReverse" />
+        </activity>
+        <activity android:label="@string/app_name" android:name=".OptionsAct">
+            <action android:name="android.intent.action.RIDReverse" />
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:admobsdk="http://schemas.android.com/apk/res/org.armyapp.marinecorps">
+    <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" admobsdk:backgroundColor="#ff000000" admobsdk:textColor="#ffffffff" admobsdk:keywords="Android application" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/widget27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Staff NCO Creed" android:layout_x="2.0px" android:layout_y="48.0px" />
+    <ScrollView android:id="@id/ScrollView01" android:layout_width="480.0px" android:layout_height="175.0px" android:layout_x="2.0px" android:layout_y="60.0px">
+        <AbsoluteLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <TextView android:id="@id/widget27" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" I am a Staff Noncommissioned Officer in the United States Marine Corps.  \n\n As such, I am a member of the most unique group of professional military practitioners in the world.  \n\n I am bound by duty to God, Country and my fellow Marines to execute the demands of my position to and beyond what I believe to be the limits of my capabilities.  \n\n I realize I am the mainstay of Marine Corps discipline, and I carry myself with military grace, unbowed by the weight of command, unflinching in the execution of lawful orders, and unswerving in my dedication to the most complete success of my assigned mission.  \n\n Both my professional and personal demeanor shall be such that I may take pride if my juniors emulate me, and knowing perfection to lie beyond the grasp of any mortal hand, I shall yet strive to attain perfection that I may ever be aware of my needs and capabilities to improve myself.  \n\n I shall be fair in my personal relations, just in the enforcement of discipline, true to myself and my fellow Marines, and equitable in my dealing with every man." android:layout_x="0.0px" android:layout_y="22.0px" />
+        </AbsoluteLayout>
+    </ScrollView>
+    <Button android:id="@id/xBackButton" android:layout_width="95.0px" android:layout_height="38.0px" android:text="BACK" android:layout_x="385.0px" android:layout_y="235.0px" />
+</AbsoluteLayout>

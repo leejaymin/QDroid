@@ -1,0 +1,109 @@
+<keylayout>
+	<deck>
+		<key width="18" height="40" x="5" y="5" text="Q" type="alpha"/>
+		<key width="18" height="40" x="24" y="5" text="W" type="alpha"/>
+		<key width="18" height="40" x="43" y="5" text="E" type="alpha"/>
+		<key width="18" height="40" x="62" y="5" text="R" type="alpha"/>
+		<key width="18" height="40" x="81" y="5" text="T" type="alpha"/>
+		<key width="18" height="40" x="100" y="5" text="Y" type="alpha"/>
+		<key width="18" height="40" x="119" y="5" text="U" type="alpha"/>
+		<key width="18" height="40" x="138" y="5" text="I" type="alpha"/>
+		<key width="18" height="40" x="157" y="5" text="O" type="alpha"/>
+		<key width="18" height="40" x="176" y="5" text="P" type="alpha"/>
+		<key width="18" height="40" x="15" y="56" text="A" type="alpha"/>
+		<key width="18" height="40" x="34" y="56" text="S" type="alpha"/>
+		<key width="18" height="40" x="53" y="56" text="D" type="alpha"/>
+		<key width="18" height="40" x="72" y="56" text="F" type="alpha"/>
+		<key width="18" height="40" x="91" y="56" text="G" type="alpha"/>
+		<key width="18" height="40" x="110" y="56" text="H" type="alpha"/>
+		<key width="18" height="40" x="129" y="56" text="J" type="alpha"/>
+		<key width="18" height="40" x="148" y="56" text="K" type="alpha"/>
+		<key width="18" height="40" x="167" y="56" text="L" type="alpha"/>
+		<key width="18" height="40" x="34" y="106" text="Y" type="alpha"/>
+		<key width="18" height="40" x="53" y="106" text="X" type="alpha"/>
+		<key width="18" height="40" x="72" y="106" text="C" type="alpha"/>
+		<key width="18" height="40" x="91" y="106" text="V" type="alpha"/>
+		<key width="18" height="40" x="110" y="106" text="B" type="alpha"/>
+		<key width="18" height="40" x="129" y="106" text="N" type="alpha"/>
+		<key width="18" height="40" x="148" y="106" text="M" type="alpha"/>
+		<key width="24" height="40" x="170" y="106" type="delete"/>
+		<key width="24" height="40" x="6" y="106" type="shift"/>
+		<key width="24" height="40" x="6" y="154" type="cancel"/>
+		<key width="24" height="40" x="33" y="154" type="numberToggle"/>
+		<key width="77" height="40" x="62" y="154" type="space"/>
+		<key width="19" height="40" x="143" y="154" text="." type="code"/>
+		<key width="29" height="40" x="165" y="154"  type="ok"/>
+	</deck>
+	<deck>
+		<key width="18" height="40" x="5" y="5" text="1" type="code"/>
+		<key width="18" height="40" x="24" y="5" text="2" type="code"/>
+		<key width="18" height="40" x="43" y="5" text="3" type="code"/>
+		<key width="18" height="40" x="62" y="5" text="4" type="code"/>
+		<key width="18" height="40" x="81" y="5" text="5" type="code"/>
+		<key width="18" height="40" x="100" y="5" text="6" type="code"/>
+		<key width="18" height="40" x="119" y="5" text="7" type="code"/>
+		<key width="18" height="40" x="138" y="5" text="8" type="code"/>
+		<key width="18" height="40" x="157" y="5" text="9" type="code"/>
+		<key width="18" height="40" x="176" y="5" text="0" type="code"/>
+		<key width="18" height="40" x="34" y="106" text="?" type="code"/>
+		<key width="18" height="40" x="53" y="106" text="!" type="code"/>
+		<key width="18" height="40" x="72" y="106" text="&quot;" type="code"/>
+		<key width="18" height="40" x="91" y="106" text="'" type="code"/>
+		<key width="18" height="40" x="110" y="106" text=":" type="code"/>
+		<key width="18" height="40" x="129" y="106" text=";" type="code"/>
+		<key width="18" height="40" x="148" y="106" text="," type="code"/>
+		<key width="24" height="40" x="170" y="106" type="delete"/>
+		<key width="24" height="40" x="6" y="106" type="deckToggle"/>
+		<key width="18" height="40" x="5" y="56" text="@" type="code"/>
+		<key width="18" height="40" x="24" y="56" text="#" type="code"/>
+		<key width="18" height="40" x="43" y="56" text="%" type="code"/>
+		<key width="18" height="40" x="62" y="56" text="&amp;" type="code"/>
+		<key width="18" height="40" x="81" y="56" text="*" type="code"/>
+		<key width="18" height="40" x="100" y="56" text="/" type="code"/>
+		<key width="18" height="40" x="119" y="56" text="-" type="code"/>
+		<key width="18" height="40" x="138" y="56" text="+" type="code"/>
+		<key width="18" height="40" x="157" y="56" text="(" type="code"/>
+		<key width="18" height="40" x="176" y="56" text=")" type="code"/>
+		<key width="24" height="40" x="6" y="154"  type="cancel"/>
+		<key width="24" height="40" x="33" y="154" type="alphaToggle" />
+		<key width="77" height="40" x="62" y="154" type="space"/>
+		<key width="19" height="40" x="143" y="154" text="." type="code"/>
+		<key width="29" height="40" x="165" y="154"  type="ok"/>
+	</deck>
+	<deck>
+		<key width="18" height="40" x="5" y="5" text="~" type="code"/>
+		<key width="18" height="40" x="24" y="5" text="=" type="code"/>
+		<key width="18" height="40" x="43" y="5" text="_" type="code"/>
+		<key width="18" height="40" x="62" y="5" text="&lt;" type="code"/>
+		<key width="18" height="40" x="81" y="5" text=">" type="code"/>
+		<key width="18" height="40" x="100" y="5" text="{" type="code"/>
+		<key width="18" height="40" x="119" y="5" text="}" type="code"/>
+		<key width="18" height="40" x="138" y="5" text="[" type="code"/>
+		<key width="18" height="40" x="157" y="5" text="]" type="code"/>
+		<key width="18" height="40" x="176" y="5" text="|" type="code"/>
+		<key width="18" height="40" x="34" y="106" text="¿" type="code"/>
+		<key width="18" height="40" x="53" y="106" text="¡" type="code"/>
+		<key width="18" height="40" x="72" y="106" text="\" type="code"/>
+		<key width="18" height="40" x="91" y="106" text="«" type="code"/>
+		<key width="18" height="40" x="110" y="106" text="»" type="code"/>
+		<key width="18" height="40" x="129" y="106" text="®" type="code"/>
+		<key width="18" height="40" x="148" y="106" text="©" type="code"/>
+		<key width="24" height="40" x="170" y="106" type="delete"/>
+		<key width="24" height="40" x="6" y="106" type="deckToggle"/>
+		<key width="18" height="40" x="5" y="56" text="$" type="code"/>
+		<key width="18" height="40" x="24" y="56" text="€" type="code"/>
+		<key width="18" height="40" x="43" y="56" text="£" type="code"/>
+		<key width="18" height="40" x="62" y="56" text="¥" type="code"/>
+		<key width="18" height="40" x="81" y="56" text="¢" type="code"/>
+		<key width="18" height="40" x="100" y="56" text="￦" type="code"/>
+		<key width="18" height="40" x="119" y="56" text="§" type="code"/>
+		<key width="18" height="40" x="138" y="56" text="^" type="code"/>
+		<key width="18" height="40" x="157" y="56" text="'" type="code"/>
+		<key width="18" height="40" x="176" y="56" text="•" type="code"/>
+		<key width="24" height="40" x="6" y="154"  type="cancel"/>
+		<key width="24" height="40" x="33" y="154" type="alphaToggle" />
+		<key width="77" height="40" x="62" y="154" type="space"/>
+		<key width="19" height="40" x="143" y="154" text="." type="code"/>
+		<key width="29" height="40" x="165" y="154"  type="ok"/>
+	</deck>
+</keylayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Полная проверка</item>
+        <item>Проверка папки</item>
+        <item>Проверка памяти</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Отключено</item>
+        <item>Сразу</item>
+        <item>Через 5 минут</item>
+        <item>Через 10 минут</item>
+        <item>Через 15 минут</item>
+        <item>Через 30 минут</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Контакт</item>
+        <item>Номер телефона</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Все файлы</item>
+        <item>Только исполняемые</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Все файлы</item>
+        <item>Только исполняемые</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Удалить</item>
+        <item>Пропустить</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Запросить действие</item>
+        <item>Удалить</item>
+        <item>Пропустить</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Раз в неделю</item>
+        <item>Раз в день</item>
+        <item>Отключено</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Раз в неделю</item>
+        <item>Раз в день</item>
+        <item>Отключено</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Контакты</item>
+        <item>История SMS</item>
+        <item>Входящие SMS</item>
+        <item>История вызовов</item>
+        <item>Входящие вызовы</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Удалить</item>
+        <item>Пропустить</item>
+        <item>Справка</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Удалить</item>
+        <item>Пропустить</item>
+        <item>Справка</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Удалить</item>
+        <item>Удалить все</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Изменить</item>
+        <item>Удалить</item>
+        <item>Удалить все</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Удалить</item>
+        <item>Удалить все</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Отключен</item>
+        <item>Запрещенные контакты</item>
+        <item>Разрешенные контакты</item>
+        <item>Стандартный</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Всегда запрещать</item>
+        <item>Всегда разрешать</item>
+        <item>Пропустить</item>
+        <item>Справка</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Вызовы</item>
+        <item>Вызовы и SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Изменить</item>
+        <item>Удалить</item>
+        <item>Удалить все</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Удалить</item>
+        <item>Удалить все</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Блокирование</item>
+        <item>Удаление выбранных данных</item>
+        <item>Поиск</item>
+        <item>Скрытие контактов и информации для них</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Фильтр вызовов и SMS</item>
+        <item>"Фильтр вызовов и SMS позволяет вам блокировать нежелательные входящие вызовы и SMS.
+
+Для этого вам нужно выбрать правила фильтрации (режим), а также создать списки запрещенных и разрешенных контактов."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Антивирус</item>
+        <item>"Антивирус защищает ваше устройство от вирусов и других вредоносных программ. В состав Антивируса входят защита, проверка и обновление. Здесь вы можете настроить параметры каждого компонента.
+
+Защита позволяет обнаруживать угрозы, а также проверять новые программы в режиме реального времени. 
+
+Проверка запускается по требованию и помогает обнаружить и устранить угрозы на вашем устройстве (например, установленные, а также неустановленные запакованные в архив файлы с угрозами). Вы можете выбрать для проверки всю файловую систему устройства, содержимое встроенной памяти устройства или конкретную папку.
+
+Обновление антивирусных баз и версии программы обеспечивает актуальность защиты вашего устройства."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Личные контакты</item>
+        <item>"Личные контакты позволяют скрывать конфиденциальные контакты, а также историю вызовов и SMS-переписку с этими контактами. Здесь вы можете сделать следующее:
+
+ - выбрать те типы информации, которые нужно скрывать для этих контактов;
+ - включить автоматическое скрытие после перехода устройства в режим энергосбережения;
+ - разрешить скрывать информацию о контактах дистанционно, с помощью отправки SMS-команды \"hide:[код]\" с другого устройства (где [код] - секретный код от вашего Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Блокирование</item>
+        <item>"Вы можете включить Блокирование, которое позволяет дистанционно заблокировать ваше устройство в случае его кражи или потери.
+
+Чтобы дистанционно заблокировать ваше устройство, отправьте на него SMS-команду \"lock:[код]\" с любого устройства (где [код] - секретный код от вашего Kaspersky Mobile Security).
+
+Чтобы разблокировать устройство, введите на нем секретный код от Kaspersky Mobile Security."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Удаление данных</item>
+        <item>"Вы можете выбрать информацию, которую хотите дистанционно удалить в случае кражи или потери вашего устройства. Вы можете включить удаление конкретной информации (например, контактов, SMS, календаря или папок).
+
+Чтобы дистанционно удалить выбранную информацию, отправьте на ваше устройство SMS-команду \"wipe:[код]\" с любого другого устройства (где [код] - секретный код от вашего Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM-Контроль</item>
+        <item>"Вы можете включить функцию, которая позволяет получать новый номер телефона, а также заблокировать устройство при замене SIM-карты или включении устройства без нее.
+
+Чтобы получать новый номер телефона при замене SIM-карты, укажите адрес электронной почты и (или) другой номер телефона. Чтобы автоматически блокировать устройство при замене SIM-карты или включении без нее, включите блокирование в параметрах SIM-Контроля."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Поиск</item>
+        <item>"Вы можете включить функцию, которая позволяет дистанционно получить координаты вашего устройства в случае его потери или кражи.
+
+Чтобы получить координаты, отправьте на ваше устройство SMS-команду \"locate:[код]\" с любого устройства (где [код] - секретный код от вашего Kaspersky Mobile Security). Программа отправит сообщение с координатами устройства в ответном SMS или на указанный вами адрес электронной почты.
+
+Для отправки сообщения по электронной почте программа отправит SMS на специальный номер оператора МТС (Россия). Стоимость отправки SMS на специальный номер зависит от тарифов вашего оператора связи. Оператор MTC (Россия) отправит координаты устройства на ваш адрес электронной почты."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Расширенный</item>
+        <item>Рекомендуемый</item>
+        <item>Отключен</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Проверка новых программ и контроль действий над файлами.</item>
+        <item>Проверка только новых программ.</item>
+        <item>Защита отключена.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Расширенный</item>
+        <item>Рекомендуемый</item>
+        <item>Отключен</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Журнал вызовов</item>
+        <item>Входящие SMS</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Все события</item>
+        <item>Антивирус</item>
+        <item>Фильтр вызовов и SMS</item>
+        <item>Веб-Фильтр</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Результаты проверок, обновление</item>
+        <item>Заблокированные вызовы и сообщения</item>
+        <item>Заблокированные веб-сайты</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Сегодня</item>
+        <item>За последние 7 дней</item>
+        <item>За последние 30 дней</item>
+        <item>Совсем давно</item>
+    </string-array>
+</resources>

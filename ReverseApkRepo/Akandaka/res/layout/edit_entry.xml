@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView02" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/EntryEditTitleLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_title" />
+        <EditText android:id="@id/EntryEditTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:maxLength="50" />
+        <TextView android:id="@id/EntryEditDescLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_desc" />
+        <EditText android:gravity="top|left|center" android:id="@id/EntryEditDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" android:maxLength="50" />
+        <TextView android:id="@id/EntryEditNameLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_name" />
+        <EditText android:id="@id/EntryEditName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:maxLength="50" />
+        <TextView android:id="@id/EntryEditPwLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_pw" />
+        <EditText android:id="@id/EntryEditPw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="50" android:inputType="textVisiblePassword" />
+        <TextView android:id="@id/EntryEditInfoLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/entry_info" />
+        <EditText android:gravity="top|left|center" android:id="@id/EntryEditInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:lines="4" android:maxLength="200" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/EntryEditOkButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_entry" />
+            <Button android:id="@id/EditCancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

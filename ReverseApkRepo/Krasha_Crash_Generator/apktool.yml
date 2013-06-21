@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: Krasha_Crash_Generator.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

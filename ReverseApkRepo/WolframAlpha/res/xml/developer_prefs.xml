@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/prefs_location_label" android:key="location" android:summary="@string/prefs_location_sublabel" />
+    <ListPreference android:entries="@array/location_interval_names" android:title="@string/prefs_location_interval_label" android:key="location_inerval" android:summary="@string/prefs_location_interval_sublabel" android:entryValues="@array/location_interval_values" />
+    <CheckBoxPreference android:title="@string/use_keyboard_label" android:key="keyboard" />
+    <ListPreference android:entries="@array/unit_names" android:title="@string/prefs_units_label" android:key="units" android:summary="@string/prefs_units_sublabel" android:entryValues="@array/unit_values" />
+    <PreferenceCategory android:title="Developer info" />
+    <Preference android:title="App version" android:key="appversion" />
+    <ListPreference android:entries="@array/server_short_names" android:title="Server" android:key="server" android:entryValues="@array/server_short_names" />
+    <ListPreference android:entries="@array/image_formats" android:title="Image format" android:key="imageformat" android:entryValues="@array/image_formats" />
+    <CheckBoxPreference android:title="Use recalculate" android:key="userecalc" />
+    <CheckBoxPreference android:title="Draw Rectangles" android:key="drawrect_imagemap" android:summary="Rectangles for the content links clickable area" />
+    <EditTextPreference android:title="Scan timeout" android:key="scantimeout" android:summary="Max time for CalculateScan" />
+    <EditTextPreference android:title="Async timeout" android:key="asynctimeout" android:summary="Timeout before switching to async mode for pods" />
+    <Preference android:title="Debugging info" android:key="url" android:summary="Copyable text including device info, query, and result" />
+</PreferenceScreen>

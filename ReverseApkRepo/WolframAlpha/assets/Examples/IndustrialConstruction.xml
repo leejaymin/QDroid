@@ -1,0 +1,27 @@
+<?xml version='1.0'?><example><link ref="UnitsMeasures">Units &amp; Measures</link><category>Industrial &amp; Construction</category><section-title>
+ <link ref="WireGauges">Wire Gauges </link>
+</section-title><caption>get information about a wire gauge</caption><input>AWG 18</input><caption>specify wire gauge, material, and length</caption><input>SWG 8 nickel 20ft</input><section-title>
+ <link ref="SteelSheets">Steel Sheets </link>
+</section-title><caption>look up a sheet metal gauge</caption><input>#15 steel sheet</input><caption>compute using a property of a gauge</caption><input>thickness of steel gauge #11 in mm</input><section-title>
+ <link ref="ThreadedFasteners">Threaded Fasteners </link>
+</section-title><caption>get dimensions of a screw or bolt</caption><input>#10 screw</input><caption>get a specific measurement of a fastener</caption><input>What is the thread count of a coarse #6 bolt?</input><section-title>
+ <link ref="DrillBits">Drill Bits </link>
+</section-title><caption>get the dimensions of a drill bit</caption><input>#20 drill bit</input><caption>find out the diameter of a drill bit</caption><input>diameter of an N drill</input><section-title>
+ <link ref="Pipes">Pipes </link>
+</section-title><caption>get dimensions for a nominal pipe size</caption><input>2 inch pipe</input><caption>specify length</caption><input>NPS 1 inch steel 25ft</input><section-title>
+ <link ref="HypodermicNeedles">Hypodermic Needles </link>
+</section-title><caption>look up the specifications of a needle size</caption><input>#21 hypodermic needle</input><caption>find out the typical use for a needle diameter</caption><input>typical uses of a #23 hypodermic needle</input><section-title>
+ <link ref="SievesAndMeshes">Sieves &amp; Meshes </link>
+</section-title><caption>get information about a sieve</caption><input>sieve size 500</input><caption>determine the needle size required to pass through a mesh</caption><input>sieve size 1040 nearest needle gauge</input><section-title>
+ <link ref="Rope">Rope </link>
+</section-title><caption>find characteristics of a rope</caption><input>20mm manila rope</input><caption>look up a property of a rope</caption><input>specific gravity of 28mm polyester rope</input><section-title>
+ <link ref="Paint">Paint </link>
+</section-title><caption>compute the area covered by a volume of paint</caption><input>20 gallons of gloss paint</input><caption>compute the volume of paint required to cover an area</caption><input>1500 sq ft primer</input><section-title>
+ <link ref="BulkMaterials">Bulk Materials </link>
+</section-title><caption>get information about a bulk material</caption><input>asphalt</input><caption>compute properties of a stockpile</caption><input>1000 m^3 dry sand</input><section-title>
+ <link ref="Batteries">Batteries </link>
+</section-title><caption>get information about a type of battery</caption><input>alkaline D battery</input><caption>request a property of a battery</caption><input>voltage Energizer 341</input><section-title>
+ <link ref="Resistors">Resistors </link>
+</section-title><caption>calculate the color code for a resistor</caption><input>7500 ohm resistor</input><caption>compute resistance from resistor color code</caption><input>resistor black red green silver</input><section-title>
+ <link ref="FreightContainers">Freight Containers </link>
+</section-title><caption>find out about a container</caption><input>20 foot container</input><caption>look up a specific attribute of a container</caption><input>empty weight of a main deck pallet</input></example>

@@ -1,0 +1,7 @@
+<?xml version='1.0'?><example><category>Units &amp; Measures</category><section-title>
+ <link ref="Units">Units </link>
+</section-title><caption>get information and conversions for a unit</caption><input>foot pound</input><caption>get unit conversions for a quantity </caption><input>120 meters</input><caption>convert to a specified unit</caption><input>20mL in drams</input><caption>do a calculation with units</caption><input>10 miles + 14 kilometers</input><caption>compare two quantities</caption><input>175lb vs 100kg</input><section-title>
+ <link ref="IndustrialConstruction">Industrial &amp; Construction </link>
+</section-title><caption>get information about a wire gauge</caption><input>AWG 18</input><caption>get dimensions of a screw or bolt</caption><input>1/4 inch bolt</input><caption>compute volume of paint required to cover an area</caption><input>1500 sq ft primer</input><section-title>Paper Sizes</section-title><caption>get dimensions of a paper format</caption><input>A4 paper</input><caption>compare paper formats</caption><input>legal paper vs ledger paper</input><section-title>
+ <link ref="ShoeSizes">Shoe Sizes </link>
+</section-title><caption>compute shoe size equivalents</caption><input>U.S. women's size 5 shoe</input><caption>convert shoe size to a specified system </caption><input>U.K. men's size 11 shoe in Japanese size</input><section-title>Knitting Needle Sizes</section-title><caption>get information about knitting needle sizes</caption><input>knitting needle size 8</input><input>10mm knitting needle</input></example>

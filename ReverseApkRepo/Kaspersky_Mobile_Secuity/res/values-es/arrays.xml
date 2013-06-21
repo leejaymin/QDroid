@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Análisis completo</item>
+        <item>Análisis de carpetas</item>
+        <item>Análisis de la memoria</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Desactivado</item>
+        <item>Sin retardo</item>
+        <item>Después de 5 minutos</item>
+        <item>Después de 10 minutos</item>
+        <item>Después de 15 minutos</item>
+        <item>Después de 30 minutos</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Contacto</item>
+        <item>Número de teléfono</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Todos los archivos</item>
+        <item>Solo ejecutables</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Todos los archivos</item>
+        <item>Solo ejecutables</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Eliminar</item>
+        <item>Omitir</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Preguntar al usuario</item>
+        <item>Eliminar</item>
+        <item>Omitir</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Semanalmente</item>
+        <item>A diario</item>
+        <item>Desactivado</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Semanalmente</item>
+        <item>A diario</item>
+        <item>Desactivado</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Contactos</item>
+        <item>Registros de SMS</item>
+        <item>SMS entrante</item>
+        <item>Registros de llamadas</item>
+        <item>Llamadas entrantes</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Eliminar</item>
+        <item>Omitir</item>
+        <item>Ayuda</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Eliminar</item>
+        <item>Omitir</item>
+        <item>Ayuda</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Eliminar</item>
+        <item>Eliminar todo</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Cambiar</item>
+        <item>Eliminar</item>
+        <item>Eliminar todo</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Eliminar</item>
+        <item>Eliminar todo</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Desactivado</item>
+        <item>Contactos bloqueados</item>
+        <item>Contactos permitidos</item>
+        <item>Estándar</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Bloquear siempre</item>
+        <item>Permitir siempre</item>
+        <item>Omitir</item>
+        <item>Ayuda</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Llamadas</item>
+        <item>Llamadas y SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Cambiar</item>
+        <item>Eliminar</item>
+        <item>Eliminar todo</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Eliminar</item>
+        <item>Eliminar todo</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Bloqueo del dispositivo</item>
+        <item>Borrado de datos</item>
+        <item>Localizar</item>
+        <item>Protección de privacidad</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Filtro de llamadas y SMS</item>
+        <item>"El filtro de llamadas y SMS permite bloquear llamadas y mensajes SMS entrantes no deseados.
+
+Para activarlo, seleccione las reglas de filtrado (modo) y cree listas de contactos bloqueados o permitidos."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Antivirus</item>
+        <item>"El antivirus protege el dispositivos contra virus y otro software malintencionado. El antivirus incluye los siguientes componentes: Protección, análisis y actualización. Aquí puede configurar los parámetros de cada componente.
+
+La protección detecta amenazas y analiza nuevas aplicaciones en tiempo real. 
+
+El análisis se ejecuta bajo demanda y ayuda tanto a detectar como a eliminar amenazas del dispositivo (como archivos peligrosos instalados o comprimidos en archivos). El análisis puede abarcar todo el sistema de archivos del dispositivo, el contenido de la memoria interna o una carpeta concreta.
+
+Las actualizaciones de la versión y las bases de datos antivirus aseguran una protección actualizada en todo momento del dispositivo."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Protección de privacidad</item>
+        <item>"Protección de privacidad oculta contactos confidenciales, además del historial de llamadas y la correspondencia de SMS relacionados. Aquí puede hacer lo siguiente:
+
+ - seleccionar el tipo de información que se debe ocultar;
+ - activar la ocultación automática cuando el dispositivo cambie al modo de suspensión;
+ - permitir ocultar de forma remota la información de los contactos enviando el comando SMS \"hide:[código]\" desde otro dispositivo (donde [código] es su código secreto de Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Bloqueo del dispositivo</item>
+        <item>"Puede activar el bloqueo del dispositivo para bloquear de forma remota dispositivos robados o perdidos.
+
+Para bloquear un dispositivo de forma remota, envíe el comando SMS \"lock:[código]\" desde cualquier dispositivo (donde [código] es su código secreto de Kaspersky Mobile Security).
+
+Para desbloquear el dispositivo, introduzca el código secreto de Kaspersky Mobile Security en el dispositivo."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Borrado de datos</item>
+        <item>"Puede seleccionar los datos que se deben eliminar de forma remota si ha perdido un dispositivo o se lo han robado. Puede eliminar datos concretos (como contactos, el calendario, mensajes de SMS o carpetas).
+
+Para eliminar datos de forma remota, envíe el comando de SMS \"wipe:[código]\" al dispositivo desde cualquier otro dispositivo ([código] corresponde al código secreto de Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>Detector de SIM</item>
+        <item>"Puede activar una función para que le envíen el número de teléfono nuevo utilizado en el dispositivo o bloquear el dispositivo cuando se cambia la tarjeta SIM o cuando el dispositivo se enciende sin una tarjeta SIM.
+
+Para obtener el número de teléfono nuevo cuando se cambia la tarjeta SIM, especifique la dirección de correo electrónico u otro número de teléfono. Para bloquear el dispositivo automáticamente cuando se sustituye la tarjeta SIM o cuando el dispositivo se enciende sin una tarjeta SIM, active la función de bloqueo en la configuración de Detector de SIM."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Localizar</item>
+        <item>"Puede activar una función que detecta de forma remota las coordenadas del dispositivo perdido o robado.
+
+Para obtener las coordenadas, envíe el comando SMS \"locate:[código]\" al dispositivo desde cualquier dispositivo (donde [código] es su código secreto de Kaspersky Mobile Security). La aplicación enviará las coordenadas en un mensaje SMS de vuelta o a la dirección de correo electrónico que hubiera especificado.
+
+Para enviar el correo electrónico, la aplicación enviará un mensaje por SMS al número exclusivo del operador MTS (Rusia). el precio del SMS enviado al número exclusivo dependerá de las tarifas de su operador de telefonía móvil. El operador MTS (Rusia) enviara el número de teléfono actual a su dirección de correo electrónico."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Ampliado</item>
+        <item>Recomendado</item>
+        <item>Desactivado</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Comprueba las aplicaciones nuevas y supervisa las operaciones realizadas con los archivos.</item>
+        <item>Comprueba únicamente las aplicaciones nuevas.</item>
+        <item>La protección está desactivada.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Ampliado</item>
+        <item>Recomendado</item>
+        <item>Desactivado</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Historial de llamadas</item>
+        <item>SMS entrante</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Todos los eventos</item>
+        <item>Antivirus</item>
+        <item>Filtro de llamadas y SMS</item>
+        <item>Protección web</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Resultados del análisis, actualizar</item>
+        <item>Llamadas y mensajes bloqueados</item>
+        <item>Sitios web bloqueados</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Hoy</item>
+        <item>Últimos 7 días</item>
+        <item>Últimos 30 días</item>
+        <item>Atrás en el tiempo</item>
+    </string-array>
+</resources>

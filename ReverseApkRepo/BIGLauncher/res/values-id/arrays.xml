@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Pencahayaan (standar)</item>
+        <item>Gelap</item>
+        <item>Biru</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Otomatis (standar)</item>
+        <item>Horisontal</item>
+        <item>Vertikal</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Standar</item>
+        <item>Lebih besar</item>
+        <item>Terbesar</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Layar utama</item>
+        <item>Pengaturan</item>
+    </string-array>
+</resources>

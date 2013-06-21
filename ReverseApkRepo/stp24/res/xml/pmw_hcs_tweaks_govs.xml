@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_sampling_rates" android:title="@string/prefs_governors_sampling" android:key="@string/PREFSKEY_GOV_SAMPLING" android:summary="@string/prefs_governors_sampling_summary" android:defaultValue="0" android:entryValues="@array/settings_sampling_rates" />
+    <PreferenceCategory android:title="@string/prefs_category_governor_ondemand">
+        <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_ONDEMAND_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+        <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_save" android:key="@string/PREFSKEY_GOV_ONDEMAND_SAVE" android:summary="@string/prefs_governor_save_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_category_governor_interactive">
+        <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_go_max" android:key="@string/PREFSKEY_GOV_INTERACTIVE_MAX" android:summary="@string/prefs_governor_go_max_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_category_governor_conservative">
+        <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+        <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_down" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_DOWN" android:summary="@string/prefs_governor_down_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+    </PreferenceCategory>
+</PreferenceScreen>

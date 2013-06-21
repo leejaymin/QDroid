@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/ssid" android:layout_width="123.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:id="@id/chanel" android:layout_width="15.0dip" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/level" android:layout_width="130.0dip" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/text_level" android:visibility="gone" android:layout_width="130.0dip" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/IconStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" />
+    </LinearLayout>
+    <TableLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff555551" android:id="@id/statusWifi" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

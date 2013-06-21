@@ -1,0 +1,1 @@
+<?xml version='1.0'?><example><link ref="UnitsMeasures">Units &amp; Measures</link><category>Pipes</category><section-title>Pipe Sizes</section-title><caption>get dimensions for a nominal pipe size</caption><input>2 inch pipe</input><caption>specify material</caption><input>4 inch pipe PVC</input><caption>specify length</caption><input>NPS 1 inch steel 25ft</input></example>

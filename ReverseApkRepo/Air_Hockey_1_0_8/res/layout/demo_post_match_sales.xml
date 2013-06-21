@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/full_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:paddingBottom="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/demo_upsell_heading" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="16.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/demo_upsell_body" />
+        <Button android:id="@id/market_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" style="@style/button" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/price_may_vary" />
+        <Button android:enabled="false" android:id="@id/back_to_title_screen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/button" />
+    </LinearLayout>
+</RelativeLayout>

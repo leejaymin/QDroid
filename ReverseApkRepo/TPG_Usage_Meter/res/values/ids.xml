@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="about_textview">false</item>
+    <item type="id" name="username_edittext">false</item>
+    <item type="id" name="password_edittext">false</item>
+    <item type="id" name="plans_to_lookup_edittext">false</item>
+    <item type="id" name="use_auto_refresh_checkbox">false</item>
+    <item type="id" name="remember_credentials_checkbox">false</item>
+    <item type="id" name="save_button">false</item>
+    <item type="id" name="plan_selection_layout">false</item>
+    <item type="id" name="plan_spinner">false</item>
+    <item type="id" name="page_scrollview">false</item>
+    <item type="id" name="page_textview">false</item>
+    <item type="id" name="reload_button">false</item>
+</resources>

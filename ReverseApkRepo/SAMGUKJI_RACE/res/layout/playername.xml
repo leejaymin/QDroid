@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300.0dip" android:minHeight="1000.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/playername1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/player1Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player1" android:layout_weight="1.0" />
+            <EditText android:id="@id/player1Edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/player2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/player2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player2" android:layout_weight="1.0" />
+            <EditText android:id="@id/player2Edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/player3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/player3Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player3" android:layout_weight="1.0" />
+            <EditText android:id="@id/player3Edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/player4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:id="@id/player4Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="player4" android:layout_weight="1.0" />
+            <EditText android:id="@id/player4Edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

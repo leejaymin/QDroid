@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@fraction/key_width_kindlefire" android:keyHeight="@fraction/key_height_upper_kindlefire" android:horizontalGap="@fraction/key_gap_horizontal_kindlefire" android:verticalGap="@fraction/key_gap_vert_kindlefire"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="63797" android:keyEdgeFlags="left" android:keyOutputText="!" />
+        <Key android:codes="63798" android:keyOutputText="\?" />
+        <Key android:codes="63799" android:keyOutputText="\@" />
+        <Key android:codes="63800" android:keyOutputText="\#" />
+        <Key android:codes="63801" android:keyOutputText="&amp;" />
+        <Key android:codes="63808" android:keyOutputText="|" />
+        <Key android:codes="63809" android:keyOutputText=":" />
+        <Key android:codes="63810" android:keyOutputText=";" />
+        <Key android:codes="63811" android:keyOutputText="&quot;" />
+        <Key android:codes="63812" android:keyEdgeFlags="right" android:keyOutputText="_" />
+    </Row>
+    <Row>
+        <Key android:codes="63813" android:keyEdgeFlags="left" android:keyOutputText="α" />
+        <Key android:codes="63814" android:keyOutputText="β" />
+        <Key android:codes="63815" android:keyOutputText="γ" />
+        <Key android:codes="63816" android:keyOutputText="ε" />
+        <Key android:codes="63817" android:keyOutputText="λ" />
+        <Key android:codes="63824" android:keyOutputText="µ" />
+        <Key android:codes="63825" android:keyOutputText="σ" />
+        <Key android:codes="63826" android:keyOutputText="τ" />
+        <Key android:codes="63827" android:keyOutputText="φ" />
+        <Key android:codes="63828" android:keyEdgeFlags="right" android:keyOutputText="ω" />
+    </Row>
+    <Row android:keyWidth="10.500002%p">
+        <Key android:keyWidth="13.199997%p" android:codes="10020" android:keyEdgeFlags="left" android:keyIcon="@drawable/key_shift_icon2_portrait" />
+        <Key android:horizontalGap="0.39999485%p" android:codes="63829" android:keyOutputText="Δ" />
+        <Key android:codes="63830" android:keyOutputText="∇" />
+        <Key android:codes="63831" android:keyOutputText="∂" />
+        <Key android:codes="63832" android:keyOutputText="Å" />
+        <Key android:codes="63833" android:keyOutputText="Ω" />
+        <Key android:codes="63840" android:keyOutputText="†" />
+        <Key android:codes="63841" android:keyOutputText="→" />
+        <Key android:codes="63842" android:keyOutputText="⇌" />
+    </Row>
+</Keyboard>

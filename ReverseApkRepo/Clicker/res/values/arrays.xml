@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sounds">
+        <item>Snap</item>
+        <item>Clicking</item>
+        <item>Clock</item>
+        <item>Clunk</item>
+        <item>Knife</item>
+        <item>Metal</item>
+        <item>Mouse</item>
+        <item>Old</item>
+        <item>Pen</item>
+        <item>Staple</item>
+        <item>Tick Tack</item>
+        <item>Tinny</item>
+        <item>Tip</item>
+        <item>Tock</item>
+    </string-array>
+</resources>

@@ -1,0 +1,28 @@
+<gradients>
+  <gradient type="linear" startX="0.5" startY="0" endX="0.5" endY="0.7" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+  <gradient type="linear" startX="0.5" startY="0" endX="0.5" endY="0.7" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+  <gradient type="linear" startX="0.5" startY="0" endX="0.5" endY="1" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+  <gradient type="linear" startX="0.014" startY="0.5" endX="0.75" endY="0.5" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+  <gradient type="radial" startX="0.5" startY="0.5" endX="1" endY="0.5" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+  <gradient type="radial" startX="0.5" startY="0.5" endX="1.125" endY="0.5" yScale="1">
+	<stop alpha="1" position="0"/>
+	<stop alpha="0" position="1"/>
+  </gradient>
+</gradients>
+
+  

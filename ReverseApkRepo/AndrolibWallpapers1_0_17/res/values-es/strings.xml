@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fondos de pantalla Androlib</string>
+    <string name="whatsnew">Novedades</string>
+    <string name="whatsnewhead">"Si desea utilizar esta aplicación, no se olvide de puntuarla en el mercado. Gracias :)
+"</string>
+    <string name="close">Cerrar</string>
+    <string name="noWallpaper">no se ha encontrado ningún fondo de pantalla para esta consulta</string>
+    <string name="XtoYwallpapersOnZ">De %1$s a %2$s fondos de pantalla en %3$s</string>
+    <string name="loadingLastSubmited">Cargando los últimos fondos de pantalla enviados</string>
+    <string name="loadingTopFavorites">Cargando favoritos</string>
+    <string name="loadingMostInstalled">Cargando los fondos de pantalla más frecuentemente instalados</string>
+    <string name="loadingTopRated">Cargando fondos de pantalla con puntuación más alta</string>
+    <string name="loadingYourFavs">Cargando fondos de pantalla favoritos</string>
+    <string name="loading10Random">Cargando 10 fondos de pantalla aleatorios</string>
+    <string name="loading">Cargando...</string>
+    <string name="pleaseWait">Espere, por favor...</string>
+    <string name="menuSubmitWall">Aceptar fondos de pantalla</string>
+    <string name="menuOurOthersApps">Otras de nuestras aplicaciones</string>
+    <string name="marketNotFound">No se ha encontrado el mercado</string>
+    <string name="menuQuit">Salir</string>
+    <string name="alertTitleQuit">¿Desea salir de la aplicación?</string>
+    <string name="alertTitleSubmit">Enviar un fondo de pantalla</string>
+    <string name="alertMessageSubmit">Para enviar un fondo de pantalla, vaya a http://wallpapers.androlib.com/ y haga clic en \"enviar un fondo de pantalla\" en el menú superior de la página. Siga las instrucciones y su fondo de pantalla estará pronto disponible en la aplicación.</string>
+    <string name="searchHint">Buscar fondos de pantalla</string>
+    <string name="searchEmpty">Su consulta está vacía</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="canceled">Cancelado</string>
+    <string name="wallGlobalRating">Puntuación global:</string>
+    <string name="wallSubmitedBy">Enviado por:</string>
+    <string name="wallCategory">Categoría:</string>
+    <string name="wallBtnSetThisWall">Establecer este fondo de pantalla</string>
+    <string name="wallBtnDownloadOnSD">Descargar este fondo de pantalla en tarjeta SD</string>
+    <string name="wallAlertTitleAddFav">¿Desea añadir este fondo de pantalla a sus favoritos?</string>
+    <string name="wallAlertTitleRemoveFav">¿Desea eliminar este fondo de pantalla de sus favoritos?</string>
+    <string name="errorWhileDownload">\### ERROR ### Error al descargar el fondo de pantalla. Vuelva a intentarlo.</string>
+    <string name="mailSubject">Fondo de pantalla Android - %1$s</string>
+    <string name="mailMessage">"Aquí tiene un fondo de pantalla para Android que puede interesarle.
+
+%1$s
+%2$s
+
+Este fondo de pantalla se encuentra disponible aquí:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">Compartir con un amigo</string>
+    <string name="wallMenuSetWall">Establecer este fondo de pantalla en mi teléfono</string>
+    <string name="wallMenuSendToFriend">Enviar a un amigo</string>
+    <string name="wallAlertTitleDownload">¿Desea descargar este fondo de pantalla?</string>
+    <string name="wallAlertMessageDownload">"El fondo de pantalla se guardará en la tarjeta SD. (sdcard/AndroLibWallpapers).
+Asegúrese de que su tarjeta SD se encuentra accesible"</string>
+    <string name="DownloadingPleaseWait">Descargando fondo de pantalla. Por favor, espere...</string>
+    <string name="wallAlertTitleSetWall">¿Desea establecer este fondo de pantalla?</string>
+    <string name="ratingDeleted">Puntuación borrada</string>
+    <string name="ratingSubmited">Se ha registrado la puntuación %1$s/5</string>
+    <string name="menuLanguage">Idioma</string>
+    <string name="catLastSubmit">Último envío</string>
+    <string name="catMyFav">Mis favoritos</string>
+    <string name="catTopRated">Fondos de pantalla con puntuación más alta</string>
+    <string name="cat10Random">10 fondos de pantalla aleatorios</string>
+    <string name="catTopFav">Fondos de pantalla favoritos</string>
+    <string name="catMostInstalled">Fondos de pantalla más instalados</string>
+    <string name="NoWallDownFound">No se ha encontrado ningún fondo de pantalla descargado</string>
+    <string name="wallBtnDeleteThisWall">Borrar este fondo de pantalla</string>
+    <string name="loadingYourDownloaded">Cargando tus fondos de pantalla descargados</string>
+    <string name="menuDownloaded">Descargado</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/set_timer_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/set_timer_delay_title" android:key="selftimerdelay" android:summary="@string/set_timer_delay_summary" />
+</PreferenceScreen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 秒</item>
+        <item>30 秒</item>
+        <item>60 秒</item>
+        <item>2 分</item>
+        <item>3 分</item>
+        <item>4 分</item>
+        <item>5 分</item>
+        <item>10 分</item>
+        <item>30 分</item>
+        <item>1 時間</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>アプリケーション名</item>
+        <item>総合予測値</item>
+        <item>平均予測値</item>
+        <item>相関予想値</item>
+        <item>瞬時予想値</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>時間軸目盛なし</item>
+        <item>1 時間おき</item>
+        <item>2 時間おき</item>
+        <item>3 時間おき</item>
+        <item>4 時間おき</item>
+        <item>5 時間おき</item>
+        <item>6 時間おき</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>表示しない</item>
+        <item>写実的 1</item>
+        <item>写実的 2</item>
+        <item>モノクローム</item>
+        <item>赤緑２色表示 1</item>
+        <item>赤緑２色表示 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC スタイル</item>
+        <item>Sense 3 スタイル</item>
+        <item>Google スタイル</item>
+        <item>Glass スタイル</item>
+        <item>ICS スタイル</item>
+        <item>透過 HTC スタイル</item>
+        <item>透過 Sense 3 スタイル</item>
+        <item>透過 Google スタイル</item>
+        <item>透過 Glass スタイル</item>
+        <item>透過 ICS スタイル</item>
+        <item>不可視 HTC スタイル</item>
+        <item>不可視 Sense 3 スタイル</item>
+        <item>不可視 Google スタイル</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>除去</item>
+        <item>ブランク</item>
+        <item>使用可能容量 (%)</item>
+        <item>平均消費電流 (%/h)</item>
+        <item>平均消費電流 (mA)</item>
+        <item>平均消費電力 (mW)</item>
+        <item>温度</item>
+        <item>電圧 (mV)</item>
+        <item>総合予測値</item>
+        <item>瞬時予測値</item>
+        <item>平均予測値</item>
+        <item>相関予測値</item>
+        <item>外れて以来</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>アイコン表示</item>
+        <item>使用可能容量 (%)</item>
+        <item>平均消費電流 (%/h)</item>
+        <item>平均消費電流 (mA)</item>
+        <item>平均消費電力 (mW)</item>
+        <item>温度</item>
+        <item>電圧 (mV)</item>
+        <item>総合予測値</item>
+        <item>瞬時予測値</item>
+        <item>平均予測値</item>
+        <item>相関予測値</item>
+        <item>外れて以来</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>°C</item>
+        <item>°F</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>表示</item>
+        <item>隠さ</item>
+        <item>削除</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>使用可能容量 (%)</item>
+        <item>平均消費電流 (%/h)</item>
+        <item>平均消費電流 (mA)</item>
+        <item>平均消費電力 (mW)</item>
+        <item>温度</item>
+        <item>電圧 (mV)</item>
+        <item>推定</item>
+    </string-array>
+</resources>

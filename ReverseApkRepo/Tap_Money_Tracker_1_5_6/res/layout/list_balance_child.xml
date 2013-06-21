@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?itemBackgroundColor" android:paddingLeft="40.0sp" android:paddingTop="15.0sp" android:paddingRight="10.0sp" android:paddingBottom="15.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?itemTextColor" android:layout_gravity="center_vertical" android:id="@id/txt_accname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Account Name" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?itemTextColor" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/txt_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NT 2000" />
+</LinearLayout>

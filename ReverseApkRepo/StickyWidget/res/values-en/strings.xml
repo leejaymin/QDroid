@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StickyWidget</string>
+    <string name="sticky_contents">Contents</string>
+    <string name="sticky_bgc">BackGround</string>
+    <string name="sticky_text_color">Text</string>
+    <string name="sticky_size">Size</string>
+    <string name="button_set">Set</string>
+    <string name="close">Close</string>
+    <string name="main_activity_message">To use this widget,long-press in an empty area on the default home screen and select Widgets,then StickyWidget.</string>
+</resources>

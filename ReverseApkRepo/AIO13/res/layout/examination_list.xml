@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/examination_pane_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/examination_pane_bg" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/kit_bar_indicator" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff5accfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/examine_optimize_title" />
+        </LinearLayout>
+        <ListView android:id="@id/examination_list_lv" android:background="@drawable/examination_pane_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@xml/action_item_bg" android:cacheColorHint="#00000000" android:divider="@drawable/examination_pane_horizontal_separator" android:dividerHeight="2.0dip" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

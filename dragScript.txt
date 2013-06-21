@@ -1,0 +1,3 @@
+touch down 50 600
+touch move 380 600
+touch up 380 600

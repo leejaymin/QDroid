@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:padding="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/network" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:padding="6.5999756dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/network_again" />
+        <CheckBox android:id="@id/isNoticeChkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

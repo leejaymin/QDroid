@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.andfreek.myLocale.activity">
+    <RelativeLayout android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:orientation="horizontal" android:id="@id/title" android:background="@drawable/light_grey_d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/imageTitle" android:paddingLeft="5.0sp" android:paddingTop="1.0sp" android:paddingRight="5.0sp" android:paddingBottom="1.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="30.0sp" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/titleText" android:paddingLeft="5.0sp" android:paddingRight="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:shadowColor="@android:color/white" />
+        </LinearLayout>
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_activity_text" android:layout_below="@id/title"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <LinearLayout android:orientation="vertical" android:id="@id/textLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/time">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:autoLink="all" android:id="@id/text" android:paddingLeft="5.0sp" android:paddingRight="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_activity_text" android:shadowColor="@android:color/white" />
+            <EditText android:id="@id/edit" android:layout_width="fill_parent" android:layout_height="150.0dip" android:singleLine="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/l1" android:background="@drawable/light_grey_d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textLayout">
+            <Button android:id="@id/reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <Button android:id="@id/inbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <Button android:id="@id/calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+            <Button android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="2.0" />
+        </LinearLayout>
+        <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/l1" app:testing="false" app:backgroundColor="#00000000" app:textColor="#00ffffff" app:keywords="Android Search" />
+    </RelativeLayout>
+</ScrollView>

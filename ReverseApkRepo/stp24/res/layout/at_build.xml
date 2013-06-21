@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TableLayout android:id="@id/build_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2" android:shrinkColumns="2" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="10.0dip" android:id="@id/button_backup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_backup" android:drawableTop="@drawable/backup" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:textSize="10.0dip" android:id="@id/button_restore" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_restore" android:drawableTop="@drawable/restore" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:textSize="10.0dip" android:id="@id/button_predefined" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_predefined" android:drawableTop="@drawable/history" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:textSize="10.0dip" android:id="@id/button_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_add" android:drawableTop="@drawable/button_plus" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+</LinearLayout>

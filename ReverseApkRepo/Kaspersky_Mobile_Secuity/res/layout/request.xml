@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayoutBkg" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/LinearLayout02" android:background="@drawable/hdr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/ico_k_36" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/ViewCaption" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@id/TextView01" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/LinearLayout01" android:background="@drawable/shadow_up_alert" android:layout_width="fill_parent" android:layout_height="5.0px" />
+    <ListView android:entries="@array/virus_detected_actions" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:headerDividersEnabled="true" android:footerDividersEnabled="false" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/InfoView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<module id="module" mainObject="messageHandler">
+  <windows>
+    <window id="window" width="400" height="270" type="tool" addToWindowMenu="true" title="$$$/debugoutput/window/title/Debug=Debug" x="100" y="100" initVisible="false">
+      <console id="view1" width="380" height="234" sizeX="scale" sizeY="scale" x="-1" y="1" hScrollBar="scrollBar1" vScrollBar="scrollBar"/>
+      <scrollBar id="scrollBar" width="18" height="233" sizeX="right" sizeY="scale" x="379" y="2" target="view1" selector="CABVScroll" contentSize="0" viewSize="234" lineSize="15"/>
+      <scrollBar id="scrollBar1" width="380" height="18" sizeX="scale" sizeY="bottom" x="-1" y="235" target="view1" selector="CABHScroll" contentSize="0" viewSize="380" lineSize="15"/>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <debugHandler id="messageHandler" console="view1"/>
+  </objects>
+  <classes>
+    <class className="console" superClassName="view" packageName="com.adobe.cab.core" codeName="CABConsole"/>
+    <class className="debugHandler" superClassName="messageHandler" packageName="com.adobe.cab.core" codeName="CABDebugHandler">
+      <var name="console" type="object" defaultValue="" codeName="iConsole" className="CABConsole"/>
+    </class>
+  </classes>
+</module>

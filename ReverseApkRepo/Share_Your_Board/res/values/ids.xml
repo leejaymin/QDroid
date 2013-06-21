@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="about">false</item>
+    <item type="id" name="licenses">false</item>
+    <item type="id" name="switcher">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="size">false</item>
+    <item type="id" name="date">false</item>
+    <item type="id" name="comment">false</item>
+    <item type="id" name="gallery">false</item>
+    <item type="id" name="screen">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="expand_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="af">false</item>
+    <item type="id" name="capture_button">false</item>
+    <item type="id" name="yes">false</item>
+    <item type="id" name="no">false</item>
+    <item type="id" name="edit_text">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="dismiss">false</item>
+    <item type="id" name="message">false</item>
+    <item type="id" name="progress_bar">false</item>
+    <item type="id" name="cancel">false</item>
+    <item type="id" name="checkbox_auto_contrast">false</item>
+    <item type="id" name="checkbox_edges_geometry">false</item>
+    <item type="id" name="checkbox_enhance">false</item>
+    <item type="id" name="apply">false</item>
+</resources>

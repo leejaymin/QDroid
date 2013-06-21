@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <ListView android:id="@id/folderSelectList" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <CheckBox android:id="@id/ascending_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/options_ascending_title" />
+    </TableRow>
+    <TableRow>
+        <CheckBox android:id="@id/showfolder_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/options_showfolder_title" />
+    </TableRow>
+</TableLayout>

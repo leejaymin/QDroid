@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="10006" android:versionName="1.0.6" android:installLocation="auto" package="com.chillingo.drawrace2gplay.android.aja"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="5" android:targetSdkVersion="9" />
+    <uses-feature android:glEsVersion="131072" />
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <permission android:name="com.chillingo.drawrace2gplay.android.aja.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.chillingo.drawrace2gplay.android.aja.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <supports-screens android:anyDensity="true" android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <compatible-screens>
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        <screen android:screenSize="large" android:screenDensity="ldpi" />
+        <screen android:screenSize="large" android:screenDensity="mdpi" />
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+    </compatible-screens>
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name="com.redlynx.drawrace2.DrawRace2Activity" android:launchMode="singleTop" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.arellomobile.android.push.MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.redlynx.drawrace2.DrawRace2WebViewActivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.redlynx.drawrace2.DrawRace2Video" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="util.googleiap.BillingService" />
+        <receiver android:name="util.googleiap.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
+                <action android:name="com.android.vending.billing.RESPONSE_CODE" />
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.addthis.ui.activities.ATAllServiceActivity" />
+        <activity android:name="com.addthis.ui.activities.ATFavoriteServiceActivity" />
+        <activity android:name="com.addthis.ui.activities.ATShareActivity" />
+        <activity android:name="com.addthis.ui.activities.ATActivityGroup" android:configChanges="orientation" />
+        <activity android:name="com.arellomobile.android.push.PushWebview" />
+        <activity android:name="com.arellomobile.android.push.MessageActivity" />
+        <activity android:name="com.arellomobile.android.push.PushHandlerActivity" />
+        <service android:name="com.arellomobile.android.push.C2DMReceiver" />
+        <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.chillingo.drawrace2gplay.android.aja" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.chillingo.drawrace2gplay.android.aja" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.scoreloop.client.android.core.ui.ProxyActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementListActivity" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.scoreloop.client.android.ui.EntryScreenActivity" />
+        <activity android:theme="@style/sl_dialog" android:name="com.scoreloop.client.android.ui.ShowResultOverlayActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketHeaderActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.entry.EntryListActivity" />
+        <activity android:theme="@style/sl_dialog" android:name="com.scoreloop.client.android.ui.component.post.PostOverlayActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserHeaderActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserDetailListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsListActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsPictureListActivity" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.scoreloop.client.android.ui.LeaderboardsScreenActivity" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.scoreloop.client.android.ui.framework.ScreenActivity" />
+        <activity android:name="com.scoreloop.client.android.ui.framework.TabsActivity" />
+    </application>
+</manifest>

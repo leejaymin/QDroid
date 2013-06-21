@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+ENGINEERING:Chris Chirogene
+:Patrick Kamin
+:Jens C. Neffe
+:Kai Ortmanns
+:Jan Stöckmann
+:Klaas Stöckmann
+:Andreas Wurf
+
+QUALITY ENGINEERING:Ignacio Barrientos
+:Joerg Eberhardt
+:Guido Reule
+
+RELEASE ENGINEERING:Jens-Heiner Rechtien
+
+ENGINEERING MANAGEMENT:Thomas Mührke
+:Torsten Sigwart
+
+PRODUCT MANAGEMENT:Michael Hopwood
+:John Nack
+:Stephen Nielson
+
+PROGRAM MANAGEMENT:Claus Heitmann
+
+EXPERIENCE DESIGN:Sonja Brix
+:Philip Clevenger
+:Geoff Dowd
+
+PRODUCT MARKETING:Allison Goffman
+
+LEARNING RESOURCES:Luanne Seymour
+
+SUPPORT:David Baxter
+
+LEGAL:Birgit Bruhn
+:Heather Barrett
+
+:Special Thanks go out to Kevin Lynch
+:as well as Russell Brown,
+:Jue Wang, the AIR team,
+:the Creative Cloud teams,
+:the Photoshop family and
+:all other folks who contributed
+:to the Photoshop Touch project
+:with dedication and "Funta passion" ;-)

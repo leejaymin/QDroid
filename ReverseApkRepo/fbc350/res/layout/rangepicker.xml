@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dummytext" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/leftImg" android:layout_width="130.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_exposure" android:scaleType="fitCenter" android:layout_below="@id/textView1" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/rightImg" android:layout_width="130.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_exposure" android:scaleType="fitCenter" android:layout_below="@id/textView1" android:layout_alignParentRight="true" />
+    <com.spritefish.fastburstcamera.controls.RangeSeekBar android:id="@id/rangeBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/leftImg" />
+    <Button android:id="@id/okButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="@string/ok" android:layout_below="@id/rangeBar" android:layout_alignParentRight="true" />
+    <Button android:id="@id/cancelButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="@string/cancel" android:layout_toLeftOf="@id/okButton" android:layout_alignTop="@id/okButton" android:layout_alignBottom="@id/okButton" />
+</RelativeLayout>

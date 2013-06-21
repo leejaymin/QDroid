@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:gravity="center" android:background="@drawable/title_bar_portrait" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Currency" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keepScreenOn="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Default Currency" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TWD" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Default currency of balance, report and transaction" />
+        </LinearLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keepScreenOn="true">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Digits of decimal" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:gravity="center" android:background="@drawable/title_bar_portrait" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Database" />
+        <LinearLayout android:orientation="horizontal" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Use external storage" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:gravity="center" android:background="@drawable/title_bar_portrait" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reminder" />
+        <LinearLayout android:orientation="horizontal" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reminder Service" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reminder before days" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Restore database from external storage" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reminder Time" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Set up when to reminder" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:gravity="center" android:background="@drawable/title_bar_portrait" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show Me" />
+        <LinearLayout android:orientation="horizontal" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show me th money" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0px" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show me account" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show me the money which account" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

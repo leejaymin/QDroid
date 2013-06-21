@@ -1,0 +1,1144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE>Welcome to Electrum Drum</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.3  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="niko ">
+	<META NAME="CHANGED" CONTENT="20120823;18210847">
+	<META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P><A NAME="TOP"></A><FONT FACE="Verdana"><B>Welcome to Electrum
+Drum!<BR></B></FONT><BR><FONT FACE="Verdana"><FONT SIZE=2><B>WARNING:
+Please be very careful when using this program with headphones, some
+sounds can be very loud! Be sure you set the music volume on your
+phone low when you first start until you get used to how the program
+sounds.</B></FONT></FONT> 
+</P>
+<P><FONT SIZE=4><B>Audio Gapping or stuttering ? See</B></FONT>
+<FONT FACE="Verdana"><B><A HREF="#PERFORMANCE">P</A><A HREF="#PERFORMANCE">erformance
+adjustments</A></B></FONT></P>
+<P><A HREF="#INTRO"><FONT FACE="Verdana"><B>Introduction</B></FONT></A><BR><A HREF="#MUTING"><FONT FACE="Verdana"><B>Muting
+a sound</B></FONT></A><BR><FONT FACE="Verdana"><B><A HREF="#MIXER">The
+Mixer</A><A HREF="#INTRO"><BR></A><A HREF="#EXAMPLE">Programming
+Example</A><BR><A HREF="#SHUFFLE">Beat Shuffle (Swung note)</A><A HREF="#FULLSONG"><BR>Quick
+Song Play</A></B></FONT><BR><A HREF="#MULTI"><FONT FACE="Verdana"><B>Multitouch
+Pad playing (only supported in Android 2.0 and up)</B></FONT></A><BR><FONT FACE="Verdana"><B><A HREF="#PADCUT">Pad
+cutoff / poly option</A><BR><A HREF="#LIVE">Live And Sequencer
+Pattern Play</A></B></FONT><BR><FONT FACE="Verdana"><B><A HREF="#LIVEPLAYRECORD">Live
+play recording</A> <BR><A HREF="#SEQUENCEEDIT">Editing the recorded
+sequence</A><BR><A HREF="#PATTLEN">Setting pattern length and using
+time signatures</A><A HREF="#SAVE"><BR>Saving &nbsp;And Loading
+Patches</A><BR><A HREF="#KITS">Saving And Loading Drumkits</A><A HREF="#CONVERT"><BR></A><A HREF="#IMPORT">Importing
+audio samples</A><BR><A HREF="#RECORDING">Recording Audio Samples
+with the Microphone (not all devices will support this!)</A><BR><A HREF="#RETRIG">Sample
+Retrigger</A><BR><A HREF="#VOLUME">Setting sample volume</A></B></FONT><BR><FONT FACE="Verdana"><B><A HREF="#EDITSAMPLE">Setting
+a sample's start and end points (WAV EDIT)</A><A HREF="#PITCH"><BR>Setting
+sample pitch</A></B></FONT><BR><A HREF="#BPM"><FONT FACE="Verdana"><B>Loop
+Fit BPM Setting</B></FONT></A> <FONT FACE="Verdana"><B><BR><A HREF="#FX">FX</A><BR><A HREF="#LAYERING">Layering
+loops on each other (how to use more than 8 sounds)</A><BR><A HREF="#EXPORTING">Exporting
+WAV</A></B></FONT> <BR><A HREF="#MIDI"><FONT FACE="Verdana"><B>Exporting
+MIDI</B></FONT></A> <BR><A HREF="#EXPORTINGPADS"><FONT FACE="Verdana"><B>Exporting
+sample Pad sounds (split bounce)</B></FONT></A> <BR><A HREF="#LOCATIONS"><FONT FACE="Verdana"><B>File
+locations for exported data</B></FONT></A><B><BR></B><A HREF="#FAQ"><FONT FACE="Verdana"><B>FAQ</B></FONT></A>
+</P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>Please read this file for
+latest changes and features, as well as FAQ!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>PLEASE NOTE! Since the switch
+to 16 bit it is easier to make a sound loud enough to clip and sound
+distorted. If low bass kick drums sound very distorted it is because
+they are too loud, just turn the volume down on the kick drum sample.
+I currently am working on a limiter to take care of this more
+cleanly! Thanks!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>Latest Changes:</B></FONT></FONT>
+</P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.5.5. - Fixed error in WAV
+export that caused corruption</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.5.2. - Adjusted buffer size
+to function better on Galaxy Tab 7&quot; models. Added &quot;Share&quot;
+option to share an exported WAV. If you install soundcloud you can
+share into that.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.5.1. - Thread
+synchronization bugfix. Should help performance on some devices.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.5.0. - Added ability to
+reverse a sample!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.9.4 - Removed high
+priority setting in the audio thread, some devices were having issues
+and actually causing audio gapping with it ON. Setting it OFF BY
+DEFAULT. Can turn on in the BPM settings dialog.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.9 - Fixed play start
+error, bug has always been there but now only really apparent since
+the stereo switch. Would mistakenly start the very first loop a bit
+too late.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.8 - Allow full UI
+rotation on XLARGE screens (tablets). Fixed soft keyboard focus on
+BPM and Sample edit screens to not come up until you touch a text
+entry field. Adjusted the running lights feature to be more accurate.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.7 - Fixed import from
+exported folder, was not importing the 22050khz stereo files
+properly. Fixed crash in Delay or Distortion settings if you ran out
+of memory.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.5 - Added stereo output
+(Electrum now outputs 22050khz stereo 16bit) and pan controls</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.3 - Fixed out of memory
+error on multitouch pads dialog</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.4.0 - Added reset buttons
+to mixer. Double tap also resets a mixer slider. Added FX , delay and
+distortion.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.3.2 - Added limiter code
+back in, works correctly now. Volume sliders now work more correctly
+as well.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.3.0 - Fixed multitouch pads
+to fit all screens correctly, including tablet screens. Added auto
+loop ability to multitouch pads. Changed their graphics too to look a
+bit better.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.2.2 - fixed some bugs in
+the WAVE loader code, should be compatible now with almost all WAV
+files (uncompressed of course). Was having problems with WAV's from
+ProTools because of extra data. I wasn't searching for the chunks
+properly. Recoded to search for WAV chunks now instead of hardcoded
+offsets. <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Added code to bring up the Electrum menu if you press on the &quot;BPM&quot;
+and &quot;Resolution&quot; text display area, to make it easier for
+devices that may not have hardware menu buttons.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.2.1 - Added delete button
+in the &quot;SAVE&quot; dialogs, fixed some save bugs that were in
+those dialogs. Can't delete directories just yet, but you can delete
+files.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.2.0 - Added patch text to
+main screen, and drum names now show up in the mixer. Exporting now
+appends the BPM value to the filename.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.1.1 - Fixed sound slot so
+&quot;FitBPM&quot; is sticky, so preview while playing will fit BPM
+when possible.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>4.1.0 - All new graphics,
+fixed mixer to work better, fixed some more bugs, etc!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.9.1 - Fixed small bug
+that would cause the sequencer to crash when you touched an invalid
+area in the sequence list window.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.9 - Added Quick switch
+buttons to the sound slot editor dialog, so you don't have to leave
+the dialog to set pad sounds - you can move through all sounds now
+using the buttons.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.8 - Layout work to
+support Galaxy tablet, and fixed file browser to remember where you
+were last time you opened it.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.5 - Layout work to
+support small screens and large screens (tablets)</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.1 - Added support for
+1/12 resolution, which is 1/8T, for triplet programmed beats. Set
+your pattern length to 12 for a full measure in that resolution.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.9.0 - Added two more sound
+pads. Some more bugfixes. Can now install to sdcard on Froyo as well.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.8.0 - Added mixer and
+changed global volume knob to a mixer button.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.7.0 - Can now save and load
+drumkits seperately from patches, so you can load in different kits
+and still use the current pattern you are working on.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.6.2 - Flipped position of -
+and + buttons on BPM dialog, added File overwrite warnings to saving
+operations.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.6.1 - bugfix for to hide
+any media files that are directly in the samples folder and not in
+subfolders under that.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.6.0 - Added support for
+loading normal 44100Khz, Stereo or Mono, 16bit WAV files. Also can
+load 44100Khz, Stereo, 24bit files, but it appears that android
+doesn't like that format and it corrupts the files. Electrum now
+converts the files internally to 22050Khz Mono 16bit for playing
+them. This should now make it easier to just grab some samples and
+dump then on the sdcard for electrum to use (but if they are 24bit
+you'll probably still have to convert them since like I said android
+doesn't like them apparently - even its media player can't play
+them), so if you load some samples and all you get is static, they
+are probably in 24bit format</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.5.1 - bugfix for the BPM
+buttons in other language systems, to handle decimal point
+conversion.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.5.0 - Added shuffle feature
+so you can now program swing beats and hiphop style beats and get
+some funky rythmns going. NOTE!!!! I don't have it coded into the
+MIDI export yet, I will try and get that done! Also I think I finally
+squashed that playback lag bug for good this time. Now should play
+almost right away when you press play. Oh and guess what? Global
+volume is now also finally saved with your patch!! Took me a while to
+get that one in eh? Also I removed the internal volume limits check,
+going to rely on the hardware. This means patterns will play louder
+than before and may clip. For this reason I coded it so if it loads
+in an old pattern, it sets the volume around 65% to prevent loudness
+clipping. If you adjust it afterward and save the new volume will be
+saved with the patch from now on.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.3.0 - Added a multitouch
+pad dialog that you can use to play the loaded sounds using
+multitouch. Be aware though that this requires android 2.0, and on
+some devices you are limited to how many fingers. The DROID for
+example can only use 2 points at once (the screen driver only allows
+that, it's a hardware issue)</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.2.1 - Added feature to
+allow playing the pads polyphony (so they don't cut each other's
+sound off). NO multitouch right now though. Considering also adding
+option to set a pad to loop auto when hit, but still in the works.
+Studying more MPC docs.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.2.0 - Added Recording
+feature - you can now record up to a 5 second sample into a sound
+slot. Recordings will get saved with patterns as well when saving. </B></FONT></FONT>
+</P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.1.9 - Changed so drum
+machine will continue playing even if losing app focus or the screen
+turns off. Needs PHONE_STATE permission now so we can stop playing if
+someone calls. Also change to &quot;singleTask&quot; state so you can
+always return by using the home button, or using the launcher icon
+again - will return to the same current running instance of the drum
+machine.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.1.8 - OOPS, lost progress
+bar when I got rid of the title bar. Brought one back for exporting
+purposes (so you know how long it's taking!). Added BPM up down
+buttons, they also are Auto-Repeat too. Fixed a bug where if a sound
+couldn't be loaded anymore from sdcard it would cause NULL errors
+when playing.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.1.5 - Changed GUI around to
+make some things easier to use.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.1.0 - MIDI export and PAD
+sound export features.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.0.1 - ability to turn
+off/on the sequence running lights</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>3.0.0 - Lots of stuff. WAV
+editor, etc. some bug fixes. Sequence running lights.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.7.0 - Sequencer! And some
+bug fixes here and there.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.6.0 - Loop fit BPM feature
+to auto fit loops to match the current BPM. Adjusts the pitch of the
+loop until it matches the current BPM</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.5.5 - Added live play
+pattern sequencer. Allows you to play patterns in the order you want
+live by pressing the pattern buttons as the machine plays. Recordable
+sequencer to come soon. Some bug fixes.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.5.0 - Some bug fixes. Added
+pattern length adjustment. Changed WAV export code to get ready for
+sequencer (for long songs). Can now program up to 32 patterns.
+Sequencer is in progress!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.4.0 - Added sample pitch
+change feature, can alter pitch by semitone now. See &quot;Setting
+sample pitch&quot;</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><B><FONT SIZE=1>2.3.1 - allow sample preview
+when not playing as well (like it used to do).</FONT> </B></FONT>
+</P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.3.0 - Now uses 16 bit
+samples internally and can load 8 or 16 bit external samples! Also
+sample loading is a LIVE preview in the drumbeat. Also added error
+checking to sample loader. REMOVED 606 DRUM. It has been changed to
+an 808 drum now. Fixed some bugs in the audio generation code that
+were creating clicking and popping noises, now also should run faster
+too!</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.2.1 - added higher priority
+to audio generating thread code to prevent gapping</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.2.0 - added ability to
+toggle a sound slot's mute by double tapping it</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.1.2 - changed accent (blue
+notes) to be activated with a long press</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.1.1 - added global volume
+knob</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.1.0 - Fixed random close
+bug</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>2.0.0 - Improved sample
+loading that allows subfolders, and also now supports android 1.5
+(cupcake) firmware. Can play sound dynamically now (streaming live).
+Can edit patterns and also sound slot parameters while sound is
+playing. &nbsp;REQUIRES 1.5 FIRMWARE.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.3.0 - Added GUI controls to
+set sample volume and length.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.2.0 &ndash; Added feature
+to load WAV drum samples from sdcard.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.1.0 &ndash; added export
+feature. WAV&rsquo;s get saved to /sdcard/electrum/exported folder</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.0.3 &ndash; fixed bug in
+WAV file header of output file.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.0.2 &ndash; some bug fixes.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=1><B>1.0.1 &ndash; initial
+revision</B></FONT></FONT></P>
+<P><A NAME="INTRO"></A><FONT FACE="Verdana"><B>Introduction</B></FONT></P>
+<P><FONT FACE="Verdana">Electrum Drum is a drum pattern creator using
+8 sounds (similar to a TR-909) and 16 slots per sound. You may
+program up to 32 total patterns.</FONT></P>
+<P><FONT FACE="Verdana">Electrum Drum works by calculating the timing
+required and then mixing the sound data together internally and
+playing the audio data as a stream fed directly to the phone's
+speaker.</FONT></P>
+<P><FONT FACE="Verdana">Electrum includes 6 drumkits internally. The
+basic drumkits included with the program are:</FONT></P>
+<P><FONT FACE="Verdana">808<BR>Rock<BR>909<BR>Orchestral<BR>HipHop<BR>Human
+Beatbox</FONT></P>
+<P><FONT FACE="Verdana">The programming slots are ordered in this
+manner: </FONT>
+</P>
+<P><IMG SRC="Electr55.jpg" NAME="graphics1" ALIGN=BOTTOM WIDTH=485 HEIGHT=120 BORDER=0></P>
+<P><FONT FACE="Verdana">The first row of 8 will play, and then the
+second row will play.</FONT></P>
+<P><FONT FACE="Verdana">To select a sound slot, simply touch that
+sound&rsquo;s button to select it and then the pattern buttons will
+apply to that sound. If the machine is not currently running, then
+the pad (the sound button) will also play the sound that is assigned
+to it. This enables you to remember what sound it is.</FONT></P>
+<P><FONT FACE="Verdana">In the case of long sounds that are assigned
+to a pad, you can press the &quot;Stop&quot; button to force the
+sound to stop playing.</FONT></P>
+<P><IMG SRC="Electr56.jpg" NAME="graphics2" ALIGN=BOTTOM WIDTH=479 HEIGHT=91 BORDER=0></P>
+<P><FONT FACE="Verdana">To set a sound to play on a specific beat in
+the pattern, simply touch the pattern button to turn it on. It will
+display as <B>orange</B> when on.</FONT></P>
+<P><IMG SRC="Electr57.jpg" NAME="graphics3" ALIGN=BOTTOM WIDTH=482 HEIGHT=120 BORDER=0></P>
+<P><FONT FACE="Verdana">If you <B>Long Press</B> the pattern button,
+it will turn <B>yellow</B>.</FONT></P>
+<P><IMG SRC="Electr58.jpg" NAME="graphics4" ALIGN=BOTTOM WIDTH=482 HEIGHT=119 BORDER=0></P>
+<P><FONT FACE="Verdana">Blue means that the sound will now play a bit
+louder in that slot, to add some &ldquo;Accent&rdquo; to the sound.
+This allows you some sound variety.</FONT></P>
+<P><FONT FACE="Verdana">If you then touch the button a third time, it
+will now again be OFF.</FONT></P>
+<P><FONT FACE="Verdana">To play the pattern, simply touch the &ldquo;Play
+current pattern&rdquo; button. <B>The &quot;Play current pattern&quot;
+button is the button with only one Play symbol on it.</B> The sound
+will be generated and then played. You may push the STOP button at
+any time to cancel sound generation and / or playing.</FONT></P>
+<P><FONT FACE="Verdana">You can edit patterns while the sound is
+still playing to find the right beat that you are looking for.</FONT></P>
+<P><IMG SRC="Electr59.jpg" NAME="graphics5" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">That&rsquo;s the basics!</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="MUTING"></A><FONT FACE="Verdana"><B>Muting a sound</B></FONT></P>
+<P><FONT FACE="Verdana"><B>You can also MUTE a sound using the <A HREF="#MIXER">MIXER</A></B></FONT></P>
+<P><FONT FACE="Verdana">You can toggle a sound slot's <B>MUTE</B> by
+<B>double-tapping</B> it while it is playing in pattern or sequence
+mode. It will display an icon indicating it is muted. </FONT>
+</P>
+<P><IMG SRC="Electr60.jpg" NAME="graphics6" ALIGN=BOTTOM WIDTH=63 HEIGHT=87 BORDER=0></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="MIXER"></A><FONT FACE="Verdana"><B>The Mixer</B></FONT></P>
+<P><FONT FACE="Verdana">You can open the mixer to mix all sound
+levels from one screen, as well as control the mute of each sound.
+You can also adjust the global output level using the mixer. Press
+the &quot;mixer&quot; button to bring up the mixer dialog</FONT></P>
+<P>&nbsp;</P>
+<P><IMG SRC="Electr102.jpg" NAME="graphics7" ALIGN=BOTTOM WIDTH=489 HEIGHT=329 BORDER=0></P>
+<P><FONT FACE="Verdana">The mixer sliders go from 0% to 200% volume.
+Simply touch the slider and move it with your finger. Press the mute
+button to toggle a sound's mute on/off.</FONT></P>
+<P><FONT FACE="Verdana">The &quot;Reset&quot; button resets all
+sliders to 100% volume. You can also <B>double-tap on a slider button
+to reset it to 100% volume</B></FONT></P>
+<P>&nbsp;</P>
+<P><IMG SRC="Electr103.jpg" NAME="graphics8" ALIGN=BOTTOM WIDTH=465 HEIGHT=307 BORDER=0><BR><BR>&nbsp;</P>
+<P><FONT FACE="Verdana">You can also adjust the Pan left/right of a
+sound with the slider on the bottom. <B>To adjust pan for a sound,
+first touch its volume slider (anywhere along the length of the
+slider will work) and the pan slider will then switch to that sound.
+The text to the right of the pan slider will show you which sound it
+is currently editing.</B></FONT></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="EXAMPLE"></A><FONT FACE="Verdana"><B>Programming Example</B></FONT></P>
+<P><FONT FACE="Verdana">Let&rsquo;s make a basic 4 on the floor beat.
+The default BPM is 120 and the default resolution is 1/16. This means
+that we will divide a measure into 16 pieces. So in this case every
+four slots will be a beat, for a four on the floor.</FONT></P>
+<P><FONT FACE="Verdana">Select the first drum sound, usually a Kick</FONT></P>
+<P><IMG SRC="Electr62.jpg" NAME="graphics9" ALIGN=BOTTOM WIDTH=489 HEIGHT=329 BORDER=0></P>
+<P><FONT FACE="Verdana">Now simply turn every fourth pattern button
+ON by touching it.</FONT></P>
+<P><IMG SRC="Electr63.jpg" NAME="graphics10" ALIGN=BOTTOM WIDTH=489 HEIGHT=326 BORDER=0></P>
+<P><FONT FACE="Verdana">Now you can push the &ldquo;Play&rdquo;
+button to play the current pattern. <B>The &quot;Play current&quot;
+button is the button with only one play symbol on it.</B></FONT></P>
+<P><FONT FACE="Verdana">If you set the resolution to 1/32, then for a
+four on the floor beat, you would need an ON button every 8 slot,
+because a whole measure would now be 32 slots long. That means to do
+a full four on the floor beat, you would need to use 2 patterns in a
+row. You can program two patterns and then use the &ldquo;Play all&rdquo;
+button to play all patterns in sequence. The advantage of 1/32
+resolution is you now can make very fast drum patterns; for example,
+a fast snare roll.</FONT></P>
+<P><FONT FACE="Verdana">To add another pattern, simply touch the &ldquo;Pat
+Up&rdquo; button. You will now have an empty set of patterns for each
+sound where you can input the next pattern. The &quot;Play&quot;
+button plays only the currently selected pattern.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P><A NAME="SHUFFLE"></A><FONT FACE="Verdana"><B>Beat Shuffle (Swung
+note)</B></FONT></P>
+<P><FONT FACE="Verdana">Add some funk to your beats with Shuffle!
+Shuffle is a feature on a drum machine that gives a swing feeling to
+the beat. It works by putting a delay in the 8th notes that are
+between the 16th notes. In Electrum this delay is variable so you can
+adjust it to your liking. The knob for shuffle is found on the BPM
+settings dialog:</FONT></P>
+<P><IMG SRC="Electr66.jpg" NAME="graphics11" ALIGN=BOTTOM WIDTH=469 HEIGHT=307 BORDER=0></P>
+<P><FONT FACE="Verdana">The Shuffle knob works just like any other
+knob, press down to select it, and then move up to raise the amount
+(rotate clockwise) or down to lower the amount (counter-clockwise).
+When at 0%, no shuffle is applied.</FONT></P>
+<P><FONT FACE="Verdana">Also be aware that since shuffle is a delay
+on 8th notes that are between 16th's, shuffle will not take place if
+you are running in 1/8 note resolution, since there are no 16th
+notes! It only works in 1/16 and 1/32 resolutions.</FONT></P>
+<P><FONT FACE="Verdana">Shuffle is global and affects ALL patterns.
+It will be saved with the patch when you save.</FONT></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P><A NAME="FULLSONG"></A><FONT FACE="Verdana"><B>Quick Song Play</B></FONT></P>
+<P><FONT FACE="Verdana">A Song is the sequence you have programmed in
+the sequence editor screen.&nbsp;When you push the &quot;Play All&quot;
+button, the one with <B>two play symbols on it,</B> the drum machine
+will play the patterns that have been programmed into the sequence.
+Once the sequence ends, it then loops back to the beginning of the
+sequence and continues playing</FONT></P>
+<P><IMG SRC="Electr65.jpg" NAME="graphics12" ALIGN=BOTTOM WIDTH=487 HEIGHT=330 BORDER=0></P>
+<P><FONT FACE="Verdana"><BR>The &quot;Play all&quot; button on the
+main screen is there to make it more convenient to play the sequence
+then to enter the sequence editor screen to do so always. Consider it
+a &quot;Quick song play&quot; button of sorts.<BR><A HREF="#TOP"><BR>Back
+to top</A></FONT></P>
+<P>&nbsp;</P>
+<P><A NAME="MULTI"></A><FONT FACE="Verdana"><B>Multitouch Pad playing
+(only supported in Android 2.0 and up)</B></FONT></P>
+<P><FONT FACE="Verdana">If your device has Android 2.0 and higher,
+and if the hardware supports it, the drum machine can also allow you
+to play pads in multitouch mode. The multitouch pad screen however,
+is a seperate dialog that will appear when selected from the menu.</FONT></P>
+<P><FONT FACE="Verdana">Go to &quot;Menu-&gt;More-&gt;Play Multitouch
+Pads&quot; </FONT>
+</P>
+<P><FONT FACE="Verdana">A new screen will appear with pads you can
+hit to play the same sounds that were loaded on the pads in the main
+drum machine screen. You currently cannot adjust any sound parameters
+from this screen, it's designed only for playing.</FONT></P>
+<P><FONT FACE="Verdana"><B>PLEASE BE AWARE that the pads will cutoff
+or play poly based on the setting in the &quot;Menu-&gt;More-&gt;BPM/Res/Len&quot;
+screen, the checkbox that says &quot;cut pads when played&quot;. If
+this is checked, then when you press a pad, it will cut off any other
+sound currently being played. This allows you to play actual &quot;pad&quot;
+sounds and they will cut each other off if desired.</B></FONT></P>
+<P><FONT FACE="Verdana"><B>ALSO PLEASE NOTE: While the code has no
+limit on the amount of pads you can hit &quot;at once&quot;, it will
+depend on your device. For example, the Motorola DROID only supports
+up to 2 fingers hitting at the same time. This limitation is actually
+in the device's hardware.</B></FONT></P>
+<P><IMG SRC="Electr97.jpg" NAME="graphics13" ALIGN=BOTTOM WIDTH=485 HEIGHT=329 BORDER=0></P>
+<P><FONT FACE="Verdana">The names that appear on the pads are the
+same names that appear on the pads on the main programming screen
+(which you can modify there if you wish)</FONT></P>
+<P><FONT FACE="Verdana">You can press the &quot;Loop&quot; area
+button to set a pad to auto-loop mode, when a pad in loop mode is
+hit, the sound will start, and continuously loop. You can use this to
+play a beat which will automatically loop, allowing you to play along
+with the other pads. To STOP the pad playing, hit the loop mode
+button again.</FONT></P>
+<P><FONT FACE="Verdana">It definitely takes some practice to play
+sounds at the exact same time. Due to some small lag in the screen
+messages and the audio buffers you'll need to practice a while to get
+it down.</FONT></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="PADCUT"></A><FONT FACE="Verdana"><B>Pad cutoff / poly
+option</B></FONT></P>
+<P><FONT FACE="Verdana">Pad cutoff is used in some cases where you
+want to play pads, but you want it so when you play a pad, it will
+cut off the sound from any other pad that may be currently playing.
+In some cases such as when you are playing long drones or &quot;pad&quot;
+sounds, you might want this. Many MPC's have this option.</FONT></P>
+<P><FONT FACE="Verdana">This option is found in the BPM settings
+dialog found in the &quot;Menu-&gt;More-&gt;Set BPM/Res/PattLen&quot;
+menu item.</FONT></P>
+<P><IMG SRC="Electr67.jpg" NAME="graphics14" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">If the checkbox is <B>ON </B>then the pad
+sounds will cut each other off. If it's <B>OFF </B>then the pad
+sounds will play over each other (polyphony).</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="LIVE"></A><FONT FACE="Verdana"><B>Live&nbsp; And
+Sequencer Pattern Play</B></FONT></P>
+<P><FONT FACE="Verdana">Live pattern play allows you to program up to
+32 patterns, and then use a seperate set of buttons to tell the
+machine which pattern to play and when. <B>You enter Live mode using
+the &quot;Seq. Edit&quot; Play button.</B></FONT></P>
+<P><IMG SRC="Electr68.jpg" NAME="graphics15" ALIGN=BOTTOM WIDTH=486 HEIGHT=325 BORDER=0><FONT FACE="Verdana"><B><BR><BR></B></FONT><FONT FACE="Verdana">When
+playing Live, you select the pattern you wish to play, and then press
+Play. As the machine plays, you may select the next pattern button to
+play. When the machine finishes playing the current pattern it will
+switch the the new one that you have selected. In this way you can
+create a live song by sequencing the patterns as the machine plays.</FONT></P>
+<P><FONT FACE="Verdana">The machine will help you to sequence the
+patterns by highlighting the center of the current pattern that is
+playing. This allows you to tell which pattern is currently playing
+so you can choose the next pattern in time for it to be sequenced
+correctly.</FONT></P>
+<P><IMG SRC="Electr69.jpg" NAME="graphics16" ALIGN=BOTTOM WIDTH=491 HEIGHT=326 BORDER=0><FONT FACE="Verdana"><BR><BR>Since
+there are up to 32 patterns, but only 16 buttons can fit on the
+screen, they have been divided into two &quot;banks&quot; of 16
+patterns. Simply use the Bank buttons to switch to the appropriate
+set of patterns.</FONT></P>
+<P><IMG SRC="Electr70.jpg" NAME="graphics17" ALIGN=BOTTOM WIDTH=483 HEIGHT=326 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>You can program a song by using the
+&quot;Record&quot; button.</B></FONT></P>
+<P><FONT FACE="Verdana">To record a series of patterns quickly, make
+sure the machine is not currently playing, and then press &quot;Record&quot;.
+The button will display as red to indicate that recording is active.</FONT></P>
+<P><IMG SRC="Electr71.jpg" NAME="graphics18" ALIGN=BOTTOM WIDTH=487 HEIGHT=323 BORDER=0></P>
+<P><FONT FACE="Verdana">Then you can simply press the pattern buttons
+in the order that you want the patterns to play. They will be
+&quot;recorded&quot; into the list in on the side of the screen.</FONT></P>
+<P><IMG SRC="Electr72.jpg" NAME="graphics19" ALIGN=BOTTOM WIDTH=486 HEIGHT=327 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>Push &quot;Stop&quot; or press &quot;Record&quot;
+again to turn off recording.</B></FONT></P>
+<P><FONT FACE="Verdana">You can then play the sequence by pressing
+the &quot;Sequence Play&quot; button. It will start at the beginning
+of the sequence.</FONT></P>
+<P><FONT FACE="Verdana">The sequence list will move, showing each
+pattern that is currently being played.</FONT></P>
+<P><FONT FACE="Verdana">Of course, sequences are also saved when you
+save the current drum patterns file.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana"><BR>Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="LIVEPLAYRECORD"></A><FONT FACE="Verdana"><B>Live play
+recording</B></FONT></P>
+<P><FONT FACE="Verdana">You can also record what you play during live
+mode playing!</FONT></P>
+<P><FONT FACE="Verdana">If you enable recording, and then press the
+&quot;Live Play&quot; button. After you do so, each time the pattern
+changes, it will be recorded into the sequence.&nbsp;</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana"><BR>Back to top</FONT></A></P>
+<P><A NAME="SEQUENCEEDIT"></A><FONT FACE="Verdana"><B>Editing the
+sequence</B></FONT></P>
+<P><FONT FACE="Verdana">You can use the &quot;Delete All&quot;,
+&quot;Delete&quot;, and &quot;Insert&quot; buttons to edit the
+sequence in the sequence list. &quot;Delete All&quot; does what it
+says, it clears the entire sequence so you can start over.</FONT></P>
+<P><FONT FACE="Verdana">To use &quot;Delete&quot;, you select the
+pattern in the list that you want to delete. It will turn green. Then
+press &quot;Delete&quot;, that pattern will be removed from the
+sequence.&nbsp;</FONT></P>
+<P><IMG SRC="Electr73.jpg" NAME="graphics20" ALIGN=BOTTOM WIDTH=490 HEIGHT=324 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>If you continue to push delete after the
+first time, it will continue deleting the patterns that were &quot;after&quot;
+(below) the pattern you first deleted.</B></FONT></P>
+<P><FONT FACE="Verdana">To Insert a new pattern in the middle of the
+sequence, you first select the pattern that is &quot;before&quot;
+(above) where you want to insert. THen press the &quot;INSERT&quot;
+key to activate &quot;Insert Mode&quot;.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana"><B>Insert Mode is a toggle style mode. You
+press once to enable Insertion mode, and press it again to turn off
+Insert Mode.&nbsp;</B></FONT></P>
+<P><FONT FACE="Verdana">Press Insert to activate Insert Mode, and
+then <B>also make sure you are currently recording (record is ON).</B>
+Then you can simply press the patterns you want to insert. They will
+be put in order as you press them, in the middle of the sequence.</FONT></P>
+<P><IMG SRC="Electr74.jpg" NAME="graphics21" ALIGN=BOTTOM WIDTH=490 HEIGHT=325 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>Press Insert mode button again to turn of
+Insert Mode.</B></FONT></P>
+<P><FONT FACE="Verdana">Using the sequence mode along with the edit
+buttons should allow you to make a whole song using up to 32
+different patterns in your chosen sequence.</FONT></P>
+<P><FONT FACE="Verdana">The &quot;Export&quot; feature will also then
+export the sequenced song in WAV format.</FONT></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana"><BR>Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="PATTLEN"></A><FONT FACE="Verdana"><FONT SIZE=3><B>Setting
+pattern length, and using time signatures</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3>You can set the length of the
+pattern from 2 slots to 16 slots. Go the &quot;Menu-&gt;Set
+BPM/Res./Patt Len&quot;. The Pattern length setting in in the dialog
+that comes up.&nbsp;</FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>Note: Pattern length is
+global and all patterns will have this same length.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3>When you set the pattern length,
+the extra slot buttons will be disabled. If you had a pattern that
+was longer then the new length, however, your old slot buttons will
+<B>still remain programmed</B>! They just won't play or render during
+an export.</FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>Time signatures</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3>Ok, the reason we added variable
+pattern length: to allow different time signatures. Here are some
+examples:</FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B><U>3/4 time </U>- Resolution
+16, Patt length 12, min note length 1/16 (each slot is 1/16)</B></FONT></FONT></P>
+<P><IMG SRC="Electr75.jpg" NAME="graphics22" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B><U>6/8 time </U>- Resolution
+16, Patt length 12, min note length 1/16&nbsp;<BR>(Note it's very
+similar to 3/4 time)</B></FONT></FONT></P>
+<P><IMG SRC="Electr76.jpg" NAME="graphics23" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>Of course the real &quot;swing&quot;
+to a time signature is putting accents on the correct notes.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><U><B>9/8 time and 12/8 time.</B></U></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>Unfortunately you CAN do 9/8
+and 12/8 time, but it would not allow<BR>1/16 notes, it would only
+allow 1/8 notes. If you tried to do 9/8 with 1/16 notes, as you
+can<BR>see, it would not fit in one pattern. You would have to chain
+patterns together in some way.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>However, here's an example in
+1/8 resolution.</B></FONT></FONT></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>9/8 time - Resolution 8, Patt
+length 9. Min note length 1/8</B></FONT></FONT></P>
+<P><IMG SRC="Electr77.jpg" NAME="graphics24" ALIGN=BOTTOM WIDTH=484 HEIGHT=327 BORDER=0></P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B>You could do 12/8 time the
+same way. Just set Patt Len to 12.</B></FONT></FONT></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><B>TRIPLET TIME (1/8T)</B></FONT></P>
+<P><FONT FACE="Verdana"><B>You set 1/8T time by setting the
+resolution to 12. (it's basically 1/12).&nbsp; If you then set the
+pattern length to 12 as well, you will have one full measure. Triplet
+time fits three 1/8 notes into the same amount of time a 1/4 note
+would usually take. This gives a &quot;swing&quot; feel to the beat,
+like jazz or a type of old school hip-hop style swing. In the picture
+below you can see a basic 4 on the four beat programmed in 1/8T
+resolution.</B></FONT></P>
+<P>&nbsp;</P>
+<P><IMG SRC="Electr78.jpg" NAME="graphics25" ALIGN=BOTTOM WIDTH=491 HEIGHT=332 BORDER=0></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><FONT SIZE=3><B><BR><BR>These were some
+examples. Basically you should be able to use a combination of
+resolution,<BR>pattern length, and BPM to get the time signature you
+need.</B></FONT></FONT></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="IMPORT"></A>&nbsp;<FONT FACE="Verdana"><B>Importing audio
+samples</B></FONT></P>
+<P><FONT FACE="Verdana"><B>You are not stuck with only the built-in
+drumkits. Electrum can also act as a sampler. </B>As of version
+1.2.0, electrum drum now has the ability to import your own audio
+samples from the sdcard.</FONT></P>
+<P><FONT FACE="Verdana"><B>NOTE: The samples can be 8 or 16 Bit,
+MONO, 22050Hz WAV files, or, normal 44100Khz, Stereo or Mono 16 bit
+files! 24bit 44100khz Stereo is also supported but android doesn't
+seem to like those files and corrupts them.</B></FONT></P>
+<P><FONT FACE="Verdana"><B>WAV samples that are 44100Khz Stereo, etc,
+will be automatically converted internally to 22050Khz, mono, 16bit
+for playback.</B></FONT></P>
+<P><FONT FACE="Verdana">I recommend using the program </FONT><A HREF="http://www.goldwave.com/"><FONT FACE="Verdana"><B>Goldwave</B></FONT></A><FONT FACE="Verdana">
+to edit an MP3 or other media file to change it into the required
+format for Electrum Drum. It has a nice batch processing feature that
+allows you to quickly change large amounts of files automatically to
+work with Electrum Drum.</FONT></P>
+<P><FONT FACE="Verdana"><B>Electrum drum will verify the format is
+correct when you go to load a sample!</B></FONT></P>
+<P><FONT FACE="Verdana">How to import audio samples:</FONT></P>
+<OL>
+	<LI><P><FONT FACE="Verdana">Make the correct format WAV file and
+	copy it to the /sdcard/electrum/samples folder on your sdcard. This
+	is where the program looks for sample WAV&rsquo;s. </FONT>
+	</P>
+	<LI><P><FONT FACE="Verdana">Run Electrum Drum, and then to load a
+	sample into a sound slot, </FONT><FONT FACE="Verdana"><B>Long Press
+	the audio slot&rsquo;s button. </B></FONT><FONT FACE="Verdana">It
+	will turn bright green when you long press it. When you release it,
+	you will get a dialog that allows you to change the name that is
+	displayed above the drum slot, and you can also use the &ldquo;Load
+	Sample&hellip;&rdquo; button to browse and load a sample WAV into
+	the slot.</FONT> 
+	</P>
+</OL>
+<P><FONT FACE="Verdana"><B>Loading a custom sample</B></FONT></P>
+<P><FONT FACE="Verdana"><U><B>Long press sound slot</B></U></FONT><FONT FACE="Verdana"><U>,</U></FONT><FONT FACE="Verdana">
+it will flash a red border. Then release the slot button and a new
+dialog will appear.</FONT>&nbsp;</P>
+<P>&nbsp;<FONT FACE="Verdana"><B>Sound slot options dialog appears</B></FONT></P>
+<P>&nbsp;<IMG SRC="Electr79.jpg" NAME="graphics26" ALIGN=BOTTOM WIDTH=480 HEIGHT=318 BORDER=0></P>
+<P><FONT FACE="Verdana">You may edit the drum&rsquo;s name (to make
+it easier to see) &ndash; limited to 8 characters. This text will
+appear over the drum button on the main screen.</FONT></P>
+<P><FONT FACE="Verdana">Press the &ldquo;<B>Load Sample..&rdquo;</B>
+button to get a new dialog which will list all samples found in the
+/sdcard/electrum/samples directory. You may also browse subfolders.</FONT></P>
+<P><IMG SRC="Electr80.jpg" NAME="graphics27" ALIGN=BOTTOM WIDTH=483 HEIGHT=329 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>Subfolders in the list will start with the
+&quot;/&quot; character, such as &quot;/goa&quot;.</B></FONT></P>
+<P><FONT FACE="Verdana">If you are in a subfolder, you may browse up
+a level by touching the <B>&quot;/\&quot; button</B>, which will
+navigate up to the parent directory.</FONT></P>
+<P><FONT FACE="Verdana">You can use the thumbwheel to scroll through
+the list of samples, and to <B>click</B> to select a sample.</FONT></P>
+<P><FONT FACE="Verdana"><B>CLICK on, or touch, a sample</B> to select
+it. When you do so, it will play the sample in the current beat so
+you can hear how it will sound.</FONT></P>
+<P><FONT FACE="Verdana">Then press <B>OK</B> to choose that sample
+and exit the dialog.</FONT></P>
+<P><FONT FACE="Verdana">Now you will have a custom sample loaded into
+that drum slot. You can also Save and Load patterns that have custom
+samples.&nbsp;</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="RECORDING"></A><FONT FACE="Verdana"><B>Recording Audio
+Samples with the Microphone</B></FONT></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana">Please note that not all devices will support
+recording! It is up to the hardware, not Electrum! If the hardware
+doesn't support it, there are NO workarounds!</FONT></P>
+<P><FONT FACE="Verdana">You can record audio using the phone's (or
+device you are running on) microphone. The recording feature allows
+you to sample an external sound up to 5 seconds long. This allows you
+for example to record a drum sample of your own, or a quote, or even
+a beat that is playing on the radio. </FONT>
+</P>
+<P><FONT FACE="Verdana"><B>You can record while the drum machine is
+playing for stuff like rapping to a beat, etc.</B></FONT></P>
+<P><FONT FACE="Verdana">To record, simply select the &quot;Record&quot;
+button in the sample slot's settings dialog:</FONT></P>
+<P><IMG SRC="Electr81.jpg" NAME="graphics28" ALIGN=BOTTOM WIDTH=485 HEIGHT=330 BORDER=0></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana">If your hardware supports it, the next dialog
+will then open:</FONT></P>
+<P><IMG SRC="Electr82.jpg" NAME="graphics29" ALIGN=BOTTOM WIDTH=480 HEIGHT=268 BORDER=0></P>
+<P><FONT FACE="Verdana">Press the &quot;Start Recording&quot; button
+to begin. The &quot;10&quot; you see on the right is a 10 second
+recording countdown.</FONT></P>
+<P><FONT FACE="Verdana">WHen you are done recording, you can play
+back the recording to see if you like it.</FONT></P>
+<P><FONT FACE="Verdana">If you choose &quot;Ok, keep it&quot;, then
+the sound will be saved into a temporary directory, and the current
+sound slot will be assigned that sound.</FONT></P>
+<P><FONT FACE="Verdana">That's pretty much it to recording! Recorded
+sounds get saved to the SDCARD. See the section about &quot;File save
+locations&quot; near the end of this document, as to the exact
+location that recordings go to.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P><BR><BR>
+</P>
+<P><A NAME="RETRIG"></A><FONT FACE="Verdana"><B>Sample Retrigger</B></FONT>&nbsp;</P>
+<P><FONT FACE="Verdana">Sample Retrigger sets whether a sample
+&ldquo;starts over&rdquo; again as soon as it hits another programmed
+slot. For example, if you have a 4 bar loop, and you programmed it to
+start at the first slot, at each measure (1 bar), the loop would
+&ldquo;retrigger&rdquo;, starting over. This would only then play 1
+bar of the loop.</FONT></P>
+<P><FONT FACE="Verdana">If you have a sound or loop that is longer
+than 1 bar, you can turn Retrig OFF, and the sample will not be
+allowed to retrigger until it's played all the way through first.</FONT></P>
+<P><FONT FACE="Verdana">This is very useful for loading loops to a
+pad, because now a single pattern can play a loop as long as you want
+with only having to trigger it once at the beginning of the measure
+(1</FONT><SUP><FONT FACE="Verdana">st</FONT></SUP><FONT FACE="Verdana">
+slot).</FONT></P>
+<P><IMG SRC="ElectrumHelp_htm_m1da6d26c.gif" NAME="graphics52" ALIGN=LEFT WIDTH=530 HEIGHT=353 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P><BR><BR>
+</P>
+<P><A NAME="VOLUME"></A><FONT FACE="Verdana"><B>Setting audio sample
+volume&nbsp;</B></FONT> <FONT FACE="Verdana"><B>and pitch</B></FONT></P>
+<P><FONT FACE="Verdana"><B>Note: You can also set sample volume using
+the <A HREF="#MIXER">MIXER</A>!</B></FONT></P>
+<P><FONT FACE="Verdana">Once you Long press a sound slot (see the
+help section about loading your own audio samples) the dialog that
+appears will have two knobs, one for adjusting the volume and the
+other for the sample length.&nbsp;You can adjust these settings even
+while the sound is playing. There will of course be a small delay
+between adjusting the setting and hearing the change, because of the
+small audio buffer (around 1 or 2 seconds length audio buffer)</FONT></P>
+<P><IMG SRC="Electr83.jpg" NAME="graphics30" ALIGN=BOTTOM WIDTH=478 HEIGHT=319 BORDER=0>&nbsp;</P>
+<P><FONT FACE="Verdana">Simply touch the knob and continue to push
+down while sliding your finger up / down to spin the knob. Up turns
+the knob clockwise (value up), Down turns it counterclockwise (value
+down). The knob will turn red when it has the current focus.</FONT></P>
+<P><A NAME="PITCH"></A>&nbsp;<FONT FACE="Verdana">You can set the
+sample's pitch by using the pitch up/down buttons:</FONT></P>
+<P><FONT FACE="Verdana">The Pitch adjustment allows you to move the
+pitch of the sample in semitone steps. You can go all the way to down
+one whole octave, to up to one whole octave. So you have 24 steps in
+total (12 down, and 12 up).</FONT></P>
+<P><FONT FACE="Verdana"><B>NOTE: The pitch change may not be 100%
+musically accurate, but it should be very very close.</B></FONT></P>
+<P><FONT FACE="Verdana">Once you have the volume and pitch the way
+you want, simply press OK.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">Volume and pitch settings also get saved with
+the pattern when you save.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="EDITSAMPLE"></A><FONT FACE="Verdana"><B>Editing the
+sample WAV (start/end points)</B></FONT></P>
+<P><FONT FACE="Verdana">You can also now edit the start and end
+points for a sample by using the WAV editor screen.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">This screen will appear when you tap the WAV
+display on the Drum Slot settings dialog</FONT></P>
+<P><IMG SRC="Electr84.jpg" NAME="graphics31" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">When you tap this area, upon release, a new
+dialog will appear which allows you to edit the sample.</FONT></P>
+<P><IMG SRC="Electr85.jpg" NAME="graphics32" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">You can move back and forth thru the sample
+by pressing down on the waveform and moving your finger (click and
+drag).</FONT></P>
+<P><FONT FACE="Verdana">Zoom in and out using the Zoom buttons.</FONT></P>
+<P><FONT FACE="Verdana">To set the sample's start point, press the
+&quot;Set Start Point&quot; button, and then click and drag on the
+waveform to move the start point.</FONT></P>
+<P><IMG SRC="Electr86.jpg" NAME="graphics33" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">You can then set the end point the same way
+using the same method.</FONT></P>
+<P><FONT FACE="Verdana"><B>Note: if you have picked up your finger,
+you will have to press the button again to move the start or end
+points.</B></FONT></P>
+<P><FONT FACE="Verdana">Once you have selected the region you think
+you want, then press the &quot;Apply/Preview&quot; button.</FONT></P>
+<P><IMG SRC="Electr87.jpg" NAME="graphics34" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">If the machine is currently running, it will
+apply the settings to the sample and you will hear them the next time
+the sample is played. If the machine is NOT running, it will play the
+sample by itself with the modifications so you can hear it.</FONT></P>
+<P><FONT FACE="Verdana">To exit the dialog simply press your phone's
+back button. The sample settings will remain. Another nice feature is
+that if you later wish to change the pitch of the sample, doing so
+will not harm your sample selection. Electrum will recalculate the
+proper start/end points to match the new pitch change!</FONT></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="BPM"></A><FONT FACE="Verdana"><B>Loop fit BPM Setting</B></FONT></P>
+<P><FONT FACE="Verdana">Loop Fit is a feature that shrinks/stretches
+the sound sample to fit the current BPM. This allows you to load a
+loop and fit it to your current project.</FONT></P>
+<P><FONT FACE="Verdana"><B>Note: Loop Fit resamples the sound to fit
+the BPM. The pitch WILL change! It does not retain pitch at this
+time. (However, I've found that it's nice to have it change pitch, it
+gives you more variety)</B></FONT></P>
+<P><FONT FACE="Verdana"><B>In order for Electrum Drum to change the
+sample's BPM, it needs to know what it is first - the sample's
+filename needs to have it's BPM in the name in the following format:</B></FONT></P>
+<P><FONT FACE="Verdana"><B>&lt;samplename&gt;_&lt;bpm&gt;_&lt;rest of
+name&gt;</B></FONT></P>
+<P><FONT FACE="Verdana">So basically if you just add a string &quot;_&lt;bpm
+goes here&gt;_&quot; to a sample's filename, now the program will be
+able to see what BPM the loop is and be able to stretch/shrink the
+sample to fit the current BPM.</FONT></P>
+<P><FONT FACE="Verdana"><B>So as an example you could take
+&quot;MyLoop.wav&quot;, and it would then say &quot;MyLoop_126_.wav&quot;.
+If there are more than one _XXX_ text in a filename, the first one is
+used as the BPM.</B></FONT></P>
+<P><FONT FACE="Verdana">One you have loaded an audio sample you can
+check the option in the Sound Slot dialog, to fit it to the current
+BPM:</FONT></P>
+<P><IMG SRC="Electr88.jpg" NAME="graphics35" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">This setting will remain in effect as long as
+it's checked. If you change the project's BPM, it will re-adjust all
+sounds that have the set to once again make them fit the current
+project BPM.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="LAYERING"></A><FONT FACE="Verdana"><B>Layering loops on
+each other (How to use more than 8 sounds)&nbsp;</B></FONT></P>
+<P><FONT FACE="Verdana">On of the big benefits of allowing sample
+loading is you can overcome the 8 sound limit by doing a &ldquo;mixdown&rdquo;
+of a drum pattern and then loading it up as a custom sample.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana"><B>Note: It is not advisable to try to load a
+very long exported song as a sample. It's better to just use shorter
+loops. A song will take up a lot of memory and will probably not be
+able to load and instead cause an error. Programs on the android
+platform are only allowed to load up to 16MB of data (some devices
+allow up to 24MB). A song could easily reach that in only 1 minute
+length.</B></FONT></P>
+<P><FONT FACE="Verdana">For example, you could make a drum loop with
+the 909 drumkit. Then you use &ldquo;Export&rdquo; to export the drum
+loop into the /sdcard/electrum/exported folder as a WAV file.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">You may now reset your drum machine and long
+press a sound slot, and then choose the &ldquo;Load Sample..&rdquo;
+button to load a custom sample into that drum slot.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">When the list of samples dialog appears,
+click the drop down selection box to select &ldquo;Exported&rdquo;
+&nbsp;and it will now instead list the exported loops that you have
+created.&nbsp;</FONT></P>
+<P><IMG SRC="Electr11.jpg" NAME="graphics36" ALIGN=BOTTOM WIDTH=468 HEIGHT=283 BORDER=0>&nbsp;</P>
+<P><FONT FACE="Verdana">As a further example, if you set the custom
+sample of the very first drum to a loop you have already made:&nbsp;</FONT></P>
+<P><IMG SRC="Electr37.jpg" NAME="graphics37" ALIGN=BOTTOM WIDTH=481 HEIGHT=294 BORDER=0>&nbsp;</P>
+<P><FONT FACE="Verdana">Then you can then simply set it to play on
+the very first pattern button, and the loop will play and sound just
+as it did before. The only limitation is that <B>you must have the
+SAME BPM </B>as the loop you imported as a custom sample, so you can
+match up with it.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">ince now one sound slot has a pre-mixed beat,
+you now have freed up the other 5 slots for new sounds that you can
+put over that beat.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">You can continue this process as much as you
+want, creating a thicker and thicker beat. Simply keep exporting the
+beat and then bringing it back in as a custom sample for the first
+drum.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="FX"></A><FONT FACE="Verdana"><B>FX</B></FONT></P>
+<P><FONT FACE="Verdana">Electrum has FX which you can apply to a
+sound on a pad. </FONT>
+</P>
+<P><FONT FACE="Verdana"><B>The FX in electrum are &quot;static&quot;.
+They are not meant to be used real time. An effect will be applied to
+entire sample at once. Although you can adjust them while playing,
+there will be stutters in playback while adjusting, etc, since the
+entire sample is adjusted at once. The FX are more meant to modify
+samples and then leave it.</B></FONT></P>
+<P><FONT FACE="Verdana">Fx are applied by clicking the DLY or DIST
+button on the drum sample adjustment dialog.</FONT></P>
+<P>&nbsp;</P>
+<P><IMG SRC="Electr100.jpg" NAME="graphics38" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><U>Reverse effect: </U></FONT>
+</P>
+<P><FONT FACE="Verdana">Reverse the sample for some variety in the
+sound</FONT></P>
+<P><FONT FACE="Verdana">Reverse is just a toggle on / off. Press to
+turn on, again to turn reverse off.</FONT></P>
+<P><IMG SRC="Electr106.jpg" NAME="graphics39" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><U>Delay effect: </U></FONT>
+</P>
+<P><FONT FACE="Verdana">Conventional echo type delay with feedback.</FONT></P>
+<P><FONT FACE="Verdana">Delay on/off - turns the delay on or off<BR>Wrap
+Delay - if a delay goes on longer than the original sample length,
+wrap the delay around to the beginning of the sample. Useful for
+loops.<BR>Delay Time&nbsp;&nbsp;&nbsp; - The time in milliseconds of
+delay. TO THE RIGHT is longer time. Makes the &quot;echos&quot;
+farther apart.<BR>Feedback&nbsp;&nbsp;&nbsp; - The amount of repeats.
+To the RIGHT is higher feedback. The more feedback, the longer the
+echos last.</FONT></P>
+<P><FONT FACE="Verdana">When you adjust a slider, after you &quot;let
+up&quot; your finger, the delay will be applied and you can then hear
+it</FONT></P>
+<P><IMG SRC="Electr104.jpg" NAME="graphics40" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0>&nbsp;</P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><U>Distortion effect:</U></FONT></P>
+<P><FONT FACE="Verdana">Foldback distortion effect. Works great on
+basslines and drums!</FONT></P>
+<P><FONT FACE="Verdana">Distortion On - Turns the distortion setting
+on or off<BR>Distortion Threshold - The threshold of signal before
+distortion activates. TO THE LEFT is lower threshold, which means
+HIGHER DISTORTION.<BR>Post Gain - Foldback distortion cuts down on
+the amount of signal, this gain restores the sample volume to a more
+normal level. To the RIGHT is HIGHER gain.<BR>&nbsp;</FONT></P>
+<P><IMG SRC="Electr99.jpg" NAME="graphics41" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><BR><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="SAVE"></A><B><FONT FACE="Verdana">Saving and Loading</FONT>
+<FONT FACE="Verdana">Patches</FONT></B></P>
+<P><FONT FACE="Verdana">You can use the menu button to bring up the
+program&rsquo;s menu for various options. The Save and Load options
+are under the &ldquo;More..&rdquo;. option.</FONT></P>
+<P>&nbsp;<FONT FACE="Verdana">When Electrum Drum starts, it creates a
+folder called &ldquo;electrum&rdquo; and a subfolder to that called
+&ldquo;patterns&rdquo;, on your sdcard. Saved patterns are stored to
+the &ldquo;patterns&rdquo; folder.</FONT></P>
+<P><FONT FACE="Verdana">When you choose to save a pattern, a screen
+will appear asking you to name it.</FONT></P>
+<P>&nbsp;<IMG SRC="Electr89.jpg" NAME="graphics42" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">Simply enter a name and press OK and the
+pattern will be saved to the &ldquo;patterns&rdquo; folder.</FONT></P>
+<P><A NAME="SAVE1"></A><FONT FACE="Verdana"><B>How to save to a
+subfolder:</B></FONT></P>
+<P><A NAME="SAVE2"></A><FONT FACE="Verdana">You may want to organize
+your patterns to make them easier to find in the future. You can save
+a pattern into a subfolder simply by entering a subfolder name; for
+example, to save a pattern named &quot;mybeat.pat&quot; into a folder
+called &quot;testing&quot;, simply input the following text in the
+save dialog:</FONT></P>
+<P><A NAME="SAVE3"></A><FONT FACE="Verdana">/testing/mybeat</FONT></P>
+<P><A NAME="SAVE4"></A><FONT FACE="Verdana">The file extension
+(&quot;.pat&quot;) is added automatically.</FONT></P>
+<P><FONT FACE="Verdana">Like so:</FONT></P>
+<P><IMG SRC="Electr96.jpg" NAME="graphics43" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">Loading gives you a simple list of the
+available patterns in the patterns folder. You can also browse into
+subfolders from the loading screen, to find the pattern you want.&nbsp;</FONT></P>
+<P><IMG SRC="Electr90.jpg" NAME="graphics44" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>C</B></FONT><FONT FACE="Verdana">lick on,
+or touch, the pattern you want to load, and then press OK.</FONT></P>
+<P><FONT FACE="Verdana">When you load a pattern, if it was using
+custom sounds then these will also be loaded. However, if those
+sounds no longer exist on the card, you will either get a message
+stating that a sound failed to load, or the slot will be marked
+&ldquo;Empty&rdquo; if some other error occurs when trying to load
+the custom sample audio file.</FONT></P>
+<P><FONT FACE="Verdana">All other options are available thru the
+menu, such as the ability to change the BPM&rsquo;s and the
+resolution of the beat, as well as loading different drumkits.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="KITS"></A><FONT FACE="Verdana"><B>Saving and Loading
+Drumkits</B></FONT></P>
+<P><FONT FACE="Verdana">Starting in Electrum 3.7.0 you can now save
+and load drumkits. A drumkit will store all information about each
+sound on each pad (pitch, start/end point, etc) into a *.kit file.
+This allows you to program a pattern and load different kits into it
+for experimentation.</FONT></P>
+<P><FONT FACE="Verdana">To save a drumkit use the &quot;Menu-&gt;More-&gt;Save
+Drumkit&quot;</FONT></P>
+<P><IMG SRC="Electr91.jpg" NAME="graphics45" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana">Just as in other save operations a new dialog
+will appear that allows you to enter a name of the drumkit. If you
+want to save to a subfolder simply append the folder name to the
+front of the filename (So to save &quot;mykit&quot; to a folder,
+simply type in &lt;foldername&gt;/mykit)</FONT></P>
+<P><IMG SRC="Electr92.jpg" NAME="graphics46" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana"><B>To load a drumkit </B>simply use the
+&quot;Menu-&gt;More-&gt;Load Drumkit&quot; and a new dialog will
+appear allowing you to browse through the kits available and select
+one.</FONT></P>
+<P><IMG SRC="Electr93.jpg" NAME="graphics47" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="EXPORTING"></A><FONT FACE="Verdana"><B>Exporting WAV</B></FONT></P>
+<P><FONT FACE="Verdana">You can export a pattern&rsquo;s WAV file by
+using the Menu button, going to &ldquo;More..&rdquo;, and choosing
+&ldquo;Export&rdquo;, and then choosing &quot;Export WAV (Loop)&quot;
+or &quot;Export WAV (Song)&quot;.&nbsp; You can then name the file
+what you want first, and when you choose OK the pattern will be
+generated and put in the /sdcard/electrum/exported folder, as an 16
+bit Mono 22050hz WAV file.<BR><BR>You can also save to subfolders, by
+using the same technique mentioned above in the text of how to save&nbsp;
+a pattern file to a subfolder.</FONT></P>
+<P><IMG SRC="Electr94.jpg" NAME="graphics48" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P>&nbsp;</P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="MIDI"></A><FONT FACE="Verdana"><B>Exporting MIDI data</B></FONT></P>
+<P><FONT FACE="Verdana">Electrum can also export MIDI data, enabling
+you to take a project and bring it into your PC's DAW at a later time
+to continue working.</FONT></P>
+<P><FONT FACE="Verdana"><B>You simply use the
+&quot;Menu-&gt;More...-&gt;Export-&gt;&quot; and then choose &quot;Export
+MIDI (Loop)&quot; or &quot;Export MIDI (Song)&quot; options.</B></FONT></P>
+<P><FONT FACE="Verdana">The export dialog will then appear, allowing
+you to enter a name for the MIDI file. You may use subfolders as well
+by typing the name of the folder first, such as
+&quot;/testing/mymidifile.mid&quot;</FONT></P>
+<P><FONT FACE="Verdana"><B>The .mid file extension is added
+automatically.</B></FONT></P>
+<P><IMG SRC="Electr94.jpg" NAME="graphics49" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">You can then load this MIDI file unto your
+PC/MAC and into the DAW of your choosing. It's a format 1 MIDI file,
+with each PAD in its own track.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="EXPORTINGPADS"></A><FONT FACE="Verdana"><B>Exporting
+sample pads</B></FONT></P>
+<P><FONT FACE="Verdana">You can export all the pad sounds into a
+subfolder, which allows you to also bring the modified sounds into an
+external DAW or sequencer.&nbsp;</FONT></P>
+<P><FONT FACE="Verdana">When you save the pad sounds, the start/end
+points and pitch will all be applied to the sound and it will be
+ready to use. If you use the sounds along with a MIDI sequence you
+should be able to completely recreate your pattern and sound in an
+external program and work with it from there!</FONT></P>
+<P><FONT FACE="Verdana"><B>To export Pad sounds, use
+&quot;Menu-&gt;More..-&gt;Export-&gt;Export Pad sounds&quot;.&nbsp;</B></FONT></P>
+<P><FONT FACE="Verdana">You will then get the export dialog</FONT></P>
+<P><FONT FACE="Verdana"><B>In this dialog, type in a name for the
+folder to put the sounds into. You MAY NOT use subfolders in this
+case!</B></FONT></P>
+<P><IMG SRC="Electr95.jpg" NAME="graphics50" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0></P>
+<P><FONT FACE="Verdana">The sounds will then be exported into that
+folder. See below (File locations for exported data) for the location
+that they go</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="LOCATIONS"></A><FONT FACE="Verdana"><B>File locations for
+exported data</B></FONT></P>
+<P><FONT FACE="Verdana">Here's a list of the file locations where
+Electrum outputs exported items:</FONT></P>
+<P><FONT FACE="Verdana"><B>Please note that &lt;user chosen folder&gt;
+is always optional EXCEPT for PADS.</B></FONT></P>
+<P><FONT FACE="Verdana">WAVS: /sdcard/electrum/exported/&lt;user
+chosen folder&gt;/wav file<BR><BR>MIDI :
+/sdcard/electrum/exported/midi/&lt;user chosen folder&gt;/midi
+file<BR><BR>PADS: /sdcard/electrum/exported/bouncedpads/&lt;user
+chosen folder&gt;/&lt;pad WAV files go here&gt;<BR><BR>PATTERNS:
+/sdcard/electrum/patterns/&lt;user chosen
+folder&gt;/pattern<BR><BR>RECORDINGS:<BR>Temporary recordings go to
+/sdcard/electrum/temprecord/&lt;wav file name&gt; They are named the
+the same name as the drum name, with *.wav extension added.<BR>Saved
+recorded sounds (when you save a pattern that has a recorded sound in
+it) go to /sdcard/electrum/samples/recordings/&lt;saved pattern
+name&gt;/&lt;drum name&gt;.wav</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="PERFORMANCE"></A><FONT FACE="Verdana"><B>Performance on
+your device</B></FONT></P>
+<P><FONT FACE="Verdana">Just like music software on the PC, the
+performance of Electrum such as the ability to playback without
+gapping or skipping, or other audio glitches, is entirely dependent
+on two things:</FONT></P>
+<P><FONT FACE="Verdana">1. How many sounds you are trying to use at
+once.<BR>2. The CPU power of your device.</FONT></P>
+<P><FONT FACE="Verdana">An older device may have trouble playing all
+8 sounds at once especially if they are all loops. It just won't have
+the CPU power for it. </FONT>
+</P>
+<P><FONT FACE="Verdana"><B>Audio Thread Priority</B></FONT></P>
+<P><FONT FACE="Verdana"><B>If you have any gapping or stuttering, try
+adjusting this setting to see if it helps</B></FONT></P>
+<P><IMG SRC="Electr105.jpg" NAME="graphics51" ALIGN=BOTTOM WIDTH=75 HEIGHT=38 BORDER=0><BR><BR><FONT FACE="Verdana">This
+setting can be found in the Menu-&gt;BPM/Res/Patt Len menu item. If
+you have audio glitches you can try to turn this ON and see if it
+helps. This setting will raise priority on the Audio generating
+thread to help prevent any glitches in the playback stream. </FONT>
+</P>
+<P><FONT FACE="Verdana"><B>Some devices work better with the high
+priority turned off! Try it both ways!</B></FONT></P>
+<P><FONT FACE="Verdana">The only way to ensure good performance is to
+either get a higher power device, or use less sounds as once and do
+mixdowns if you want thicker beats. See Layering <A HREF="#LAYERING">here</A>.</FONT></P>
+<P><A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><A NAME="FAQ"></A><B><FONT FACE="Verdana">FAQ</FONT>&nbsp;</B></P>
+<P><FONT FACE="Verdana"><B>Q: What WAV file formats does Electrum
+support?</B></FONT></P>
+<P><FONT FACE="Verdana"><B>A: </B></FONT><FONT FACE="Verdana">You can
+load 22050Khz, mono, 8 or 16 bit files, OR you can now also load
+&quot;normal&quot; wav's which are 44100Khz, Stereo or Mono, 16bit.
+Electrum will internally convert the 44100Khz files into 22050Khz,
+mono 16 bit.</FONT></P>
+<P><FONT FACE="Verdana"><B>Q: When I load a sample all I hear is
+static !??</B></FONT></P>
+<P><FONT FACE="Verdana"><B>A: </B></FONT><FONT FACE="Verdana">Check
+that the sample is not 24bit. While I coded electrum with the ability
+to load 24bit files, android doesn't like them and all you get is
+static (it seems to corrupt the file). Also on some custom ROMS I've
+heard reports of static too - don't know why in that case but it may
+be a similar problem.</FONT></P>
+<P><FONT FACE="Verdana"><B>Q: How can I get new drumkits?</B></FONT></P>
+<P><FONT FACE="Verdana"><B>A: </B></FONT><FONT FACE="Verdana">There
+are 6 drumkits built into the program. If you want more sounds you
+can now load custom samples into the drum machine. See the help
+section about importing audio. Also check on the market for custom
+sound kits that you can download and install.</FONT></P>
+<P><FONT FACE="Verdana"><B>Q: Why is my sound distorted at times?</B></FONT></P>
+<P><FONT FACE="Verdana"><B>A: </B></FONT><FONT FACE="Verdana">Sounds
+can only be set to a certain maximum value when they are in a digital
+format. If the sounds are turned up too loud, the software cuts the
+signal off at maximum value. This will cause some artifacts which are
+heard as distortion. Turn one or more of the sounds down (or turn
+down the global volume) until the distortion goes away. I plan on
+trying to add a soft knee limiter to the code eventually once I
+figure out how to write it!</FONT></P>
+<P><FONT FACE="Verdana"><B>Q: Why does the program sometimes seem to
+&quot;stutter&quot; or &ldquo;gap&rdquo; if I try to change the
+pattern on the fly or try to load many sounds?</B></FONT></P>
+<P><FONT FACE="Verdana"><B>A: </B></FONT><FONT FACE="Verdana">Electrum
+is programmed about 90% in java code, which requires a good
+processor. Android 2.2 is even more efficient and will perform very
+well because of a JIT. On older phones, if the processor gets too
+busy, it may not be able to keep the audio buffer full enough to keep
+the music playing without breaking up.</FONT></P>
+<P>&nbsp;</P>
+<P>&nbsp;<A HREF="#TOP"><FONT FACE="Verdana">Back to top</FONT></A></P>
+<P>&nbsp;</P>
+<P><FONT FACE="Verdana"><B>Thank you for using Electrum Drum!</B></FONT></P>
+<P>&nbsp;</P>
+<P STYLE="margin-bottom: 0in">&nbsp;</P>
+</BODY>
+</HTML>

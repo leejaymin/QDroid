@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="8" android:versionName="1.7" package="com.mosaicture"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name=".view.BaseApp">
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.Eula" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.ScanLibraryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.MosaictureActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.TabSettingsActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.TabMosaictureActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.TabGalleryActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.MosaicViewerOneHandActivity" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.MosaicViewerPinchActivity" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.MosaicViewerProgressActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".crop.CropImage" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.FolderViewActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.Main" android:label="@string/app_name" android:name=".view.HelpActivity" android:screenOrientation="portrait" />
+    </application>
+</manifest>

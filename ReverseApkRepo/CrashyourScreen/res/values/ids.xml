@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="info">false</item>
+    <item type="id" name="main_view">false</item>
+    <item type="id" name="blog">false</item>
+    <item type="id" name="about">false</item>
+    <item type="id" name="exit">false</item>
+</resources>

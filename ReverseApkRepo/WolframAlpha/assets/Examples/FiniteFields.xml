@@ -1,0 +1,1 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Finite Fields</category><section-title>Finite Fields</section-title><caption>compute properties of a finite field</caption><input>Z/7Z</input><input>GF(8)</input><input>GF(101)</input><caption>compute a specific property</caption><input>number of primitive polynomials of GF(3125)</input></example>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="drawable" name="icon_48" id="0x7f020001" />
+    <public type="drawable" name="list_mode" id="0x7f020002" />
+    <public type="drawable" name="shop_mode" id="0x7f020003" />
+    <public type="layout" name="dialog_confirm" id="0x7f030000" />
+    <public type="layout" name="dialog_edit" id="0x7f030001" />
+    <public type="layout" name="shoppinglist_item" id="0x7f030002" />
+    <public type="layout" name="trolly" id="0x7f030003" />
+    <public type="xml" name="preferences" id="0x7f040000" />
+    <public type="array" name="sort_order" id="0x7f050000" />
+    <public type="array" name="sort_order_values" id="0x7f050001" />
+    <public type="color" name="gray_text" id="0x7f060000" />
+    <public type="color" name="red_text" id="0x7f060001" />
+    <public type="string" name="app_name" id="0x7f070000" />
+    <public type="string" name="shopping_button" id="0x7f070001" />
+    <public type="string" name="listing_button" id="0x7f070002" />
+    <public type="string" name="empty_list" id="0x7f070003" />
+    <public type="string" name="add" id="0x7f070004" />
+    <public type="string" name="add_hint" id="0x7f070005" />
+    <public type="string" name="checkout" id="0x7f070006" />
+    <public type="string" name="dialog_ok" id="0x7f070007" />
+    <public type="string" name="dialog_cancel" id="0x7f070008" />
+    <public type="string" name="delete_item" id="0x7f070009" />
+    <public type="string" name="edit_item" id="0x7f07000a" />
+    <public type="string" name="move_on_list" id="0x7f07000b" />
+    <public type="string" name="move_off_list" id="0x7f07000c" />
+    <public type="string" name="move_in_trolley" id="0x7f07000d" />
+    <public type="string" name="key_sort_list" id="0x7f07000e" />
+    <public type="string" name="key_sort_shop" id="0x7f07000f" />
+    <public type="string" name="preferences" id="0x7f070010" />
+    <public type="string" name="clear_list" id="0x7f070011" />
+    <public type="string" name="clear_prompt" id="0x7f070012" />
+    <public type="string" name="reset_list" id="0x7f070013" />
+    <public type="string" name="reset_prompt" id="0x7f070014" />
+    <public type="id" name="dialog_confirm_prompt" id="0x7f080000" />
+    <public type="id" name="edit" id="0x7f080001" />
+    <public type="id" name="item" id="0x7f080002" />
+    <public type="id" name="btn_add" id="0x7f080003" />
+    <public type="id" name="textbox" id="0x7f080004" />
+</resources>

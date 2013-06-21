@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Apperance60">
+        <item name="android:textSize">60.0dip</item>
+    </style>
+    <style name="Apperance45">
+        <item name="android:textSize">45.0dip</item>
+    </style>
+    <style name="Apperance30">
+        <item name="android:textSize">30.0dip</item>
+    </style>
+    <style name="Apperance20">
+        <item name="android:textSize">20.0dip</item>
+    </style>
+    <style name="Apperance18">
+        <item name="android:textSize">18.0dip</item>
+    </style>
+    <style name="Button.Light" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/btn_default_light</item>
+        <item name="android:background">@drawable/btn_default_light</item>
+    </style>
+    <style name="ImageButton.Light" parent="@android:style/Widget.ImageButton">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/btn_default_light</item>
+    </style>
+    <style name="ListView.Light" parent="@android:style/Widget.ListView">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="EditText.Light" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/edit_text_light</item>
+    </style>
+    <style name="Spinner.Light" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_light</item>
+    </style>
+    <style name="Button.Contrast" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_default_contrast</item>
+    </style>
+    <style name="ImageButton.Contrast" parent="@android:style/Widget.ImageButton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_default_contrast</item>
+    </style>
+    <style name="ListView.Contrast" parent="@android:style/Widget.ListView" />
+    <style name="EditText.Contrast" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/edit_text_contrast</item>
+    </style>
+    <style name="Spinner.Contrast" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_contrast</item>
+    </style>
+    <style name="Button.Blue" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_default_blue</item>
+    </style>
+    <style name="ImageButton.Blue" parent="@android:style/Widget.ImageButton">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_default_blue</item>
+    </style>
+    <style name="EditText.Blue" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/edit_text_contrast</item>
+    </style>
+    <style name="Spinner.Blue" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/spinner_blue</item>
+    </style>
+    <style name="BLTheme.Basic" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:textAppearanceLarge">@style/Apperance30</item>
+        <item name="android:textAppearanceMedium">@style/Apperance30</item>
+        <item name="android:textAppearanceSmall">@style/Apperance20</item>
+        <item name="android:textColorLink">#ff0000ff</item>
+        <item name="listDividerColor">#ff000000</item>
+    </style>
+    <style name="BLTheme.Light" parent="@style/BLTheme.Basic">
+        <item name="android:buttonStyle">@style/Button.Light</item>
+        <item name="android:editTextStyle">@style/EditText.Light</item>
+        <item name="android:imageButtonStyle">@style/ImageButton.Light</item>
+        <item name="android:listViewStyle">@style/ListView.Light</item>
+        <item name="android:spinnerStyle">@style/Spinner.Light</item>
+        <item name="buttonBackgroundSrc">@drawable/btn_default_light</item>
+        <item name="buttonColor">#ff000000</item>
+        <item name="buttonInformationalBackgroundSrc">@drawable/btn_informational_light</item>
+        <item name="buttonInformationalColor">#ffffffff</item>
+        <item name="noIconSrc">@drawable/icon_no_icon_light</item>
+        <item name="noPhotoIconSrc">@drawable/icon_no_photo_light</item>
+        <item name="demoDeniedIconSrc">@drawable/demo_button_denied_light</item>
+        <item name="preferencesSettingsIconSrc">@drawable/preferences_settings_light</item>
+        <item name="preferencesSystemSettingsIconSrc">@drawable/preferences_system_settings_light</item>
+        <item name="homeHeaderBackgroundSrc">@drawable/btn_home_light</item>
+        <item name="homeHeaderBackgroundBorderSrc">@drawable/btn_home_border_light</item>
+        <item name="homeHeaderColor">#ff000000</item>
+        <item name="homeMissedBackgroundSrc">@drawable/btn_default_missed_light</item>
+        <item name="homeAlarmIconSrc">@drawable/home_alarm_light</item>
+        <item name="homePhoneIconSrc">@drawable/home_phone_light</item>
+        <item name="homePhoneMissedIconSrc">@drawable/home_phone_missed_light</item>
+        <item name="homeMessagesIconSrc">@drawable/home_message_light</item>
+        <item name="homeMessagesUnreadIconSrc">@drawable/home_message_missed_light</item>
+        <item name="homeCameraIconSrc">@drawable/home_camera_light</item>
+        <item name="homeGalleryIconSrc">@drawable/home_gallery_light</item>
+        <item name="homeSosIconSrc">@drawable/home_sos_light</item>
+        <item name="homeApplicationsIconSrc">@drawable/home_applications_light</item>
+        <item name="homeApplicationsTableIconSrc">@drawable/home_applications_table_light</item>
+        <item name="phoneContactsIconSrc">@drawable/phone_contacts_light</item>
+        <item name="phoneDialIconSrc">@drawable/phone_dial_light</item>
+        <item name="phoneAddContactIconSrc">@drawable/phone_add_contact_light</item>
+        <item name="phoneMyFavouritesIconSrc">@drawable/phone_favourites_light</item>
+        <item name="phoneIncomingIconSrc">@drawable/phone_incoming_light</item>
+        <item name="phoneOutgoingIconSrc">@drawable/phone_outgoing_light</item>
+        <item name="phoneMissedIconSrc">@drawable/phone_missed_light</item>
+        <item name="messagesWriteNewIconSrc">@drawable/messages_mail_light</item>
+        <item name="messagesNoPhotoIconSrc">@drawable/messages_no_photo_light</item>
+        <item name="sosCallIconSrc">@drawable/sos_call_light</item>
+        <item name="sosSendMessageIconSrc">@drawable/sos_sms_light</item>
+        <item name="sosCancelIconSrc">@drawable/sos_cancel_light</item>
+        <item name="calllogCallIconSrc">@drawable/contact_call_light</item>
+        <item name="calllogDurationIconSrc">@drawable/calllog_duration_light</item>
+        <item name="calllogDurationColor">#ff626262</item>
+        <item name="applicationsToggleIconSrc">@drawable/applications_toggle_light</item>
+        <item name="applicationsNoApplicationSelectIconSrc">@drawable/contact_delete_light</item>
+        <item name="contactCallIconSrc">@drawable/contact_call_light</item>
+        <item name="contactEditIconSrc">@drawable/contact_edit_light</item>
+        <item name="contactMoreIconSrc">@drawable/contact_more_light</item>
+        <item name="contactMessageIconSrc">@drawable/contact_message_light</item>
+        <item name="contactDeleteIconSrc">@drawable/contact_delete_light</item>
+        <item name="messageWriteNewIconSrc">@drawable/messages_mail_light</item>
+        <item name="messageSentBackgroundSrc">@drawable/btn_message_sent_light</item>
+        <item name="messageReceivedBackgroundSrc">@drawable/btn_message_received_light</item>
+        <item name="messageSentColor">#ff000000</item>
+        <item name="messageReceivedColor">#ff000000</item>
+        <item name="messageDateColor">#ff535353</item>
+        <item name="messageSentNoneIconSrc">@drawable/message_sent_none_light</item>
+        <item name="messageSentPendingIconSrc">@drawable/message_sent_pending_light</item>
+        <item name="messageSentDeliveredIconSrc">@drawable/message_sent_delivered_light</item>
+        <item name="messageSentErrorIconSrc">@drawable/message_sent_error_light</item>
+        <item name="messageReceivedIconSrc">@drawable/message_received_light</item>
+        <item name="messageDeleteIconSrc">@drawable/contact_delete_light</item>
+        <item name="messageClipboardIconSrc">@drawable/message_clipboard_light</item>
+        <item name="messageForwardIconSrc">@drawable/message_forward_light</item>
+        <item name="wizardOkIconSrc">@drawable/wizard_ok_light</item>
+        <item name="wizardCancelIconSrc">@drawable/wizard_cancel_light</item>
+        <item name="screenCreate">@drawable/screen_create_light</item>
+        <item name="screenDelete">@drawable/screen_delete_light</item>
+        <item name="screenConfigure">@drawable/screen_configure_light</item>
+        <item name="screenSetupAddScreen">@drawable/screens_setup_add_screen_light</item>
+        <item name="screenSetupLinkScreens">@drawable/screens_setup_link_all_light</item>
+        <item name="screenAppearanceSetButtons">@drawable/screen_appearance_set_buttons_light</item>
+        <item name="screenAppearanceSetName">@drawable/screen_appearance_set_name_light</item>
+        <item name="screenAppearanceSetIcon">@drawable/screen_appearance_set_icon_light</item>
+        <item name="screenAppearanceSetBackground">@drawable/screen_appearance_set_bck_light</item>
+        <item name="screenAppearanceClearBackground">@drawable/screen_appearance_clear_bck_light</item>
+        <item name="screenAppearanceDelete">@drawable/screen_appearance_delete_light</item>
+        <item name="functionalityClearIconSrc">@drawable/screen_action_clear_light</item>
+        <item name="functionalityApplicationIconSrc">@drawable/screen_action_select_app_light</item>
+        <item name="functionalityApplicationsIconSrc">@drawable/screen_action_applications_light</item>
+        <item name="functionalityIconIconSrc">@drawable/screen_action_select_icon_light</item>
+        <item name="functionalityContactIconSrc">@drawable/screen_action_select_contact_light</item>
+        <item name="functionalityGotoScreenIconSrc">@drawable/screen_action_goto_screen_light</item>
+    </style>
+    <style name="BLTheme.Light.Bigger" parent="@style/BLTheme.Light">
+        <item name="android:textAppearanceLarge">@style/Apperance45</item>
+        <item name="android:textAppearanceMedium">@style/Apperance45</item>
+        <item name="android:textAppearanceSmall">@style/Apperance30</item>
+    </style>
+    <style name="BLTheme.Light.Biggest" parent="@style/BLTheme.Light">
+        <item name="android:textAppearanceLarge">@style/Apperance60</item>
+        <item name="android:textAppearanceMedium">@style/Apperance60</item>
+        <item name="android:textAppearanceSmall">@style/Apperance45</item>
+    </style>
+    <style name="BLTheme.Contrast" parent="@style/BLTheme.Basic">
+        <item name="android:buttonStyle">@style/Button.Contrast</item>
+        <item name="android:editTextStyle">@style/EditText.Contrast</item>
+        <item name="android:imageButtonStyle">@style/ImageButton.Contrast</item>
+        <item name="android:listViewStyle">@style/ListView.Contrast</item>
+        <item name="android:spinnerStyle">@style/Spinner.Contrast</item>
+        <item name="android:textColorLink">#ff2ba6fd</item>
+        <item name="buttonBackgroundSrc">@drawable/btn_default_contrast</item>
+        <item name="buttonColor">#ffffffff</item>
+        <item name="buttonInformationalBackgroundSrc">@drawable/btn_informational_contrast</item>
+        <item name="buttonInformationalColor">#ffffffff</item>
+        <item name="noIconSrc">@drawable/icon_no_icon_contrast</item>
+        <item name="noPhotoIconSrc">@drawable/icon_no_photo_contrast</item>
+        <item name="demoDeniedIconSrc">@drawable/demo_button_denied_contrast</item>
+        <item name="preferencesSettingsIconSrc">@drawable/preferences_settings_contrast</item>
+        <item name="preferencesSystemSettingsIconSrc">@drawable/preferences_system_settings_contrast</item>
+        <item name="homeHeaderBackgroundSrc">@drawable/btn_home_contrast</item>
+        <item name="homeHeaderBackgroundBorderSrc">@drawable/btn_home_border_contrast</item>
+        <item name="homeHeaderColor">#ffffffff</item>
+        <item name="homeMissedBackgroundSrc">@drawable/btn_default_missed_contrast</item>
+        <item name="homeAlarmIconSrc">@drawable/home_alarm_contrast</item>
+        <item name="homePhoneIconSrc">@drawable/home_phone_contrast</item>
+        <item name="homePhoneMissedIconSrc">@drawable/home_phone_missed_contrast</item>
+        <item name="homeMessagesIconSrc">@drawable/home_message_contrast</item>
+        <item name="homeMessagesUnreadIconSrc">@drawable/home_message_missed_contrast</item>
+        <item name="homeCameraIconSrc">@drawable/home_camera_contrast</item>
+        <item name="homeGalleryIconSrc">@drawable/home_gallery_contrast</item>
+        <item name="homeSosIconSrc">@drawable/home_sos_contrast</item>
+        <item name="homeApplicationsIconSrc">@drawable/home_applications_contrast</item>
+        <item name="homeApplicationsTableIconSrc">@drawable/home_applications_table_contrast</item>
+        <item name="phoneContactsIconSrc">@drawable/phone_contacts_contrast</item>
+        <item name="phoneDialIconSrc">@drawable/phone_dial_contrast</item>
+        <item name="phoneAddContactIconSrc">@drawable/phone_add_contact_contrast</item>
+        <item name="phoneMyFavouritesIconSrc">@drawable/phone_favourites_contrast</item>
+        <item name="phoneIncomingIconSrc">@drawable/phone_incoming_contrast</item>
+        <item name="phoneOutgoingIconSrc">@drawable/phone_outgoing_contrast</item>
+        <item name="phoneMissedIconSrc">@drawable/phone_missed_contrast</item>
+        <item name="messagesWriteNewIconSrc">@drawable/messages_mail_contrast</item>
+        <item name="messagesNoPhotoIconSrc">@drawable/messages_no_photo_contrast</item>
+        <item name="sosCallIconSrc">@drawable/sos_call_contrast</item>
+        <item name="sosSendMessageIconSrc">@drawable/sos_sms_contrast</item>
+        <item name="sosCancelIconSrc">@drawable/sos_cancel_contrast</item>
+        <item name="calllogCallIconSrc">@drawable/contact_call_contrast</item>
+        <item name="calllogDurationIconSrc">@drawable/calllog_duration_contrast</item>
+        <item name="calllogDurationColor">#ffcecece</item>
+        <item name="applicationsToggleIconSrc">@drawable/applications_toggle_contrast</item>
+        <item name="applicationsNoApplicationSelectIconSrc">@drawable/contact_delete_contrast</item>
+        <item name="contactCallIconSrc">@drawable/contact_call_contrast</item>
+        <item name="contactEditIconSrc">@drawable/contact_edit_contrast</item>
+        <item name="contactMoreIconSrc">@drawable/contact_more_contrast</item>
+        <item name="contactMessageIconSrc">@drawable/contact_message_contrast</item>
+        <item name="contactDeleteIconSrc">@drawable/contact_delete_contrast</item>
+        <item name="messageWriteNewIconSrc">@drawable/messages_mail_contrast</item>
+        <item name="messageSentBackgroundSrc">@drawable/btn_message_sent_contrast</item>
+        <item name="messageReceivedBackgroundSrc">@drawable/btn_message_received_contrast</item>
+        <item name="messageSentColor">#ffffffff</item>
+        <item name="messageReceivedColor">#ffffffff</item>
+        <item name="messageDateColor">#ffcacaca</item>
+        <item name="messageSentNoneIconSrc">@drawable/message_sent_none_contrast</item>
+        <item name="messageSentPendingIconSrc">@drawable/message_sent_pending_contrast</item>
+        <item name="messageSentDeliveredIconSrc">@drawable/message_sent_delivered_contrast</item>
+        <item name="messageSentErrorIconSrc">@drawable/message_sent_error_contrast</item>
+        <item name="messageReceivedIconSrc">@drawable/message_received_contrast</item>
+        <item name="messageDeleteIconSrc">@drawable/contact_delete_contrast</item>
+        <item name="messageClipboardIconSrc">@drawable/message_clipboard_contrast</item>
+        <item name="messageForwardIconSrc">@drawable/message_forward_contrast</item>
+        <item name="wizardOkIconSrc">@drawable/wizard_ok_contrast</item>
+        <item name="wizardCancelIconSrc">@drawable/wizard_cancel_contrast</item>
+        <item name="screenCreate">@drawable/screen_create_contrast</item>
+        <item name="screenDelete">@drawable/screen_delete_contrast</item>
+        <item name="screenConfigure">@drawable/screen_configure_contrast</item>
+        <item name="screenSetupAddScreen">@drawable/screens_setup_add_screen_contrast</item>
+        <item name="screenSetupLinkScreens">@drawable/screens_setup_link_all_contrast</item>
+        <item name="screenAppearanceSetButtons">@drawable/screen_appearance_set_buttons_contrast</item>
+        <item name="screenAppearanceSetName">@drawable/screen_appearance_set_name_contrast</item>
+        <item name="screenAppearanceSetIcon">@drawable/screen_appearance_set_icon_contrast</item>
+        <item name="screenAppearanceSetBackground">@drawable/screen_appearance_set_bck_contrast</item>
+        <item name="screenAppearanceClearBackground">@drawable/screen_appearance_clear_bck_contrast</item>
+        <item name="screenAppearanceDelete">@drawable/screen_appearance_delete_contrast</item>
+        <item name="functionalityClearIconSrc">@drawable/screen_action_clear_contrast</item>
+        <item name="functionalityApplicationIconSrc">@drawable/screen_action_select_app_contrast</item>
+        <item name="functionalityApplicationsIconSrc">@drawable/screen_action_applications_contrast</item>
+        <item name="functionalityIconIconSrc">@drawable/screen_action_select_icon_contrast</item>
+        <item name="functionalityContactIconSrc">@drawable/screen_action_select_contact_contrast</item>
+        <item name="functionalityGotoScreenIconSrc">@drawable/screen_action_goto_screen_contrast</item>
+    </style>
+    <style name="BLTheme.Contrast.Bigger" parent="@style/BLTheme.Contrast">
+        <item name="android:textAppearanceLarge">@style/Apperance45</item>
+        <item name="android:textAppearanceMedium">@style/Apperance45</item>
+        <item name="android:textAppearanceSmall">@style/Apperance30</item>
+    </style>
+    <style name="BLTheme.Contrast.Biggest" parent="@style/BLTheme.Contrast">
+        <item name="android:textAppearanceLarge">@style/Apperance60</item>
+        <item name="android:textAppearanceMedium">@style/Apperance60</item>
+        <item name="android:textAppearanceSmall">@style/Apperance45</item>
+    </style>
+    <style name="BLTheme.Blue" parent="@style/BLTheme.Contrast">
+        <item name="android:buttonStyle">@style/Button.Blue</item>
+        <item name="android:imageButtonStyle">@style/ImageButton.Blue</item>
+        <item name="android:spinnerStyle">@style/Spinner.Blue</item>
+        <item name="buttonBackgroundSrc">@drawable/btn_default_blue</item>
+        <item name="buttonColor">#fff9e655</item>
+        <item name="buttonInformationalBackgroundSrc">@drawable/btn_informational_blue</item>
+        <item name="buttonInformationalColor">#fff9e655</item>
+        <item name="homeHeaderBackgroundSrc">@drawable/btn_home_blue</item>
+        <item name="homeHeaderBackgroundBorderSrc">@drawable/btn_home_border_blue</item>
+        <item name="homeHeaderColor">#ffffffff</item>
+        <item name="messageSentBackgroundSrc">@drawable/btn_message_sent_blue</item>
+        <item name="messageReceivedBackgroundSrc">@drawable/btn_message_received_blue</item>
+        <item name="messageSentColor">#fff9e655</item>
+        <item name="messageReceivedColor">#fff9e655</item>
+        <item name="messageDateColor">#ffcacaca</item>
+    </style>
+    <style name="BLTheme.Blue.Bigger" parent="@style/BLTheme.Blue">
+        <item name="android:textAppearanceLarge">@style/Apperance45</item>
+        <item name="android:textAppearanceMedium">@style/Apperance45</item>
+        <item name="android:textAppearanceSmall">@style/Apperance30</item>
+    </style>
+    <style name="BLTheme.Blue.Biggest" parent="@style/BLTheme.Blue">
+        <item name="android:textAppearanceLarge">@style/Apperance60</item>
+        <item name="android:textAppearanceMedium">@style/Apperance60</item>
+        <item name="android:textAppearanceSmall">@style/Apperance45</item>
+    </style>
+</resources>

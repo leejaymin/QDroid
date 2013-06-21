@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginTop="8.0px" android:layout_marginRight="12.0px">
+                <Button android:layout_gravity="center_vertical" android:id="@id/btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/cart24" />
+                <EditText android:gravity="right" android:id="@id/edt_amount" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_payee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/payee24" />
+                    <EditText android:id="@id/edt_payee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Payee" android:layout_weight="1.0" />
+                    <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/note" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_prev_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/gray_arrow_left" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/caption_today" android:layout_weight="1.0" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_next_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/gray_arrow_right" />
+                </LinearLayout>
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="Food" android:drawableRight="@drawable/arrow_right" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="Cash" android:drawableRight="@drawable/arrow_right" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_sync" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/eurocult" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_currency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginRight="0.0px" android:text="NTD" android:drawableRight="@drawable/arrow_right" android:layout_weight="1.0" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/edit24x24" />
+                </LinearLayout>
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="Personal" android:drawableRight="@drawable/arrow_right" />
+            </LinearLayout>
+            <EditText android:id="@id/edt_note" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:hint="write a note" android:editable="false" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_save" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

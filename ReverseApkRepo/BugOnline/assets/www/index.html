@@ -1,0 +1,1967 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="theme/shoutem.css" type="text/css" rel="stylesheet" media="screen">
+		<link href="theme/jquery-ui/jquery.ui.all.css" type="text/css" rel="stylesheet" media="screen">
+		<link rel="apple-touch-startup-image" href="img/welcome.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=false;" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />	
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		   <meta
+     name="viewport"
+     content="width=100%; 
+             initial-scale=1;
+             maximum-scale=1;
+             minimum-scale=1; 
+             user-scalable=no;"
+    />
+		
+        <title></title>
+	</head>
+	<body>
+		<noscript>
+			<div class="boxAnnounce">
+				JavaScript must be enabled in order for you to use this app. However, it seems JavaScript is either disabled or not supported by your browser. 
+			</div>
+		</noscript>
+		
+		<script id="add_friends" type="text/html">
+			<fieldset>
+				<ul class="group grpLinks">
+					<li class="item lnkFacebook" id="findFacebookFriendsButton">        
+						<span class="icon"></span>
+						<a><%= M.findFacebookFriends %></a>        
+						<span class="arrow"></span>       
+					</li>
+					<li class="item lnkTwitter" id="findTwitterFriendsButton">        
+						<span class="icon"></span>        
+						<a><%= M.findTwitterFriends %></a>
+						<span class="arrow"></span>       
+					</li>
+					<!--
+					<li class="item lnkFoursquare" id="findFoursquareFriendsButton">        
+						<span class="icon"></span>        
+						<a><%= M.findFoursquareFriends %></a>        
+						<span class="arrow"></span>       
+					</li>
+					-->
+				</ul>
+			</fieldset>
+		</script>
+		
+		<script id="add_friends_list" type="text/html">
+			<ul id="resultsList" class="feed feedPosts">
+			</ul>
+		</script>
+		
+		<script id="add_friends_list_item" type="text/html">
+			<li class="item">
+				<p class="content">
+					<span class="nick">
+						<%= user.screen_name %>
+					</span>			
+				<p>
+				<ul class="txtInfo">
+  				</ul>
+			</li>
+		</script>
+		
+		<script id="network_login" type="text/html">
+			<div>
+			<% if (announceText) { %>
+			<div class="boxAnnounce">
+				<div><%= announceText %></div>
+			</div>
+			<% } %>
+			<h4><%= loginText %></h4>
+			<% if (connectWithSection) { %>
+			
+			<fieldset>
+				<ul class="group grpLinks">
+					<% if (facebookConnect) { %>
+						<li class="item lnkFacebook" id="fbConnectButton">        
+							<span class="icon"></span>
+							<a class="facebook_connect">Facebook</a>        
+							<span class="arrow"></span>       
+						</li>
+					<% } %>
+					<% if (twitterConnect) { %>
+						<li class="item lnkTwitter" id="twConnectButton">        
+							<span class="icon"></span>        
+							<a class="twitter_connect">Twitter</a>        
+							<span class="arrow"></span>       
+						</li>
+					<% } %>
+				</ul>
+			</fieldset>			
+			<% } %>
+			
+			
+			<form method="post">
+				<fieldset>
+					<div class="field">						
+						<input type="text" id="username" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.email %>"/>
+					</div>
+					<div class="field">						
+						<input type="password" id="password" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.password %>"/>
+					</div>
+				</fieldset>
+			</form>
+			<ul class="boxButtons buttons btnMediumButtons">       	
+				<li class="item">
+					<button class="btnButton" id="submit"><%= M.login %></button>        
+				</li>       
+			</ul>
+			
+			
+			<% if (registerUsersSection) { %>
+			<ul class="group grpLinks" style="">     
+				<li class="item">      
+					<span class="arrow"></span>      
+					<a id="registerLink"><%= M.registerMessage %></a>  
+				</li>    
+			</ul>
+			<% } %>
+			</div>
+		</script>
+		
+		<script id="account_new" type="text/html">
+			<h4><%= getMessage("joinNetwork", network.name) %></h4>
+			<form method="post">
+				<fieldset>
+					<div class="field">						
+						<input type="text" id="email" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.loginEmail %>"/>
+					</div>
+					<div class="field">
+						<input type="text" id="username" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.nickname %>"/>
+					</div>
+					<div class="field">
+						<input type="password" id="password" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.password %>"/>
+					</div>
+					<div class="field">
+						<input type="password" id="password2" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.repeatPassword %>"/>
+					</div>
+				</fieldset>
+			</form>
+			<ul class="boxButtons buttons btnMediumButtons">       
+				<li class="item">
+					<button id="submit" class="btnButton"><%= M.sendButtonTitle %></button>        
+				</li>
+			</ul>
+		</script>
+		
+		<script id="places_tweets" type="text/html">
+			<div>
+				<ul id="resultsList" class="feed feedPosts">
+				</ul>
+			</div>
+
+			<ul class="boxButtons buttons btnSmallButtons" id="loadMoreButtonContainer" style="display: none"> 
+				<li class="item">
+					<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+				</li>
+			</ul>
+		</script>
+		
+		
+		<script id="places_yelp" type="text/html">
+			<div>
+				<ul id="resultsList" class="feed feedPosts">
+				</ul>
+			</div>
+		</script>
+		 
+		<script id="places_yelp_item" type="text/html">
+			<li class="item">
+				<img class="icon" src="<%= review.user_photo_url_small %>" />
+				<p class="content">
+					<img src="<%= review.rating_img_url_small %>"/>
+					<span class="nick"><%= review.user_name %></span> <%= linkify(review.text_excerpt) %>
+				</p>
+				<ul class="txtInfo">
+					<li><%= review.date %></li>
+				</ul>
+			</li>
+		</script>
+		
+		<script id="places_tweets_item" type="text/html">
+			<li class="item">
+				<img class="icon" src="<%= getAvatarUrl(status) %>" />
+				<p class="content">
+					<span class="nick"><%= status.from_user %></span> <%= linkify(sanitizeText(status.text)) %>
+				</p>
+				<ul class="txtInfo">
+					<li><%= timeDistanceInWords(status.created_at) %></li>
+				</ul>
+			</li>
+		</script>
+		
+		<script id="places_list_item" type="text/html">
+			<li class="item" onclick="navigateTo(getPlaceDetailsUrl(<%= place.id %>))">
+				<img class="icon" src="<%= getPlaceIconUrl(place) %>" />
+				<h3><%= place.name %></h3>
+				<ul class="txtInfo">
+					<%= createAddressLine(place.address, place.city, place.country) %> 
+					<div class="time-distance"><%= getPlaceDistanceText(place) %></div>
+				</ul>	
+			</li>
+		</script>
+		
+		<script id="users_list_item" type="text/html">
+			<li class="item" <% if (!followButton) { %>onclick="navigateTo(getUserDetailsUrl(<%= user.id %>))"<% } %> >
+				<img class="icon" src="<%= getAvatarUrl(user) %>" />
+				<p class="content">
+					<span class="nick">
+						<%= user.screen_name %>
+					</span>			
+				<p>
+				<% if (followButton) { %>
+				<ul class="buttons btnSmallButtons">
+					<button class="btnButton"><%= followButtonText %></button>
+				</ul>
+				<% } %>
+				<ul class="txtInfo">
+ 					<% if (user.status && user.status.shoutem_place) { %>
+					<%= getPlaceDistanceText(user.status.shoutem_place) %>, <%= timeDistanceInWords(user.status.created_at) %>
+					<% } %>
+  				</ul>
+			</li>
+		</script>
+		
+		<script id="users_list" type="text/html">
+			<% if (hasAMap) { %>
+			<div class="boxTabs">
+				<ul class="tabLinks twoTabs">
+					<li><a id="listTab" class="list"><%= M.list %></a></li>
+					<li><a id="mapTab" class="map"><%= M.map %></a></li>      
+				</ul>        
+				
+				<div class="list tabContent">
+			<% } %>
+					
+					<ul id="usersList" class="feed feedPosts">
+					</ul>
+					<ul id="loadMoreButtonContainer" class="boxButtons buttons btnSmallButtons" style="display: none"> 
+						<li class="item">
+							<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+						</li>
+					</ul>
+			<% if (hasAMap) { %>
+				</div>
+
+				<div class="map tabContent">
+					<div id="mapCanvas"></div>
+				</div>
+			<div>
+			<% } %>
+		</script>
+		
+		<script id="messages_list" type="text/html">
+			
+			<div class="boxTabs">
+				<ul class="tabLinks twoTabs">
+					<li><a id="inboxTab" class="inbox"><%= M.messagesInboxTitle %></a></li>
+					<li><a id="sentTab" class="sent"><%= M.messagesSentTitle %></a></li>      
+				</ul>
+				<div class="inbox tabContent">
+					<div>
+						<ul id="inboxList" class="feed feedPosts">
+						</ul>
+					</div>
+					<ul class="boxButtons buttons btnSmallButtons" id="inboxLoadMore" style="display: none"> 
+						<li class="item">
+							<button class="btnButton"><%= M.loadMore %></button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="sent tabContent">
+					<div>
+						<ul id="sentList" class="feed feedPosts">
+						</ul>
+					</div>
+					<ul class="boxButtons buttons btnSmallButtons" id="sentLoadMore" style="display: none"> 
+						<li class="item">
+							<button class="btnButton"><%= M.loadMore %></button>
+						</li>
+					</ul>
+				</div>
+			<div>
+			
+		</script>
+		
+		<script id="messages_conversation" type="text/html">
+			<ul id="conversationList" class="feed feedPosts">
+			</ul>
+		</script>
+		
+		<script id="messages_list_item" type="text/html">
+			<li class="item" id="directMessage<%= message.id %>">
+				<img class="icon" src="<%= getAvatarUrl(user) %>" />
+				<p class="content">
+					<span class="nick"><%= user.screen_name %></span>
+					<br>
+      				<span><%= getTextExcerpt(stripTags(message.text), 250)  %></span>
+					<ul class="buttons btnSmallButtons">
+						<button class="btnButton" onclick="deleteDirectMessage(<%= message.id %>)"><%= M.actionSheetDeleteButton %></button>
+					</ul>
+				<p>
+				<ul class="txtInfo">
+    				<li class="time_distance">
+						<%= timeDistanceInWords(message.created_at) %>
+					</li>
+  				</ul>
+			</li>
+		</script>
+		
+		<script id="messages_new" type="text/html">
+			<form method="post" id="messageForm">
+				<fieldset>
+					<div class="field">						
+						<input type="text" id="to" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.messagesToLabelTitle %>"/>
+						<img id="recipientSearchIcon" class="searchIcon" src="img/search.png" />
+					</div>
+					<div class="field">
+						<textarea id="message" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.message %>"></textarea>
+					</div>
+				</fieldset>
+			</form>
+			<ul class="boxButtons buttons btnMediumButtons">       
+				<li class="item">
+					<button id="submitButton" class="btnButton"><%= M.sendButtonTitle %></button>        
+				</li>
+			</ul>
+		</script>
+		
+		<script id="search" type="text/html">
+			<form id="searchForm">
+				<fieldset>
+					<div class="field">
+						<input name="query" id="query" autocapitalize="off" autocorrect="off" autocomplete="off" type="text" />
+						<img class="searchIcon" src="img/search.png" />
+					</div>
+				</fieldset>
+			</form>
+			<ul id="resultsList" class="feed feedPosts">
+			</ul>
+			<ul id="loadMoreButtonContainer" class="boxButtons buttons btnSmallButtons" style="display: none"> 
+				<li class="item">
+					<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+				</li>
+			</ul>
+		</script>
+
+		<script id="search_item" type="text/html">
+			<li class="item" onclick="navigateTo(getShoutDetailsUrl(<%= shout.id %>))">
+  			<img class="icon" width="48" height="48" src="<%= shout.profile_image_url %>">
+  			<p class="content">
+						<span class="nick"><%= shout.from_user %></span>
+      			<span><%= stripTags(shout.text) %></span>
+  			</p>
+  			<ul class="txtInfo">
+    			<li class="time_distance">
+					<%= timeDistanceInWords(shout.created_at) %>
+				</li>
+  			</ul>
+			</li>
+		</script>
+		
+		<script id="places_details" type="text/html">
+				<div id="places-details-content" style="display: none;">
+				<ul id="placeInfo" class="feed feedItems feedSingle" style="border: 0;">
+				</ul>
+				
+				<div class="boxTabs">
+					<ul class="tabLinks">
+						<li><a class="map"><%= M.map %></a></li>
+						<li><a class="shouts"><%= M.shouts %></a></li>
+						<li><a class="visitors"><%= M.visitors %></a></li>
+					</ul>
+				
+					<div class="map tabContent">
+						<a id="directionsButton"><img class="map img-loading" /></a>
+						<br />
+						
+						<ul id="placeDiscoveryInfo" class="group se-text-container" style="display: none">
+						</ul>
+
+						<ul class="placeButtons boxButtons buttons" style="display: none">
+							<li class="item" id="twitterButtonItem">
+								<a class="noIcon btnButton" id="twitterButton">
+									<%= M.tweetsNearbyButtonNormal %>
+								</a>
+							</li>
+							<li class="item">
+								<a class="noIcon btnButton" id="yelpButton">
+									<%= M.yelpButtonNormal %>
+								</a>
+							</li>
+						</ul>						
+						<ul class="boxButtons buttons btnSmallButtons">       
+							<li class="item">
+								<button id="editPlaceButton" style="display: none" class="btnButton"><%= M.editPlace %></button>        
+							</li>
+						</ul>
+					</div>	
+					
+					<div class="shouts tabContent">
+						<ul class="feed feedPosts" id="shoutsList">
+						</ul>
+					</div>			
+					
+					<div class="visitors tabContent">
+						<ul class="feed feedPosts" id="visitorsList">
+						</ul>
+					</div>
+									
+				</div>
+				</div>
+			</script>
+			
+			
+
+		<script id="places_list" type="text/html">
+			<div class="boxTabs">
+				<ul class="tabLinks twoTabs">
+					<li><a id="listTab" class="list"><%= M.list %></a></li>
+					<li><a id="mapTab" class="map"><%= M.map %></a></li>      
+				</ul>        				
+				<div class="list tabContent">
+					<form id="searchForm" style="display: none">
+					<fieldset>
+						<div class="field">
+							<input name="query" id="query" autocapitalize="off" autocorrect="off" autocomplete="off" type="text" />
+							<img class="searchIcon" src="img/search.png" />
+						</div>
+					</fieldset>
+					</form>					
+					<div>
+						<ul id="placesList" class="feed feedPosts"></ul>
+					</div>
+
+					<ul class="boxButtons buttons btnSmallButtons" id="loadMoreButtonContainer" style="display: none"> 
+					<li class="item">
+						<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+						</li>
+					</ul>
+				
+					<ul id="addPlaceLink" class="group grpLinks" style="display: none">
+						<li class="item">
+							<span class="arrow"></span>
+							<a href="<%= getNewPlaceUrl() %>"></a>
+						</li>
+					</ul>      
+				</div>
+
+				<div class="map tabContent">
+					<div id="mapCanvas"></div>
+				</div>				
+			<div>
+			
+		</script>
+		
+		<script id="places_categories" type="text/html">			
+			<ul class="feed feedPosts" id="placesCategories">			
+			</ul>
+		</script>
+		
+		<script id="navigation_bar_button" type="text/html">
+			<div class="se-toolbar-btn">
+					<div class="se-separator"></div>
+					<div class="se-toolbar-btn-inner">
+					<% if (icon) { %>
+						<div class="se-icon" style="background-image: url(<%= icon%>)"></div>
+					<% } %>
+					<% if (title) { %>
+						<div class="se-text se-single-line"><%= title%></div>
+					<% } %>
+					</div>
+			</div>			
+		</script>
+		
+		<script id="title_bar_item" type="text/html">
+			<div class="se-title-bar"><div class="se-title-bar-inner"><div class="se-text"><%= title%></div></div></div>
+		</script>
+		
+		<script id="title_bar_notice" type="text/html">
+			<div class="se-title-bar"><div class="se-title-bar-inner"><div class="se-text"><%= title%></div></div></div>
+		</script>
+		
+		<script id="screen_item" type="text/html">
+			<div id="top-toolbar" class="top-toolbar">
+				<div id="header" class="navigation-bar"><div class="top-border"></div><div class="imgShoutEmLogo"><div class="home-button"></div></div><div class="se-btn-list right-btn-list"></div></div>
+				<div id="additions"></div>
+			</div>			
+			<div id="screenContainer">
+				<div id="screen">					
+					<div id="top-toolbar-spacer" class="top-toolbar-spacer">
+						<div class="header-spacer"></div>
+						<div id="additions-spacer"></div>
+					</div>
+					<div id="content"></div> 
+				</div>
+			</div>
+			<iframe id="deviceUrl" style="display: none"></iframe>
+			<div id="activityIndicator" style="display: none"><div class="spinner"></div>
+			</div>
+		</script>
+		
+		<script id="places_categories_list" type="text/html">
+			<% $.each(categories, function(i, category) { %>
+				<li class="item" onclick="navigateTo('<%= enableSubcategories && category.categories.length > 0 ? getPlaceCategoriesUrl(category.id, enableSubcategories) : getPlacesUrl(category.id) %>')">
+					<img class="icon" src="<%= getPlaceCategoryIconUrl(category) %>" />
+					<div>				
+						<h3><%= category.name %></h3>
+					</div>
+				</li>
+			<% }); %>
+		</script>
+		
+		<script id="places_new" type="text/html">
+				<img class="place map"/>
+				<form method="post">
+					<fieldset>
+						<div class="field">
+							<input type="text" name="name" value="<%= name %>" placeholder="<%= M.placeName %>"/>
+						</div>
+						<div class="field">														
+							<input type="text" name="address" value="<%= address %>" placeholder="<%= M.placeAddress %>"/>
+						</div>
+						<div class="field">
+							<input type="text" name="city" value="<%= city %>" placeholder="<%= M.placeCity %>"/>
+						</div>
+						<div class="field">
+							<input type="text" name="country" value="<%= country %>" placeholder="<%= M.placeCountry %>"/>
+						</div>
+						<div class="field" id="categorySelectContainer" style="display: none">							
+							<select name="category">
+								<option>&mdash; <%= M.selectCategory %> &mdash;</option>
+							</select>
+						</div>
+					</fieldset>
+				</form>
+				<ul class="boxButtons buttons btnMediumButtons">       
+					<li class="item">
+						<button class="btnButton" onclick="placeSubmit();"><%= M.submit %></button>        
+					</li>       
+				</ul>
+		</script>
+
+		<script id="shouts_details" type="text/html">
+				<ul id="shoutInfo" class="feed feedItems feedSingle">
+					<li class="item">
+						<span class="icon"><img src="<%= shout.user.profile_image_url %>" /></span>
+						<% if (shout.shoutem_properties && shout.shoutem_properties.badge) { %>
+							<img class="badge" src="<%= shout.shoutem_properties.badge.image_url %>" />
+						<% } %>
+						<p class="content">					
+							<span class="nick"><%= shout.user.screen_name %></span>
+						</p>
+						<ul class="txtInfo">
+							<li class="<%= shout.shoutem_type %>"><%= timeDistanceInWords(shout.created_at) %></li>
+							<% if (shout.shoutem_reply_count > 0) { %>
+								<li class="comments"><%= shout.shoutem_reply_count %></li>
+							<% } %>
+							<% if (shout.shoutem_favorited_by && shout.shoutem_favorited_by.count > 0) { %>
+								<li class="likes"><%= shout.shoutem_favorited_by.count %></li>
+							<% } %>
+						</ul>
+					</li>
+				</ul>
+				
+				<% if (shout.shoutem_type != "check_in" || shout.in_reply_to_status_id || shout.shoutem_attachments.length > 0) { %>
+				<div class="boxData feed">
+					<% if (shout.shoutem_type != "check_in") { %>
+						<p><%= getShoutMessage(shout) %></p>
+					<% } %>
+					<% if (shout.in_reply_to_status_id) { %>
+						<small id="commentOfText">
+							<%= M.commentOf %> <a href="<%= getShoutDetailsUrl(shout.in_reply_to_status_id) %>"><%= shout.in_reply_to_screen_name %> <%= M.shout.toLowerCase() %></a>
+						</small>
+					<% } %>
+					<% if (shout.shoutem_attachments.length > 0) { %>
+					<ul class="attachments">
+						<% $.each(shout.shoutem_attachments, function(i, attach) { %>
+						<%= renderEjs("shouts_attachment", { attach : attach, ignore_links: false }) %>
+						<% }); %>
+					</ul>
+					<% } %>
+				</div>
+				<% } %>
+				
+				<% if (shout.shoutem_place && typeof(shout.shoutem_place) == 'object') { %>
+				<ul class="group grpLinks">
+					<li class="item lnkCheckin">
+						<span class="icon"></span>
+						<a href="<%= getPlaceDetailsUrl(shout.shoutem_place.id) %>"><%= shout.shoutem_place.name %></a>
+						<span class="arrow"></span>
+					</li>
+				</ul>
+				<% } %>
+
+				
+
+				<ul class="boxButtons buttons btnSmallButtons">
+					<% if (commentButtonVisible) { %>  
+					<li class="item">
+						<button id="commentButton" class="btnButton"></button>
+					</li> 
+					<% } %>
+					<% if (reshoutButtonVisible) { %>
+					<li class="item">
+						<button id="reshoutButton" class="btnButton"></button>  
+					</li> 
+					<% } %>
+					<% if (likeButtonVisible) { %>
+					<li class="item">   
+						<button id="likeButton" class="btnButton"></button>  
+					</li>
+					<% } %>
+					<% if (deleteButtonVisible) { %>
+					<li class="item">
+						<button id="deleteButton" class="btnButton"></button>
+					</li>
+					<% } %>
+				</ul>
+				
+				<ul id="shoutRepliesList" class="feed feedPosts" style="display: none">
+				</ul>
+			</script>
+
+			<script id="shouts_list" type="text/html">				
+				<ul class="barActions buttons noRefresh">
+					<% if (locationsEnabled) { %>
+					<li class="item doCheckin">
+						<a href="<%= getPlacesUrl() %>" class="btnButton"><span class="icon"></span><%= M.checkInTitle %></a>
+					</li>
+					<% } %>
+					<li class="item doShout">
+						<a href="<%= getNewShoutUrl() %>" class="btnButton"><span class="icon"></span><%= M.shoutDetailTitle %></a>
+					</li>					
+				</ul>				
+				<div>
+					
+					<ul id="shoutsList" class="feed feedPosts"></ul>
+					<ul id="loadMoreContainer" class="boxButtons buttons btnSmallButtons" style="display: none"> 
+						<li class="item">
+							<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+						</li>
+					 </ul>
+				</div>			
+			</script>
+
+		<script id="shouts_new" type="text/html">
+			<h4><%= infoMessage %>&nbsp;<span id="charsLeft" style="position:absolute; right: 32px;"></span></h4>
+			<form method="post" id="shoutForm">
+				<fieldset>
+					<% if (hasAnonymousCommentFields) { %> 
+						<% if (anonymous_contact_data_allowed) { %>
+							<div class="field">							
+								<input type="text" id="author" placeholder="<%= M.name %>*" value="<%= anonymous_data.author %>"/>
+							</div>
+							<div class="field">							
+								<input type="text" id="authorEmail" placeholder="<%= M.loginEmail %>*" value="<%= anonymous_data.authorEmail %>"/>
+							</div>
+							<div class="field">							
+								<input type="text" id="authorUrl" placeholder="<%= M.loginAuthorUrl %>" value="<%= anonymous_data.authorUrl %>"/>
+							</div>
+						<% } %>
+						<ul id="goToLogin" class="group grpLinks">
+							<li class="item">
+								<span class="arrow"></span>
+								<a class="compact" ><%= M.orLogin %></a>
+							</li>
+						</ul>
+					<% } %>
+					
+					<div class="field">						
+						<textarea name="status" id="status" autocapitalize="off" autocorrect="off" autocomplete="off" placeholder="<%= M.actionSheetReplyButton %>"></textarea>
+					</div>
+					
+					<% if (htmlUploadsEnabled) { %>
+						<div id="fileUploadContainer">
+							<input type="file" name="file_attachment" id="file_attachment" />
+						</div>
+					<% } %>
+					
+					<input type="hidden" name="lat" id="lat" />
+					<input type="hidden" name="long" id="long" />
+					<input type="hidden" name="source" id="source"/>
+					<input type="hidden" name="in_reply_to_status_id" id="in_reply_to_status_id" />
+					<input type="hidden" name="shoutem_place_id" id="shoutem_place_id" />
+					<input type="hidden" name="share_on_facebook" id="share_on_facebook" />
+					<input type="hidden" name="share_on_twitter" id="share_on_twitter" />
+				</fieldset>
+			</form>
+			
+			<ul id="placeInfo" class="group grpLinks" style="display: none">     
+				<li class="item lnkCheckin delete">
+					<span class="icon"></span>
+					<a></a>
+					<span class="btnDelete"></span>
+				</li>    
+			</ul>
+			
+			<% if (nativeUploadsEnabled) { %>
+			<ul id="takePhoto" class="group grpLinks" style="">     
+				<li class="item">      
+					<span class="arrow"></span>      
+					<a><%= M.confirmTakePhotoTitle %></a>     
+				</li>    
+			</ul>
+			
+			<ul id="choosePhoto" class="group grpLinks" style="">     
+				<li class="item">      
+					<span class="arrow"></span>      
+					<a><%= M.confirmChooseTitle %></a>     
+				</li>    
+			</ul>
+
+			<div class="boxData feed" id="photoPreviewContainer" style="display:none">
+				<ul class="attachments">                  
+					<li class="picture">           
+						<a>       
+							<img id="photoPreview" style="max-height: 160px">      
+						</a>         
+					</li>                
+				</ul>           
+			</div>
+			<% } %>
+
+			<ul class="boxButtons buttons btnMediumButtons">       
+				<li class="item">
+					<button id="submitButton" class="btnButton"><%= M.submit %></button>        
+				</li>       
+			</ul>
+
+			<% if (showSharingOptions) { %>
+			<h4><%= M.shareOn %></h4>
+			<ul class="group grpToggle">
+				<li id="facebookContainer" class="item lnkFacebook" style="display: none">
+					<span class="checkbox">
+					<span class="icon"></span>
+						<label for="facebookCheckbox">Facebook</label>
+						<input type="checkbox" id="facebookCheckbox">
+					</span>
+				</li>
+				<li id="twitterContainer" class="item lnkTwitter" style="display: none">
+					<span class="checkbox">
+					<span class="icon"></span>
+						<label for="twitterCheckbox">Twitter</label>
+						<input type="checkbox" id="twitterCheckbox">
+					</span>
+				</li>
+			</ul>
+			<% } %>
+
+			<% if (showPublishShoutOptions) { %>
+			    <ul class="group grpToggle">
+				    <li id="publishToFeedContainer" class="item">
+					    <span class="checkbox">
+						    <label for="publishToFeedCheckbox"><%= M.publishCommentInMyFeed %></label>
+						    <input type="checkbox" id="publishToFeedCheckbox">
+					    </span>
+				    </li>
+			    </ul>
+			<% } %>
+		</script>
+		
+		<script id="users_details" type="text/html">
+			
+			<ul class="feed feedItems feedSingle">
+				<li class="item">
+					<span class="icon"><img src="<%= user.profile_image_url %>" /></span>
+					<p class="content">					
+						<span class="nick"><%= user.screen_name %></span>
+					</p>
+					<ul class="txtInfo">						
+						<%= M.userSinceLabel %> <%= renderTime(user.created_at, true) %>
+						<% if (user.location) { %> 
+						<%= M.locationLabelPlaceholderTitle %> <%= user.location %>
+						<% } %>
+						<% if (isValidUrl(user.url)) { %>
+						<a href="<%= makeUrlAbsolute(user.url) %>"><%= user.url %></a>
+						<% } %>
+					</ul>
+				</li>
+			</ul>			
+				
+			<% if (showLogoutButton || showEditButton) { %>
+				<ul class="boxButtons buttons btnMediumButtons">
+					<% if (showLogoutButton) { %>
+					<li class="item">
+						<button id="logoutButton" class="btnButton" onclick="logout()"><%= M.logout %></button>
+					</li>
+					<% } %>
+					<% if (showEditButton) { %>
+					<li class="item">
+						<button id="editButton" class="btnButton" onclick="navigateTo(getEditProfileUrl())"><%= M.edit %></button>
+					</li>
+					<% } %>
+				</ul>
+			<% } %>			
+			<% if (isCurrentUser == false && hasFollowButton == true) { %>
+			<div class="boxData feed">      
+				<p><em><%= user.screen_name %></em> <%= user.shoutem_following ? M.isFollowingYou : M.isNotFollowingYou %></p>                  
+			</div>
+
+			<ul class="boxButtons buttons btnSmallButtons" id="followButtonContainer" style="display: none">        
+				<li class="item"> 
+					<button id="followButton" class="btnButton"></button>
+	  	    	</li>
+			</ul>
+			<% } %>			
+			<% if (shout) { %>
+			<div class="boxData feed">
+				<p><%= getShoutMessage(shout) %></p>
+				<% if (shout.in_reply_to_status_id) { %>
+				<small id="commentOfText">
+					<%= M.commentOf %> <a href="<%= getShoutDetailsUrl(shout.in_reply_to_status_id) %>"><%= shout.in_reply_to_screen_name %> <%= M.shout.toLowerCase() %></a>
+				</small>
+				<% } %>
+
+				<% if (shout.shoutem_attachments && shout.shoutem_attachments.length > 0) { %>
+				<ul class="attachments">
+					<% $.each(shout.shoutem_attachments, function(i, attach) { %>
+					<%= renderEjs("shouts_attachment", { attach : attach, ignore_links: false }) %>
+					<% }); %>
+				</ul>
+				<% } %>
+				<br />
+				<ul class="txtInfo">
+					<li class="<%= shout.shoutem_type %>"><%= timeDistanceInWords(shout.created_at) %></li>
+				</ul>
+			</div>
+			<% } %>			
+			<ul class="group grpLinks">
+				<li class="item" id="badgesLink">
+					<span class="arrow"></span>
+					<a><%= getMessage("badgesCount", user.shoutem_badges ? user.shoutem_badges.length : 0) %></a>
+				</li>
+				<li class="item" id="shoutsLink">
+					<span class="arrow"></span>
+					<a><%= M.shouts %> <% if (user.statuses_count) { %>(<%= user.statuses_count %>) <% } %></a>
+				</li>
+				<% if (hasSubscriptionInfo) { %> 
+				<li class="item" id="friendsLink">
+					<span class="arrow"></span>
+					<a><%= M.friends %> (<%= user.friends_count %>)</a>
+				</li>
+				<li class="item" id="followersLink">
+					<span class="arrow"></span>
+					<a><%= M.followers %> (<%= user.followers_count %>)</a>
+				</li>
+				<% } %>
+			</ul>
+			
+		</script>
+
+		<script id="home" type="text/html">			
+			<div class="home-background">
+				<div id="loading-animation" class="se-home-background-loading-holder">					
+						<span class="se-loading se-spinner-small-icon"></span><span class="se-text">Loading background...</span>					
+				</div>			
+			<% if (bigLogoUrl) { %>
+				<img id="homeBigLogo" class="home-background-image" src="<%= bigLogoUrl%>" onLoad="logoLoaded(event);" style="left: <%=bigLogoScale.x%>px; top: <%=bigLogoScale.y%>px; width: <%=bigLogoScale.width%>px; height: <%=bigLogoScale.height%>px;"/>
+			<% } %>
+			<div class="home-content">
+				<div class="se-content-panel">
+					
+				</div>
+			</div>
+			<div id="homeContent">				
+				<div id="homeIconSwitcher"></div>				
+			</div>			
+			</div>
+		</script>
+		
+		<script id="home_link" type="text/html">
+			<li class="<%= classes %>" style="width: <%=width%>px; height:<%=height%>px;" id="link-<%= id%>">
+				<%  if (url) { %>				
+					<div class="iconContainer" style="height: <%=height%>px;">
+						<% if (badge) { %>
+							<div class="badge"><%= badge %></div>
+						<% } else { %>
+							<div class="badge" style="display: none;"></div>
+						<% } %>
+						<img class="ico" src="<%= icon %>" style="width: <%=width%>px; height:<%=height%>px;"/>
+					</div>
+					<span class="label" style="width: <%=width%>px; padding-top: <%=(height - (parseInt(height,10)*20/100.0))%>px;"><%= label %></span>				
+				<% } %>
+			</li>
+		</script>
+				
+		
+		<script id="events_list_item" type="text/html">
+		<% if (isLink) { %>
+			<li class="eventItem item" onclick="navigateTo(getEventDetailsUrl('<%= event.id %>'<%= (categoryId ? ',' + categoryId:'')%>))">
+		<% }  else { %>
+			<li class="eventItem item">
+		<% } %>
+  			<img class="icon" width="48" height="48" src="<%= getEventIconUrl(event) %>">
+  			<p class="content">
+      			<strong><em><%= event.name %></em>
+					<% if (event.place && event.place.name) { %>
+						@ <em><%= event.place.name %></em>
+					<% } %>
+				</strong>
+				
+				<% if (without_text == false && event.text != "") { %>
+      			<br>
+      			<span><%= getTextExcerpt(stripTags(event.text), 250)  %></span>
+				<% } %>
+  			</p>
+  			<ul class="txtInfo">
+    			<li class="time_distance">
+					<% if (render_end_time) { %>
+							<%= renderEventTime(event.time, event.end_time) %>		
+					<% } else { %>
+							<%= renderEventTime(event.time) %>
+					<% } %>
+					<% if (render_distance && event.place) { %>
+							 <%=getPlaceDistanceText(event.place)%>		
+					<% }%>
+					
+				</li>
+  			</ul>
+		</li>
+		</script>
+		
+		<script id="events_details" type="text/html">
+			<ul id="eventInfo" class="feed feedItems feedSingle">
+			</ul>
+			
+			<div id="eventTextContainer" class="boxData" style="display: none">
+				<div id="newsTextContainer">
+				<p id="eventText" class="text"></p>
+				</div>
+			</div>
+
+			<div class="boxTabs">
+				<ul class="tabLinks">
+					<li><a class="map"><%= M.map %></a></li>
+					<li><a class="shouts"><%= M.shouts %></a></li>
+					<li><a class="visitors"><%= M.visitors %></a></li>
+				</ul>
+		
+				<div class="map tabContent">
+					<img class="map"></img>
+					<br />
+						
+					<ul class="boxButtons buttons">
+						<li class="item doCheckin">
+							<a class="btnButton" id="checkInButton">
+								<span class="icon"></span><%= M.checkInTitle %>
+							</a>
+						</li>
+					</ul>
+				</div>	
+	
+				<div class="shouts tabContent">					
+					<ul class="feed feedPosts" id="shoutsList">
+					</ul>
+					<ul class="boxButtons buttons">
+						<li class="item doShout">
+							<a class="btnButton" id="doShout">
+								<span class="icon"></span><%=M.shoutDetailTitle %>
+							</a>
+						</li>
+					</ul>
+				</div>			
+				
+				<div class="visitors tabContent">
+					<ul class="feed feedPosts" id="visitorsList">
+					</ul>
+				</div>
+			</div>
+			<ul id="placelessCheckIn" class="boxButtons buttons" style="display:none">
+				<li class="item doCheckin">
+					<a class="btnButton" id="palacelessCheckInButton">
+						<span class="icon"></span><%= M.checkInTitle %>
+					</a>
+				</li>
+			</ul>
+			
+		</script>
+		
+		<script id="shouts_attachment" type="text/html">
+			<li class="<%= attach.type %>">
+				<% if (!ignore_links && attach.type == "link") { %>
+ 					<a href="<%= attach.url %>" target="_blank" onclick="openExternalLink(event)">
+						<%= attach.url %>
+					</a>
+				<% } else { %>
+					<a href="<%= getImageAttachmentDetailsUrl(attach.url_large) %>" onclick="event.stopPropagation()">
+						<img src="<%= attach.url_thumbnail %>" />
+					</a>
+				<% } %>
+			</li>
+		</script>
+		
+		<script id="attachment_details" type="text/html">
+			<img id="picture" style="display: none" /> 
+		</script>
+		
+		<script id="shouts_list_item" type="text/html">
+			<% if (clickable) { %>
+				<li class="item" onclick="navigateTo(getShoutDetailsUrl('<%= shout.id %>'))">
+			<% } else { %>
+				<li class="item">
+			<% } %>
+				<div>
+					<span class="icon"><img src="<%= getAvatarUrl(shout.user) %>" /></span>
+					<% if (shout.shoutem_properties && shout.shoutem_properties.badge) { %>
+					<img class="badge" src="<%= shout.shoutem_properties.badge.image_url %>" />
+					<% } %>				
+					<p class="content"><span class="nick"><%= shout.user.screen_name %></span> <%= getShoutMessage(shout) %></p>					
+					<% if (shout.in_reply_to_status_id && withCommentOfLine) { %>
+					</div>
+						<small>
+							<%= M.commentOf %> <a href="<%= getShoutDetailsUrl(shout.in_reply_to_status_id) %>"><%= shout.in_reply_to_screen_name %> <%= M.shout.toLowerCase() %></a>
+						</small>
+					<div onclick="navigateTo(getShoutDetailsUrl(<%= shout.id %>))">
+					<% } %>
+				<% if (shout.shoutem_attachments && shout.shoutem_attachments.length > 0) { %>
+				</div>				
+				<ul class="attachments">
+					<% $.each(shout.shoutem_attachments, function(i, attach) { %>
+					<%= renderEjs("shouts_attachment", { attach : attach, ignore_links: true }) %>
+					<% }); %>
+				</ul>
+				<div>
+				<% } %>
+					<ul class="txtInfo">
+						<li class="<%= shout.shoutem_type %>"><%= timeDistanceInWords(shout.created_at) %></li>
+						<% if (shout.shoutem_reply_count > 0) { %>
+						<li class="comments"><%= shout.shoutem_reply_count %></li>
+						<% } %>
+						<% if (shout.shoutem_favorited_by && shout.shoutem_favorited_by.count > 0) { %>
+						<li class="likes"><%= shout.shoutem_favorited_by.count %></li>
+						<% } %>
+					</ul>
+				</div>
+			</li>
+		</script>
+		
+		<script id="generic_screen" type="text/html">
+		<div id="generic_content">
+		</div>
+		</script>
+		
+		<script id="test" type="text/html">
+		<ul id="buttons" class="boxButtons buttons btnSmallButtons">
+		</ul>
+		</script>
+		
+		<script id="tab_stript_component" type="text/html">
+		<div>
+		<div class="se-tabstrip-holder">
+		<div class="se-tabstrip">			
+			<div class="se-tabstrip-rail se-content-panel">				
+			</div>			
+		</div>
+		</div>
+		
+		<div class="se-tabstrip-content">
+
+		</div>
+		</div>
+		</script>
+		
+		<script id="tabs_component" type="text/html">
+			<div class="boxTabs">
+				<ul class="tabLinks">				
+				</ul>				
+			<div>
+		</script>		
+		
+		<script id="article_image" type="text/html">
+			<div class="se-crop se-avatar-border se-box-shadow se-btn-corner-all img-loading" style="width: <%=width%>; height: <%=height%>; max-width: 100%;">
+				<img src="<%=imageSrc%>" class="se-cropable" onload="cropImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)"></img>
+			</div>
+		</script>
+		
+		<script id="load_message_item" type="text/html">
+			<div>
+				<div id="newsFeedLoadMessage" class="boxData feed" style=""><%= M.newsLoadErrorMessage%></div>
+			</div>
+		</script>
+		
+		<script id="gallery_item" type="text/html">		
+		
+			<% if (feedItem.imageUrl) { %>
+				<li class="se-gallery-img se-crop img-loading se-column" style="width: <%=feedItem.width%>px; height: <%=feedItem.height%>px;">
+					<img class="se-cropable" style="display:none;" onload="cropImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+			<% } else { %>
+				<li class="se-gallery-img se-crop img-loading-failed se-column" style="width: <%=feedItem.width%>px; height: <%=feedItem.height%>px;">
+				<div class="se-cropable se-img img-loading-failed"></div>
+			<% } %>					
+		</li>
+		</script>
+		
+		<script id="gallery_detail" type="text/html">
+			<div style="margin:0;">				
+				<div id="gallery-list" class="se-gallery" style="background-color: black;">					
+					<div class="se-screen-holder img-loading se-crop">
+						<div class="se-loading-indicator" styling="z-index: 0;">
+						</div>
+						
+						<img id="image" style="max-width:100%" class="se-no-highlight se-cropable" style="z-index: 10; display:none;" onload="centerImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)" src=""></img>						
+						<div class="se-header">
+							<div class="se-separator">
+								<div id="description" class="se-btn-text se-single-line">&nbsp;</div>							
+							</div>
+							<div id="count" class="se-single-line se-btn-text">&nbsp;</div>
+						</div>
+										
+					<ul class="se-grid se-three-column-grid" style="width: 100%; position: absolute; bottom: 0px;">
+						<li id="previous" class="se-column">
+							<div class="se-column-inner se-gallery-btn">
+								<div class="se-icon se-previous-icon" style="margin: 0 auto 0 auto;"></div>								
+							</div>
+						</li>
+						<li id="details" class="se-column">
+							<div class="se-column-inner se-gallery-btn">
+								<div class="se-icon se-comment-icon" style="margin: 0 auto 0 auto;"></div>
+							</div>
+						</li>
+						<li id="next" class="se-column">
+							<div class="se-column-inner se-gallery-btn">
+								<div class="se-icon se-next-icon" style="margin: 0 auto 0 auto;"></div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</script>
+		
+		
+		<script id="gallery_page" type="text/html">
+			<div>				
+				<ul id="gallery-list" class="se-list se-gallery-list" style="width: 100%; position: relative;">
+
+				</ul>
+			</div>
+		</script>
+		
+		<script id="button_item" type="text/html">
+		<div> 
+			<span class="se-btn se-normal-left-right-margin se-btn-corner-all se-drop-shadow">
+				<span class="se-btn-inner se-btn-corner-all">
+					<span class="se-btn-text"><%= data.title || "&nbsp;" %></span>
+				</span>
+			</span>
+		</div>
+		</script>
+		
+		<script id="coupon_button_item" type="text/html">
+		<div class="se-normal-left-right-margin">
+			<div id="coupon-loading" style="text-align: center; display: none;">		
+				<span class="se-spinner-small-icon-dark" style="display: inline-block;"></span>
+			</div> 
+			<div id="coupon-label-panel" class="se-label-panel se-btn-corner-all" style="display:none">
+				<div class="se-title se-single-line">Title</div>
+				<div class="se-subtitle se-single-line">
+					<span class="se-emph"><%= M.date %>:&nbsp;</span><span id="date"></span>
+					<span class="se-emph">&nbsp;<%= M.code%>:&nbsp;</span><span id="code"></span>
+				</div>
+			</div>
+			<span id="coupon-buy-button" class="se-btn se-btn-corner-all se-drop-shadow" style="display: none;">
+				<span class="se-btn-inner se-btn-corner-all">
+					<span class="se-btn-text"><%= data.title || "&nbsp;" %></span>
+				</span>
+			</span>
+		</div>
+		</script>
+				
+		<script id="list_component" type="text/html">
+			<div>				
+				<div class="se-search-li se-li" style="display:none">
+					<form id="search-form">
+					<div class="li-inner">
+						<div class="se-search-input-holder">
+																	
+							<input class="se-search-input" type="text" value="" placeholder="Search" />
+							<input type="submit" style="display: none" />
+								
+						</div>
+						<div class="se-icon se-search-icon"></div> 
+					</div>	
+					</form>				
+				</div>
+				<div style="clear: both"></div>
+				<div><ul id="newsFeed" class="se-list newsFeed feed feedPosts"></ul></div>				
+				<div id="newsFeedLoadMessage" class="boxData feed" style="display: none;"></div>
+				<div style="clear:both;">				
+				
+				
+				<div id="loading-indicator" class="se-li se-loading-li" style="display: none;">		
+					<div class="se-li-inner">					
+						<div class="se-loading-box">		
+							<span class="se-spinner-small-icon-dark" style="display: inline-block;"></span><span class="se-text"><%= M.refreshing %></span>
+						</div>
+					</div>					
+				</div>					
+				 
+				<div id="loadMoreButtonContainer" class="se-big-top-bottom-padding" style="display: none"> 
+					<span id="loadMoreButton" class="se-btn se-big-all-sides-margin se-btn-corner-all se-drop-shadow">
+						<span class="se-btn-inner se-btn-corner-all">
+							<span class="se-btn-text"><%= M.loadMore %></span>
+						</span>
+					</span>
+
+					<li class="item" style="display:none;">
+						<button id="loadMoreButton" class="btnButton"></button>  
+					</li>
+				</div>
+
+			</div>
+		</script>
+						
+		<script id="url_feed_item" type="text/html">
+			<li id="newsFeedItem<%= feedItem.id %>" class="item clearfix" onclick="<%= feedItem.url %>">
+				<% if (feedItem.icon_url) { %>
+					<span class="crop">
+						<img src="<%= getImageUrl(feedItem.icon_url) %>"
+							onload="newsImageLoaded(event)" onerror="newsImageLoadError(event)" />
+					</span>
+				<% } %>
+
+				<h3><%= feedItem.name %></h3>
+				<div class="content">
+					<% if (feedItem.content !== feedItem.name) { %>
+						<%= feedItem.content %>
+					<% } %>
+				</div>
+								
+			</li>
+		</script>
+		
+		<script id="video_feed_item" type="text/html">
+		<li class="se-li se-video-li">
+			<div class="se-li-inner">
+				<div class="se-title"><%= feedItem.title %></div>		
+				
+				<div class="se-video-img-holder se-normal-top-bottom-margin">
+					<% if (feedItem.imageUrl) { %>
+						<img class="se-img img-loading" onload="cropImage(event)" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+					<% } else { %>
+						<div class="se-img img-loading-failed"></div>
+					<% } %>
+					<span class= "se-video-img-overlay se-video-overlay-icon"></span>
+				</div>
+		
+		
+				<div class="se-info-bar-grid se-clear">
+					<span class="se-column se-first-column">
+						<span class="se-info-inner">	
+							<span class="se-icon se-icon-left se-video-icon"></span>
+							<span class="se-info-text"><%= feedItem.itemTime %>&nbsp;</span>
+						</span>
+					</span>
+				
+					<span class="se-column"> 
+						<span class="se-info-inner">
+							<span class="se-icon se-icon-left se-author-icon"></span>
+							<span class="se-info-text"><%= feedItem.author %>&nbsp;</span>
+						</span> 
+					</span>
+					
+					<span class="se-column se-last-column"> 
+						<span class="se-info-inner">
+							<span class="se-icon se-icon-left se-shouts-icon"></span>
+							<span class="se-info-text"><%= feedItem.itemComments ?  feedItem.itemComments : 0%>&nbsp;</span>
+						</span> 
+					</span>
+				</div>
+		
+			</div>
+		</li>
+		</script>
+		
+		<script id="info_bar_column" type="text/html">
+		<span class="se-column">
+			<span class="se-info-inner">	
+				<span class="se-icon"></span>
+				<span class="se-info-text"><%= text%>&nbsp;</span>
+			</span>
+		</span>
+		</script>
+		
+		<script id="activity_feed_item" type="text/html">
+		<li class="se-li se-activity-li">
+			<div class="se-li-inner">
+						
+				
+				<div class="se-video-img-holder img-loading se-crop">
+					<% if (feedItem.image2Url) { %>
+						<img class="se-cropable" onload="cropImage(event);" onerror="seImageLoadError(event)" src="<%= feedItem.image2Url%>" style="display: none"></img>
+
+					<% } else { %>
+						<div class="se-img img-loading-failed"></div>
+					<% } %>
+					<% if (false && feedItem.image2Overlay) { %>
+						<div class="se-video-img-overlay-holder">
+							<span class= "se-video-img-overlay se-video-overlay-icon"></span>
+						</div>	
+					<% } %>
+					<div class="se-title-holder">
+						<span class= "se-video-img-overlay se-video-overlay-icon"></span>
+						<div class="se-title"><%= feedItem.title %></div>
+					</div>
+				</div>
+		
+		
+				<div class="se-three-column-grid se-info-bar-grid se-clear">					
+				</div>
+		
+			</div>
+		</li>
+		</script>
+				
+		<script id="people_feed_item" type="text/html">
+		<li class="se-li se-simple-li se-people-li">
+			<div class="se-li-inner"> 
+				<div class="se-box-shadow se-btn-corner-all se-crop se-avatar-border se-avatar se-avatar-left se-big-right-margin img-loading ">				
+				<% if (feedItem.imageUrl) { %>
+					<img class="se-cropable" onload="cropImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+				<% } else { %>
+					<div class="img-loading-failed se-avatar" ></div>
+				<% } %>
+				</div>
+				
+				
+				<div class="se-title se-single-line"><%= feedItem.title %></div>		
+				<div class="se-text se-single-line"><%= feedItem.infoText %></div>
+				<div class="se-clear"></div>
+			</div>
+		</li>
+		</script>
+		<script id="places_feed_item" type="text/html">
+		<li class="se-li se-places-li">
+			<div class="se-li-inner se-expandible-middle-column-layout"> 				
+
+				<div class="se-middle-column se-has-left-column">
+					<div class="se-column-inner" style="height: 53px;">
+							
+						<div class="se-valign-spacer"></div><div class="se-valign" style="width: 100%;">				
+							<div class="se-title se-single-line"><%= feedItem.title %></div>		
+							<div class="se-text se-single-line"><%= feedItem.subtitle %></div>
+							<div class="se-info-bar-grid se-clear" style="margin-left: -5px;"></div>
+						</div>					
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="se-box-shadow se-btn-corner-all se-crop se-avatar-border se-avatar se-avatar-left se-big-right-margin img-loading ">				
+					<% if (feedItem.imageUrl) { %>
+						<img class="se-cropable" onload="cropImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+					<% } else { %>
+						<div class="img-loading-failed se-avatar" ></div>
+					<% } %>
+					</div>
+				</div>
+				&nbsp;
+				<div style="clear:both;"></div>
+			</div>
+		</li>
+		</script>
+		<script id="places_feed_item_old" type="text/html">
+		<li class="se-li se-simple-li se-places-li">
+			<div class="se-li-inner"> 
+				<div class="se-box-shadow se-btn-corner-all se-crop se-avatar-border se-avatar se-avatar-left se-big-right-margin img-loading ">				
+				<% if (feedItem.imageUrl) { %>
+					<img class="se-cropable" onload="cropImage(event);seImageLoaded(event)" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+				<% } else { %>
+					<div class="img-loading-failed se-avatar" ></div>
+				<% } %>
+				</div>
+				
+				
+				<div class="se-title se-single-line"><%= feedItem.title %></div>		
+				<div class="se-text se-single-line"><%= feedItem.subtitle %></div>
+				<div class="se-info-bar-grid se-clear" style="margin-left: -5px;"></div>
+				<div class="se-clear"></div>
+			</div>
+		</li>
+		</script>
+		
+		<script id="events_feed_item" type="text/html">
+		<li class="se-li se-events-li">
+			<div class="se-li-inner se-expandible-middle-column-layout"> 				
+
+				<div class="se-middle-column se-has-left-column">
+					<div class="se-column-inner" style="height: 53px;">
+							
+						<div class="se-valign-spacer"></div><div class="se-valign" style="width: 100%;">				
+							<div class="se-title se-single-line"><%= feedItem.title %></div>		
+							<div class="se-text se-single-line"><%= feedItem.summary %></div>
+							<div class="se-info-bar-grid se-clear" style="margin-left: -5px;"></div>
+						</div>					
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="se-calendar-icon se-avatar se-avatar-border se-box-shadow se-big-right-margin">
+						<div class="se-month se-single-line"><%=getMonth(feedItem.date, feedItem.useDeviceTimeZone)%></div>
+						<div class="se-day se-single-line"><div class="se-day-text"><%=getDay(feedItem.date, feedItem.useDeviceTimeZone)%></div></div>
+					</div>
+				</div>
+				&nbsp;
+				<div style="clear:both;"></div>
+			</div>
+		</li>
+		</script>
+		
+		<script id="podcasts_feed_item" type="text/html">
+		<li class="se-li se-podcasts-li">
+			<div class="se-li-inner se-expandible-middle-column-layout">
+				<%feedItem.buttonTitle = false;%> 
+				<% if (feedItem.buttonTitle) { %>
+					<div class="se-middle-column se-has-left-column se-has-right-column">
+				<% } else { %>
+					<div class="se-middle-column se-has-left-column">
+				<% } %>
+					<div class="se-column-inner" style="height: 53px;">
+							
+						<div class="se-valign-spacer"></div><div class="se-valign" style="width: 100%;">				
+							<div class="se-title"><%= feedItem.title %></div>					
+							<div class="se-info-bar-grid se-clear se-short" style="margin-left: -5px;"></div>
+						</div>					
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="se-oval-icon se-float-left se-box-shadow se-normal-right-margin" style="margin: 15px 0 15px 0;">
+						<div class="se-icon se-disclosure-icon"></div>
+					</div>
+				</div>
+				<% if (feedItem.buttonTitle) { %>
+					<div class="se-right-column">
+					<span class="se-btn se-normal-left-margin se-normal-top-bottom-margin se-btn-corner-all se-drop-shadow">
+						<span class="se-btn-inner se-btn-corner-all">
+							<span class="se-btn-text"><%=feedItem.buttonTitle%></span>
+						</span>
+					</span>
+					</div>
+				<% } %>
+				<div style="clear:both;"></div>
+			</div>
+		</li>
+		</script>
+		
+		<script id="comment_item" type="text/html">
+			<li class="se-li se-comment-li">			
+			<div class="se-li-inner se-expandible-middle-column-layout">
+				<div class="se-middle-column se-has-left-column">
+					<div class="se-column-inner">
+						<div class="se-title se-float-left"><%=feedItem.author%></div>
+						<div class="se-text">&nbsp;<%=feedItem.message%></div>
+						<% if (feedItem.deletable && feedItem.deletable != "no") { %>
+							<div class="se-info-text" style="float: right;">X <%=M.removeComment%></div>
+						<% } %>
+						<div class="se-info-text"><%=renderTime(feedItem.publishedDate)%></div>					
+						
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="img-loading se-crop se-btn-corner-all se-avatar se-normal-right-margin se-normal-bottom-margin">
+						<img style="display:none" onload="newsImageLoaded(event);seImageLoaded(event);" onerror="seImageLoadError(event)" src="<%= feedItem.authorImageUrl%>"></img>
+					</div>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="se-line"></div>
+		</li>
+		</script>
+		
+		<script id="small_disclosure_item" type="text/html">
+		<li class="se-li se-small-disclosure-li se-normal-all-sides-margin se-btn-corner-all">
+			<div class="se-li-inner se-expandible-middle-column-layout">
+				<div class="se-middle-column se-has-left-column se-has-right-column">
+					<div class="se-column-inner" style="height: 40px;">
+						<div class="se-valign-spacer"></div><div class="se-valign" style="width: 100%;">				
+							<div class="se-title se-single-line"><%= feedItem.title %></div>							
+						</div>					
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="se-column-inner">
+						<div class="se-icon se-pin-icon"></div>
+					</div>
+				</div>
+				
+				<div class="se-right-column">
+					<div class="se-column-inner">
+						<div class="se-icon se-disclosure-icon-dark"></div>
+					</div>
+				</div>				
+				<div style="clear:both;"></div>
+			</div>
+		</li>
+		</script>
+		
+		<script id="disclosure_item" type="text/html">
+		<div class="se-li se-small-disclosure-li se-normal-left-right-margin se-btn-corner-all">
+			<div class="se-li-inner se-expandible-middle-column-layout">
+				<div class="se-middle-column se-has-left-column se-has-right-column">
+					<div class="se-column-inner" style="height: 40px;">
+						<div class="se-valign-spacer"></div><div class="se-valign" style="width: 100%;">				
+							<div class="se-title se-single-line"><%= data.title %></div>							
+						</div>					
+					</div>
+				</div>
+				<div class="se-left-column"> 
+					<div class="se-column-inner">
+						<div class="se-icon se-medium-icon" style="background-image: url(<%= imageUrl(data.iconName)%>)"></div>
+					</div>
+				</div>
+				
+				<div class="se-right-column">
+					<div class="se-column-inner">
+						<div class="se-icon se-disclosure-icon-dark"></div>
+					</div>
+				</div>				
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		</script>		
+				
+		<script id="categories_feed_item" type="text/html">
+		<li class="se-li se-categories-li se-show-separator">
+			<div class="se-li-inner">				
+				<div class="se-title se-single-line"><%= feedItem.title %></div>				
+			</div>
+		</li>
+		</script>
+		<script id="static_map_item" type="text/html">
+			<div class="se-static-map-item">
+			<div class="se-crop se-avatar-border se-box-shadow img-loading" style="width: <%=width%>; height: <%=height%>; display: inline-block;max-width: 100%;">				
+				<img class="se-cropable map img-loading"></img>
+			</div>
+			</div>			
+		</script>
+		
+		<script id="map_item" type="text/html">
+		<div class="se-li se-map-li se-btn-corner-all">
+			<div class="se-li-inner se-btn-corner-all">
+				<div class="se-content-box">
+				<div class="se-oval-icon se-box-shadow" style="float: right;">
+					<div class="se-icon se-disclosure-icon"></div>
+				</div>
+				<div class="se-text se-single-line" style="padding: 5px;"><%=feedItem.label%>&nbsp;</div>					
+			</div>				  
+		</div>
+		</script>
+		
+		<script id="news_feed_item" type="text/html">
+		<li class="se-li se-news-li">
+			<div class="se-li-inner">
+				
+				<% if (feedItem.imageUrl) { %>
+					<div class="se-box-shadow img-loading se-avatar-border se-crop se-btn-corner-all se-avatar se-avatar-left se-normal-right-margin se-normal-bottom-margin">
+						<img style="display:none" onload="newsImageLoaded(event);seImageLoaded(event);" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+					</div>
+				<% } %>					
+				
+				<div class="se-title"><%= feedItem.title %></div>		
+				<div class="se-text"><%= feedItem.summary %></div>
+				
+				<div class="se-info-bar-grid se-clear se-normal-top-margin">					
+				</div>
+		
+			</div>
+		</li>
+			
+	
+		</script>
+		
+		<script id="deal_info_panel" type="text/html">
+			<div class="se-deal-info-panel">
+				<div class="se-shadow"></div>
+				<div class="se-column se-first-column"><div class="se-column-inner"><div class="se-title"><%= M.price %></div><div class="se-sales-price se-single-line"><%= data.salesPrice %></div></div></div><div class="se-column"><div class="se-column-inner"><div class="se-title"><%= M.oldPrice %></div><div class="se-discount-price se-single-line"><%= data.regularPrice %></div></div></div><div class="se-column se-last-column"><div class="se-column-inner"><div class="se-title"><%= M.discount %></div><div class="se-discount-percentage se-single-line"><%= data.discount %></div></div></div>
+			</div>
+		</script>
+		
+		<script id="deals_feed_item" type="text/html">
+		<li class="se-li se-deals-li">
+			<div class="se-li-inner">
+				
+				<% if (feedItem.imageUrl) { %>
+					<div class="se-box-shadow img-loading se-crop se-avatar se-avatar-left se-normal-right-margin se-normal-bottom-margin">
+						<img style="display:none" onload="newsImageLoaded(event);seImageLoaded(event);" onerror="seImageLoadError(event)" src="<%= feedItem.imageUrl%>"></img>
+					</div>
+				<% } else { %>
+					<div class="se-box-shadow img-loading-failed se-crop se-avatar se-avatar-left se-normal-right-margin se-normal-bottom-margin"></div>
+				<% } %>
+				<div class="se-top-right-text"><%= feedItem.topRightText %></div>
+				<div class="se-title"><%= feedItem.title %></div>
+				<div class="se-left-text se-sales-price se-single-line"><%= feedItem.leftText %></div>
+				<div class="se-right-text se-single-line"><%= feedItem.rightText %></div>				
+				<div class="se-info-bar-grid se-clear se-normal-top-margin">					
+				</div>
+		
+			</div>
+		</li>
+			
+	
+		</script>
+		
+		<script id="normal_feed_item" type="text/html">
+			<li class="item clearfix">
+				<% if (feedItem.imageUrl) { %>
+					<span class="crop">
+						<img src="<%= feedItem.imageUrl %>"
+							onload="newsImageLoaded(event)" onerror="newsImageLoadError(event)" />
+					</span>
+				<% } %>
+
+				<h3><%= feedItem.title %></h3>
+				<div class="content">
+					<% if (feedItem.summary !== feedItem.title) { %>
+						<%= feedItem.summary %>
+					<% } %>
+				</div>
+				
+				<% if (feedItem.infoFirstSegment || feedItem.author || feedItem.itemComments) { %>
+					<ul class="txtInfo">
+						<% if (feedItem.infoFirstSegment) { %>
+    						<li class="time_distance"><%= feedItem.infoFirstSegment %></li>
+						<% } %>
+						<% if (feedItem.author) { %>
+    						<li class="author" style="max-width:<%= ($(window).width() - 250)%>px"><%= feedItem.author %></li>
+						<% } %>
+						<% if (feedItem.itemComments) { %>
+    						<li class="comments"><%= feedItem.itemComments ?  feedItem.itemComments : 0%></li>
+						<% } %>
+					</ul>
+				<% } %>
+			</li>
+		</script>
+		
+		<script id="detailed_title_item" type="text/html">
+		<div class="article-header">
+			<div class="se-expandible-middle-column-layout">
+				<% if (data.iconUrl) { %>
+				<div class="se-middle-column se-has-left-column">
+				<% } else { %>
+				<div class="se-middle-column">
+				<% } %>	
+					<div class="se-column-inner">
+						<div class="se-valign-spacer"></div><div class="se-valign">				
+							<div class="se-title"><%= data.title%></div>
+							<% if (data.subtitle) { %>
+								<div class="se-text" onClick="return false;"><%= data.subtitle%></div>
+							<% } %>			
+						</div>
+					</div>
+				</div>	
+				<% if (data.iconUrl) { %>
+					<div class="se-left-column">
+						<div class="se-column-inner">									
+							<img src="<%=imageUrl(data.iconUrl)%>"></img>
+						</div>
+					</div>
+				<% } %>						
+			</div>
+			<div style="clear:both;"></div>
+			<div class="se-info-bar-grid se-clear se-wide se-normal-top-margin"></div>
+		</div>		
+		</script>
+		<script id="article_page" type="text/html">
+			
+				<div class="newsArticle se-article">
+					<div class="article-header">
+						<div class="se-expandible-middle-column-layout">
+							<% if (bItem.iconUrl) { %>
+							<div class="se-middle-column se-has-left-column">
+							<% } else { %>
+							<div class="se-middle-column">
+							<% } %>	
+								<div class="se-column-inner">
+									<div class="se-valign-spacer"></div><div class="se-valign">				
+										<div class="se-title"><%= title%></div>								
+									</div>
+								</div>
+							</div>	
+							<% if (bItem.iconUrl) { %>
+								<div class="se-left-column">
+									<div class="se-column-inner">									
+										<img src="<%=imageUrl(bItem.iconUrl)%>"></img>
+									</div>
+								</div>
+							<% } %>						
+						</div>
+						<div style="clear:both;"></div>
+						<div class="se-info-bar-grid se-clear se-wide se-normal-top-margin"></div>
+					</div>
+										
+					
+					
+					<div class="se-normal-all-sides-padding" style="align: center;">
+						<div class="mediaBorder">								
+						</div>						
+					</div>
+					
+					
+					<div id="newsTextContainer">						
+						<div class="text clearfix">
+						<% if (title !== text) { %>
+							<%= text %>
+						<% } %>							
+						</div>
+						<ul id="custom-items">
+						</ul>	
+						<% if (published) { %>
+							<div class="published"><%= timeDistanceInWords(published) %></div>
+						<% } %>
+						<div id="newsLikes" style="display: none;"></div>
+					</div>
+					
+					<% if (show_buttons && (commentable || likeable)) { %>
+						<ul class="boxButtons buttons btnMediumButtons">
+							<% if (commentable) { %>
+								<li class="item">
+									<button id="newsCommentButton" class="btnButton"><%= M.actionSheetReplyButton %></button>
+								</li>
+							<% } %>
+							<% if (likeable) { %>
+								<li class="item">
+									<button id="newsLikeButton" class="btnButton"><%= M.like %></button>  
+								</li>
+							<% } %>
+						</ul>
+					<% } %>
+					
+					<ul id="place-item" style="display:none">
+						<li class="ui-li ui-li-has-arrow ui-li-has-icon-left shoutem-style">
+							<div class="ui-btn-inner">								
+								<div class="ui-btn-text">									
+									<a id="place-title" class="ui-link-inherit" style="overflow:hidden; text-overflow: ellipsis;">Place</a>
+								</div>								
+								<span class="se-icon se-icon-left se-icon-location"></span>
+								<span class="se-icon se-icon-right">&gt;</span>
+							</div>
+						</li>		
+					</ul>
+					
+					<div id="comments"></div>
+					<% if (fbArticleLink) { %>
+						<div id="fb-root"></div>
+						<div class="fb-comments" data-href="<%= fbArticleLink%>" data-num-posts="10" data-mobile="false" data-width="<%=$(window).width()%>"></div>
+					<% } %>					
+				</div>			
+		</script>
+		
+		<script id="comments_list_component" type="text/html">
+			<div class="se-comments-list">
+			<div id="loading-indicator" class="se-li se-loading-li" style="display: none;">		
+				<div class="se-li-inner">					
+					<div class="se-loading-box">		
+						<span class="se-spinner-small-icon-dark" style="display: inline-block;"></span><span class="se-text"><%= M.refreshing %></span>
+					</div>
+				</div>					
+			</div>
+			<ul id="loadMoreContainer" style="display:none;">
+				<li class="se-li se-load-more" id="loadMoreCommentsButton">
+					<div class="se-li-inner">					
+					<div class="se-icon se-shouts-icon-dark se-float-left"></div><div class="se-text se-single-line"><%=M.showAllComments%></div>
+					</div>
+					<div class="se-line"></div>	
+				</li>
+				
+			</ul>					
+			<ul id="newsComments" style="display: none;"></ul>
+			</div>			
+		</script>
+		
+		
+		<script id="news_article_comments" type="text/html">
+			<% $.each(comments, function(i, comment) { %>
+				<li class="item">
+					<div>
+						<span class="icon"><img src="<%= getAvatarUrl(comment.publisher) %>" /></span>
+						<p class="content">
+							<span class="nick"><%= comment.publisher.screen_name %></span>
+							<%= sanitizeHtml(comment.text) %>
+						</p>
+
+						<ul class="txtInfo">
+							<li class="comments"><%= timeDistanceInWords(comment.created_at) %></li>
+							<% if (comment.deletable || comment.publisher.id && comment.publisher.id === user.id) { %>
+								<li class="delete" onclick="deleteNewsComment('<%= itemId %>', <%= comment.id %>)">
+									<%= M.actionSheetDeleteButton %>
+								</li>
+							<% } %>
+						</ul>
+					</div>
+				</li>
+			<% }); %>
+		</script>
+		
+		
+				
+		<script id="notifications" type="text/html">
+			<div>
+				<div id="notificationsText" class="boxData" style="display: none" />
+				<ul id="notificationsFeed" class="feed feedPosts"></ul>
+				<ul class="boxButtons buttons btnSmallButtons" style="display: none" id="loadMoreButtonContainer"> 
+					<li class="item">
+						<button id="loadMoreButton" class="btnButton"><%= M.loadMore %></button>  
+					</li>
+				</ul>
+			</div>
+		</script>
+		
+		<script id="notifications_item" type="text/html">
+			<li class="item<%= notification.unread_flag ? " unread": "" %>" onclick="navigateTo('<%= getNotificationUrl(notification) %>')">
+				<img class="icon" width="48" height="48" src="<%= getAvatarUrl(notification.actor) %>" /></img>
+				<p class="content">
+					<%= getNotificationMessage(notification) %>
+				</p>
+				<ul class="txtInfo">
+					<li><%= timeDistanceInWords(notification.time) %></li>
+				</ul>
+			</li>
+		</script>
+						
+		<script id="audio_preview" type="text/html">
+			<div id="newsAudioContainer">
+				<% if (is_embedded) { %>
+					<audio src="<%= audio_url %>" controls autoplay="autoplay"></audio>
+				<% } else { %>
+					<a href="<%= audio_url %>" target="_blank" onclick="openInAudioPlayer(event)">
+						<img src="theme/img/audio-play.png" alt="" style="width: 100%" />
+					</a>
+            	<% } %>
+			</div>
+		</script>
+		
+		<script id="video_preview" type="text/html">
+			
+			<a href="<%= videoUrl %>" class="videoImageContainer" target="_blank" onclick="openInVideoPlayer(event)">
+				<% if (imageUrl) { %>
+					<div style="width: <%=width%>px; height: <%=height%>px; max-width: 100%; margin: 0 auto 0 auto;" class="se-crop se-btn-corner-all se-box-shadow se-avatar-border se-btn-corner-all">
+					<img style="width: 100%" src="<%= imageUrl %>" alt="<%= M.watchVideo %>" class="media-img" />
+					<img src="theme/img/video-play.png" class="playIcon" alt="" />
+					</div>
+
+				<% } else { %>
+					<%= M.watchVideo %>
+				<% } %>
+			</a>			
+		</script>
+			
+		<script id="audio_player_item" type="text/html">			
+			<div class="se-player" style="margin: 10px;">
+			<audio src="<%= feedItem.audio_url %>">Audio tag is not supported!</audio>
+			<div class="se-expandible-middle-column-layout se-drop-shadow se-btn-corner-all">
+					<div class="se-middle-column se-has-left-column se-has-right-column">
+					<div class="se-column-inner">
+						<div id="slider-control" style="width: 100%; height: 200%; position: relative; top:-50%;">
+						<div class="se-rail">
+							<div id="slider-trail" class="se-trail"></div>
+							<div id="slider-thumb" class="se-thumb" style="display: none;"></div>
+						</div>				
+						</div>	
+					</div>
+				</div>
+				<div class="se-left-column se-btn-corner-left">
+					<div id="play-pause-btn" class="se-column-inner se-btn-corner-left not-loaded">
+						<div class="se-player-icon"></div>
+					</div> 
+					
+				</div>
+				
+				<div class="se-right-column se-btn-corner-right">
+					<div class="se-column-inner se-btn-corner-right se-single-line">
+							
+						<div id="time" class="se-text">00:00:00</div>						
+					</div>
+					
+				</div>				
+				<div style="clear:both;"></div>
+			</div>			
+		</script>	
+		
+		<script id="edit_profile" type="text/html">
+			<form>
+				<fieldset>
+					<div class="field">
+						<input type="text" id="name" value="<%= user.name %>" placeholder="<%= M.name %>"/>
+					</div>
+					<div class="field">
+						<input type="text" id="location" value="<%= user.location %>" placeholder="<%= M.location %>"/>
+					</div>
+					<div class="field">													
+						<input type="text" id="url" value="<%= user.url %>" placeholder="<%= M.loginAuthorUrl %>"/>
+					</div>
+					<div class="field">						
+						<textarea id="description" placeholder="<%= M.loginAbout %>"><%= user.description %></textarea>
+					</div>
+				</fieldset>
+			</form>
+
+			<ul class="boxButtons buttons btnMediumButtons">       
+				<li class="item">
+					<button id="submitButton" class="btnButton"><%= M.submit %></button>        
+				</li>       
+			</ul>
+		</script>
+		
+		<script id="badges_list"  type="text/html">
+			<ul id="badgesList" class="board">
+			</ul>
+			<div id="badgesListLoadMessage" class="boxData feed" style="display: none;"></div>
+		</script>
+		
+		<script id="badges_list_item" type="text/html">
+			<li>
+  				<img src="<%= badge.image_url %>">
+  				<p class="content">
+	      			<strong><%= badge.name %></strong>
+  				</p>
+			</li>
+		</script>
+		
+		<script id="badges_details" type="text/html">
+		<div class="boxData" id="badgesDetails">
+			<img src="<%= badge.large_image_url %>">
+			<div class="description">
+				<h3><%= badge.name %></h3>
+				<p>
+				<strong><%= timeDistanceInWords(badge.unlocked_at) %></strong>
+				</p>
+				
+      			<p>
+      			<span><%= badge.description %></span>
+				</p>
+				
+			</div>
+		</div>
+		</script>
+			<script src="1.1.js" type="text/javascript"></script>
+	<script src="1.2.js" type="text/javascript"></script>
+	<script src="1.3.js" type="text/javascript"></script>
+	<script src="1.4.js" type="text/javascript"></script>
+	<script src="1.5.js" type="text/javascript"></script>
+	<script src="1.6.js" type="text/javascript"></script>
+	<script src="1.7.js" type="text/javascript"></script>
+	<script src="1.8.js" type="text/javascript"></script>
+	<script src="1.9.js" type="text/javascript"></script>
+	<script src="1.10.js" type="text/javascript"></script>
+	<script src="1.11.js" type="text/javascript"></script>
+	<script src="1.12.js" type="text/javascript"></script>
+	<script src="1.13.js" type="text/javascript"></script>
+	<script src="1.14.js" type="text/javascript"></script>
+	<script src="1.15.js" type="text/javascript"></script>
+	<script src="1.16.js" type="text/javascript"></script>
+	<script src="1.17.js" type="text/javascript"></script>
+	<script src="1.18.js" type="text/javascript"></script>
+	<script src="1.19.js" type="text/javascript"></script>
+	<script src="1.20.js" type="text/javascript"></script>
+	</body>
+</html>
+
+

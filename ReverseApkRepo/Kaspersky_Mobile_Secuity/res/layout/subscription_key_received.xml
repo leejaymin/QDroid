@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView01" android:background="@drawable/gradient_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutBkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:id="@id/LinearLayout01" android:background="@drawable/hdr" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/logo" />
+            <LinearLayout android:gravity="right" android:id="@id/HelpBtnLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/helpImg" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_info_30" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LicenseLayout" android:focusable="true" android:visibility="gone" android:addStatesFromChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/LicenseLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="50.0">
+                <ImageView android:id="@id/LicenseImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_license_25_b" />
+                <LinearLayout android:id="@id/LicenseLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/LicenseTextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_screen_license_expired_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:layout_gravity="bottom|center" android:id="@id/LicenseRenewButton01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_screen_license_renew_button_title" android:drawableLeft="@drawable/ico_activate_card_20" style="@style/KMSButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/CommonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/TextView03" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_subscr_application_activated_title" />
+            <TextView android:textColor="#ffffffff" android:id="@id/TextView04" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_subscr_application_activated" />
+            <TextView android:textColor="#ffffffff" android:id="@id/TextView01" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/str_subscr_license_installed" />
+            <RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:enabled="false" android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView02" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_serial_number" />
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView03" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_type" />
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView04" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_start_date" />
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView05" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_expire_date" />
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView06" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_days_left" />
+                    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/TextView07" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_license_device_id" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/LinearLayout01">
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_serial_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_expire_date" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_days" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/lic_device_id" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <Button android:layout_gravity="bottom|center" android:id="@id/activate_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_subscr_continue_button" android:drawableLeft="@drawable/ico_arrow_go_20" style="@style/KMSButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

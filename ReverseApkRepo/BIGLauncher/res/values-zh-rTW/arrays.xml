@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>亮（默認）</item>
+        <item>黑色</item>
+        <item>藍色</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>自動（默認）</item>
+        <item>水平</item>
+        <item>垂直</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>預設</item>
+        <item>更大</item>
+        <item>最大</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>主屏幕</item>
+        <item>首選項</item>
+    </string-array>
+</resources>

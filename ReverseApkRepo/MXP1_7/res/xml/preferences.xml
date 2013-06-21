@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/cfg_list">
+        <PreferenceCategory android:title="@string/appearance">
+            <ListPreference android:entries="@array/list_theme_entries" android:title="@string/list_theme" android:key="list_theme" android:defaultValue="white" android:entryValues="@array/list_theme_values" />
+            <CheckBoxPreference android:title="@string/cfg_thumbnail" android:key="thumbnail" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/cfg_group_by_folder" android:key="group_by_folder" android:summary="@string/cfg_group_by_folder_summary" android:defaultValue="true" />
+            <EditTextPreference android:title="@string/cfg_new_tag" android:key="new_tagged_period" android:summary="@string/cfg_new_tag_summary" android:defaultValue="7" android:dialogMessage="@string/cfg_new_tag_dialog_message" android:inputType="date" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/scan">
+            <PreferenceScreen android:title="@string/cfg_scan_root" android:summary="@string/cfg_scan_root_summary">
+                <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.mxtech.videoplayer.ActivityScanRootSelector" />
+            </PreferenceScreen>
+            <PreferenceScreen android:title="@string/cfg_video_file" android:summary="@string/cfg_video_file_summary">
+                <intent android:targetPackage="@string/package_name" android:action="android.intent.action.VIEW" android:targetClass="com.mxtech.videoplayer.ActivityVideoFile" />
+            </PreferenceScreen>
+            <CheckBoxPreference android:title="@string/cfg_respect_nomedia" android:key="respect_nomedia" android:summary="@string/cfg_respect_nomedia_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/cfg_show_hidden" android:key="show_hidden" android:summary="@string/cfg_show_hidden_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/menu_edit">
+            <CheckBoxPreference android:title="@string/allow_edits" android:key="allow_edits" android:summary="@string/allow_edits_summary" android:defaultValue="true" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/cfg_player">
+        <PreferenceCategory android:title="@string/playback" android:key="category_player_playback">
+            <ListPreference android:entries="@array/resume_last_entries" android:title="@string/resume_last" android:key="resume_last" android:summary="@string/resume_last_summary" android:defaultValue="ask" android:entryValues="@array/resume_last_values" />
+            <CheckBoxPreference android:title="@string/resume_only_first" android:key="resume_only_first" android:summary="@string/resume_only_first_explain" android:defaultValue="false" />
+            <ListPreference android:entries="@array/cfg_playback_complete_action_entries" android:title="@string/cfg_playback_complete_action" android:key="playback_complete_action" android:summary="@string/cfg_playback_complete_action_summary" android:defaultValue="2" android:entryValues="@array/cfg_playback_complete_action_entry_values" />
+            <CheckBoxPreference android:title="@string/fast_seek" android:key="fast_seek" android:summary="@string/fast_seek_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/audio_focus" android:key="audio_focus" android:summary="@string/audio_focus_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/smart_prev" android:key="smart_prev" android:summary="@string/smart_prev_summary" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/cfg_pause_on_seek" android:key="pause_on_seek" android:summary="@string/cfg_pause_on_seek_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/sticky">
+            <CheckBoxPreference android:title="@string/sticky" android:key="sticky" android:summary="@string/sticky_summary" android:defaultValue="false" android:disableDependentsState="true" />
+            <CheckBoxPreference android:title="@string/sticky_audio" android:key="sticky_audio" android:summary="@string/sticky_audio_summary" android:dependency="sticky" android:defaultValue="true" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/tune_display" android:key="category_player_display">
+            <com.mxtech.videoplayer.TunerScreen android:title="@string/cfg_tuner_screen" android:summary="@string/cfg_tuner_screen_summary" android:dialogLayout="@layout/tuner_screen" />
+            <com.mxtech.videoplayer.TunerDrag android:title="@string/cfg_tuner_drag" android:summary="@string/cfg_tuner_drag_summary" android:dialogLayout="@layout/tuner_drag" />
+            <com.mxtech.videoplayer.TunerNavigation android:title="@string/cfg_tuner_navigation" android:summary="@string/cfg_tuner_navigation_summary" android:dialogLayout="@layout/tuner_navigation" />
+            <EditTextPreference android:title="@string/cfg_zoom_delay" android:key="video_zoom_delay" android:summary="@string/cfg_zoom_delay_summary" android:dialogMessage="@string/cfg_zoom_delay_message" android:inputType="number" />
+            <CheckBoxPreference android:title="@string/zoom_limited" android:key="video_zoom_limited" android:summary="@string/zoom_limited_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/button_backlight_off" android:key="button_backlight_off" android:summary="@string/button_backlight_off_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/decoder">
+        <PreferenceCategory android:title="@string/decoder_hardware" android:key="category_hardware_decoder">
+            <CheckBoxPreference android:title="@string/omxdecoder_use" android:key="omxdecoder" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/omxdecoder_local" android:key="omxdecoder_local" android:summary="@string/omxdecoder_local_summary" android:dependency="omxdecoder" android:defaultValue="true" />
+            <CheckBoxPreference android:title="@string/omxdecoder_net" android:key="omxdecoder_net" android:summary="@string/omxdecoder_net_summary" android:dependency="omxdecoder" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/omxdecoder_10bit" android:key="omxdecoder_10bit" android:summary="@string/omxdecoder_10bit_summary" android:dependency="omxdecoder" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/correct_hw_aspect_ratio" android:key="correct_hw_aspect_ratio" android:summary="@string/correct_hw_aspect_ratio_summary" android:defaultValue="true" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/decoder_software">
+            <CheckBoxPreference android:title="@string/swdecoder_local" android:key="swdecoder_local" android:summary="@string/swdecoder_local_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/default_swdecoder_net" android:key="swdecoder_net" android:summary="@string/default_swdecoder_net_summary" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/cfg_default_swaudio" android:key="default_swaudio" android:summary="@string/cfg_default_swaudio_summary" android:defaultValue="false" />
+            <ListPreference android:title="@string/core_limit" android:key="core_limit" android:summary="@string/core_limit_summary" android:defaultValue="0" />
+            <ListPreference android:entries="@array/color_depth_entries" android:title="@string/cfg_color_depth" android:key="color_depth" android:summary="@string/cfg_color_depth_summary" android:defaultValue="16" android:entryValues="@array/color_depth_values" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/cfg_general">
+            <CheckBoxPreference android:title="@string/menu_deinterlace" android:key="default_deinterlace" android:summary="@string/cfg_default_deinterlace_summary" android:defaultValue="false" />
+            <Preference android:title="@string/custom_codec" android:key="custom_codec" android:summary="@string/custom_codec_summary" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/subtitle">
+        <PreferenceCategory android:title="@string/load" android:key="category_subtitle_load">
+            <CheckBoxPreference android:title="@string/cfg_subtitle_auto_display" android:key="subtitle_auto_display" android:summary="@string/cfg_subtitle_auto_display_summary" android:defaultValue="true" android:disableDependentsState="false" />
+            <CheckBoxPreference android:title="@string/cfg_subtitle_auto_display_embedded" android:key="subtitle_auto_display_embedded" android:summary="@string/cfg_subtitle_auto_display_embedded_summary" android:dependency="subtitle_auto_display" android:defaultValue="false" />
+            <Preference android:title="@string/subtitle_folder" android:key="subtitle_folder" android:summary="@string/subtitle_folder_summary" />
+            <ListPreference android:title="@string/cfg_subtitle_charset" android:key="subtitle_charset" android:summary="@string/cfg_subtitle_charset_summary" android:defaultValue="" android:dialogTitle="@string/cfg_subtitle_charset" />
+            <CheckBoxPreference android:title="@string/subtitle_show_hw" android:key="subtitle_show_hw" android:summary="@string/subtitle_show_hw_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/appearance" android:key="category_subtitle_appearance">
+            <com.mxtech.videoplayer.TunerSubtitleText android:title="@string/cfg_tuner_subtitle_text" android:summary="@string/cfg_tuner_subtitle_text_summary" android:dialogLayout="@layout/tuner_subtitle_text" />
+            <com.mxtech.videoplayer.TunerSubtitleLayout android:title="@string/cfg_tuner_subtitle_layout" android:summary="@string/cfg_tuner_subtitle_layout_summary" android:dialogLayout="@layout/tuner_subtitle_layout" />
+            <com.mxtech.videoplayer.TunerSSA android:title="@string/ssa_long" android:summary="@string/ssa_summary" android:dialogLayout="@layout/tuner_ssa" />
+            <Preference android:title="@string/font_folder" android:key="typeface_dir" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/text_processing">
+            <CheckBoxPreference android:title="@string/cfg_italic_tag" android:key="italic_tag" android:summary="@string/cfg_italic_tag_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/cfg_general">
+        <CheckBoxPreference android:persistent="false" android:title="@string/play_video_links" android:key="play_video_links" android:summary="@string/play_video_links_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/show_quit_button" android:key="quit_button" android:summary="@string/show_quit_button_summary" android:defaultValue="false" />
+        <PreferenceCategory android:title="@string/user_data">
+            <Preference android:persistent="false" android:title="@string/cfg_clear_history" android:key="clear_history" android:summary="@string/cfg_clear_history_summary" />
+            <Preference android:persistent="false" android:title="@string/cfg_clear_thumbnail" android:key="clear_thumbnail" android:summary="@string/cfg_clear_thumbnail_summary" />
+            <Preference android:persistent="false" android:title="@string/reset_settings" android:key="reset_settings" android:summary="@string/reset_settings_explain" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

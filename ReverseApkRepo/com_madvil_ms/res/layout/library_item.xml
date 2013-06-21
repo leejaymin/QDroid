@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:id="@id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ImageView01" android:background="@drawable/def_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/SongTextView" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:text="Song title 34573498 hjfh9s7hvdv7hds8f9vh 3h9 734 hsdkjfh 42397fhjdkfh asdi" android:singleLine="false" />
+    <TextView android:textColor="#ffe1e1e1" android:id="@id/SizeTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="Size: 23 mb" android:singleLine="true" android:layout_below="@id/SongTextView" />
+    <TextView android:textColor="#ffe1e1e1" android:id="@id/DateTextView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="Date: 12/213/2131" android:singleLine="true" android:layout_below="@id/SizeTextView" />
+</RelativeLayout>

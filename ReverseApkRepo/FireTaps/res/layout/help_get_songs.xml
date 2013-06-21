@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/FlippingPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.tf.ui.FTextView android:text="Get more songs" style="@style/HeadText" />
+    <TextView android:text="@string/get_songs" style="@style/ParagraphText" />
+</LinearLayout>

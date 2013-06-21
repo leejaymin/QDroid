@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/panel_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:gravity="right" android:id="@id/edt_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_marginTop="8.0px" android:layout_marginRight="12.0px" android:text="0" android:singleLine="true" android:editable="false" />
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px">
+                    <TableRow>
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num2" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num3" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3" android:layout_weight="2.0" />
+                        <Button android:layout_gravity="center_vertical" android:id="@id/btn_back" android:paddingLeft="18.0sp" android:paddingTop="5.0sp" android:paddingRight="0.0sp" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_input_delete" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow>
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num4" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num5" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num6" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="6" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num0" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" />
+                    </TableRow>
+                    <TableRow>
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num7" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="7" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num8" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="8" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_num9" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="9" android:layout_weight="2.0" />
+                        <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_dec" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="." android:layout_weight="1.0" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_payee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/payee24" />
+                <EditText android:id="@id/edt_payee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Payee" android:layout_weight="1.0" />
+                <Button android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/note" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_prev_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/gray_arrow_left" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/caption_today" android:layout_weight="1.0" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_next_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/gray_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="60.0px" android:layout_height="wrap_content" android:text="@string/tranfer_out" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bank" android:drawableRight="@drawable/gray_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px">
+                <TextView android:textSize="18.0sp" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="60.0px" android:layout_height="wrap_content" android:text="@string/tranfer_in" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cash" android:drawableRight="@drawable/gray_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_sync" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:drawableRight="@drawable/eurocult" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_currency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0px" android:layout_marginRight="0.0px" android:text="NTD" android:drawableRight="@drawable/gray_arrow_right" android:layout_weight="1.0" />
+                <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:drawableRight="@drawable/edit24x24" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="Personal" android:drawableRight="@drawable/arrow" />
+            <EditText android:id="@id/edt_note" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:hint="write a note" android:editable="false" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_save" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

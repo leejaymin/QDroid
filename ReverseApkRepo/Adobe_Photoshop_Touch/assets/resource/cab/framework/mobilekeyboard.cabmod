@@ -1,0 +1,17 @@
+<mobilekeyboard id="module" view="view1">
+  <windows>
+    <window id="window" width="404" height="330" sizeX="scale" sizeY="scale" layer="5" type="tool" style="plain" canMove="false" canSize="false" canClose="false" canDockHoriz="false" canDockVert="false" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <mobilekeyboardview id="view1" width="404" height="330" sizeX="scale" sizeY="scale" x="0" y="0" module="module"/>
+    </window>
+  </windows>
+  <menus/>
+  <objects/>
+  <classes>
+    <class className="mobilekeyboard" superClassName="module" packageName="com.adobe.cab.core" codeName="CABMobileKeyboard">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABMobileKeyboardView"/>
+    </class>
+    <class className="mobilekeyboardview" superClassName="view" packageName="com.adobe.cab.core" codeName="CABMobileKeyboardView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="CABMobileKeyboard"/>
+    </class>
+  </classes>
+</mobilekeyboard>

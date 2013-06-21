@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/white_button_selector" android:paddingTop="@dimen/favorites_item_view_relativelayout_paddingTop" android:paddingBottom="@dimen/favorites_item_view_relativelayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:textColor="@drawable/button_text_selector" android:id="@id/favs_line_1" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/favorites_item_view_textview_favs_line_1_layout_marginLeft" android:layout_marginTop="@dimen/favorites_item_view_textview_favs_line_1_layout_marginTop" />
+    <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:textColor="@drawable/button_text_selector" android:id="@id/favs_line_2" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/favs_line_1" android:layout_alignLeft="@id/favs_line_1" />
+</RelativeLayout>

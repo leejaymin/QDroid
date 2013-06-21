@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff404040" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/proimage" android:padding="10.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+        <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/protitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/pro_first_title" android:layout_toRightOf="@id/proimage" />
+        <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:id="@id/prodesc" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pro_first_desc" android:layout_toRightOf="@id/proimage" android:layout_below="@id/protitle" />
+    </RelativeLayout>
+</RelativeLayout>

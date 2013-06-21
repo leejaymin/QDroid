@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Kevyt (oletus)</item>
+        <item>Tumma</item>
+        <item>Sininen</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automaattinen (oletus)</item>
+        <item>Vaakasuora</item>
+        <item>Pystysuora</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Oletusarvo</item>
+        <item>Suurempi</item>
+        <item>Suurin</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Kotinäyttö</item>
+        <item>Asetukset</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/HomeButton" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/go_home" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/FileBrowserButton" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/filebrowser" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/UpFolderButton" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/upper_folder" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/RefreshButton" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/refresh" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/Refresh2Button" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/refresh2" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/PreferencesButton" android:background="@drawable/btn_default_normal" android:padding="8.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/preferences" android:scaleType="fitXY" />
+</merge>

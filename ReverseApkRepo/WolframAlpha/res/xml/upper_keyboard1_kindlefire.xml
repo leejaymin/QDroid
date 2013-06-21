@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@fraction/key_width_kindlefire" android:keyHeight="@fraction/key_height_upper_kindlefire" android:horizontalGap="@fraction/key_gap_horizontal_kindlefire" android:verticalGap="@fraction/key_gap_vert_kindlefire"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row android:keyboardMode="@id/mode_brackets">
+        <Key android:codes="63640" android:keyEdgeFlags="left" android:keyOutputText="+" />
+        <Key android:codes="63641" android:keyOutputText="-" />
+        <Key android:codes="63744" android:keyOutputText="*" />
+        <Key android:codes="63745" android:keyOutputText="/" />
+        <Key android:codes="63746" android:keyOutputText="^" />
+        <Key android:codes="63747" android:keyOutputText="=" />
+        <Key android:codes="63748" android:keyOutputText="(" />
+        <Key android:codes="63749" android:keyOutputText=")" />
+        <Key android:codes="63750" android:keyOutputText="$" />
+        <Key android:codes="63751" android:keyEdgeFlags="right" android:keyOutputText="%" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_math">
+        <Key android:codes="63640" android:keyEdgeFlags="left" android:keyOutputText="+" />
+        <Key android:codes="63641" android:keyOutputText="-" />
+        <Key android:codes="63744" android:keyOutputText="*" />
+        <Key android:codes="63745" android:keyOutputText="/" />
+        <Key android:codes="63746" android:keyOutputText="^" />
+        <Key android:codes="63747" android:keyOutputText="=" />
+        <Key android:codes="63748" android:keyOutputText="(" />
+        <Key android:codes="63749" android:keyOutputText=")" />
+        <Key android:codes="63752" android:keyOutputText="°" />
+        <Key android:codes="63753" android:keyEdgeFlags="right" android:keyOutputText="'" />
+    </Row>
+    <Row>
+        <Key android:codes="63761" android:keyEdgeFlags="left" android:keyOutputText="1" />
+        <Key android:codes="63762" android:keyOutputText="2" />
+        <Key android:codes="63763" android:keyOutputText="3" />
+        <Key android:codes="63764" android:keyOutputText="4" />
+        <Key android:codes="63765" android:keyOutputText="5" />
+        <Key android:codes="63766" android:keyOutputText="6" />
+        <Key android:codes="63767" android:keyOutputText="7" />
+        <Key android:codes="63768" android:keyOutputText="8" />
+        <Key android:codes="63769" android:keyOutputText="9" />
+        <Key android:codes="63760" android:keyEdgeFlags="right" android:keyOutputText="0" />
+    </Row>
+    <Row android:keyWidth="8.899999%p" android:keyboardMode="@id/mode_brackets">
+        <Key android:keyWidth="13.0%p" android:codes="100000" android:keyEdgeFlags="left" />
+        <Key android:horizontalGap="0.19999743%p" android:codes="63777" android:keyOutputText="[" />
+        <Key android:codes="63778" android:keyOutputText="]" />
+        <Key android:codes="63779" android:keyOutputText="{" />
+        <Key android:codes="63780" android:keyOutputText="}" />
+        <Key android:codes="63781" android:keyOutputText="&lt;" />
+        <Key android:codes="63782" android:keyOutputText=">" />
+        <Key android:codes="63783" android:keyOutputText="," />
+        <Key android:codes="63784" android:keyOutputText="." />
+        <Key android:keyWidth="13.0%p" android:horizontalGap="0.19999743%p" android:codes="100001" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyWidth="8.899999%p" android:keyboardMode="@id/mode_math">
+        <Key android:keyWidth="13.0%p" android:codes="100000" android:keyEdgeFlags="left" />
+        <Key android:horizontalGap="0.19999743%p" android:codes="63785" android:keyOutputText="∫" />
+        <Key android:codes="63792" android:keyOutputText="∑" />
+        <Key android:codes="63793" android:keyOutputText="√" />
+        <Key android:codes="63794" android:keyOutputText="∞" />
+        <Key android:codes="63795" android:keyOutputText="θ" />
+        <Key android:codes="63796" android:keyOutputText="π" />
+        <Key android:codes="63783" android:keyOutputText="," />
+        <Key android:codes="63784" android:keyOutputText="." />
+        <Key android:keyWidth="13.0%p" android:horizontalGap="0.19999743%p" android:codes="100011" android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>

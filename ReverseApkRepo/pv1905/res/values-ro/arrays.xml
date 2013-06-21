@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page_transition_list">
+        <item>NiciunulNone</item>
+        <item>Alunecare</item>
+        <item>Acoperire</item>
+        <item>Estompare</item>
+    </string-array>
+    <string-array name="slideshow_transition_list">
+        <item>Niciunul</item>
+        <item>Alunecare</item>
+        <item>Acoperire</item>
+        <item>Estompare</item>
+        <item>Aleator</item>
+    </string-array>
+    <string-array name="file_sort_type">
+        <item>Numele fisierului(Numeric,Crescator)</item>
+        <item>Numele fisierului(Sir de caractere,Crescator)</item>
+        <item>Data(Crescator)</item>
+        <item>Marimea fisierului(Crescator)</item>
+        <item>Numele fisierului(Numeric,Descrescator)</item>
+        <item>Numele fisierului(Sir de caractere,Descrescator)</item>
+        <item>Data(Descrescator)</item>
+        <item>Marimea fisierului(Descrescator)</item>
+    </string-array>
+    <string-array name="view_mode_list">
+        <item>Lista</item>
+        <item>Detaliu</item>
+        <item>Pictograma</item>
+    </string-array>
+    <string-array name="behavior_list">
+        <item>Listeaza toate fisierele</item>
+        <item>Afiseaza continutul</item>
+    </string-array>
+    <string-array name="pageinfo_list">
+        <item>Niciunul</item>
+        <item>Pagina</item>
+        <item>Numele fisierului</item>
+        <item>Titlul cartii</item>
+    </string-array>
+    <string-array name="change_page_method">
+        <item>Stanga &amp;amp; Dreapta</item>
+        <item>Sus &amp;amp; Jos</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Mic</item>
+        <item>Medium</item>
+        <item>Mare</item>
+    </string-array>
+    <string-array name="effect_array">
+        <item>Niciunul</item>
+        <item>Umbra</item>
+        <item>Adancit</item>
+        <item>Margine</item>
+    </string-array>
+    <string-array name="background_array">
+        <item>Niciunul</item>
+        <item>Stil 1</item>
+        <item>Stil 2</item>
+        <item>Stil 3</item>
+        <item>Stil 4</item>
+        <item>Stil 5</item>
+    </string-array>
+</resources>

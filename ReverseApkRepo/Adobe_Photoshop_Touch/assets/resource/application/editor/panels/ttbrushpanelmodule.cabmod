@@ -1,0 +1,64 @@
+<ttbrushpanelmodule id="brushPanel" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="390" height="540" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="360" height="490" x="10" y="10" module="brushPanel" whiteBackground="true">
+        <slider id="opacitySlider" width="170" height="40" x="180" y="390" target="referenceDispatcher" selector="alphaSlider"/>
+        <ttnumberfield id="opacityField" width="60" height="40" x="110" y="390" target="referenceDispatcher" text="$$$/ttbrushpanelmodule/textField/text/100=100" lostFocusSelector="alphaField" returnSelector="alphaField" parentPanel="brushPanel" unitString="%" isBlack="true"/>
+        <label id="ttblack1" width="90" height="40" x="10" y="390" title="$$$/ttbrushpanelmodule/label/title/Opacity=Opacity"/>
+        <slider id="flowSlider" width="170" height="40" x="180" y="340" target="referenceDispatcher" selector="flowSlider"/>
+        <ttnumberfield id="flowField" width="60" height="40" x="110" y="340" target="referenceDispatcher" text="$$$/ttbrushpanelmodule/textField/text/100=100" lostFocusSelector="flowField" returnSelector="flowField" parentPanel="brushPanel" unitString="%" isBlack="true"/>
+        <label id="ttblack" width="90" height="40" x="10" y="340" title="$$$/ttbrushpanelmodule/label/title/Flow=Flow"/>
+        <ttbrushview id="brushView" width="340" height="320" mask="true" x="10" y="10" panelModule="brushPanel">
+          <text id="ttblack21ttbold" width="338" height="18" x="1" y="295" text="$$$/ttbrushpanelmodule/text/text/Hardness=Hardness" small="true" textSize="12" align="center"/>
+          <text id="ttblack2ttbold" width="338" height="18" x="1" y="6" text="$$$/ttbrushpanelmodule/text/text/Size=Size" small="true" textSize="12" align="center"/>
+        </ttbrushview>
+        <ttpanelbutton id="paintModeChooser" width="50" height="50" sizeX="right" x="310" y="440" iconID="ttPanelIconStylus" panelModuleID="stylusSettings" positionMode="6"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="opacityField" refName="alphaField"/>
+      <objRef refId="opacitySlider" refName="alphaSlider"/>
+      <objRef refId="flowField" refName="flowField"/>
+      <objRef refId="flowSlider" refName="flowSlider"/>
+      <objRef refId="brushView" refName="brushView"/>
+      <objRef refId="paintModeChooser" refName="pressureSettingsButton"/>
+      <objRef refId="ttblack21ttbold" refName="hardnessText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttpanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="TTPanelView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttbrushview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTBrushView">
+      <var name="panelModule" type="object" defaultValue="" codeName="iPanelModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttbrushpanelmodule" superClassName="ttpanelmodule" packageName="" codeName="TTBrushPanelModule"/>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+      <var name="isBlack" type="boolean" defaultValue="false" codeName="iIsBlack"/>
+    </class>
+    <class className="ttbasepanelbutton" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelButton">
+      <var name="iconID" type="string" defaultValue="" codeName="iIconID"/>
+      <var name="panelModuleID" type="string" defaultValue="" codeName="iPanelModuleID"/>
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+      <var name="positionMode" type="int" defaultValue="0" codeName="iPositionMode"/>
+    </class>
+    <class className="ttpanelbutton" superClassName="ttbasepanelbutton" packageName="com.adobe.ttpixel.ui" codeName="TTPanelButton">
+      <var name="model" type="object" defaultValue="" codeName="iModel" className="TTModel"/>
+    </class>
+  </classes>
+</ttbrushpanelmodule>

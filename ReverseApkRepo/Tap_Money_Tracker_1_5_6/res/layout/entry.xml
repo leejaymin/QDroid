@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/accountbalance24" />
+        <Spinner android:id="@id/sp_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/filter24" />
+    </LinearLayout>
+    <ListView android:id="@id/lv_today" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/text_color" android:padding="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/caption_expense_summary" />
+            <TextView android:textColor="@color/text_expense" android:id="@id/tv_expense" android:paddingLeft="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="$1000.00" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/caption_income_summary" />
+            <TextView android:textColor="@color/text_income" android:id="@id/tv_income" android:paddingLeft="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="$1000.00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_template" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/paste" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_addNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_transaction_new" android:layout_weight="3.0" />
+        <Spinner android:id="@id/spn_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="4.0" />
+    </LinearLayout>
+</LinearLayout>

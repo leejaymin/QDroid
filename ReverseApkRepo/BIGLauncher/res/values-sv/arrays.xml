@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Ljus (standard)</item>
+        <item>Mörk</item>
+        <item>Blå</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automatisk (standard)</item>
+        <item>Horisontell</item>
+        <item>Vertikal</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Standard</item>
+        <item>Större</item>
+        <item>Största</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Hemskärmen</item>
+        <item>Inställningar</item>
+    </string-array>
+</resources>

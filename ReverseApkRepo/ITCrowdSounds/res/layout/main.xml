@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:admobsdk="http://schemas.android.com/apk/res/com.soundboard.itcrowd">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/textview1" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <com.admob.android.ads.AdView android:id="@id/ad1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" admobsdk:backgroundColor="#ff000000" admobsdk:textColor="#ffffffff" admobsdk:keywords="Android application IT Crowd soundboard computers tech comedy android phone entertainment google multimedia fun " admobsdk:refreshInterval="60" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button0" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button0_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button1" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button1_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button2" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button2_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button3" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button3_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button4" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button4_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button5" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button5_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button6" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button6_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button7" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button7_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button8" android:background="@drawable/conchordslogo" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/textview2" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <com.admob.android.ads.AdView android:id="@id/ad2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" admobsdk:backgroundColor="#ff000000" admobsdk:textColor="#ffffffff" admobsdk:keywords="Android application IT Crowd soundboard computers tech comedy android phone entertainment google multimedia fun " admobsdk:refreshInterval="60" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button9" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button9_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button10" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button10_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button11" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button11_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button12" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button12_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button13" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button13_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button14" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button14_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button15" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button15_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button16" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button16_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button17" android:background="@drawable/conchordslogo" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/textview3" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <com.admob.android.ads.AdView android:id="@id/ad3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" admobsdk:backgroundColor="#ff000000" admobsdk:textColor="#ffffffff" admobsdk:keywords="Android application IT Crowd soundboard computers tech comedy android phone entertainment google multimedia fun " admobsdk:refreshInterval="60" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button18" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button18_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button19" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button19_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button20" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button20_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button21" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button21_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button22" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button22_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button23" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button23_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button24" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button24_label" android:layout_weight="1.0" />
+                    <Button android:textStyle="bold" android:id="@id/button25" android:background="@drawable/scribble" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="@string/button25_label" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="2">
+                    <Button android:textStyle="bold" android:id="@id/button26" android:background="@drawable/conchordslogo" android:layout_width="fill_parent" android:layout_height="70.0px" android:text="" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

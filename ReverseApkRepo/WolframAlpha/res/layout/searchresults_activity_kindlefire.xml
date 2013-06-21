@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/searchresults_activity_label" style="@style/ActivityTitle" />
+    <include layout="@layout/black_1_px_horizontal_line" />
+    <ListView android:id="@id/searchresults_scroll_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/white" />
+</LinearLayout>

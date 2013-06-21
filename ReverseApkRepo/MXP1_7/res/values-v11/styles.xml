@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Max" parent="@android:style/Theme.Holo">
+        <item name="highlightColor">#ffffff00</item>
+    </style>
+    <style name="Playback" parent="@android:style/Theme.Holo">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/playbackActionBar</item>
+        <item name="android:actionButtonStyle">@style/playbackActionButton</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/playbackActionOverflowButton</item>
+    </style>
+    <style name="NoInitialTitle" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/NoInitialTitleActionBarStyle</item>
+    </style>
+    <style name="NoInitialTitle_14" parent="@android:style/Theme.Holo" />
+    <style name="BlackList" />
+    <style name="BlackTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/BlackActionBarStyle</item>
+        <item name="highlightColor">#ffffff00</item>
+        <item name="listStyle">@style/BlackList</item>
+        <item name="listStyleCategory">@style/BlackList.TextOnly</item>
+        <item name="listStyleNoThumb">@style/BlackList.TextOnly</item>
+        <item name="listTitleNormalColor">@color/list_title_normal_black</item>
+        <item name="listTitleLastColor">@color/list_title_last_black</item>
+        <item name="listTitleFinishColor">@color/list_title_finish_black</item>
+        <item name="listThumbOverlay">@drawable/thumb_overlay_solid</item>
+        <item name="listThumbMarginLeft">8.0dip</item>
+        <item name="listThumbMarginRight">5.0dip</item>
+        <item name="listThumbMarginTop">8.0dip</item>
+        <item name="listThumbMarginBottom">8.0dip</item>
+        <item name="listPlayTimePaddingRight">1.0dip</item>
+        <item name="listPlayTimePaddingBottom">0.0px</item>
+        <item name="listPrimaryTextAppearance">@style/ModernText.Primary</item>
+        <item name="listPrimaryLargeTextAppearance">@style/ModernText.Primary.Large</item>
+        <item name="listSecondaryTextAppearance">@style/BlackText.Secondary</item>
+        <item name="listSecondaryLargeTextAppearance">@style/BlackText.Secondary.Large</item>
+        <item name="listNormalTextAppearance">@style/ModernText.Primary</item>
+        <item name="tagGrayText">@style/BlackTagText.Gray</item>
+        <item name="tagAssText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagCCText">@style/BlackTagText.InternalSub</item>
+        <item name="tagMplText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagNewText">@style/BlackTagText.New</item>
+        <item name="tagPsbText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSamiText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSmiText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSrtText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSsaText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSubText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagTxtText">@style/BlackTagText.ExternalSub</item>
+        <item name="aboutPrimaryTextColor">?android:textColorPrimary</item>
+        <item name="aboutSecondaryTextColor">#ffdddddd</item>
+        <item name="aboutLineColor">#ff555555</item>
+        <item name="aboutStyle">@style/ModernAbout</item>
+    </style>
+    <style name="BlackTheme.Searchable" parent="@style/BlackTheme" />
+    <style name="BlackTheme.Simple" parent="@style/BlackTheme">
+        <item name="android:actionBarStyle">@style/BlackActionBarStyle.Simple</item>
+    </style>
+    <style name="WhiteTheme" parent="@style/Max.White">
+        <item name="android:actionBarStyle">@style/WhiteActionBarStyle</item>
+        <item name="listStyleCategory">@style/WhiteList.TextOnly</item>
+        <item name="listStyleNoThumb">@style/WhiteList.TextOnly</item>
+        <item name="listTitleNormalColor">@color/list_title_normal_white</item>
+        <item name="listTitleLastColor">@color/list_title_last_white</item>
+        <item name="listTitleFinishColor">@color/list_title_finish_white</item>
+        <item name="listThumbOverlay">@drawable/thumb_overlay_round_selectable</item>
+    </style>
+    <style name="WhiteTheme.Searchable" parent="@style/WhiteTheme" />
+    <style name="WhiteTheme.Simple" parent="@style/WhiteTheme">
+        <item name="android:actionBarStyle">@style/WhiteActionBarStyle.Simple</item>
+    </style>
+    <style name="playbackActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/translucent_background</item>
+    </style>
+    <style name="playbackActionButton" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:background">@drawable/playback_item_back</item>
+    </style>
+    <style name="playbackActionOverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:background">@drawable/playback_item_back</item>
+    </style>
+    <style name="NoInitialTitleActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:displayOptions">useLogo</item>
+        <item name="android:titleTextStyle">@style/transparent_text</item>
+    </style>
+    <style name="ModernText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="ModernText.Primary" parent="@style/ModernText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="ModernText.Primary.Large" parent="@style/ModernText.Primary">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="ModernText.Secondary" parent="@style/ModernText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/list_secondary_white</item>
+    </style>
+    <style name="ModernText.Secondary.Large" parent="@style/ModernText.Secondary">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="ModernText.Normal" parent="@style/ModernText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="BlackList.TextOnly" parent="@style/BlackList">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="BlackActionBarStyle" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="BlackActionBarStyle.Simple" parent="@style/BlackActionBarStyle" />
+    <style name="WhiteActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#ff222222</item>
+    </style>
+    <style name="WhiteList.TextOnly" parent="@style/WhiteList">
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+    </style>
+    <style name="WhiteActionBarStyle.Simple" parent="@style/WhiteActionBarStyle" />
+</resources>

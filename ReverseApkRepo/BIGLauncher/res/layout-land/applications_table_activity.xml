@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.5">
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable6" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTableApplications" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.5">
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable5" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+            <name.kunes.android.widget.AccessibleImageButton android:id="@id/applicationsTable7" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25" android:contentDescription="@string/applicationsNoApplication" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

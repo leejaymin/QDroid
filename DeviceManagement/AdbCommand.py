@@ -20,22 +20,25 @@ class AdbCommand():
         self.device_name = device_name
         self.m_logger = logger
         
+    def getObejctcommand(self):
+        return self.out
+    
     def executeCommand(self, cmd):
         try:
             #command 실행이 오래 걸릴 경우, 타임아웃을 발생 시키기 위함이다.
-            timemer = TimeoutFunction(5)
-            timemer.timeStart()
+            #timemer = TimeoutFunction(5)
+            #timemer.timeStart()
             
-            out = run(cmd)
-            res = out.stdout.read()
-            out.stdout.close()
+            self.out = run(cmd)
+            res = self.out.stdout.read()
+            self.out.stdout.close()
             print res
             #timeout을 정지 시킨다. 
-            timemer.timeEnd()
+            #timemer.timeEnd()
             return res
         except TimeoutFunctionException:
-            out.kill
-            res ='Failed: Not response for call.. and then we killed process pid:%s'%(out.pid)
+            self.out.kill
+            res ='Failed: Not response for call.. and then we killed process pid:%s'%(self.out.pid)
             print res
             return res
         except Exception, e:
@@ -83,7 +86,7 @@ class AdbCommand():
     #===========================================================================
     def startActivity(self, uri, action, data, mimetype, categories_list, component, flags_list=None, extras_list=None):
         startActivityCmd = "adb -s %s shell am start -W " %self.device_name            
-        
+  #      startActivityCmd = "adb -s %s shell am start " %self.device_name   
         if None!=action and 0!=len(action):
             startActivityCmd += "-a %s " %action
             if None!=data and 0!=len(data):

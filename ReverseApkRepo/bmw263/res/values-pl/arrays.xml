@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 sekund</item>
+        <item>30 sekund</item>
+        <item>60 sekund</item>
+        <item>2 minuty</item>
+        <item>3 minuty</item>
+        <item>4 minuty</item>
+        <item>5 minut</item>
+        <item>10 minut</item>
+        <item>30 minut</item>
+        <item>1 godzina</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>nazwa aplikacji</item>
+        <item>szacowanie globalne</item>
+        <item>szacowanie uśrednione</item>
+        <item>aktualny szacunek</item>
+        <item>szacowanie w czasie rzeczywistym</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>bez pionowego znacznika</item>
+        <item>znacznik co 1 godzinę</item>
+        <item>co 2 godziny</item>
+        <item>co 3 godziny</item>
+        <item>co 4 godziny</item>
+        <item>co 5 godzin</item>
+        <item>co 6 godzin</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>bez ikony</item>
+        <item>bateria 1</item>
+        <item>bateria 2</item>
+        <item>czarno-biała</item>
+        <item>zielona/czerwona 1</item>
+        <item>zielona/czerwona 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>w stylu HTC</item>
+        <item>w stylu Sense 3</item>
+        <item>w stylu Google</item>
+        <item>szklane</item>
+        <item>ICS</item>
+        <item>przeźroczyste w stylu HTC</item>
+        <item>przeźroczyste w stylu Sense 3</item>
+        <item>przeźroczyste w stylu Google</item>
+        <item>przeźroczyste w stylu szklane</item>
+        <item>przeźroczyste w stylu ICS</item>
+        <item>ukryte w stylu HTC</item>
+        <item>ukryte w stylu Sense 3</item>
+        <item>ukryte w stylu Google</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>usunięte</item>
+        <item>nic</item>
+        <item>pozostało (%)</item>
+        <item>użycie (%/h)</item>
+        <item>użycie (mA)</item>
+        <item>użycie (mW)</item>
+        <item>temperatura</item>
+        <item>napięcie (mV)</item>
+        <item>szacowanie globalne</item>
+        <item>szacowanie w czasie rzeczywistym</item>
+        <item>szacowanie uśrednione</item>
+        <item>aktualny szacunek</item>
+        <item>od ostatniego (od)podłączenia</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Display Icon</item>
+        <item>pozostało (%)</item>
+        <item>użycie (%/h)</item>
+        <item>użycie (mA)</item>
+        <item>uzycie (mW)</item>
+        <item>temperatura</item>
+        <item>napięcie (mV)</item>
+        <item>szacowanie globalne</item>
+        <item>szacowanie w czasie rzeczywistym</item>
+        <item>szacowanie uśrednione</item>
+        <item>aktualny szacunek</item>
+        <item>od ostatniego (od)podłączenia</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>stopnie Celsjusza</item>
+        <item>stopnie Fahrenheita</item>
+        <item>stopnie Kelvina</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Wyświetlany</item>
+        <item>Ukryte</item>
+        <item>Usunięte</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Dostępne (%)</item>
+        <item>Użycie (%/h)</item>
+        <item>Użycie (mA)</item>
+        <item>Użycie (mW)</item>
+        <item>Temperatura</item>
+        <item>Napięcie (mV)</item>
+        <item>Szacunki</item>
+    </string-array>
+</resources>

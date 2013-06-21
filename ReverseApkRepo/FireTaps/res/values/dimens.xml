@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_padding">10.0px</dimen>
+    <dimen name="divider_padding">5.0px</dimen>
+    <dimen name="margin">25.0px</dimen>
+    <dimen name="text_even_smaller">8.0px</dimen>
+    <dimen name="text_small">12.0px</dimen>
+    <dimen name="text_medium">16.0px</dimen>
+    <dimen name="text_normal">18.0px</dimen>
+    <dimen name="text_large">22.0px</dimen>
+    <dimen name="text_even_larger">25.0px</dimen>
+</resources>

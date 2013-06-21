@@ -1,0 +1,5 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Logic &amp; Set Theory</category><section-title>
+ <link ref="BooleanAlgebra">Boolean Algebra </link>
+</section-title><caption>analyze a Boolean expression</caption><input>P &amp;&amp; (Q || R)</input><caption>compute a truth table for a Boolean function</caption><input>truth table p xor q xor r xor s</input><caption>compute a logic circuit for a Boolean function</caption><input>logic circuit (p or ~q) and (r xor s)</input><caption>convert a Boolean expression to disjunctive normal form</caption><input>DNF (P || Q || R) &amp;&amp; (~P || ~Q)</input><section-title>Set Theory</section-title><caption>generate a Venn diagram </caption><input>(A union B) intersect C</input><input>symmetric difference of S and T</input><input>(complement S) intersect (A union B)</input><section-title>
+ <link ref="TransfiniteNumbers">Transfinite Numbers </link>
+</section-title><caption>get information about a transfinite cardinal</caption><input>aleph0</input><caption>simplify an expression involving cardinals</caption><input>5*aleph0^aleph0</input></example>

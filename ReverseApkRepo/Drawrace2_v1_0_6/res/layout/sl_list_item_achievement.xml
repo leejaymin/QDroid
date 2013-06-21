@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_gravity="center" android:background="@drawable/sl_selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1" android:shrinkColumns="1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <ImageView android:gravity="center_vertical" android:id="@id/sl_list_item_achievement_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="@dimen/sl_margin_default" android:src="@drawable/sl_icon_user" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="marquee" android:id="@id/sl_list_item_achievement_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="This is a cool Award" android:singleLine="true" style="@style/sl_text_large_bold" />
+            <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:id="@id/sl_list_item_achievement_progress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxHeight="8.0dip" android:progressDrawable="@drawable/sl_achievement_seekbar" android:minHeight="8.0dip" android:layout_weight="1.0" style="@android:style/Widget.ProgressBar.Horizontal" />
+                <TextView android:gravity="right" android:id="@id/sl_list_item_achievement_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="0.0dip" android:text="30%" android:singleLine="true" style="@style/sl_text_normal_normal" />
+            </LinearLayout>
+            <TextView android:id="@id/sl_list_item_achievement_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="some very long description which is actually not that long but probably longer than neccessary." android:singleLine="false" style="@style/sl_text_normal_normal" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="right" android:id="@id/sl_list_item_achievement_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="$ 25.0" android:singleLine="true" style="@style/sl_text_normal_normal" />
+            <ImageView android:gravity="center_vertical" android:id="@id/sl_list_item_achievement_accessory" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="10.0dip" android:src="@drawable/sl_icon_plus_content" />
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

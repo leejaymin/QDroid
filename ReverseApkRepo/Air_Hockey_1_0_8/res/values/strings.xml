@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Air Hockey</string>
+    <string name="app_name_demo">Air Hockey Demo</string>
+    <string name="one_player_game">One player game</string>
+    <string name="two_player_game">Bonus two player game</string>
+    <string name="web_site_link">"Visit JJCgames.com
+for updates and more"</string>
+    <string name="about">"%1$s version %2$s
+Copyright © 2009 Jon Colverson"</string>
+    <string name="start_game">Start game</string>
+    <string name="market_link">"Get the full version for just
+%1$s at the Android Market"</string>
+    <string name="price_EUR">0.75</string>
+    <string name="price_GBP">0.70</string>
+    <string name="price_USD">0.99</string>
+    <string name="price_may_vary">"(Price may vary slightly
+because of currency changes.)"</string>
+    <string name="select_player">Select your player:</string>
+    <string name="guest">Guest</string>
+    <string name="guest_note">"(progress won't be saved)"</string>
+    <string name="player_list_level">level %d</string>
+    <string name="add_new_player">New player</string>
+    <string name="new_player_name">New player name:</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="could_not_create_player">"Couldn't create a file for the new player. You may have run out of storage space."</string>
+    <string name="cannot_delete_guest">The \"Guest\" player cannot be deleted.</string>
+    <string name="confirm_delete">Are you sure you want to delete the player \"%1$s\"? There is no way to reverse this.</string>
+    <string name="delete">Delete</string>
+    <string name="staging_opponent_level">Opponent level: %1$d</string>
+    <string name="puck_speed_banner">Puck speed: %1$.01f</string>
+    <string name="match_type">Match type:</string>
+    <string name="single_game">Single game</string>
+    <string name="best_of_three">Best of three</string>
+    <string name="best_of_five">Best of five</string>
+    <string name="best_of_seven">Best of seven</string>
+    <string name="puck_speed">Puck speed:</string>
+    <string name="suggested">Suggested</string>
+    <string name="custom">Custom:</string>
+    <string name="enable_sound">Enable sound</string>
+    <string name="start_match">Start match</string>
+    <string name="puck_speed_invalid">The custom puck speed must be a positive number.</string>
+    <string name="two_player_instructions">"Only one player can touch the screen at a time.
+
+You can touch your half of the screen only when the puck is on your side of the centerline.
+
+After you make a shot, quickly lift your finger off the screen. It takes a bit of getting used to. Give it a few games!"</string>
+    <string name="tap_your_half_when_ready">Tap your half of the screen when ready.</string>
+    <string name="paused">Paused</string>
+    <string name="quit_warning">Quitting the match will abandon the current result.</string>
+    <string name="resume">Resume game</string>
+    <string name="quit">Quit match</string>
+    <string name="you_win">You win!</string>
+    <string name="you_lose">You lose.</string>
+    <string name="match_progress">Best of %1$d match: %2$d - %3$d</string>
+    <string name="you_win_the_match">You won the match!</string>
+    <string name="you_lose_the_match">You lost the match.</string>
+    <string name="tap_to_continue">Tap the screen to continue.</string>
+    <string name="tap_your_half_to_continue">Tap your half of the screen to continue.</string>
+    <string name="opponent_level">Opponent level:</string>
+    <string name="player_level_old">Your old level:</string>
+    <string name="player_level_change">Change:</string>
+    <string name="player_level_new">Your new level:</string>
+    <string name="personal_best">Personal best!</string>
+    <string name="next">Continue</string>
+    <string name="tell_a_friend">Tell a friend</string>
+    <string name="tell_a_friend_image_title">Air Hockey progress screenshot</string>
+    <string name="tell_a_friend_subject">My Air Hockey score</string>
+    <string name="tell_a_friend_body">"I'm up to level %1$d in Air Hockey on my phone. Check out the attached screenshot.
+
+http://JJCgames.com/airhockey/"</string>
+    <string name="demo_upsell_heading">"Thank you for trying the
+Air Hockey demo!"</string>
+    <string name="demo_upsell_body">"The full version of the game keeps track of your skill level, and the computer player gradually gets tougher as you improve.
+
+The puck speed also increases with your skill level, up to over four times the speed of this demo! Can you keep up?
+
+The full game doesn't have this annoying waiting screen."</string>
+    <string name="back_to_title_screen_wait">1#Wait 1 second to play again| 1&lt;Wait {0} seconds to play again</string>
+    <string name="back_to_title_screen">Back to title screen</string>
+</resources>

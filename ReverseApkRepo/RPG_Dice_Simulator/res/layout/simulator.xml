@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@id/TableRow01" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black_color" android:layout_gravity="left|center" android:id="@id/tvType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/TypeDice" />
+            <Spinner android:id="@id/sType" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow android:id="@id/TableRow02" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textColor="@color/black_color" android:layout_gravity="left|center" android:id="@id/tvNumbers" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/NumberDice" />
+            <EditText android:id="@id/edNumbers" android:layout_width="30.0dip" android:layout_height="wrap_content" android:text="1" android:numeric="integer" />
+        </TableRow>
+        <TableRow android:id="@id/TableRow03" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_gravity="right|center" android:id="@id/bnShoot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Shoot" />
+        </TableRow>
+    </TableLayout>
+    <ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideInset" android:id="@id/ScrollView01" android:background="@color/background_div" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:isScrollContainer="true">
+        <TextView android:textColor="@color/black_color" android:id="@id/tvResults" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/Results" style="?android:attr/textViewStyle" />
+    </ScrollView>
+</LinearLayout>

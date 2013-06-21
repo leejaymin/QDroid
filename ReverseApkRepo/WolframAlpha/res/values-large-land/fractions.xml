@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="key_width">10.000002%p</fraction>
+    <fraction name="key_height_lower">9.000004%p</fraction>
+    <fraction name="key_height_upper">9.000004%p</fraction>
+    <fraction name="key_gap_vert">-0.25000572%p</fraction>
+    <fraction name="key_gap_horizontal">0.0%p</fraction>
+    <fraction name="key_width_kindlefire">9.800005%p</fraction>
+    <fraction name="key_height_lower_kindlefire">8.000004%p</fraction>
+    <fraction name="key_height_upper_kindlefire">8.000004%p</fraction>
+    <fraction name="key_gap_vert_kindlefire">0.19999743%p</fraction>
+    <fraction name="key_gap_horizontal_kindlefire">0.10000467%p</fraction>
+</resources>

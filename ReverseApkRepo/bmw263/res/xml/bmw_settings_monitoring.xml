@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/prefs_screen_monitoring" android:summary="@string/prefs_screen_monitoring_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/prefs_title_always_monitor" android:key="@string/PREFSKEY_ALWAYS_MONITOR" android:defaultValue="false" android:summaryOn="@string/prefs_always_monitor_on" android:summaryOff="@string/prefs_always_monitor_off" />
+    <ListPreference android:entries="@array/settings_mA_support_entries" android:title="@string/prefs_title_mA_override" android:key="@string/PREFSKEY_MA_OVERRIDE" android:summary="@string/prefs_summary_mA_override" android:defaultValue="0=" android:entryValues="@array/settings_mA_support_values" />
+    <CheckBoxPreference android:title="@string/prefs_estimate_discharge_mA" android:key="@string/PREFSKEY_ESTIMATE_DISCHARGE_MA" android:defaultValue="false" android:summaryOn="@string/prefs_estimate_discharge_mA_on" android:summaryOff="@string/prefs_estimate_discharge_mA_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_defy_one_percent" android:key="@string/PREFSKEY_DEFY" android:defaultValue="false" android:summaryOn="@string/prefs_defy_one_percent_on" android:summaryOff="@string/prefs_defy_one_percent_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_auto_reset_boot" android:key="@string/PREFSKEY_RESET_BOOT" android:defaultValue="true" android:summaryOn="@string/prefs_auto_reset_boot_on" android:summaryOff="@string/prefs_auto_reset_boot_off" />
+    <Preference android:title="@string/prefs_title_support" android:key="@string/PREFSKEY_SUPPORT" android:summary="@string/prefs_summary_support" />
+</PreferenceScreen>

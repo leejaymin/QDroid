@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_separator">#00ffffff</color>
+    <color name="actionbar_title">#ffffffff</color>
+    <color name="actionbar_background_start">#00ffffff</color>
+    <color name="actionbar_background_end">#00ffffff</color>
+    <color name="actionbar_background_item_pressed_start">#660099cc</color>
+    <color name="actionbar_background_item_pressed_end">#660099cc</color>
+    <color name="custom_gray">#00efefef</color>
+    <color name="action_bar_bg">#ffffffff</color>
+    <color name="help_text_color">#ff3b3b3b</color>
+    <color name="seekbar_background">#ffa9a9a9</color>
+    <color name="seekbar_progress">#ff33b5e5</color>
+    <color name="theme_blue">#ff009acd</color>
+    <color name="scren_backgroun_white">#ffffffff</color>
+    <color name="scren_backgroun_gray">#fff0f0f0</color>
+    <color name="white">#ffffffff</color>
+    <color name="no_image_background">#ffeeeeee</color>
+    <color name="progress_bar_scan_background">#ffffffff</color>
+    <color name="progress_bar_scan_progress">#ff21d536</color>
+    <color name="toast_info">#ff99cc00</color>
+    <color name="toast_warning">#ffffbb33</color>
+    <color name="toast_error">#ffff4444</color>
+    <color name="action_bar_crop_bg">#80000000</color>
+    <color name="selected_folder_background">#ff33b5e5</color>
+    <color name="normal_folder_background">#ffffffff</color>
+    <color name="folder_preview_normal_text_color">#ff858585</color>
+    <color name="folder_preview_selected_text_color">#ffffffff</color>
+</resources>

@@ -1,0 +1,62 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="750" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="750" height="160" sizeX="scale" x="0" y="20" module="module">
+        <button id="ttblue" width="110" height="40" sizeX="right" x="630" y="10" target="referenceDispatcher" selector="ApplyFilter" title="$$$/comicmodule/button/title/Apply=Apply"/>
+        <button id="button11" width="110" height="40" sizeX="right" x="630" y="60" target="referenceDispatcher" selector="CancelFilter" title="$$$/comicmodule/button/title/Cancel=Cancel"/>
+        <imageView id="imageView" width="150" x="10" y="10"/>
+        <ttliveslider id="slider111" width="240" height="40" sizeX="scale" x="370" y="110" target="referenceDispatcher" selector="edgeStrength" sliderValue="0.9" stepSize="0.01" endMouseSelector="edgeStrengthLive" liveSelector="edgeStrengthLive"/>
+        <ttnumberfield id="strengthText" width="60" height="40" x="300" y="110" target="referenceDispatcher" text="$$$/comicmodule/textField/text/Text=Text" lostFocusSelector="edgeStrengthText" returnSelector="edgeStrengthText" parentPanel="module" unitString="%"/>
+        <label id="label21" width="130" height="40" x="160" y="60" title="$$$/comicmodule/label/title/Edge Level=Edge Level"/>
+        <ttliveslider id="slider1111" width="240" height="40" sizeX="scale" x="370" y="60" target="referenceDispatcher" selector="edgeLevel" sliderValue="0.9" stepSize="0.01" endMouseSelector="edgeLevelLive" liveSelector="edgeLevelLive"/>
+        <ttnumberfield id="levelText" width="60" height="40" x="300" y="60" target="referenceDispatcher" text="$$$/comicmodule/textField/text/Text=Text" lostFocusSelector="edgeLevelText" returnSelector="edgeLevelText" parentPanel="module" unitString="%"/>
+        <label id="label211" width="130" height="40" x="160" y="110" title="$$$/comicmodule/label/title/Intensity=Intensity"/>
+        <ttliveslider id="slider1112" width="240" height="40" sizeX="scale" x="370" y="10" target="referenceDispatcher" selector="threshold" sliderValue="4" minValue="1" maxValue="30" stepSize="1" endMouseSelector="thresholdLive" liveSelector="thresholdLive"/>
+        <ttnumberfield id="textField11111112" width="60" height="40" x="300" y="10" target="referenceDispatcher" text="$$$/comicmodule/textField/text/Text=Text" lostFocusSelector="thresholdText" returnSelector="thresholdText" parentPanel="module"/>
+        <label id="label212" width="130" height="40" x="160" y="10" title="$$$/comicmodule/label/title/Colors=Colors"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView" refName="imageView"/>
+      <objRef refId="slider111" refName="edgeStrength"/>
+      <objRef refId="strengthText" refName="edgeStrengthText"/>
+      <objRef refId="slider1111" refName="edgeLevel"/>
+      <objRef refId="levelText" refName="edgeLevelText"/>
+      <objRef refId="slider1112" refName="threshold"/>
+      <objRef refId="textField11111112" refName="thresholdText"/>
+      <objRef refId="ttblue" refName="buttonOK"/>
+      <objRef refId="button11" refName="buttonCancel"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttlevelview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLevelView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABMessageHandler"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttliveslider" superClassName="slider" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLiveSlider">
+      <var name="liveSelector" type="string" defaultValue="live" codeName="iLiveSelector"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+    </class>
+    <class className="ttanglecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAngleControl">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="liveSelector" type="string" defaultValue="" codeName="iLiveSelector"/>
+    </class>
+  </classes>
+</ttpanelmodule>

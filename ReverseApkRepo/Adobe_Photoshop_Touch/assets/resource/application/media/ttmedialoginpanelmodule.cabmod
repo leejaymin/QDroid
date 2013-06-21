@@ -1,0 +1,56 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="1000" height="1000" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <viewStack id="viewStack" width="800" height="800" sizeX="scale" sizeY="scale" x="55" y="44">
+        <ttdelegateimageview id="view1" width="800" height="800" sizeX="scale" sizeY="scale" visible="false" x="0" y="0" image="mediaLoginBackground" fit="true" mask="false" target="referenceDispatcher">
+          <imageView id="imageView" width="610" height="610" sizeX="center" x="100" y="50" image="galleryInfoDialogClip" fit="true">
+            <tthtmlview id="view2" width="540" height="540" sizeX="center" sizeY="center" x="35" y="35">
+              <ttprogressview id="view3" width="150" height="150" sizeX="center" sizeY="center" x="190" y="195"/>
+            </tthtmlview>
+            <button id="buttonttblack" width="40" height="35" sizeX="right" x="570" y="0" target="referenceDispatcher" selector="cancelAuthentication" type="tool" image="closeWindowIcon"/>
+          </imageView>
+        </ttdelegateimageview>
+        <view id="chapter" width="800" height="800" sizeX="scale" sizeY="scale" x="0" y="0">
+          <ttdelegateimageview id="imageView1" width="800" height="800" sizeX="scale" sizeY="scale" x="0" y="0" image="mediaLoginBackground" fit="true" target="module">
+            <imageView id="imageView2" width="340" height="450" sizeX="center" sizeY="center" x="250" y="185" image="mediaProgressBackground" fit="true">
+              <text id="textttboldttblack" width="270" height="22" x="35" y="39" text="$$$/ttmedialoginpanelmodule/text/text/Access your work anywhere with=Access your work anywhere with" align="center"/>
+              <imageView id="imageView3" width="250" height="262" x="45" y="95" image="cloudMarketingClip" fit="true" constrain="true"/>
+              <button id="ttblue" width="270" height="40" x="35" y="380" target="referenceDispatcher" selector="startLogin" selected="true" title="$$$/ttgallerysettingspanelmodule/button/title/Sign In=Sign In"/>
+              <button id="buttonttblack1" width="40" height="35" sizeX="right" x="297" y="2" target="referenceDispatcher" selector="cancelAuthentication" type="tool" image="closeWindowIcon"/>
+              <ttdelegateimageview id="imageviewDelegate" width="270" height="20" x="35" y="60" image="cloudTitleImage"/>
+            </imageView>
+          </ttdelegateimageview>
+        </view>
+      </viewStack>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="view2" refName="htmlView"/>
+      <objRef refId="view3" refName="progressView"/>
+      <objRef refId="viewStack" refName="viewStack"/>
+      <objRef refId="imageView1" refName="marketingDelegateView"/>
+      <objRef refId="imageviewDelegate" refName="ccImageView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="tthtmlview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTHTMLView"/>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTPlainButton"/>
+    <class className="ttdelegateimageview" superClassName="imageView" packageName="com.adobe.ttpixel.media" codeName="TTDelegateImageView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+    </class>
+    <class className="ttprogressview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTProgressView">
+      <var name="imageView" type="object" defaultValue="" codeName="iImageView" className="CABView"/>
+    </class>
+  </classes>
+</module>

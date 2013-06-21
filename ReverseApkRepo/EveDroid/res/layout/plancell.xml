@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/planCellLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0px" android:textStyle="bold" android:gravity="center" android:id="@id/txtPlanSkillName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" android:layout_alignTop="@id/planCellLayout" />
+    <TextView android:textSize="15.0px" android:gravity="left" android:id="@id/txtPlanSkillStart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="Start" android:layout_below="@id/txtPlanSkillName" />
+    <TextView android:textSize="15.0px" android:gravity="left" android:id="@id/txtPlanSkillEnd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="End" android:layout_below="@id/txtPlanSkillStart" />
+</RelativeLayout>

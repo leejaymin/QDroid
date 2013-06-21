@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/relatedqueries_button_kindlefire_textview_relatedquery_textSize" android:textColor="@color/relatedqueries_button_text" android:gravity="center" android:id="@id/relatedquery" android:background="@drawable/related_queries_background_button" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="relatedquery_clickHandler"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,25 @@
+<ttmediapublishmanagerpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="276" height="238" sizeX="scale" sizeY="scale" x="10" y="18" module="module"/>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="listView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="irefdispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttmediapublishmanagerpanelmodule" superClassName="ttpanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTMediaPublishManagerPanelModule"/>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttbaselistpanelview" superClassName="ttpanelview" packageName="com.adobe.ttpixel.ui" codeName="TTBaseListPanelView"/>
+  </classes>
+</ttmediapublishmanagerpanelmodule>

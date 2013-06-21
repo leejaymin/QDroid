@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/jiqqa.recipe">
+    <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundColor="#ff000000" app:primaryTextColor="#ffffffff" app:secondaryTextColor="#ffcccccc" app:keywords="Android Food desserts restaurants weight loss recipe cook chef help organize app games book menu share fat call of duty Music justin bieber games applications security date life health organizer virus iphone apple mac ipad twitter facebook" />
+</LinearLayout>

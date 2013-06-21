@@ -1,0 +1,37 @@
+<module id="module" mainObject="ozzyAccount">
+  <windows>
+    <dialog id="createAccount" width="350" height="250" layer="4" type="dialog" title="$$$/ozzyaccountdialog/window/title/Create Account=Create Account" x="0" y="0" initVisible="false" centerPosition="true" okButton="okButton" cancelButton="cancelButton">
+      <button id="okButton" width="80" height="18" sizeX="right" sizeY="bottom" x="260" y="198" target="ozzyAccount" selector="responseCreate" title="$$$/ozzyaccountdialog/button/title/Create=Create" returnKeyFocus="true"/>
+      <button id="cancelButton" width="80" height="18" sizeX="right" sizeY="bottom" x="170" y="198" target="createAccount" selector="responseCancel" title="$$$/ozzyaccountdialog/button/title/Cancel=Cancel"/>
+      <decor id="decor" width="330" height="8" sizeX="scale" sizeY="bottom" x="10" y="185" style="hline"/>
+      <label id="label5" height="18" sizeX="top" sizeY="left" x="35" y="18" title="$$$/ozzyaccountdialog/label/title/email=email"/>
+      <textField id="emailField" width="150" height="18" sizeX="top" sizeY="left" x="152" y="18" returnSelector="nop"/>
+      <label id="label11" height="18" sizeX="top" sizeY="left" x="35" y="43" title="$$$/ozzyaccountdialog/label/title/firstname=firstname"/>
+      <textField id="firstnameField" width="150" height="18" sizeX="top" sizeY="left" x="152" y="43" returnSelector="nop"/>
+      <label id="label21" height="18" sizeX="top" sizeY="left" x="35" y="68" title="$$$/ozzyaccountdialog/label/title/lastname=lastname"/>
+      <textField id="lastnameField" width="150" height="18" sizeX="top" sizeY="left" x="152" y="68" returnSelector="nop"/>
+      <label id="label31" height="18" sizeX="top" sizeY="left" x="35" y="93" title="$$$/ozzyaccountdialog/label/title/password=password"/>
+      <textField id="passwordField" width="150" height="18" sizeX="top" sizeY="left" x="152" y="93" displayAsPassword="true" returnSelector="nop"/>
+      <label id="label41" height="18" sizeX="top" sizeY="left" x="35" y="118" title="$$$/ozzyaccountdialog/label/title/verify password=verify password"/>
+      <textField id="password2Field" width="150" height="18" sizeX="top" sizeY="left" x="152" y="118" displayAsPassword="true" returnSelector="nop"/>
+      <imageView id="captchaImage" width="80" height="30" sizeX="top" sizeY="left" x="55" y="143" fit="true"/>
+      <textField id="captchaField" width="150" height="18" sizeX="top" sizeY="left" x="152" y="148" returnSelector="nop"/>
+    </dialog>
+    <dialog id="deleteAccount" width="350" height="150" layer="4" type="dialog" title="$$$/ozzyaccountdialog/window/title/Delete Account=Delete Account" x="0" y="0" initVisible="false" centerPosition="true" okButton="okButton1" cancelButton="cancelButton1">
+      <button id="okButton1" width="80" height="18" sizeX="right" sizeY="bottom" x="260" y="98" target="deleteAccount" selector="responseOk" title="$$$/ozzyaccountdialog/button/title/Delete=Delete" returnKeyFocus="true"/>
+      <button id="cancelButton1" width="80" height="18" sizeX="right" sizeY="bottom" x="170" y="98" target="deleteAccount" selector="responseCancel" title="$$$/ozzyaccountdialog/button/title/Cancel=Cancel"/>
+      <decor id="decor1" width="330" height="8" sizeX="scale" sizeY="bottom" x="10" y="85" style="hline"/>
+      <label id="label51" height="18" sizeX="top" sizeY="left" x="35" y="18" title="$$$/ozzyaccountdialog/label/title/email=email"/>
+      <textField id="emailField1" width="150" height="18" sizeX="top" sizeY="left" x="152" y="18"/>
+      <label id="label311" height="18" sizeX="top" sizeY="left" x="35" y="50" title="$$$/ozzyaccountdialog/label/title/password=password"/>
+      <textField id="passwordField1" width="150" height="18" sizeX="top" sizeY="left" x="152" y="50" displayAsPassword="true"/>
+    </dialog>
+  </windows>
+  <menus/>
+  <objects>
+    <ozzyAccount id="ozzyAccount"/>
+  </objects>
+  <classes>
+    <class className="ozzyAccount" superClassName="messageHandler" packageName="com.adobe.cab.io.ozzy" codeName="CABOzzyAccount"/>
+  </classes>
+</module>

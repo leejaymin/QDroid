@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_bys">
+        <item>d|距离较近的排前面</item>
+        <item>D|距离较远的排前面</item>
+        <item>g|较年轻的排前面</item>
+        <item>G|较年长的排前面</item>
+        <item>p|定价较低的排前面</item>
+        <item>P|定价较高的排前面</item>
+        <item>e|拍卖结束时间较早的排前面</item>
+        <item>E|拍卖结束时间较晚的排前面t</item>
+        <item>o|张贴较早的排前面</item>
+        <item>O|张贴较晚的排前面</item>
+        <item>v|被点阅较少次的排前面</item>
+        <item>V|被点阅较多次的排前</item>
+        <item>b|被竞标较少次的排前面</item>
+        <item>B|被竞标较多次的排前面</item>
+        <item>c|被评论较少次的排前面</item>
+        <item>C|被评论较多次的排前面</item>
+        <item>r|被评比较差的排前面</item>
+        <item>R|被评比较好的排前面</item>
+        <item>w|被较少人关注的排前面</item>
+        <item>W|被较多人关注的排前</item>
+    </string-array>
+</resources>

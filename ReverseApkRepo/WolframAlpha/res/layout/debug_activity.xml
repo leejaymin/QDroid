@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/debug_activity_label" style="@style/ActivityTitle" />
+        <Button android:id="@id/copy_button" android:text="@string/copy_button_label" android:onClick="onCopyButtonClick" style="@style/ActivityTitleButton" />
+    </RelativeLayout>
+    <include layout="@layout/black_1_px_horizontal_line" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/debug_panel" android:padding="@dimen/debug_activity_linearlayout_debug_panel_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/debug_activity_textview_appinfo_textSize" android:textColor="@color/podtitle_text" android:gravity="left|center" android:background="@drawable/podtitle_gradient" android:padding="@dimen/debug_activity_textview_appinfo_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="App Info" />
+            <TextView android:textSize="@dimen/debug_activity_textview_app_info_view_textSize" android:textColor="@android:color/black" android:id="@id/app_info_view" android:padding="@dimen/debug_activity_textview_app_info_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/debug_activity_textview_deviceinfo_textSize" android:textColor="@color/podtitle_text" android:gravity="left|center" android:background="@drawable/podtitle_gradient" android:padding="@dimen/debug_activity_textview_deviceinfo_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Device Info" />
+            <TextView android:textSize="@dimen/debug_activity_textview_device_info_view_textSize" android:textColor="@android:color/black" android:id="@id/device_info_view" android:padding="@dimen/debug_activity_textview_device_info_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/debug_activity_textview_queryurl_textSize" android:textColor="@color/podtitle_text" android:gravity="left|center" android:background="@drawable/podtitle_gradient" android:padding="@dimen/debug_activity_textview_queryurl_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Query URL" />
+            <TextView android:textSize="@dimen/debug_activity_textview_url_view_textSize" android:textColor="@android:color/black" android:id="@id/url_view" android:padding="@dimen/debug_activity_textview_url_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/debug_activity_textview_resultxml_textSize" android:textColor="@color/podtitle_text" android:gravity="left|center" android:background="@drawable/podtitle_gradient" android:padding="@dimen/debug_activity_textview_resultxml_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Result XML" />
+            <TextView android:textSize="@dimen/debug_activity_textview_xml_view_textSize" android:textColor="@android:color/black" android:id="@id/xml_view" android:padding="@dimen/debug_activity_textview_xml_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

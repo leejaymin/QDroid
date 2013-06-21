@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Settings!</string>
+    <string name="app_name">myLocale</string>
+    <string name="checkBoxTitle">Enable Translation</string>
+    <string name="checkBoxSummary">Enables Translation of received SMS to the set language</string>
+    <string name="listTitle">Language</string>
+    <string name="listSummary">Select your preferred language to which the SMS text has to be translated</string>
+    <string name="checkBoxPopup">Enable Popup</string>
+    <string name="checkBoxPopupSummary">Enables Popup notification</string>
+    <string name="donate">Donate</string>
+    <string name="donateSummary">Buy wine for developer</string>
+    <string name="dialog_activity_text" />
+    <string name="messageNotificationTitle">New Message</string>
+    <string name="butSent">Send</string>
+    <string name="butReply">Reply</string>
+    <string name="butClose">Close</string>
+    <string name="butCalendar">+Calendar</string>
+    <string name="butInbox">Inbox</string>
+    <string name="butBack">Back</string>
+    <string name="from">From</string>
+</resources>

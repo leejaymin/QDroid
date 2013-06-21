@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>明るい(デフォルト)</item>
+        <item>暗い</item>
+        <item>青</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>自動（デフォルト）</item>
+        <item>横向き</item>
+        <item>縦向き</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>デフォルト</item>
+        <item>大きめ</item>
+        <item>最大</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>ホーム画面</item>
+        <item>環境設定</item>
+    </string-array>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_info1">Use a strong password</string>
+    <string name="auth_info2">The password cannot be retrieved!</string>
+    <string name="app_name">Akandaka</string>
+    <string name="akandaka_title">Akandaka</string>
+    <string name="password">Master Password</string>
+    <string name="password_repeat">Again</string>
+    <string name="incorrect_pw">Incorrect Password</string>
+    <string name="button_ok">Ok</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="delete_entry">Delete Entry</string>
+    <string name="entry_title">Title</string>
+    <string name="entry_name">User Name</string>
+    <string name="entry_desc">Description</string>
+    <string name="entry_pw">Password</string>
+    <string name="entry_info">Info</string>
+    <string name="save_entry">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_db">Remove Database</string>
+    <string name="remove_all">Remove All Entries</string>
+    <string name="exportdb">Export Database</string>
+    <string name="importdb">Import Database</string>
+    <string name="warning">Warning!</string>
+    <string name="info">Info</string>
+    <string name="export_confirm_message">Exported as akandaka.dk on external storage</string>
+    <string name="import_confirm_message">Imported database from external storage.</string>
+    <string name="db_not_found">Could not find database with name akandaka.dk on external storage</string>
+    <string name="delete_db_warning">This will delete entire database. You have to recreate the master password</string>
+    <string name="delete_all_warning">This will delete all entries. Your master password will be preserved</string>
+    <string name="import_all_warning">This will replace the current database. You have to login again with the password for the imported database</string>
+    <string name="license">"&lt;p> AKANDAKA SOFTWARE LICENSE&lt;br/> This software is Copyright (c) dakkhin.com. All rights reserved. &lt;/p> &lt;p> THIS SOFTWARE IS PROVIDED 'AS IS' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF INFRINGEMENT AND THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL DAKKHIN.COM OR VINAY PENMATSA BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DISTRIBUTION OR USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. &lt;/p>"</string>
+</resources>

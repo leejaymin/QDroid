@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Ανοιχτόχρωμο (προεπιλογή)</item>
+        <item>Σκούρο</item>
+        <item>Μπλε</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Αυτόματο (προεπιλογή)</item>
+        <item>Οριζόντια</item>
+        <item>Κάθετα</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Προεπιλογή</item>
+        <item>Μεγαλύτερο</item>
+        <item>Τεράστιο</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Αρχική οθόνη</item>
+        <item>Προτιμήσεις</item>
+    </string-array>
+</resources>

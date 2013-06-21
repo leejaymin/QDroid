@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: Signal_Strength_Widget.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

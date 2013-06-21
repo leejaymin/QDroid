@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 секунд</item>
+        <item>30 секунд</item>
+        <item>60 секунд</item>
+        <item>2 минут</item>
+        <item>3 минут</item>
+        <item>4 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Название приложения</item>
+        <item>Глобальная оценка</item>
+        <item>Средняя оценка</item>
+        <item>Текущая оценка</item>
+        <item>Оценка в реальном времени</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>Без вертикальных линий</item>
+        <item>Маркер каждый час</item>
+        <item>каждые 2 часа</item>
+        <item>каждые 3 часа</item>
+        <item>каждые 4 часа</item>
+        <item>каждые 5 часов</item>
+        <item>каждые 6 часов</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Не отображается</item>
+        <item>Реалистичная 1</item>
+        <item>Реалистичная 2</item>
+        <item>Чёрно-белая</item>
+        <item>Зелёно-красная 1</item>
+        <item>Зелёно-красная 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>Стиль HTC</item>
+        <item>Стиль Sense 3</item>
+        <item>Стиль Google</item>
+        <item>Стиль ICS</item>
+        <item>Стиль HTC без фона</item>
+        <item>Прозрачный стиль HTC</item>
+        <item>Прозрачный стиль Sense 3</item>
+        <item>Прозрачный стиль Google</item>
+        <item>Стеклянный стиль</item>
+        <item>Прозрачный Стиль ICS</item>
+        <item>Прозрачный Стиль HTC без фона</item>
+        <item>Стиль Sense 3 без фона</item>
+        <item>Стиль Google без фона</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>Не выводится</item>
+        <item>Ничего</item>
+        <item>Заряд (%)</item>
+        <item>Использование (%/h)</item>
+        <item>Использование (mA)</item>
+        <item>Использование (mW)</item>
+        <item>Температура</item>
+        <item>Напряжение (mV)</item>
+        <item>Текущая оценка</item>
+        <item>Глобальные оценки</item>
+        <item>Оценки в реальном времени</item>
+        <item>Средние оценки</item>
+        <item>Как давно заряжался(ется)</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Показывать иконку</item>
+        <item>Заряд (%)</item>
+        <item>Использование (%/h)</item>
+        <item>Использование (mA)</item>
+        <item>Использование (mW)</item>
+        <item>Температура</item>
+        <item>Напряжение (mV)</item>
+        <item>Глобальные оценки</item>
+        <item>Оценки в реальном времени</item>
+        <item>Средние оценки</item>
+        <item>Текущие оценки</item>
+        <item>Как давно заряжался(ется)</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>Цельсий</item>
+        <item>Фаренгейт</item>
+        <item>Кельвин</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Отображен</item>
+        <item>Скрытая</item>
+        <item>Удаленные</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Заряд (%)</item>
+        <item>Использование (%/h)</item>
+        <item>Использование (мА)</item>
+        <item>Использование (мВт)</item>
+        <item>Температура</item>
+        <item>Напряжение (мВ)</item>
+        <item>Оценки</item>
+    </string-array>
+</resources>

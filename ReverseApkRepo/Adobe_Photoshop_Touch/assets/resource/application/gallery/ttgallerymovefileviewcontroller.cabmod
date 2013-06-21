@@ -1,0 +1,60 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="800" height="600" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttaview id="view1" width="776" height="553" x="10" y="10">
+        <ttafillview id="view2" width="776" height="50" sizeX="scale" x="0" y="0" colorvalue="1579032">
+          <ttatext id="textttboldttlarge" width="132" height="33" x="13" y="8" text="$$$/ttgallerymovefileviewcontroller/text/text/Move Projects=Move Projects"/>
+          <ttanavigationbar id="control" width="220" height="34" x="177" y="8" target="referenceDispatcher" navigationView="view6"/>
+          <ttaplainbutton id="button1" width="50" height="50" sizeX="right" x="726" y="0" target="referenceDispatcher" selector="createFolder" type="tool" image="galleryAddFolderButton"/>
+        </ttafillview>
+        <ttafillview id="view3" width="776" height="70" sizeX="scale" sizeY="bottom" x="0" y="483" colorvalue="16777215">
+          <ttabutton id="moveButtonttblue" width="174" height="40" sizeX="center" sizeY="bottom" x="376" y="15" target="referenceDispatcher" selector="onOk" title="$$$/ttgallerymovefileviewcontroller/button/title/Ok=Ok"/>
+          <ttabutton id="button" width="174" height="40" sizeX="center" sizeY="bottom" x="177" y="15" target="referenceDispatcher" selector="onCancel" title="$$$/ttgallerymovefileviewcontroller/button/title/Cancel=Cancel"/>
+        </ttafillview>
+        <ttaview id="view4" width="776" height="434" sizeX="scale" sizeY="scale" x="0" y="50">
+          <ttaview id="view5" width="177" height="433" sizeY="scale" x="0" y="0">
+            <ttatext id="textttalpha1" width="132" height="85" x="27" y="99" text="$$$/ttgallerymovefileviewcontroller/text/text/Tap to open and select target folder.=Tap to open and select target folder."/>
+            <ttatext id="textttalpha" width="132" height="77" x="27" y="180" text="$$$/ttgallerymovefileviewcontroller/text/text/Create new folder by tapping top right option.=Create new folder by tapping top right option."/>
+            <ttafillview id="view7" width="1" height="426" sizeX="right" sizeY="scale" minWidth="1" minHeight="1" x="174" y="4" colorvalue="15658734" alpha="0.3"/>
+          </ttaview>
+          <ttnavigationview id="view6" width="600" height="434" sizeX="scale" sizeY="scale" mask="true" x="177" y="0" navigationBar="control"/>
+        </ttaview>
+      </ttaview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="view6" refName="navigationView"/>
+      <objRef refId="moveButtonttblue" refName="okButton"/>
+      <objRef refId="button1" refName="addFolderButton"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttaview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTAView"/>
+    <class className="ttafillview" superClassName="ttaview" packageName="com.adobe.ttpixel.ui" codeName="TTAFillView">
+      <var name="colorvalue" type="uint" defaultValue="0" codeName="iColorValue"/>
+      <var name="coloralpha" type="number" defaultValue="1" codeName="iColorAlpha"/>
+      <var name="alpha" type="number" defaultValue="1" codeName="iAlpha"/>
+    </class>
+    <class className="ttnavigationview" superClassName="ttaview" packageName="com.adobe.ttpixel.ui" codeName="TTNavigationView">
+      <var name="navigationBar" type="object" defaultValue="" codeName="iNavigationBar" className="TTANavigationBar"/>
+    </class>
+    <class className="ttacontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAControl"/>
+    <class className="ttatablecontrol" superClassName="ttacontrol" packageName="com.adobe.ttpixel.ui" codeName="TTATableControl">
+      <var name="itemWidth" type="number" defaultValue="0" codeName="iItemWidth"/>
+      <var name="itemHeight" type="number" defaultValue="0" codeName="iItemHeight"/>
+      <var name="itemTopOffset" type="number" defaultValue="20" codeName="iItemTopOffset"/>
+      <var name="itemLeftOffset" type="number" defaultValue="20" codeName="iItemLeftOffset"/>
+      <var name="itemSpace" type="number" defaultValue="20" codeName="iItemSpace"/>
+      <var name="rowLeftOffsetRelative" type="number" defaultValue="0" codeName="iRowLeftOffsetRelative"/>
+    </class>
+    <class className="ttatext" superClassName="text" packageName="com.adobe.ttpixel.ui" codeName="TTAText"/>
+    <class className="ttabutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTAButton"/>
+    <class className="ttanavigationbar" superClassName="ttacontrol" packageName="com.adobe.ttpixel.ui" codeName="TTANavigationBar">
+      <var name="navigationView" type="object" defaultValue="" codeName="iNavigationView" className="TTNavigationView"/>
+    </class>
+    <class className="ttaplainbutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTAPlainButton"/>
+  </classes>
+</module>

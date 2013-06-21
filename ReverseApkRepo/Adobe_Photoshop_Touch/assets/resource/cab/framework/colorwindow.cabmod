@@ -1,0 +1,26 @@
+<module id="module" mainObject="colorMatrix">
+  <windows>
+    <dialog id="colorDialog" width="599" height="396" layer="4" type="dialog" style="simple" canMove="false" canSize="false" canClose="false" x="10" y="10" initVisible="false" clickModal="true">
+      <colorfield id="colorpreview" width="40" height="40" x="6" y="10"/>
+      <textField id="colortext" width="80" height="18" x="58" y="15" target="colorMatrix" text="$$$/colorwindow/textField/text/000000=000000" returnSelector="colortextvalue"/>
+      <slider id="alphaslider" width="274" height="18" x="220" y="15" target="colorMatrix" selector="alphaslidervalue" sliderValue="1" endMouseSelector="endalphavalue"/>
+      <text id="alphatext" width="35" height="27" x="509" y="10" text="$$$/colorwindow/text/text/1=1" small="true"/>
+      <button id="nocolbutton" width="40" height="37" sizeX="scale" x="549" y="5" toolTip="$$$/colorwindow/view/toolTip/No Color=No Color" target="colorMatrix" selector="nocolor" type="tool" image="nocolor"/>
+      <colorview id="colorMatrix" width="589" height="337" x="5" y="55" alphaslider="alphaslider" alphatext="alphatext" colortext="colortext" dialog="colorDialog" alphalabel="text" nocolorbutton="nocolbutton" colorpreview="colorpreview"/>
+      <text id="text" width="72" height="18" x="143" y="15" text="$$$/colorwindow/text/text/Opacity=Opacity" align="right"/>
+    </dialog>
+  </windows>
+  <menus/>
+  <objects/>
+  <classes>
+    <class className="colorview" superClassName="view" packageName="com.adobe.cab.core" codeName="CABColorView">
+      <var name="alphaslider" type="object" defaultValue="" codeName="iAlphaSlider" className="CABSlider"/>
+      <var name="alphatext" type="object" defaultValue="" codeName="iAlphaTextField" className="CABText"/>
+      <var name="colortext" type="object" defaultValue="" codeName="iColorTextField" className="CABTextField"/>
+      <var name="dialog" type="object" defaultValue="" codeName="iDialog" className="CABDialog"/>
+      <var name="alphalabel" type="object" defaultValue="" codeName="iAlphaLabel" className="CABText"/>
+      <var name="nocolorbutton" type="object" defaultValue="" codeName="iNoColorButton" className="CABButton"/>
+      <var name="colorpreview" type="object" defaultValue="" codeName="iColorPreview" className="CABColorField"/>
+    </class>
+  </classes>
+</module>

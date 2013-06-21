@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Hele (vaikimisi)</item>
+        <item>Tume</item>
+        <item>Sinine</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automaatne (vaikimisi)</item>
+        <item>Horisontaalne</item>
+        <item>Vertikaalne</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Vaikimisi</item>
+        <item>Suurem</item>
+        <item>Suurim</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Esileht</item>
+        <item>Eelistused</item>
+    </string-array>
+</resources>

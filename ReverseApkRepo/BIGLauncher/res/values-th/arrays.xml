@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>สบายตา (ค่าเริ่มต้น)</item>
+        <item>มืด</item>
+        <item>น้ำเงิน</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>อัตโนมัติ (ค่าเริ่มต้น)</item>
+        <item>แนวนอน</item>
+        <item>แนวตั้ง</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>เริ่มต้น</item>
+        <item>ใหญ่ขึ้น</item>
+        <item>ใหญ่ที่สุด</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>หน้าจอหลัก</item>
+        <item>การตั้งค่า</item>
+    </string-array>
+</resources>

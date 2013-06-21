@@ -1,0 +1,264 @@
+<idmap>
+
+	<!-- General -->
+	<id type="position" objectid="left"						nameid="generalLeft" />
+	<id type="position" objectid="right"					nameid="generalRight" />
+	<id type="position" objectid="top"						nameid="generalTop" />
+	<id type="position" objectid="bottom"					nameid="generalBottom" />
+	
+	<!-- Gallery, gallery.cabmod-->
+	<id type="view" objectid="galleryNewProjectAnchor"		nameid="createNewProjectButton" />
+	<id type="view" objectid="cloudList"					nameid="syncButton" />
+	
+	<!-- Add Image, ttmediamanager.cabmod-->
+	<id type="view" objectid="categoryListStack"			nameid="addImageCategories" />
+	<id type="view" objectid="breadCrumbView"				nameid="addImageTopBar" />
+	<id type="view" objectid="mediaManagerOkButtonttblue"	nameid="mediaManagerOkButton" />
+	
+	<!-- Move File, ttgalleryfoldermanagementpanelmodule.cabmod -->
+	<id type="view" objectid="moveButtonttblue"				nameid="folderManagementMoveButton" />
+	
+	<!-- Model, ttmodel.cabmod-->
+	<id type="view" objectid="galleryButton"				nameid="organizerButton" />
+	<id type="view" objectid="exportButton" 				nameid="shareButton" />
+	<id type="view" objectid="actionListPanel"				nameid="editMenuButton" />
+	<id type="view" objectid="selectionListPanel"			nameid="selectMenuButton" />
+	<id type="view" objectid="adjustmentListPanel"			nameid="enhanceMenuButton" />
+	<id type="view" objectid="fxListPanel"					nameid="effectsMenuButton" />
+	<id type="view" objectid="otherListPanel"				nameid="wrenchMenuButton" />
+	<id type="view" objectid="transformButton"				nameid="transformButton" />
+	<id type="view" objectid="hideAllPanels"				nameid="hideAllButton" />
+	<id type="view" objectid="showAllPanels"				nameid="showAllButton" />
+	<id type="view" objectid="hideRightBarButton"			nameid="hideRightBarButton" />
+	<id type="view" objectid="hideLeftBarButton"			nameid="hideLeftBarButton" />
+	<id type="view" objectid="hideToolbarButton"			nameid="hideToolbarButton" />
+	<id type="view" objectid="rightBarButton"				nameid="showRightBarButton" />
+	<id type="view" objectid="leftBarButton"				nameid="showLeftBarButton" />
+	<id type="view" objectid="topBarButton"					nameid="showToolbarButton" />
+	<id type="view" objectid="undoButton"					nameid="undoButton" />
+	<id type="view" objectid="redoButton"					nameid="redoButton" />
+	<id type="view" objectid="toolWheel"					nameid="toolWheel" />
+	<id type="view" objectid="toolSettingsView"				nameid="toolSettingsArea" />
+	<id type="view" objectid="touchCursorButton"			nameid="touchCursorButton" />
+	<id type="view" objectid="leftBar"						nameid="leftBar" />
+	<id type="view" objectid="rightBar"						nameid="rightBar" />
+	<id type="view" objectid="toolbarView"					nameid="toolbar" />
+	<id type="view" objectid="layerView"					nameid="layerList" />
+	<id type="view" objectid="modifyLayerPanel"				nameid="layerPropertiesButton" />
+	<id type="view" objectid="addLayerPanel"				nameid="addLayerButton" />
+	<id type="view" objectid="accelerometerButton"			nameid="accelerometerButton" />
+	<id type="view" objectid="closeZLayerButton"			nameid="closeZLayerButton" />
+	
+	<id type="layer"										nameid="selectedLayer" />
+	
+	<!-- Tools, tttoolmanager.cabmod-->
+	<id type="tool" objectid="marqueeSelectionTool"			nameid="marqueeSelectionTool" />
+	<id type="tool" objectid="circleSelectionTool"			nameid="circleSelectionTool" />
+	<id type="tool" objectid="lassoSelectionTool"			nameid="lassoSelectionTool" />
+	<id type="tool" objectid="polygoneSelectionTool"		nameid="polygoneSelectionTool" />
+	<id type="tool" objectid="scribbleSelectionTool"		nameid="scribbleSelectionTool" />
+	<id type="tool" objectid="brushSelectionTool"			nameid="brushSelectionTool" />
+	<id type="tool" objectid="magicWandTool"				nameid="magicWandTool" />
+	<id type="tool" objectid="paintTool"					nameid="paintTool" />
+	<id type="tool" objectid="paintEffectTool"				nameid="paintEffectTool" />
+	<id type="tool" objectid="sprayTool"					nameid="sprayTool" />
+	<id type="tool" objectid="eraserTool"					nameid="eraserTool" />
+	<id type="tool" objectid="cloneTool"					nameid="cloneTool" />
+	<id type="tool" objectid="healingTool"					nameid="healingTool" />
+	<id type="tool" objectid="blurTool"						nameid="blurTool" />
+	<id type="tool" objectid="smudgeTool"					nameid="smudgeTool" />
+	
+	<!-- Add Layer Panel, ttaddlayerpanelmodule.cabmod-->
+	<id type="view" objectid="addEmptyLayerButton"			nameid="addEmptyLayerButton" />
+	<id type="view" objectid="duplicateLayerButton"			nameid="duplicateLayerButton" />
+	<id type="view" objectid="layerFromSelectionButton"		nameid="layerFromSelectionButton" />
+	<id type="view" objectid="addPhotoLayerButton"			nameid="addPhotoLayerButton" />
+	<id type="view" objectid="addLayerCancelButtonttblue"	nameid="addLayerCancelButton" />
+
+	<!-- Brush Panel, ttbrushpanelmodule.cabmod-->
+	<id type="view" objectid="brushView"					nameid="brushSizeHardnessEditor" />
+	<id type="view" objectid="flowField"					nameid="brushFlowField" />
+	<id type="view" objectid="flowSlider"					nameid="brushFlowSlider" />
+	<id type="view" objectid="opacityField"					nameid="brushOpacityField" />
+	<id type="view" objectid="opacitySlider"				nameid="brushOpacitySlider" />
+	
+	<!-- Layer Panel, ttlayerinfopanelmodule.cabmod-->
+	<id type="view" objectid="layerOpacityField"			nameid="layerOpacityField" />
+	<id type="view" objectid="layerOpacitySlider"			nameid="layerOpacitySlider" />
+	<id type="view" objectid="layerBlendModePopup"			nameid="layerBlendModePopup" />
+	<id type="view" objectid="mergeVisibleLayersButton"		nameid="mergeVisibleLayersButton" />
+	<id type="view" objectid="flattenImageButton"			nameid="flattenImageButton" />
+	<id type="view" objectid="mergeLayerDownButton"			nameid="mergeLayerDownButton" />
+	<id type="view" objectid="deleteLayerButton"			nameid="deleteLayerButton" />
+	<id type="view" objectid="matchColorWithLayerButton"	nameid="matchColorWithLayerButton" />
+	
+	<!-- Slider Panel, ttsliderpanelmodule.cabmod-->
+	<id type="view" objectid="sliderValueField"				nameid="sliderValueField" />
+	<id type="view" objectid="sliderValueSlider"			nameid="sliderValueSlider" />
+	
+	<!-- Blur Tool Settings, ttblurtoolsettings.cabmod-->
+	<id type="view" objectid="blurToolBrushButton"			nameid="blurToolBrushButton" />
+	<id type="view" objectid="blurToolBlurButton"			nameid="blurToolBlurButton" />
+	
+	<!-- Brush Selection Tool Settings, ttbrushselectiontoolsettings.cabmod-->
+	<id type="view" objectid="plusSelectionModeButton"		nameid="plusSelectionModeButton" />
+	<id type="view" objectid="minusSelectionModeButton"		nameid="minusSelectionModeButton" />
+	<id type="view" objectid="brush"						nameid="brushSelectionToolBrushButton" />
+	<id type="view" objectid="allLayersCheckbox"			nameid="allLayersCheckbox" />
+	<id type="view" objectid="modify"						nameid="modifySelectionButton" />
+	
+	<!-- Eraser Tool Settings, ttbrushtoolsettings.cabmod-->
+	<id type="view" objectid="brushButton"					nameid="eraserToolBrushButton" />
+	
+	<!-- Clone Tool Settings, ttbrushtoolsettings.cabmod-->
+	<id type="view" objectid="brushButton"					nameid="cloneToolBrushButton" />
+	<id type="view" objectid="sourceButton"					nameid="cloneToolSourceButton" />
+	
+	<!-- Lasso Selection Tool Settings, ttlassoselectiontoolsettings.cabmod-->
+	<id type="view" objectid="typeLasso"					nameid="typeLassoButton" />
+	<id type="view" objectid="typePolygone"					nameid="typePolygoneButton" />
+	<id type="view" objectid="plusSelectionModeButton"		nameid="plusSelectionModeButton" />
+	<id type="view" objectid="minusSelectionModeButton"		nameid="minusSelectionModeButton" />
+	<id type="view" objectid="modify"						nameid="modifySelectionButton" />
+	
+	<!-- Marquee Selection Tool Settings, ttmarqueeselectiontoolsettings.cabmod-->
+	<id type="view" objectid="typeRectangle"				nameid="typeRectangleButton" />
+	<id type="view" objectid="typeCircle"					nameid="typeCircleButton" />
+	<id type="view" objectid="plusSelectionModeButton"		nameid="plusSelectionModeButton" />
+	<id type="view" objectid="minusSelectionModeButton"		nameid="minusSelectionModeButton" />
+	<id type="view" objectid="modify"						nameid="modifySelectionButton" />
+	<!-- Marquee Selection Tool Settings, ttrectshapeselectiontoolsettings.cabmod-->
+	<id type="view" objectid="radius"						nameid="radiusButton" />
+	
+	<!-- Magic Wand Tool Settings, ttmagicwandtoolsettings.cabmod-->
+	<id type="view" objectid="plusSelectionModeButton"		nameid="plusSelectionModeButton" />
+	<id type="view" objectid="minusSelectionModeButton"		nameid="minusSelectionModeButton" />
+	<id type="view" objectid="tolerance"					nameid="toleranceButton" />
+	<id type="view" objectid="continuesCheckbox"			nameid="continuesCheckbox" />
+	<id type="view" objectid="modify"						nameid="modifySelectionButton" />
+	
+	<!-- Paint Tool Settings, ttpainttoolsettings.cabmod-->
+	<id type="view" objectid="brushButton11"				nameid="paintToolBrushButton" />
+	<id type="view" objectid="paintcolorfield"				nameid="paintColorField" />
+	<id type="view" objectid="paintModeChooser"				nameid="paintModeChooser" />
+	<id type="view" objectid="effectChooser"				nameid="paintEffectChooser" />	
+	<id type="view" objectid="effectSettings"				nameid="paintEffectSettings" />
+	<id type="view" objectid="edgeAwareCheckbox"			nameid="edgeAwareCheckbox" />
+	
+	<!-- Smudge Tool Settings, ttsmudgetoolsettings.cabmod-->
+	<id type="view" objectid="brushButton"					nameid="smudgeToolBrushButton" />
+	<id type="view" objectid="strengthButton"				nameid="strengthButton" />
+	
+	<!-- Smudge Tool Settings, ttscribbleselectiontoolsettings.cabmod-->
+	<id type="view" objectid="keepScribblesButton"			nameid="keepScribblesButton" />
+	<id type="view" objectid="removeScribblesButton"		nameid="removeScribblesButton" />
+	
+	<!-- Text Panel, tttextpanelmodule.cabmod-->
+	<id type="view" objectid="textField"					nameid="textPanelTextfield" />
+	<id type="view" objectid="fontPopup"					nameid="textPanelFontPopup" />
+	<id type="view" objectid="colorfield"					nameid="textPanelColorField" />
+	<id type="view" objectid="fontList"						nameid="textPanelFontList" />
+	<id type="view" objectid="cancelButton"					nameid="textPanelCancelButton" />
+	<id type="view" objectid="okButton"						nameid="textPanelOkButton" />
+	<id type="view" objectid="keyboardButton"				nameid="textPanelKeyboardDroid" />
+	<id type="view" objectid="keyboardField"				nameid="textPanelKeyboardIOS" />
+	
+	<!-- Add Fade / Gradient Panel, gradientmodule.cabmod-->
+	<id type="view" objectid="swatchesButton"				nameid="gradientSwatchesButton" />
+	<id type="view" objectid="editButton"					nameid="gradientEditButton" />
+	
+	<!-- Add Camera Fill Panel, cameramodule.cabmod-->
+	<id type="view" objectid="sliderZoom"					nameid="cameraSliderZoom" />
+	
+	<!-- Color Panel, colordialog.cabmod-->
+	<id type="view" objectid="colorPickView"				nameid="colorPanelPickerView" />
+	<id type="view" objectid="gradientViewButton"			nameid="colorPanelGradientButton" />
+	<id type="view" objectid="sliderViewButton"				nameid="colorPanelSlidersButton" />
+	<id type="view" objectid="swatchViewButton"				nameid="colorPanelSwatchesButton" />
+	<id type="view" objectid="gradientView"					nameid="colorPanelGradientView" />
+	<id type="view" objectid="swatchView"					nameid="colorPanelSwatchesView" />
+	<id type="view" objectid="hsbButton"					nameid="colorPanelHSBButton" />
+	<id type="view" objectid="rgbButton"					nameid="colorPanelRGBButton" />
+	<id type="view" objectid="redField"						nameid="colorPanelRedField" />
+	<id type="view" objectid="greenField"					nameid="colorPanelGreenField" />
+	<id type="view" objectid="blueField"					nameid="colorPanelBlueField" />
+	<id type="view" objectid="alphaField"					nameid="colorPanelOpacityField" />
+	<id type="view" objectid="redSlider"					nameid="colorPanelRedSlider" />
+	<id type="view" objectid="greenSlider"					nameid="colorPanelGreenSlider" />
+	<id type="view" objectid="blueSlider"					nameid="colorPanelBlueSlider" />
+	<id type="view" objectid="alphaSlider"					nameid="colorPanelAlphaSlider" />
+	<id type="view" objectid="redField"						nameid="colorPanelHueField" />
+	<id type="view" objectid="greenField"					nameid="colorPanelSaturationField" />
+	<id type="view" objectid="blueField"					nameid="colorPanelBrightnessField" />
+	<id type="view" objectid="redSlider"					nameid="colorPanelHueSlider" />
+	<id type="view" objectid="greenSlider"					nameid="colorPanelSaturationSlider" />
+	<id type="view" objectid="blueSlider"					nameid="colorPanelBrightnessSlider" />
+	
+	<!-- otherListPanel, ttbaselistpanelmodule, TTModel -->
+	<id type="list" objectid="otherListPanel" index="0"		nameid="wrenchMenuItemCrop" />
+	<id type="list" objectid="otherListPanel" index="1"		nameid="wrenchMenuItemFill" />
+	<id type="list" objectid="otherListPanel" index="2"		nameid="wrenchMenuItemAddText" />
+	<id type="list" objectid="otherListPanel" index="3"		nameid="wrenchMenuItemAddGradient" />
+	<id type="list" objectid="otherListPanel" index="4"		nameid="wrenchMenuItemAddFade" />
+	<id type="list" objectid="otherListPanel" index="5"		nameid="wrenchMenuItemWarp" />
+	
+	<!-- actionListPanel, ttbaselistpanelmodule, TTModel -->
+	<id type="list" objectid="actionListPanel" index="0"	nameid="editMenuItemCut" />
+	<id type="list" objectid="actionListPanel" index="1"	nameid="editMenuItemCopy" />
+	<id type="list" objectid="actionListPanel" index="2"	nameid="editMenuItemCopyMerged" />
+	<id type="list" objectid="actionListPanel" index="3"	nameid="editMenuItemPaste" />
+	<id type="list" objectid="actionListPanel" index="4"	nameid="editMenuItemClear" />
+	
+	<!-- selectionListPanel, ttbaselistpanelmodule, TTModel -->
+	<id type="list" objectid="selectionListPanel" index="0"	nameid="selectMenuItemSelectAll" />
+	<id type="list" objectid="selectionListPanel" index="1"	nameid="selectMenuItemDeselect" />
+	<id type="list" objectid="selectionListPanel" index="2"	nameid="selectMenuItemSelectPixels" />
+	<id type="list" objectid="selectionListPanel" index="3"	nameid="selectMenuItemInvert" />
+	<id type="list" objectid="selectionListPanel" index="4"	nameid="selectMenuItemFeather" />
+	<id type="list" objectid="selectionListPanel" index="5"	nameid="selectMenuItemResize" />
+	<id type="list" objectid="selectionListPanel" index="6"	nameid="selectMenuItemRefineEdge" />
+
+	<!-- adjustmentListPanel, ttcolumnlistpanelmodule, TTModel -->
+	<id type="grid" objectid="adjustmentListPanel" index="0"	nameid="adjustmentBlackAndWhite" />
+	<id type="grid" objectid="adjustmentListPanel" index="1"	nameid="adjustmentContrastBrightness" />
+	<id type="grid" objectid="adjustmentListPanel" index="2"	nameid="adjustmentShadowHilite" />
+	<id type="grid" objectid="adjustmentListPanel" index="3"	nameid="adjustmentInvert" />
+	<id type="grid" objectid="adjustmentListPanel" index="4"	nameid="adjustmentSaturation" />
+	<id type="grid" objectid="adjustmentListPanel" index="5"	nameid="adjustmentTemperature" />
+	<id type="grid" objectid="adjustmentListPanel" index="6"	nameid="adjustmentColorBalance" />
+	<id type="grid" objectid="adjustmentListPanel" index="7"	nameid="adjustmentLevels" />
+	<id type="grid" objectid="adjustmentListPanel" index="8"	nameid="adjustmentAutoFix" />
+	<id type="grid" objectid="adjustmentListPanel" index="9"	nameid="adjustmentReplaceColor" />
+	<id type="grid" objectid="adjustmentListPanel" index="10"	nameid="adjustmentDenoise" />
+	<id type="grid" objectid="adjustmentListPanel" index="11"	nameid="adjustmentCurves" />
+
+	<!-- fxListPanel, ttcolumnlistpanelmodule, TTModel -->
+	<id type="view" objectid="switchBar"						nameid="effectGroupSwitch" />
+	
+	<id type="grid" objectid="fxListPanel" index="0"			nameid="effectGaussianBlur" />
+	<id type="grid" objectid="fxListPanel" index="1"			nameid="effectDropShadow" />
+	<id type="grid" objectid="fxListPanel" index="3"			nameid="effectDirectionalBlur" />
+	<id type="grid" objectid="fxListPanel" index="4"			nameid="effectGlow" />
+	<id type="grid" objectid="fxListPanel" index="5"			nameid="effectTint" />
+	<id type="grid" objectid="fxListPanel" index="6"			nameid="effectSharpen" />
+	<id type="grid" objectid="fxListPanel" index="7"			nameid="effectBevel" />
+
+	<id type="grid" objectid="fxListPanel" index="0"			nameid="effectMultiGradientMap" />
+	<id type="grid" objectid="fxListPanel" index="1"			nameid="effectGlass" />
+	<id type="grid" objectid="fxListPanel" index="2"			nameid="effectHalftonePattern" />
+	<id type="grid" objectid="fxListPanel" index="3"			nameid="effectPosterize Color" />
+	<id type="grid" objectid="fxListPanel" index="4"			nameid="effectThreshold" />
+	<id type="grid" objectid="fxListPanel" index="5"			nameid="effectOldPhotocopy" />
+	
+	<id type="grid" objectid="fxListPanel" index="0"			nameid="effectGraphicPen" />
+	<id type="grid" objectid="fxListPanel" index="1"			nameid="effectChalkCharcoal" />
+	<id type="grid" objectid="fxListPanel" index="2"			nameid="effectPencil" />
+	
+	<id type="grid" objectid="fxListPanel" index="0"			nameid="effectOldSepia" />
+	<id type="grid" objectid="fxListPanel" index="1"			nameid="effectTVMonitor" />
+	<id type="grid" objectid="fxListPanel" index="2"			nameid="effectSleepyHollow" />
+	<id type="grid" objectid="fxListPanel" index="3"			nameid="effectGrainyNight" />
+	<id type="grid" objectid="fxListPanel" index="4"			nameid="effectSunnyAfternoon" />
+	<id type="grid" objectid="fxListPanel" index="5"			nameid="effectMoonlight" />
+	
+</idmap>

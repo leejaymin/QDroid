@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/view_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tf="http://schemas.android.com/apk/res/org.tf">
+    <org.tf.ui.FTextView android:textSize="@dimen/text_even_larger" android:textColor="@color/base" android:id="@id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Song finished!" />
+    <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="110.0px">
+        <org.tf.ui.FTextView android:textSize="130.0px" android:textColor="@color/button_text" android:layout_gravity="center_vertical" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="999999" tf:fireTypeface="true" />
+    </FrameLayout>
+    <RatingBar android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin" android:numStars="5" android:stepSize="0.1" android:isIndicator="true" style="@style/RatingBarLarge" />
+    <org.tf.ui.FTextView android:textSize="@dimen/text_even_larger" android:textColor="@color/base" android:id="@id/accuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Accuracy: 100%" />
+    <org.tf.ui.FTextView android:textSize="@dimen/text_even_larger" android:textColor="@color/base" android:id="@id/streak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Longest streak: 9999" />
+    <com.mobclix.android.sdk.MobclixMMABannerXLAdView android:layout_gravity="center" android:id="@id/banner_adview" android:layout_width="320.0dip" android:layout_height="50.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/examine_button_ll" android:background="@drawable/base_long_button_selector" android:padding="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/examine_button_optimize" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff5accfe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/examine_quick_boost" />
+</LinearLayout>

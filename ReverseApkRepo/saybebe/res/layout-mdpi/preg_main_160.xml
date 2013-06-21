@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="409.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="40.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:id="@id/layout" android:background="@drawable/mainbgimg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/title_bar" android:background="@drawable/bg_title_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pregnancy_info" />
+            <LinearLayout android:id="@id/cal_btn" android:background="@drawable/btn_defult" android:layout_width="43.299988dip" android:layout_height="40.0dip" android:layout_marginLeft="266.59375dip" android:layout_marginTop="2.0dip">
+                <ImageView android:background="@drawable/calculator_icon" android:layout_width="45.299988dip" android:layout_height="36.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/mainbgimg" android:layout_width="320.0dip" android:layout_height="368.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:background="@drawable/icon_imsin" android:layout_width="55.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.299988dip" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/info" android:layout_width="226.6dip" android:layout_height="wrap_content" android:layout_marginLeft="6.5999756dip" android:text="@string/imsin_info5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.5999756dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.2999878dip">
+                    <RadioButton android:id="@id/imsin_btn" android:layout_width="139.29999dip" android:layout_height="30.0dip" android:checked="true" android:button="@drawable/imsin_radio" />
+                    <RadioButton android:id="@id/baby_btn" android:layout_width="139.29999dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:button="@drawable/imsin_radio" />
+                </RadioGroup>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/button_text_color" android:gravity="center" android:layout_width="139.29999dip" android:layout_height="30.0dip" android:text="@string/pregnancy" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/button_text_color" android:gravity="center" android:layout_width="139.29999dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:text="@string/childcare" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <ScrollView android:id="@id/baby_month" android:background="@drawable/bg_white_shape" android:padding="3.2999878dip" android:visibility="visible" android:layout_width="293.29688dip" android:layout_height="250.0dip" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

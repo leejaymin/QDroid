@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	border: 0;	
+}
+
+body {
+	color:#FFF;	
+	background-color:#666;
+}
+
+a {
+	color:#FFF;	
+	text-decoration:none;
+	line-height:25px;
+}
+
+#project {
+	width:600px;
+	text-align:center;
+	margin: auto;
+}
+
+#projectTitle {
+	color:#F60;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:100px;
+	display:block;
+	background-color: #333;	
+}

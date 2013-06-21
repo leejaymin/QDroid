@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sl_color_background" android:layout_width="220.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/sl_status_background" android:layout_width="fill_parent" android:layout_height="25.0dip">
+        <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/sl_margin_default" android:src="@drawable/sl_logo" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/sl_margin_default">
+        <TextView android:gravity="center_horizontal" android:id="@id/sl_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sl_margin_default" style="@style/sl_text_normal_bold" />
+        <Button android:id="@id/sl_button" android:background="@drawable/sl_dialog_button_background_selector" android:layout_width="fill_parent" android:layout_height="@dimen/sl_clickable_height" android:layout_margin="@dimen/sl_margin_default" android:text="@string/sl_ok" style="@style/sl_text_normal_bold_inverted" />
+    </LinearLayout>
+</LinearLayout>

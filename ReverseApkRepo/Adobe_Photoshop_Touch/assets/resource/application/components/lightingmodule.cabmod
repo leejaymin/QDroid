@@ -1,0 +1,75 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="750" height="380" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="750" height="260" sizeX="scale" x="0" y="20" module="module">
+        <button id="ttblue" width="110" height="40" sizeX="right" x="630" y="10" target="referenceDispatcher" selector="ApplyFilter" title="$$$/lightingmodule/button/title/Apply=Apply"/>
+        <button id="button11" width="110" height="40" sizeX="right" x="630" y="60" target="referenceDispatcher" selector="CancelFilter" title="$$$/lightingmodule/button/title/Cancel=Cancel"/>
+        <imageView id="imageView" width="150" x="10" y="10"/>
+        <ttcolorfield id="colorfield" width="40" height="40" x="300" y="10" target="referenceDispatcher" selector="color1" color="00FFFF" supportsAlpha="false" supportsNoColor="false" module="module"/>
+        <label id="label11" width="130" height="40" x="160" y="10" title="$$$/lightingmodule/label/title/Color=Color"/>
+        <ttliveslider id="slider1111" width="240" height="40" sizeX="scale" x="370" y="60" target="referenceDispatcher" selector="intensity" sliderValue="4" maxValue="300" endMouseSelector="intensityLive" liveSelector="intensityLive"/>
+        <ttnumberfield id="textField11111111" width="60" height="40" x="300" y="60" target="referenceDispatcher" text="$$$/lightingmodule/textField/text/Text=Text" lostFocusSelector="intensityText" returnSelector="intensityText" parentPanel="module" unitString="%"/>
+        <label id="label211" width="130" height="40" x="160" y="60" title="$$$/lightingmodule/label/title/Intensity=Intensity"/>
+        <ttliveslider id="slider1112" width="240" height="40" sizeX="scale" x="370" y="110" target="referenceDispatcher" selector="spec" sliderValue="4" maxValue="300" endMouseSelector="specLive" liveSelector="specLive"/>
+        <ttnumberfield id="textField11111112" width="60" height="40" x="300" y="110" target="referenceDispatcher" text="$$$/lightingmodule/textField/text/Text=Text" lostFocusSelector="specText" returnSelector="specText" parentPanel="module" unitString="%"/>
+        <label id="label212" width="240" height="40" x="50" y="110" title="$$$/lightingmodule/label/title/Specularity=Specularity"/>
+        <ttpopup id="popup" width="190" height="38" x="420" y="10" target="referenceDispatcher" selector="typePopup" panelModule="module"/>
+        <label id="label2111" width="65" height="40" x="345" y="10" title="$$$/lightingmodule/label/title/Type=Type"/>
+        <ttpopup id="popup1" width="240" height="38" x="370" y="160" target="referenceDispatcher" selector="layerPopup" panelModule="module"/>
+        <label id="label21111" width="310" height="40" x="50" y="160" title="$$$/lightingmodule/label/title/Bump Layer=Bump Layer"/>
+        <ttliveslider id="slider11121" width="240" height="40" sizeX="scale" x="370" y="210" target="referenceDispatcher" selector="bump" sliderValue="4" maxValue="300" endMouseSelector="bumpLive" liveSelector="bumpLive"/>
+        <ttnumberfield id="textField111111121" width="60" height="40" x="300" y="210" target="referenceDispatcher" text="$$$/lightingmodule/textField/text/Text=Text" lostFocusSelector="bumpText" returnSelector="bumpText" parentPanel="module"/>
+        <label id="label2121" width="240" height="40" x="50" y="210" title="$$$/lightingmodule/label/title/Bump Intensity=Bump Intensity"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView" refName="imageView"/>
+      <objRef refId="colorfield" refName="color1"/>
+      <objRef refId="ttblue" refName="buttonOK"/>
+      <objRef refId="button11" refName="buttonCancel"/>
+      <objRef refId="slider1111" refName="intensity"/>
+      <objRef refId="textField11111111" refName="intensityText"/>
+      <objRef refId="slider1112" refName="spec"/>
+      <objRef refId="textField11111112" refName="specText"/>
+      <objRef refId="popup" refName="typePopup"/>
+      <objRef refId="popup1" refName="layerPopup"/>
+      <objRef refId="slider11121" refName="bump"/>
+      <objRef refId="textField111111121" refName="bumpText"/>
+      <objRef refId="label2121" refName="bumpLabel"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttlevelview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLevelView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABMessageHandler"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttliveslider" superClassName="slider" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLiveSlider">
+      <var name="liveSelector" type="string" defaultValue="live" codeName="iLiveSelector"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+    </class>
+    <class className="ttanglecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAngleControl">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="liveSelector" type="string" defaultValue="" codeName="iLiveSelector"/>
+    </class>
+    <class className="ttpopup" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTPopup">
+      <var name="panelModule" type="object" defaultValue="" codeName="iPanelModule" className="TTBasePanelModule"/>
+    </class>
+  </classes>
+</ttpanelmodule>

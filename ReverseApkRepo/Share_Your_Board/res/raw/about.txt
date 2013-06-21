@@ -1,0 +1,5 @@
+Share Your Board
+Version: {0}
+(c) Sphericbox Inc. 2008 - {1}. 
+All rights reserved.
+http://shareyourboard.com/

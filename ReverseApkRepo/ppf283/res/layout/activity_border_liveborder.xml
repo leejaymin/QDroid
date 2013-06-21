@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/fx_sub_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_border_border" android:layout_centerInParent="true" />"
+</RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/border_picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0dip" android:layout_centerInParent="true" />
+            <com.jellybus.fx_sub.BorderView android:id="@id/border_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/border_compare_info" android:paddingRight="5.0dip" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff404040" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="0.5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/border_sub_layout" android:background="@drawable/opacity_bg" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                    <SeekBar android:id="@id/border_seekbar_first" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="22.399994dip" android:max="250" android:progress="0" android:progressDrawable="@drawable/fx_effect_bar" android:thumb="@drawable/fx_effect_bar_button" android:thumbOffset="0.0dip" android:layout_centerInParent="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_border_border_round" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                    <SeekBar android:id="@id/border_seekbar_second" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="22.399994dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/fx_effect_bar" android:thumb="@drawable/fx_effect_bar_button" android:thumbOffset="0.0dip" android:layout_centerInParent="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_border_border_bold" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/border_sub" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_1" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select1" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_select" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_2" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select2" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_3" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select3" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_4" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select4" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_5" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select5" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_6" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select6" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_7" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select7" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_8" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select8" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_9" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select9" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_10" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select10" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_11" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select11" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_12" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select12" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_13" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select13" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_14" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select14" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_15" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select15" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_16" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select16" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_17" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select17" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_18" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select18" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_19" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select19" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_20" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select20" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_21" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select21" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_22" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select22" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_23" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select23" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_24" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select24" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_25" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select25" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_26" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select26" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_27" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select27" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_28" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select28" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_29" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select29" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_30" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select30" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_31" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select31" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_32" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/border_select32" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="border_select_listener" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/fx_sub_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/stamp_button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cancel_switch" android:layout_weight="1.0" android:onClick="border_button_cancel_listener" />
+                <ImageView android:id="@id/border_button_sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fx_sub_bar_on" android:layout_weight="1.0" android:onClick="border_button_sub_listener" />
+                <ImageView android:id="@id/border_button_compare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fx_sub_compare" android:layout_weight="1.0" />
+                <ImageView android:id="@id/border_button_apply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/apply_switch" android:layout_weight="1.0" android:onClick="border_button_apply_listener" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" />
+    <TextView android:id="@id/empty_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/prefs_title_notif_type" android:key="@string/PREFSKEY_NOTIF_PACKAGE" android:summary="@string/prefs_summary_notif_type" />
+    <ListPreference android:entries="@array/settings_notif_refresh_rates" android:title="@string/prefs_title_notif_refresh_rate" android:key="@string/PREFSKEY_NOTIFICATION_REFRESH_RATE" android:summary="@string/prefs_summary_notif_refresh_rate" android:defaultValue="10" android:entryValues="@array/settings_notif_refresh_rate_values" />
+    <ListPreference android:entries="@array/settings_widget_refresh_rates" android:title="@string/prefs_title_widget_refresh_rate" android:key="@string/PREFSKEY_WIDGET_REFRESH_RATE" android:summary="@string/prefs_summary_widget_refresh_rate" android:defaultValue="60" android:entryValues="@array/settings_widget_refresh_rate_values" />
+    <CheckBoxPreference android:title="@string/prefs_record_notif" android:key="@string/PREFSKEY_RECORD_NOTIF" android:defaultValue="true" android:summaryOn="@string/prefs_record_notif_on" android:summaryOff="@string/prefs_record_notif_off" />
+</PreferenceScreen>

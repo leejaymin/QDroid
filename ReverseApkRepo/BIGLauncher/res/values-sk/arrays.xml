@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Svetlé (východzie)</item>
+        <item>Tmavé</item>
+        <item>Modré</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automaticky (predvolené)</item>
+        <item>Horizontálne</item>
+        <item>Vertikálne</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Východzí</item>
+        <item>Väčšie</item>
+        <item>Menšie</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Domovská obrazovka</item>
+        <item>Nastavenie</item>
+    </string-array>
+</resources>

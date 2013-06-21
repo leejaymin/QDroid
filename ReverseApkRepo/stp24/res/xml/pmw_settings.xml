@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/prefs_screen_general" android:summary="@string/prefs_screen_general_summary">
+        <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_FONT_SIZE" android:summary="@string/prefs_summary_general_font_size" android:defaultValue="@string/prefs_font_size_default" android:entryValues="@array/settings_font_size_values" />
+        <Preference android:title="@string/prefs_title_back_color" android:key="@string/PREFSKEY_BACK_COLOR" android:summary="@string/prefs_summary_back_color" />
+        <Preference android:title="@string/prefs_title_usage_color" android:key="@string/PREFSKEY_USAGE_COLOR" android:summary="@string/prefs_summary_usage_color" />
+        <ListPreference android:entries="@array/settings_temperature_entries" android:title="@string/prefs_title_temperature" android:key="@string/PREFSKEY_TEMPERATURE" android:summary="@string/prefs_summary_temperature" android:defaultValue="0" android:entryValues="@array/settings_temperature_values" />
+        <EditTextPreference android:title="@string/prefs_title_backup_location" android:key="@string/PREFSKEY_BACKUP_LOCATION" android:summary="@string/prefs_summary_backup_location" android:defaultValue="@string/prefs_backup_location_default" />
+        <CheckBoxPreference android:title="@string/prefs_auto_backup" android:key="@string/PREFSKEY_AUTO_BACKUP" android:defaultValue="true" android:summaryOn="@string/prefs_auto_backup_on" android:summaryOff="@string/prefs_auto_backup_off" />
+        <CheckBoxPreference android:title="@string/prefs_restore_popup" android:key="@string/PREFSKEY_RESTORE_POPUP" android:defaultValue="false" android:summaryOn="@string/prefs_restore_popup_on" android:summaryOff="@string/prefs_restore_popup_off" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_main" android:summary="@string/prefs_screen_main_summary">
+        <CheckBoxPreference android:title="@string/prefs_screen_main_tm" android:key="@string/PREFSKEY_MAIN_TM" android:defaultValue="false" android:summaryOn="@string/prefs_screen_main_tm_on" android:summaryOff="@string/prefs_screen_main_tm_off" />
+        <CheckBoxPreference android:title="@string/prefs_screen_main_popup" android:key="@string/PREFSKEY_MAIN_POPUP" android:defaultValue="false" android:summaryOn="@string/prefs_screen_main_popup_on" android:summaryOff="@string/prefs_screen_main_popup_off" />
+        <CheckBoxPreference android:title="@string/prefs_main_auto_close" android:key="@string/PREFSKEY_AUTO_CLOSE_MAIN" android:defaultValue="false" android:summaryOn="@string/prefs_main_auto_close_on" android:summaryOff="@string/prefs_main_auto_close_off" />
+        <ListPreference android:entries="@array/settings_button_entries" android:title="@string/prefs_screen_main_button" android:key="@string/PREFSKEY_MAIN_BUTTONS" android:summary="@string/prefs_screen_main_button_summary" android:defaultValue="8" android:entryValues="@array/settings_button_values" />
+        <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_MAIN_FONT" android:summary="@string/prefs_summary_font_size" android:defaultValue="1" android:entryValues="@array/settings_font_size_values" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_monitor" android:summary="@string/prefs_screen_monitor_summary">
+        <ListPreference android:entries="@array/settings_refresh_rates" android:title="@string/prefs_title_refresh_rate" android:key="@string/PREFSKEY_REFRESH_RATE" android:summary="@string/prefs_summary_refresh_rate" android:defaultValue="@string/prefs_refresh_rate_default" android:entryValues="@array/settings_refresh_rate_values" />
+        <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_TM_FONT_SIZE" android:summary="@string/prefs_summary_font_size" android:defaultValue="@string/prefs_font_size_default" android:entryValues="@array/settings_font_size_values" />
+        <CheckBoxPreference android:title="@string/prefs_show_buttons" android:key="@string/PREFSKEY_SHOW_BUTTONS" android:defaultValue="true" android:summaryOn="@string/prefs_show_buttons_on" android:summaryOff="@string/prefs_show_buttons_off" />
+        <PreferenceScreen android:title="@string/prefs_screen_colors" android:summary="@string/prefs_screen_colors_summary">
+            <Preference android:title="@string/prefs_title_user_color" android:key="@string/PREFSKEY_USER_COLOR" android:summary="@string/prefs_summary_user_color" />
+            <Preference android:title="@string/prefs_title_system_color" android:key="@string/PREFSKEY_SYSTEM_COLOR" android:summary="@string/prefs_summary_system_color" />
+            <Preference android:title="@string/prefs_title_kernel_color" android:key="@string/PREFSKEY_KERNEL_COLOR" android:summary="@string/prefs_summary_kernel_color" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/prefs_screen_usage" android:summary="@string/prefs_screen_usage_summary">
+            <CheckBoxPreference android:title="@string/prefs_title_show_cpu_usage" android:key="@string/PREFSKEY_SHOW_CPU" android:defaultValue="true" android:summaryOn="@string/prefs_show_cpu_usage_on" android:summaryOff="@string/prefs_show_cpu_usage_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_show_cpu_freq" android:key="@string/PREFSKEY_SHOW_CPU_FREQ" android:defaultValue="false" android:summaryOn="@string/prefs_show_cpu_freq_on" android:summaryOff="@string/prefs_show_cpu_freq_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_show_memory_usage" android:key="@string/PREFSKEY_SHOW_MEMORY" android:defaultValue="true" android:summaryOn="@string/prefs_show_memory_usage_on" android:summaryOff="@string/prefs_show_memory_usage_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_show_sd_usage" android:key="@string/PREFSKEY_SHOW_SD" android:defaultValue="true" android:summaryOn="@string/prefs_show_sd_usage_on" android:summaryOff="@string/prefs_show_sd_usage_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_show_internal_usage" android:key="@string/PREFSKEY_SHOW_INTERNAL" android:defaultValue="false" android:summaryOn="@string/prefs_show_internal_usage_on" android:summaryOff="@string/prefs_show_internal_usage_off" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/prefs_screen_listview" android:summary="@string/prefs_screen_listview_summary">
+            <ListPreference android:entries="@array/settings_sort_by_entries" android:title="@string/prefs_title_sort_by" android:key="@string/PREFSKEY_SORTBY" android:summary="@string/prefs_summary_sort_by" android:defaultValue="@string/prefs_sort_by_default" android:entryValues="@array/settings_sort_by_values" />
+            <CheckBoxPreference android:title="@string/prefs_title_show_excluded" android:key="@string/PREFSKEY_SHOW_EXCLUDED" android:defaultValue="false" android:summaryOn="@string/prefs_show_excluded_on" android:summaryOff="@string/prefs_show_excluded_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_exclude_system" android:key="@string/PREFSKEY_EXCLUDE_SYSTEM" android:defaultValue="true" android:summaryOn="@string/prefs_exclude_system_on" android:summaryOff="@string/prefs_exclude_system_off" />
+            <Preference android:title="@string/prefs_title_reset_exclusion" android:key="@string/PREFSKEY_RESET_EXCLUSION" android:summary="@string/prefs_summary_reset_exclusion" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_notifications" android:summary="@string/prefs_screen_notifications_summary">
+        <Preference android:title="@string/prefs_title_notif_type" android:key="@string/PREFSKEY_NOTIF_PACKAGE" android:summary="@string/prefs_summary_notif_type" />
+        <ListPreference android:entries="@array/settings_notif_refresh_rates" android:title="@string/prefs_title_notif_refresh_rate" android:key="@string/PREFSKEY_NOTIFICATION_REFRESH_RATE" android:summary="@string/prefs_summary_notif_refresh_rate" android:defaultValue="10" android:entryValues="@array/settings_notif_refresh_rate_values" />
+        <ListPreference android:entries="@array/settings_widget_refresh_rates" android:title="@string/prefs_title_widget_refresh_rate" android:key="@string/PREFSKEY_WIDGET_REFRESH_RATE" android:summary="@string/prefs_summary_widget_refresh_rate" android:defaultValue="60" android:entryValues="@array/settings_widget_refresh_rate_values" />
+        <CheckBoxPreference android:title="@string/prefs_record_notif" android:key="@string/PREFSKEY_RECORD_NOTIF" android:defaultValue="true" android:summaryOn="@string/prefs_record_notif_on" android:summaryOff="@string/prefs_record_notif_off" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_recording" android:summary="@string/prefs_screen_recording_summary">
+        <EditTextPreference android:title="@string/prefs_title_record_location" android:key="@string/PREFSKEY_RECORD_LOCATION" android:summary="@string/prefs_summary_record_location" android:defaultValue="@string/prefs_record_location_default" />
+        <ListPreference android:entries="@array/settings_record_rate_entries" android:title="@string/prefs_title_record_rate" android:key="@string/PREFSKEY_RECORD_RATE" android:summary="@string/prefs_summary_record_rate" android:defaultValue="@string/prefs_record_rate_default" android:entryValues="@array/settings_record_rate_values" />
+        <CheckBoxPreference android:title="@string/prefs_record_boot" android:key="@string/PREFSKEY_RECORD_BOOT" android:defaultValue="false" android:summaryOn="@string/prefs_record_boot_on" android:summaryOff="@string/prefs_record_boot_off" />
+        <CheckBoxPreference android:title="@string/prefs_record_continuous" android:key="@string/PREFSKEY_RECORD_CONTINUOUS" android:defaultValue="false" android:summaryOn="@string/prefs_record_continuous_on" android:summaryOff="@string/prefs_record_continuous_off" />
+        <CheckBoxPreference android:title="@string/prefs_title_import_bmw" android:key="@string/PREFSKEY_IMPORT_BMW" android:defaultValue="true" android:summaryOn="@string/prefs_import_bmw_on" android:summaryOff="@string/prefs_import_bmw_off" />
+        <PreferenceScreen android:title="@string/prefs_screen_record_items" android:summary="@string/prefs_screen_record_items_summary">
+            <CheckBoxPreference android:title="@string/prefs_title_record_freq" android:key="@string/PREFSKEY_RECORD_FREQ" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_temp" android:key="@string/PREFSKEY_RECORD_TEMP" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_record_mem_title" android:key="@string/PREFSKEY_RECORD_MEM" android:defaultValue="false" android:summaryOn="@string/prefs_record_mem_on" android:summaryOff="@string/prefs_record_mem_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_all" android:key="@string/PREFSKEY_RECORD_ALL" android:defaultValue="false" android:summaryOn="@string/prefs_record_all_on" android:summaryOff="@string/prefs_record_all_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_screen" android:key="@string/PREFSKEY_RECORD_SCREEN" android:defaultValue="true" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_wifi" android:key="@string/PREFSKEY_RECORD_WIFI" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_bt" android:key="@string/PREFSKEY_RECORD_BT" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_phone" android:key="@string/PREFSKEY_RECORD_PHONE" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_data" android:key="@string/PREFSKEY_RECORD_DATA" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_calls" android:key="@string/PREFSKEY_RECORD_CALLS" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+            <CheckBoxPreference android:title="@string/prefs_title_record_gps" android:key="@string/PREFSKEY_RECORD_GPS" android:defaultValue="false" android:summaryOn="@string/prefs_record_on" android:summaryOff="@string/prefs_record_off" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/prefs_title_record_graph" android:key="@string/PREFSKEY_RECORD_GRAPH" android:defaultValue="false" android:summaryOn="@string/prefs_record_graph_on" android:summaryOff="@string/prefs_record_graph_off" />
+        <PreferenceCategory android:title="@string/prefs_category_analyzer">
+            <CheckBoxPreference android:title="@string/prefs_title_hide_low" android:key="@string/PREFSKEY_HIDE_LOW" android:defaultValue="true" android:summaryOn="@string/prefs_hide_low_on" android:summaryOff="@string/prefs_hide_low_off" />
+            <ListPreference android:entries="@array/settings_widget_hide_level_entries" android:title="@string/prefs_title_hide_level" android:key="@string/PREFSKEY_HIDE_LEVEL" android:summary="@string/prefs_summary_hide_level" android:dependency="@string/PREFSKEY_HIDE_LOW" android:defaultValue="@string/prefs_hide_level_default" android:entryValues="@array/settings_widget_hide_level_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_auto_kill" android:summary="@string/prefs_screen_auto_kill_summary">
+        <CheckBoxPreference android:title="@string/prefs_autokill_widget" android:key="@string/PREFSKEY_AUTOKILL_WIDGET" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
+        <CheckBoxPreference android:title="@string/prefs_autokill_notif" android:key="@string/PREFSKEY_AUTOKILL_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
+        <CheckBoxPreference android:title="@string/prefs_autokill_screen_off" android:key="@string/PREFSKEY_AUTOKILL_SCREENOFF" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
+        <CheckBoxPreference android:title="@string/prefs_autokill_screen_on" android:key="@string/PREFSKEY_AUTOKILL_SCREENON" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
+        <CheckBoxPreference android:title="@string/prefs_autokill_low_memory" android:key="@string/PREFSKEY_AUTOKILL_LOWMEMORY" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_active_tweaks" android:summary="@string/prefs_screen_active_tweaks_summary">
+        <PreferenceScreen android:title="@string/prefs_screen_screen_off" android:summary="@string/prefs_screen_screen_off_summary">
+            <ListPreference android:title="@string/prefs_cpu_sleep_governor" android:key="@string/PREFSKEY_CPU_SLEEP_GOV" android:summary="@string/prefs_cpu_sleep_governor_summary" android:defaultValue="" />
+            <ListPreference android:title="@string/prefs_cpu_min_freq" android:key="@string/PREFSKEY_CPU_MIN_FREQ" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
+            <ListPreference android:title="@string/prefs_title_cpu_phone" android:key="@string/PREFSKEY_CPU_MIN_CALL" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/prefs_screen_governors" android:summary="@string/prefs_screen_governors_summary">
+            <ListPreference android:entries="@array/settings_sampling_rates" android:title="@string/prefs_governors_sampling" android:key="@string/PREFSKEY_GOV_SAMPLING" android:summary="@string/prefs_governors_sampling_summary" android:defaultValue="" android:entryValues="@array/settings_sampling_rates" />
+            <PreferenceCategory android:title="@string/prefs_category_governor_ondemand">
+                <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_ONDEMAND_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="" android:entryValues="@array/settings_thresholds" />
+                <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_save" android:key="@string/PREFSKEY_GOV_ONDEMAND_SAVE" android:summary="@string/prefs_governor_save_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/prefs_category_governor_interactive">
+                <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_go_max" android:key="@string/PREFSKEY_GOV_INTERACTIVE_MAX" android:summary="@string/prefs_governor_go_max_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/prefs_category_governor_conservative">
+                <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+                <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_down" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_DOWN" android:summary="@string/prefs_governor_down_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/prefs_oc_deamon" android:key="@string/PREFSKEY_DISABLE_OCDEAMON" android:defaultValue="false" android:summaryOn="@string/prefs_oc_deamon_on" android:summaryOff="@string/prefs_oc_deamon_off" />
+        <PreferenceCategory android:title="@string/prefs_category_boot">
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sd_set_boot" android:key="@string/PREFSKEY_SD_BOOT" android:summary="@string/prefs_sd_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_memory_set_boot" android:key="@string/PREFSKEY_MEMORY_BOOT" android:summary="@string/prefs_memory_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_cpu_set_boot" android:key="@string/PREFSKEY_CPU_BOOT" android:summary="@string/prefs_cpu_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sysctl_set_boot" android:key="@string/PREFSKEY_SYSCTL_BOOT" android:summary="@string/prefs_sysctl_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_force_all_cpus" android:key="@string/PREFSKEY_CPU_ALL_ONLINE" android:summary="@string/prefs_force_all_cpus_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_app_boost" android:key="@string/PREFSKEY_APP_BOOST" android:summary="@string/prefs_app_boost_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+            <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_clear_cache" android:key="@string/PREFSKEY_CLEAR_CACHE" android:summary="@string/prefs_clear_cache_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_title_logcat" android:summary="@string/prefs_summary_logcat">
+        <EditTextPreference android:title="@string/prefs_title_log_location" android:key="@string/PREFSKEY_LOG_LOCATION" android:summary="@string/prefs_summary_log_location" android:defaultValue="@string/prefs_log_location_default" />
+        <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_LOG_FONT_SIZE" android:summary="@string/prefs_summary_font_size" android:defaultValue="@string/prefs_font_size_default" android:entryValues="@array/settings_font_size_values" />
+        <Preference android:title="@string/prefs_log_color_info_summary" android:key="@string/PREFSKEY_LOG_INFO_COLOR" android:summary="@string/prefs_log_color_info" />
+        <Preference android:title="@string/prefs_log_color_debug_summary" android:key="@string/PREFSKEY_LOG_DEBUG_COLOR" android:summary="@string/prefs_log_color_debug" />
+        <Preference android:title="@string/prefs_log_color_warn_summary" android:key="@string/PREFSKEY_LOG_WARN_COLOR" android:summary="@string/prefs_log_color_warn" />
+        <Preference android:title="@string/prefs_log_color_error_summary" android:key="@string/PREFSKEY_LOG_ERROR_COLOR" android:summary="@string/prefs_log_color_error" />
+    </PreferenceScreen>
+</PreferenceScreen>

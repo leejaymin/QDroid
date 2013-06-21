@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/imoblife.batterybooster">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_examination" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/scanner_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="35.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/examination_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="65.0">
+                    <ImageView android:layout_gravity="bottom|right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/examine_underlay" />
+                    <ScrollView android:id="@id/examination_content1_sv" android:visibility="visible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="65.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/examination_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/examination_chart" />
+                            <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/examination_other" />
+                        </LinearLayout>
+                    </ScrollView>
+                </FrameLayout>
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/examine_button" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+  <id>air.com.adobe.cc.PushNotification</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>AdobeC2DMLibrary.jar</nativeLibrary>
+        <initializer>air.com.adobe.cc.notifications.c2dm.C2DMAirExtension</initializer>
+        <finalizer>air.com.adobe.cc.notifications.c2dm.C2DMAirExtension</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-ARM"> 
+      <applicationDeployment>
+        <nativeLibrary>libAdobeAPNAirExtension.a</nativeLibrary>
+        <initializer>AdobeAPNAirInitializer</initializer>
+        <finalizer>AdobeAPNAirFinalizer</finalizer>
+      </applicationDeployment>        
+    </platform>
+  </platforms>
+</extension>

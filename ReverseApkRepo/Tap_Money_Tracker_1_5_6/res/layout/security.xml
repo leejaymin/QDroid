@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0px" android:layout_marginRight="50.0px" android:layout_weight="1.0">
+        <ImageView android:padding="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock128" />
+        <ToggleButton android:id="@id/btn_security" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginRight="15.0px" />
+        <EditText android:gravity="center" android:id="@id/edt_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginTop="15.0px" android:layout_marginRight="15.0px" android:hint="Password" android:password="true" android:singleLine="true" />
+        <EditText android:gravity="center" android:id="@id/edt_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" android:layout_marginRight="15.0px" android:hint="Confirm" android:password="true" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:paddingLeft="3.0px" android:paddingTop="5.0px" android:paddingRight="3.0px" android:paddingBottom="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_ok" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

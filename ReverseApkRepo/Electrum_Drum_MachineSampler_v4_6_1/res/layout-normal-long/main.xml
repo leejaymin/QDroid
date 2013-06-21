@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:stretchColumns="*" android:layout_weight="5.0">
+        <TableRow>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/playallbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playallbuttonup" />
+                <ImageView android:id="@id/playlivebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/livebuttonup" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/playbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playbuttonup" />
+            <ImageView android:id="@id/stopbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stopbuttonup" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/patterndownbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/patterndownup" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/patternupbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/patternupup" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bpmlayout" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0dip" android:textColor="#fff0f0f0" android:id="@id/resolutiontext" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/16 Res." />
+                <TextView android:textSize="13.0dip" android:textColor="#fff0f0f0" android:layout_gravity="left" android:id="@id/bpmtext" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="120.0bpm" />
+                <TextView android:textSize="13.0dip" android:textColor="#fff0f0f0" android:id="@id/patterntext" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pat: 1" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/mastervolumeknob" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mixerbutton" />
+        </TableRow>
+    </TableLayout>
+    <TableLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:stretchColumns="*" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/InfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:typeface="sans" android:id="@id/projecttext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Untitled" android:layout_toRightOf="@id/projectcaption" />
+            <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/electrumlogo" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0dip" android:typeface="sans" android:id="@id/projectcaption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Patch:" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <TableRow>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot1name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kick" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot2name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ride" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot3name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C Hat" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot4name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="O hat" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot5name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snare" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot6name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hi Tom" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot7name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snare" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11.0dip" android:textColor="#fff0f0f0" android:layout_gravity="center_horizontal" android:id="@id/soundslot8name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Snare" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/soundslot8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/soundslotnormal" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <ProgressBar android:id="@id/exportprogress" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:max="10" style="?android:attr/progressBarStyleHorizontal" />
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*">
+            <TableRow>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton1" android:background="@drawable/drumbuttonback1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton2" android:background="@drawable/drumbuttonback2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton3" android:background="@drawable/drumbuttonback3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton4" android:background="@drawable/drumbuttonback4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton5" android:background="@drawable/drumbuttonback5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton6" android:background="@drawable/drumbuttonback6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton7" android:background="@drawable/drumbuttonback7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton8" android:background="@drawable/drumbuttonback8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+            </TableRow>
+        </TableLayout>
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*">
+            <TableRow>
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton9" android:background="@drawable/drumbuttonback9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton10" android:background="@drawable/drumbuttonback10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton11" android:background="@drawable/drumbuttonback11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton12" android:background="@drawable/drumbuttonback12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton13" android:background="@drawable/drumbuttonback13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton14" android:background="@drawable/drumbuttonback14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton15" android:background="@drawable/drumbuttonback15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/drumbutton16" android:background="@drawable/drumbuttonback16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/drumbuttonnormal" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version='1.0'?><example><category>Statistics &amp; Data Analysis</category><section-title>
+ <link ref="DescriptiveStatistics">Descriptive Statistics </link>
+</section-title><caption>calculate basic descriptive statistics for a data set</caption><input>{25, 35, 10, 17, 29, 14, 21, 31}</input><caption>compute a statistical quantity</caption><input>mean {21.3, 38.4, 12.7, 41.6}</input><input>kurtosis {21.3, 38.4, 12.7, 41.6}</input><section-title>
+ <link ref="RegressionAnalysis">Regression Analysis </link>
+</section-title><caption>fit a line to two-dimensional data</caption><input>linear fit {1.3, 2.2},{2.1, 5.8},{3.7, 10.2},{4.2, 11.8}</input><caption>fit a polynomial to given data</caption><input>cubic fit 20.9,23.2,26.2,26.4,16.3,-12.2,-60.6,-128.9</input><caption>fit an exponential model to given data</caption><input>exponential fit 0.783,0.552,0.383,0.245,0.165,0.097</input><section-title>
+ <link ref="StatisticalDistributions">Statistical Distributions </link>
+</section-title><caption>compute properties of a probability distribution</caption><input>beta distribution</input><input>Poisson distribution </input><caption>specify parameters for a distribution</caption><input>normal distribution, mean=0, sd=2</input><section-title>
+ <link ref="Probability">Probability </link>
+</section-title><caption>compute coin toss probabilities</caption><input>32 coin tosses</input><caption>compute dice probabilities</caption><input>5 dice</input><caption>compute odds for a poker hand</caption><input>poker full house</input></example>

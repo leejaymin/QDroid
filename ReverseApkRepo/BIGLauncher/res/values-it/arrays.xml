@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Chiaro (predefinito)</item>
+        <item>Scuro</item>
+        <item>Blu</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automatico (predefinita)</item>
+        <item>Orizzontale</item>
+        <item>Verticale</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Predefinito</item>
+        <item>Più grande</item>
+        <item>Grandissimo</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Schermo domestico</item>
+        <item>Preferenze</item>
+    </string-array>
+</resources>

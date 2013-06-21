@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/prefs_screen_screen_off" android:summary="@string/prefs_screen_screen_off_summary">
+        <ListPreference android:title="@string/prefs_cpu_sleep_governor" android:key="@string/PREFSKEY_CPU_SLEEP_GOV" android:summary="@string/prefs_cpu_sleep_governor_summary" android:defaultValue="" />
+        <ListPreference android:title="@string/prefs_cpu_min_freq" android:key="@string/PREFSKEY_CPU_MIN_FREQ" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
+        <ListPreference android:title="@string/prefs_title_cpu_phone" android:key="@string/PREFSKEY_CPU_MIN_CALL" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/prefs_screen_governors" android:summary="@string/prefs_screen_governors_summary">
+        <ListPreference android:entries="@array/settings_sampling_rates" android:title="@string/prefs_governors_sampling" android:key="@string/PREFSKEY_GOV_SAMPLING" android:summary="@string/prefs_governors_sampling_summary" android:defaultValue="" android:entryValues="@array/settings_sampling_rates" />
+        <PreferenceCategory android:title="@string/prefs_category_governor_ondemand">
+            <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_ONDEMAND_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="" android:entryValues="@array/settings_thresholds" />
+            <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_save" android:key="@string/PREFSKEY_GOV_ONDEMAND_SAVE" android:summary="@string/prefs_governor_save_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/prefs_category_governor_interactive">
+            <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_go_max" android:key="@string/PREFSKEY_GOV_INTERACTIVE_MAX" android:summary="@string/prefs_governor_go_max_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/prefs_category_governor_conservative">
+            <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_up" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_UP" android:summary="@string/prefs_governor_up_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+            <ListPreference android:entries="@array/settings_thresholds" android:title="@string/prefs_governor_down" android:key="@string/PREFSKEY_GOV_CONSERVATIVE_DOWN" android:summary="@string/prefs_governor_down_summary" android:defaultValue="0" android:entryValues="@array/settings_thresholds" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/prefs_oc_deamon" android:key="@string/PREFSKEY_DISABLE_OCDEAMON" android:defaultValue="false" android:summaryOn="@string/prefs_oc_deamon_on" android:summaryOff="@string/prefs_oc_deamon_off" />
+    <PreferenceCategory android:title="@string/prefs_category_boot">
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sd_set_boot" android:key="@string/PREFSKEY_SD_BOOT" android:summary="@string/prefs_sd_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_memory_set_boot" android:key="@string/PREFSKEY_MEMORY_BOOT" android:summary="@string/prefs_memory_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_cpu_set_boot" android:key="@string/PREFSKEY_CPU_BOOT" android:summary="@string/prefs_cpu_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_sysctl_set_boot" android:key="@string/PREFSKEY_SYSCTL_BOOT" android:summary="@string/prefs_sysctl_set_boot_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_force_all_cpus" android:key="@string/PREFSKEY_CPU_ALL_ONLINE" android:summary="@string/prefs_force_all_cpus_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_app_boost" android:key="@string/PREFSKEY_APP_BOOST" android:summary="@string/prefs_app_boost_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+        <ListPreference android:entries="@array/settings_boot_entries" android:title="@string/prefs_clear_cache" android:key="@string/PREFSKEY_CLEAR_CACHE" android:summary="@string/prefs_clear_cache_summary" android:defaultValue="0" android:entryValues="@array/settings_boot_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

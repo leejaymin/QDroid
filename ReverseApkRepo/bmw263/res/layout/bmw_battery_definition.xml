@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/layoutMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1,4"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/battery_names">
+        <TextView android:textSize="20.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/text_bat_def_name" />
+        <EditText android:textSize="20.0dip" android:gravity="right" android:id="@id/battery_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:selectAllOnFocus="true" android:inputType="textCapWords">
+            <requestFocus />
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/text_bat_def_cap" />
+        <EditText android:textSize="20.0dip" android:gravity="right" android:id="@id/battery_capacity" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:selectAllOnFocus="true" android:inputType="number" />
+    </TableRow>
+</TableLayout>

@@ -1,0 +1,7 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Elementary Mathematics</category><section-title>
+ <link ref="Arithmetic">Arithmetic </link>
+</section-title><caption>do basic arithmetic</caption><input>125 + 375</input><input>1.05 * 12,000</input><input>7^3</input><caption>find square roots</caption><input>sqrt 1801</input><section-title>
+ <link ref="Fractions">Fractions </link>
+</section-title><caption>add fractions</caption><input>1/6 + 5/12 + 3/4</input><caption>multiply fractions</caption><input>3/8 * 2/7</input><caption>do exact arithmetic with fractions</caption><input>1/4 * (4 - 1/2)</input><section-title>
+ <link ref="Percentages">Percentages </link>
+</section-title><caption>convert a fraction to a percentage</caption><input>convert 1/6 to percent</input><caption>calculate a percentage of a quantity</caption><input>30% of 8 miles</input><caption>compute a discounted price</caption><input>$29.95 - 15%</input></example>

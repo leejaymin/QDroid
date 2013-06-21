@@ -1,0 +1,13 @@
+<?xml version='1.0'?><example><category>Earth Sciences</category><section-title>
+ <link ref="Geology">Geology </link>
+</section-title><caption>get information about a geological layer of earth</caption><input>asthenosphere</input><caption>get information about a geological eon, era, period, or epoch</caption><input>Jurassic Period</input><caption>get information about a mineral</caption><input>topaz</input><section-title>
+ <link ref="GeodesyAndNavigation">Geodesy </link>
+</section-title><caption>get information about a geodetic reference ellipsoid</caption><input>GRS80</input><caption>compute current local gravitational field strength</caption><input>geogravity</input><caption>compute geomagnetic field strength for a given date and location</caption><input>geomagnetism Oslo on 12 Feb 2007</input><section-title>
+ <link ref="Earthquakes">Earthquakes </link>
+</section-title><caption>get data about recent earthquakes</caption><input>earthquakes</input><caption>specify location and time</caption><input>earthquakes Mexico 1985</input><caption>do earthquake magnitude computations</caption><input>Richter scale 4.5</input><section-title>
+ <link ref="Tides">Tides </link>
+</section-title><caption>get current tide information</caption><input>tides Seattle</input><caption>get a tide forecast</caption><input>tides Oahu tomorrow</input><caption>get historical tide information</caption><input>tides Boston October 2005</input><section-title>
+ <link ref="AtmosphericSciences">Atmospheric Sciences </link>
+</section-title><caption>compute atmospheric properties for a given elevation</caption><input>atmosphere 40000ft</input><caption>compute saturation vapor pressure</caption><input>saturation vapor pressure 30C</input><caption>get information about a type of cloud</caption><input>cirrus</input><section-title>
+ <link ref="Climate">Climate </link>
+</section-title><caption>analyze global climate data</caption><input>global climate studies</input><caption>analyze a specified climate index</caption><input>Southern Oscillation Index</input></example>

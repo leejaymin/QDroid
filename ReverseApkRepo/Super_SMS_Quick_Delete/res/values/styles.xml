@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="heading" parent="@android:style/TextAppearance.Medium" />
+    <style name="subHeading" parent="@android:style/TextAppearance.Medium.Inverse">
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="rowDesc">
+        <item name="android:textColor">#ffbbbbbb</item>
+    </style>
+</resources>

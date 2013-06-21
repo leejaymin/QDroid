@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BackgroundPictureOn">
+        <item name="android:background">@drawable/direction</item>
+    </style>
+    <style name="BackgroundPictureOff">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="Text_Top">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Text_Top.Main" parent="@style/Text_Top">
+        <item name="android:textSize">11.0pt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text_Top.Tag" parent="@style/Text_Top">
+        <item name="android:textSize">8.0pt</item>
+    </style>
+    <style name="Text_Bottom">
+        <item name="android:textColor">#ffc9cac9</item>
+    </style>
+    <style name="Text_Bottom.Update" parent="@style/Text_Bottom">
+        <item name="android:textSize">5.0pt</item>
+    </style>
+    <style name="Text_Bottom.Station" parent="@style/Text_Bottom">
+        <item name="android:textSize">5.0pt</item>
+    </style>
+    <style name="Text_Config">
+        <item name="android:textColor">#ffc9cac9</item>
+        <item name="android:padding">5.0dip</item>
+    </style>
+    <style name="Text_Config.Data" parent="@style/Text_Config">
+        <item name="android:textSize">8.0pt</item>
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:height">60.0dip</item>
+    </style>
+    <style name="Text_Activity">
+        <item name="android:textSize">8.0pt</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:height">60.0dip</item>
+    </style>
+</resources>

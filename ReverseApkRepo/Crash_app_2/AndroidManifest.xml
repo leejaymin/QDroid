@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="15" android:versionName="2.0.15" package="com.jaceks.crashapp5"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:icon="@drawable/icon">
+        <activity android:label="@string/crash_activity" android:name=".CrashActivity" android:process="crashapp.CrashApp" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/anr_activity" android:name="AnrActivity" android:process="crashapp.AnrApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-sdk android:minSdkVersion="7" />
+</manifest>

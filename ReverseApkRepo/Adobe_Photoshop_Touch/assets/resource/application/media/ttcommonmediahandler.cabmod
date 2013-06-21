@@ -1,0 +1,28 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <view id="view1" width="262" height="240" sizeX="scale" sizeY="scale" x="17" y="21">
+        <ttnavigationview id="navigationView" width="262" height="240" sizeX="scale" sizeY="scale" x="0" y="0">
+          <view id="view11" width="262" height="240" sizeX="scale" sizeY="scale" x="0" y="0">
+            <tttablecontrol id="control" width="262" height="240" sizeX="scale" sizeY="scale" x="0" y="0" target="referenceDispatcher" selector="tableControl"/>
+          </view>
+        </ttnavigationview>
+        <text id="ttboldtext" width="236" height="22" sizeX="scale" sizeY="center" x="13" y="94" align="center"/>
+      </view>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="ttboldtext" refName="messageText"/>
+      <objRef refId="control" refName="tableControl"/>
+      <objRef refId="navigationView" refName="navigationView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttblittingtablecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTBlittingTableControl"/>
+    <class className="tttablecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTTableControl"/>
+    <class className="ttnavigationview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTNavigationView"/>
+  </classes>
+</module>

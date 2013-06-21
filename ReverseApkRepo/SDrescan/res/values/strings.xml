@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">"Code by Benjamin BeRo Rosseaux
+App Icon by Christoph giZMo Muetze
+
+http://www.rosseaux.net/
+
+Copyright (C) 2009, Benjamin Rosseaux
+
+"</string>
+    <string name="app_name">SDrescan</string>
+    <string name="scanning">Scanning SD card....</string>
+    <string name="completed">Completed!</string>
+    <string name="close">Close and exit</string>
+    <string name="preparing">Preparing...</string>
+    <string name="donate">Donate and exit</string>
+    <string name="website">Website and exit</string>
+    <string name="eula_title">End User License Agreement + disclaimer</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="error">Error occurred!</string>
+</resources>

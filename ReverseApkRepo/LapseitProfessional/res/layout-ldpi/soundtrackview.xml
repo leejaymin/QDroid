@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/soundtrack_wave" android:background="#ff0033ff" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:id="@id/soundtrack_image" android:background="#ff404a51" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/soundtrack_slide" android:background="@drawable/sound_slider" android:layout_width="100.0dip" android:layout_height="30.0dip" />
+    <RelativeLayout android:id="@id/soundtrack_line" android:background="#ffffba00" android:layout_width="2.0dip" android:layout_height="30.0dip" />
+    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/soundtrack_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/soundtrack_notrack" android:layout_below="@id/soundtrack_wave" />
+    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/soundtrack_clipduration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/soundtrack_title" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/soundtrack_musicduration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/soundtrack_clipduration" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/soundtrack_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/soundtrack_musicduration" />
+    <ImageView android:id="@id/soundtrack_play" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_media_play" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/soundtrack_stop" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_media_stop" android:layout_toRightOf="@id/soundtrack_play" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/soundtrack_add" android:background="@drawable/btn_project_bg" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="11.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="#ff525252" android:gravity="center" android:id="@id/soundtrack_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/soundtrack_add" android:layout_alignLeft="@id/soundtrack_add" android:layout_alignTop="@id/soundtrack_add" android:layout_alignRight="@id/soundtrack_add" android:layout_alignBottom="@id/soundtrack_add" />
+</RelativeLayout>

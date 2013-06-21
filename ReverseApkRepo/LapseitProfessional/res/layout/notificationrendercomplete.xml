@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/progressicon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/progresstitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Rendering completed" android:layout_toRightOf="@id/progressicon" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/progresstext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="7.0dip" android:text="Notification text" android:layout_below="@id/progresstitle" android:layout_alignParentLeft="true" />
+</RelativeLayout>

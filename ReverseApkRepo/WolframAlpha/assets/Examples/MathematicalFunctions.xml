@@ -1,0 +1,7 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Mathematical Functions</category><section-title>
+ <link ref="SpecialFunctions">Special Functions </link>
+</section-title><caption>compute properties of a special function</caption><input>zeta(x)</input><caption>numerically evaluate a special function</caption><input>sn(2.1, 0.5)</input><caption>do computations with special functions</caption><input>d/dx Si(x)^2</input><section-title>
+ <link ref="NumberTheoreticFunctions">Number Theoretic Functions </link>
+</section-title><caption>get information about a number-theoretic function</caption><input>Euler phi</input><caption>do computations with number-theoretic functions</caption><input>phi(110)</input><section-title>
+ <link ref="RepresentationFormulas">Representation Formulas </link>
+</section-title><caption>find integral representations for a function</caption><input>gamma(x) integral representation</input><input>sqrt(x) continued fraction</input></example>

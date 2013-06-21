@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+    <charset name="ISO-8859-6" display_name="Arabic" />
+    <charset name="Cp1256" display_name="Arabic" />
+    <charset name="Cp1257" display_name="Baltic" />
+    <charset name="ISO-8859-13" display_name="Baltic" />
+    <charset name="ISO-8859-4" display_name="Baltic, Scandinavia" />
+    <charset name="ISO-8859-14" display_name="Celtic" />
+    <charset name="ISO-8859-2" display_name="Central European, Slavic" />
+    <charset name="MS936" display_name="Chinese, Simplified" />
+    <charset name="GB18030" display_name="Chinese, Simplified" />
+    <charset name="EUC_CN" display_name="Chinese, Simplified" />
+    <charset name="GBK" display_name="Chinese, Simplified" />
+    <charset name="ISO-2022-CN" display_name="Chinese, Simplified" />
+    <charset name="MS950" display_name="Chinese, Traditional" />
+    <charset name="MS950_HKSCS" display_name="Chinese, Traditional (Hong Kong)" />
+    <charset name="Big5" display_name="Chinese, Traditional" />
+    <charset name="Big5-HKSCS" display_name="Chinese, Traditional (Hong Kong)" />
+    <charset name="Cp1251" display_name="Cyrillic" />
+    <charset name="ISO-8859-5" display_name="Cyrillic" />
+    <charset name="Cp1250" display_name="Eastern European" />
+    <charset name="Cp1253" display_name="Greek" />
+    <charset name="ISO-8859-7" display_name="Greek" />
+    <charset name="ISO-8859-8" display_name="Hebrew" />
+    <charset name="Cp1255" display_name="Hebrew" />
+    <charset name="ISCII91" display_name="Indic scripts" />
+    <charset name="MS932" display_name="Japanese" />
+    <charset name="EUC_JP" display_name="Japanese" />
+    <charset name="Shift_JIS" display_name="Japanese" />
+    <charset name="ISO-2022-JP" display_name="Japanese" />
+    <charset name="MS949" display_name="Korean" />
+    <charset name="EUC_KR" display_name="Korean" />
+    <charset name="ISO-2022-KR" display_name="Korean" />
+    <charset name="ISO-8859-10" display_name="Nordic" />
+    <charset name="ISO-8859-16" display_name="Romanian" />
+    <charset name="KOI8_R" display_name="Russian" />
+    <charset name="ISO-8859-3" display_name="South European" />
+    <charset name="TIS-620" display_name="Thai" />
+    <charset name="ISO-8859-11" display_name="Thai" />
+    <charset name="Cp1254" display_name="Turkish" />
+    <charset name="ISO-8859-9" display_name="Turkish" />
+    <charset name="UTF-8" display_name="Unicode" />
+    <charset name="UTF-16" display_name="Unicode" />
+    <charset name="UTF-16BE" display_name="Unicode" />
+    <charset name="UTF-16LE" display_name="Unicode" />
+    <charset name="UTF-32" display_name="Unicode" />
+    <charset name="UTF-32BE" display_name="Unicode" />
+    <charset name="UTF-32LE" display_name="Unicode" />
+    <charset name="US-ASCII" />
+    <charset name="Cp1258" display_name="Vietnamese" />
+    <charset name="ISO-8859-1" display_name="Western European" />
+    <charset name="ISO-8859-15" display_name="Western European" />
+    <charset name="Cp1252" display_name="Western European (ANSI)" />
+</resource>

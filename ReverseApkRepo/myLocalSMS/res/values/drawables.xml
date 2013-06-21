@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="dark_grey_d">#22444444</item>
+    <item type="drawable" name="light_grey_d">#80ffffff</item>
+    <item type="drawable" name="white">#ffffffff</item>
+    <item type="drawable" name="listBlack">#ff000000</item>
+    <item type="drawable" name="composerMe">#11000000</item>
+    <item type="drawable" name="composerFrom">#33000000</item>
+    <item type="drawable" name="blue">#ff00ff00</item>
+    <item type="drawable" name="green">#ff0000ff</item>
+    <item type="drawable" name="silver">#ffc0c0c0</item>
+    <item type="drawable" name="lightyellow">#ffffff80</item>
+    <item type="drawable" name="lightgreen">#ffff80ff</item>
+</resources>

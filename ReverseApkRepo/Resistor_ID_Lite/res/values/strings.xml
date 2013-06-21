@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ResistorId!</string>
+    <string name="app_name">Resistor Id Lite</string>
+    <string name="r4band">4 Band</string>
+    <string name="r5band">5 Band</string>
+    <string name="backtoresistor">Back To Resistor</string>
+</resources>

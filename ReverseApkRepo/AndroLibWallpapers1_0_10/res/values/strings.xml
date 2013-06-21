@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androlib Wallpapers</string>
+    <string name="whatsnew">"What's new !"</string>
+    <string name="whatsnewhead">"Please, if you like this application don't forget to add a rating in the market ! Thank you :)
+"</string>
+    <string name="close">Close</string>
+    <string name="noWallpaper">no wallpaper found for this query</string>
+    <string name="XtoYwallpapersOnZ">%1$s to %2$s wallpapers on %3$s</string>
+    <string name="loadingLastSubmited">Loading last submited wallpapers</string>
+    <string name="loadingTopFavorites">Loading top favorites</string>
+    <string name="loadingMostInstalled">Loading most instaled wallpapers</string>
+    <string name="loadingTopRated">Loading top rated wallpapers</string>
+    <string name="loadingYourFavs">Loading your favorites wallpapers</string>
+    <string name="loading10Random">Loading 10 random wallpapers</string>
+    <string name="loading">Loading...</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="menuSubmitWall">Submit wallpapers</string>
+    <string name="menuOurOthersApps">Our others apps</string>
+    <string name="marketNotFound">Market not found</string>
+    <string name="menuQuit">Quit</string>
+    <string name="alertTitleQuit">Quit the application ?</string>
+    <string name="alertTitleSubmit">Submit a wallpaper</string>
+    <string name="alertMessageSubmit">To submit a wallpaper, go on http://wallpapers.androlib.com/ and click \"submit a wallaper\" on the top menu of the page. Follow instructions and your wallpaper will be available soon in the application.</string>
+    <string name="searchHint">Search wallpapers</string>
+    <string name="searchEmpty">Your query is empty</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="canceled">Canceled</string>
+    <string name="wallGlobalRating">Global rating :</string>
+    <string name="wallSubmitedBy">Submited by :</string>
+    <string name="wallCategory">Category :</string>
+    <string name="wallBtnSetThisWall">Set this wallpaper</string>
+    <string name="wallBtnDownloadOnSD">Download this wallpaper on your SD Card</string>
+    <string name="wallAlertTitleAddFav">Add this wallpaper in your favorites ?</string>
+    <string name="wallAlertTitleRemoveFav">Remove this wallpaper from your favorites ?</string>
+    <string name="errorWhileDownload">\### ERROR ### Error while downloading wallpaper Try again.</string>
+    <string name="mailSubject">Android Wallpaper - %1$s</string>
+    <string name="mailMessage">"Here is a wallpaper for Android that may interest you !
+
+%1$s
+%2$s
+
+This Wallpaper is available here:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">Share with a friend</string>
+    <string name="wallMenuSetWall">Set this wallpaper on my phone</string>
+    <string name="wallMenuSendToFriend">Send to a friend</string>
+    <string name="wallAlertTitleDownload">Download this wallpaper ?</string>
+    <string name="wallAlertMessageDownload">"The wallpaper will be saved on your SD Card. (sdcard/AndroLibWallpapers).
+Be sure your SD card is accessible"</string>
+    <string name="DownloadingPleaseWait">Downloading wallpaper, please wait...</string>
+    <string name="wallAlertTitleSetWall">Set this wallpaper ?</string>
+    <string name="ratingDeleted">Rating deleted</string>
+    <string name="ratingSubmited">Rating %1$s/5 submited</string>
+    <string name="menuLanguage">Language</string>
+    <string name="catLastSubmit">Last submited</string>
+    <string name="catMyFav">My favorites</string>
+    <string name="catTopRated">Top rated</string>
+    <string name="cat10Random">10 Random</string>
+    <string name="catTopFav">Top favorites</string>
+    <string name="catMostInstalled">Most installed</string>
+</resources>

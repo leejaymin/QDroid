@@ -1,0 +1,91 @@
+<ttcolormodule id="module" view="view2" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="750" height="475" x="0" y="0" initVisible="false">
+      <ttpanelview id="view2" width="750" height="210" sizeX="scale" x="0" y="10" module="module">
+        <button id="gradientViewButton" width="40" height="40" sizeX="right" x="700" y="10" selected="true" toggles="true" radioGroup="radioGroup" type="tool" image="colorWheelIcon"/>
+        <button id="swatchViewButton" width="40" height="40" sizeX="right" x="700" y="110" toggles="true" radioGroup="radioGroup" type="tool" image="swatchGridIcon"/>
+        <button id="sliderViewButton" width="40" height="40" sizeX="right" x="700" y="60" toggles="true" radioGroup="radioGroup" type="tool" image="sliderIcon"/>
+        <ttcolorpickview id="colorPickView" width="80" height="140" x="10" y="10" module="module"/>
+        <viewStack id="viewStack" width="560" height="140" sizeX="scale" x="115" y="10">
+          <view id="chapter" width="560" height="140" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+            <ttcolorpickview id="gradientView" width="560" height="140" sizeX="scale" x="0" y="0" module="module" type="colorwheel"/>
+          </view>
+          <view id="chapter1" width="560" height="140" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+            <ttitemview id="swatchView" width="560" height="140" sizeX="scale" mask="true" x="0" y="0"/>
+          </view>
+          <view id="chapter2" width="560" height="140" sizeX="scale" sizeY="scale" x="0" y="0">
+            <view id="view31" width="560" height="140" sizeX="scale" x="0" y="0">
+              <slider id="redSlider" width="310" height="40" sizeX="scale" x="250" y="0" target="module" selector="rSliderChange" isColor="true" endColor="FF0000" maxValue="255" endMouseSelector="sliderChangeEnd"/>
+              <slider id="greenSlider" width="310" height="40" sizeX="scale" x="250" y="50" target="module" selector="gSliderChange" isColor="true" endColor="00FF00" maxValue="255" endMouseSelector="sliderChangeEnd"/>
+              <slider id="blueSlider" width="310" height="40" sizeX="scale" x="250" y="100" target="module" selector="bSliderChange" isColor="true" endColor="0000FF" maxValue="255" endMouseSelector="sliderChangeEnd"/>
+              <button id="showback1" width="40" height="35" x="0" y="3" selected="true" toggles="true" radioGroup="rgbHsbGroup" type="tool" image="ttPanelIconHSB"/>
+              <ttnumberfield id="redField" width="60" height="40" x="180" y="0" target="module" text="$$$/colordialog/textField/text/Text=Text" lostFocusSelector="rText" returnSelector="rText" parentPanel="module"/>
+              <ttnumberfield id="greenField" width="60" height="40" x="180" y="50" target="module" text="$$$/colordialog/textField/text/Text=Text" lostFocusSelector="gText" returnSelector="gText" parentPanel="module"/>
+              <ttnumberfield id="blueField" width="60" height="40" x="180" y="100" target="module" text="$$$/colordialog/textField/text/Text=Text" lostFocusSelector="bText" returnSelector="bText" parentPanel="module"/>
+              <label id="label3" width="90" height="40" x="80" y="0" title="$$$/colordialog/label/title/Hue=Hue"/>
+              <label id="label31" width="170" height="40" x="0" y="50" title="$$$/colordialog/label/title/Saturation=Saturation"/>
+              <label id="label311" width="170" height="40" x="0" y="100" title="$$$/colordialog/label/title/Brightness=Brightness"/>
+              <button id="showback" width="40" height="35" x="40" y="3" toggles="true" radioGroup="rgbHsbGroup" type="tool" image="ttPanelIconRGB"/>
+            </view>
+          </view>
+        </viewStack>
+        <view id="view3" width="560" height="40" sizeX="scale" x="115" y="160">
+          <slider id="alphaSlider" width="310" height="40" sizeX="scale" x="250" y="0" target="module" selector="alphaSliderChange" isColor="true" endColor="FFFFFF" maxValue="255" endMouseSelector="sliderChangeEnd"/>
+          <label id="label11" width="170" height="40" x="0" y="0" title="$$$/colordialog/label/title/Opacity=Opacity"/>
+          <ttnumberfield id="alphaField" width="60" height="40" x="180" y="0" target="module" text="$$$/colordialog/textField/text/Text=Text" lostFocusSelector="alphaText" returnSelector="alphaText" parentPanel="module"/>
+        </view>
+        <decor id="ttblack" width="750" height="4" sizeX="scale" sizeY="bottom" x="0" y="208" style="hline"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="viewStack" refName="contentView"/>
+      <objRef refId="view31" refName="rgbView"/>
+      <objRef refId="gradientView" refName="colorWheelView"/>
+      <objRef refId="colorPickView" refName="previewView"/>
+      <objRef refId="alphaSlider" refName="alphaSlider"/>
+      <objRef refId="alphaField" refName="alphaText"/>
+      <objRef refId="radioGroup" refName="viewRadioGroup"/>
+      <objRef refId="redSlider" refName="rSlider"/>
+      <objRef refId="greenSlider" refName="gSlider"/>
+      <objRef refId="blueSlider" refName="bSlider"/>
+      <objRef refId="redField" refName="rText"/>
+      <objRef refId="greenField" refName="gText"/>
+      <objRef refId="blueField" refName="bText"/>
+      <objRef refId="showback1" refName="hsbButton"/>
+      <objRef refId="label3" refName="rLabel"/>
+      <objRef refId="label31" refName="gLabel"/>
+      <objRef refId="label311" refName="bLabel"/>
+      <objRef refId="view3" refName="alphaView"/>
+      <objRef refId="rgbHsbGroup" refName="rgbHsbGroup"/>
+      <objRef refId="swatchView" refName="colorSwatchView"/>
+    </referenceDispatcher>
+    <radioGroup id="radioGroup" target="module" selector="viewChanged"/>
+    <radioGroup id="rgbHsbGroup" target="module" selector="rgbHsbGroup"/>
+  </objects>
+  <classes>
+    <class className="ttcolorpickview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTColorPickView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="CABModule"/>
+      <var name="type" type="string" defaultValue="colorpreview" codeName="iType"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="TTPanelView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttcolormodule" superClassName="ttpanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTColorModule"/>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField"/>
+    <class className="ttswatchview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTSwatchView">
+      <var name="colorModule" type="object" defaultValue="" codeName="iColorModule" className="TTColorModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+    </class>
+    <class className="ttitemview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTItemView"/>
+  </classes>
+</ttcolormodule>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Full scan</item>
+        <item>Folder scan</item>
+        <item>Memory scan</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Disabled</item>
+        <item>No delay</item>
+        <item>After 5 minutes</item>
+        <item>After 10 minutes</item>
+        <item>After 15 minutes</item>
+        <item>After 30 minutes</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Contact</item>
+        <item>Phone number</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>All files</item>
+        <item>Executables only</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>All files</item>
+        <item>Executables only</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Delete</item>
+        <item>Skip</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Ask user</item>
+        <item>Delete</item>
+        <item>Skip</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Disabled</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Disabled</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Contacts</item>
+        <item>SMS logs</item>
+        <item>Incoming SMS</item>
+        <item>Call logs</item>
+        <item>Incoming calls</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Delete</item>
+        <item>Skip</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Delete</item>
+        <item>Skip</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Delete</item>
+        <item>Delete all</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Change</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Delete</item>
+        <item>Delete all</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Disabled</item>
+        <item>Blocked contacts</item>
+        <item>Allowed contacts</item>
+        <item>Standard</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Always block</item>
+        <item>Always allow</item>
+        <item>Skip</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Calls</item>
+        <item>Calls and SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Change</item>
+        <item>Delete</item>
+        <item>Delete all</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Delete</item>
+        <item>Delete all</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Device Lock</item>
+        <item>Data Wipe</item>
+        <item>Locate</item>
+        <item>Privacy Protection</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Call&amp;amp;SMS Filter</item>
+        <item>"Call&amp;amp;SMS Filter lets you block unsolicited incoming calls and SMS messages.
+
+To enable it, select the filtering rules (mode) and create lists of blocked and allowed contacts."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Anti-Virus</item>
+        <item>"Anti-Virus protects your device against viruses and other malware. Anti-Virus includes the following components: Protection, Scan, and Update. You can configure the settings of each component here.
+
+Protection detects threats and scans new applications in real time. 
+
+Scan is launched on demand and helps detect and eliminate threats on your device (such as dangerous files that have been installed or packed in archives). The scan scope can include the entire file system of the device, the contents of its internal memory or a specific folder.
+
+Anti-Virus database and version updates ensure up-to-the-minute protection for your device."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Privacy Protection</item>
+        <item>"Privacy Protection hides confidential contacts and related call history and SMS correspondence. Here you can do the following:
+
+ - select the types of contact information to be hidden;
+ - enable automatic hiding when the device switches to sleep mode;
+ - allow contact information to be hidden remotely by sending the \"hide:[code]\" SMS command from another device (where [code] is the secret code of your Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Device Lock</item>
+        <item>"You can enable Device Lock to block your stolen or lost device remotely.
+
+To lock your device remotely, send the \"lock:[code]\" SMS command from any device (where [code] is the secret code to your Kaspersky Mobile Security).
+
+To unlock the device, enter the secret code to Kaspersky Mobile Security on the device."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Data Wipe</item>
+        <item>"You can select data to be remotely deleted if your device has been stolen or lost. You can delete specific data (for example, contacts, the calendar, SMS messages or folders).
+
+To delete data remotely, send SMS command \"wipe:[code]\" to your device from any other device (where [code] - secret code to your Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM Watch</item>
+        <item>"You can enable a feature that can send you the new phone number used on the device or lock the device when the SIM card is replaced or the device is turned on without a SIM card.
+
+To get the new phone number when the device SIM card is replaced, specify the email address or another phone number. To lock the device automatically when the SIM card is replaced or the device is turned on without a SIM card, enable the lock feature in the SIM Watch settings."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Locate</item>
+        <item>"You can enable a feature that remotely detects the coordinates of your stolen or lost device.
+
+To get the coordinates, send the \"locate:[code]\" SMS command to your device from any device (where [code] is the secret code to your Kaspersky Mobile Security). The application will send the coordinates in a return SMS message or to the email address you have specified.
+
+To send the email, the application will send an SMS message to a dedicated number of the operator MTS (Russia). The price of the SMS sent to the dedicated number depends on the mobile rate plan. The operator MTS (Russia) will send the current phone number to your email address."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Extended</item>
+        <item>Recommended</item>
+        <item>Disabled</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Checks new applications and monitors operations on files.</item>
+        <item>Checks only new applications.</item>
+        <item>Protection is disabled.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Extended</item>
+        <item>Recommended</item>
+        <item>Disabled</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Call history</item>
+        <item>Incoming SMS</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>All events</item>
+        <item>Anti-Virus</item>
+        <item>Call&amp;amp;SMS Filter</item>
+        <item>Web Protection</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Scan results, update</item>
+        <item>Blocked calls and messages</item>
+        <item>Blocked websites</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Today</item>
+        <item>Last 7 days</item>
+        <item>Last 30 days</item>
+        <item>Way back</item>
+    </string-array>
+</resources>

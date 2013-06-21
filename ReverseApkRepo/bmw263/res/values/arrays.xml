@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="versions_array">
+        <item>2.6.3|Fix FC opening history screen while history is not fully loaded</item>
+        <item>2.6.2|Fix FC on start when using graphic widgets</item>
+        <item>2.6.1|PRO only: Add BLUETOOTH permission to cope with ICS bug reading battery stats on some devices. App DOES NOT actually use BLUETOOTH at all!</item>
+        <item>2.6.1|New scale themes: white, yellow, orange and automatic</item>
+        <item>2.6.1|New support for HTC One V and Galaxy Tab 2</item>
+        <item>2.6.1|Fix app not refreshing on Android 2.3.x (causing app not to restart after being killed)</item>
+        <item>2.6.1|Fix repeating full charge alarms on HTC devices</item>
+        <item>2.6.1|Settings are updated when pressing home, not only with back button</item>
+        <item>2.6|2 new icon packages (circular and dodev)</item>
+        <item>2.6|Added support for TF700 without-dock model (please check Transformer Battery Monitor for dock model)</item>
+        <item>2.6|Added SD read permission for JellyBean Android 4.1</item>
+        <item>2.6|Improve support of specific HTC models</item>
+        <item>2.6|New Hungarian translation (thanks Ronyn)</item>
+        <item>2.6|Fix history screen being cleared in specific circumstances</item>
+        <item>2.5|New widget data option (awake/screen time since unplugged)</item>
+        <item>2.5|Migrate notification packages outside of Market</item>
+        <item>2.5|New option to remove ads or enable markers</item>
+        <item>2.5|Add support for Jelly Bean (Android 4.1)</item>
+        <item>2.5|Add support for Evo 4G LTE</item>
+        <item>2.5|Add support for Galaxy S3</item>
+        <item>2.4|New option to stop recording while fully charged</item>
+        <item>2.4|New option for USB fast charge</item>
+        <item>2.4|New widget font size option</item>
+        <item>2.4|Update option to calculate % from mV (pro-only, still testing)</item>
+        <item>2.4|Reorganize monitoring/calibration settings</item>
+        <item>2.3|New auto-marker for plug state (pro only)</item>
+    </string-array>
+    <string-array name="settings_refresh_rates">
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+        <item>2 minutes</item>
+        <item>3 minutes</item>
+        <item>4 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="settings_refresh_rate_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Application Name</item>
+        <item>Global Estimate</item>
+        <item>Average Estimate</item>
+        <item>Current Estimate</item>
+        <item>Real-time Estimate</item>
+    </string-array>
+    <string-array name="settings_notification_text_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>No vertical marker</item>
+        <item>Marker every hour</item>
+        <item>every 2 hours</item>
+        <item>every 3 hours</item>
+        <item>every 4 hours</item>
+        <item>every 5 hours</item>
+        <item>every 6 hours</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Removed</item>
+        <item>Realistic 1</item>
+        <item>Realistic 2</item>
+        <item>"Black'n'White"</item>
+        <item>Green/Red 1</item>
+        <item>Green/Red 2</item>
+    </string-array>
+    <string-array name="settings_widget_icon_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC style</item>
+        <item>Sense 3 style</item>
+        <item>Google style</item>
+        <item>Glass style</item>
+        <item>ICS style</item>
+        <item>Transparent HTC style</item>
+        <item>Transparent Sense 3 style</item>
+        <item>Transparent Google style</item>
+        <item>Transparent Glass style</item>
+        <item>Transparent ICS style</item>
+        <item>Hidden HTC style</item>
+        <item>Hidden Sense 3 style</item>
+        <item>Hidden Google style</item>
+    </string-array>
+    <string-array name="settings_widget_bg_values">
+        <item>0</item>
+        <item>6</item>
+        <item>1</item>
+        <item>9</item>
+        <item>10</item>
+        <item>2</item>
+        <item>7</item>
+        <item>3</item>
+        <item>11</item>
+        <item>12</item>
+        <item>4</item>
+        <item>8</item>
+        <item>5</item>
+    </string-array>
+    <array name="settings_widget_data_entries">
+        <item>@string/remove</item>
+        <item>Nothing</item>
+        <item>@string/menu_graph_data1</item>
+        <item>@string/menu_graph_data6</item>
+        <item>@string/menu_graph_data2</item>
+        <item>@string/menu_graph_data3</item>
+        <item>@string/menu_graph_data5</item>
+        <item>@string/menu_graph_data4</item>
+        <item>Global Estimates</item>
+        <item>Real Time Estimates</item>
+        <item>Average Estimates</item>
+        <item>Current Estimates</item>
+        <item>Since (un)plugged</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </array>
+    <string-array name="settings_widget_data_values">
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>10</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <array name="settings_widget_data3_entries">
+        <item>Display Icon</item>
+        <item>@string/menu_graph_data1</item>
+        <item>@string/menu_graph_data6</item>
+        <item>@string/menu_graph_data2</item>
+        <item>@string/menu_graph_data3</item>
+        <item>@string/menu_graph_data5</item>
+        <item>@string/menu_graph_data4</item>
+        <item>Global estimate</item>
+        <item>Real Time estimate</item>
+        <item>Average estimate</item>
+        <item>Current estimate</item>
+        <item>Since (un)plugged</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </array>
+    <string-array name="settings_widget_data3_values">
+        <item>0</item>
+        <item>1</item>
+        <item>11</item>
+        <item>2</item>
+        <item>5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="settings_temperature_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="settings_label_entries">
+        <item>Show</item>
+        <item>Hide</item>
+        <item>@string/remove</item>
+    </array>
+    <string-array name="settings_label_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="settings_scale_entries">
+        <item>ICS</item>
+        <item>Motorola</item>
+        <item>Green</item>
+        <item>White</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Auto</item>
+        <item>@string/remove</item>
+    </array>
+    <string-array name="settings_scale_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>-1</item>
+    </string-array>
+    <array name="stats_types_entries">
+        <item>@string/stat_type_current</item>
+        <item>@string/stat_type_unplug</item>
+        <item>@string/stat_type_charged</item>
+        <item>@string/stat_type_last</item>
+    </array>
+    <array name="stats_cats_entries">
+        <item>@string/button_usage</item>
+        <item>@string/stat_type_off</item>
+    </array>
+    <array name="font_size_entries">
+        <item>@string/prefs_default_launcher_size</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </array>
+    <string-array name="font_size_values">
+        <item>0</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <array name="settings_history_size_entries">
+        <item>192 KBytes</item>
+        <item>256 KBytes</item>
+        <item>512 KBytes</item>
+        <item>1 MBytes</item>
+        <item>2 MBytes</item>
+        <item>4 MBytes</item>
+        <item>@string/no_limit</item>
+    </array>
+    <string-array name="settings_history_size_values">
+        <item>196608</item>
+        <item>262144</item>
+        <item>524288</item>
+        <item>1048576</item>
+        <item>2097152</item>
+        <item>4194304</item>
+        <item>0</item>
+    </string-array>
+    <array name="settings_language_entries">
+        <item>@string/system_default</item>
+        <item>Czech</item>
+        <item>Deutsch</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Français</item>
+        <item>Hrvatski</item>
+        <item>Italiano</item>
+        <item>Magyar</item>
+        <item>Nederlandse</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Svenska</item>
+        <item>Pусский</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>简体中文</item>
+        <item>繁體中文</item>
+    </array>
+    <string-array name="settings_language_values">
+        <item></item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>hr</item>
+        <item>it</item>
+        <item>hu</item>
+        <item>nl</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>sv</item>
+        <item>ru</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>zh-rCN</item>
+        <item>zh-rTW</item>
+    </string-array>
+    <array name="settings_mA_support_entries">
+        <item>@string/automatic</item>
+        <item>@string/estimated</item>
+        <item>CyanongenMod</item>
+        <item>Droid Eris</item>
+        <item>Some HTC Devices</item>
+        <item>HTC Sensation</item>
+        <item>HTC Evo</item>
+        <item>HTC Evo 3D</item>
+        <item>HTC One X</item>
+        <item>HTC One S (test)</item>
+        <item>HTC Thunderbolt</item>
+        <item>HTC Wildfire</item>
+        <item>HTC ChaCha</item>
+        <item>Nexus One</item>
+        <item>NOOK Color</item>
+        <item>Samsung Galaxy Vibrant</item>
+        <item>Sony Ericsson X1</item>
+        <item>Sony Ericsson X10</item>
+        <item>Sony Ericsson Xperia Arc</item>
+        <item>XDandroid</item>
+        <item>Advent Vega</item>
+        <item>Disney Mobile</item>
+        <item>MediaPad</item>
+        <item>Xoom</item>
+        <item>Iconia A500, A501</item>
+        <item>Toshiba Thrive</item>
+        <item>Galaxy Tab 2</item>
+    </array>
+    <string-array name="settings_mA_support_values">
+        <item>0=</item>
+        <item>6=</item>
+        <item>2=/sys/devices/platform/ds2784-battery/getcurrent</item>
+        <item>4=/sys/class/power_supply/battery/batt_chg_current</item>
+        <item>3=/sys/class/power_supply/battery/batt_current</item>
+        <item>11=/sys/class/power_supply/battery/batt_attr_text</item>
+        <item>12=/sys/class/power_supply/battery/smem_text</item>
+        <item>9=/sys/class/power_supply/battery/batt_attr_text</item>
+        <item>10=/sys/class/power_supply/battery/batt_attr_text</item>
+        <item>13=/sys/class/power_supply/battery/batt_attr_text</item>
+        <item>5=/sys/class/power_supply/battery/smem_text</item>
+        <item>7=/sys/class/power_supply/battery/smem_text</item>
+        <item>8=/sys/class/power_supply/battery/smem_text</item>
+        <item>2=/sys/class/power_supply/battery/current_now</item>
+        <item>2=/sys/class/power_supply/max17042-0/current_now</item>
+        <item>3=/sys/devices/platform/i2c-adapter/i2c-0/0-0036/power_supply/ds2746-battery/current_now</item>
+        <item>3=/sys/devices/platform/i2c-adapter/i2c-0/0-0036/power_supply/battery/current_now</item>
+        <item>4=/sys/class/power_supply/battery/charger_current</item>
+        <item>2=/sys/class/power_supply/bq27520/current_now</item>
+        <item>1=/sys/class/power_supply/battery/smem_text</item>
+        <item>3=/sys/class/power_supply/battery/current_now</item>
+        <item>3=/sys/class/power_supply/fuelgauge/current</item>
+        <item>3=/sys/class/power_supply/battery_gauge/current_now</item>
+        <item>2=/sys/class/power_supply/battery/current_now</item>
+        <item>3=/sys/EcControl/BatCurrent</item>
+        <item>2=/sys/class/power_supply/battery/current_avg</item>
+        <item>3=/sys/class/power_supply/battery/current_avg</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Available (%)</item>
+        <item>Usage (%/h)</item>
+        <item>Usage (mA)</item>
+        <item>Usage (mW)</item>
+        <item>Temperature</item>
+        <item>Voltage (mV)</item>
+        <item>Estimations</item>
+    </string-array>
+    <string-array name="settings_widget_graph_values">
+        <item>0</item>
+        <item>6</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+</resources>

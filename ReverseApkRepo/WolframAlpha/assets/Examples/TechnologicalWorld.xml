@@ -1,0 +1,15 @@
+<?xml version='1.0'?><example><category>Technological World</category><section-title>
+ <link ref="Communications">Communications </link>
+</section-title><caption>get data about a broadcast station</caption><input>WBBM-TV</input><caption>find allocations for a given frequency</caption><input>frequency allocations 900MHz</input><caption>translate a string into Morse code</caption><input>Morse code &quot;Wolfram Alpha&quot;</input><section-title>
+ <link ref="Satellites">Satellites </link>
+</section-title><caption>get information about a satellite</caption><input>International Space Station</input><caption>compare satellites</caption><input>Echostar 1, Echostar 2</input><section-title>
+ <link ref="SpaceProbes">Space Probes </link>
+</section-title><caption>get information about a space probe</caption><input>Voyager 1</input><caption>compare space probes</caption><input>Pioneer 10, Pioneer 11</input><section-title>
+ <link ref="Photography">Photography </link>
+</section-title><caption>compute subject magnification</caption><input>subject magnification 10m</input><caption>compute hyperfocal distance</caption><input>hyperfocal distance, f-stop 8</input><section-title>
+ <link ref="Barcodes">Barcodes </link>
+</section-title><caption>encode text as a barcode</caption><input>barcode WolframAlpha</input><caption>generate a barcode corresponding to an ISBN-10</caption><input>ISBN 1-5795-5008-8</input><section-title>
+ <link ref="Structures">Structures </link>
+</section-title><caption>get information about a structure</caption><input>Golden Gate Bridge</input><caption>do computations with properties of structures</caption><input>height CN Tower / Merchandise Mart</input><section-title>Nuclear Explosions</section-title><caption>get data on nuclear explosions</caption><input>nuclear explosions in China</input><input>yield of the Musketeer Midland nuclear explosion</input><section-title>
+ <link ref="CarbonFootprints">Carbon Footprints </link>
+</section-title><caption>determine the amount of carbon released for a given fuel</caption><input>carbon footprint coal</input><caption>calculate the carbon emissions from a road trip</caption><input>carbon footprint driving 536 miles at 32mpg</input></example>

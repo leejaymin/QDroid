@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="server_short_names">
+        <item>devel</item>
+        <item>production</item>
+        <item>test</item>
+        <item>preview</item>
+        <item>current</item>
+    </string-array>
+    <string-array name="server_long_names">
+        <item>www.devel.wolframalpha.com</item>
+        <item>api.wolframalpha.com</item>
+        <item>www.test.wolframalpha.com</item>
+        <item>preview.wolframalpha.com</item>
+        <item>www.current.wolframalpha.com</item>
+    </string-array>
+    <string-array name="image_formats">
+        <item>png</item>
+        <item>gif</item>
+    </string-array>
+    <string-array name="location_interval_names">
+        <item>Continuously</item>
+        <item>Occasionally</item>
+        <item>Once</item>
+    </string-array>
+    <string-array name="location_interval_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="unit_names">
+        <item>Automatic, based on location</item>
+        <item>Metric</item>
+        <item>Non-metric</item>
+    </string-array>
+    <string-array name="unit_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="font_size_names">
+        <item>100%</item>
+        <item>150%</item>
+        <item>200%</item>
+        <item>250%</item>
+        <item>300%</item>
+        <item>350%</item>
+        <item>400%</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>

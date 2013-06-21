@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_video">
+        <item quantity="other">@string/video_count_other</item>
+        <item quantity="zero">@string/video_count_zero</item>
+        <item quantity="one">@string/video_count_one</item>
+        <item quantity="two">@string/video_count_two</item>
+        <item quantity="few">@string/video_count_few</item>
+        <item quantity="many">@string/video_count_many</item>
+    </plurals>
+</resources>

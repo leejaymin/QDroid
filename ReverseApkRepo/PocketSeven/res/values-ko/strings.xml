@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Aqua!</string>
+    <string name="app_name">포켓세븐</string>
+    <string name="alert_exit_msg">게임을 종료하시겠습니까?</string>
+    <string name="game_money">게임머니</string>
+    <string name="allin_money_msg">올인되셨습니다.</string>
+    <string name="free_charge_msg">무료 충전됩니다.</string>
+    <string name="again_challenge">계속 도전하시겠습니까?</string>
+    <string name="not_already">선택된 미션 이벤트가 없습니다.</string>
+    <string name="mission_already">미션 참가중입니다.</string>
+    <string name="please_join">참여하실 미션을 선택하세요.</string>
+    <string name="join_money">"참가점수 : "</string>
+    <string name="reward_money">"보상점수 : "</string>
+    <string name="time_limit">제한시간 : 24시간</string>
+    <string name="lack_money">게임머니가 부족합니다.</string>
+    <string name="any_touch">아무 곳이나 터치하세요.</string>
+    <string name="quit">메뉴로 이동하시겠습니까?</string>
+    <string name="trial_end">"더 이상 무료로 진행할 수 없습니다.
+풀 버전 구매 안내 페이지로 이동해 주세요."</string>
+    <string name="trial_go">풀버전</string>
+    <string name="trial_later">다음에</string>
+    <string name="trial_init">초기화</string>
+    <string name="max_bet">최대배팅</string>
+    <string name="pay_completed">구매완료 하였습니다.</string>
+    <string name="select_purchase">구매하실 방법을 선택하세요.</string>
+    <string name="guide_info1">올인 시 무제한</string>
+    <string name="guide_info2">점 제공</string>
+    <string name="cash">현금</string>
+    <string name="if_cash_buy1">"(현금 결제시 게임머니 "</string>
+    <string name="if_cash_buy2">" 제공)"</string>
+    <string name="unlock">잠금해제 :</string>
+    <string name="unlock_ment1" />
+    <string name="unlock_ment2">을 먼저 오픈하세요.</string>
+    <string name="goto_payinfo">결제 안내 페이지로 이동하시겠습니까?</string>
+    <string name="unlock_need1">구매하시려면 게임 머니</string>
+    <string name="unlock_need2">이 필요합니다.</string>
+    <string name="provided1">(게임머니</string>
+    <string name="provided2">점 제공되었습니다.)</string>
+    <string name="use_gamemoney">게임머니로 구매하시겠습니까?</string>
+    <string name="first_notice">"[중요★꼭 알아두세요]
+
+1. 게임을 삭제하지마세요.
+(데이터지우기 포함. 삭제 후, 재설치하시면 부분유료화 결제는 모두 소멸됩니다)
+
+2. 배터리가 15%미만일때는 게임을 종료하시고, 충전 후 사용하세요.
+(간혹 게임 초기화 원인이 됩니다)
+
+3. 게임을 종료할땐 취소버튼을 누른 후, 정상적으로 종료하세요.
+
+
+
+아무 곳이나 터치하시면 게임이 진행됩니다."</string>
+    <string name="billing_not_supported_title">"Can't make purchases"</string>
+    <string name="billing_not_supported_message">"The Market billing service is not available at this time. You can continue to use this app but you won't be able to make purchases."</string>
+    <string name="cannot_connect_title">"Can't connect to Market"</string>
+    <string name="cannot_connect_message">"This app cannot connect to Market. Your version of Market may be out of date. You can continue to use this app but you won't be able to make purchases."</string>
+    <string name="learn_more">Learn more</string>
+    <string name="help_url" formatted="false">http://market.android.com/support/bin/answer.py?answer=1050566&amp;hl=%lang%&amp;dl=%region%</string>
+    <string name="buy">Buy</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_payload_accept">Set</string>
+    <string name="grade_view">1</string>
+</resources>

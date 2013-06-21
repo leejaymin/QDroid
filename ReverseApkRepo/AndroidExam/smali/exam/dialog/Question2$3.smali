@@ -1,0 +1,138 @@
+.class Lexam/dialog/Question2$3;
+.super Ljava/lang/Object;
+.source "Question2.java"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lexam/dialog/Question2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lexam/dialog/Question2;
+
+
+# direct methods
+.method constructor <init>(Lexam/dialog/Question2;)V
+    .locals 0
+    .parameter
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    .line 63
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 4
+    .parameter "dialog"
+    .parameter "whichButton"
+
+    .prologue
+    .line 65
+    const/4 v1, -0x1
+
+    if-ne p2, v1, :cond_0
+
+    .line 66
+    iget-object v1, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget-object v2, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget v2, v2, Lexam/dialog/Question2;->a:I
+
+    iget-object v3, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget v3, v3, Lexam/dialog/Question2;->b:I
+
+    add-int/2addr v2, v3
+
+    iput v2, v1, Lexam/dialog/Question2;->result:I
+
+    .line 70
+    :goto_0
+    iget-object v1, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    const v2, 0x7f0c0008
+
+    invoke-virtual {v1, v2}, Lexam/dialog/Question2;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    .line 71
+    .local v0, text:Landroid/widget/TextView;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "\uc5f0\uc0b0 \uacb0\uacfc = "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget v2, v2, Lexam/dialog/Question2;->result:I
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 72
+    iget-object v1, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    const-string v2, "\uc5f0\uc0b0\uc744 \uc644\ub8cc\ud558\uc600\uc2b5\ub2c8\ub2e4."
+
+    .line 73
+    const/4 v3, 0x1
+
+    .line 72
+    invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    .line 73
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    .line 74
+    return-void
+
+    .line 68
+    .end local v0           #text:Landroid/widget/TextView;
+    :cond_0
+    iget-object v1, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget-object v2, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget v2, v2, Lexam/dialog/Question2;->a:I
+
+    iget-object v3, p0, Lexam/dialog/Question2$3;->this$0:Lexam/dialog/Question2;
+
+    iget v3, v3, Lexam/dialog/Question2;->b:I
+
+    mul-int/2addr v2, v3
+
+    iput v2, v1, Lexam/dialog/Question2;->result:I
+
+    goto :goto_0
+.end method

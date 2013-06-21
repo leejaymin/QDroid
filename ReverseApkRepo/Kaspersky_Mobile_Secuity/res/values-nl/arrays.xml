@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Volledige scan</item>
+        <item>Mapscan</item>
+        <item>Geheugenscan</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Uitgeschakeld</item>
+        <item>Geen vertraging</item>
+        <item>Na 5 minuten</item>
+        <item>Na 10 minuten</item>
+        <item>Na 15 minuten</item>
+        <item>Na 30 minuten</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Contact</item>
+        <item>Telefoonnummer</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Alle bestanden</item>
+        <item>Alleen uitvoerbare bestanden</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Alle bestanden</item>
+        <item>Alleen uitvoerbare bestanden</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Verwijderen</item>
+        <item>Overslaan</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Gebruiker vragen</item>
+        <item>Verwijderen</item>
+        <item>Overslaan</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Wekelijks</item>
+        <item>Dagelijks</item>
+        <item>Uitgeschakeld</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Wekelijks</item>
+        <item>Dagelijks</item>
+        <item>Uitgeschakeld</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Maandag</item>
+        <item>Dinsdag</item>
+        <item>Woensdag</item>
+        <item>Donderdag</item>
+        <item>Vrijdag</item>
+        <item>Zaterdag</item>
+        <item>Zondag</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Contacten</item>
+        <item>Logs sms-berichten</item>
+        <item>Inkomende sms</item>
+        <item>Logs oproepen</item>
+        <item>Inkomende oproepen</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Verwijderen</item>
+        <item>Overslaan</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Verwijderen</item>
+        <item>Overslaan</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Verwijderen</item>
+        <item>Alles verwijderen</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Wijzigen</item>
+        <item>Verwijderen</item>
+        <item>Alles verwijderen</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Verwijderen</item>
+        <item>Alles verwijderen</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Uitgeschakeld</item>
+        <item>Geblokkeerde contacten</item>
+        <item>Toegestane contacten</item>
+        <item>Standaard</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Altijd blokkeren</item>
+        <item>Altijd toestaan</item>
+        <item>Overslaan</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>Sms</item>
+        <item>Oproepen</item>
+        <item>Oproepen en sms</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Wijzigen</item>
+        <item>Verwijderen</item>
+        <item>Alles verwijderen</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Verwijderen</item>
+        <item>Alles verwijderen</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Blokkeren</item>
+        <item>Data Wipe</item>
+        <item>Lokalisatie</item>
+        <item>Privacybescherming</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Oproep-&amp;amp;sms-filter</item>
+        <item>"Via Oproep-&amp;amp;sms-filter kunt u ongewenste inkomende oproepen en sms-berichten blokkeren.
+
+Als u de filter wilt inschakelen, selecteert u de filterregels (modus) en maakt u lijsten met geblokkeerde en toegestane contacten."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Anti-Virus</item>
+        <item>"Anti-Virus beschermt uw apparaat tegen virussen en andere malware. Anti-Virus bevat de volgende onderdelen: Bescherming, Scan en Update. U kunt de instellingen van elk onderdeel hier configureren.
+
+Bescherming detecteert dreigingen en scant nieuwe apps in realtime. 
+
+Scan wordt op verzoek gestart en helpt bij de detectie en eliminatie van dreigingen op uw apparaat (zoals gevaarlijke bestanden die zijn geïnstalleerd of ingepakt in archieven). Het scangebied omvat mogelijk het gehele bestandssysteem van het apparaat, de inhoud van het interne geheugen of een specifieke map.
+
+Updates voor de antivirusdatabase en versie verzekeren een up-to-date bescherming voor uw apparaat."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Privacybescherming</item>
+        <item>"Privacybescherming verbergt vertrouwelijke contacten en hun gerelateerde oproepgeschiedenis en sms-berichten. Hier kunt u het volgende doen:
+
+ - selecteer de typen van contactgegevens die u wilt verbergen;
+ - schakel automatisch verbergen in wanneer het apparaat overschakelt naar de slaapstandmodus;
+ - sta toe dat contactgegevens op afstand worden verborgen met de sms-opdracht \"hide:[code]\" vanaf een ander apparaat (waarbij [code] de geheime code van Kaspersky Mobile Security is)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Blokkeren</item>
+        <item>"U kunt Blokkeren inschakelen om uw gestolen of verloren apparaat op afstand te blokkeren.
+
+Als u uw apparaat op afstand wilt blokkeren, verzendt u de sms-opdracht \"lock:[code]\" vanaf een willekeurig apparaat (waarbij [code] de geheime code van uw Kaspersky Mobile Security is).
+
+Als u de blokkering van het apparaat wilt opheffen, voert u de geheime code van Kaspersky Mobile Security op het apparaat in."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Data Wipe</item>
+        <item>"U kunt gegevens selecteren die op afstand moeten worden verwijderd als uw apparaat is gestolen of verloren raakt. U kunt specifieke gegevens (bijvoorbeeld contacten, de agenda, sms-berichten of mappen) verwijderen.
+
+Als u gegevens op afstand wilt verwijderen, verstuurt u de sms-opdracht \"wipe:[code]\" naar uw apparaat vanaf een ander apparaat (waarbij [code] de geheime code van Kaspersky Mobile Security is)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM Watch</item>
+        <item>"U kunt een functie inschakelen die u het nieuwe telefoonnummer van het apparaat kan sturen of het apparaat kan blokkeren wanneer de simkaart wordt vervangen of het apparaat wordt ingeschakeld zonder een simkaart.
+
+Als u het nieuwe telefoonnummer wilt verkrijgen wanneer de simkaart is vervangen, geeft u het e-mailadres of een ander telefoonnummer op. Als u het apparaat automatisch wilt blokkeren wanneer de simkaart wordt vervangen of het apparaat wordt ingeschakeld zonder simkaart, schakelt u de functie Blokkeren in de instellingen van SIM Watch in."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Lokalisatie</item>
+        <item>"U kunt een functie inschakelen die de coördinaten van uw gestolen of verloren apparaat op afstand detecteert.
+
+Als u de coördinaten wilt verkrijgen, verzendt u de sms-opdracht \"locate:[code]\" naar uw apparaat vanaf een willekeurig apparaat (waarbij [code] de geheime code van Kaspersky Mobile Security is). De app verzendt de coördinaten als een reactie op het sms-bericht terug of naar het e-mailadres dat u hebt opgegeven.
+
+Voor de verzending van de e-mail verzendt de app een sms-bericht naar een speciaal nummer van de provider MTS (Rusland). De prijs van het sms-bericht dat wordt verzonden naar het speciale nummer hangt af van de tarieven van uw abonnement. De provider MTS (Rusland) verzendt de huidige coördinaten naar uw e-mailadres."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Uitgebreid</item>
+        <item>Aanbevolen</item>
+        <item>Uitgeschakeld</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Controleert nieuwe apps en bewaakt uitgevoerde bewerkingen op bestanden.</item>
+        <item>Controleert alleen nieuwe apps.</item>
+        <item>Bescherming is uitgeschakeld.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Uitgebreid</item>
+        <item>Aanbevolen</item>
+        <item>Uitgeschakeld</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Oproepgeschiedenis</item>
+        <item>Inkomende sms</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Alle gebeurtenissen</item>
+        <item>Anti-Virus</item>
+        <item>Oproep-&amp;amp;sms-filter</item>
+        <item>Webbescherming</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Scanresulaten, update</item>
+        <item>Geblokkeerde oproepen en berichten</item>
+        <item>Geblokkeerde websites</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Vandaag</item>
+        <item>Laatste 7 dagen</item>
+        <item>Laatste 30 dagen</item>
+        <item>Lang geleden</item>
+    </string-array>
+</resources>

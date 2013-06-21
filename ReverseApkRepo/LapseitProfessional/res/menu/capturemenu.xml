@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/menu_capture_focus" android:id="@id/menu_focus" android:title="@string/menu_focus_mode" android:titleCondensed="@string/menu_focus_mode" />
+    <item android:icon="@drawable/menu_capture_flash" android:id="@id/menu_flashmode" android:title="@string/menu_flashmode" android:titleCondensed="@string/menu_flashmode" />
+    <item android:icon="@drawable/menu_capture_effects" android:id="@id/menu_coloreffect" android:title="@string/menu_coloreffects" android:titleCondensed="@string/menu_coloreffects" />
+    <item android:icon="@drawable/menu_capture_scene" android:id="@id/menu_scenemode" android:title="@string/menu_scenemode" android:titleCondensed="@string/menu_scenemode" />
+    <item android:icon="@drawable/menu_capture_whitebalance" android:id="@id/menu_whitebalance" android:title="@string/menu_whitebalance" android:titleCondensed="@string/menu_whitebalance" />
+</menu>

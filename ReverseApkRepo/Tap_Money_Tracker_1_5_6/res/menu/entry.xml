@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/delicious" android:id="@id/shopping" android:title="@string/menu_shopping" />
+    <item android:icon="@drawable/chart_gray" android:id="@id/report" android:title="@string/menu_report" />
+    <item android:icon="@drawable/database" android:id="@id/database" android:title="@string/menu_database">
+        <menu>
+            <item android:icon="@android:drawable/ic_menu_save" android:id="@id/backup" android:title="@string/menu_backup" />
+            <item android:icon="@android:drawable/ic_menu_set_as" android:id="@id/restore" android:title="@string/menu_restore" />
+            <item android:icon="@android:drawable/ic_menu_set_as" android:id="@id/export_csv" android:title="@string/menu_export_csv" />
+        </menu>
+    </item>
+    <item android:icon="@drawable/tools" android:id="@id/settings" android:title="@string/menu_settings" />
+    <item android:icon="@drawable/info" android:id="@id/about" android:title="@string/menu_about" />
+</menu>

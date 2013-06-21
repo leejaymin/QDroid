@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_item_selected" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_game_item_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginTop="200.0dip">
+        <ImageView android:id="@id/imgv_game_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_launcher" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="25.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="Game Name" android:layout_toRightOf="@id/imgv_game_icon" />
+        <ImageView android:id="@id/imgv_devider" android:background="@drawable/line_shot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/imgv_game_icon" android:layout_below="@id/tv_name" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffffffff" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="rubycell" android:layout_toRightOf="@id/imgv_game_icon" android:layout_below="@id/imgv_devider" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_screen_shot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="30.0dip" android:layout_below="@id/rl_game_item_selected">
+        <com.rubycell.moregame.center.MoreGameView android:layout_gravity="center_horizontal" android:id="@id/list_game_ones" android:scrollbars="none" android:layout_width="480.0dip" android:layout_height="300.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/relative_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="95.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/rl_screen_shot">
+        <Button android:layout_gravity="center_vertical" android:id="@id/buttonQuit" android:background="@drawable/button_quit" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/buttonInstall" android:background="@drawable/button_install_yelow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/buttonMore" android:background="@drawable/button_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

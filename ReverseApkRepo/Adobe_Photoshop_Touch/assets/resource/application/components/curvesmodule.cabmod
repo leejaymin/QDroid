@@ -1,0 +1,42 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="650" height="460" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="600" height="195" sizeX="scale" x="10" y="10" module="module">
+        <ttcolorgradationsview id="view2" width="350" height="175" sizeX="scale" x="70" y="10" module="module"/>
+        <button id="ttblue" width="110" height="40" sizeX="right" x="480" y="10" target="referenceDispatcher" selector="ApplyCurves" title="$$$/curvesmodule/button/title/Apply=Apply"/>
+        <button id="button1" width="110" height="40" sizeX="right" x="480" y="145" target="view2" selector="ResetCurves" title="$$$/curvesmodule/button/title/Reset=Reset"/>
+        <button id="button1111" width="40" height="40" x="10" y="10" selected="true" toggles="true" radioGroup="radioGroup" type="tool" image="colorRGBIcon"/>
+        <button id="button11111" width="40" height="40" x="10" y="55" toggles="true" radioGroup="radioGroup" type="tool" image="colorRIcon"/>
+        <button id="button111111" width="40" height="40" x="10" y="100" toggles="true" radioGroup="radioGroup" type="tool" image="colorGIcon"/>
+        <button id="button1111111" width="40" height="40" x="10" y="145" toggles="true" radioGroup="radioGroup" type="tool" image="colorBIcon"/>
+        <button id="button11" width="110" height="40" sizeX="right" x="480" y="60" target="referenceDispatcher" selector="CancelCurves" title="$$$/curvesmodule/button/title/Cancel=Cancel"/>
+        <button id="button111" width="40" height="40" sizeX="right" x="420" y="145" target="view2" selector="deleteKnob" type="tool" image="panelIconDelete"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view2" refName="curvesView"/>
+      <objRef refId="radioGroup" refName="rgbRadio"/>
+      <objRef refId="ttblue" refName="buttonOK"/>
+      <objRef refId="button11" refName="buttonCancel"/>
+      <objRef refId="button1" refName="buttonReset"/>
+    </referenceDispatcher>
+    <radioGroup id="radioGroup" target="view2" selector="RGBMode"/>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttcolorgradationsview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTColorGradationsView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+  </classes>
+</ttpanelmodule>

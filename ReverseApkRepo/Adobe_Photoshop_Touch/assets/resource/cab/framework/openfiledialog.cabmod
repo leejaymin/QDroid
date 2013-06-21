@@ -1,0 +1,42 @@
+<module id="module" mainObject="filedialoghandler">
+  <windows>
+    <dialog id="filedialog" width="550" height="385" minWidth="350" minHeight="300" layer="4" type="dialog" title="$$$/openfiledialog/window/title/Open File=Open File" x="100" y="100" initVisible="false" centerPosition="true" okButton="filedialog.ok" cancelButton="filedialog.cancel">
+      <button id="filedialog.backbutton" width="60" height="18" x="345" y="10" target="filedialoghandler" selector="back" type="tool" title="$$$/openfiledialog/button/title/Back=Back"/>
+      <popup id="filedialog.path" width="200" height="18" x="135" y="10" target="filedialoghandler" selector="setpath"/>
+      <label id="label" width="120" height="18" x="10" y="35" title="$$$/openfiledialog/label/title/Filter=Filter"/>
+      <popup id="filedialog.filter" width="200" height="18" x="135" y="35" target="filedialoghandler" selector="setfilter" enabled="false"/>
+      <splitView id="filedialog.splitview" width="530" height="248" sizeX="scale" sizeY="scale" x="10" y="65" minSize1="50" minSize2="200" hideable1="true" sizeMode="second">
+        <view id="filedialog.splitview.content1" width="120" height="248" sizeY="scale" x="0" y="0" drawFrame="15">
+          <listControlBar id="filedialog.volumelist.listcontrolbar" width="120" height="18" sizeX="scale" visible="false" mask="true" x="0" y="0"/>
+          <listControl id="filedialog.volumelist.listcontrol" width="102" height="248" sizeX="scale" sizeY="scale" mask="true" x="0" y="0" vScrollBar="filedialog.volumelist.scrollV" target="filedialoghandler" selector="volumelist" listBar="filedialog.volumelist.listcontrolbar">
+            <listControlColumn title="$$$/openfiledialog/listControl/title/Volume=Volume" width="102" minWidth="50" canSize="true"/>
+          </listControl>
+          <scrollBar id="filedialog.volumelist.scrollV" width="18" height="248" sizeX="right" sizeY="scale" x="102" y="0" target="filedialog.volumelist.listcontrol" selector="CABVScroll" enabled="false" contentSize="0" viewSize="248" lineSize="19"/>
+        </view>
+        <view id="filedialog.splitview.content2" width="405" height="248" sizeY="scale" x="125" y="0" drawFrame="15">
+          <listControlBar id="filedialog.filelist.listcontrolbar" width="405" height="18" sizeX="scale" mask="true" x="0" y="0"/>
+          <listControl id="filedialog.filelist.listcontrol" width="387" height="212" sizeX="scale" sizeY="scale" mask="true" x="0" y="18" hScrollBar="filedialog.filelist.scrollH" vScrollBar="filedialog.filelist.scrollV" target="filedialoghandler" selector="filelist" multiSel="true" sortColumn="1" rowHeight="22" listBar="filedialog.filelist.listcontrolbar">
+            <listControlColumn width="30" type="image" hAlign="right" canMove="true" imageWidth="16"/>
+            <listControlColumn title="$$$/openfiledialog/listControl/title/Name=Name" width="220" minWidth="50" canSort="true" canSize="true" canMove="true"/>
+            <listControlColumn title="$$$/openfiledialog/listControl/title/Date Modified=Date Modified" width="150" minWidth="50" canSort="true" canSize="true" canMove="true"/>
+            <listControlColumn title="$$$/openfiledialog/listControl/title/Size=Size" width="60" minWidth="50" hAlign="right" canSort="true" canSize="true" canMove="true"/>
+            <listControlColumn title="$$$/openfiledialog/listControl/title/Kind=Kind" width="90" minWidth="50" hAlign="center" canSort="true" canSize="true" canMove="true"/>
+            <listControlColumn width="0" scales="true"/>
+          </listControl>
+          <scrollBar id="filedialog.filelist.scrollH" width="387" height="18" sizeX="scale" sizeY="bottom" x="0" y="230" target="filedialog.filelist.listcontrol" selector="CABHScroll" contentSize="550" viewSize="387" lineSize="20"/>
+          <scrollBar id="filedialog.filelist.scrollV" width="18" height="212" sizeX="right" sizeY="scale" x="387" y="18" target="filedialog.filelist.listcontrol" selector="CABVScroll" contentSize="0" viewSize="212" lineSize="22"/>
+        </view>
+      </splitView>
+      <button id="filedialog.cancel" width="90" height="18" sizeX="right" sizeY="bottom" x="350" y="325" target="filedialoghandler" selector="responseCancel" title="$$$/openfiledialog/button/title/Cancel=Cancel"/>
+      <button id="filedialog.ok" width="90" height="18" sizeX="right" sizeY="bottom" x="450" y="325" target="filedialoghandler" selector="responseOk" enabled="false" title="$$$/openfiledialog/button/title/Open=Open" returnKeyFocus="true"/>
+      <label id="label1" width="120" height="18" x="10" y="10" title="$$$/openfiledialog/label/title/Directory=Directory"/>
+    </dialog>
+  </windows>
+  <menus/>
+  <objects>
+    <fileDialogHandler id="filedialoghandler"/>
+  </objects>
+  <classes>
+    <class className="fileDialogHandler" superClassName="messageHandler" packageName="com.adobe.cab.io" codeName="CABFileDialogHandler"/>
+  </classes>
+</module>

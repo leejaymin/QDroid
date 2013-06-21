@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/prefs_screen_graphs_hide" android:summary="@string/prefs_screen_graphs_hide_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/graph_battery_phour_title" android:key="@string/PREFSKEY_HIDE_PHOUR" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/graph_battery_drain_title" android:key="@string/PREFSKEY_HIDE_DRAIN" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/graph_battery_drainW_title" android:key="@string/PREFSKEY_HIDE_DRAINW" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/graph_battery_voltage_title" android:key="@string/PREFSKEY_HIDE_VOLT" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/graph_battery_temperature_title" android:key="@string/PREFSKEY_HIDE_TEMP" android:defaultValue="false" />
+</PreferenceScreen>

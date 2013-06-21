@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="214" android:versionName="2.6.3" android:installLocation="internalOnly" package="ccc71.bmw.pro"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="11" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="ccc71.bmw.lib.bmw_application" android:allowClearUserData="true" android:debuggable="false">
+        <receiver android:label="Battery Monitor Pro" android:name="ccc71.bmw.lib.bmw_widget">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bmw_widget_info" />
+            <intent-filter android:icon="@drawable/icon_1x1">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="ccc71.bmw.lib.bmw_service" android:exported="true" />
+        <receiver android:label="Battery Monitor Pro (2x1)" android:name="ccc71.bmw.pro.bmw_widget_large">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bmw_widget_large_info" />
+            <intent-filter android:icon="@drawable/icon_2x1">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="Battery Graph Pro (2x1)" android:name="ccc71.bmw.pro.bmw_widget_graph">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bmw_widget_graph_info" />
+            <intent-filter android:label="Battery Graph Pro (2x1)" android:icon="@drawable/icon_graph_2x1">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="Battery Graph Pro (3x1)" android:name="ccc71.bmw.pro.bmw_widget_graph_large">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bmw_widget_graph_large_info" />
+            <intent-filter android:label="Battery Graph Pro (3x1)" android:icon="@drawable/icon_graph_2x1">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="Battery Graph Pro (4x1)" android:name="ccc71.bmw.pro.bmw_widget_graph_extra_large">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/bmw_widget_graph_extra_large_info" />
+            <intent-filter android:label="Battery Graph Pro (4x1)" android:icon="@drawable/icon_graph_2x1">
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ccc71.bmw.lib.bmw_scheduler" android:exported="true" />
+        <receiver android:name="ccc71.bmw.pro.bmw_exporter">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_EXPORT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ccc71.bmw.lib.bmw_watcher">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:icon="@drawable/icon" android:name="ccc71.bmw.pro.bmw_status" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true">
+            <intent-filter android:label="@string/app_name" android:icon="@drawable/icon">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_status_history_title" android:icon="@drawable/history" android:name="ccc71.bmw.lib.bmw_history" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/activity_full_graph" android:icon="@drawable/graphic" android:name="ccc71.bmw.lib.bmw_full_graph" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/activity_settings" android:name="ccc71.bmw.pro.bmw_settings" />
+        <activity android:label="@string/activity_icon_package_list" android:name="ccc71.bmw.lib.bmw_icon_package_list" />
+        <activity android:label="@string/activity_estimates" android:icon="@drawable/usage" android:name="ccc71.bmw.lib.bmw_estimates" />
+        <activity android:label="@string/activity_estimates" android:icon="@drawable/discharging5" android:name="ccc71.bmw.lib.bmw_use_times" />
+        <activity android:label="@string/activity_estimates" android:icon="@drawable/graphic" android:name="ccc71.bmw.lib.bmw_past_stats" />
+        <activity android:label="@string/activity_stats" android:icon="@drawable/usage" android:name="ccc71.bmw.lib.bmw_stats" />
+        <activity android:label="@string/activity_batteries" android:icon="@drawable/batteries" android:name="ccc71.bmw.lib.bmw_batteries" />
+        <activity android:label="@string/activity_calibration" android:icon="@drawable/calibration" android:name="ccc71.bmw.lib.bmw_calibration" />
+        <activity android:label="@string/activity_calibration" android:icon="@drawable/batteries" android:name="ccc71.bmw.lib.bmw_battery_compare" />
+    </application>
+</manifest>

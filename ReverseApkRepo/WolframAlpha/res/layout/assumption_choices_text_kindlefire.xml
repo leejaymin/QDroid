@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/assumption_choices_text_kindlefire_textview_textSize" android:textColor="@drawable/button_text_selector" android:background="@drawable/button_selector" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/assumption_choices_text_textview_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/assumption_choices_text_textview_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="onClick"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

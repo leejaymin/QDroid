@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scan_types">
+        <item>Pełne</item>
+        <item>Folder</item>
+        <item>Pamięć</item>
+    </string-array>
+    <string-array name="auto_hide_times">
+        <item>Wyłączone</item>
+        <item>Brak opóźnienia</item>
+        <item>Po 5 minutach</item>
+        <item>Po 10 minutach</item>
+        <item>Po 15 minutach</item>
+        <item>Po 30 minutach</item>
+    </string-array>
+    <string-array name="item_types">
+        <item>Kontakt</item>
+        <item>Numer telefonu</item>
+    </string-array>
+    <string-array name="monitor_checked_object_types">
+        <item>Wszystkie pliki</item>
+        <item>Tylko wykonywalne</item>
+    </string-array>
+    <string-array name="scan_checked_object_types">
+        <item>Wszystkie pliki</item>
+        <item>Tylko wykonywalne</item>
+    </string-array>
+    <string-array name="monitor_action_types">
+        <item>Usuń</item>
+        <item>Pomiń</item>
+    </string-array>
+    <string-array name="virus_action_types">
+        <item>Pytaj użytkownika</item>
+        <item>Usuń</item>
+        <item>Pomiń</item>
+    </string-array>
+    <string-array name="auto_scan_modes">
+        <item>Co tydzień</item>
+        <item>Codziennie</item>
+        <item>Wyłączony</item>
+    </string-array>
+    <string-array name="auto_update_modes">
+        <item>Co tydzień</item>
+        <item>Codziennie</item>
+        <item>Wyłączony</item>
+    </string-array>
+    <string-array name="week_days">
+        <item>Poniedziałek</item>
+        <item>Wtorek</item>
+        <item>Środa</item>
+        <item>Czwartek</item>
+        <item>Piątek</item>
+        <item>Sobota</item>
+        <item>Niedziela</item>
+    </string-array>
+    <string-array name="what_hide">
+        <item>Kontakty</item>
+        <item>Raporty SMS</item>
+        <item>SMS przychodzący</item>
+        <item>Raport połączeń</item>
+        <item>Poł. przychodzące</item>
+    </string-array>
+    <string-array name="virus_detected_actions">
+        <item>Usuń</item>
+        <item>Pomiń</item>
+        <item>Pomoc</item>
+    </string-array>
+    <string-array name="virus_in_application_detected_actions">
+        <item>Usuń</item>
+        <item>Pomiń</item>
+        <item>Pomoc</item>
+    </string-array>
+    <string-array name="pp_contact_popup">
+        <item>Usuń</item>
+        <item>Usuń wszystkie</item>
+    </string-array>
+    <string-array name="pp_phone_popup">
+        <item>Modyfikuj</item>
+        <item>Usuń</item>
+        <item>Usuń wszystkie</item>
+    </string-array>
+    <string-array name="sms_clean_folder_dialog_items">
+        <item>Usuń</item>
+        <item>Usuń wszystkie</item>
+    </string-array>
+    <string-array name="antispam_modes">
+        <item>Wyłączony</item>
+        <item>Blokowane kontakty</item>
+        <item>Dozwolone kontakty</item>
+        <item>Standardowy</item>
+    </string-array>
+    <string-array name="antispam_actions">
+        <item>Blokuj zawsze</item>
+        <item>Zezwalaj zawsze</item>
+        <item>Pomiń</item>
+        <item>Pomoc</item>
+    </string-array>
+    <string-array name="antispam_item_types">
+        <item>SMS</item>
+        <item>Połączenia</item>
+        <item>Połączenia i SMS</item>
+    </string-array>
+    <string-array name="antispam_popup">
+        <item>Modyfikuj</item>
+        <item>Usuń</item>
+        <item>Usuń wszystkie</item>
+    </string-array>
+    <string-array name="antispam_popup_no_edit">
+        <item>Usuń</item>
+        <item>Usuń wszystkie</item>
+    </string-array>
+    <string-array name="stealth_commands">
+        <item>Blokada urządzenia</item>
+        <item>Usuwanie danych</item>
+        <item>Lokalizacja</item>
+        <item>Ochrona prywatności</item>
+    </string-array>
+    <string-array name="hint_as_settings">
+        <item>Filtr Połączeń/SMS</item>
+        <item>"Filtr Połączeń/SMS pozwala blokować niechciane połączenia i SMS-y przychodzące.
+
+W celu jego włączenia określ reguły (tryb) filtrowania, a następnie utwórz listy blokowanych oraz dozwolonych kontaktów."</item>
+    </string-array>
+    <string-array name="hint_av_settings">
+        <item>Anti-Virus</item>
+        <item>"Anti-Virus chroni Twoje urządzenie przed wirusami i innym szkodliwym oprogramowaniem. Anti-Virus zawiera następujące składniki: Ochrona, Skanowanie oraz Aktualizacja. W tym miejscu możesz skonfigurować ustawienia każdego składnika.
+
+Ochrona wykrywa zagrożenia i skanuje nowe aplikacje w czasie rzeczywistym. 
+
+Skanowanie jest uruchamiane na żądanie i pomaga wykrywać i eliminować zagrożenia na Twoim urządzeniu (takie jak niebezpieczne pliki zainstalowane lub spakowane w archiwach). Obszar skanowania może zawierać cały system plików urządzenia, zawartość karty pamięci lub określonego folderu.
+
+Aktualizacja antywirusowych baz danych oraz wersji aplikacji zapewnia kompleksową ochronę Twojego urządzenia."</item>
+    </string-array>
+    <string-array name="hint_pp_settings">
+        <item>Ochrona prywatności</item>
+        <item>"Ochrona prywatności ukrywa poufne kontakty oraz związaną z nimi historię połączeń oraz korespondencję SMS. Możesz to zrobić w następujący sposób:
+
+ - wybrać rodzaje ukrywanych informacji dotyczących kontaktów;
+ - włączyć automatyczne ukrywanie, jeśli urządzenie przejdzie w tryb uśpienia;
+ - zezwolić na zdalne ukrywanie informacji dotyczących kontaktów po przesłaniu polecenia SMS \"hide:[kod]\" z innego urządzenia (gdzie [kod] jest tajnym kodem do Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sms_block">
+        <item>Blokada urządzenia</item>
+        <item>"Możesz włączyć Blokadę urządzenia w celu zdalnego zablokowania skradzionego lub zgubionego urządzenia.
+
+Aby zdalnie zablokować urządzenie, wyślij polecenie SMS \"lock:[kod]\" z dowolnego urządzenia (gdzie [kod] jest tajnym kodem do Kaspersky Mobile Security).
+
+W celu odblokowania urządzenia, wprowadź na urządzeniu tajny kod do Kaspersky Mobile Security."</item>
+    </string-array>
+    <string-array name="hint_at_sms_wipe">
+        <item>Usuwanie danych</item>
+        <item>"Możesz określić dane jakie zostaną usunięte zdalnie w przypadku kradzieży lub utraty urządzenia. Możesz usunąć określone dane (np. kontakty, kalendarz, wiadomości SMS lub foldery).
+
+Aby zdalnie usunąć dane, wyślij polecenie SMS \"wipe:[kod]\" na swoje urządzenie (gdzie [kod] - Twój tajny kod do Kaspersky Mobile Security)."</item>
+    </string-array>
+    <string-array name="hint_at_sim_watch">
+        <item>SIM Watch</item>
+        <item>"Możesz włączyć funkcję, która prześle Ci nowy numer telefonu używany na urządzeniu lub zablokuje go, jeśli karta SIM zostanie zmieniona lub urządzenie zostanie włączone bez karty SIM.
+
+W celu otrzymania nowego numeru telefonu, jeśli karta SIM urządzenia zostanie zmieniona, określ adres e-mail lub inny numer telefonu. W celu automatycznego zablokowania urządzenia, w przypadku gdy karta SIM zostanie zmieniona lub urządzenie zostanie włączone bez karty SIM, włącz funkcję blokowania w ustawieniach modułu SIM Watch."</item>
+    </string-array>
+    <string-array name="hint_at_sms_find">
+        <item>Lokalizacja</item>
+        <item>"Możesz włączyć składnik, który zdalnie określi współrzędne Twojego skradzionego lub zgubionego urządzenia. 
+
+W celu uzyskania współrzędnych, wyślij polecenie SMS \"locate:[kod]\" na swoje urządzenie z dowolnego urządzenia (gdzie [kod] jest tajnym kodem do Kaspersky Mobile Security). Aplikacja prześle współrzędne urządzenia w SMS-ie zwrotnym lub na określony przez Ciebie adres e-mail.
+
+W celu przesłania wiadomości e-mail, aplikacja prześle wiadomość SMS na dedykowany numer operatora MTS (Rosja). Cena SMS-a przesłanego na dedykowany numer jest uzależniona od posiadanego planu taryfowego. Operator MTS (Rosja) prześle bieżący numer telefonu na Twój adres e-mail."</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_titles">
+        <item>Rozszerzony</item>
+        <item>Zalecany</item>
+        <item>Wyłączona</item>
+    </string-array>
+    <string-array name="select_protection_mode_dialog_subtitles">
+        <item>Sprawdza nowe aplikacje oraz monitoruje operacje na plikach.</item>
+        <item>Sprawdza jedynie nowe aplikacje.</item>
+        <item>Ochrona jest wyłączona.</item>
+    </string-array>
+    <string-array name="av_additional_protection_mode_subtitles">
+        <item>Rozszerzony</item>
+        <item>Zalecany</item>
+        <item>Wyłączona</item>
+    </string-array>
+    <string-array name="antispam_import_number_sources">
+        <item>Historia połączeń</item>
+        <item>SMS przychodzący</item>
+    </string-array>
+    <string-array name="select_reports_dialog_titles">
+        <item>Wszystkie zdarzenia</item>
+        <item>Anti-Virus</item>
+        <item>Filtr Połączeń/SMS</item>
+        <item>Ochrona WWW</item>
+    </string-array>
+    <string-array name="select_reports_dialog_subtitles">
+        <item></item>
+        <item>Wyniki skanowania, aktualizacji</item>
+        <item>Zablokowane połączenia i wiadomości</item>
+        <item>Zablokowane strony internetowe</item>
+    </string-array>
+    <string-array name="reports_days_titles">
+        <item>Dzisiaj</item>
+        <item>Ostatnie 7 dni</item>
+        <item>Ostatnie 30 dni</item>
+        <item>Wcześniej</item>
+    </string-array>
+</resources>

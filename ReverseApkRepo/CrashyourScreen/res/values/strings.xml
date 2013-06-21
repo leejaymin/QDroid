@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Crash!</string>
+    <string name="app_name">TouchScreenCrash</string>
+    <string name="text_info">"Crash Your Screen! 
+ @Author Rafał Duraj 
+ @Version 1.3 
+ With this app you can do crashed screen effect. 
+ Suprise your friends!"</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/icon_quit" android:id="@id/mi_game_back" android:title="@string/mi_back_title" />
+    <item android:icon="@drawable/icon_settings" android:id="@id/mi_game_settings" android:title="@string/mi_settings_title" />
+    <item android:icon="@drawable/icon_statistics" android:id="@id/mi_game_highscores" android:title="@string/mi_highscores_title" />
+    <item android:icon="@drawable/icon_help" android:id="@id/mi_game_help" android:title="@string/mi_help_title" />
+</menu>

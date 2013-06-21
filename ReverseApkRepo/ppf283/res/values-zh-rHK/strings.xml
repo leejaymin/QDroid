@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PicsPlay</string>
+    <string name="main_load_size_title">選取照片大小</string>
+    <string name="main_load_size_fast">快速</string>
+    <string name="main_load_size_fast_text">於流動裝置的最佳大小</string>
+    <string name="main_load_size_normal">適中</string>
+    <string name="main_load_size_normal_text">網站、部落格及社交網絡的理想大小</string>
+    <string name="main_load_size_max">最大</string>
+    <string name="main_load_size_max_text">"最佳品質
+需要更多時間處理"</string>
+    <string name="main_camera_camera">拍攝照片</string>
+    <string name="main_camera_gallery">選取照片</string>
+    <string name="main_camera_manual">使用手冊</string>
+    <string name="main_camera_setting">設定</string>
+    <string name="main_fx_fx">FX 工作室</string>
+    <string name="main_fx_time">時間演化</string>
+    <string name="main_crop_crop">裁切</string>
+    <string name="main_crop_rotate">旋轉</string>
+    <string name="main_color_exposure">曝光</string>
+    <string name="main_color_color">色調</string>
+    <string name="main_color_wb">白平衡</string>
+    <string name="main_color_curves">曲線</string>
+    <string name="main_color_histogram">直方圖</string>
+    <string name="main_border_texture">材質</string>
+    <string name="main_border_vignetting">暗角</string>
+    <string name="main_border_border">邊框</string>
+    <string name="main_save_save">儲存</string>
+    <string name="main_save_share">儲存及分享</string>
+    <string name="main_reset_title">重設</string>
+    <string name="main_reset_msg">將會放棄所有修改</string>
+    <string name="main_sdcard_title">儲存卡</string>
+    <string name="main_sdcard_msg">使用本程式前，請先插入儲存卡</string>
+    <string name="main_save_fx_msg">"儲存到'PicsPlay'相冊"</string>
+    <string name="main_save_camera_msg">儲存到內建相冊</string>
+    <string name="main_save_share_title">分享</string>
+    <string name="fx_menu_all">全部特效</string>
+    <string name="fx_menu_fav">最愛特效</string>
+    <string name="fx_menu_his">常用特效</string>
+    <string name="fx_fav_full">已選超過30個特效，最愛特效將會重設</string>
+    <string name="fx_progress_text">透明度</string>
+    <string name="fx_flip_start">頁首</string>
+    <string name="fx_flip_end">頁尾</string>
+    <string name="fx_back_main">主頁</string>
+    <string name="fx_back_back">返回</string>
+    <string name="color_progress_brightness">光亮度</string>
+    <string name="color_progress_contrast">對比度</string>
+    <string name="color_progress_saturation">飽和度</string>
+    <string name="color_progress_hue">色調</string>
+    <string name="color_progress_temp">色温</string>
+    <string name="color_progress_tint">色彩濃度</string>
+    <string name="manual_menu_1">基本</string>
+    <string name="manual_menu_2">FX</string>
+    <string name="manual_menu_3">進階</string>
+    <string name="setting_title">設定</string>
+    <string name="setting_menu_save">儲存位置</string>
+    <string name="setting_menu_tutorial">教學</string>
+    <string name="setting_menu_fb">Facebook社群</string>
+    <string name="setting_menu_home">Jellybus主頁</string>
+    <string name="setting_menu_more">更多相片程式</string>
+    <string name="basic_process">處理中...</string>
+    <string name="basic_notice">注意</string>
+    <string name="lvl_fail">驗證失效。請從Google Play購買。</string>
+    <string name="lvl_web">發生網絡錯誤。請檢查網絡連線。</string>
+    <string name="alert_exit">"再次按'返回'鍵退出。"</string>
+    <string name="free_size_max">購買專業版</string>
+    <string name="free_size_msg">"沒有廣告
+完美10個主題，200個預設
+支援最高2048px高解像度"</string>
+    <string name="free_button_buy">購買</string>
+    <string name="free_button_cancel">取消</string>
+</resources>

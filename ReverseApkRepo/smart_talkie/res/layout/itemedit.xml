@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ieditor_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ieditor_table_categories" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_title" />
+        <EditText android:id="@id/ieditor_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_person_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iviewer_person_age" />
+        <EditText android:id="@id/ieditor_person_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="integer" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/ieditor_person_gender" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_person_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilist_male" />
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_person_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilist_female" />
+        </RadioGroup>
+        <CheckBox android:layout_gravity="right" android:id="@id/ieditor_person_homo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ilist_homo" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_layout_type" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioGroup android:layout_gravity="left" android:orientation="horizontal" android:id="@id/ieditor_type" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_type_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_type_post" />
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_type_poll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_type_poll" />
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_type_sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_type_sell" />
+            <RadioButton android:textSize="12.0px" android:id="@id/ieditor_type_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_type_buy" />
+        </RadioGroup>
+        <CheckBox android:layout_gravity="right|center" android:id="@id/ieditor_biddable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_biddable" />
+        <EditText android:id="@id/ieditor_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:numeric="integer" />
+        <TextView android:id="@id/ieditor_distance_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_distance_text2" />
+        <CheckBox android:layout_gravity="right" android:id="@id/ieditor_callable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iviewer_phone" />
+        <CheckBox android:layout_gravity="right" android:id="@id/ieditor_mailable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/iviewer_email" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_layout_bid1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ieditor_bid_buynow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_bid_buynow_text" />
+        <EditText android:id="@id/ieditor_bid_buynow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="decimal" />
+        <Spinner android:id="@id/iedit_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/ieditor_bid_qty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_bid_qty_text" />
+        <EditText android:id="@id/ieditor_bid_qty" android:layout_width="48.0px" android:layout_height="wrap_content" android:numeric="integer" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_layout_bid2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ieditor_bid_minbid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_bid_minbid_text" />
+        <EditText android:id="@id/ieditor_bid_minbid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="decimal" />
+        <TextView android:gravity="right" android:id="@id/ieditor_bid_reserve_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_bid_reserve_text" android:layout_weight="1.0" />
+        <EditText android:id="@id/ieditor_bid_reserve" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="decimal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_layout_bid3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/ieditor_bid_due_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_bid_due_text" />
+        <EditText android:id="@id/ieditor_bid_due_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/ieditor_bid_due_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="," />
+        <EditText android:id="@id/ieditor_bid_due_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ieditor_layout_save_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/ieditor_add_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_add_photo" android:layout_weight="1.0" />
+        <Button android:id="@id/ieditor_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_preview" android:layout_weight="1.0" />
+        <Button android:id="@id/ieditor_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ieditor_save" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/ieditor_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <WebView android:id="@id/ieditor_detail_preview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/futuretopic_view_mianlinearlayout" android:paddingBottom="@dimen/futuretopic_view_linearlayout_futuretopic_view_mainlinearlayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/podtitle_top_line" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/podtitle_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:paddingRight="@dimen/futuretopic_view_imageview_future_splat_icon_paddingRight" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/margin_left_entire_app" android:layout_marginRight="@dimen/margin_right_entire_app" android:src="@drawable/future_splat_icon" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/futuretopic_view_kindlefire_textview_futuretopic_topic_textSize" android:textStyle="bold" android:textColor="@color/alpha_red" android:id="@id/futuretopic_topic" android:paddingTop="@dimen/futuretopic_view_textview_futuretopic_topic_paddingTop" android:paddingRight="@dimen/futuretopic_view_textview_futuretopic_topic_paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/futuretopic_view_textview_futuretopic_msg_textSize" android:textColor="@color/assumptions_row_text" android:id="@id/futuretopic_msg" android:paddingTop="@dimen/futuretopic_view_textview_futuretopic_msg_paddingTop" android:paddingRight="@dimen/futuretopic_view_textview_futuretopic_msg_paddingRight" android:paddingBottom="@dimen/futuretopic_view_textview_futuretopic_msg_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/podtitle_bottom_line" />
+</LinearLayout>

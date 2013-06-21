@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="faq_string">" "<Data>" &lt;b>&lt;font color=#ffba00>Cos'è questa applicazione?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Lapse It permette di catturare facilmente incredibili video in time-lapse (stop motion) direttamente dal tuo dispositivo Android.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Dove sono salvati i video?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>I tuoi video sono salvati in una cartella chiamata &lt;b>elaborati&lt;/b>, la puoi trovare nella tua &lt;b>cartella output&lt;/b>.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Ho comprato la versione pro usando il pagamento in-app ma non è cambiato niente !&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Talvolta Google può ritardare la risposta, pertanto se non cambia automaticamente, prova a riavviare l'applicazione. Se non funziona chiudi forzatamente (force close) e cancella la cache dell'applicazione, eseguito ciò dovrebbe funzionare, altrimenti contattaci.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Quali sono le modalità di elaborazione?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Puoi elaborare il tuo video in differenti formati come MP4, MOV o FLV, con diverse risoluzioni e frequenze, ciò ti fornisce un maggiore controllo sui risultati che desideri.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Ricevo il messattio 'Il video non può essere eseguito' quando cerco di visualizzarlo !&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>I codec video Android talvolta variano a seconda del dispositivo, prova ad utilizzare un player di terze parti come Rock Player.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Ci sono retrizioni sulla durata della cattura?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Dal punto di vista dell'applicazione non ci sono restrizioni, comunque, la batteria e lo spazio su disco sono limitati.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Quali risoluzioni sono disponibili?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Nella versione pro puoi realizzare video fino a 1080p. Le altre risoluzioni disponibili sono 720p, 480p, 360p, 240p. nella versione free è disponibile solo la risoluzione 240p. Se ti piace l'applicazione, per favore considera supportarci acquistanto la versione Pro.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Come posso disabilitare il suono dell'otturatore?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Il suono dell'otturatore è disabilitato per default su Lapse it, purtroppo per politiche di privacy, in alcuni dispositivi non rootati ciò non funziona. Se vuoi disabilitarlo probabilmente devi eseguire il root del dispositivo.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Il pagamento in-app sarà mantenuto se disinstallo la app o cambio dispositivo? Funzionerà senza compertura 3g?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>La risposta è sì per entrambe le domande, il tuo pagamento è salvato nel tuo account Google e ogni volta che apri la app dopo una nuova installazionecontrollerà i tuoi ordini precedenti sul tuo account Google e abiliterà le opzioni automaticamente, dopo l'attivazione la app funzionerà in modalità Pro ovunque.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Dove sono salvati i file catturati?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Nella cartella della tua scheda SD.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Come posso cancellare i file catturati?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Seleziona la lista dei file catturati, seleziona l'elemento da cancellare, seleziona elimina e conferma.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Quali sono le limitazioni della versione free?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Puoi scattare ad una risoluzione massima di 240p.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Come posso risparmiare batteria e catturare per un tempo più prolungato?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Se non puoi avere una fonte di elettricità attaccata al dispositivo durante la cattura, la scelta migliore è chiudere tutte le altre applicazioni, disabilitare il GPS e WiFi e ridurre al massimo la luminosità dello schermo.&lt;/font>&lt;br>&lt;br> "</Data>" "</string>
+    <string name="dialog_outofmemory_title">Errore-Memoria insufficiente</string>
+    <string name="dialog_outofmemory_message_capture">"Spiacente, la memoria non è sufficiente per fotografare usando l'impostazione corrente, seleziona una risoluzione inferiore o chiudi altre applicazioni aperte e riprova, se il problema persiste ti preghiamo di contattarci.
+
+Grazie !"</string>
+    <string name="dialog_outofmemory_message_render">"Spiacente, la memoria non è sufficiente per fotografare usando l'impostazione corrente, seleziona una risoluzione inferiore o chiudi altre applicazioni aperte e riprova, ti preghiamo di contattarci.
+
+Grazie !"</string>
+    <string name="dialog_rate_title">Assegnaci qualche stella</string>
+    <string name="dialog_rate_message">"I tuoi commenti sono molto importanti per noi!
+
+ Vorresti assegnare qualche stella a Lapse It?"</string>
+    <string name="dialog_rate_done">No</string>
+    <string name="dialog_rate_later">Dopo</string>
+    <string name="dialog_rate_now">Sì</string>
+    <string name="dialog_general_ok">Ok</string>
+    <string name="dialog_connerror_title">Errore di connessione</string>
+    <string name="dialog_connerror_message">"Non è stato possibIe stabilire una connessione con il server! 
+
+Prego controllare il vostro segnale, altrimenti il nostro server potrebbe essere pieno, riprova più tardi !"</string>
+    <string name="toast_camera_error">Errore inizializzazione fotocamera, prova chiudere altre applicazione che usano la fotocamera, o riavvia il dispositivo</string>
+    <string name="info_ads_title">Lapse It Pro Caratteristiche</string>
+    <string name="info_ads_first">• Piena risoluzione del sensore</string>
+    <string name="info_ads_sec">• Elaborazione sino a 1080p</string>
+    <string name="info_ads_third">• Colonna Sonora</string>
+    <string name="info_ads_fourth">• Ed altro ancora ...</string>
+    <string name="soundtrack_noinfo">Non è disponibile alcun ID3 tag</string>
+    <string name="dialog_nofiletitle">Errore colonna sonora</string>
+    <string name="dialog_nofilemusic">Impossibile recuperare musica specificata, scegli un esplora risorse diverso !</string>
+    <string name="description_resolution_full">" "<Data>" &lt;b>&lt;font color=#efefef>Determinare la risoluzione di cattura&lt;/font>&lt;br>&lt;br> &lt;font color=#AAAAAA>Normalmente gli utenti catturano le immagini con la risoluzione più alta possibile, ma noi offriamo una gamma dal minimo al massimo possibile per soddisfare le vostre necessità &lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>Risoluzioni inferiori&lt;/font> migliore per selezionare cattura di lunga durata o per scene che richiedono un intervallo veloce tra gli scatti (il sistema richiede meno tempo per processare limmagine), consigliato se usato su dispositivo mobile&lt;br>&lt;br> &lt;font color=#eaeaea>Risoluzioni superiori&lt;/font> fornisce un'immagine più accurarta e di qualità migliore, maggiori dimensioni del video e richiede più spazio su disco e tempo di acquisizione&lt;br>&lt;br> &lt;font color=#eaeaea>Sensore pieno&lt;/font> È stato aggiunto appositamente per chi vuole catturare con il dipositivo ma processare su PC, potete sempre processare usando Lapse It, ma sarà scalata a 720P&lt;br>&lt;br> "</Data>" "</string>
+    <string name="description_resolution_lite">" "<Data>"&lt;b>&lt;font color=#efefef>Determinare la risoluzione di cattura&lt;/font>&lt;br>&lt;br> &lt;font color=#AAAAAA>Normalmente gli utenti catturano le immagini con la risoluzione più alta possibile, ma noi offriamo una gamma dal minimo al massimo possibile per soddisfare le vostre necessità &lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>Risoluzioni inferiori&lt;/font> migliore per selezionare cattura di lunga durata o per scene che richiedono un intervallo veloce tra gli scatti (il sistema richiede meno tempo per processare limmagine), consigliato se usato su dispositivo mobile&lt;br>&lt;br> &lt;font color=#eaeaea>Risoluzioni superiori&lt;/font> fornisce un'immagine più accurarta e di qualità migliore, maggiori dimensioni del video e richiede più spazio su disco e tempo di acquisizione&lt;br>&lt;br> &lt;font color=#eaeaea>Sensore pieno&lt;/font> È stato aggiunto appositamente per chi vuole catturare con il dipositivo ma processare su PC, potete sempre processare usando Lapse It, ma sarà scalata a 720P&lt;br>&lt;br> &lt;font color=#efefef>Versione lite&lt;/font>&lt;br> &lt;font color=#AAAAAA>Forniamo una versione lite di questa app allo scopo di test, in questa versione si può catturare time-lapse ad una risoluzione inferiore&lt;br>&lt;br>&lt;/font> &lt;font color=#ffba00>Se ti piace questa app e pensi che vale la pena compensare il lavoro dello sviIuppatore, clicca qui per ulteriori informazioni circa la versione Professionale.&lt;/font>&lt;/font> "</Data>" "</string>
+    <string name="description_timescale">" "<Data> &lt;b>&lt;font color=#efefef>Determinare i tempi per la cattura&lt;/font>&lt;br>&lt;br> Questo parametro sarà usato insieme \" Intervallo Scatto per determinare il tempo tra le immagini </Data>" "</string>
+    <string name="description_limitmode">" "<Data> &lt;b>&lt;font color=#efefef>Limite per immagine&lt;/font>&lt;br> In questo modo puoi determinare il numero di immagini da catturare, quando si arriva al numero indicato, la cattura sarà fermata automaticamente.&lt;br>&lt;br> &lt;font color=#efefef>Limite per tempo&lt;/font>&lt;br> In questo modo puoi determinare il tempo massimo da catturare, quando si arriva al tempo indicato, la cattura sarà fermata automaticamente.&lt;br>&lt;br> &lt;font color=#efefef>Limite manuale&lt;/font>&lt;br> In questo modo la cattura andrà avanti affinché fermata dall’utente premendo stop. </Data>" "</string>
+    <string name="description_geolocation">" "<Data> &lt;b>&lt;font color=#efefef>Determinare se l’applicazione deve richiedere informazioni di geolocalizzazione&lt;/font>&lt;br>&lt;br> Attivando geolocalizzazione vostro progetto avrà risorse della mappa per tracciare dove ha iniziato e finito vostro intervallo tempo e le imagine tra le due.&lt;br>&lt;br> Questo è utile in situazioni di movimento come in macchina o libero intervallo. </Data>" "</string>
+    <string name="description_encoder">" "<Data>" &lt;b>&lt;font color=#efefef>Determinare il codificatore da usare per vedere il progetto&lt;/font>&lt;br>&lt;br> &lt;font color=#ff5400>Nota bene che usare un codec diverso dall'MP4 renderà il video non leggibile in certi dispositivi usando il player Android&lt;br>&lt;br>&lt;/font>&lt;/b>Se ricevi il messaggio &lt;b>&lt;font color=#efefef size=7>Questo video non e leggibile&lt;/b>&lt;/font> prova un lettore video di terze parti, come &lt;b>Rock Player&lt;/b> "</Data>" "</string>
+    <string name="description_quality">" "<Data> &lt;b>&lt;font color=#efefef>Determinare la qualità del video&lt;/font>&lt;br>&lt;br> Qualità superiore significa più livelli di bitrate e file più grandi&lt;/b> </Data>" "</string>
+    <string name="description_framespersecond">" "<Data> &lt;b>&lt;font color=#efefef>Determinare la frequenza dei fotogrammi per il video finale&lt;/font>&lt;br>&lt;br> La frequenza fotogrammi è molto importante nei video time-lapse, renderà il video più veloce o più lento a secondo ciò che volete archiviare.&lt;br>&lt;br> Puoi provare tempi multipli con rapporto immagine differente per vedere quale sia il migliore in quella situazione.&lt;/b> </Data>" "</string>
+    <string name="description_shutter">" "<Data>" &lt;b>&lt;font color=#efefef>Determinare il suono dell'otturatore mentre cattura&lt;/font>&lt;br>&lt;br> Se non vuoi sentire il suono imposta questa opzione come non abilitato.&lt;br>&lt;br> &lt;font color=#ff5400>Se questa opzione è disabilitata e senti ancora l’otturatore avrai bisogno di un modo alternativo per disabilitarla.&lt;br>&lt;br>&lt;/font> &lt;font color=#777777>Alcuni dispositivi hanno una politica di sicurezza che restringe i criteri per scattare foto senza suono, e in questi casi lo svillupatore non può fare molto, ma tu puoi !&lt;br>&lt;br> Se il tuo dispositivo è rootato, nella cartella /sistema /media /audio/ui/ troverai un file audio nominato camera_click.ogg, dovrai semplicemente rinominare questo file camera_click_old e il suono dell'otturatore sparirà. &lt;/font>&lt;/b> "</Data>" "</string>
+    <string name="description_dim">" "<Data> &lt;b>&lt;font color=#efefef>Livello di luminosità durante la cattura&lt;/font>&lt;br>&lt;br> Al momento dello scatto la luminosità dello schermo sarà smorzata per preservare la batteria, qui puoi scegliere il livello della luminosità voluta&lt;/b> </Data>" "</string>
+    <string name="description_full_version">" "<Data>" &lt;b>&lt;font color=#eaeaea>Lapse It&lt;/font> è stato sviluppato per fornire un modo semplice per creare time-lapse sorprendenti sul tuo dispositivo mobile. Abbiamo fatto uno sforzo per fornire un'interfaccia professionale progettata sia per estetica sia utilizzo&lt;br>&lt;br> Continueremo a lavorare al progetto per aggiungere nuove caratteristiche e migliori prestazioni.&lt;br>&lt;br> &lt;font color=#ffba00>Se ti piace questa applicazione e pensi che sia utile e vale un contributo per il lavoro degli sviluppatori clicca il logo Lapse It Pro qui sotto per comprare la &lt;b>Versione Professionale&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>Se preferisci usare la fatturazione In-App per favore seleziona il tasto MENU e clicca su quell'opzione&lt;/b>&lt;br>&lt;br>&lt;/font> Ricorda che quando compri un'applicazione, stai sostenendo lo sviluppo futuro, e i tuoi commenti nel Market Android sono importanti quindi ti preghiamo di lasciare qualche stella a &lt;font color=#eaeaea>Lapse It&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>Grazie&lt;/font>&lt;/b>&lt;br> "</Data>" "</string>
+    <string name="description_full_inapp_version">" "<Data>" &lt;b>&lt;font color=#eaeaea>Lapse It&lt;/font> è stato sviluppato per fornire un modo semplice per creare time-lapse sorprendenti sul tuo dispositivo mobile. Abbiamo fatto uno sforzo per fornire un'interfaccia professionale progettata sia per estetica sia utilizzo&lt;br>&lt;br> Continueremo a lavorare al progetto per aggiungere nuove caratteristiche e migliori prestazioni.&lt;br>&lt;br> &lt;font color=#ffba00>Se ti piace questa applicazione e pensi che sia utile e vale un contributo per il lavoro degli sviluppatori clicca il logo Lapse It Pro qui sotto per comprare la &lt;b>Versione Professionale&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>Se preferisci usare la fatturazione In-App per favore seleziona il tasto MENU e clicca su quell'opzione&lt;/b>&lt;br>&lt;br>&lt;/font> Ricorda che quando compri un'applicazione, stai sostenendo lo sviluppo futuro, e i tuoi commenti nel Market Android sono importanti quindi ti preghiamo di lasciare qualche stella a &lt;font color=#eaeaea>Lapse It&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>Grazie&lt;/font>&lt;/b>&lt;br> "</Data>" "</string>
+    <string name="settingsitem_capture_header">Impostazioni cattura</string>
+    <string name="settingsitem_capture_interval">Intervallo scatto</string>
+    <string name="settingsitem_capture_timescale">Intervallo di Tempo</string>
+    <string name="settingsitem_capture_limitmode">Modalità Limitata</string>
+    <string name="settingsitem_capture_limitvalue"><Data>Limit value </Data></string>
+    <string name="settingsitem_capture_delay"><Data>Ritardo iniziale &lt;small>&lt;font size=1>&lt;i>in Millisecondi&lt;/i>&lt;/font>&lt;/small> </Data></string>
+    <string name="settingsitem_capture_resolution">Risoluzione</string>
+    <string name="settingsitem_capture_dim">Livello di Luminosità</string>
+    <string name="settingsitem_capture_shutter">Suono otturatore</string>
+    <string name="settingsitem_capture_schedule">Programma</string>
+    <string name="settingsitem_capture_directory">Cartella di output</string>
+    <string name="settingsitem_render_header">Impostazione resa</string>
+    <string name="settingsitem_render_encoder">Codificatore</string>
+    <string name="settingsitem_render_quality">Qualità</string>
+    <string name="settingsitem_render_fps">Scatti al secondo</string>
+    <string name="settingsitem_other_header">Circa Lapse It</string>
+    <string name="settingsitem_other_buy">Compra Lapse It</string>
+    <string name="settingsitem_other_rate">Dare una voto alla App</string>
+    <string name="settingsitem_other_share">Condividere questa App</string>
+    <string name="settingsitem_other_feedback">Inviateci i vostri commenti</string>
+    <string name="settingsitem_other_faq">Domande Frequenti FAQ</string>
+    <string name="settingsitem_detail_yes">Si</string>
+    <string name="settingsitem_detail_no">No</string>
+    <string name="settingsitem_detail_enabled">Abilitata</string>
+    <string name="settingsitem_detail_disabled">Disabilitata</string>
+    <string name="settingsitem_detail_fullsensor">Massima Risoluzione</string>
+    <string name="settingsitem_detail_1080p">1080p</string>
+    <string name="settingsitem_detail_720p">720p</string>
+    <string name="settingsitem_detail_480p">480p</string>
+    <string name="settingsitem_detail_360p">360p</string>
+    <string name="settingsitem_detail_240p">240p</string>
+    <string name="settingsitem_detail_minutes">Minuti</string>
+    <string name="settingsitem_detail_seconds">Secondi</string>
+    <string name="settingsitem_detail_frames">Scatti</string>
+    <string name="settingsitem_detail_timer">Cronometro</string>
+    <string name="settingsitem_detail_user">Utente</string>
+    <string name="settingsitem_detail_mp4">MP4</string>
+    <string name="settingsitem_detail_mov">MOV</string>
+    <string name="settingsitem_detail_flv">FLV</string>
+    <string name="settingsitem_detail_low">Basso</string>
+    <string name="settingsitem_detail_medium">Medio</string>
+    <string name="settingsitem_detail_high">Alto</string>
+    <string name="settings_other_none">Nullo</string>
+    <string name="app_description">Time Laps Per Android</string>
+    <string name="btn_startcapture">Nuovo Scatto</string>
+    <string name="btn_listcaptured">Galleria</string>
+    <string name="btn_settings">Impostazioni</string>
+    <string name="btn_proversion">Versione Pro</string>
+    <string name="pref_capturevery">Cattura tutto</string>
+    <string name="view_start">Inizio</string>
+    <string name="view_faq">Domande Frequenti FAQ</string>
+    <string name="view_fullversion">Sostieni Lapse It • Vai Professional</string>
+    <string name="view_capture">Cattura</string>
+    <string name="view_preview">Anteprima</string>
+    <string name="view_list">Lapse Catturate</string>
+    <string name="view_settings">Impostazioni</string>
+    <string name="view_player">Lettore</string>
+    <string name="view_info">Dettagli</string>
+    <string name="view_trim">Trimmer</string>
+    <string name="view_effect">Effetti</string>
+    <string name="view_render">Elaborare</string>
+    <string name="view_project">Progetto</string>
+    <string name="view_schedule">Programma gli scatti</string>
+    <string name="view_remote">Visualizza il tuo progetto a distanza</string>
+    <string name="view_upload">Galleria Lapse It</string>
+    <string name="preview_loop">Loop</string>
+    <string name="preview_rendersequence">Sequenza immagine</string>
+    <string name="preview_rendervideo">Video</string>
+    <string name="preview_render">Elaborare</string>
+    <string name="effectssaturation">Saturazione</string>
+    <string name="search_hint">Cerca i Time-Lapse</string>
+    <string name="error_sdcard_notfound">Montare scheda SD prima di continuare</string>
+    <string name="error_capture">Qualcosa non ha funzionato, messaggio di errore</string>
+    <string name="dialog_lowbattery">Il livello della batteria è basso</string>
+    <string name="dialog_cancelcapturetitle">Acquisizione in esecuzione</string>
+    <string name="dialog_cancelcapturemessage">Vuoi cancellare e tornare alla home?</string>
+    <string name="dialog_deleteprojecttitle">Conferma esclusione</string>
+    <string name="dialog_deleteprojectmessage">Vuoi veramente cancellare permanentemente questo progetto?</string>
+    <string name="dialog_deleterenderedtitle">Conferma esclusione</string>
+    <string name="dialog_deleterenderedmessage">Vuoi veramente cancellare questo film permanentemente?</string>
+    <string name="dialog_cancelscheduletitle">Confermare cancellazione</string>
+    <string name="dialog_cancelschedulemessage">Vuoi veramente cancellare questa programmazione?</string>
+    <string name="dialog_defaulttitle">Impostazioni di default</string>
+    <string name="dialog_defaultmessage">Cambia questo valore in default?</string>
+    <string name="dialog_warningoutputtitle">Avvertimento Impostazioni avanzate</string>
+    <string name="dialog_warningoutputmessage">"Prego assicurarsi di usare un percorso valido per la nuova cartella
+QUESTO CAMBIAMENTO AVRÀ EFFETTO SOLTANTO PER PROGETTI CREATI DOPO LA TUA CONFERMA"</string>
+    <string name="dialog_foldermessage">Cartella Progetti</string>
+    <string name="schedulenostartmessage">Seleziona prima la data di inizio</string>
+    <string name="scheduleendandstart">La data finale deve essere successiva alla data di inizio</string>
+    <string name="restoringtransactions">Operazioni di ripristino</string>
+    <string name="projectportraitoptions">Usa modalità ritratto per ulteriore opzioni</string>
+    <string name="dialog_quickrendertitle">Elaborare Velocemente con questi impostazioni?</string>
+    <string name="dialog_quickrendermessage">"Encoder: @encoder@
+Quality: @quality@
+FPS: @fps@"</string>
+    <string name="dialog_cancel">Annullare</string>
+    <string name="dialog_continue">Continuare</string>
+    <string name="dialog_understand">Ho capito</string>
+    <string name="dialog_default">Usa Default</string>
+    <string name="dialog_set">Impostare</string>
+    <string name="schedule_schedule">Pianificazione</string>
+    <string name="schedule_capture">Pianificare scatti</string>
+    <string name="schedule_noschedule">Non hai alcuna pianificazione scatti</string>
+    <string name="not_set">Non impostato</string>
+    <string name="start_at">Inizio a</string>
+    <string name="end_at">Fine</string>
+    <string name="new_schedule">Nuovo pianificazione</string>
+    <string name="home_visitus">Visita nostro sito www.lapseit.com</string>
+    <string name="home_thanks">Grazie per il tuo sostegno</string>
+    <string name="content_title">Il Mio Time Lapse</string>
+    <string name="content_desc">Acquisita con Lapse It</string>
+    <string name="list_mygallery">La Mia Galleria</string>
+    <string name="list_lapseitgallery">Galleria Lapse It</string>
+    <string name="list_displayingproject">Visualizzazione XXX Lapse It progetti</string>
+    <string name="list_displayingprojects">Visualizzazione XXX Lapse It progetti</string>
+    <string name="list_nopersonalprojects">Finora nessun progetto personale</string>
+    <string name="gallery_sortingby">Ordinamento per</string>
+    <string name="gallery_sortby">Ordinamento per</string>
+    <string name="gallery_lapsesfrom">Lapses da XXX</string>
+    <string name="gallery_fetchinguser">Recurperare XXX progetti</string>
+    <string name="gallery_displayingproject">Visualizza XXX Progetti</string>
+    <string name="gallery_displayingprojects">Visualizza XXX Progetti</string>
+    <string name="gallery_votes">voti</string>
+    <string name="gallery_vote">vota</string>
+    <string name="gallery_mode_best">Più votata</string>
+    <string name="gallery_mode_view">Più vista</string>
+    <string name="gallery_mode_time">Aggiunto di recente</string>
+    <string name="gallery_mode_user">Da utente</string>
+    <string name="list_framecaptured">immagini catturate</string>
+    <string name="list_framescaptured">scatti catturati</string>
+    <string name="list_noframescaptured">Nessuno scatto catturato</string>
+    <string name="list_videorendered">video reso</string>
+    <string name="list_videosrendered">video resi</string>
+    <string name="list_framespersecond">scatti al secondo</string>
+    <string name="list_project">Progetto</string>
+    <string name="list_video">Video</string>
+    <string name="list_hideallvideos">Nascondi tutti I video resi</string>
+    <string name="list_showallvideos">Mostra tutti I video resi</string>
+    <string name="menu_capture">Cattura</string>
+    <string name="menu_everysecs">Ogni XXX secondi</string>
+    <string name="menu_everymins">Ogni XXX minuti</string>
+    <string name="menu_pause">Pausa</string>
+    <string name="menu_cancel">Cancella</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_more">Altro</string>
+    <string name="menu_fullsensor">Massima Risoluzione</string>
+    <string name="menu_autofocus">Messa a Fuoco Automatica</string>
+    <string name="menu_focus_mode">Modalità messa a fuoco</string>
+    <string name="menu_coloreffects">Effetti di Colori</string>
+    <string name="menu_scenemode">Modalità Scena</string>
+    <string name="menu_whitebalance">Bilanciamento del Bianco</string>
+    <string name="gallery_fetching">Recupero Progetti</string>
+    <string name="project_info">Info</string>
+    <string name="project_trim">Tagliare</string>
+    <string name="project_effects">Effetti</string>
+    <string name="project_soundtrack">Musica</string>
+    <string name="project_render">Rendere</string>
+    <string name="info_loop">Loop</string>
+    <string name="info_flipx">Girare X</string>
+    <string name="info_flipy">Girare Y</string>
+    <string name="info_backwards">Indietro</string>
+    <string name="info_framesin">scatti in</string>
+    <string name="info_using">a RESXXX usando MBXXX mb</string>
+    <string name="trim_startframe">Inizio scatti</string>
+    <string name="trim_endframe">Stop Scatti</string>
+    <string name="trim_trim">Taglia</string>
+    <string name="soundtrack_add">Aggiungi Musica</string>
+    <string name="soundtrack_remove">Togli Musica</string>
+    <string name="soundtrack_pro">Vai Pro</string>
+    <string name="soundtrack_analyze">Analizza Musica</string>
+    <string name="soundtrack_selecttitle">Seleziona traccia MP3</string>
+    <string name="soundtrack_analyze_message">Analizzando Musica ...</string>
+    <string name="soundtrack_notrack">Musica non selezionata</string>
+    <string name="soundtrack_clipduration">Durata Clip</string>
+    <string name="soundtrack_musicduration">Durata Musica</string>
+    <string name="soundtrack_range">Traccia Gamma</string>
+    <string name="soundtrack_sample">Esempio</string>
+    <string name="soundtrack_sample_notrack">Nessuna Traccia Aggiunta</string>
+    <string name="soundtrack_info">Questa è una caratteristica appena aggiuta per permettervi di inserire una Colonna Sonora nel vostro clip, non è impressionanate?</string>
+    <string name="soundtrack_infolite">"Stiamo constantamente migliorando e aggiungendo nuove funzioni in Lapse It quindi per favore, sostenete il nostro lavoro comprando la versione Professional. n
+Grazie !"</string>
+    <string name="soundtrack_infopro">Selezionare la musica e cliccare la barra suono per muovere la posizione di inizio.</string>
+    <string name="render_rendername">Rendere nome ...</string>
+    <string name="render_renderbutton">Rendere</string>
+    <string name="render_format">Formatta</string>
+    <string name="render_fps">Frequenza scatti</string>
+    <string name="render_resolution">Risoluzione</string>
+    <string name="render_quality">Qualità</string>
+    <string name="render_effect">Effetti</string>
+    <string name="render_duration">Durata</string>
+    <string name="render_range">Comincia da</string>
+    <string name="render_rangeto">a</string>
+    <string name="quick_details">"Vizualizza
+Dettagli"</string>
+    <string name="quick_showrendered">"Mostra
+Resi"</string>
+    <string name="quick_hiderendered">"Nascondi
+Resi"</string>
+    <string name="quick_notrendered">"Non
+Resi"</string>
+    <string name="quick_watch">"Guarda
+Video"</string>
+    <string name="quick_deleteproject">"Cancella
+Progetto"</string>
+    <string name="quick_zipsend">"Zip e
+Invio"</string>
+    <string name="quick_lapseitgallery">"Galleria
+ Lapse It"</string>
+    <string name="quick_shareonline">"Condividere
+Online"</string>
+    <string name="quick_deleterendered">"Cancellare
+Resi"</string>
+    <string name="quick_projectrating">"Progetto
+Valutazione"</string>
+    <string name="quick_socialshare">"Social
+Share"</string>
+    <string name="quick_userlist">"Utente
+Lista"</string>
+    <string name="menu_contextplay">Play</string>
+    <string name="menu_contextpublish">Pubblica</string>
+    <string name="menu_contextclose">Chiude</string>
+    <string name="menu_contextnonnative">Non-nativa</string>
+    <string name="menu_renderingsuccess">Elaborazione riuscita</string>
+</resources>

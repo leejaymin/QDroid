@@ -26,10 +26,9 @@ from SoloInterface import SoloInterface
 
 class PerformanceCounter():
     
-    def __init__(self, solo, soloSecond, m_Logger, apkName):
+    def __init__(self, solo, m_Logger, apkName):
         #장치 제어 객체
         self.solo = solo
-        self.soloSecond = soloSecond
         #로그 객체
         self.m_Logger = m_Logger
         #테스팅 apk 이름을 저장하는 객체
@@ -51,15 +50,7 @@ class PerformanceCounter():
         self.solo.event_controller.press('enter')
         self.solo.event_controller.press('back')
         self.solo.event_controller.press('back')   
-    """
-        self.soloSecond.startActivity(component='com.cnu.eslab.suite/.TrainingSuites')
-        self.soloSecond.event_controller.type(self.apkName)
-        self.soloSecond.event_controller.press('dpad_down')
-        self.soloSecond.event_controller.press('dpad_down')
-        self.soloSecond.event_controller.press('enter')
-        self.soloSecond.event_controller.press('back')
-        self.soloSecond.event_controller.press('back') 
-        """
+
     def loadPerforResult(self):
         try:
             self.solo.pullFile('/mnt/sdcard/%s.log'%(self.apkName),'/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, dontforgetme!</string>
+    <string name="app_name">Dont forget me</string>
+    <string name="lastContactHeadline">I didnt called these contacts since:</string>
+    <string name="lastContactBefore">called</string>
+    <string name="lastContactDays">Days ago</string>
+</resources>

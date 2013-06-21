@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TableLayout android:id="@id/sysctl_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1,2" android:shrinkColumns="1,2" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_reset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_reset_voltage" android:drawableLeft="@drawable/exclude_active" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:id="@id/button_advanced" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_advanced" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:id="@id/button_recommended" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_recommended" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+        <Button android:gravity="center" android:id="@id/button_boot_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_boot_settings" android:layout_weight="1.0" style="?android:attr/buttonStyleSmall" />
+    </LinearLayout>
+</LinearLayout>

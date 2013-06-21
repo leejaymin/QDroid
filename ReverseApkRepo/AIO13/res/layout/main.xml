@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/imoblife.batterybooster">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/main_examination" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/examination_scanner" />
+            <LinearLayout android:orientation="vertical" android:id="@id/examination_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/examination_chart" />
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/examination_other" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/examination_content2" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/base_tab_bg" android:layout_width="fill_parent" android:layout_height="20.0dip">
+            <ImageView android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kit_bar_indicator" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Optimizing Items" />
+        </LinearLayout>
+        <ListView android:id="@id/examination_list_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@xml/action_item_bg" android:cacheColorHint="#00000000" android:divider="@drawable/examination_pane_horizontal_separator" android:dividerHeight="1.0dip" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    </LinearLayout>
+</LinearLayout>

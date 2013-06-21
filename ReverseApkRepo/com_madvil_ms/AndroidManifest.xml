@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="54" android:versionName="3.0beta2" android:installLocation="auto" package="com.madvil.ms"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:label="@string/app_name" android:name=".MusicToPhoneActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.madvil.core.DownloadService" />
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d32eef4e445d" />
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" />
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="7B8731C9-1C6C-4160-ACDC-EDCB758441A9" />
+    </application>
+    <uses-sdk android:minSdkVersion="4" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+</manifest>

@@ -98390,3 +98390,33 @@
 
 [ 2013-05-15 19:00:19,675 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
 
+[ 2013-06-13 06:40:39,458 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-13 06:40:39,458 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-14 06:34:49,831 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-14 06:34:49,831 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-14 08:00:01,454 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-14 08:00:03,479 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:00:03,480 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:00:03,480 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:00:03,481 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:24:12,021 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-06-14 08:24:14,054 ][ ERROR ] [EventSender] Failed to send event `touch down 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:24:14,055 ][ ERROR ] [EventSender] Failed to send event `touch move 50 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:24:14,056 ][ ERROR ] [EventSender] Failed to send event `touch move 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 08:24:14,057 ][ ERROR ] [EventSender] Failed to send event `touch up 380 600`: [[Errno 111] Connection refused] 
+
+[ 2013-06-14 09:40:04,128 ][ ERROR ] Please check whether your device or emulator is running?
+

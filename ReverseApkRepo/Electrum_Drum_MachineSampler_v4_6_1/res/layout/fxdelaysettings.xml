@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialogbackground" android:layout_width="400.0dip" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="40.0dip">
+        <RelativeLayout android:id="@id/relativeLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <CheckBox android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff404040" android:id="@id/delaycheckbox" android:background="@drawable/btn_custom" android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_marginLeft="20.0dip" android:button="@drawable/customcheck" android:text="            Delay On" />
+            <CheckBox android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff404040" android:id="@id/delaywrapcheck" android:background="@drawable/btn_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:button="@drawable/customcheck" android:text="            Wrap delay" android:layout_toRightOf="@id/delaycheckbox" android:layout_alignTop="@id/delaycheckbox" android:layout_alignBottom="@id/delaycheckbox" />
+            <SeekBar android:id="@id/delaytimeseekbar" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:progressDrawable="@drawable/pancontrol" android:thumb="@drawable/panknob" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="160.0dip" android:text="Feedback" />
+            <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="70.0dip" android:text="Delay time" />
+            <SeekBar android:id="@id/feedbackseekbar" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:progressDrawable="@drawable/pancontrol" android:thumb="@drawable/panknob" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

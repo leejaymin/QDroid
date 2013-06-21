@@ -1,0 +1,44 @@
+<module id="module">
+  <windows/>
+  <menus/>
+  <objects>
+    <ttcamerarollmediahandler id="messageHandler3" moduleID="commonMediaHandler"/>
+	<ttcreativecloudmediahandler id="messageHandler5" moduleID="commonMediaHandler"/>
+    <ttcameramediahandler id="messageHandler2"/>
+    <ttgooglemediahandler id="messageHandler1" moduleID="googleMediaHandler" type="google" client="messageHandler4"/>
+    <ttfacebookmediahandler id="messageHandler" moduleID="commonMediaHandler" type="facebook"/>
+    <ttdropboxfilesystem id="FS" name="dropbox" timeout="0"/>
+    <ttgooglesearchclient id="messageHandler4"/>
+    <ttbingmediahandler id="messageHandler6" moduleID="bingMediaHandler" type="bing" client="messageHandler7"/>
+    <ttbingsearchclient id="messageHandler7"/>
+    <ttozmediahandler id="messageHandler8" moduleID="commonMediaHandler"/>
+  </objects>
+  <classes>
+    <class className="ttmediahandler" superClassName="messageHandler" packageName="com.adobe.ttpixel.media" codeName="TTMediaHandler">
+      <var name="moduleID" type="string" defaultValue="" codeName="iModuleID"/>
+      <var name="type" type="string" defaultValue="" codeName="iType"/>
+    </class>
+    <class className="ttfacebookmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media.facebook" codeName="TTFacebookMediaHandler"/>
+    <class className="ttflickrmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media.flickr" codeName="TTFlickrMediaHandler"/>
+    <class className="ttlibrarymediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media" codeName="TTLibraryMediaHandler"/>
+    <class className="ttdropboxmediahandler" superClassName="ttfilesystemmediahandler" packageName="com.adobe.ttpixel.media.dropbox" codeName="TTDropboxMediaHandler"/>
+    <class className="ttdropboxfilesystem" superClassName="ttfilesystem" packageName="com.adobe.ttpixel.media.dropbox" codeName="TTDropboxFilesystem"/>
+    <class className="ttcreativecloudfilesystem" superClassName="ttfilesystem" packageName="com.adobe.ttpixel.media.creativecloud" codeName="TTCreativeCloudFilesystem"/>
+    <class className="ttfilesystemmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media" codeName="TTFilesystemMediaHandler">
+      <var name="filesystem" type="object" defaultValue="" codeName="iFilesystem" className="TTFilesystem"/>
+    </class>
+    <class className="ttcreativecloudmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media.creativecloud" codeName="TTCreativeCloudMediaHandler"/>
+    <class className="ttfilesystem" superClassName="fileSystem" packageName="com.adobe.ttpixel.app" codeName="TTFilesystem"/>
+    <class className="ttgooglemediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media.google" codeName="TTGoogleMediaHandler">
+      <var name="client" type="object" defaultValue="" codeName="iClient" className="TTGoogleSearchClient"/>
+    </class>
+    <class className="ttgooglesearchclient" superClassName="messageHandler" packageName="com.adobe.ttpixel.media.google" codeName="TTGoogleSearchClient"/>
+    <class className="ttcamerarollmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media" codeName="TTCameraRollMediaHandler"/>
+    <class className="ttcameramediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.media" codeName="TTCameraMediaHandler"/>
+    <class className="ttbingsearchclient" superClassName="messageHandler" packageName="" codeName="TTBingSearchClient"/>
+    <class className="ttbingmediahandler" superClassName="ttmediahandler" packageName="" codeName="TTBingMediaHandler">
+      <var name="client" type="object" defaultValue="" codeName="iClient" className="TTBingSearchClient"/>
+    </class>
+    <class className="ttozmediahandler" superClassName="ttmediahandler" packageName="com.adobe.ttpixel.oz" codeName="TTOzMediaHandler"/>
+  </classes>
+</module>

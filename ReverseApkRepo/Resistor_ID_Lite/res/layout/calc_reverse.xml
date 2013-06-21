@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0px">
+        <TextView android:textSize="36.0px" android:gravity="center" android:id="@id/TextView02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reverse Lookup" />
+        <TextView android:textSize="12.0px" android:gravity="center" android:id="@id/TextView03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="Find the closest colors based on a specific resistance." />
+    </LinearLayout>
+    <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Resistance (Ω):" />
+        <EditText android:gravity="right|center" android:id="@id/txtRevLookupOhm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btnRevLookupShowResistor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0px" android:text="Show Resistor" />
+    </LinearLayout>
+</LinearLayout>

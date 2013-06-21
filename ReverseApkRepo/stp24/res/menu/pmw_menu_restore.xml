@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_restore_auto" android:title="@string/menu_restore_auto" />
+    <item android:id="@id/menu_restore_user" android:title="@string/menu_restore_user" />
+    <item android:id="@id/menu_restore_system" android:title="@string/menu_restore_system" />
+    <item android:id="@id/menu_restore_sd" android:title="@string/menu_restore_sd" />
+    <item android:id="@id/menu_restore_settings" android:title="@string/menu_restore_settings" />
+    <item android:id="@id/menu_restore_user_no_settings" android:title="@string/menu_restore_user_no_settings" />
+    <item android:id="@id/menu_restore_system_no_settings" android:title="@string/menu_restore_system_no_settings" />
+    <item android:id="@id/menu_restore_sd_no_settings" android:title="@string/menu_restore_sd_no_settings" />
+</menu>

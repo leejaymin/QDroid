@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sms Quick Delete</string>
+    <string name="version">1.23</string>
+    <string name="delete">Delete</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_thread_message">Delete these conversations ?</string>
+    <string name="delete_sms_message">Delete these sms ?</string>
+    <string name="not_select">"You haven't select one to delete."</string>
+    <string name="deleting">Deleting...</string>
+    <string name="me">Me</string>
+    <string name="select_all">Select all</string>
+    <string name="unselect_all">Unselect all</string>
+    <string name="feedback">Feedback</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="feedback_hint">Please input your suggestion here. We will process it as soon as possible. Thanks for keeping interest on Super Sms Quick delete.</string>
+    <string name="feedback_email">E-mail address</string>
+    <string name="feedback_title">Your feedback</string>
+    <string name="submit">Submit</string>
+    <string name="submitting">Submitting...</string>
+    <string name="sned_feedback_success">Send Feedback Success</string>
+    <string name="network_error">network error, try later</string>
+    <string name="content_empty">Content should not be empty</string>
+    <string name="no_subject">(No subject)</string>
+    <string name="delete_messages">Deleting messages....</string>
+    <string name="delete_threads">Deleting threads....</string>
+    <string name="loading">loading...</string>
+    <string name="about">About</string>
+    <string name="about_us">About us</string>
+    <string name="what_we_have_done">What we have done on Android Market</string>
+    <string name="contact">Contact</string>
+    <string name="about_us_content">"Superdroid is a professional team that focuses on android application development.
+Email: superdroid.support@gmail.com 
+Site: http://www.superdroid.net"</string>
+    <string name="click_them_for_detail">Click them to open in market:</string>
+    <string name="spc_title">Super Private Conversation</string>
+    <string name="spc_detail">"Block people(sms/call) you don't like, protect your private information!"</string>
+    <string name="spc_package">com.superdroid.spc</string>
+    <string name="list_title">Super To Do List</string>
+    <string name="list_detail">Simple todo list sync with web site, share with your family.</string>
+    <string name="list_package">com.superdroid.list</string>
+    <string name="nba_title">NBA forum</string>
+    <string name="nba_detail">Forum for every team of NBA, nice place for all basketball fans or NBA fans.</string>
+    <string name="nba_package">com.superdroid.nba</string>
+    <string name="scf_title">Super Call Faker</string>
+    <string name="scf_detail">You can call yourself by a fake number just like a real incoming call</string>
+    <string name="scf_package">com.superdroid.scf</string>
+    <string name="aqd_title">Super Fast Uninstaller</string>
+    <string name="aqd_detail">Uninstall app fast! You never need to wait loading app, faster than other uninstallers!</string>
+    <string name="aqd_package">com.superdroid.aqd</string>
+    <string name="ssf_title">Super Sms Faker</string>
+    <string name="ssf_detail">"You can fake a text message to yourself using other's phone number."</string>
+    <string name="ssf_package">com.superdroid.ssf</string>
+    <string name="ewc_title">Enjoy World Cup</string>
+    <string name="ewc_detail">Forums, groups, teams, matches, Calendar, goals, news, everything for 2010 world cup</string>
+    <string name="ewc_package">com.superdroid.ewc</string>
+    <string name="sclf_title">Super Call Log Faker</string>
+    <string name="sclf_detail">Faker a call log with 3 types: Incoming call/Outgoing call/Missed call</string>
+    <string name="sclf_package">com.superdroid.sclf</string>
+    <string name="security_title">Super Security</string>
+    <string name="security_detail">anti malware,Strongbox,Communitiy based antivirus engine,Missing device find back.</string>
+    <string name="security_package">com.superdroid.security</string>
+</resources>

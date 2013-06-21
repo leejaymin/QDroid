@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 秒</item>
+        <item>30 秒</item>
+        <item>60 秒</item>
+        <item>2 分钟</item>
+        <item>3 分钟</item>
+        <item>4 分钟</item>
+        <item>5 分钟</item>
+        <item>10 分钟</item>
+        <item>30 分钟</item>
+        <item>1 小时</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>应用程序名称</item>
+        <item>综合估计</item>
+        <item>平均估计</item>
+        <item>电流估计</item>
+        <item>即时估计</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>无垂直标记</item>
+        <item>标记每隔一小时</item>
+        <item>每2小时</item>
+        <item>每3小时</item>
+        <item>每4小时</item>
+        <item>每5小时</item>
+        <item>每6小时</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>删除</item>
+        <item>现实 1</item>
+        <item>现实 2</item>
+        <item>黑与白</item>
+        <item>绿/红 1</item>
+        <item>绿/红 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC 风格</item>
+        <item>Sense 3 风格</item>
+        <item>Google 风格</item>
+        <item>Glass 风格</item>
+        <item>ICS 风格</item>
+        <item>HTC 透明风格</item>
+        <item>Sense 3 透明风格</item>
+        <item>Google 透明风格</item>
+        <item>Glass 透明风格</item>
+        <item>ICS 透明风格</item>
+        <item>HTC 隐藏风格</item>
+        <item>Sense 3 隐藏风格</item>
+        <item>Google 隐藏风格</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>删除</item>
+        <item>没有</item>
+        <item>可用 (%)</item>
+        <item>耗用 (%/h)</item>
+        <item>耗用 (mA)</item>
+        <item>耗用 (mW)</item>
+        <item>温度</item>
+        <item>电压 (mV)</item>
+        <item>全域估计</item>
+        <item>即时估计</item>
+        <item>平均估计</item>
+        <item>电流估计</item>
+        <item>自插/拔</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>显示图标</item>
+        <item>可用 (%)</item>
+        <item>耗用 (%/h)</item>
+        <item>耗用 (mA)</item>
+        <item>耗用 (mW)</item>
+        <item>温度</item>
+        <item>电压 (mV)</item>
+        <item>综合估计</item>
+        <item>即时估计</item>
+        <item>平均估计</item>
+        <item>电流估计</item>
+        <item>自插/拔</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>摄氏</item>
+        <item>华氏</item>
+        <item>开氏</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>显示</item>
+        <item>隐患</item>
+        <item>删除</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>可用 (%)</item>
+        <item>耗用 (%/h)</item>
+        <item>耗用 (mA)</item>
+        <item>耗用 (mW)</item>
+        <item>温度</item>
+        <item>电压 (mV)</item>
+        <item>估计</item>
+    </string-array>
+</resources>

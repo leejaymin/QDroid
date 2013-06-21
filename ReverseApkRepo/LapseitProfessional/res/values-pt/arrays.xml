@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ads_titles">
+        <item>&lt;Data>Capture in High Definition with Lapse It Professional &lt;/Data></item>
+        <item>&lt;Data>Still capturing in low definition? &lt;/Data></item>
+        <item>&lt;Data>Support this app development by going Professional &lt;/Data></item>
+    </string-array>
+    <string-array name="ads_descs">
+        <item>&lt;Data>"Time Lapses can be awesome and the image quality is super important !
+So why don’t you capture in High Def next time? "&lt;/Data></item>
+        <item>&lt;Data>"Lapse It professional offer High Def image quality, exclusive effects and more !
+Support the continous app development going Professional "&lt;/Data></item>
+        <item>&lt;Data>"This app is in constant development and will continue to be
+Many cool features are coming, and many more will come with your one time support "&lt;/Data></item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@fraction/key_width" android:keyHeight="@fraction/key_height_lower" android:horizontalGap="@fraction/key_gap_horizontal" android:verticalGap="@fraction/key_gap_vert"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="63510" android:keyEdgeFlags="left" android:keyOutputText="q" android:keyLabel="q" />
+        <Key android:codes="63522" android:keyOutputText="w" android:keyLabel="w" />
+        <Key android:codes="63492" android:keyOutputText="e" android:keyLabel="e" />
+        <Key android:codes="63511" android:keyOutputText="r" android:keyLabel="r" />
+        <Key android:codes="63513" android:keyOutputText="t" android:keyLabel="t" />
+        <Key android:codes="63524" android:keyOutputText="y" android:keyLabel="y" />
+        <Key android:codes="63520" android:keyOutputText="u" android:keyLabel="u" />
+        <Key android:codes="63496" android:keyOutputText="i" android:keyLabel="i" />
+        <Key android:codes="63508" android:keyOutputText="o" android:keyLabel="o" />
+        <Key android:codes="63509" android:keyEdgeFlags="right" android:keyOutputText="p" android:keyLabel="p" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="4.999995%p" android:codes="63488" android:keyEdgeFlags="left" android:keyOutputText="a" android:keyLabel="a" />
+        <Key android:codes="63512" android:keyOutputText="s" android:keyLabel="s" />
+        <Key android:codes="63491" android:keyOutputText="d" android:keyLabel="d" />
+        <Key android:codes="63493" android:keyOutputText="f" android:keyLabel="f" />
+        <Key android:codes="63494" android:keyOutputText="g" android:keyLabel="g" />
+        <Key android:codes="63495" android:keyOutputText="h" android:keyLabel="h" />
+        <Key android:codes="63497" android:keyOutputText="j" android:keyLabel="j" />
+        <Key android:codes="63504" android:keyOutputText="k" android:keyLabel="k" />
+        <Key android:codes="63505" android:keyEdgeFlags="right" android:keyOutputText="l" android:keyLabel="l" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="13.999998%p" android:codes="-1" android:keyEdgeFlags="left" android:isModifier="true" android:isSticky="true" android:iconPreview="@drawable/sym_keyboard_feedback_shift" android:keyIcon="@drawable/sym_keyboard_shift" />
+        <Key android:horizontalGap="0.99999905%p" android:codes="63525" android:keyOutputText="z" android:keyLabel="z" />
+        <Key android:codes="63523" android:keyOutputText="x" android:keyLabel="x" />
+        <Key android:codes="63490" android:keyOutputText="c" android:keyLabel="c" />
+        <Key android:codes="63521" android:keyOutputText="v" android:keyLabel="v" />
+        <Key android:codes="63489" android:keyOutputText="b" android:keyLabel="b" />
+        <Key android:codes="63507" android:keyOutputText="n" android:keyLabel="n" />
+        <Key android:codes="63506" android:keyOutputText="m" android:keyLabel="m" />
+        <Key android:keyWidth="13.999998%p" android:horizontalGap="0.99999905%p" android:codes="67" android:keyEdgeFlags="right" android:isRepeatable="true" android:iconPreview="@drawable/sym_keyboard_feedback_delete" android:keyIcon="@drawable/sym_keyboard_delete" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_with_mic">
+        <Key android:keyWidth="22.000004%p" android:codes="100003" android:keyEdgeFlags="left" android:keyLabel=".?123" />
+        <Key android:keyWidth="10.000002%p" android:horizontalGap="2.9999971%p" android:codes="100010" android:keyIcon="@drawable/key_microphone" />
+        <Key android:keyWidth="39.0%p" android:horizontalGap="0.99999905%p" android:codes="63639" android:isRepeatable="true" android:iconPreview="@drawable/sym_keyboard_feedback_space" android:keyOutputText=" " android:keyIcon="@drawable/sym_keyboard_space" />
+        <Key android:keyWidth="22.000004%p" android:horizontalGap="2.9999971%p" android:codes="66" android:keyEdgeFlags="right" android:keyLabel="Go" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_without_mic">
+        <Key android:keyWidth="22.000004%p" android:codes="100003" android:keyEdgeFlags="left" android:keyLabel=".?123" />
+        <Key android:keyWidth="50.0%p" android:horizontalGap="2.9999971%p" android:codes="63639" android:isRepeatable="true" android:iconPreview="@drawable/sym_keyboard_feedback_space" android:keyOutputText=" " android:keyIcon="@drawable/sym_keyboard_space" />
+        <Key android:keyWidth="22.000004%p" android:horizontalGap="2.9999971%p" android:codes="66" android:keyEdgeFlags="right" android:keyLabel="Go" />
+    </Row>
+</Keyboard>

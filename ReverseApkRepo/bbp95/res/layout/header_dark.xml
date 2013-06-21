@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/stericson.busybox.donate">
+    <RelativeLayout android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/icon" />
+        <stericson.busybox.donate.custom.FontableTextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/header_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text="@string/busybox" android:layout_toRightOf="@id/icon" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

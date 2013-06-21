@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_bys">
+        <item>d|least distant</item>
+        <item>D|most distant</item>
+        <item>g|younger</item>
+        <item>G|older</item>
+        <item>p|least priced</item>
+        <item>P|most priced</item>
+        <item>e|ends earliest</item>
+        <item>E|ends latest</item>
+        <item>o|earliest posted</item>
+        <item>O|latest posted</item>
+        <item>v|least views</item>
+        <item>V|most views</item>
+        <item>b|least bids</item>
+        <item>B|most bids</item>
+        <item>c|least comments</item>
+        <item>C|most comments</item>
+        <item>r|worst ratings</item>
+        <item>R|best ratings</item>
+        <item>w|least watches</item>
+        <item>W|most watches</item>
+    </string-array>
+</resources>

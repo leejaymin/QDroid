@@ -1,0 +1,28 @@
+<ttconvertermanager id="converterManager">
+  <windows/>
+  <menus/>
+  <objects>
+    <ttconverterbytearray id="converterByteArray" converterManager="converterManager"/>
+    <ttconvertermodel id="converterModel" converterManager="converterManager"/>
+    <ttconverterbitmapdata id="converterBitmapData" converterManager="converterManager"/>
+    <ttconverterjpeg id="converterJPEG" converterManager="converterManager"/>
+    <ttconverterpng id="converterPNG" converterManager="converterManager"/>
+    <ttconverterthumbnail id="converterThumbnail" converterManager="converterManager"/>
+    <ttconverterpackedmodel id="converterPackedModel" converterManager="converterManager"/>
+    <ttconverterpsd id="converterPSD" converterManager="converterManager"/>
+  </objects>
+  <classes>
+    <class className="ttconvertermanager" superClassName="module" packageName="com.adobe.ttpixel.convert" codeName="TTConverterManager"/>
+    <class className="ttconverter" superClassName="messageHandler" packageName="com.adobe.ttpixel.convert" codeName="TTConverter">
+      <var name="converterManager" type="object" defaultValue="" codeName="iConverterManager" className="TTConverterManager"/>
+    </class>
+    <class className="ttconverterbytearray" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterByteArray"/>
+    <class className="ttconvertermodel" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterModel"/>
+    <class className="ttconverterbitmapdata" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterBitmapData"/>
+    <class className="ttconverterjpeg" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterJPEG"/>
+    <class className="ttconverterpng" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterPNG"/>
+    <class className="ttconverterthumbnail" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterThumbnail"/>
+    <class className="ttconverterpackedmodel" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterPackedModel"/>
+    <class className="ttconverterpsd" superClassName="ttconverter" packageName="com.adobe.ttpixel.convert" codeName="TTConverterPSD"/>
+  </classes>
+</ttconvertermanager>

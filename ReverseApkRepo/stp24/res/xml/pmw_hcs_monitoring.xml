@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_refresh_rates" android:title="@string/prefs_title_refresh_rate" android:key="@string/PREFSKEY_REFRESH_RATE" android:summary="@string/prefs_summary_refresh_rate" android:defaultValue="@string/prefs_refresh_rate_default" android:entryValues="@array/settings_refresh_rate_values" />
+    <ListPreference android:entries="@array/settings_font_size_entries" android:title="@string/prefs_title_font_size" android:key="@string/PREFSKEY_TM_FONT_SIZE" android:summary="@string/prefs_summary_font_size" android:defaultValue="@string/prefs_font_size_default" android:entryValues="@array/settings_font_size_values" />
+    <CheckBoxPreference android:title="@string/prefs_show_buttons" android:key="@string/PREFSKEY_SHOW_BUTTONS" android:defaultValue="true" android:summaryOn="@string/prefs_show_buttons_on" android:summaryOff="@string/prefs_show_buttons_off" />
+    <PreferenceScreen android:title="@string/prefs_screen_colors" android:summary="@string/prefs_screen_colors_summary" android:fragment="ccc71.pmw.lib.pmw_settings$PrefsMonitorColors" />
+    <PreferenceScreen android:title="@string/prefs_screen_usage" android:summary="@string/prefs_screen_usage_summary" android:fragment="ccc71.pmw.lib.pmw_settings$PrefsMonitorUsage" />
+    <PreferenceScreen android:title="@string/prefs_screen_listview" android:summary="@string/prefs_screen_listview_summary" android:fragment="ccc71.pmw.lib.pmw_settings$PrefsMonitorListView" />
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_database">
+        <CheckBoxPreference android:title="@string/setting_database_sdcard" android:key="use_sdcard" android:summary="@string/setting_database_sdcard_desc" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_budget">
+        <ListPreference android:entries="@array/budget_alert" android:title="@string/setting_budget_alert" android:key="budget_alert" android:summary="@string/setting_budget_alert_desc" android:dialogTitle="@string/title_budget_alert" android:entryValues="@array/budget_alert" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_reminder">
+        <CheckBoxPreference android:title="@string/setting_reminder_service" android:key="reminder_service" android:summary="@string/setting_reminder_service_desc" android:defaultValue="false" />
+        <ListPreference android:entries="@array/reminder_days" android:title="@string/setting_reminder_days" android:key="before_days" android:summary="@string/setting_reminder_days_desc" android:dependency="reminder_service" android:defaultValue="3" android:entryValues="@array/reminder_days" />
+        <Preference android:title="@string/setting_reminder_time" android:key="reminder_time" android:summary="@string/setting_reminder_time_desc" android:dependency="reminder_service" android:defaultValue="08:00" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_widget">
+        <Preference android:title="@string/setting_widget_account" android:key="widget_account" android:summary="@string/setting_widget_account_desc" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_showme">
+        <CheckBoxPreference android:title="@string/setting_showme_service" android:key="show_me" android:summary="@string/setting_showme_service_desc" android:defaultValue="false" />
+        <Preference android:title="@string/setting_showme_account" android:key="show_account" android:summary="@string/setting_showme_account_desc" android:dependency="show_me" />
+    </PreferenceCategory>
+</PreferenceScreen>

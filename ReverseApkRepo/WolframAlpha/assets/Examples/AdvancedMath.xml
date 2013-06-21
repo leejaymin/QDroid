@@ -1,0 +1,7 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Advanced Mathematics</category><section-title>Complex Analysis</section-title><caption>compute properties of a function of a complex variable (use the variable z) </caption><input>e^z</input><input>sqrt(z)</input><section-title>
+ <link ref="VectorAnalysis">Vector Analysis </link>
+</section-title><caption>compute the gradient of a function</caption><input>grad sin(x^2 y)</input><caption>compute the divergence of a vector field</caption><input>div [x^2 sin y, y^2 sin xz, xy sin (cos z)]</input><caption>calculate alternate forms of a vector analysis expression</caption><input>curl (curl F)</input><section-title>
+ <link ref="KnotTheory">Knot Theory </link>
+</section-title><caption>compute properties of a knot</caption><input>trefoil</input><caption>specify a knot using Alexander-Briggs notation</caption><input>8_1 knot</input><caption>compare several knots</caption><input>Stevedore knot, figure eight knot</input><section-title>
+ <link ref="IntegralTransforms">Integral Transforms </link>
+</section-title><caption>compute a Fourier transform</caption><input>Fourier transform exp(-x^2)</input><caption>compute a Laplace transform</caption><input>LT e^t sin 2t</input></example>

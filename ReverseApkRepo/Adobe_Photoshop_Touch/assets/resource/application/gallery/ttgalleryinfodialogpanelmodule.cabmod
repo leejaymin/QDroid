@@ -1,0 +1,34 @@
+<ttbasepanelmodule id="galleryInfoDialogPanelModule" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="350" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="340" height="145" x="2" y="19" module="galleryInfoDialogPanelModule" whiteBackground="true">
+        <text id="textttblack" width="295" height="22" x="20" y="38" text="$$$/ttgalleryinfodialogpanelmodule/text/text/Select project(s) to be deleted.=Select project(s) to be deleted."/>
+        <button id="button" width="145" height="40" sizeY="bottom" x="20" y="85" target="referenceDispatcher" selector="TTGalleryInfoCancel" title="$$$/ttgalleryinfodialogpanelmodule/button/title/Cancel=Cancel"/>
+        <ttnumberedbutton id="button1ttblue" width="145" height="40" sizeX="right" sizeY="bottom" x="175" y="85" target="referenceDispatcher" selector="TTGalleryInfoOk" title="$$$/ttgalleryinfodialogpanelmodule/button/title/OK=OK"/>
+        <text id="ttboldttlargettblack" width="295" height="24" x="20" y="15" text="$$$/ttgalleryinfodialogpanelmodule/text/text/Delete Projects=Delete Projects"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="button" refName="cancelButton"/>
+      <objRef refId="button1ttblue" refName="okButton"/>
+      <objRef refId="ttboldttlargettblack" refName="titleText"/>
+      <objRef refId="textttblack" refName="subtitleText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+    <class className="ttgalleryinfodialogview" superClassName="view" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryInfoDialogView"/>
+    <class className="ttnumberedbutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTNumberedButton"/>
+  </classes>
+</ttbasepanelmodule>

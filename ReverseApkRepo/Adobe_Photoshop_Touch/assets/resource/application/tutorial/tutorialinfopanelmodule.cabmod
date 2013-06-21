@@ -1,0 +1,56 @@
+<ttbasepanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="1200" height="800" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="1170" height="750" x="10" y="10" module="module">
+        <imageView id="imageView2" width="1170" height="50" sizeX="scale" x="0" y="0" image="galleryTopBarBackground" fit="true">
+          <button id="button" width="50" height="50" x="2" y="0" target="module" selector="closeTutorialInfo" type="tool" image="backButton"/>
+          <text id="ttboldttlarge" width="390" height="22" x="56" y="14" text="$$$/tutorialinfopanelmodule/text/text/Tutorial Information=Tutorial Information"/>
+        </imageView>
+        <view id="view2" width="1030" height="590" sizeX="scale" sizeY="center" x="70" y="110">
+          <imageView id="imageView" width="200" height="200" x="0" y="-1" constrain="true"/>
+          <text id="text" width="720" height="50" x="230" y="9" text="$$$/tutorialinfopanelmodule/text/text/Title=Title" textSize="36"/>
+          <text id="text11" width="450" height="130" sizeX="scale" x="230" y="69" text="$$$/tutorialinfopanelmodule/text/text/By Adobe=By Adobe" textSize="18"/>
+          <text id="text12" width="310" height="30" sizeX="right" x="720" y="66" text="$$$/tutorialinfopanelmodule/text/text/Category: Dropshadow=Category: Dropshadow" textSize="18"/>
+          <button id="ttblue" width="210" height="40" sizeX="right" x="720" y="114" target="module" selector="startTutorial" title="$$$/tutorialinfopanelmodule/button/title/Begin Tutorial=Begin Tutorial"/>
+          <decor id="decor" width="1030" height="18" sizeX="scale" x="0" y="219" style="hline"/>
+          <text id="text13ttlargettbold" width="160" height="30" x="0" y="560" text="$$$/tutorialinfopanelmodule/text/text/Before=Before"/>
+          <text id="text131ttlargettbold" width="160" height="30" x="400" y="560" text="$$$/tutorialinfopanelmodule/text/text/After=After"/>
+          <ttimageview id="imageView1" width="370" height="290" x="0" y="260"/>
+          <ttimageview id="imageView11" width="370" height="290" x="400" y="260"/>
+        </view>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView" refName="imageView"/>
+      <objRef refId="text" refName="titleText"/>
+      <objRef refId="text11" refName="descText"/>
+      <objRef refId="text12" refName="categoryText"/>
+      <objRef refId="imageView1" refName="beforeImageView"/>
+      <objRef refId="imageView11" refName="afterImageView"/>
+      <objRef refId="text13ttlargettbold" refName="beforeText"/>
+      <objRef refId="text131ttlargettbold" refName="afterText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+    </class>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="tttutorialbrowserview" superClassName="view" packageName="com.adobe.ttpixel.tutorial" codeName="TTTutorialBrowserView"/>
+    <class className="ttimageview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTImageView"/>
+  </classes>
+</ttbasepanelmodule>

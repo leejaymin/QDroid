@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="48.0px" android:layout_marginTop="10.0px" android:src="@drawable/business" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tap Money Tracker" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0sp" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_version_label" android:paddingBottom="5.0sp" android:layout_width="60.0sp" android:layout_height="wrap_content" android:text="Version" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_version" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1.0.6" android:layout_toRightOf="@id/tv_version_label" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_auth_label" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Author" android:layout_below="@id/tv_version_label" android:layout_alignLeft="@id/tv_version_label" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_auth" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Josh Chang" android:layout_below="@id/tv_version_label" android:layout_alignLeft="@id/tv_version" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_web_label" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Website" android:layout_below="@id/tv_auth_label" android:layout_alignLeft="@id/tv_version_label" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:autoLink="web" android:id="@id/tv_web" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="http://android.wareone.com" android:layout_below="@id/tv_auth_label" android:layout_alignLeft="@id/tv_version" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_mail_label" android:paddingBottom="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mail" android:layout_below="@id/tv_web_label" android:layout_alignLeft="@id/tv_version_label" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:autoLink="email" android:id="@id/tv_mail" android:paddingBottom="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="josh@wareone.com" android:layout_below="@id/tv_web_label" android:layout_alignLeft="@id/tv_version" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Copyright © 2009 Wareone.com" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="All rights reserved" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

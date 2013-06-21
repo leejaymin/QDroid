@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="numphotos">
+        <item quantity="other">photos du %d</item>
+        <item quantity="one">1 photo</item>
+    </plurals>
+    <plurals name="selectedseveral">
+        <item quantity="other">Les photos de %d sont sélectionnées</item>
+        <item quantity="one">1 photo sélectionnée</item>
+    </plurals>
+    <plurals name="deleteseveral">
+        <item quantity="other">Supprimer les photos de %d ?</item>
+        <item quantity="one">Supprimer 1 photo ?</item>
+    </plurals>
+    <plurals name="deleteburst">
+        <item quantity="other">Êtes-vous sûr de vouloir supprimer cette rafale ? (Toutes les photos du %d seront supprimées)</item>
+        <item quantity="one">Êtes-vous sûr de vouloir supprimer cette rafale ? (Une photo sera supprimée)</item>
+    </plurals>
+</resources>

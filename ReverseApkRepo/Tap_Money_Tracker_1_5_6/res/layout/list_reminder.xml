@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?itemBackgroundColor" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?itemTextColor" android:id="@id/tv_alert_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="So-net ADSL" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?itemTextSecondaryColor" android:id="@id/tv_repeat" android:paddingLeft="8.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="25th of every month" android:layout_weight="1.0" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?itemTextSecondaryColor" android:id="@id/tv_next" android:paddingLeft="8.0px" android:paddingRight="8.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2009-08-24" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/iv_active" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

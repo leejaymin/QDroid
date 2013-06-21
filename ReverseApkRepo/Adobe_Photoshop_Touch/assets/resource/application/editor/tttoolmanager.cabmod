@@ -1,0 +1,72 @@
+<tttoolmanager id="module">
+  <windows/>
+  <menus/>
+  <objects>
+    <ttmarqueeselectiontool id="marqueeSelectionTool" toolmanager="module" iconID="toolIconSelectionRect" settingsModuleID="rectShapeSelectionToolSettings" category="marqueeSelection" toolIdent="SelectionMarquee" name="$$$/tttoolmanager/tttool/name/Marquee Selection Tool=Marquee Selection Tool" trackingname="Marquee Selection"/>
+    <ttmarqueeselectiontool id="circleSelectionTool" toolmanager="module" iconID="toolIconSelectionCircle" settingsModuleID="shapeSelectionToolSettings" category="marqueeSelection" toolIdent="SelectionCircle" name="$$$/tttoolmanager/tttool/name/Circle Selection Tool=Circle Selection Tool" trackingname="Circle Selection" type="1"/>
+    <ttlassoselectiontool id="lassoSelectionTool" toolmanager="module" iconID="toolIconSelectionLasso" settingsModuleID="shapeSelectionToolSettings" category="lassoSelection" toolIdent="SelectionLasso" name="$$$/tttoolmanager/tttool/name/Lasso Selection Tool=Lasso Selection Tool" trackingname="Lasso Selection"/>
+    <ttpolylassoselectiontool id="polygoneSelectionTool" toolmanager="module" iconID="toolIconSelectionPolyLasso" settingsModuleID="shapeSelectionToolSettings" category="lassoSelection" toolIdent="SelectionPolyLasso" name="$$$/tttoolmanager/tttool/name/Polygon Selection Tool=Polygon Selection Tool" trackingname="Polygone Selection"/>
+    <ttmagicwandtool id="magicWandTool" toolmanager="module" iconID="toolIconMagicWand" settingsModuleID="magicWandToolSettings" category="advancedSelection" toolIdent="SelectionMagicWand" name="$$$/tttoolmanager/tttool/name/Magic Wand Tool=Magic Wand Tool" trackingname="Magic Wand" continuous="true"/>
+    <ttscribbleselectiontool id="scribbleSelectionTool" toolmanager="module" iconID="toolIconScribbleSelection" settingsModuleID="scribbleSelectionToolSettings" category="advancedSelection" toolIdent="ScribbleSelection" name="$$$/tttoolmanager/tttool/name/Scribble Selection Tool=Scribble Selection Tool" trackingname="Scribble Selection"/>
+    <ttbrushselectiontool id="brushSelectionTool" toolmanager="module" iconID="toolIconSelectionBrush" settingsModuleID="brushSelectionToolSettings" category="advancedSelection" toolIdent="SelectionBrush" name="$$$/tttoolmanager/tttool/name/Brush Selection Tool=Brush Selection Tool" trackingname="Brush Selection" useMerged="false"/>
+    <ttpainttool id="paintTool" toolmanager="module" iconID="toolIconBrush" settingsModuleID="paintToolSettings" category="paint" toolIdent="BrushPaint" name="$$$/tttoolmanager/tttool/name/Paint Tool=Paint Tool" trackingname="Paint" mode="paint"/>
+    <tteffectpainttool id="paintEffectTool" toolmanager="module" iconID="toolIconEffectBrush" settingsModuleID="effectPaintToolSettings" category="paint" toolIdent="BrushEffectPaint" name="$$$/tttoolmanager/tttool/name/Effects Paint Tool=Effects Paint Tool" trackingname="EffectPaint" mode="paint"/>
+    <ttpainttool id="sprayTool" toolmanager="module" iconID="toolIconSpray" settingsModuleID="paintToolSettings" category="paint" toolIdent="BrushSpray" name="$$$/tttoolmanager/tttool/name/Spray Tool=Spray Tool" trackingname="Spray" mode="spray"/>
+    <ttclonetool id="cloneTool" toolmanager="module" iconID="toolIconCloneStamp" settingsModuleID="cloneToolSettings" category="clone" toolIdent="CloneStamp" name="$$$/tttoolmanager/tttool/name/Clone Stamp Tool=Clone Stamp Tool" trackingname="Clone Stamp" mode="paint"/>
+    <tthealingtool id="healingTool" toolmanager="module" iconID="toolIconHeal" settingsModuleID="cloneToolSettings" category="clone" toolIdent="Healing" name="$$$/tttoolmanager/tttool/name/Healing Brush Tool=Healing Brush Tool" trackingname="Healing Brush" mode="paint"/>
+    <ttedgebrushtool id="eraserTool" toolmanager="module" iconID="toolIconEraser" settingsModuleID="brushToolSettings" category="eraser" toolIdent="BrushErase" name="$$$/tttoolmanager/tttool/name/Eraser Tool=Eraser Tool" trackingname="Eraser" mode="erase"/>
+    <ttblurtool id="blurTool" toolmanager="module" iconID="toolIconBlur" settingsModuleID="blurToolSettings" category="effect" toolIdent="Blur" name="$$$/tttoolmanager/tttool/name/Blur Tool=Blur Tool" trackingname="Blur" mode="paint"/>
+    <ttsmudgetool id="smudgeTool" toolmanager="module" iconID="toolIconSmudge" settingsModuleID="smudgeToolSettings" category="effect" toolIdent="Smudge" name="$$$/tttoolmanager/tttool/name/Smudge Tool=Smudge Tool" trackingname="Smudge" mode="paint"/>
+  </objects>
+  <classes>
+    <class className="tttoolmanager" superClassName="module" packageName="com.adobe.ttpixel.editor.tool" codeName="TTToolManager"/>
+    <class className="tttool" superClassName="messageHandler" packageName="com.adobe.ttpixel.editor.tool" codeName="TTTool">
+      <var name="toolmanager" type="object" defaultValue="" codeName="iToolManager" className="TTToolManager"/>
+      <var name="iconID" type="string" defaultValue="" codeName="iIconID"/>
+      <var name="settingsModuleID" type="string" defaultValue="" codeName="iSettingsModuleID"/>
+      <var name="category" type="string" defaultValue="selection" codeName="iCategory"/>
+      <var name="toolIdent" type="string" defaultValue="" codeName="iToolIdent"/>
+      <var name="name" type="locstring" defaultValue="" codeName="iName"/>
+      <var name="trackingname" type="string" defaultValue="" codeName="iTrackingName"/>
+    </class>
+    <class className="ttbrushtool" superClassName="tttool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTBrushTool">
+      <var name="mode" type="string" defaultValue="" codeName="iMode"/>
+    </class>
+    <class className="ttselectiontool" superClassName="tttool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTSelectionTool"/>
+    <class className="ttshapeselectiontool" superClassName="ttselectiontool" packageName="" codeName="TTShapeSelectionTool">
+      <var name="feather" type="int" defaultValue="0" codeName="iFeather"/>
+      <var name="antiAlias" type="boolean" defaultValue="true" codeName="iAntiAlias"/>
+    </class>
+    <class className="ttmarqueeselectiontool" superClassName="ttshapeselectiontool" packageName="" codeName="TTMarqueeSelectionTool">
+      <var name="type" type="int" defaultValue="0" codeName="iType"/>
+    </class>
+    <class className="ttlassoselectiontool" superClassName="ttshapeselectiontool" packageName="" codeName="TTLassoSelectionTool"/>
+    <class className="ttmagicwandtool" superClassName="ttselectiontool" packageName="" codeName="TTMagicWandTool">
+      <var name="tolerance" type="number" defaultValue="30" codeName="iTolerance"/>
+      <var name="continuous" type="boolean" defaultValue="false" codeName="iContinuous"/>
+      <var name="live" type="boolean" defaultValue="false" codeName="iLive"/>
+      <var name="antiAlias" type="boolean" defaultValue="true" codeName="iAntiAlias"/>
+    </class>
+    <class className="ttedgebrushtool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTEdgeBrushTool"/>
+    <class className="ttpainttool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTPaintTool"/>
+    <class className="tteffectpainttool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTEffectPaintTool"/>
+    <class className="ttclonetool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTCloneTool"/>
+    <class className="ttfiltertool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTFilterTool"/>
+    <class className="ttblurtool" superClassName="ttfiltertool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTBlurTool"/>
+    <class className="ttsmudgetool" superClassName="ttfiltertool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTSmudgeTool"/>
+    <class className="tthealingtool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTHealingTool"/>
+    <class className="ttbrushselectiontool" superClassName="ttselectiontool" packageName="" codeName="TTBrushSelectionTool">
+      <var name="sensivity" type="number" defaultValue="0.75" codeName="iSensitivity"/>
+      <var name="edgeAware" type="boolean" defaultValue="true" codeName="iEdgeAware"/>
+      <var name="useMerged" type="boolean" defaultValue="true" codeName="iUseMerged"/>
+    </class>
+    <class className="tteasyselectiontool" superClassName="ttselectiontool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTEasySelectionTool"/>
+    <class className="ttscribbleselectiontool" superClassName="ttselectiontool" packageName="" codeName="TTScribbleSelectionTool">
+      <var name="useMerged" type="boolean" defaultValue="false" codeName="iUseMerged"/>
+      <var name="type" type="int" defaultValue="0" codeName="iType"/>
+    </class>
+    <class className="edgebrushtool" superClassName="ttbrushtool" packageName="package" codeName="TTEdgeBrushTool"/>
+    <class className="ttpolylassoselectiontool" superClassName="ttshapeselectiontool" packageName="" codeName="TTPolyLassoSelectionTool"/>
+    <class className="ttpixeldrawtool" superClassName="ttbrushtool" packageName="com.adobe.ttpixel.editor.tool" codeName="TTPixelDrawTool"/>
+  </classes>
+</tttoolmanager>

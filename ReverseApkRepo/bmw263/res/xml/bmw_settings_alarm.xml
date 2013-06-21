@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/prefs_screen_alarm" android:summary="@string/prefs_screen_alarm_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs_category_notif">
+        <CheckBoxPreference android:title="@string/prefs_title_notif_enable" android:key="@string/PREFSKEY_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_notif_enable_on" android:summaryOff="@string/prefs_notif_enable_off" />
+        <Preference android:title="@string/prefs_title_notif_type" android:key="@string/PREFSKEY_SET_PACKAGES" android:summary="@string/prefs_summary_notif_type" android:dependency="@string/PREFSKEY_NOTIF" />
+        <ListPreference android:entries="@array/settings_notification_text_entries" android:title="@string/prefs_title_notification_text" android:key="@string/PREFSKEY_NOTIFICATION_TEXT" android:summary="@string/prefs_summary_notification_text" android:dependency="@string/PREFSKEY_NOTIF" android:defaultValue="0" android:entryValues="@array/settings_notification_text_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_category_alarm">
+        <CheckBoxPreference android:title="@string/prefs_title_alarm_notification" android:key="@string/PREFSKEY_ALARM_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_alarm_notification_on" android:summaryOff="@string/prefs_alarm_notification_off" />
+        <CheckBoxPreference android:title="@string/prefs_title_alarm_vibrate" android:key="@string/PREFSKEY_ALARM_VIBRATE" android:dependency="@string/PREFSKEY_ALARM_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_alarm_vibrate_on" android:summaryOff="@string/prefs_alarm_vibrate_off" />
+        <CheckBoxPreference android:title="@string/prefs_alarm_led_title" android:key="@string/PREFSKEY_NOTIFICATION_LED" android:dependency="@string/PREFSKEY_ALARM_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_alarm_led_on" android:summaryOff="@string/prefs_alarm_led_off" />
+        <CheckBoxPreference android:title="@string/prefs_repeat_alarm_title" android:key="@string/PREFSKEY_NOTIFICATION_REPEAT" android:dependency="@string/PREFSKEY_ALARM_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_repeat_alarm_on" android:summaryOff="@string/prefs_repeat_alarm_off" />
+        <RingtonePreference android:title="@string/prefs_title_full_alarm" android:key="@string/PREFSKEY_FULL_ALARM" android:summary="@string/prefs_summary_full_alarm" android:ringtoneType="all" android:showDefault="false" android:showSilent="true" />
+        <RingtonePreference android:title="@string/prefs_title_full_zero" android:key="@string/PREFSKEY_FULL_ZERO" android:summary="@string/prefs_summary_full_zero" android:ringtoneType="all" android:showDefault="false" android:showSilent="true" />
+        <RingtonePreference android:title="@string/prefs_title_volt_alarm" android:key="@string/PREFSKEY_ALARM_VOLT" android:summary="@string/prefs_summary_volt_alarm" android:ringtoneType="all" android:showDefault="false" android:showSilent="true" />
+        <EditTextPreference android:enabled="false" android:title="@string/prefs_title_hvolt_level" android:key="@string/PREFSKEY_ALARM_HVOLT" android:summary="@string/prefs_summary_hvolt_level" android:defaultValue="4200" />
+        <EditTextPreference android:enabled="false" android:title="@string/prefs_title_lvolt_level" android:key="@string/PREFSKEY_ALARM_LVOLT" android:summary="@string/prefs_summary_lvolt_level" android:defaultValue="3500" />
+        <RingtonePreference android:title="@string/prefs_title_temp_alarm" android:key="@string/PREFSKEY_ALARM_TEMP" android:summary="@string/prefs_summary_temp_alarm" android:ringtoneType="all" android:showDefault="false" android:showSilent="true" />
+        <EditTextPreference android:enabled="false" android:title="@string/prefs_title_temp_level" android:key="@string/PREFSKEY_ALARM_HTEMP" android:summary="@string/prefs_summary_temp_level" android:defaultValue="45" />
+    </PreferenceCategory>
+</PreferenceScreen>

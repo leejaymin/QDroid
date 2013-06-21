@@ -1,0 +1,46 @@
+<ttcommenttexteditpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="660" height="500" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="636" height="462" sizeX="scale" sizeY="scale" x="10" y="10" module="module">
+        <decor id="decor" width="8" height="344" sizeX="right" sizeY="scale" x="152" y="50" style="vline"/>
+        <imageView id="imageView" width="636" height="50" sizeX="scale" x="0" y="0" image="mediaBackgroundClip" fit="true">
+          <text id="ttboldtextttlarge" width="300" height="26" x="15" y="15" text="$$$/ttcommenttexteditpanelmodule/text/text/Add a New Comment=Add a New Comment"/>
+        </imageView>
+        <imageView id="imageView2" width="200" height="200" acceptsMouse="false" x="30" y="80" image="galleryFolderClip" fit="true" constrain="true"/>
+        <tttextfield id="control" width="385" height="200" x="245" y="80" target="module" selector="text" multiline="true">
+          <text id="ttboldtext1" width="375" height="35" sizeX="scale" mouseEnabled="false" acceptsMouse="false" x="10" y="0" text="$$$/ttcommenttexteditpanelmodule/text/text/Type comment here=Type comment here"/>
+        </tttextfield>
+        <imageView id="imageView1" width="636" height="68" sizeX="scale" sizeY="bottom" x="0" y="394" image="galleryInfoDialogClip" fit="true">
+          <button id="button" width="150" height="40" sizeX="center" x="170" y="14" target="module" selector="textEditingCanceled" title="$$$/ttcommenttexteditpanelmodule/button/title/Cancel=Cancel"/>
+          <button id="button1ttblue" width="150" height="40" sizeX="center" x="330" y="14" target="module" selector="textEditingDone" enabled="false" title="$$$/ttcommenttexteditpanelmodule/button/title/Share=Share"/>
+        </imageView>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView2" refName="imageView"/>
+      <objRef refId="control" refName="editTextField"/>
+      <objRef refId="ttboldtext1" refName="hintText"/>
+      <objRef refId="button" refName="cancelButton"/>
+      <objRef refId="button1ttblue" refName="shareButton"/>
+      <objRef refId="imageView1" refName="bottomImageView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="tttextfield" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTTextField">
+      <var name="multiline" type="boolean" defaultValue="false" codeName="multiline"/>
+      <var name="canDeleteText" type="boolean" defaultValue="true" codeName="iCanDeleteText"/>
+    </class>
+    <class className="ttcommenttexteditpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.media.facebook" codeName="TTCommentTextEditPanelModule"/>
+  </classes>
+</ttcommenttexteditpanelmodule>

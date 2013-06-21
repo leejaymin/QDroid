@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shadow_color">#ff000000</color>
+    <color name="text_color">#ffffff00</color>
+    <color name="light_color">#ff8080ff</color>
+    <color name="timer_color">#ffff0000</color>
+    <color name="startscreentext">#ffffffff</color>
+    <color name="startscreentextbackground">#80000000</color>
+    <color name="buttontextcolor">#ff000000</color>
+    <color name="buttonbackgroundcolor">#80ffffff</color>
+</resources>

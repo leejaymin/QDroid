@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <TableLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TableRow android:id="@id/battery_names">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_battery_title" />
+                </TableRow>
+                <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <TableRow>
+                    <TextView android:textSize="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text=" " />
+                    <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/header_battery_est" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_span="1" android:text="@string/text_battery_estimates" />
+                </TableRow>
+                <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <TableRow android:id="@id/battery_ac_charge_est">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/battery_ac_charge_est" />
+                </TableRow>
+                <TableRow android:id="@id/battery_usb_charge_est">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/battery_usb_charge_est" />
+                </TableRow>
+                <TableRow android:id="@id/battery_discharge_est">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/battery_discharge_est" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:textSize="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text=" " />
+                    <TextView android:textSize="14.0dip" android:gravity="center" android:id="@id/header_battery_hist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_span="5" android:text="@string/text_battery_hist" />
+                </TableRow>
+                <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                <TableRow android:id="@id/battery_volt">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mV" />
+                </TableRow>
+                <TableRow android:id="@id/battery_percent">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                </TableRow>
+                <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                <TableRow android:id="@id/battery_originals">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_original_capacity" />
+                </TableRow>
+                <TableRow android:id="@id/battery_in_use">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_stored_capacity" />
+                </TableRow>
+                <TableRow android:id="@id/battery_measured">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:id="@id/text_estimated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="1" android:text="@string/text_measured_mA" />
+                </TableRow>
+                <TableRow android:id="@id/battery_aging">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_total_capacity" />
+                </TableRow>
+                <TableRow android:id="@id/battery_precision">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+                </TableRow>
+                <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                <TableRow android:id="@id/battery_edit">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+                </TableRow>
+                <TableRow android:id="@id/battery_delete">
+                    <TextView android:textSize="16.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>

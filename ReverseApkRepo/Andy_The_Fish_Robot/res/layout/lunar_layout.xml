@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.bilont.android.andythefishrobot">
+    <com.bilont.android.andythefishrobot.LunarView android:id="@id/lunar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="#eeffffff" android:gravity="center_horizontal" android:id="@id/text" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lunar_layout_text_text" android:layout_centerInParent="true" />
+        <com.admob.android.ads.AdView android:id="@id/ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:backgroundColor="#ff000000" app:textColor="#ffffffff" app:keywords="Android game" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>लाइट (डिफ़ॉल्ट)</item>
+        <item>अंधेरा</item>
+        <item>नीला</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>स्वचालित (डिफ़ॉल्ट)</item>
+        <item>क्षैतिज</item>
+        <item>कार्यक्षेत्र</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>तयशुदा</item>
+        <item>उससे बड़ा</item>
+        <item>सबसे बड़ा</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>होम स्क्रीन</item>
+        <item>वरीयताएँ</item>
+    </string-array>
+</resources>

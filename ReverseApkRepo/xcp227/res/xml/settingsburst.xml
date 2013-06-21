@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/set_burst_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/set_burst_delay_title" android:key="burstdelay" android:summary="@string/set_burst_delay_summary" />
+    <EditTextPreference android:title="@string/set_burst_nrpics_title" android:key="burstnrpics" />
+    <CheckBoxPreference android:title="@string/set_burst_af_title" android:key="burst_af" android:summary="@string/set_burst_af_summary" />
+</PreferenceScreen>

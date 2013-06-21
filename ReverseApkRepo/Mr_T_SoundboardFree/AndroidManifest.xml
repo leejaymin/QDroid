@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3" android:versionName="2.0.1" package="com.clearandvalid.soundboard.mrtfree"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="3" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14c421464e9c65" />
+        <activity android:label="@string/app_name" android:name=".MrTFree">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:label="@string/about_title" android:name=".About" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

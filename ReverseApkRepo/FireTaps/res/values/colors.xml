@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#ff330000</color>
+    <color name="background_transparent">#e0330000</color>
+    <color name="base">#ffffff80</color>
+    <color name="disabled_text">#ff280000</color>
+    <color name="shadow">#ff101010</color>
+    <color name="button_text">#ffffa400</color>
+    <color name="button_text_pressed">#ffdf5400</color>
+    <color name="selected">#ffffbf00</color>
+    <color name="string0">#ff22ff22</color>
+    <color name="string1">#ffff2222</color>
+    <color name="string2">#ffffff22</color>
+</resources>

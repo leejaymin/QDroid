@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mid_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/dialog_forgot_question" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:gravity="fill_horizontal" android:id="@id/tv_forgot_pattern_question" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scrollHorizontally="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/dialog_forgot_answer" />
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:gravity="fill_horizontal" android:id="@id/et_forgot_pattern_answer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:scrollHorizontally="true" android:inputType="text" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/ButtonBar">
+        <Button android:ellipsize="marquee" android:id="@id/btn_forgot_pattern_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dialog_forgot_button_ok" android:singleLine="true" android:layout_weight="1.0" />
+        <Button android:ellipsize="marquee" android:id="@id/btn_forgot_pattern_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dialog_forgot_button_cancel" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:CSeekBar="http://schemas.android.com/apk/res/com.rookiestudio.perfectviewer">
+    <PreferenceScreen android:title="@string/file_browser_name" android:summary="@string/file_browser_summary">
+        <CheckBoxPreference android:title="@string/perf_sort_folder_first" android:key="SortFolderFirst" android:summary="" android:defaultValue="true" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/file_sort" android:key="FileBrowserSort" android:summary="" android:defaultValue="1" />
+        <CheckBoxPreference android:title="@string/back_upper_folder" android:key="AutoBackUpperFolder" android:summary="@string/back_upper_folder_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/show_hidden_files" android:key="ShowHideFiles" android:summary="" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/show_file_extension" android:key="ShowFileExtName" android:summary="" android:defaultValue="false" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/thumbnail_smooth" android:key="ThumbSmoothFilter" android:defaultValue="2" />
+        <CheckBoxPreference android:title="@string/crop_thumbnail" android:key="CropThumbnail" android:summary="@string/perf_need_restart" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/save_thumbnail" android:key="SaveThumbnail" android:summary="@string/save_thumbnail_summary" android:defaultValue="false" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/archive_file_behavior" android:key="OpenArchiveDo" android:defaultValue="0" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/bookshelf_setting" android:summary="">
+        <CheckBoxPreference android:title="@string/incremental_scan" android:key="IncrementalScan" android:summary="@string/incremental_scan_summary" android:defaultValue="true" />
+        <com.rookiestudio.customize.ImageListPreference android:title="@string/bookshelf_background" android:key="BookshelfBGType" android:defaultValue="1" />
+        <Preference android:title="@string/font_color" android:key="BookshelfTitleColor" android:summary="" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/font_effect" android:key="BookshelfTitleEffect" android:defaultValue="3" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/book_cover_smooth" android:key="BookCoverSmoothFilter" android:defaultValue="2" />
+        <Preference android:title="@string/bookshelf_folder_management" android:key="BookshelfFolderManagement" android:summary="" android:defaultValue="" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/perf_touch_screen" android:summary="@string/perf_touch_screen_summary">
+        <CheckBoxPreference android:title="@string/perf_fullscreen" android:key="UseFullScreen" android:summary="@string/perf_need_restart" android:defaultValue="true" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/screen_orientation" android:key="ScreenOrientation" android:defaultValue="0" />
+        <CheckBoxPreference android:title="@string/perf_touch_rotate" android:key="TouchRegionNoRotate" android:summary="@string/perf_touch_rotate_summary" android:defaultValue="false" />
+        <PreferenceCategory android:title="@string/pref_backlight">
+            <CheckBoxPreference android:title="@string/perf_touch_keep_backlight" android:key="KeepScreenOn" android:summary="@string/perf_need_restart" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/pref_backlight_control" android:key="EnableBrightnessControl" android:summary="@string/pref_backlight_control_summary" android:defaultValue="false" />
+            <com.rookiestudio.customize.SeekBarPreference android:max="10" android:text="" android:title="@string/pref_backlight_brightness" android:key="ScreenBrightness" android:summary="" android:dependency="EnableBrightnessControl" android:defaultValue="5" android:dialogTitle="@string/pref_backlight_brightness" CSeekBar:min="1" CSeekBar:step="1" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/pref_browse_navigate" android:summary="@string/pref_browse_navigate_summary">
+        <com.rookiestudio.customize.IntListPreference android:title="@string/perf_reading_direction" android:key="OpenPageDirection" android:defaultValue="0" />
+        <CheckBoxPreference android:title="@string/perf_open_next_previous" android:key="AutoOpenNext" android:summary="@string/perf_open_next_previous_summary" android:defaultValue="false" />
+        <com.rookiestudio.customize.SeekBarPreference android:max="100" android:text="%" android:title="@string/pref_scroll_distance" android:key="ScrollDistance" android:summary="" android:defaultValue="80" android:dialogTitle="@string/pref_scroll_distance" CSeekBar:min="10" CSeekBar:step="10" />
+        <CheckBoxPreference android:title="@string/perf_image_cache" android:key="EnableImageCache" android:summary="@string/perf_image_cache_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/perf_cache_scaled" android:key="EnableCacheScaledImage" android:summary="@string/perf_cache_scaled_summary" android:defaultValue="true" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/page_transitions" android:key="PageTransition" android:summary="" android:defaultValue="0" />
+        <com.rookiestudio.customize.NumberPickerPreference android:max="2000" android:text="@string/milliseconds" android:title="@string/page_transitions_speed" android:key="PageTransitionSpeed" android:summary="" android:defaultValue="400" android:dialogTitle="@string/page_transitions_speed" CSeekBar:min="200" CSeekBar:step="100" />
+        <PreferenceCategory android:title="@string/slideshow">
+            <com.rookiestudio.customize.NumberPickerPreference android:max="120" android:text="@string/seconds" android:title="@string/slideshow_speed" android:key="SlideshowSpeed" android:summary="" android:defaultValue="5" android:dialogTitle="@string/page_transitions_speed" CSeekBar:min="1" />
+            <com.rookiestudio.customize.IntListPreference android:title="@string/slideshow_transitions" android:key="SlideshowTransition" android:summary="" android:defaultValue="0" />
+            <com.rookiestudio.customize.NumberPickerPreference android:max="2000" android:text="@string/milliseconds" android:title="@string/slideshow_transitions_speed" android:key="SlideshowTransitionSpeed" android:summary="" android:defaultValue="400" android:dialogTitle="@string/slideshow_transitions_speed" CSeekBar:min="200" CSeekBar:step="100" />
+            <CheckBoxPreference android:title="@string/slideshow_random" android:key="SlideshowRandom" android:summary="" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/slideshow_loop" android:key="SlideshowLoop" android:summary="@string/slideshow_loop_summary" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/perf_key_setup" android:summary="@string/perf_key_setup_summary">
+        <CheckBoxPreference android:title="@string/enable_touch_control" android:key="EnableTouchZone" android:summary="" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/enable_multi_touch_control" android:key="EnableMultiTouch" android:summary="" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_enable_fling_gesture" android:key="EnableFlingGesture" android:summary="" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/enable_long_tap" android:key="EnableLongTap" android:summary="" android:defaultValue="true" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/gesture_change_page" android:key="GestureChangePage" android:defaultValue="0" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/key_back2" android:key="KeyGoBack2" android:defaultValue="0" />
+        <Preference android:title="@string/hardware_key_management" android:key="HardwareKeyManagement" android:summary="" android:defaultValue="" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/perf_display_screen" android:summary="@string/perf_display_screen_summary">
+        <CheckBoxPreference android:title="@string/show_read_mark" android:key="ShowReadMark" android:summary="" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/show_loading_message" android:key="ShowLoadingMessage" android:summary="" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/draw_page_shadow" android:key="DrawPageShadow" android:summary="@string/draw_page_shadow_summary" android:defaultValue="true" />
+        <com.rookiestudio.customize.SeekBarPreference android:max="20" android:text=" %" android:title="@string/page_shadow_size" android:key="PageShadowSize" android:summary="" android:defaultValue="5" android:dialogTitle="@string/page_shadow_size" CSeekBar:min="1" CSeekBar:step="1" />
+        <Preference android:title="@string/perf_page_background" android:key="BackgroundColor" android:summary="" />
+        <PreferenceCategory android:title="@string/show_clock">
+            <CheckBoxPreference android:title="@string/enable" android:key="ShowClock" android:summary="" android:defaultValue="false" />
+            <Preference android:title="@string/color" android:key="ShowClockColor" android:summary="" />
+            <com.rookiestudio.customize.IntListPreference android:title="@string/font_size" android:key="ShowClockSize" android:defaultValue="0" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/perf_page_header">
+            <com.rookiestudio.customize.IntListPreference android:title="@string/show_what" android:key="ShowHeaderMode" android:defaultValue="0" />
+            <com.rookiestudio.customize.NumberPickerPreference android:max="10" android:text="@string/seconds" android:title="@string/duration" android:key="ShowHeaderDelay" android:summary="" android:defaultValue="0" android:dialogTitle="@string/duration" CSeekBar:min="0" />
+            <Preference android:title="@string/color" android:key="ShowHeaderColor" android:summary="" />
+            <com.rookiestudio.customize.IntListPreference android:title="@string/font_size" android:key="ShowHeaderSize" android:defaultValue="1" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/perf_page_footer">
+            <com.rookiestudio.customize.IntListPreference android:title="@string/show_what" android:key="ShowInfoMode" android:defaultValue="0" />
+            <com.rookiestudio.customize.NumberPickerPreference android:max="10" android:text="@string/seconds" android:title="@string/duration" android:key="ShowInfoDelay" android:summary="" android:defaultValue="0" android:dialogTitle="@string/duration" CSeekBar:min="0" />
+            <Preference android:title="@string/color" android:key="ShowInfoColor" android:summary="" />
+            <com.rookiestudio.customize.IntListPreference android:title="@string/font_size" android:key="ShowInfoSize" android:defaultValue="1" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <Preference android:title="@string/preferences_management" android:key="PreferencesManagement" android:summary="" android:defaultValue="" />
+    <Preference android:title="@string/quickbar_customize" android:key="QuickBarCustomize" android:summary="" android:defaultValue="" />
+    <PreferenceScreen android:title="@string/perf_misc">
+        <ListPreference android:title="@string/language" android:key="UseLanguage" android:summary="" android:defaultValue="na" />
+        <CheckBoxPreference android:title="@string/perf_load_last_view" android:key="AutoLoadLastView" android:summary="" android:defaultValue="true" />
+        <com.rookiestudio.customize.IntListPreference android:title="@string/startup_screen" android:key="StartupScreen" android:summary="" android:defaultValue="0" />
+        <com.rookiestudio.customize.SeekBarPreference android:max="20" android:text=" %" android:title="@string/perf_zoom_pitch" android:key="ZoomPitch" android:summary="" android:defaultValue="5" android:dialogTitle="@string/perf_zoom_pitch" CSeekBar:min="1" CSeekBar:step="1" />
+        <com.rookiestudio.customize.SeekBarPreference android:max="50" android:text="" android:title="@string/border_offset" android:key="BorderOffset" android:summary="" android:defaultValue="10" android:dialogTitle="@string/border_offset" CSeekBar:min="0" CSeekBar:step="1" />
+        <CheckBoxPreference android:title="@string/perf_wallpaper_management" android:key="WallpaperManagement" android:summary="" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/perf_low_mem_mode" android:key="LowMemoryMode" android:summary="@string/perf_low_mem_mode_summary" android:defaultValue="false" />
+    </PreferenceScreen>
+</PreferenceScreen>

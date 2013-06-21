@@ -1,0 +1,113 @@
+<fxs>
+
+	<fx 
+		id="editSaturation"
+		uiname="$$$/TTModel/Saturation=Saturation"
+		icon="saturationPreviewImage"
+		processor="saturationProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="dodgeBurn"
+		uiname="$$$/TTModel/DodgeBurn=Dodge/Burn"
+		icon="fxDodgeBurnPreviewImage"
+		processor="dodgeBurnProcessor"
+		native="true"
+		panel="shaderIntensityModule"
+		restartOnStroke="true"
+	/>
+
+	<fx 
+		id="tint"
+		uiname="$$$/TTModel/Tint=Tint"
+		icon="fxTintImage"
+		processor="tintProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="editColorBalance"
+		uiname="$$$/TTModel/Color Balance=Color Balance"
+		icon="colorBalancePreviewImage"
+		processor="colorBalanceProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="editContrast"
+		uiname="$$$/TTModel/ContrastBrightness=Brightness/Contrast"
+		icon="brightnessPreviewImage"
+		processor="contrastBrightnessProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="sharpen"
+		uiname="$$$/TTModel/Sharpen=Sharpen"
+		icon="fxSharpenPreviewImage"
+		processor="sharpenProcessor"
+		native="false"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="editTemperature"
+		uiname="$$$/TTModel/Temperature=Temperature"
+		icon="temperaturePreviewImage"
+		processor="temperatureProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="shadowHilite"
+		uiname="$$$/TTModel/ShadowHilite=Shadows/Highlights"
+		icon="shadowHilitePreviewImage"
+		processor="toneCurveProcessor"
+		native="true"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="comicEffect"
+		uiname="$$$/TTModel/Comic=Comic"
+		icon="fxComicImage"
+		processor="comicProcessor"
+		native="true"
+		panel="comicModule"
+	/>
+
+	<fx 
+		id="blackNWhite"
+		uiname="$$$/TTModel/BlackWhite=Black & White"
+		icon="blackNWhitePreviewImage"
+		processor="basicColorProcessor"
+		native="false"
+		values="blackNWhite"
+		settings="none"
+	/>
+
+	<fx 
+		id="curves"
+		uiname="$$$/TTModel/Curves=Curves"
+		icon="curvePreviewImage"
+		processor="curvesProcessor"
+		native="false"
+		panel="intensityModule"
+	/>
+
+	<fx 
+		id="pencilEffect"
+		uiname="$$$/TTModel/Pencil=Pencil"
+		icon="fxPencilImage"
+		processor="pencilProcessor"
+		native="true"
+		panel="pencilModule"
+	/>
+
+</fxs>

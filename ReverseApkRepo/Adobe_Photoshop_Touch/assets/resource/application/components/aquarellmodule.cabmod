@@ -1,0 +1,52 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="750" height="280" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="750" height="120" sizeX="scale" x="0" y="10" module="module">
+        <button id="ttblue" width="110" height="40" sizeX="right" x="630" y="10" target="referenceDispatcher" selector="ApplyFilter" title="$$$/aquarellmodule/button/title/Apply=Apply"/>
+        <button id="button11" width="110" height="40" sizeX="right" x="630" y="60" target="referenceDispatcher" selector="CancelFilter" title="$$$/aquarellmodule/button/title/Cancel=Cancel"/>
+        <imageView id="imageView" width="150" x="10" y="10"/>
+        <ttliveslider id="slider111" width="240" height="40" sizeX="scale" x="370" y="10" target="referenceDispatcher" selector="waterAmount" sliderValue="0.5" stepSize="0.01" endMouseSelector="waterAmountLive" liveSelector="waterAmountLive"/>
+        <ttnumberfield id="textField1111111" width="60" height="40" x="300" y="10" target="referenceDispatcher" text="$$$/aquarellmodule/textField/text/Text=Text" lostFocusSelector="waterAmountText" returnSelector="waterAmountText" parentPanel="module" unitString="%"/>
+        <label id="label21" width="130" height="40" x="160" y="10" title="$$$/aquarellmodule/label/title/Water=Water"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView" refName="imageView"/>
+      <objRef refId="slider111" refName="waterAmount"/>
+      <objRef refId="textField1111111" refName="waterAmountText"/>
+      <objRef refId="ttblue" refName="buttonOK"/>
+      <objRef refId="button11" refName="buttonCancel"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttlevelview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLevelView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABMessageHandler"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttliveslider" superClassName="slider" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLiveSlider">
+      <var name="liveSelector" type="string" defaultValue="live" codeName="iLiveSelector"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+    </class>
+    <class className="ttanglecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAngleControl">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="liveSelector" type="string" defaultValue="" codeName="iLiveSelector"/>
+    </class>
+  </classes>
+</ttpanelmodule>

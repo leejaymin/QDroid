@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_battery_title" />
+        <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/battery_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/button_change_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_change_battery" />
+        <Button android:id="@id/button_create_profile" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_create_battery" />
+    </LinearLayout>
+    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0dip" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/text_battery_specs" />
+                    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TableRow>
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/text_min_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/edit_min_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="mV" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/text_max_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/edit_max_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="mV" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:textSize="18.0dip" android:text=" " />
+                    </TableRow>
+                    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TableRow android:paddingTop="5.0dip">
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_stored_capacity" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/stored_capacity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mAh" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_total_capacity" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="right" android:id="@id/total_capacity" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="%" />
+                    </TableRow>
+                </TableLayout>
+                <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0dip" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/text_battery_hist" />
+                    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TableRow>
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_min_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/min_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mV" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_max_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/max_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="mV" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_min_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/min_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_max_voltage" />
+                        <TextView android:textSize="18.0dip" android:gravity="right" android:id="@id/max_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="%" />
+                    </TableRow>
+                    <View android:background="@drawable/separator" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+                    <TableRow android:paddingTop="5.0dip">
+                        <TextView android:textSize="18.0dip" android:gravity="left" android:id="@id/text_measured_mA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="1" android:text="@string/text_measured_mA" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="right" android:id="@id/measured_ma" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="1" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:id="@id/measured_ma_mah" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="mAh" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="1" android:text="@string/text_measured_precision" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:gravity="right" android:id="@id/measured_precision" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_span="1" />
+                        <TextView android:textSize="18.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="%" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/calculating_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:indeterminate="true" style="@android:style/Widget.ProgressBar.Small" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff3030f0" android:gravity="center" android:id="@id/calculating_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/text_calculating" />
+                <Button android:id="@id/button_update_capacity" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_update_capacity" android:layout_weight="1.0" />
+                <Button android:id="@id/button_update_specs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_update_specs" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/online_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/prefs_title_help" />
+            <TextView android:textSize="18.0dip" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/text_calibrate_help" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

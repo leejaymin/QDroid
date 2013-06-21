@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="29" android:versionName="1.2.2" package="com.fleapapa.helper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application android:label="@string/app_name" android:icon="@drawable/icon_talk" android:name="com.fleapapa.util.My" android:debuggable="false">
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14bc269ff7ea41" />
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true" />
+        <uses-library android:name="com.google.android.maps" />
+        <service android:label="@string/service_monitor" android:name="com.fleapapa.helper.Monitor">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.Monitor" />
+            </intent-filter>
+        </service>
+        <activity android:label="@string/app_name" android:name="com.fleapapa.helper.Helper" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.fleapapa.helper.CallMan" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallMan" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_interest_selector" android:name="com.fleapapa.helper.InterestSelector" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_signin" android:name="com.fleapapa.helper.Signin" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.flea.intent.action.Signin" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_item_list" android:name="com.fleapapa.helper.ItemList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.ItemList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_item_view" android:name="com.fleapapa.helper.ItemView" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.ItemView" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_item_edit" android:name="com.fleapapa.helper.ItemEdit" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.ItemEdit" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_bid_list" android:name="com.fleapapa.helper.BidList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.BidList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_item_map" android:name="com.fleapapa.helper.ItemMap" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.ItemMap" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_QA_list" android:name="com.fleapapa.helper.QAList" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.QAList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="Change Configs" android:name="com.fleapapa.helper.PhoneChange" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.PhoneChange" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="call tabs" android:name="com.fleapapa.helper.CallTabs" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallTabs" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_call_grps" android:name="com.fleapapa.helper.CallGrps" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallGrps" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_call_ues" android:name="com.fleapapa.helper.CallUes" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallUes" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_call_logs" android:name="com.fleapapa.helper.CallLogs" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallLogs" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_call_bursts" android:name="com.fleapapa.helper.CallBursts" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallBursts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/signin_avatar_change" android:name="com.fleapapa.helper.Avatar" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.Avatar" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/coptions_changer" android:name="com.fleapapa.helper.CallOptions" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.CallOptions" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/act_offmsgs" android:name="com.fleapapa.helper.OfflineMsgs" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.OfflineMsgs" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/coption_locales" android:name="com.fleapapa.helper.Locales" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.fleapapa.helper.intent.action.Locales" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

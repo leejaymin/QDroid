@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.jaynux.app.RandomRun android:id="@id/randomRun" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:layout_gravity="top|center" android:id="@id/text" android:background="#7fffffff" android:layout_width="300.0px" android:layout_height="fill_parent" android:text="@string/helpText" style="@style/helpText" />
+        <RelativeLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/Button03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAIN" style="@style/ButtonText" />
+            <Button android:id="@id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play" android:layout_toRightOf="@id/Button03" style="@style/ButtonText" />
+            <Button android:id="@id/Button02" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:layout_toRightOf="@id/Button03" style="@style/ButtonText" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:layout_gravity="bottom" android:id="@id/meter" android:background="#7fffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0px" android:text="@string/timer" style="@style/timerText" />
+        <TextView android:layout_gravity="top|right|center" android:id="@id/timer" android:background="#7fffffff" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timer" style="@style/timerText" />
+    </FrameLayout>
+</RelativeLayout>

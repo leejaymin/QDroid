@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_what_is_new_content">
+        <item>"Ajout de soutien langue pour le Français et l'Espagnol."</item>
+    </string-array>
+</resources>

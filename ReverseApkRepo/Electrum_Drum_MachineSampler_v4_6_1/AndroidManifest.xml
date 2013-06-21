@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="131" android:versionName="4.6.1" android:installLocation="auto" package="electrum2.drums"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="10" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <application android:theme="@style/CustomButton" android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/app_name" android:name=".electrum" android:launchMode="singleTask" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/CustomButton" android:label="@string/bpmsettings_name" android:name="bpmsettings" />
+        <activity android:theme="@style/CustomButton" android:label="@string/savesettings_name" android:name="savesettings" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@style/CustomButton" android:label="@string/savedrumkit_name" android:name="savedrumkit" />
+        <activity android:theme="@style/CustomButton" android:label="@string/loadsettings_name" android:name="loadsettings" />
+        <activity android:theme="@style/CustomButton" android:label="@string/loadexported_name" android:name="loadexported" />
+        <activity android:theme="@style/CustomButton" android:label="@string/drumkit_name" android:name="drumkit" />
+        <activity android:theme="@style/CustomButton" android:label="@string/drumkit_name" android:name="loadrumkits" />
+        <activity android:theme="@style/CustomButton" android:label="@string/helppage_name" android:name="helppage" />
+        <activity android:theme="@style/CustomButton" android:label="@string/exportedfilename_Name" android:name="exportdata" />
+        <activity android:theme="@style/CustomButton" android:label="@string/exportedfilename_Name" android:name="exportAudio" />
+        <activity android:theme="@style/MyDialogNoTitle" android:label="@string/drumsettings_name" android:name="drumsettings" />
+        <activity android:theme="@style/CustomButton" android:label="@string/drumsample_name" android:name="drumsample" />
+        <activity android:theme="@style/CustomButton" android:label="@string/waveedit_name" android:name="waveeditactivity" />
+        <activity android:theme="@style/CustomButton" android:label="@string/recordactivity_name" android:name="recordactivity" />
+        <activity android:theme="@style/CustomButton" android:label="@string/overWrite_name" android:name="overWrite" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/livemode_name" android:name="livemode" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:label="@string/multipadsactivity_name" android:name="multipadsactivity" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/mixerstyle" android:label="@string/mixer_name" android:name="mixer" />
+        <activity android:theme="@style/MyDialogNoTitle" android:name="delaysettings" />
+        <activity android:theme="@style/MyDialogNoTitle" android:name="distortionsettings" />
+        <activity android:theme="@style/CustomButton" android:label="@string/changesdpath_name" android:name="changesdpath" />
+        <activity android:theme="@style/CustomButton" android:name="browsefolder" />
+        <activity android:theme="@style/CustomButton" android:label="@string/foldercreate_name" android:name="foldercreate" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation" />
+    </application>
+</manifest>

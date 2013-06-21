@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/playback" android:key="category_player_playback">
+        <ListPreference android:entries="@array/resume_last_entries" android:title="@string/resume_last" android:key="resume_last" android:summary="@string/resume_last_summary" android:defaultValue="ask" android:entryValues="@array/resume_last_values" />
+        <CheckBoxPreference android:title="@string/resume_only_first" android:key="resume_only_first" android:summary="@string/resume_only_first_explain" android:defaultValue="false" />
+        <ListPreference android:entries="@array/cfg_playback_complete_action_entries" android:title="@string/cfg_playback_complete_action" android:key="playback_complete_action" android:summary="@string/cfg_playback_complete_action_summary" android:defaultValue="2" android:entryValues="@array/cfg_playback_complete_action_entry_values" />
+        <CheckBoxPreference android:title="@string/fast_seek" android:key="fast_seek" android:summary="@string/fast_seek_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/audio_focus" android:key="audio_focus" android:summary="@string/audio_focus_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/smart_prev" android:key="smart_prev" android:summary="@string/smart_prev_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cfg_pause_on_seek" android:key="pause_on_seek" android:summary="@string/cfg_pause_on_seek_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sticky">
+        <CheckBoxPreference android:title="@string/sticky" android:key="sticky" android:summary="@string/sticky_summary" android:defaultValue="false" android:disableDependentsState="true" />
+        <CheckBoxPreference android:title="@string/sticky_audio" android:key="sticky_audio" android:summary="@string/sticky_audio_summary" android:dependency="sticky" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/tune_display" android:key="category_player_display">
+        <com.mxtech.videoplayer.TunerScreen android:title="@string/cfg_tuner_screen" android:summary="@string/cfg_tuner_screen_summary" android:dialogLayout="@layout/tuner_screen" />
+        <com.mxtech.videoplayer.TunerDrag android:title="@string/cfg_tuner_drag" android:summary="@string/cfg_tuner_drag_summary" android:dialogLayout="@layout/tuner_drag" />
+        <com.mxtech.videoplayer.TunerNavigation android:title="@string/cfg_tuner_navigation" android:summary="@string/cfg_tuner_navigation_summary" android:dialogLayout="@layout/tuner_navigation" />
+        <EditTextPreference android:title="@string/cfg_zoom_delay" android:key="video_zoom_delay" android:summary="@string/cfg_zoom_delay_summary" android:dialogMessage="@string/cfg_zoom_delay_message" android:inputType="number" />
+        <CheckBoxPreference android:title="@string/zoom_limited" android:key="video_zoom_limited" android:summary="@string/zoom_limited_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/button_backlight_off" android:key="button_backlight_off" android:summary="@string/button_backlight_off_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

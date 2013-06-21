@@ -1,0 +1,107 @@
+<example>
+ <category>Checklist</category>
+ <section-title>Main</section-title>
+ <caption>basic pods</caption>
+ <caption>   Copyable plaintext (popup)</caption>
+ <caption>new to alpha (optional)</caption>
+ <caption>PDF | LiveMathematica (links)</caption>
+ <caption>header links, feedback, footer links</caption>
+ <input>2+2</input>
+ <caption>more advanced pods</caption>
+ <caption>recalculate pods</caption>
+ <caption>assuming pod</caption>
+ <caption>more / less buttons</caption>
+ <caption>larger / smaller iamge</caption>
+ <caption>show mesh (map)</caption>
+ <caption>Satellite image</caption>
+ <caption>Units&gt;&gt;</caption>
+ <caption>Source Information</caption>
+ <caption>Sidebar</caption>
+ <caption>   Related Links (Wiki)</caption>
+ <caption>   Search the Web</caption>
+ <caption>   Featured Sponsor (ads)</caption>
+ <input>france</input>
+ <caption>several annotions in pods</caption>
+ <caption>Mathematica plaintex input (popup)</caption>
+ <input>sin x</input>
+ <caption>interpreting pod</caption>
+ <input>francee</input>
+ <caption>Calculate Assume pod</caption>
+ <caption>pod containing scrollbar (last)</caption>
+ <caption>Input field in formula</caption>
+ <caption>Link in formula</caption>
+ <input>mortgage</input>
+ <caption>assuming pod, with dropdown list</caption>
+ <caption>show coordinates</caption>
+ <caption>show history</caption>
+ <input>springfield</input>
+ <caption>Play Sound (wav)</caption>
+ <input>doppler shift</input>
+ <caption>Play Sound (midi)</caption>
+ <input>C Eb G C</input>
+ <caption>periodic table pod</caption>
+ <caption>Related Links (Periodic Table)</caption>
+ <input>carbon</input>
+ <caption>Nutrition Facts</caption>
+ <input>Octipi</input>
+ <caption>Genome Sequence</caption>
+ <input>TGCGATGG</input>
+ <caption>multiple dropdown lists (one pod)</caption>
+ <caption>subpod with dropdown lists</caption>
+ <input>earthquakes</input>
+ <caption>asynch recalculate</caption>
+ <input>hdl vs ldl</input>
+ <caption>More buttons timeout</caption>
+ <input>somos constant</input>
+ <caption>Examples pages results</caption>
+ <input>examples</input>
+ <caption>Specific category example result</caption>
+ <input>Mathematics</input>
+ <caption>Easter Egg</caption>
+ <input>Do They Speak English In what?</input>
+ <caption>Computation time out</caption>
+ <input>what is the 1232243985 place of pi?</input>
+ <caption>Financial Data links in the footer</caption>
+ <caption>Partnership Links in the footer (colo4 only)</caption>
+ <input>MSFT</input>
+ <caption>Drop down in formula</caption>
+ <input>Heart Disease</input>
+ <section-title>Splat</section-title>
+ <caption>complete parse failure</caption>
+ <caption>W|A isnt sure pod</caption>
+ <caption>   with Tips popup</caption>
+ <caption>Search the web pod (top)</caption>
+ <caption>More to Explore</caption>
+ <caption>   Random thumbnails</caption>
+ <caption>   Random example links</caption>
+ <caption>Are you expert? footer</caption>
+ <caption>Community Forum (sidebar)</caption>
+ <input>completefallthrough</input>
+ <caption>partial parse</caption>
+ <caption>Did you mean pod</caption>
+ <caption>   with W|A isnt sure</caption>
+ <caption>   with Tips popup</caption>
+ <caption>Related result</caption>
+ <caption>   thumbnail (w/link)</caption>
+ <caption>   category (w/link)</caption>
+ <caption>   related input (w/link)</caption>
+ <caption>   information about</caption>
+ <caption>Search the Web pod(bottom)</caption>
+ <input>france splat</input>
+ <caption>Partial parse</caption>
+ <caption>   WITH Related Links (sidebar)</caption>
+ <input>suez canal</input>
+ <caption>Several Related results</caption>
+ <caption>   including &quot;None&quot; category (1st)</caption>
+ <caption>   Next/Prev for more results</caption>
+ <input>france goat dog cars blue mars chicago oak steve</input>
+ <caption>Future topic splat</caption>
+ <caption>   Enter email/message for updates on topic</caption>
+ <input>cars</input>
+ <caption>Language Splat</caption>
+ <caption>   Custom translated message</caption>
+ <caption>   English translation</caption>
+ <input>uno dose tres</input>
+ <caption>Asynchronus Splat</caption>
+ <input>sum (8+7^j)/(10+10^j), j=1..infinity</input>
+</example>

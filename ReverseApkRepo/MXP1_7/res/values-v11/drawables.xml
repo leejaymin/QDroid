@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="lock_lock">@drawable/lock</drawable>
+    <drawable name="icon_noti">@drawable/play_circle</drawable>
+</resources>

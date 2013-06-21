@@ -1,0 +1,33 @@
+<?xml version='1.0'?><example><category>Places &amp; Geography</category><section-title>
+ <link ref="MapsProjections">Maps &amp; Projections </link>
+</section-title><caption>generate maps of a specified country</caption><input>Argentina map</input><caption>generate a world map colored according to a given statistic</caption><input>life expectancy</input><caption>draw a map using a specified projection</caption><input>world Winkel Tripel projection</input><section-title>
+ <link ref="GeodesyAndNavigation">Geodesy &amp; Navigation </link>
+</section-title><caption>locate a point on Earth using latitude-longitude coordinates</caption><input>55 deg 45' N, 37 deg 37' E</input><caption>compute the great-circle distance between points on the globe</caption><input>23.5S 46.4W to 56.8N 60.6E</input><caption>find the coordinates of a city</caption><input>Algiers coordinates</input><section-title>
+ <link ref="Geocoding">Geocoding </link>
+</section-title><caption>locate a ZIP code</caption><input>ZIP 60637</input><caption>locate an airport and get information about it</caption><input>Midway Airport</input><caption>look up your IP address and estimate your location</caption><input>Where am I?</input><section-title>
+ <link ref="Countries">Countries </link>
+</section-title><caption>get information about a country</caption><input>France</input><caption>request a class of information about a country</caption><input>Peru geography</input><caption>rank countries </caption><input>5 largest countries by area</input><section-title>
+ <link ref="Cities">Cities </link>
+</section-title><caption>get information about a city</caption><input>Buenos Aires</input><caption>compare several cities</caption><input>New York, London, Tokyo</input><caption>do computations with city and country properties</caption><input>population Madrid / population Spain</input><section-title>
+ <link ref="ElevationData">Elevation Data </link>
+</section-title><caption>find the elevation of a city</caption><input>elevation Chicago</input><caption>get elevation data near specified coordinates</caption><input>elevation around 46N 7E</input><caption>find minimum/maximum elevations for a country</caption><input>Russia lowest point</input><section-title>
+ <link ref="Oceans">Oceans </link>
+</section-title><caption>get information about an ocean</caption><input>Atlantic Ocean</input><caption>do computation with ocean properties</caption><input>area Pacific Ocean / Atlantic Ocean</input><caption>get current tide information</caption><input>tides Seattle</input><section-title>
+ <link ref="UnderseaFeatures">Undersea Features </link>
+</section-title><caption>get information about an undersea feature</caption><input>Maro Reef</input><caption>compare several features</caption><input>Mariana Trench vs Kermadec Trench</input><section-title>
+ <link ref="Lakes">Lakes </link>
+</section-title><caption>get information about a lake</caption><input>Loch Ness</input><caption>compare several lakes</caption><input>Great Salt Lake, Lake Winnipeg</input><caption>do computations with lake properties</caption><input>surface area Lake Erie + Lake Huron + Lake Ontario</input><section-title>
+ <link ref="Rivers">Rivers </link>
+</section-title><caption>get information about a river</caption><input>Mississippi River</input><caption>compare several rivers</caption><input>Tigris, Euphrates</input><caption>do computations with river properties</caption><input>length Amazon / Nile</input><section-title>
+ <link ref="Waterfalls">Waterfalls </link>
+</section-title><caption>get information about a waterfall</caption><input>Bambarakanda Falls</input><caption>compare several waterfalls</caption><input>Niagara Falls, Yosemite Falls, Colonial Creek Falls</input><caption>do computations with waterfall properties</caption><input>width Victoria Falls / Iguacu Falls</input><section-title>
+ <link ref="Islands">Islands </link>
+</section-title><caption>get information about an island</caption><input>Hispaniola</input><caption>get information about a group of islands</caption><input>Galapagos Islands</input><caption>do computations with island properties</caption><input>area Martha's Vineyard / Nantucket</input><section-title>
+ <link ref="Mountains">Mountains </link>
+</section-title><caption>get information about a mountain</caption><input>Mt Hood</input><caption>compare several mountains</caption><input>Mount Everest, Mount Kilimanjaro</input><caption>do computations with mountain properties</caption><input>height Mt Timpanogos / Mt McKinley</input><section-title>
+ <link ref="Volcanoes">Volcanoes </link>
+</section-title><caption>get information about a volcano</caption><input>Irruputuncu</input><section-title>
+ <link ref="Deserts">Deserts </link>
+</section-title><caption>get information about a desert</caption><input>Gobi Desert</input><caption>do computations using desert properties</caption><input>area Gibson desert / Australia</input><section-title>
+ <link ref="Parks">Parks </link>
+</section-title><caption>get information about a park, monument, or historic site</caption><input>Gettysburg Battlefield</input><caption>compare parks</caption><input>Yellowstone National Park, Yosemite National Park</input></example>

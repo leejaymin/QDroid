@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Világos (alapértelmezett)</item>
+        <item>Sötét</item>
+        <item>Kék</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automatikus (alapértelmezett)</item>
+        <item>Vízszintes</item>
+        <item>Függőleges</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Alapértelmezett</item>
+        <item>Nagyobb</item>
+        <item>Legnagyobb</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Kezdőlap</item>
+        <item>Beállítások</item>
+    </string-array>
+</resources>

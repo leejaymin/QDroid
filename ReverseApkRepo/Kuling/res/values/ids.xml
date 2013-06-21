@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="update_rate">false</item>
+    <item type="id" name="text_color">false</item>
+    <item type="id" name="TextViewTheme">false</item>
+    <item type="id" name="TextViewStation">false</item>
+    <item type="id" name="TextViewRegistered">false</item>
+    <item type="id" name="save_button">false</item>
+    <item type="id" name="graphics_picture">false</item>
+    <item type="id" name="graphics_text">false</item>
+    <item type="id" name="ScrollView01">false</item>
+    <item type="id" name="InfoLayout">false</item>
+    <item type="id" name="info_text">false</item>
+    <item type="id" name="INFO_OK_Button">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="KulingLayout">false</item>
+    <item type="id" name="widget_textviewSpeed">false</item>
+    <item type="id" name="widget_textviewtag1">false</item>
+    <item type="id" name="widget_direction">false</item>
+    <item type="id" name="SurfWidgetLayout">false</item>
+    <item type="id" name="widget_textviewUpdate">false</item>
+    <item type="id" name="widget_textviewStation">false</item>
+    <item type="id" name="ScrollView02">false</item>
+    <item type="id" name="RegisterLayout">false</item>
+    <item type="id" name="register_text2">false</item>
+    <item type="id" name="register_text3">false</item>
+    <item type="id" name="register_edittext">false</item>
+    <item type="id" name="RegisterLayout2">false</item>
+    <item type="id" name="register_text4">false</item>
+    <item type="id" name="SendSMSButton">false</item>
+    <item type="id" name="RegisterLayout3">false</item>
+    <item type="id" name="register_text5">false</item>
+    <item type="id" name="TextViewThemeHenta">false</item>
+    <item type="id" name="empty">false</item>
+</resources>

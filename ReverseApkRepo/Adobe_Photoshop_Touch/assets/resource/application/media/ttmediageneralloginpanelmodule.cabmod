@@ -1,0 +1,29 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="490" height="444" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <view id="view1" width="276" height="199" x="10" y="10">
+        <label id="ttleftalignlabel" width="246" height="18" x="11" y="15" title="$$$/ttmediageneralloginpanelmodule/label/title/Label=Label"/>
+        <text id="text" width="246" height="18" x="11" y="37" small="true"/>
+        <label id="label1" width="70" height="18" x="11" y="62" title="$$$/ttmediageneralloginpanelmodule/label/title/Username=Username"/>
+        <textField id="textField" width="168" height="25" sizeX="scale" x="98" y="62" lostFocusSelector="username" returnSelector="username"/>
+        <label id="label2" width="68" height="18" x="11" y="97" title="$$$/ttmediageneralloginpanelmodule/label/title/Password=Password"/>
+        <textField id="textField1" width="168" height="25" sizeX="scale" x="98" y="97" displayAsPassword="true" lostFocusSelector="password" returnSelector="password"/>
+        <button id="button" width="80" height="50" sizeX="right" sizeY="bottom" x="186" y="133" target="referenceDispatcher" selector="login" type="tool" title="$$$/ttmediageneralloginpanelmodule/button/title/Login=Login"/>
+      </view>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="ttleftalignlabel" refName="titleLabel"/>
+      <objRef refId="text" refName="subtitleText"/>
+      <objRef refId="textField" refName="usernameText"/>
+      <objRef refId="textField1" refName="passwordText"/>
+      <objRef refId="button" refName="loginButton"/>
+      <objRef refId="label1" refName="usernameLabel"/>
+      <objRef refId="label2" refName="passwordLabel"/>
+    </referenceDispatcher>
+  </objects>
+  <classes/>
+</module>

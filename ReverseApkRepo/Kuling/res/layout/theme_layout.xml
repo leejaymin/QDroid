@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/com.cocmoc.kulinglite">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_info" style="@style/Text_Config" />
+        <TextView android:gravity="center" android:id="@id/TextViewThemeHenta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_henta" style="@style/Text_Config.Data" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/theme_info2" style="@style/Text_Config" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" />
+        <TextView android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/theme_inget_tema" style="@style/Text_Config.Data" />
+    </FrameLayout>
+</LinearLayout>

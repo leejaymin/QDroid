@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/panel_blue_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imgv_balance" android:paddingLeft="8.0sp" android:paddingTop="10.0sp" android:paddingRight="8.0sp" android:paddingBottom="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/accountbalance" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/tv_acc_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cash:" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/tv_acc_balance" android:paddingLeft="5.0sp" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="100" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever">
+            <requestFocus />
+        </TextView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="3.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imgv_expense" android:paddingLeft="4.0sp" android:paddingTop="6.0sp" android:paddingRight="8.0sp" android:paddingBottom="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_32x32" />
+    </LinearLayout>
+</LinearLayout>

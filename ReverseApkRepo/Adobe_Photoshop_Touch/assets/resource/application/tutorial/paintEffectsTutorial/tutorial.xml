@@ -1,0 +1,9 @@
+<tutorial>
+	<step text="$$$/Tutorial/Tap and drag to select the effects paint tool.=Tap and drag to select the effects paint tool." tipid="paintEffectTool" tiptext="$$$/Tutorial/Effects Paint tool=Effects Paint tool"/>
+	<step text="$$$/Tutorial/Select the Black & White effect.=Select the Black & White effect." tipid="paintEffectChooser" tiptext="$$$/Tutorial/Choose Black & White=Choose Black & White"/>
+	<step text="$$$/Tutorial/Reduce the brush size to about 30.=Reduce the brush size to about 30." tipid="paintToolBrushButton" tiptext="$$$/Tutorial/Change brush size=Change brush size"/>
+	<step text="$$$/Tutorial/Paint everything but the horse to make the entire background black & white.=Paint everything but the horse to make the entire background black & white."/>
+	<step text="$$$/Tutorial/Now select the Saturation effect.=Now select the Saturation effect." tipid="paintEffectChooser" tiptext="$$$/Tutorial/Choose Saturation=Choose Saturation"/>
+	<step text="$$$/Tutorial/Increase the saturation to 100%. Tap OK.=Increase the saturation to 100%. Tap OK."/>
+	<step text="$$$/Tutorial/Paint only the horse with the saturation effect to enhance its color.=Paint only the horse with the saturation effect to enhance its color."/>
+</tutorial>

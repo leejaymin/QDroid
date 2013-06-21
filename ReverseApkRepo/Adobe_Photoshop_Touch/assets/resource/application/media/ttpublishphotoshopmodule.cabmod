@@ -1,0 +1,21 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <view id="view1" width="244" height="211" x="22" y="19">
+        <textField id="textField" width="139" height="18" x="85" y="96" text="$$$/ttpublishphotoshopmodule/textField/text/Swordfish=Swordfish" displayAsPassword="true" lostFocusSelector="password" returnSelector="password"/>
+        <textField id="textField1" width="139" height="18" x="85" y="59" text="$$$/ttpublishphotoshopmodule/textField/text/127.0.0.1=127.0.0.1" lostFocusSelector="ip" returnSelector="ip"/>
+        <label id="label" width="36" height="18" x="44" y="59" title="$$$/ttpublishphotoshopmodule/label/title/IP=IP"/>
+        <label id="label1" width="80" height="18" x="0" y="96" title="$$$/ttpublishphotoshopmodule/label/title/Password=Password"/>
+      </view>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="textField1" refName="ipText"/>
+      <objRef refId="textField" refName="passwordText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes/>
+</module>

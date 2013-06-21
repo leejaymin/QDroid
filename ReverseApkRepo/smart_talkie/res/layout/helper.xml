@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/help_layout" android:background="@drawable/helpthemost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:id="@id/help_push" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_talk" android:scaleType="fitXY" android:layout_alignParentBottom="true" class="com.fleapapa.util.MyImageButton" />
+    <view android:id="@id/help_help" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_help" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" class="com.fleapapa.util.MyImageButton" />
+    <view android:id="@id/help_signinout" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_signout" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" class="com.fleapapa.util.MyImageButton" />
+    <view android:id="@id/help_fleapapa" android:layout_width="64.0px" android:layout_height="64.0px" android:src="@drawable/icon_flea" android:scaleType="fitXY" android:layout_toLeftOf="@id/help_signinout" android:layout_alignParentBottom="true" class="com.fleapapa.util.MyImageButton" />
+</RelativeLayout>

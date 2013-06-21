@@ -1,0 +1,17 @@
+<?xml version='1.0'?><example><category>Engineering</category><section-title>
+ <link ref="Acoustics">Acoustics </link>
+</section-title><caption>compute a Doppler shift</caption><input>Doppler shift 300Hz, 75mph</input><caption>compute perceived loudness</caption><input>perceived loudness 110 Hz, 60 dB</input><section-title>
+ <link ref="AudioWaveforms">Audio Waveforms </link>
+</section-title><caption>generate sound with a specified waveform</caption><input>play 1.5kHz sawtooth</input><caption>specify a waveform as a mathematical function</caption><input>play sin(3000t)+sin(4243t)</input><section-title>
+ <link ref="ElectricCircuits">Electric Circuits </link>
+</section-title><caption>compute characteristics of an AC signal</caption><input>AC source 110V</input><caption>compute characteristics of a Chebyshev filter</caption><input>Chebyshev type 2 filter</input><section-title>
+ <link ref="FluidMechanics">Fluid Mechanics </link>
+</section-title><caption>visualize a vortex field</caption><input>vortex potential</input><caption>compute fluid flow around an object</caption><input>flow around a cylinder</input><caption>compute airflow around a standard airfoil</caption><input>NACA 0012 airfoil</input><section-title>Mechanical Engineering</section-title><caption>compute the maximum force of a spring</caption><input>spring maximum force</input><caption>do a cooling load computation</caption><input>residential cooling load</input><section-title>Civil Engineering</section-title><caption>compute mandated ventilation rate</caption><input>indoor air quality, 3 bedrooms, 1600 sq ft</input><section-title>Structural Engineering</section-title><caption>do an Euler column buckling computation</caption><input>column buckling</input><caption>compute curvature of heated bimetallic strip</caption><input>bimetallic strip iron copper 300 C</input><caption>compute beam deformation</caption><input>beam deformation</input><input>UNSS21900 simple support beam deflection 150 lbf</input><section-title>
+ <link ref="SteamTables">Steam Tables </link>
+</section-title><caption>compute properties of steam at a given temperature</caption><input>steam 135C</input><caption>specify a temperature and pressure</caption><input>steam 400F 60psi</input><caption>compute properties of saturated steam</caption><input>saturated steam 20atm</input><section-title>
+ <link ref="Psychrometrics">Psychrometrics </link>
+</section-title><caption>analyze heating or cooling of moist air</caption><input>adiabatically cool moist air at Tdry=30C to Tdry2=22C</input><caption>analyze humidification of moist air</caption><input>humidify moist air at drybulb 15C and 20% to 30C and 55%</input><section-title>
+ <link ref="Refrigeration">Refrigeration </link>
+</section-title><caption>analyze a refrigeration cycle</caption><input>refrigeration cycle</input><input>turbine refrigeration cycle with R134a at 1.5MPa and -10C</input><section-title>
+ <link ref="Structures">Structures </link>
+</section-title><caption>get information about a structure</caption><input>Golden Gate Bridge</input><caption>do computations with properties of structures</caption><input>height CN Tower / Merchandise Mart</input></example>

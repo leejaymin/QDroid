@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wolfram.android.alpha.view.WeatherBannerSubpodView android:id="@id/weatherbanner_subpod_view" android:paddingLeft="@dimen/weatherbanner_subpod_weatherbannersubpodview_paddingLeft" android:paddingTop="@dimen/weatherbanner_subpod_weatherbannersubpodview_paddingTop" android:paddingRight="@dimen/weatherbanner_subpod_weatherbannersubpodview_paddingRight" android:paddingBottom="@dimen/weatherbanner_subpod_weatherbannersubpodview_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</HorizontalScrollView>

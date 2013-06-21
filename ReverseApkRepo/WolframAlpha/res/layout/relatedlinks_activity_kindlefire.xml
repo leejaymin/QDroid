@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/relatedlinks_activity_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="@string/relatedlinks_activity_label" style="@style/ActivityTitle" />
+    <include layout="@layout/black_1_px_horizontal_line" />
+    <ScrollView android:id="@id/relatedlinks_scroll_view" android:padding="@dimen/relatedlinks_activity_scrollview_relatedlinks_scroll_view_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/relatedlinks_panel" android:background="@drawable/white_rounded_rect" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+</LinearLayout>

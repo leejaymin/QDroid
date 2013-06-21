@@ -1,0 +1,69 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="750" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="750" height="210" sizeX="scale" x="0" y="20" module="module">
+        <button id="ttblue" width="110" height="40" sizeX="right" x="630" y="10" target="referenceDispatcher" selector="ApplyFilter" title="$$$/dropshadowmodule/button/title/Apply=Apply"/>
+        <button id="button11" width="110" height="40" sizeX="right" x="630" y="60" target="referenceDispatcher" selector="CancelFilter" title="$$$/dropshadowmodule/button/title/Cancel=Cancel"/>
+        <imageView id="imageView" width="150" x="10" y="10"/>
+        <ttliveslider id="slider2" width="240" height="40" sizeX="scale" x="370" y="60" target="referenceDispatcher" selector="blurChanged" sliderValue="4" maxValue="128" endMouseSelector="blurFinalChanged" liveSelector="blurLiveChanged"/>
+        <ttnumberfield id="textField11112" width="60" height="40" x="300" y="60" target="referenceDispatcher" text="$$$/dropshadowmodule/textField/text/Text=Text" lostFocusSelector="blurTextChanged" returnSelector="blurTextChanged" parentPanel="module"/>
+        <ttliveslider id="slider11" width="240" height="40" sizeX="scale" x="370" y="160" target="referenceDispatcher" selector="intensityChanged" endMouseSelector="intensityFinalChanged" liveSelector="intensityLiveChanged"/>
+        <ttnumberfield id="textField111111" width="60" height="40" x="300" y="160" target="referenceDispatcher" text="$$$/dropshadowmodule/textField/text/Text=Text" lostFocusSelector="intensityTextChanged" returnSelector="intensityTextChanged" parentPanel="module" unitString="%"/>
+        <label id="label1" width="120" height="40" x="170" y="60" title="$$$/dropshadowmodule/label/title/Blur=Blur"/>
+        <label id="label2" width="120" height="40" x="170" y="160" title="$$$/dropshadowmodule/label/title/Opacity=Opacity"/>
+        <ttcolorfield id="colorfield" width="40" height="40" x="570" y="10" target="referenceDispatcher" selector="color1Changed" color="00FFFF" supportsAlpha="false" supportsNoColor="false" module="module"/>
+        <label id="label11" width="135" height="40" x="425" y="10" title="$$$/dropshadowmodule/label/title/Shadow Color=Shadow Color"/>
+        <ttliveslider id="slider111" width="240" height="40" sizeX="scale" x="370" y="110" target="referenceDispatcher" selector="distanceChanged" sliderValue="4" maxValue="100" endMouseSelector="distanceFinalChanged" liveSelector="distanceLiveChanged"/>
+        <ttnumberfield id="textField1111111" width="60" height="40" x="300" y="110" target="referenceDispatcher" text="$$$/dropshadowmodule/textField/text/Text=Text" lostFocusSelector="distanceTextChanged" returnSelector="distanceTextChanged" parentPanel="module"/>
+        <label id="label21" width="120" height="40" x="170" y="110" title="$$$/dropshadowmodule/label/title/Distance=Distance"/>
+        <ttanglecontrol id="control" width="60" height="60" x="360" y="0" target="referenceDispatcher" selector="angleChanged" module="module"/>
+        <label id="label111" width="120" height="40" x="170" y="10" title="$$$/dropshadowmodule/label/title/Angle=Angle"/>
+        <ttnumberfield id="textField111121" width="60" height="40" x="300" y="10" target="referenceDispatcher" text="$$$/dropshadowmodule/textField/text/Text=Text" lostFocusSelector="angleTextChanged" returnSelector="angleTextChangedChanged" parentPanel="module" unitString="°"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="imageView" refName="imageView"/>
+      <objRef refId="colorfield" refName="color1Control"/>
+      <objRef refId="control" refName="angleControl"/>
+      <objRef refId="slider2" refName="blurSlider"/>
+      <objRef refId="textField11112" refName="blurText"/>
+      <objRef refId="slider111" refName="distanceSlider"/>
+      <objRef refId="textField1111111" refName="distanceText"/>
+      <objRef refId="slider11" refName="intensitySlider"/>
+      <objRef refId="textField111111" refName="intensityText"/>
+      <objRef refId="textField111121" refName="angleText"/>
+      <objRef refId="ttblue" refName="buttonOK"/>
+      <objRef refId="button11" refName="buttonCancel"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttlevelview" superClassName="view" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLevelView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABMessageHandler"/>
+    </class>
+    <class className="ttpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule"/>
+    <class className="ttliveslider" superClassName="slider" packageName="com.adobe.ttpixel.editor.ui" codeName="TTLiveSlider">
+      <var name="liveSelector" type="string" defaultValue="live" codeName="iLiveSelector"/>
+    </class>
+    <class className="ttcolorfield" superClassName="colorfield" packageName="com.adobe.ttpixel.ui" codeName="TTColorField">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+    </class>
+    <class className="ttanglecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAngleControl">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+  </classes>
+</ttpanelmodule>

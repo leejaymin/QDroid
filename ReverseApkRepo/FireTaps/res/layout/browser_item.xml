@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/divider_padding" android:paddingBottom="@dimen/divider_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.tf.ui.FTextView android:textSize="@dimen/text_normal" android:textColor="@color/selected" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <org.tf.ui.FTextView android:textSize="@dimen/text_small" android:textColor="@color/base" android:ellipsize="end" android:id="@id/artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

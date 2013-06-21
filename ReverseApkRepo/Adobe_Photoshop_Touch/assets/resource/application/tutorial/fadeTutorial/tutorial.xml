@@ -1,0 +1,7 @@
+<tutorial>
+	<step text="$$$/Tutorial/Tap the top layer and choose Add Fade from the & menu.=Tap the top layer and choose Add Fade from the & menu." tipid="wrenchMenuButton" tiptext="$$$/Tutorial/Add Fade=Add Fade"/>
+	<step text="$$$/Tutorial/Drag the top gradient handle down to the edge of the clouds.=Drag the top gradient handle down to the edge of the clouds."/>
+	<step text="$$$/Tutorial/Tap the Edit Gradient button. Adjust the fade opacity by dragging the gradient stops. Tap Done.=Tap the Edit Gradient button. Adjust the fade opacity by dragging the gradient stops. Tap Done." tipid="gradientEditButton" tiptext="$$$/Tutorial/Edit Gradient=Edit Gradient"/>
+	<step text="$$$/Tutorial/Select the background layer and choose Adjustments > Color Balance.=Select the background layer and choose Adjustments > Color Balance." tipid="enhanceMenuButton" tiptext="$$$/Tutorial/Color Balance=Color Balance"/>
+	<step text="$$$/Tutorial/To match the top layer’s light quality, increase the Red value by about 10%. Tap Apply.=To match the top layer’s light quality, increase the Red value by about 10%. Tap Apply." />
+</tutorial>

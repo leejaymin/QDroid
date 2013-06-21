@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:gravity="center" android:id="@id/subNaviBar" android:layout_width="fill_parent" android:layout_height="58.0dip" android:stretchColumns="0,8" android:shrinkColumns="*" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <View android:background="@color/translucent_background" android:layout_width="0.0px" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="center" android:id="@id/lock" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_height="fill_parent" android:minWidth="120.0dip" android:layout_weight="1.0" />
+        <ImageButton android:layout_gravity="center" android:id="@id/prev" android:background="@drawable/playback_item_back_translucent" android:layout_height="fill_parent" android:src="@drawable/prev" android:minWidth="120.0dip" android:layout_weight="1.0" />
+        <ZoomButton android:layout_gravity="center" android:id="@id/backward" android:background="@drawable/playback_item_back_translucent" android:layout_height="fill_parent" android:src="@drawable/backward" android:scaleType="center" android:minWidth="120.0dip" android:layout_weight="1.0" android:hapticFeedbackEnabled="false" />
+        <ImageButton android:layout_gravity="center" android:id="@id/playpause" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_height="fill_parent" android:src="@drawable/play_pause" android:minWidth="120.0dip" android:layout_weight="1.0" />
+        <ZoomButton android:layout_gravity="center" android:id="@id/forward" android:background="@drawable/playback_item_back_translucent" android:layout_height="fill_parent" android:src="@drawable/forward" android:scaleType="center" android:minWidth="120.0dip" android:layout_weight="1.0" android:hapticFeedbackEnabled="false" />
+        <ImageButton android:layout_gravity="center" android:id="@id/next" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_height="fill_parent" android:src="@drawable/next" android:minWidth="120.0dip" android:layout_weight="1.0" />
+        <com.mxtech.videoplayer.VideoZoomButton android:layout_gravity="center" android:id="@id/zoom" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_height="fill_parent" android:src="@drawable/zoom" android:scaleType="center" android:minWidth="120.0dip" android:layout_weight="1.0" />
+        <View android:background="@color/translucent_background" android:layout_width="0.0px" android:layout_height="fill_parent" />
+    </TableRow>
+</TableLayout>

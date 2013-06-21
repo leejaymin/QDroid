@@ -1,0 +1,13 @@
+<tutorial>
+	<step text="$$$/Tutorial/Tap Add Layer, then tap Empty Layer.=Tap Add Layer, then tap Empty Layer." tipid="addLayerButton" tiptext="$$$/Tutorial/Add Empty Layer=Add Empty Layer"/>
+	<step text="$$$/Tutorial/Choose the Marquee Selection tool from the toolbox.=Choose the Marquee Selection tool from the toolbox." tipid="marqueeSelectionTool" tiptext="$$$/Tutorial/Marquee Selection tool=Marquee Selection tool"/>
+	<step text="$$$/Tutorial/Tap Corners and enter a radius of 15px.=Tap Corners and enter a radius of 15px." tipid="radiusButton" tiptext="$$$/Tutorial/Corners=Corners"/>
+	<step text="$$$/Tutorial/Starting from the top left corner, create a selection for the inside of your frame.=Starting from the top left corner, create a selection for the inside of your frame." tipid="None" tiptext="$$$/Tutorial/To adjust the position of your selection, press and hold your finger to the screen. Move the selection while your finger is still pressed.=To adjust the position of your selection, press and hold your finger to the screen. Move the selection while your finger is still pressed."/>
+	<step text="$$$/Tutorial/Choose Select > Inverse to select only the frame area.=Choose Select > Inverse to select only the frame area." tipid="selectMenuButton" tiptext="$$$/Tutorial/Inverse=Inverse"/>
+	<step text="$$$/Tutorial/Tap the & menu and choose Fill & Stroke.=Tap the & menu and choose Fill & Stroke." tipid="wrenchMenuButton" tiptext="$$$/Tutorial/Fill & Stroke=Fill & Stroke"/>
+	<step text="$$$/Tutorial/Tap Color. Select black as the color and tap Apply.=Tap Color. Select black as the color and tap Apply."/>
+	<step text="$$$/Tutorial/Choose Effects > Artistic > Scratches. Use a white Scratch color, set Type as Metal, and tap Apply.=Choose Effects > Artistic > Scratches. Use a white Scratch color, set Type as Metal, and tap Apply." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Scratches=Scratches"/>
+	<step text="$$$/Tutorial/Choose Select > Deselect.=Choose Select > Deselect." tipid="selectMenuButton" tiptext="$$$/Tutorial/Deselect=Deselect"/>
+	<step text="$$$/Tutorial/Choose Effects > Basic > Bevel. Adjust the Angle and other values and tap Apply.=Choose Effects > Basic > Bevel. Adjust the Angle and other values and tap Apply." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Bevel=Bevel"/>
+	<step text="$$$/Tutorial/Choose Effects > Basic > Drop Shadow. Adjust the Angle and other values and tap Apply.=Choose Effects > Basic > Drop Shadow. Adjust the Angle and other values and tap Apply." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Drop Shadow=Drop Shadow"/>
+</tutorial>

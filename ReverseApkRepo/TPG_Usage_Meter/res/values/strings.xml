@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainScreen!</string>
+    <string name="app_name">TPG Usage Meter</string>
+    <string name="plans_to_lookup">"Plans to lookup (comma separated)
+"<i>"Note: leave blank to lookup all your plans
+E.g. 934950,958341"</i></string>
+</resources>

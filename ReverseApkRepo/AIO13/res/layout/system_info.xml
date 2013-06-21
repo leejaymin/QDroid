@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/system_hardwareInfo" />
+    <Preference android:title="@string/system_processor" android:key="processor" />
+    <Preference android:title="@string/system_bogoMIPS" android:key="bogoMIDS" />
+    <Preference android:title="@string/system_imei" android:key="imei" />
+    <Preference android:title="@string/system_deviceSoftwareVersion" android:key="deviceSoftwarVersion" />
+    <Preference android:title="@string/system_hardware" android:key="hardware" />
+    <PreferenceCategory android:title="@string/system_platformInfo" />
+    <Preference android:title="@string/system_systemOS" android:key="systemOs" />
+    <Preference android:title="@string/system_systemOSVersion" android:key="systemOsVersion" />
+    <Preference android:title="@string/system_systemLanuage" android:key="systemLanuage" />
+    <Preference android:title="@string/system_systemEncoding" android:key="systemEncoding" />
+    <Preference android:title="@string/system_systemRegion" android:key="systemRegion" />
+    <PreferenceCategory android:title="@string/system_jvminfo" />
+    <Preference android:title="@string/system_jvmVersion" android:key="jvmVersion" />
+    <Preference android:title="@string/system_javaClassVersion" android:key="javaClassVersion" />
+    <Preference android:title="@string/system_javaVendor" android:key="javaVendor" />
+    <Preference android:title="@string/system_javaHome" android:key="javaHome" />
+    <Preference android:title="@string/system_jvmSpecification" android:key="jvmSpecification" />
+    <Preference android:title="@string/system_jvmSpecificationversion" android:key="jvmSpecificationversion" />
+</PreferenceScreen>

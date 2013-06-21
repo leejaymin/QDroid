@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/qa_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/qa_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/qa_empty" android:layout_weight="9.0" />
+    <ListView android:id="@id/qa_list" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_weight="9.0" />
+    <WebView android:id="@id/qa_feedback_view" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_weight="9.0" />
+    <EditText android:id="@id/qa_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" android:layout_weight="1.0" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/qa_rating" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@id/qa_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_positive" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/qa_neutral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_neutral" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/qa_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_negative" android:layout_weight="1.0" />
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/qa_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_submit" android:layout_weight="1.0" />
+        <Button android:id="@id/qa_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_reset" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

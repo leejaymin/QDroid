@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/sl_selector_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sl_icon" android:layout_width="36.0dip" android:layout_height="18.0dip" android:layout_margin="@dimen/sl_margin_default" />
+    <TextView android:ellipsize="marquee" android:id="@id/sl_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/sl_text_normal_normal" />
+</LinearLayout>

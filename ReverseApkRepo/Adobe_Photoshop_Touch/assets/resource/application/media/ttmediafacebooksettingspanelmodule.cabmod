@@ -1,0 +1,30 @@
+<ttbasepanelmodule id="facebookSettingsPanelModule" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="400" height="400" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="276" height="270" x="50" y="17" module="facebookSettingsPanelModule" whiteBackground="true">
+        <button id="button" width="246" height="40" x="15" y="11" target="facebookSettingsPanelModule" selector="facebookTerms" title="$$$/ttmediafacebooksettingspanelmodule/button/title/Terms of Use=Terms of Use"/>
+        <button id="button1" width="246" height="40" x="15" y="66" target="facebookSettingsPanelModule" selector="facebookPrivacyPolicy" title="$$$/ttmediafacebooksettingspanelmodule/button/title/Privacy Policy=Privacy Policy"/>
+        <decor id="decor" width="276" height="18" x="0" y="102" style="hline"/>
+        <button id="button2" width="246" height="40" x="15" y="162" target="facebookSettingsPanelModule" selector="facebookLogout" title="$$$/ttmediafacebooksettingspanelmodule/button/title/Sign Out=Sign Out"/>
+        <button id="button3" width="246" height="40" x="15" y="215" target="facebookSettingsPanelModule" selector="facebookPrivacySettings" title="$$$/ttmediafacebooksettingspanelmodule/button/title/Privacy Settings=Privacy Settings"/>
+        <text id="ttblacktext" width="246" height="22" x="15" y="121" text="$$$/ttmediafacebooksettingspanelmodule/text/text/Not Signed In=Not Signed In" small="true"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="ttblacktext" refName="accountText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+  </classes>
+</ttbasepanelmodule>

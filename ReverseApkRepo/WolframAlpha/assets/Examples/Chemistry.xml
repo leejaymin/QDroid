@@ -1,0 +1,17 @@
+<?xml version='1.0'?><example><category>Chemistry</category><section-title>
+ <link ref="ChemicalElements">Chemical Elements </link>
+</section-title><caption>get information about a chemical element</caption><input>carbon</input><caption>compare several elements</caption><input>N, O, F</input><caption>do computations using properties of chemical elements</caption><input>density gold / lead</input><section-title>
+ <link ref="ChemicalCompounds">Chemical Compounds </link>
+</section-title><caption>get information about a chemical compound</caption><input>eicosapentaenoic acid</input><caption>compare properties of multiple compounds</caption><input>flash point methane, butane, octane</input><caption>analyze properties of a class of compounds</caption><input>boiling point of ethers</input><section-title>
+ <link ref="Ions">Ions </link>
+</section-title><caption>get information about an ion</caption><input>perchlorate</input><caption>compare several ions</caption><input>NH4+, N-3, PO4-3</input><caption>get information about a class of ions</caption><input>weak acid ions</input><section-title>
+ <link ref="ChemicalQuantities">Chemical Quantities </link>
+</section-title><caption>compute properties of a quantity of a chemical</caption><input>500mg of silver nitrate</input><input>4eq of phosphate</input><section-title>
+ <link ref="ChemicalSolutions">Chemical Solutions </link>
+</section-title><caption>compute properties of a chemical solution</caption><input>concentrated acetic acid</input><caption>compute properties of a quantity of a solution</caption><input>100 mL of 1.5 molar K2CO3 in THF</input><section-title>
+ <link ref="ChemicalReactions">Chemical Reactions </link>
+</section-title><caption>balance a chemical equation</caption><input>Al + O2 -&gt; Al2O3</input><input>octane + O2 -&gt; water + CO2</input><section-title>
+ <link ref="ChemicalThermodynamics">Chemical Thermodynamics </link>
+</section-title><caption>find properties of a substance in a given phase</caption><input>trimethylamine gas</input><caption>compute properties at a specified temperature</caption><input>vapor pressure of ethanol at 300K</input><section-title>Functional Groups</section-title><caption>get information about a functional group</caption><input>nitrile functional group</input><input>aldehyde group</input><section-title>
+ <link ref="ChemicalProtectingGroups">Chemical Protecting Groups </link>
+</section-title><caption>get information about a protecting group</caption><input>MOM ether</input><caption>find behavior under specified conditions</caption><input>FMOC amide under reducing conditions</input><section-title>Chemical Formulas</section-title><caption>find isomers with a given formula</caption><input>C6H5COOH</input><input>C4H10O4</input><caption>get a formula for a chemical</caption><input>DMSO</input><section-title>3D Structure</section-title><caption>see the three-dimensional structure of a molecule</caption><input>VX space filling structure</input><caption>compute topological properties of a molecule</caption><input>butane topological indices</input><input>cyclopentane Schultz index</input><section-title>pH Indicators</section-title><caption>find the indicators for a particular pH</caption><input>indicators that change color at pH 3</input><input>indicators for pH 9</input><section-title>Orbital Hybridization</section-title><caption>compute hybridization in a compound</caption><input>trimethylamine hybridization</input><caption>compare hybridization in two compounds</caption><input>hybridization TNT vs benzene</input></example>

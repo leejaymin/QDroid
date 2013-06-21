@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LapseIt.NoTitle.FullScreen" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_shelf</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.LapseIt.Title.Fullscreen" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@drawable/background_shelf</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.LapseIt.NoTitle" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_shelf</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+    <style name="Theme.LapseIt.Title" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@drawable/background_shelf</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:actionBarStyle">@style/Theme.LapseIt.ActionBar</item>
+    </style>
+    <style name="Theme.LapseIt.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+</resources>

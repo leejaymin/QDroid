@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@fraction/key_width_kindlefire" android:keyHeight="@fraction/key_height_upper_kindlefire" android:horizontalGap="@fraction/key_gap_horizontal_kindlefire" android:verticalGap="@fraction/key_gap_vert_kindlefire"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="63843" android:keyEdgeFlags="left" android:keyOutputText="∀" />
+        <Key android:codes="63844" android:keyOutputText="∃" />
+        <Key android:codes="63845" android:keyOutputText="∪" />
+        <Key android:codes="63846" android:keyOutputText="∩" />
+        <Key android:codes="63847" android:keyOutputText="ℵ" />
+        <Key android:codes="63848" android:keyOutputText="℘" />
+        <Key android:codes="63849" android:keyOutputText="♀" />
+        <Key android:codes="63856" android:keyOutputText="♂" />
+        <Key android:codes="63857" android:keyOutputText="⊕" />
+        <Key android:codes="63858" android:keyEdgeFlags="right" android:keyOutputText="⊗" />
+    </Row>
+    <Row>
+        <Key android:codes="63859" android:keyEdgeFlags="left" android:keyOutputText="δ" />
+        <Key android:codes="63860" android:keyOutputText="ζ" />
+        <Key android:codes="63861" android:keyOutputText="η" />
+        <Key android:codes="63862" android:keyOutputText="κ" />
+        <Key android:codes="63863" android:keyOutputText="ν" />
+        <Key android:codes="63864" android:keyOutputText="ξ" />
+        <Key android:codes="63865" android:keyOutputText="ρ" />
+        <Key android:codes="63872" android:keyOutputText="υ" />
+        <Key android:codes="63873" android:keyOutputText="χ" />
+        <Key android:codes="63874" android:keyEdgeFlags="right" android:keyOutputText="ψ" />
+    </Row>
+    <Row android:keyWidth="10.500002%p">
+        <Key android:keyWidth="13.199997%p" android:codes="10030" android:keyEdgeFlags="left" android:keyIcon="@drawable/key_shift_icon3_portrait" />
+        <Key android:horizontalGap="0.39999485%p" android:codes="63875" android:keyOutputText="Γ" />
+        <Key android:codes="63876" android:keyOutputText="Θ" />
+        <Key android:codes="63877" android:keyOutputText="Λ" />
+        <Key android:codes="63878" android:keyOutputText="Ξ" />
+        <Key android:codes="63879" android:keyOutputText="Π" />
+        <Key android:codes="63880" android:keyOutputText="Υ" />
+        <Key android:codes="63881" android:keyOutputText="Φ" />
+        <Key android:codes="63888" android:keyOutputText="Ψ" />
+    </Row>
+</Keyboard>

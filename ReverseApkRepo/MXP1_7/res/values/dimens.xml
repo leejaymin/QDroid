@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tuner_vert_halfgap">0.0px</dimen>
+    <dimen name="thumb_width">88.0dip</dimen>
+    <dimen name="thumb_height">66.0dip</dimen>
+    <dimen name="notification_padding">8.0dip</dimen>
+    <dimen name="noti_thumb_width">64.0dip</dimen>
+    <dimen name="noti_thumb_height">64.0dip</dimen>
+    <dimen name="video_progress_narrow_height">34.0dip</dimen>
+    <dimen name="bottom_bar_min_height">47.0dip</dimen>
+</resources>

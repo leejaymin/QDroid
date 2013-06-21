@@ -1,0 +1,14 @@
+<module id="inplaceEdit" mainObject="dialog">
+  <windows>
+    <inplaceEdit id="dialog" width="200" height="20" layer="4" type="dialog" style="plain" x="10" y="10" initVisible="false" clickModal="true" centerPosition="false" textField="textField">
+      <textField id="textField" width="198" height="18" sizeX="scale" x="1" y="1" target="dialog" selector="textChanged"/>
+    </inplaceEdit>
+  </windows>
+  <menus/>
+  <objects/>
+  <classes>
+    <class className="inplaceEdit" superClassName="dialog" packageName="com.adobe.cab.helper" codeName="CABInplaceEdit">
+      <var name="textField" type="object" defaultValue="" codeName="iTextField" className="CABTextField"/>
+    </class>
+  </classes>
+</module>

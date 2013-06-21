@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NotificationTitle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="NotificationText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="ScreenTitleTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="supremeAppearance">
+        <item name="android:textSize">52.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="tuner_tab_appearance" parent="@android:style/TextAppearance.Theme.Dialog" />
+    <style name="Max" parent="@android:style/Theme">
+        <item name="highlightColor">#ffffff00</item>
+    </style>
+    <style name="Playback" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="transparent_text">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="MaxTitleTextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/title_text</item>
+    </style>
+    <style name="MaxTitleTextAppearance.Small" parent="@style/MaxTitleTextAppearance">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="NoInitialTitle" parent="@android:style/Theme">
+        <item name="android:windowTitleStyle">@style/transparent_text</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+    </style>
+    <style name="NoInitialTitle_14" parent="@android:style/Theme" />
+    <style name="Default" parent="@style/NoInitialTitle" />
+    <style name="ModernAbout">
+        <item name="android:paddingLeft">32.0dip</item>
+        <item name="android:paddingRight">32.0dip</item>
+    </style>
+    <style name="BlackList">
+        <item name="android:background">@drawable/black_border</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:divider">@null</item>
+    </style>
+    <style name="BlackTheme" parent="@style/Max.Black">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="BlackTheme.Searchable" parent="@style/BlackTheme">
+        <item name="android:windowTitleSize">38.0sp</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="customTitle">@layout/mx_title_searchable</item>
+    </style>
+    <style name="BlackTheme.Simple" parent="@style/BlackTheme">
+        <item name="android:windowTitleSize">29.0sp</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="customTitle">@layout/mx_title_simple</item>
+    </style>
+    <style name="WhiteTheme" parent="@style/Max.White">
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+    <style name="WhiteTheme.Searchable" parent="@style/WhiteTheme">
+        <item name="android:windowTitleSize">40.0sp</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="customTitle">@layout/mx_title_searchable</item>
+    </style>
+    <style name="WhiteTheme.Simple" parent="@style/WhiteTheme">
+        <item name="android:windowTitleSize">31.0sp</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+        <item name="customTitle">@layout/mx_title_simple</item>
+    </style>
+    <style name="WhiteList">
+        <item name="android:background">@color/white_background</item>
+        <item name="android:listSelector">@drawable/list_selector_white</item>
+        <item name="android:cacheColorHint">@color/white_background</item>
+        <item name="android:divider">#ffcfcfcf</item>
+        <item name="android:dividerHeight">1.0px</item>
+    </style>
+    <style name="Max.Black" parent="@style/Max">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="maxTitleBackground">@drawable/title_back_black</item>
+        <item name="maxTitleButtonBackground">@drawable/title_button_back_black</item>
+        <item name="maxTitleRefreshButton">@drawable/title_refresh_black</item>
+        <item name="maxTitleSearchButton">@drawable/title_search_black</item>
+        <item name="listLayoutStyle">@style/BlackLayout</item>
+        <item name="listStyle">@style/BlackList</item>
+        <item name="listStyleCategory">@style/BlackList</item>
+        <item name="listStyleNoThumb">@style/BlackList</item>
+        <item name="listTitleNormalColor">@color/list_title_normal_black</item>
+        <item name="listTitleLastColor">@color/list_title_last_black</item>
+        <item name="listTitleFinishColor">@color/list_title_finish_black</item>
+        <item name="listThumbOverlay">@drawable/thumb_overlay_solid</item>
+        <item name="listThumbMarginLeft">8.0dip</item>
+        <item name="listThumbMarginRight">5.0dip</item>
+        <item name="listThumbMarginTop">8.0dip</item>
+        <item name="listThumbMarginBottom">8.0dip</item>
+        <item name="listPlayTimePaddingRight">1.0dip</item>
+        <item name="listPlayTimePaddingBottom">0.0px</item>
+        <item name="listPrimaryTextAppearance">@style/BlackText.Primary</item>
+        <item name="listPrimaryLargeTextAppearance">@style/BlackText.Primary.Large</item>
+        <item name="listSecondaryTextAppearance">@style/BlackText.Secondary</item>
+        <item name="listSecondaryLargeTextAppearance">@style/BlackText.Secondary.Large</item>
+        <item name="listNormalTextAppearance">@style/BlackText.Primary</item>
+        <item name="listAdvertStyle">@style/BlackAdvert</item>
+        <item name="tagGrayText">@style/BlackTagText.Gray</item>
+        <item name="tagAssText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagCCText">@style/BlackTagText.InternalSub</item>
+        <item name="tagMplText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagNewText">@style/BlackTagText.New</item>
+        <item name="tagPsbText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSamiText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSmiText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSrtText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSsaText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagSubText">@style/BlackTagText.ExternalSub</item>
+        <item name="tagTxtText">@style/BlackTagText.ExternalSub</item>
+        <item name="aboutPrimaryTextColor">#ffffffff</item>
+        <item name="aboutSecondaryTextColor">#ffdddddd</item>
+        <item name="aboutLineColor">#ff555555</item>
+        <item name="aboutStyle">@style/BlackAbout</item>
+    </style>
+    <style name="BlackTagText">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+    <style name="BlackTagText.ExternalSub" parent="@style/BlackTagText">
+        <item name="android:textColor">@color/blue_for_black</item>
+    </style>
+    <style name="BlackTagText.InternalSub" parent="@style/BlackTagText">
+        <item name="android:textColor">#ff66cc9a</item>
+    </style>
+    <style name="BlackTagText.New" parent="@style/BlackTagText">
+        <item name="android:textColor">#ffdd0000</item>
+    </style>
+    <style name="BlackTagText.Gray" parent="@style/BlackTagText">
+        <item name="android:textColor">#ff808080</item>
+    </style>
+    <style name="BlackLayout">
+        <item name="android:background">@drawable/black_border_no_pad</item>
+    </style>
+    <style name="BlackAbout">
+        <item name="android:background">@drawable/black_border</item>
+    </style>
+    <style name="BlackText">
+        <item name="android:textColor">@color/list_title_normal_black</item>
+    </style>
+    <style name="BlackText.Primary" parent="@style/BlackText">
+        <item name="android:textSize">15.5sp</item>
+    </style>
+    <style name="BlackText.Primary.Large" parent="@style/BlackText.Primary">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    <style name="BlackText.Secondary" parent="@style/BlackText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/list_secondary_black</item>
+    </style>
+    <style name="BlackText.Secondary.Large" parent="@style/BlackText.Secondary">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="BlackAdvert">
+        <item name="android:background">@drawable/black_border_bottom_pad</item>
+    </style>
+    <style name="Max.White" parent="@style/Max">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="maxTitleBackground">@drawable/title_back</item>
+        <item name="maxTitleButtonBackground">@drawable/title_button_back</item>
+        <item name="maxTitleRefreshButton">@drawable/title_refresh</item>
+        <item name="maxTitleSearchButton">@drawable/title_search</item>
+        <item name="listLayoutStyle">@style/WhiteLayout</item>
+        <item name="listStyle">@style/WhiteList</item>
+        <item name="listStyleCategory">@style/WhiteList</item>
+        <item name="listStyleNoThumb">@style/WhiteList</item>
+        <item name="listTitleNormalColor">@color/list_title_normal_white</item>
+        <item name="listTitleLastColor">@color/list_title_last_white</item>
+        <item name="listTitleFinishColor">@color/list_title_finish_white</item>
+        <item name="listThumbOverlay">@drawable/thumb_overlay_round_selectable</item>
+        <item name="listThumbMarginLeft">3.5dip</item>
+        <item name="listThumbMarginRight">2.0dip</item>
+        <item name="listThumbMarginTop">5.0dip</item>
+        <item name="listThumbMarginBottom">6.0dip</item>
+        <item name="listPlayTimePaddingRight">1.0dip</item>
+        <item name="listPlayTimePaddingBottom">1.0dip</item>
+        <item name="listPrimaryTextAppearance">@style/WhiteText.Primary</item>
+        <item name="listPrimaryLargeTextAppearance">@style/WhiteText.Primary.Large</item>
+        <item name="listSecondaryTextAppearance">@style/WhiteText.Secondary</item>
+        <item name="listSecondaryLargeTextAppearance">@style/WhiteText.Secondary.Large</item>
+        <item name="listNormalTextAppearance">@style/WhiteText.Normal</item>
+        <item name="tagAss">@drawable/tag_ass</item>
+        <item name="tagCC">@drawable/tag_embedded_caption</item>
+        <item name="tagMpl">@drawable/tag_mpl</item>
+        <item name="tagNew">@drawable/tag_new</item>
+        <item name="tagPsb">@drawable/tag_psb</item>
+        <item name="tagSami">@drawable/tag_sami</item>
+        <item name="tagSmi">@drawable/tag_smi</item>
+        <item name="tagSrt">@drawable/tag_srt</item>
+        <item name="tagSsa">@drawable/tag_ssa</item>
+        <item name="tagSub">@drawable/tag_sub</item>
+        <item name="tagTxt">@drawable/tag_txt</item>
+        <item name="aboutPrimaryTextColor">#ff000000</item>
+        <item name="aboutSecondaryTextColor">#ff4c4c4c</item>
+        <item name="aboutLineColor">#ffaaaaaa</item>
+        <item name="aboutStyle">@style/WhiteAbout</item>
+    </style>
+    <style name="WhiteLayout">
+        <item name="android:background">@color/white_background</item>
+        <item name="android:cacheColorHint">@color/white_background</item>
+    </style>
+    <style name="WhiteAbout">
+        <item name="android:background">@color/white_background</item>
+    </style>
+    <style name="WhiteText">
+        <item name="android:textColor">@color/list_title_normal_white</item>
+    </style>
+    <style name="WhiteText.Primary" parent="@style/WhiteText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="WhiteText.Primary.Large" parent="@style/WhiteText.Primary">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="WhiteText.Secondary" parent="@style/WhiteText">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">@color/list_secondary_white</item>
+    </style>
+    <style name="WhiteText.Secondary.Large" parent="@style/WhiteText.Secondary">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="WhiteText.Normal" parent="@style/WhiteText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+</resources>

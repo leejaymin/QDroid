@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ambilwarna_includePemilih" android:layout_width="296.0dip" android:layout_height="256.0dip" layout="@layout/ambilwarna_pemilih" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:gravity="center" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/select_color" />
+        <View android:id="@id/ambilwarna_warnaBaru" android:background="#ffaaaaff" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

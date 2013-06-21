@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.nix.apps.androlib.wallpapers">
+    <ListView android:id="@id/lstCats" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:drawSelectorOnTop="false" android:cacheColorHint="#ffffffff" android:divider="#ffc0c0c0" android:dividerHeight="2.0dip" />
+</LinearLayout>

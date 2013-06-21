@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/prefs_title_user_color" android:key="@string/PREFSKEY_USER_COLOR" android:summary="@string/prefs_summary_user_color" />
+    <Preference android:title="@string/prefs_title_system_color" android:key="@string/PREFSKEY_SYSTEM_COLOR" android:summary="@string/prefs_summary_system_color" />
+    <Preference android:title="@string/prefs_title_kernel_color" android:key="@string/PREFSKEY_KERNEL_COLOR" android:summary="@string/prefs_summary_kernel_color" />
+</PreferenceScreen>

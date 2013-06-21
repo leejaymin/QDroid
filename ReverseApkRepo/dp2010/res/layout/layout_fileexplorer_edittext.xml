@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/pathedittext" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/fileexplorer_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pathedittext" android:layout_centerHorizontal="true">
+        <Button android:id="@id/ok" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="@string/ok_title" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/toolbox" android:id="@id/menu_toolbox" android:orderInCategory="1" android:title="@string/menu_activities" android:alphabeticShortcut="s" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/settings" android:id="@id/menu_settings" android:orderInCategory="2" android:title="@string/menu_settings" android:alphabeticShortcut="s" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/previous" android:id="@id/menu_load_previous" android:orderInCategory="3" android:title="@string/menu_load_previous" android:alphabeticShortcut="l" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/graphic" android:id="@id/menu_load" android:orderInCategory="4" android:title="@string/menu_load" android:alphabeticShortcut="l" />
+    <item android:icon="@drawable/next" android:id="@id/menu_load_next" android:orderInCategory="5" android:title="@string/menu_load_next" android:alphabeticShortcut="l" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/reload" android:id="@id/menu_reload" android:orderInCategory="6" android:title="@string/menu_reload" android:alphabeticShortcut="r" />
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="#ff000000" android:padding="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Username" />
+            <EditText android:textColor="#ff000000" android:id="@id/username_edittext" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textColor="#ff000000" android:padding="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" />
+            <EditText android:textColor="#ff000000" android:id="@id/password_edittext" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true" android:singleLine="true" />
+            <TextView android:textColor="#ff000000" android:padding="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:bufferType="spannable" android:text="@string/plans_to_lookup" />
+            <EditText android:textColor="#ff000000" android:id="@id/plans_to_lookup_edittext" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <CheckBox android:textColor="#ff000000" android:id="@id/use_auto_refresh_checkbox" android:paddingTop="5.0px" android:paddingBottom="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Auto-lookup on load" />
+            <CheckBox android:textColor="#ff000000" android:id="@id/remember_credentials_checkbox" android:paddingTop="15.0px" android:paddingBottom="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Store Information" />
+            <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="#ff000000" android:id="@id/save_button" android:paddingLeft="30.0px" android:paddingRight="30.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

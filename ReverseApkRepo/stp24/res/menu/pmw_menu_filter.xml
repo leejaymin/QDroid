@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_text_filter" android:title="@string/menu_text_filter" />
+    <item android:id="@id/menu_running_app" android:title="@string/menu_running_app" />
+    <item android:id="@id/menu_killed_app" android:title="@string/menu_killed_app" />
+    <item android:id="@id/menu_verbose" android:title="@string/menu_verbose" />
+    <item android:id="@id/menu_info" android:title="@string/menu_info" />
+    <item android:id="@id/menu_debug" android:title="@string/menu_debug" />
+    <item android:id="@id/menu_warn" android:title="@string/menu_warn" />
+    <item android:id="@id/menu_err" android:title="@string/menu_err" />
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff949494" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/be.yakupkalin.bday">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" myapp:backgroundColor="#ff949494" myapp:primaryTextColor="#ffffffff" myapp:secondaryTextColor="#ffcccccc" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/ivBday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bheader" />
+                <TextView android:textSize="25.0dip" android:textColor="#ff949494" android:id="@id/txtChoose" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Language:" />
+            </LinearLayout>
+            <Spinner android:id="@id/spLanguage" android:background="#ff949494" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <EditText android:textSize="20.0dip" android:textColor="#ff949494" android:id="@id/txtBdayText" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:editable="false" />
+                <Button android:textSize="20.0dip" android:textColor="#ffffffff" android:gravity="bottom" android:id="@id/btnSend" android:background="#ff949494" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Send" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Button android:textStyle="bold" android:textColor="#ff949494" android:id="@id/btnStatus" android:background="#ffffffff" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Message sent." />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

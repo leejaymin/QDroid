@@ -1,0 +1,42 @@
+<ttbasepanelmodule id="galleryInfoDialogPanelModule" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="350" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="330" height="189" x="2" y="19" module="galleryInfoDialogPanelModule" whiteBackground="true">
+        <text id="textttblack" width="296" height="22" x="19" y="38" text="$$$/ttgallerypublishdialogpanelmodule/text/text/Select project(s) to be published.=Select project(s) to be published."/>
+        <button id="button" width="140" height="40" sizeY="bottom" x="20" y="129" target="referenceDispatcher" selector="TTGalleryInfoCancel" title="$$$/ttgallerypublishdialogpanelmodule/button/title/Cancel=Cancel"/>
+        <ttnumberedbutton id="button1ttblue" width="140" height="40" sizeX="right" sizeY="bottom" x="170" y="129" target="referenceDispatcher" selector="TTGalleryInfoOk" title="$$$/ttgallerypublishdialogpanelmodule/button/title/OK=OK"/>
+        <text id="ttboldttblackttlarge" width="296" height="25" x="19" y="15" text="$$$/ttgallerypublishdialogpanelmodule/text/text/Publish Projects=Publish Projects"/>
+        <ttpopup id="popup" width="290" height="40" x="20" y="74" target="referenceDispatcher" selector="publishImageType" selectedItem="0" panelModule="galleryInfoDialogPanelModule">
+          <menuItem id="menuItem" title="$$$/ttgallerypublishdialogpanelmodule/menuItem/title/Save as JPEG=Save as JPEG"/>
+          <menuItem id="menuItem1" title="$$$/ttgallerypublishdialogpanelmodule/menuItem/title/Save as PNG=Save as PNG"/>
+        </ttpopup>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="button" refName="cancelButton"/>
+      <objRef refId="button1ttblue" refName="okButton"/>
+      <objRef refId="ttboldttblackttlarge" refName="titleText"/>
+      <objRef refId="textttblack" refName="subtitleText"/>
+      <objRef refId="popup" refName="typePopup"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+    <class className="ttgalleryinfodialogview" superClassName="view" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryInfoDialogView"/>
+    <class className="ttnumberedbutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTNumberedButton"/>
+    <class className="ttpopup" superClassName="popup" packageName="com.adobe.ttpixel.ui" codeName="TTPopup">
+      <var name="panelModule" type="object" defaultValue="" codeName="iPanelModule" className="TTBasePanelModule"/>
+    </class>
+  </classes>
+</ttbasepanelmodule>

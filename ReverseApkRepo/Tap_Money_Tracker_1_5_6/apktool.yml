@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: Tap_Money_Tracker_1_5_6.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

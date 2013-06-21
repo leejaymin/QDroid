@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="250.0dip" android:minHeight="50.0dip" android:updatePeriodMillis="300000" android:initialLayout="@layout/appwidget_toolbox" android:configure="my.ui.ToolBoxActivity"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

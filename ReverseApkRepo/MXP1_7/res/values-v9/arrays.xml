@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="tune_orientation_options">
+        <item>@string/orientation_landscape</item>
+        <item>@string/orientation_reverse_landscape</item>
+        <item>@string/orientation_auto_landscape</item>
+        <item>@string/orientation_auto</item>
+        <item>@string/use_system_default</item>
+    </array>
+    <integer-array name="tune_orientation_values">
+        <item>0</item>
+        <item>8</item>
+        <item>6</item>
+        <item>10</item>
+        <item>-1</item>
+    </integer-array>
+</resources>

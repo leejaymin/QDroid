@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txv_image_selection">Selecione as imagens que serão utilizadas na geração de mosaico</string>
+    <string name="btn_take_a_picture">Tire uma foto</string>
+    <string name="btn_select_image">Selecione uma imagem</string>
+    <string name="btn_share">Compartilhar</string>
+    <string name="popup_share_title">Compartilhar</string>
+    <string name="menu_reset">Voltar</string>
+    <string name="crash_text">Oops! Ocorreu um erro. Por favor, reinicie a aplicação e tente novamente.</string>
+    <string name="no_mosaics_were_found">Nenhum mosaico gerado.</string>
+    <string name="progress_saving">Salvando</string>
+    <string name="progress_loading">Carregando</string>
+    <string name="scanning_photo_library">"CATALOGANDO IMAGENS
+acontece somente na primeira execução"</string>
+    <string name="creating_mosaic">CRIANDO MOSAICO</string>
+    <string name="wait_mosaic_completion">Por favor, aguarde o término do mosaico em execução.</string>
+    <string name="failed_to_create_directory">Falha ao criar diretório</string>
+    <string name="external_storage_is_unmounted">O cartão de memória não está conectado.</string>
+    <string name="drawing_mosaic_pieces">Desenhando peças do mosaico</string>
+    <string name="minimum_of_selected_images">Selecione pelo menos %d imagens na aba configurações antes de criar o mosaico.</string>
+    <string name="tab_mosaicture">MOSAICTURE</string>
+    <string name="tab_gallery">GALERIA</string>
+    <string name="tab_settings">CONFIG</string>
+    <string name="mosaic_size">Qualidade do mosaico</string>
+    <string name="delete_confirmation">Deseja deletar %s ?</string>
+    <string name="yes">Sim</string>
+    <string name="cancel">Cancelar</string>
+    <string name="this_item">" esse item"</string>
+    <string name="these_items">esses %d itens</string>
+    <string name="reading_main_image">Lendo imagem principal</string>
+    <string name="last_photos">Últimas imagens</string>
+    <string name="progress_removing">Removendo</string>
+    <string name="auth_waiting">Aguardando Autenticação</string>
+    <string name="access_denied">"A primeira execução verifica a licença de uso da aplicação.
+Por favor, conecte-se à internet e tente novamente."</string>
+    <string name="scan_library_completed">Imagens catalogadas</string>
+    <string name="wait_scanning_completion">Por favor, aguarde até que as imagens tenham sido catalogadas.</string>
+    <string name="wait_scanning_completion_settings">Por favor, aguarde até que as imagens tenham sido catalogadas para salvar.</string>
+    <string name="read_picture_error">Erro ao ler imagem: %s</string>
+    <string name="cropp_title">Recortar</string>
+    <string name="folder_preview_picture_description">Pré-visualização de pasta.</string>
+    <string name="folder_preview_selected_items_text">Selecionadas: %d</string>
+    <string name="folder_preview_total_items_text">Total: %d</string>
+    <string name="folder_view_title">Seleção de imagens</string>
+    <string name="settings_not_saved">Por favor, salve as configurações para evitar o risco de perda de informação.</string>
+    <string name="help_menu">Ajuda</string>
+    <string name="help_activity_title">Ajuda</string>
+    <string name="help_file_name">help-ptbr</string>
+</resources>

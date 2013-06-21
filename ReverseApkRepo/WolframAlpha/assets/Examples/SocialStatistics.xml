@@ -1,0 +1,9 @@
+<?xml version='1.0'?><example><link ref="SocioeconomicData">Socioeconomic Data</link><category>Social Statistics</category><section-title>
+ <link ref="Crime">Crime </link>
+</section-title><caption>get crime data for a US state</caption><input>crime Texas</input><caption>get statistics on a specified type of crime</caption><input>homicide Phoenix, Austin, NYC</input><section-title>
+ <link ref="MilitaryData">Military Data </link>
+</section-title><caption>determine facts about military forces</caption><input>Japan military strength</input><caption>get information about armaments</caption><input>Canada armaments</input><section-title>
+ <link ref="Religion">Religion </link>
+</section-title><caption>get information about a religion</caption><input>Buddhism</input><caption>do computations with religion statistics</caption><input>Catholics / Christian population Germany</input><section-title>
+ <link ref="HealthIndicators">Health Indicators </link>
+</section-title><caption>compare health indicators of countries</caption><input>USA vs Cuba medical personnel</input><caption>look up a particular statistic for a country</caption><input>Nigeria MCV immunization 2000</input><section-title>Gender Equality</section-title><caption>get CPIA gender equality ratings</caption><input>gender equality in Angola</input></example>

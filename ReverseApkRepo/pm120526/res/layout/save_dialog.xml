@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:id="@id/save_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save your record as" />
+    <EditText android:id="@id/filename" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_below="@id/save_message" />
+    <EditText android:id="@id/filename2" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_below="@id/filename" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/filename2">
+        <Button android:id="@id/btn_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" android:onClick="onSaveDialogClick" />
+        <Button android:id="@id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_toRightOf="@id/btn_save" android:onClick="onSaveDialogClick" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ExpandableListView android:id="@id/elv_balance" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0px" android:text="@string/caption_total" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="#ff41db00" android:gravity="right" android:id="@id/txt_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0px" android:text="NT 20000" />
+    </LinearLayout>
+</LinearLayout>

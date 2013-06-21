@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filenameTexts">
+        <item>Jahr-Monat-Tag hh:mm:sek:msek</item>
+        <item>Millisekunden seit 1/1/1970</item>
+        <item>jjjj-MM-tt hh:mm:ss:SSS</item>
+        <item>UNIX</item>
+        <item>Sehr klein</item>
+        <item>Klein</item>
+        <item>Normal</item>
+        <item>Groß</item>
+        <item>Sehr groß</item>
+        <item>Alle verfügbaren</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+        <item>-100</item>
+        <item>Verzögerung aus</item>
+        <item>1/20. Sekunde</item>
+        <item>1/15. Sekunde</item>
+        <item>1/10. Sekunde</item>
+        <item>1/5. Sekunde</item>
+        <item>1/2 Sekunde</item>
+        <item>1 Sekunde</item>
+        <item>-1</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>Keine</item>
+        <item>1/20 Sek.</item>
+        <item>1/15 Sek.</item>
+        <item>1/10 Sek.</item>
+        <item>1/5 Sek.</item>
+        <item>1/2 Sek.</item>
+        <item>1 Sek.</item>
+        <item>Serienaufnahme</item>
+        <item>1 Aufnahme</item>
+        <item>3 Aufnahmen</item>
+        <item>5 Aufnahmen</item>
+        <item>Ser.</item>
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>App-Ordner</item>
+        <item>Fotogalerie</item>
+        <item>Benutzerdefinierter Ort</item>
+        <item>Standard</item>
+        <item>Galerie</item>
+        <item>individuell</item>
+        <item>Nichts</item>
+        <item>Auslösen</item>
+        <item>Fokus und Zoom</item>
+        <item>Nichts</item>
+        <item>Auslösen</item>
+        <item>Fokus und Zoom</item>
+        <item>Keine</item>
+        <item>2x</item>
+        <item>4x</item>
+        <item>8x</item>
+        <item>16x</item>
+        <item>256</item>
+        <item>128</item>
+        <item>64</item>
+        <item>32</item>
+        <item>16</item>
+    </string-array>
+</resources>

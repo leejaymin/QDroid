@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/logo" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/app_name" android:singleLine="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/notification_ram_pb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/my_custom_pb3" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/notification_ram_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="99/100" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/notification_battery_iv" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/examination_battery_bg" android:layout_weight="1.0" />
+        <TextView android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/notification_battery_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60%" android:singleLine="true" android:layout_weight="9.0" />
+    </LinearLayout>
+</LinearLayout>

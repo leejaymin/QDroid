@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ccc71.utils.ccc71_color_view android:id="@id/color_wheel" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ccc71.utils.ccc71_color_gradient android:id="@id/color_gradient" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+</LinearLayout>

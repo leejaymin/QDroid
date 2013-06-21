@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/communication_item_ll" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/communication_icon_iv" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/communication_call_list" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/communication_number_tv" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="pkgname" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/communication__amount_tv" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="pkgname" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <CheckBox android:id="@id/communication_checkbox_cb" android:paddingRight="2.0dip" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox" />
+    </LinearLayout>
+</LinearLayout>

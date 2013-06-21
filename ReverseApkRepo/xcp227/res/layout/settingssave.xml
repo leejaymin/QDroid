@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_image_storage_settings" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_storage_location" />
+            <LinearLayout android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/save_edtPathImg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/save_btnStorageImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_select" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_fileformat" />
+            <LinearLayout android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/save_edtFileImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/save_btnFnImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_preset" />
+            </LinearLayout>
+            <CheckBox android:id="@id/save_cbxDateDirImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_datedir" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_vide_storage_settings" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_storage_location" />
+            <LinearLayout android:id="@id/linearLayout4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/save_edtPathVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/save_btnStorageVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_select" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_fileformat" />
+            <LinearLayout android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/save_edtFileVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <Button android:id="@id/save_btnFnVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_save_preset" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

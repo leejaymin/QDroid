@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="versions_array">
+        <item>2.4|New work-around for JellyBean logcat reader (requires root)</item>
+        <item>2.4|New scale themes: white, yellow, orange and automatic</item>
+        <item>2.4|New dmesg reader (kernel logs)</item>
+        <item>2.4|New French translations</item>
+        <item>2.4|Fix long delays using auto-kill from widgets</item>
+        <item>2.4|Settings are updated when pressing home, not only with back button</item>
+        <item>2.3.4|Improve auto-kill handling (but still imperfect)</item>
+        <item>2.3.4|Reduce app backup size</item>
+        <item>2.3.4|Fix app restore/move failing with few apps</item>
+        <item>2.3.4|Fix FC in settings on some devices</item>
+        <item>2.3.3|New Korean translation (thanks Jang)</item>
+        <item>2.3.3|Improve SD scan speed and shows file names too</item>
+        <item>2.3.2|New long-press log to copy to clipboard</item>
+        <item>2.3.2|Optimized app management screens</item>
+        <item>2.3.2|Fix missing buttons in process details</item>
+        <item>2.3.1|Fix tweak screens possibly blank when switching apps</item>
+        <item>2.3.1|Fix build.prop restore</item>
+        <item>2.3.1|Fix sysctl not available on some devices</item>
+        <item>2.3|New build.prop editor</item>
+        <item>2.3|Fix availability of pro features (free version)</item>
+        <item>2.3|Fix for SD card browsing hanging</item>
+        <item>2.3|Other bug fixes</item>
+        <item>2.2|Migrate notification packages outside of Market</item>
+        <item>2.1|New voltage save/load buttons</item>
+        <item>2.1|New widget option for external SD</item>
+        <item>2.1|New widget and logcat text size options</item>
+        <item>2.0|New graphic 2x1, 3x1 or 4x1 widgets (pro only)</item>
+        <item>2.0|Enhance UI performance and smoothness</item>
+    </string-array>
+    <string-array name="settings_refresh_rates">
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+    </string-array>
+    <string-array name="settings_notif_refresh_rates">
+        <item>1 second</item>
+        <item>2 seconds</item>
+        <item>3 seconds</item>
+        <item>4 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+    </string-array>
+    <string-array name="settings_sort_by_entries">
+        <item>CPU Time</item>
+        <item>CPU %</item>
+        <item>Total CPU Time</item>
+        <item>Total CPU Consumption</item>
+        <item>Start Time</item>
+        <item>Memory Used</item>
+        <item>Name</item>
+    </string-array>
+    <string-array name="settings_widget_click_entries">
+        <item>Kill all processes</item>
+        <item>Start monitor if no kill</item>
+        <item>Refresh widget</item>
+        <item>Start/stop recorder</item>
+        <item>Open activity popup</item>
+        <item>Open main screen</item>
+        <item>Open task manager</item>
+        <item>Open analyzer</item>
+        <item>Open app manager</item>
+        <item>Open tweaks</item>
+        <item>Open terminal</item>
+        <item>Open logs</item>
+        <item>Open settings</item>
+    </string-array>
+    <string-array name="settings_widget_label_click_entries">
+        <item>Same as main action</item>
+        <item>Kill all processes</item>
+        <item>Start monitor if no kill</item>
+        <item>Refresh widget</item>
+        <item>Start/stop recorder</item>
+        <item>Open activity popup</item>
+        <item>Open main screen</item>
+        <item>Open task manager</item>
+        <item>Open analyzer</item>
+        <item>Open app manager</item>
+        <item>Open tweaks</item>
+        <item>Open terminal</item>
+        <item>Open logs</item>
+        <item>Open settings</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>No icon</item>
+        <item>Gears</item>
+        <item>"Black'n'White"</item>
+        <item>CPU Chip 1</item>
+        <item>CPU Chip 2</item>
+        <item>Android MicroSD</item>
+        <item>Blue MicroSD</item>
+        <item>Blue SD</item>
+        <item>Green SD</item>
+        <item>Android</item>
+        <item>Android Blue</item>
+        <item>Android Red</item>
+        <item>Android Gold</item>
+        <item>Linux</item>
+        <item>Mem Chip</item>
+        <item>"Mem Chip B'n'W"</item>
+        <item>Folders</item>
+        <item>"Folders B'n'W"</item>
+        <item>Voltage</item>
+        <item>"Voltage B'n'W"</item>
+        <item>Blue Ice</item>
+        <item>Red Ice</item>
+        <item>Screen</item>
+        <item>"Screen B'n'W"</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC style</item>
+        <item>Sense 3 style</item>
+        <item>Google style</item>
+        <item>Glass style</item>
+        <item>ICS style</item>
+        <item>Transparent HTC</item>
+        <item>Transparent Sense 3</item>
+        <item>Transparent Google</item>
+        <item>Transparent Glass style</item>
+        <item>Transparent ICS style</item>
+        <item>Hidden HTC</item>
+        <item>Hidden Sense 3</item>
+        <item>Hidden Google</item>
+    </string-array>
+    <string-array name="settings_widget_refresh_rates">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+    </string-array>
+    <string-array name="settings_record_rate_entries">
+        <item>1 hour every minute</item>
+        <item>6 hours, 5 minutes</item>
+        <item>12 hours, 10 minutes</item>
+        <item>18 hours, 15 minutes</item>
+        <item>24 hours, 20 minutes</item>
+    </string-array>
+    <string-array name="settings_font_size_entries">
+        <item>Very-small</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra-large</item>
+        <item>Normal tablet</item>
+        <item>Large tablet</item>
+    </string-array>
+    <string-array name="settings_wv_entries">
+        <item>Removed</item>
+        <item>Nothing</item>
+        <item>CPU Load</item>
+        <item>CPU Frequency</item>
+        <item>CPU Temperature</item>
+        <item>CPU Governor</item>
+        <item>Process Count</item>
+        <item>Free Memory</item>
+        <item>Free Internal Memory</item>
+        <item>Free SD Memory</item>
+        <item>Free External SD</item>
+        <item>Used Memory</item>
+        <item>Used Internal Memory</item>
+        <item>Used SD Memory</item>
+        <item>Used External SD</item>
+    </string-array>
+    <string-array name="settings_wv_left_entries">
+        <item>Nothing</item>
+        <item>CPU Load</item>
+        <item>CPU Frequency</item>
+        <item>Process Count</item>
+        <item>Free Memory</item>
+        <item>Free Internal Memory</item>
+        <item>Free SD Memory</item>
+        <item>Free External SD</item>
+        <item>Used Memory</item>
+        <item>Used Internal Memory</item>
+        <item>Used SD Memory</item>
+        <item>Used External SD</item>
+    </string-array>
+    <string-array name="settings_wv_center_entries">
+        <item>Display icon</item>
+        <item>CPU Load</item>
+        <item>CPU Frequency</item>
+        <item>CPU Temperature</item>
+        <item>CPU Governor</item>
+        <item>Process Count</item>
+        <item>Free Memory</item>
+        <item>Free Internal Memory</item>
+        <item>Free SD Memory</item>
+        <item>Free External SD</item>
+        <item>Used Memory</item>
+        <item>Used Internal Memory</item>
+        <item>Used SD Memory</item>
+        <item>Used External SD</item>
+    </string-array>
+    <string-array name="settings_boot_entries">
+        <item>Disabled</item>
+        <item>On boot completed</item>
+        <item>init.d script</item>
+    </string-array>
+    <string-array name="settings_boot_noscript_entries">
+        <item>Disabled</item>
+        <item>On boot completed</item>
+    </string-array>
+    <string-array name="settings_button_entries">
+        <item>HTC style</item>
+        <item>Sense 3 style</item>
+        <item>Google style</item>
+        <item>Glass style</item>
+        <item>ICS style</item>
+        <item>Transparent HTC</item>
+        <item>Transparent Sense 3</item>
+        <item>Transparent Google</item>
+        <item>Transparent Glass style</item>
+        <item>Transparent ICS style</item>
+        <item>Hidden</item>
+    </string-array>
+    <string-array name="settings_temperature_entries">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Show</item>
+        <item>Hide</item>
+        <item>Remove</item>
+    </string-array>
+    <array name="settings_scale_entries">
+        <item>ICS</item>
+        <item>Motorola</item>
+        <item>Green</item>
+        <item>White</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Auto</item>
+        <item>@string/remove</item>
+    </array>
+    <string-array name="settings_scale_values">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>-1</item>
+    </string-array>
+    <array name="array_share">
+        <item>@string/menu_restore_auto</item>
+        <item>@string/text_app_alone</item>
+        <item>@string/text_settings_alone</item>
+        <item>@string/text_market_link</item>
+    </array>
+    <array name="font_size_entries">
+        <item>@string/prefs_default_launcher_size</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </array>
+    <string-array name="build_presets_names">
+        <item>Apply all presets</item>
+        <item>Power saver</item>
+        <item>Improve responsiveness</item>
+        <item>Enable 270° rotation</item>
+        <item>Disable usage reporting</item>
+        <item>Remove boot animation</item>
+        <item>Increase reboot speed</item>
+        <item>Force launcher in memory</item>
+        <item>Improve apps performance (dalvik VM)</item>
+        <item>Disable USB debugging notification</item>
+        <item>Improve call ringer speed</item>
+        <item>Improve screen on speed during calls</item>
+        <item>Remove app checks (JNI)</item>
+        <item>Improve network (WiFi/Mobile) performance</item>
+    </string-array>
+    <string-array name="build_presets_power_save">
+        <item>ro.ril.disable.power.collapse=1</item>
+        <item>pm.sleep_mode=1</item>
+        <item>wifi.supplicant_scan_interval=180</item>
+    </string-array>
+    <string-array name="build_presets_responsiveness">
+        <item>windowsmgr.max_events_per_sec=150</item>
+        <item>debug.performance.tuning=1</item>
+        <item>video.accelerate.hw=1</item>
+    </string-array>
+    <string-array name="build_presets_enable_270">
+        <item>windowsmgr.support_rotation_270=true</item>
+    </string-array>
+    <string-array name="build_presets_disable_usage">
+        <item>ro.config.nocheckin=1</item>
+    </string-array>
+    <string-array name="build_presets_remove_boot_anim">
+        <item>debug.sf.nobootanimation=1</item>
+    </string-array>
+    <string-array name="build_presets_faster_reboot">
+        <item>persist.sys.purgeable_assets=1</item>
+    </string-array>
+    <string-array name="build_presets_force_launcher">
+        <item>ro.HOME_APP_ADJ=1</item>
+    </string-array>
+    <string-array name="build_presets_dalvik_vm">
+        <item>dalvik.vm.heapsize=256m</item>
+        <item>dalvik.vm.heapstartsize=8m</item>
+        <item>dalvik.vm.heapgrowthlimit=64m</item>
+    </string-array>
+    <string-array name="build_presets_disable_usb_debug_notif">
+        <item>persist.adb.notify=0</item>
+    </string-array>
+    <string-array name="build_presets_faster_ring">
+        <item>ro.telephony.call_ring.delay=800</item>
+    </string-array>
+    <string-array name="build_presets_phone_black_screen">
+        <item>ro.lge.proximity.delay=25</item>
+        <item>mot.proximity.delay=25</item>
+    </string-array>
+    <string-array name="build_presets_jni_fix">
+        <item>ro.kernel.android.checkjni=0</item>
+    </string-array>
+    <string-array name="build_presets_faster_wireless">
+        <item>net.tcp.buffersize.default=4096,87380,256960,4096, 16384,256960</item>
+        <item>net.tcp.buffersize.wifi=4096,87380,256960,4096,163 84,256960</item>
+        <item>net.tcp.buffersize.umts=4096,87380,256960,4096,163 84,256960</item>
+        <item>net.tcp.buffersize.gprs=4096,87380,256960,4096,163 84,256960</item>
+        <item>net.tcp.buffersize.edge=4096,87380,256960,4096,163 84,256960</item>
+    </string-array>
+    <string-array name="event_names">
+        <item>android.intent.action.AIRPLANE_MODE</item>
+        <item>android.intent.action.ALL_APPS</item>
+        <item>android.intent.action.ANSWER</item>
+        <item>android.intent.action.APP_ERROR</item>
+        <item>android.intent.action.ATTACH_DATA</item>
+        <item>android.intent.action.BATTERY_CHANGED</item>
+        <item>android.intent.action.BATTERY_LOW</item>
+        <item>android.intent.action.BATTERY_OKAY</item>
+        <item>android.intent.action.BUG_REPORT</item>
+        <item>android.intent.action.CALL</item>
+        <item>android.intent.action.CALL_BUTTON</item>
+        <item>android.intent.action.CAMERA_BUTTON</item>
+        <item>android.intent.action.CHOOSER</item>
+        <item>android.intent.action.CLOSE_SYSTEM_DIALOGS</item>
+        <item>android.intent.action.CONFIGURATION_CHANGED</item>
+        <item>android.intent.action.CREATE_SHORTCUT</item>
+        <item>android.intent.action.DATE_CHANGED</item>
+        <item>android.intent.action.DELETE</item>
+        <item>android.intent.action.DEVICE_STORAGE_LOW</item>
+        <item>android.intent.action.DEVICE_STORAGE_OK</item>
+        <item>android.intent.action.DIAL</item>
+        <item>android.intent.action.DOCK_EVENT</item>
+        <item>android.intent.action.EDIT</item>
+        <item>android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE</item>
+        <item>android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE</item>
+        <item>android.intent.action.GET_CONTENT</item>
+        <item>android.intent.action.GTALK_CONNECTED</item>
+        <item>android.intent.action.GTALK_DISCONNECTED</item>
+        <item>android.intent.action.HEADSET_PLUG</item>
+        <item>android.intent.action.INPUT_METHOD_CHANGED</item>
+        <item>android.intent.action.INSERT</item>
+        <item>android.intent.action.INSERT_OR_EDIT</item>
+        <item>android.intent.action.INSTALL_PACKAGE</item>
+        <item>android.intent.action.LOCALE_CHANGED</item>
+        <item>android.intent.action.MANAGE_NETWORK_USAGE</item>
+        <item>android.intent.action.MANAGE_PACKAGE_STORAGE</item>
+        <item>android.intent.action.MEDIA_BAD_REMOVAL</item>
+        <item>android.intent.action.MEDIA_BUTTON</item>
+        <item>android.intent.action.MEDIA_CHECKING</item>
+        <item>android.intent.action.MEDIA_EJECT</item>
+        <item>android.intent.action.MEDIA_MOUNTED</item>
+        <item>android.intent.action.MEDIA_NOFS</item>
+        <item>android.intent.action.MEDIA_REMOVED</item>
+        <item>android.intent.action.MEDIA_SCANNER_FINISHED</item>
+        <item>android.intent.action.MEDIA_SCANNER_SCAN_FILE</item>
+        <item>android.intent.action.MEDIA_SCANNER_STARTED</item>
+        <item>android.intent.action.MEDIA_SHARED</item>
+        <item>android.intent.action.MEDIA_UNMOUNTABLE</item>
+        <item>android.intent.action.MEDIA_UNMOUNTED</item>
+        <item>android.intent.action.MY_PACKAGE_REPLACED</item>
+        <item>android.intent.action.NEW_OUTGOING_CALL</item>
+        <item>android.intent.action.PACKAGE_ADDED</item>
+        <item>android.intent.action.PACKAGE_CHANGED</item>
+        <item>android.intent.action.PACKAGE_DATA_CLEARED</item>
+        <item>android.intent.action.PACKAGE_FIRST_LAUNCH</item>
+        <item>android.intent.action.PACKAGE_FULLY_REMOVED</item>
+        <item>android.intent.action.PACKAGE_NEEDS_VERIFICATION</item>
+        <item>android.intent.action.PACKAGE_REMOVED</item>
+        <item>android.intent.action.PACKAGE_REPLACED</item>
+        <item>android.intent.action.PACKAGE_RESTARTED</item>
+        <item>android.intent.action.PASTE</item>
+        <item>android.intent.action.PICK</item>
+        <item>android.intent.action.PICK_ACTIVITY</item>
+        <item>android.intent.action.ACTION_POWER_CONNECTED</item>
+        <item>android.intent.action.ACTION_POWER_DISCONNECTED</item>
+        <item>android.intent.action.POWER_USAGE_SUMMARY</item>
+        <item>android.intent.action.PROVIDER_CHANGED</item>
+        <item>android.intent.action.REBOOT</item>
+        <item>android.intent.action.SCREEN_OFF</item>
+        <item>android.intent.action.SCREEN_ON</item>
+        <item>android.intent.action.SEARCH</item>
+        <item>android.intent.action.SEARCH_LONG_PRESS</item>
+        <item>android.intent.action.SEND</item>
+        <item>android.intent.action.SENDTO</item>
+        <item>android.intent.action.SEND_MULTIPLE</item>
+        <item>android.intent.action.SET_WALLPAPER</item>
+        <item>android.intent.action.ACTION_SHUTDOWN</item>
+        <item>android.intent.action.SYNC</item>
+        <item>android.intent.action.SYSTEM_TUTORIAL</item>
+        <item>android.intent.action.TIMEZONE_CHANGED</item>
+        <item>android.intent.action.TIME_SET</item>
+        <item>android.intent.action.TIME_TICK</item>
+        <item>android.intent.action.UID_REMOVED</item>
+        <item>android.intent.action.UNINSTALL_PACKAGE</item>
+        <item>android.intent.action.USER_PRESENT</item>
+        <item>android.intent.action.VIEW</item>
+        <item>android.intent.action.VOICE_COMMAND</item>
+        <item>android.intent.action.WALLPAPER_CHANGED</item>
+        <item>android.intent.action.WEB_SEARCH</item>
+        <item>android.net.wifi.PICK_WIFI_NETWORK</item>
+        <item>android.net.wifi.WIFI_STATE_CHANGED</item>
+        <item>android.net.wifi.NETWORK_IDS_CHANGED</item>
+        <item>android.net.wifi.STATE_CHANGE</item>
+        <item>android.net.wifi.RSSI_CHANGED</item>
+        <item>android.net.wifi.SCAN_RESULTS</item>
+        <item>android.net.wifi.supplicant.CONNECTION_CHANGE</item>
+        <item>android.net.wifi.supplicant.STATE_CHANGE</item>
+        <item>android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED</item>
+        <item>android.bluetooth.adapter.action.DISCOVERY_FINISHED</item>
+        <item>android.bluetooth.adapter.action.DISCOVERY_STARTED</item>
+        <item>android.bluetooth.adapter.action.LOCAL_NAME_CHANGED</item>
+        <item>android.bluetooth.adapter.action.REQUEST_DISCOVERABLE</item>
+        <item>android.bluetooth.adapter.action.REQUEST_ENABLE</item>
+        <item>android.bluetooth.adapter.action.SCAN_MODE_CHANGED</item>
+        <item>android.bluetooth.adapter.action.STATE_CHANGED</item>
+        <item>android.media.AUDIO_BECOMING_NOISY</item>
+        <item>android.media.ACTION_SCO_AUDIO_STATE_UPDATED</item>
+        <item>android.media.RINGER_MODE_CHANGED</item>
+        <item>android.media.VIBRATE_SETTING_CHANGED</item>
+        <item>android.net.conn.BACKGROUND_DATA_SETTING_CHANGED</item>
+        <item>android.net.conn.CONNECTIVITY_CHANGE</item>
+        <item>android.app.action.ADD_DEVICE_ADMIN</item>
+        <item>android.app.action.SET_NEW_PASSWORD</item>
+        <item>android.app.action.START_ENCRYPTION</item>
+        <item>android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL</item>
+        <item>android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION</item>
+        <item>android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION</item>
+        <item>android.nfc.action.NDEF_DISCOVERED</item>
+        <item>android.nfc.action.TAG_DISCOVERED</item>
+        <item>android.nfc.action.TECH_DISCOVERED</item>
+        <item>android.speech.tts.engine.CHECK_TTS_DATA</item>
+        <item>android.speech.tts.engine.INSTALL_TTS_DATA</item>
+        <item>android.speech.tts.TTS_QUEUE_PROCESSING_COMPLETED</item>
+        <item>android.speech.tts.engine.TTS_DATA_INSTALLED</item>
+        <item>android.provider.Telephony.SIM_FULL</item>
+        <item>android.provider.Telephony.SMS_CB_RECEIVED</item>
+        <item>android.provider.Telephony.SMS_EMERGENCY_CB_RECEIVED</item>
+        <item>android.provider.Telephony.SMS_RECEIVED</item>
+        <item>android.provider.Telephony.SMS_REJECTED</item>
+        <item>android.provider.Telephony.WAP_PUSH_RECEIVED</item>
+        <item>android.net.wifi.p2p.CONNECTION_STATE_CHANGE</item>
+        <item>android.net.wifi.p2p.PEERS_CHANGED</item>
+        <item>android.net.wifi.p2p.STATE_CHANGED</item>
+        <item>android.net.wifi.p2p.THIS_DEVICE_CHANGED</item>
+        <item>android.app.action.ACTION_PASSWORD_CHANGED</item>
+        <item>android.app.action.ACTION_PASSWORD_EXPIRING</item>
+        <item>android.app.action.ACTION_PASSWORD_FAILED</item>
+        <item>android.app.action.ACTION_PASSWORD_SUCCEEDED</item>
+        <item>android.app.action.DEVICE_ADMIN_DISABLED</item>
+        <item>android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED</item>
+        <item>android.app.action.DEVICE_ADMIN_ENABLED</item>
+        <item>android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED</item>
+        <item>android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED</item>
+        <item>android.bluetooth.device.action.ACL_CONNECTED</item>
+        <item>android.bluetooth.device.action.ACL_DISCONNECTED</item>
+        <item>android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED</item>
+        <item>android.bluetooth.device.action.BOND_STATE_CHANGED</item>
+        <item>android.bluetooth.device.action.CLASS_CHANGED</item>
+        <item>android.bluetooth.device.action.FOUND</item>
+        <item>android.bluetooth.device.action.NAME_CHANGED</item>
+        <item>android.bluetooth.device.action.UUID</item>
+        <item>android.bluetooth.headset.action.VENDOR_SPECIFIC_HEADSET_EVENT</item>
+        <item>android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED</item>
+        <item>android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED</item>
+        <item>android.hardware.action.NEW_PICTURE</item>
+        <item>android.hardware.action.NEW_VIDEO</item>
+        <item>android.intent.action.MAIN</item>
+        <item>com.android.vending.billing.IN_APP_NOTIFY</item>
+        <item>com.android.vending.billing.RESPONSE_CODE</item>
+        <item>com.android.vending.billing.PURCHASE_STATE_CHANGED</item>
+        <item>android.intent.action.INSTALL_REFERRER</item>
+        <item>android.intent.action.BOOT_COMPLETED</item>
+        <item>android.appwidget.action.APPWIDGET_UPDATE</item>
+        <item>android.appwidget.action.APPWIDGET_CONFIGURE</item>
+        <item>android.appwidget.action.APPWIDGET_DELETED</item>
+        <item>android.appwidget.action.APPWIDGET_DISABLED</item>
+        <item>android.appwidget.action.APPWIDGET_ENABLED</item>
+        <item>android.appwidget.action.APPWIDGET_PICK</item>
+    </string-array>
+    <string-array name="event_descriptions">
+        <item>The user has switched the phone into or out of Airplane Mode</item>
+        <item>List all available applications</item>
+        <item>Handle an incoming phone call</item>
+        <item>The user pressed the Report button in the crash/ANR dialog</item>
+        <item>Used to indicate that some piece of data should be attached to some other place</item>
+        <item>This is a sticky broadcast containing the charging state, level, and other information about the battery</item>
+        <item>Indicates low battery condition on the device</item>
+        <item>Indicates the battery is now okay after being low</item>
+        <item>Show activity for reporting a bug</item>
+        <item>Perform a call to someone specified by the data</item>
+        <item>The user pressed the call button to go to the dialer or other appropriate UI for placing a call</item>
+        <item>The Camera Button was pressed</item>
+        <item>Display an activity chooser, allowing the user to pick what they want to before proceeding</item>
+        <item>This is broadcast when a user action should request a temporary system dialog to dismiss</item>
+        <item>The current device Configuration (orientation, locale, etc) has changed</item>
+        <item>Creates a shortcut</item>
+        <item>The date has changed</item>
+        <item>Delete the given data from its container</item>
+        <item>A sticky broadcast that indicates low memory condition on the device</item>
+        <item>Indicates low memory condition on the device no longer exists</item>
+        <item>Dial a number as specified by the data</item>
+        <item>A sticky broadcast for changes in the physical docking state of the device</item>
+        <item>Provide explicit editable access to the given data</item>
+        <item>Resources for a set of packages (which were previously unavailable) are currently available since the media on which they exist is available</item>
+        <item>Resources for a set of packages are currently unavailable since the media on which they exist is unavailable</item>
+        <item>Allow the user to select a particular kind of data and return it</item>
+        <item>An GTalk connection has been established</item>
+        <item>An GTalk connection has been disconnected</item>
+        <item>Wired Headset plugged in or unplugged</item>
+        <item>An input method has been changed</item>
+        <item>Insert an empty item into the given container</item>
+        <item>Pick an existing item, or insert a new item, and then edit it</item>
+        <item>Launch application installer</item>
+        <item>"The current device's locale has changed"</item>
+        <item>Show settings for managing network data usage of a specific application</item>
+        <item>Indicates low memory condition notification acknowledged by user and package management should be started</item>
+        <item>External media was removed from SD card slot, but mount point was not unmounted</item>
+        <item>The Media Button was pressed</item>
+        <item>External media is present, and being disk-checked</item>
+        <item>User has expressed the desire to remove the external storage media</item>
+        <item>External media is present and mounted at its mount point</item>
+        <item>External media is present, but is using an incompatible file-system (or is blank)</item>
+        <item>External media has been removed</item>
+        <item>The media scanner has finished scanning a directory</item>
+        <item>Request the media scanner to scan a file and add it to the media database</item>
+        <item>The media scanner has started scanning a directory</item>
+        <item>External media is unmounted because it is being shared via USB mass storage</item>
+        <item>External media is present but cannot be mounted</item>
+        <item>External media is present, but not mounted at its mount point</item>
+        <item>A new version of your application has been installed over an existing one</item>
+        <item>An outgoing call is about to be placed</item>
+        <item>A new application package has been installed on the device</item>
+        <item>An existing application package has been changed (e.g. a component has been enabled or disabled)</item>
+        <item>The user has cleared the data of a package</item>
+        <item>Sent to the installer package of an application when that application is first launched</item>
+        <item>An existing application package has been completely removed from the device</item>
+        <item>Sent to the system package verifier when a package needs to be verified</item>
+        <item>An existing application package has been removed from the device</item>
+        <item>A new version of an application package has been installed, replacing an existing version that was previously installed</item>
+        <item>The user has restarted a package, and all of its processes have been killed</item>
+        <item>Create a new item in the given container, initializing it from the current contents of the clipboard</item>
+        <item>Pick an item from the data, returning what was selected</item>
+        <item>Pick an activity given an intent, returning the class selected</item>
+        <item>External power has been connected to the device</item>
+        <item>External power has been removed from the device</item>
+        <item>Show power usage information to the user</item>
+        <item>Some content providers have parts of their namespace where they publish new events or items that the user may be especially interested in</item>
+        <item>Have the device reboot</item>
+        <item>Sent after the screen turns off</item>
+        <item>Sent after the screen turns on</item>
+        <item>Perform a search</item>
+        <item>Start action associated with long pressing on the search key</item>
+        <item>Deliver some data to someone else</item>
+        <item>Send a message to someone specific</item>
+        <item>Deliver multiple data to someone else</item>
+        <item>Show settings for choosing wallpaper</item>
+        <item>Device is shutting down</item>
+        <item>Perform a data synchronization</item>
+        <item>Start the platform-defined tutorial</item>
+        <item>The timezone has changed</item>
+        <item>The time was set</item>
+        <item>The current time has changed. Sent every minute</item>
+        <item>A user ID has been removed from the system</item>
+        <item>Launch application uninstaller</item>
+        <item>Sent when the user is present after device wakes up (e.g when the keyguard is gone)</item>
+        <item>Display the data to the user</item>
+        <item>Start Voice Command</item>
+        <item>The current system wallpaper has changed</item>
+        <item>Perform a web search</item>
+        <item>Pick a Wi-Fi network to connect to</item>
+        <item>Broadcast intent action indicating that Wi-Fi has been enabled, disabled, enabling, disabling, or unknown</item>
+        <item>The network IDs of the configured networks could have changed</item>
+        <item>Broadcast intent action indicating that the state of Wi-Fi connectivity has changed</item>
+        <item>The RSSI (signal strength) has changed</item>
+        <item>An access point scan has completed, and results are available from the supplicant</item>
+        <item>Broadcast intent action indicating that a connection to the supplicant has been established</item>
+        <item>Broadcast intent action indicating that the state of establishing a connection to an access point has changed</item>
+        <item>Intent used to broadcast the change in connection state of the local Bluetooth adapter to a profile of the remote device</item>
+        <item>The local Bluetooth adapter has finished the device discovery process</item>
+        <item>The local Bluetooth adapter has started the remote device discovery process</item>
+        <item>The local Bluetooth adapter has changed its friendly Bluetooth name</item>
+        <item>Show a system activity that requests discoverable mode</item>
+        <item>Show a system activity that allows the user to turn on Bluetooth</item>
+        <item>Indicates the Bluetooth scan mode of the local Adapter has changed</item>
+        <item>The state of the local Bluetooth adapter has been changed</item>
+        <item>"Broadcast intent, a hint for applications that audio is about to become 'noisy' due to a change in audio outputs"</item>
+        <item>Sticky broadcast intent action indicating that the bluetoooth SCO audio connection state has been updated</item>
+        <item>Sticky broadcast intent action indicating that the ringer mode has changed</item>
+        <item>Broadcast intent action indicating that the vibrate setting has changed</item>
+        <item>The setting for background data usage has changed values</item>
+        <item>A change in network connectivity has occurred. A connection has either been established or lost</item>
+        <item>Ask the user to add a new device administrator to the system</item>
+        <item>Have the user enter a new password</item>
+        <item>Begin the process of encrypting data on the device</item>
+        <item>Event to launch an audio effect control panel UI</item>
+        <item>Event to signal to the effect control application or service that an audio session is closed and that effects should not be applied anymore</item>
+        <item>Event to signal to the effect control application or service that a new audio session is opened and requires audio effects to be applied</item>
+        <item>Event to start an activity when a tag with NDEF payload is discovered</item>
+        <item>Event to start an activity when a tag is discovered</item>
+        <item>Event to start an activity when a tag is discovered and activities are registered for the specific technologies on the tag</item>
+        <item>Starts the activity from the platform TextToSpeech engine to verify the proper installation and availability of the resource files on the system</item>
+        <item>Triggers the platform TextToSpeech engine to start the activity that installs the resource files on the device that are required for TTS to be operational</item>
+        <item>The TextToSpeech synthesizer has completed processing of all the text in the speech queue</item>
+        <item>Broadcast to signal the completion of the installation of the data files used by the synthesis engine</item>
+        <item>SIM card is full</item>
+        <item>SMS callback received</item>
+        <item>SMS emergency callback received</item>
+        <item>SMS received</item>
+        <item>SMS rejected</item>
+        <item>WAP push message received</item>
+        <item>Event indicating that the state of Wi-Fi p2p connectivity has changed</item>
+        <item>Event indicating that the available peer list has changed</item>
+        <item>Event to indicate whether Wi-Fi p2p is enabled or disabled</item>
+        <item>Event indicating that this device details have changed</item>
+        <item>Event sent to a device administrator when the user has changed the password of their device</item>
+        <item>Event periodically sent to a device administrator when the device password is expiring</item>
+        <item>Event sent to a device administrator when the user has failed at attempted to enter the password</item>
+        <item>Event sent to a device administrator when the user has successfully entered their password, after failing one or more times</item>
+        <item>Event sent to a device administrator when the user has disabled it</item>
+        <item>Event sent to a device administrator when the user has requested to disable it, but before this has actually been done</item>
+        <item>This is the primary event that a device administrator must implement to be allowed to manage a device</item>
+        <item>Intent used to broadcast the change in connection state of the A2DP profile</item>
+        <item>Intent used to broadcast the change in the Playing state of the A2DP profile</item>
+        <item>Indicates a low level (ACL) connection has been established with a remote device</item>
+        <item>Indicates a low level (ACL) disconnection from a remote device</item>
+        <item>Indicates that a low level (ACL) disconnection has been requested for a remote device, and it will soon be disconnected</item>
+        <item>Indicates a change in the bond state of a remote device. For example, if a device is bonded (paired)</item>
+        <item>Bluetooth class of a remote device has changed</item>
+        <item>Remote device discovered</item>
+        <item>Indicates the friendly name of a remote device has been retrieved for the first time, or changed since the last retrieval</item>
+        <item>This intent is used to broadcast the UUID wrapped as a ParcelUuid of the remote device after it has been fetched. This intent is sent only when the UUIDs of the remote device are requested to be fetched using Service Discovery Protocol</item>
+        <item>Event used to broadcast that the headset has posted a vendor-specific event</item>
+        <item>Event used to broadcast the change in the Audio Connection state of the A2DP profile</item>
+        <item>Event used to broadcast the change in connection state of the Headset profile</item>
+        <item>A new picture is taken by the camera, and the entry of the picture has been added to the media store</item>
+        <item>A new video is recorded by the camera, and the entry of the video has been added to the media store</item>
+        <item>Main application icon, disabling this will disable the ability to start the app from launcher</item>
+        <item>In-App purchase events, disabling will not prevent purchases, app will never know about purchases and maybe become unstable</item>
+        <item>In-App purchase response code, disabling will not prevent purchases, app will never know about purchases and maybe become unstable</item>
+        <item>In-App purchase update events, disabling will not prevent purchases, app will never know about purchases and maybe become unstable</item>
+        <item>"Tracks anonymous application installation to provide developer's installation statistics"</item>
+        <item>Event received when device has completed its boot sequence</item>
+        <item>Sent when it is time to update your AppWidget</item>
+        <item>Sent when it is time to configure your AppWidget while it is being added to a host</item>
+        <item>Sent when an instance of an AppWidget is deleted from its host</item>
+        <item>Sent when an instance of an AppWidget is removed from the last host</item>
+        <item>Sent when an instance of an AppWidget is added to a host for the first time</item>
+        <item>Send this from your AppWidgetHost activity when you want to pick an AppWidget to display</item>
+    </string-array>
+    <string-array name="settings_refresh_rate_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="settings_notif_refresh_rate_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="settings_sort_by_values">
+        <item>0</item>
+        <item>6</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_widget_click_values">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>10</item>
+        <item>9</item>
+        <item>1</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>12</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="settings_widget_label_click_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>10</item>
+        <item>9</item>
+        <item>1</item>
+        <item>5</item>
+        <item>7</item>
+        <item>8</item>
+        <item>11</item>
+        <item>12</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="settings_widget_icon_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>9</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </string-array>
+    <string-array name="settings_widget_bg_values">
+        <item>0</item>
+        <item>6</item>
+        <item>1</item>
+        <item>9</item>
+        <item>10</item>
+        <item>2</item>
+        <item>7</item>
+        <item>3</item>
+        <item>11</item>
+        <item>12</item>
+        <item>4</item>
+        <item>8</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="settings_widget_refresh_rate_values">
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>900</item>
+        <item>1800</item>
+    </string-array>
+    <string-array name="settings_record_rate_values">
+        <item>60</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>1200</item>
+    </string-array>
+    <string-array name="settings_font_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="settings_wv_values">
+        <item>-2</item>
+        <item>-1</item>
+        <item>0</item>
+        <item>5</item>
+        <item>7</item>
+        <item>6</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>11</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="settings_wv_left_values">
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>12</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="settings_wv_right_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>11</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="settings_wv_center_values">
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>8</item>
+        <item>7</item>
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>12</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="settings_widget_hide_level_entries">
+        <item>0.001%</item>
+        <item>0.005%</item>
+        <item>0.010%</item>
+        <item>0.050%</item>
+        <item>0.100%</item>
+        <item>0.500%</item>
+        <item>1.000%</item>
+        <item>5.000%</item>
+        <item>10.00%</item>
+        <item>20.00%</item>
+    </string-array>
+    <string-array name="settings_widget_hide_level_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="settings_boot_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_boot_noscript_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="settings_sampling_rates">
+        <item>Unchanged</item>
+        <item>10000</item>
+        <item>15000</item>
+        <item>20000</item>
+        <item>25000</item>
+        <item>30000</item>
+        <item>35000</item>
+        <item>40000</item>
+        <item>45000</item>
+        <item>50000</item>
+    </string-array>
+    <string-array name="settings_thresholds">
+        <item>Unchanged</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>60</item>
+        <item>65</item>
+        <item>70</item>
+        <item>75</item>
+        <item>80</item>
+        <item>85</item>
+        <item>90</item>
+        <item>95</item>
+    </string-array>
+    <string-array name="settings_button_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>9</item>
+        <item>10</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="settings_temperature_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="settings_label_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>0</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="useful_sysctl_config">
+        <item>vm.dirty_ratio|0|100|5|%|90|This defines the memory cache filling threshold before foreground app data is written to internal memory</item>
+        <item>vm.dirty_background_ratio|0|100|5|%|70|This defines the memory cache filling threshold before backgroudn app data is written to internal memory</item>
+        <item>vm.vfs_cache_pressure|10|100|10|%|10|File system cache use ratio versus memory system cache</item>
+        <item>vm.min_free_kbytes|1024|16384|1024|KB|4096|This is used to force the Linux VM to keep a minimum number of kilobytes free</item>
+        <item>vm.oom_kill_allocating_task|0|1|1||0|This enables or disables killing the OOM-triggering task in out-of-memory (oom) situations</item>
+        <item>vm.block_dump|0|1|1||0|Controls block I/O debugging</item>
+        <item>vm.page-cluster|0|8|1|2^P|3|This controls the number of pages which are written to swap in a single attempt. The swap I/O size is 2^n</item>
+        <item>vm.panic_on_oom|0|1|1||0|This enables or disables panic on out-of-memory feature. If enabled, the kernel panics when out-of-memory happens. If disabled, the kernel will kill some rogue process, by calling oom_kill()</item>
+        <item>vm.dirty_expire_centisecs|200|3000|200|100th|1000|How old dirty data should be before the kernel considers it old enough to be written to disk. It is expressed in 100ths of a second</item>
+        <item>vm.dirty_writeback_centisecs|200|3000|200|100th|2000|This is the interval of when the writeback daemons periodically wake up and write old data out to disk. It is expressed in 100ths of a second</item>
+        <item>vm.swappiness|10|100|10|%|60|Controls how aggressively the kernel will swap memory pages</item>
+        <item>kernel.panic|0|30|1|S|10|Set to zero to have the kernel loop on a panic or autoreboot after this number of seconds</item>
+        <item>kernel.panic_on_oops|0|1|1||1|Disable to have the kernel continue operations after a software failure</item>
+        <item>kernel.shmmax|67108864|1073741824|67108864|B|268435456|Maximum total shared memory per process</item>
+        <item>kernel.shmall|262144|2097152|262144|P|2097152|Maximum total shared memory pages system wide</item>
+        <item>fs.nr_open|16384|1048576|16384||1048576|The maximum number of file-handles a process can allocate</item>
+        <item>fs.inotify.max_queued_events|8000|64000|8000||32000|Events in excess of this limit are dropped, but an IN_Q_OVERFLOW event is always generated</item>
+        <item>fs.inotify.max_user_instances|64|1024|64||256|This specifies an upper limit on the number of inotify instances that can be created per real user ID</item>
+        <item>fs.inotify.max_user_watches|640|10240|640||10240|This specifies an upper limit on the number of watches that can be created per real user ID</item>
+        <item>fs.lease-break-time|5|60|5||10|This specifies the grace period that the kernel grants to a process holding a file lease after it has sent a signal to that process notifying it that another process is waiting to open the file</item>
+        <item>fs.file-max|16384|1048576|16384||524288|The maximum number of file-handles that the Linux kernel will allocate</item>
+        <item>kernel.threads-max|16384|1048576|16384||524288|Maximum number of threads per process/app</item>
+        <item>kernel.random.write_wakeup_threshold|32|512|32||256|Defines the number of bits of entropy below which we wake up processes that request write access to /dev/random</item>
+        <item>kernel.random.read_wakeup_threshold|32|512|32||128|Defines the number of bits of entropy required for waking up processes that sleep waiting for entropy from /dev/random. The default is 64</item>
+        <item>kernel.sched_compat_yield|0|1|1||1|This setting is read at boot time, enabling it improve performance on multi-core devices</item>
+        <item>kernel.msgmni|512|8192|512||2048|Defines the system-wide limit on the number of message queue identifiers</item>
+        <item>kernel.msgmax|32768|524288|32768||65536|Defines a system-wide limit specifying the maximum number of bytes in a single message written on a message queue</item>
+        <item>kernel.shmmni|1024|16384|1024||4096|Specifies the system-wide maximum number of shared memory segments that can be created</item>
+        <item>kernel.sem|||||500 512000 64 2048|4 numbers defining limits for semaphores: per set, system-wide, operations, identifiers</item>
+        <item>kernel.hung_task_timeout_secs|0|60|5|S|30|Timeout in seconds for hanged tasks. Set to 0 to disable but can cause black screen on incoming calls</item>
+        <item>kernel.sched_latency_ns|9000000|24000000|1000000|NS|18000000|Targeted preemption latency for CPU-bound tasks</item>
+        <item>kernel.sched_min_granularity_ns|1000000|3000000|500000|NS|1500000|Minimum preemption granularity for CPU-bound tasks</item>
+        <item>kernel.sched_wakeup_granularity_ns|1000000|6000000|1000000|NS|3000000|Wake-up granularity for SCHED_OTHER</item>
+        <item>kernel.sched_shares_ratelimit|32000|512000|32000||256000|</item>
+        <item>kernel.sched_child_runs_first|0|1|1||0|Enable to have a child process scheduled next after being launched by its parent (default)</item>
+        <item>vm.drop_caches|0|3|1||3|Causes the kernel to drop clean caches, dentries and inodes from memory, causing that memory to become free</item>
+        <item>vm.min_free_order_shift|1|5|1||4|The higher the value, the more frequent unused objects will be released, freeing memory</item>
+        <item>vm.laptop_mode|0|1|1||0|Laptop mode</item>
+        <item>vm.block_dump|0|1|1||0|Block dumping</item>
+        <item>net.core.wmem_max|65536|4194304|65536|B|524288|Maximal amount of memory allowed for automatically tuned send buffers over TCP</item>
+        <item>net.core.rmem_max|65536|4194304|65536|B|524288|Maximal amount of memory allowed for automatically tuned receive buffers over TCP</item>
+        <item>net.ipv4.tcp_tw_recycle|0|1|1||1|Enable fast recycling TIME-WAIT sockets, default is disabled</item>
+        <item>net.ipv4.tcp_rmem|||||6144 87380 524288|Minimum, default and maximum amount of memory reserved for receive buffers over TCP</item>
+        <item>net.ipv4.tcp_wmem|||||6144 87380 524288|Minimum, default and maximum amount of memory reserved for send buffers over TCP</item>
+    </string-array>
+</resources>

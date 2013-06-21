@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(50,100)" android:layout_x="50.0px" android:layout_y="100.0px" />
+    <TextView android:textSize="15.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(200,70)" android:layout_x="200.0px" android:layout_y="70.0px" />
+</AbsoluteLayout>

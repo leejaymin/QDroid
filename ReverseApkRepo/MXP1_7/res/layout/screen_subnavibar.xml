@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/subNaviBar" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/lock" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/prev" android:background="@drawable/playback_item_back_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/prev" android:layout_weight="1.0" />
+    <ZoomButton android:id="@id/backward" android:background="@drawable/playback_item_back_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/backward" android:scaleType="center" android:layout_weight="1.0" android:hapticFeedbackEnabled="false" />
+    <ImageButton android:id="@id/playpause" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/play_pause" android:layout_weight="1.0" />
+    <ZoomButton android:id="@id/forward" android:background="@drawable/playback_item_back_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/forward" android:scaleType="center" android:layout_weight="1.0" android:hapticFeedbackEnabled="false" />
+    <ImageButton android:id="@id/next" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/next" android:layout_weight="1.0" />
+    <com.mxtech.videoplayer.VideoZoomButton android:id="@id/zoom" android:background="@drawable/playback_item_back_translucent" android:longClickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/zoom" android:scaleType="center" android:layout_weight="1.0" />
+</LinearLayout>

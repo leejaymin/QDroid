@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kuling</string>
+    <string name="set_preferences">Konfiguration</string>
+    <string name="Text_WindSpeedLabel">m/s</string>
+    <string name="Text_No_Connection">Inget Nätverk</string>
+    <string name="Text_WeatherStation">Ingen station</string>
+    <string name="Text_LastUpdated">Inte uppdaterat</string>
+    <string name="url_dmi_knutinge_com">---</string>
+    <string name="url_smhi_base">---</string>
+    <string name="graphics_info_string">Klicka på \"Meny\" i din telefon för alternativ</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_details">Info</string>
+    <string name="menu_update">Update</string>
+    <string name="save_config">Spara</string>
+    <string name="Config_Text_Update_rate">(i minuter):</string>
+    <string name="Config_Text_Update_rate_hint">i minuter</string>
+    <string name="Config_Text_Color_Spinner">"
+Utseende/färger:"</string>
+    <string name="alertDialogIngetTextColorTitel">Välj textfärg</string>
+    <string name="Spinner_Prompt">Välj station</string>
+    <string name="Config_Default_Station">Drogden Fyr</string>
+    <string name="Config_Text_Station">Väderstation:</string>
+    <string name="Spinner_Color_Prompt">Välj tema</string>
+    <string name="Config_Default_Theme">default</string>
+    <string name="Config_Text_Theme">Theme:</string>
+    <string name="Config_Default_Registrera">Registrera Kuling</string>
+    <string name="theme_url" />
+    <string name="alertDialogIngetTemaTitel">Teman inte tilgängliga</string>
+    <string name="alertDialogIngetTema">"Du har inget tema installerat eller så har du inget tilgängligt SD-kort. 
+ 
+Teman kan lastas ned från http://www.cocmoc.com eller genom att använda knappen ovanför"</string>
+    <string name="alert_dialog_ok">Ok</string>
+    <string name="alert_dialog_henta">Hämta Tema</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="theme_info">"Teman kan lastas ned till din telefon. Alla teman sparas i mappen 'Kuling' på ditt SD-kort.
+"</string>
+    <string name="theme_inget_tema">"
+
+Du har inget tema installerat eller så har du inget tilgängligt SD-kort."</string>
+    <string name="theme_henta">Hämta nya teman</string>
+    <string name="theme_info2">"
+ Installerade teman:"</string>
+    <string name="info_string">"Kuling hämtar vinddata direkt till home screen på din mobil. Genom att klicka på Kuling får du statistik från det senaste dygnet. Du kan ha flera versioner av Kuling igång samtidigt. Väderdatan kommer från SMHI's och DMI's kuststationer. För att få tillgång til SMHI's stationer måste du registrera programmet. Läs mer om hur registreringen går till och hur mycket det kostar på
+
+ http://www.cocmoc.com
+
+
+ Kuling är programmerat av Cocmoc 2010
+ mail: support@cocmoc.com"</string>
+    <string name="register_string_ikkeregistrert">"Ditt exemplar av Kuling är INTE registrerat. Du kan registrera och betala antingen med SMS eller med PayPal. Priser och mer information hittar du på på:
+ http://knutinge.com/cocmoc/cocmoc/kuling/registrering.php"</string>
+    <string name="register_string_ikkeregistrert2">Din telefons ID:</string>
+    <string name="register_string_registrert">"
+
+
+Ditt exemplar av Kuling blev registrerat:
+
+"</string>
+    <string name="Button_SkickaSMS">Skicka färdig utfyld SMS</string>
+</resources>

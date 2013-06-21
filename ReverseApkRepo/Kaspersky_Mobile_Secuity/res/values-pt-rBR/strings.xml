@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kaspersky Mobile Security</string>
+    <string name="app_name_short">Mobile Security</string>
+    <string name="str_main_menu_title1">Kaspersky</string>
+    <string name="str_main_menu_title2">Mobile Security</string>
+    <string name="str_main_menu_av_title">Antivírus</string>
+    <string name="str_main_menu_av_protect">Proteção</string>
+    <string name="str_main_menu_av_protect_off">desativado</string>
+    <string name="str_main_menu_av_protect_recommended">recomendado</string>
+    <string name="str_main_menu_av_protect_full">expandido</string>
+    <string name="str_main_menu_av_protect_bases_expired">Bancos de dados de antivírus desatualizados</string>
+    <string name="str_main_menu_av_start_scan">Verificar</string>
+    <string name="str_main_menu_av_additional">Configurações</string>
+    <string name="str_main_menu_av_scan_dial_title">Verificar área</string>
+    <string name="str_main_menu_av_scan_dial_full_check">Verificação completa</string>
+    <string name="str_main_menu_av_scan_dial_cancel">Cancelar</string>
+    <string name="str_main_menu_pp_title">Proteção de Privacidade</string>
+    <string name="str_main_menu_pp_info">Informações de contato &lt;b>ocultas&lt;/b></string>
+    <string name="str_main_menu_pp_info1">Informações de contato &lt;b>&lt;font color=#ff8080>exibidas&lt;/font>&lt;/b></string>
+    <string name="str_main_menu_pp_data_hidden">Ocultar informações</string>
+    <string name="str_main_menu_pp_data_shown">Ocultar informações</string>
+    <string name="str_main_menu_pp_contacts_list">Contatos a ocultar</string>
+    <string name="str_main_menu_pp_options">Configurações</string>
+    <string name="str_main_menu_at_title">Anti-Roubo</string>
+    <string name="str_main_menu_at_info">Todas as funções foram &lt;b>&lt;font color=#ff8080>desativadas&lt;/font>&lt;/b></string>
+    <string name="str_main_menu_at_info_all_enabled">Todas as funções &lt;b>ativadas&lt;/b></string>
+    <string name="str_main_menu_at_info_block_enabled">Bloqueio do dispositivo</string>
+    <string name="str_main_menu_at_info_wipe_enabled">Limpeza de Dados</string>
+    <string name="str_main_menu_at_info_simwatch_enabled">SIM Watch</string>
+    <string name="str_main_menu_at_info_gpsfind_enabled">Localização</string>
+    <string name="str_main_menu_at_block">Bloqueio do dispositivo: %s</string>
+    <string name="str_main_menu_at_delete">Limpeza de Dados: %s</string>
+    <string name="str_main_menu_at_sim">SIM Watch: %s</string>
+    <string name="str_main_menu_at_gps">Localizar: %s</string>
+    <string name="antispam_kms_group_name">Grupo de contatos bloqueado por Filtro de Chamadas e SMS</string>
+    <string name="str_main_menu_as_title">Filtro de Chamadas e SMS</string>
+    <string name="str_main_menu_as_info">Modo de Filtro:</string>
+    <string name="str_main_menu_as_list_type">Modo: %s</string>
+    <string name="str_main_menu_as_black_list">Contatos bloqueados</string>
+    <string name="str_main_menu_as_white_list">Contatos permitidos</string>
+    <string name="str_main_menu_ot_title">Adicional</string>
+    <string name="str_main_menu_ot_info">Enviando comandos SMS e configurações avançadas</string>
+    <string name="str_additional_settings_title">Adicional</string>
+    <string name="str_scan_files_title_folder">Verificação da pasta:</string>
+    <string name="str_scan_files_title_full">Verificação completa:</string>
+    <string name="str_scan_files_sub_title">executando</string>
+    <string name="str_scan_files_sub_title_paused">em pausa</string>
+    <string name="str_scan_files_scanned_obj">Arquivos verificados:</string>
+    <string name="str_scan_files_current_obj">Verificação de arquivo:</string>
+    <string name="str_scan_files_pause">Pausar</string>
+    <string name="str_scan_files_continue">Resumir</string>
+    <string name="str_scan_files_cancel">Cancelar</string>
+    <string name="str_scan_files_abort_title">Cancelar verificação</string>
+    <string name="str_scan_files_abort_text">Deseja realmente parar a verificação?</string>
+    <string name="str_scan_files_abort_ok">Sim</string>
+    <string name="str_scan_files_abort_cancel">Não</string>
+    <string name="str_scan_results_title_folder">Verificação da pasta:</string>
+    <string name="str_scan_results_title_full">Verificação completa:</string>
+    <string name="str_scan_results_sub_title">concluída</string>
+    <string name="str_scan_results_sub_title_cancelled">interrompida</string>
+    <string name="str_scan_results_scanned_obj">Arquivos verificados:</string>
+    <string name="str_scan_results_viruses_found">Ameaças detectadas:</string>
+    <string name="str_scan_results_viruses_deleted">Ameaças neutralizadas:</string>
+    <string name="str_scan_results_viruses_cured">Desinfectado:</string>
+    <string name="str_scan_results_viruses_skipped">Ignorado:</string>
+    <string name="str_scan_results_scan_time">Hora da verificação:</string>
+    <string name="str_scan_results_close">OK</string>
+    <string name="str_av_select_folder_title">Seleção de pasta</string>
+    <string name="str_av_select_folder_internal_memory">Memória do dispositivo</string>
+    <string name="str_av_select_folder_internal_extended_memory">Cartão de memória interno</string>
+    <string name="str_av_select_folder_external_memory">Cartão de memória externo</string>
+    <string name="str_av_additional_title">Configurações do antivírus</string>
+    <string name="str_av_additional_protection_title" />
+    <string name="str_av_additional_permanent_protection_title">Modo de proteção</string>
+    <string name="str_av_additional_permanent_protection_subtitle">Proteção em tempo real ativada contra vírus e outros programas maliciosos</string>
+    <string name="str_av_additional_permanent_protection_subtitle_off">Proteção em tempo real desativada de vírus e outros programas maliciosos</string>
+    <string name="str_av_additional_permanent_protection_params_title">Configurações de proteção</string>
+    <string name="str_av_additional_permanent_protection_params_subtitle" />
+    <string name="str_av_additional_scan_params_title">Configurações de verificação</string>
+    <string name="str_av_additional_scan_params_subtitle" />
+    <string name="str_av_additional_update_title">Atualização do banco de dados de antivírus</string>
+    <string name="str_av_additional_update_bases_title">Iniciar atualização</string>
+    <string name="str_av_additional_update_bases_subtitle">"Última atualização: %1$s
+Total de registros: %2$d"</string>
+    <string name="str_av_additional_update_params_title">Configurações de atualização</string>
+    <string name="str_av_additional_update_params_subtitle" />
+    <string name="str_av_permanent_protection_title">Configurações de proteção</string>
+    <string name="str_av_permanent_protection_pobjects_title">Tipo de arquivos para verificar</string>
+    <string name="str_av_permanent_protection_pobjects_subtitle">%s</string>
+    <string name="str_av_permanent_protection_virus_title">Ação na detecção de ameaças</string>
+    <string name="str_av_permanent_protection_virus_subtitle">%s</string>
+    <string name="str_av_monitor_checked_object_type_title">Tipo de arquivos para verificar</string>
+    <string name="str_av_monitor_checked_object_type_cancel">Cancelar</string>
+    <string name="str_av_monitor_action_type_title">Ação na detecção de ameaças</string>
+    <string name="str_av_monitor_action_type_cancel">Cancelar</string>
+    <string name="str_av_monitor_notif_bar_msg">Ameaça %1$s detectada no arquivo %2$s</string>
+    <string name="str_av_monitor_loading">Aguarde enquanto a proteção é ativada...</string>
+    <string name="str_av_monitor_unloading">Aguarde enquanto a proteção é desativada...</string>
+    <string name="str_av_scan_params_title">Configurações de verificação</string>
+    <string name="str_av_scan_params_objects_title">Verificar área</string>
+    <string name="str_av_scan_params_objects_subtitle">%s</string>
+    <string name="str_av_scan_params_objects_subtitle_archives">, e arquivos comprimidos são verificados</string>
+    <string name="str_av_scan_params_action_title">Ação na detecção de ameaças</string>
+    <string name="str_av_scan_params_action_subtitle">%s</string>
+    <string name="str_av_scan_params_action_subtitle_cure">Desinfectado, se a desinfecção falhar -</string>
+    <string name="str_av_scan_params_autoscan_title">Verificação agendada</string>
+    <string name="str_av_scan_params_scantime_title">Agendamento</string>
+    <string name="str_av_scan_params_scantime_subtitle">%s</string>
+    <string name="str_av_scan_params_scantime_day_title">Dia de início</string>
+    <string name="str_av_scan_params_scantime_day_subtitle">%s</string>
+    <string name="str_av_scan_params_scantime_time_title">Hora de início</string>
+    <string name="str_av_scan_params_scantime_time_subtitle">%s</string>
+    <string name="str_av_scan_mode_dialog_title">Agendamento</string>
+    <string name="str_av_scan_mode_dialog_cancel">Cancelar</string>
+    <string name="str_av_scan_day_dialog_title">Dia de início</string>
+    <string name="str_av_scan_day_dialog_cancel">Cancelar</string>
+    <string name="str_av_scan_object_types_title">Verificar área</string>
+    <string name="str_av_scan_object_types_objects_title">Tipo de arquivos para verificar</string>
+    <string name="str_av_scan_object_types_objects_subtitle">%s</string>
+    <string name="str_av_scan_object_types_objects_archives_title">Verificar arquivos</string>
+    <string name="str_av_scan_object_types_objects_archives_subtitle">Descompactando e verificando o conteúdo do arquivo</string>
+    <string name="str_av_scan_cure_params_title">Ação na detecção de ameaças</string>
+    <string name="str_av_scan_cure_params_cure_title">Desinfectar</string>
+    <string name="str_av_scan_cure_params_cure_subtitle">Tentar desinfectar os arquivos em que tenham sido detectados objetos maliciosos</string>
+    <string name="str_av_scan_cure_params_cure_notpossible_title">Se a desinfecção falhar</string>
+    <string name="str_av_scan_cure_params_cure_notpossible_subtitle">Ação no caso de falha da desinfecção: %s</string>
+    <string name="str_av_scan_notify_good">A verificação do aplicativo %s está concluída. Não foi detectada nenhuma ameaça.</string>
+    <string name="str_av_scan_notify_bad">Ameaça detectada: %1$s. Aplicativo: %2$s.</string>
+    <string name="str_av_virus_detected_title">Ameaça detectada!</string>
+    <string name="str_av_virus_detected_info1">Ameaça detectada:</string>
+    <string name="str_av_virus_detected_info_file">Arquivo:</string>
+    <string name="str_av_virus_detected_info_application">Aplicativo:</string>
+    <string name="str_pp_toggle_mode_tohidden">"Aguarde.
+As informações de contato estão sendo ocultadas..."</string>
+    <string name="str_pp_toggle_mode_tonormal">"Aguarde.
+As informações de contato estão sendo exibidas..."</string>
+    <string name="str_pp_settings_title">Configurações de Proteção de Privacidade</string>
+    <string name="str_pp_settings_item1_title">Ocultação automática</string>
+    <string name="str_pp_settings_item1_subtitle">Ocultando informações %d minutos após o dispositivo mudar para o modo de suspensão</string>
+    <string name="str_pp_settings_item1_subtitle_off">Desativado</string>
+    <string name="str_pp_settings_item2_title">Ocultar através do comando SMS</string>
+    <string name="str_pp_settings_item2_subtitle">"Os dados podem ser ocultados remotamente por um comando SMS 'hide: [código]'"</string>
+    <string name="str_pp_settings_item4_title">Informações a ocultar</string>
+    <string name="str_pp_settings_item4_subtitle">%s</string>
+    <string name="str_pp_settings_item4_subtitle_nothing">Informações a ocultar não selecionadas</string>
+    <string name="str_pp_whathide_title">Informações a ocultar</string>
+    <string name="str_pp_whathide_save">Salvar</string>
+    <string name="str_pp_whathide_cancel">Cancelar</string>
+    <string name="str_pp_autohide_title">Ocultação automática</string>
+    <string name="str_pp_autohide_cancel">Cancelar</string>
+    <string name="str_pp_hidden_contacts_title">Contatos a ocultar</string>
+    <string name="str_pp_hidden_contacts_add">Adicionar</string>
+    <string name="str_pp_item_type_title">Tipo de entrada</string>
+    <string name="str_pp_item_type_cancel">Cancelar</string>
+    <string name="str_pp_enter_phone_title">Número de telefone</string>
+    <string name="str_pp_enter_phone_save">Salvar</string>
+    <string name="str_pp_enter_phone_cancel">Cancelar</string>
+    <string name="str_updater_settings_update_in_roaming_title">Atualização em roaming</string>
+    <string name="str_updater_settings_update_in_roaming_subtitle">São permitidas atualizações programadas quando o dispositivo está em uma zona de roaming</string>
+    <string name="str_updater_settings_title">Configurações de atualização</string>
+    <string name="str_updater_settings_auto_update">"Configurações da atualização
+Atualização programada"</string>
+    <string name="str_updater_settings_auto_update_title">Agendamento</string>
+    <string name="str_updater_settings_auto_update_subtitle">%s</string>
+    <string name="str_updater_settings_update_day_title">Dia de início</string>
+    <string name="str_updater_settings_update_time_title">Hora de início</string>
+    <string name="str_updater_settings_auto_update_cancel">Cancelar</string>
+    <string name="str_updater_progress_downloading_title">Atualização: executando</string>
+    <string name="str_updater_progress_server_title">Servidor de atualização:</string>
+    <string name="str_updater_progress_cancel_btn">Cancelar</string>
+    <string name="str_updater_progress_close_btn">Fechar</string>
+    <string name="str_updater_progress_complete_title">Atualização: concluída</string>
+    <string name="str_updater_progress_success">Os bancos de dados de antivírus foram atualizados com sucesso.</string>
+    <string name="str_bases_date">Data do banco de dados:</string>
+    <string name="str_bases_size">Tamanho do banco de dados:</string>
+    <string name="str_bases_records">Registros totais:</string>
+    <string name="str_updater_progress_err_date_incorrect">Verifique a data e hora atuais no dispositivo e inicie novamente a atualização.</string>
+    <string name="str_updater_progress_err_no_new_bases">Os bancos de dados e a versão do aplicativo estão atualizados.</string>
+    <string name="str_updater_progress_err_failed">Ocorreu uma falha ao atualizar o banco de dados de antivírus.</string>
+    <string name="str_uninstaller_message_pp_on">Desativar Proteção de Privacidade antes de desinstalar o Kaspersky Mobile Security.</string>
+    <string name="str_uninstaller_ok">OK</string>
+    <string name="str_bases_size_suffix">bytes</string>
+    <string name="str_no_bases">Os bancos de dados de antivírus são inexistentes.</string>
+    <string name="str_activation_settings_license_title">Sobre a licença</string>
+    <string name="str_activation_settings_enter_code_title">Inserir código de ativação</string>
+    <string name="str_activation_settings_buy_online_title">Comprar uma licença</string>
+    <string name="str_activation_settings_renew_online_title">Comprar uma licença</string>
+    <string name="str_activation_settings_enter_code_subtitle">Prolongar o período da licença com um código de ativação</string>
+    <string name="str_activation_settings_buy_online_subtitle">Ativação da Compra com Um Clique</string>
+    <string name="str_activation_settings_title">Licença</string>
+    <string name="str_license_title">Sobre a licença</string>
+    <string name="str_license_close_button">Fechar</string>
+    <string name="str_license_serial_number">Chave:</string>
+    <string name="str_license_start_date">Início:</string>
+    <string name="str_license_type">Tipo:</string>
+    <string name="str_license_expire_date">Expira:</string>
+    <string name="str_license_days_left">Dias restantes:</string>
+    <string name="str_license_days_left_info">Sua licença irá expirar em %d dias.</string>
+    <string name="str_license_day_left_info">Sua licença irá expirar em 1 dia.</string>
+    <string name="str_license_device_id">ID do dispositivo:</string>
+    <string name="str_license_type_beta">Beta</string>
+    <string name="str_license_type_commercial">Comercial</string>
+    <string name="str_license_type_trial">Teste</string>
+    <string name="str_license_type_testing">Teste</string>
+    <string name="str_license_type_unknown">Desconhecido</string>
+    <string name="str_android_license_error_title">Validação</string>
+    <string name="str_android_license_error_btn">Continuar</string>
+    <string name="str_android_license_retry_btn">Repetir</string>
+    <string name="str_android_license_licensed_old_key">Está disponível uma nova versão do programa. Faça a atualização do programa a partir do Google Play.</string>
+    <string name="str_android_license_licensed_not_licensed">Não foi possível validar o programa. Verifique sua conexão com a Internet e certifique-se de que o programa foi comprado da Google Play.</string>
+    <string name="str_android_license_licensed_error">Erro ao validar o programa. Reinstale o programa a partir do Google Play.</string>
+    <string name="str_activation_title">Validação</string>
+    <string name="str_activation_subtitle">"Para usar o programa, você precisa validá-lo: verifique se o programa foi comprado do Google Play.
+
+ Será estabelecida uma conexão de Internet com o Google Play ao validar o programa. Aplicam-se cobranças de dados padrão, dependendo do seu plano."</string>
+    <string name="str_activation_title_launched_from_additional">Renovação da licença</string>
+    <string name="str_activation_subtitle_launched_from_additional">Você pode renovar a licença. Para isso, pode inserir o código de ativação fornecido com a nova licença, comprar uma nova licença na loja virtual ou ativar a Compra com Um Clique.</string>
+    <string name="str_enter_activation_code_button">Código de ativação</string>
+    <string name="str_buy_online_button">Validação</string>
+    <string name="str_activate_via_sms_button">Compra com Um Clique</string>
+    <string name="str_activate_trial_period_button">Versão de teste</string>
+    <string name="str_activation_cancel_button">Cancelar</string>
+    <string name="str_buy_online_title">Comprar uma licença</string>
+    <string name="str_activate_via_sms_title">Ativando uma Compra com Um Clique</string>
+    <string name="str_activate_trial_period_title">Ativando uma versão de avaliação</string>
+    <string name="str_activate_button">Ativar</string>
+    <string name="str_activation_goto_button">Abrir</string>
+    <string name="str_buy_online_text">"Se você não possuir uma licença, pode comprar uma na loja virtual.
+
+Selecione \"Abrir\" para acessar a loja virtual de dispositivos celulares."</string>
+    <string name="str_activate_via_sms_text">Com a Compra com Um Clique, você pode usar a versão totalmente funcional do aplicativo. Quando ativa a Compra com um Clique, o valor fixo especificado nos termos da Compra com Um Clique é debitado da sua conta celular. Você pode anular a Compra com Um Clique mais tarde, nas configurações do aplicativo.</string>
+    <string name="str_activate_trial_period_text">A versão de avaliação gratuita permite que você se familiarize com as funções do aplicativo. Após a expiração do período de validade da versão de avaliação, o uso do aplicativo é restrito. A versão de avaliação pode ser ativada somente uma vez.</string>
+    <string name="str_activation_progress">Aguarde. Conectando ao servidor...</string>
+    <string name="str_activation_code_prompt">"Você recebeu o código de ativação quando comprou uma licença comercial. Este consiste em 20 caracteres latinos e números no formato xxxxx-xxxxx-xxxxx-xxxxx.
+
+Insira o código de ativação:"</string>
+    <string name="str_activation_code_title">Inserir código de ativação</string>
+    <string name="str_activation_failed">Não foi possível ativar o aplicativo.</string>
+    <string name="str_activation_incorrect_code">Código de ativação incorreto. Insira um código de ativação correto.</string>
+    <string name="str_activation_internet_connection_title">É necessária conexão com a Internet</string>
+    <string name="str_activation_internet_connection">"Para ativar o aplicativo, é necessário conectar à Internet.
+
+Selecione \"Configurações\" para ir para as configurações da conexão à Internet."</string>
+    <string name="str_activation_err_601">Código de ativação bloqueado.</string>
+    <string name="str_activation_err_624">Código de ativação inválido.</string>
+    <string name="str_activation_err_627">ID do dispositivo não corresponde ao código.</string>
+    <string name="str_activation_err_629">Data e hora inválidas no dispositivo.</string>
+    <string name="str_activation_err_634">Limite excedido de ativações de licença comercial.</string>
+    <string name="str_activation_err_662">Código de ativação inserido inválido.</string>
+    <string name="str_setup_connection">Configurações</string>
+    <string name="str_license_days_to_expire">Dias restantes: %d</string>
+    <string name="str_antitheft_feature_on">Ligar</string>
+    <string name="str_antitheft_feature_off">Desligar</string>
+    <string name="str_sms_block_settings_title">Bloqueio do dispositivo</string>
+    <string name="str_sms_block_enable_title">Ativar Bloqueio do dispositivo</string>
+    <string name="str_sms_block_enable_subtitle">"Bloqueando o dispositivo após receber o comando SMS 'lock: [código]'"</string>
+    <string name="str_sms_block_text_title">Texto quando bloqueado</string>
+    <string name="str_sms_block_default_text">Este dispositivo está bloqueado! Devolva-o para o proprietário.</string>
+    <string name="str_sms_block_lock_screen_enter_code">Inserir código secreto</string>
+    <string name="str_sms_block_lock_screen_enter_code_info">É usado um código secreto para impedir o acesso não autorizado às configurações do aplicativo. Ele é também usado para iniciar as funções Anti-Roubo e ocultar os dados pessoais remotamente.</string>
+    <string name="str_sms_block_info1">"Para ativar o Bloqueio do dispositivo, o Kaspersky Mobile Security deve ser configurado como a tela Inicial padrão. Para isso, clique em \"Instalar\" e exclua as configurações padrão da tela atual, retornando em seguida às configurações do Bloqueio do dispositivo.
+
+Tela inicial padrão atual: %s."</string>
+    <string name="str_sms_block_info1_ok">Instalar</string>
+    <string name="str_sms_block_info1_cancel">Cancelar</string>
+    <string name="str_sms_block_info2">Para ativar o Bloqueio do dispositivo, o Kaspersky Mobile Security deve ser configurado como a tela Inicial padrão.</string>
+    <string name="str_sms_block_info2_ok">OK</string>
+    <string name="str_sms_block_home_screen_changed_hdr">Tela inicial padrão alterada</string>
+    <string name="str_sms_block_home_screen_changed">"A tela inicial padrão foi alterada por outro aplicativo. 
+
+Bloqueio do dispositivo desativado. 
+
+Para ativar o Bloqueio do dispositivo novamente, vá para o menu do aplicativo."</string>
+    <string name="str_sms_block_task_text">Dispositivo bloqueado pelo Anti-Roubo.</string>
+    <string name="str_sms_block_sms_text">Kaspersky Mobile Security: dispositivo bloqueado.</string>
+    <string name="str_sms_block_help_not_available">Ajuda não está disponível quando o dispositivo está bloqueado.</string>
+    <string name="str_info_activity_button_ok">Continuar</string>
+    <string name="str_sim_watch_settings_title">SIM Watch</string>
+    <string name="str_sim_watch_ways_to_send_caption">Enviar novo número</string>
+    <string name="str_sim_watch_phone_number_title">Número de telefone</string>
+    <string name="str_sim_watch_email_title">Endereço de email</string>
+    <string name="str_sim_watch_block_caption">Bloqueando o dispositivo</string>
+    <string name="str_sim_watch_block_enable_title">Bloquear</string>
+    <string name="str_sim_watch_enable_title">Ativar SIM Watch</string>
+    <string name="str_sim_watch_enable_subtitle">Envia um novo número e bloqueia o dispositivo quando o cartão SIM é substituído</string>
+    <string name="str_save_button">Salvar</string>
+    <string name="str_block_text_title">Texto quando bloqueado</string>
+    <string name="str_phone_number_title">Número de telefone</string>
+    <string name="str_email_title">Endereço de email</string>
+    <string name="str_sms_find_enable_title">Ativar a Localização</string>
+    <string name="str_sms_find_settings_title">Localização</string>
+    <string name="str_sms_find_ways_to_send_caption">Enviar coordenadas do dispositivo</string>
+    <string name="str_sms_find_email_title">Endereço de email</string>
+    <string name="str_sms_find_enable_gps_dialog">Para usar a Localização, ative o módulo GPS e/ou se conecte à Internet.</string>
+    <string name="str_sms_find_enable_gps_dialog_and15">Para ativar a Localização, ative um módulo GPS.</string>
+    <string name="str_sms_find_enable_ok">Configurações</string>
+    <string name="str_sms_find_enable_no">Cancelar</string>
+    <string name="str_sms_find_enable_subtitle">"Detectando as coordenadas do dispositivo após receber o comando SMS 'locate: [código]'"</string>
+    <string name="str_sms_find_user_sms">Kaspersky Mobile Security: as coordenadas GPS atuais doispositivo: latitude - %1$.6f, longitude - %2$.6f</string>
+    <string name="str_sms_find_no_coords">Kaspersky Mobile Security: as coordenadas do dispositivo não foram detectadas.</string>
+    <string name="str_sms_find_enabling_settings">Aguarde...</string>
+    <string name="str_sms_find_settings_disabled">Para usar a Localização, ative o módulo GPS e/ou se conecte à Internet.</string>
+    <string name="str_sms_find_settings_disabled_hdr">Não é possível ativar a Localização</string>
+    <string name="str_pp_delete_all_items_title">Você deseja realmente excluir todos os registros da lista de contatos a ocultar?</string>
+    <string name="str_pp_delete_all_button_yes">Sim</string>
+    <string name="str_pp_delete_all_button_no">Não</string>
+    <string name="str_pp_items_popup_title">Ação no registro</string>
+    <string name="str_pp_edit_phone_title">Alterando entrada</string>
+    <string name="str_activation_imei_exceeded">O código de ativação inserido já foi usado.</string>
+    <string name="str_activation_wrong_time">Defina a data e hora corretas e tente novamente a ativação.</string>
+    <string name="str_enter_code">Inserir código secreto:</string>
+    <string name="str_current_code">Inserir código secreto atual:</string>
+    <string name="str_enter_code_bad_code">Código secreto incorreto.</string>
+    <string name="str_enter_code_set_code">Defina um código secreto:</string>
+    <string name="str_enter_code_repeat_code">Inserir novamente o novo código:</string>
+    <string name="str_enter_code_repeat_code_incorrect">Os códigos inseridos são diferentes. Defina novamente o código.</string>
+    <string name="str_enter_code_repeat_code_ok">O código secreto foi salvo.</string>
+    <string name="str_enter_code_failed_save">Não foi possível salvar o código secreto.</string>
+    <string name="str_enter_code_toast">Insira o código secreto do aplicativo:</string>
+    <string name="str_enter_code_short_code_toast">O código é muito curto. O código secreto tem de ter entre 4 e 16 dígitos.</string>
+    <string name="str_enter_code_long_code_toast">O código secreto é muito longo. O código secreto tem de ter entre 4 e 16 dígitos.</string>
+    <string name="str_enter_code_digit_0">0</string>
+    <string name="str_enter_code_digit_1">1</string>
+    <string name="str_enter_code_digit_2">2</string>
+    <string name="str_enter_code_digit_3">3</string>
+    <string name="str_enter_code_digit_4">4</string>
+    <string name="str_enter_code_digit_5">5</string>
+    <string name="str_enter_code_digit_6">6</string>
+    <string name="str_enter_code_digit_7">7</string>
+    <string name="str_enter_code_digit_8">8</string>
+    <string name="str_enter_code_digit_9">9</string>
+    <string name="str_enter_code_menu">Menu</string>
+    <string name="str_enter_code_enter">Inserir</string>
+    <string name="str_enter_code_next">Próx</string>
+    <string name="str_enter_code_weak_code_dialog_title">O código secreto é fraco. Deseja salvá-lo?</string>
+    <string name="str_enter_code_weak_code_dialog_text">"Por motivos de segurança, é recomendável usar pelo menos 7 dígitos para o código.
+
+Salvar o código atual?"</string>
+    <string name="str_enter_code_weak_code_dialog_ok">Sim</string>
+    <string name="str_enter_code_weak_code_dialog_cancel">Não</string>
+    <string name="str_sms_clean_settings_title">Limpeza de Dados</string>
+    <string name="str_sms_clean_enable_title">Ativar Limpeza de Dados</string>
+    <string name="str_sms_clean_enable_subtitle">"Excluindo informações pessoais selecionadas após receber o comando SMS 'wipe: [código]'"</string>
+    <string name="str_sms_clean_personal_data_title">Dados pessoais</string>
+    <string name="str_sms_clean_personal_data_subtitle">Contatos, entradas em logs de chamadas e em calendário</string>
+    <string name="str_sms_clean_delete_data_caption">Informações pessoais a excluir</string>
+    <string name="str_sms_clean_selected_folders_title">Pastas</string>
+    <string name="str_sms_clean_selected_folders_subtitle">Pastas da lista criada por você</string>
+    <string name="str_sms_clean_add_folder_button">Adicionar pasta</string>
+    <string name="str_sim_watch_sms_text">Kaspersky Mobile Security: cartão SIM substituído no dispositivo.</string>
+    <string name="str_sim_watch_mail_text">SIM Watch:</string>
+    <string name="str_sms_clean_folder_dialog_title">Ação na pasta</string>
+    <string name="str_sms_clean_folder_dialog_cancel">Cancelar</string>
+    <string name="str_sms_clean_confirm_delete_all_folders_title">Confirmar ação</string>
+    <string name="sms_clean_confirm_delete_all_folders_button">Excluir</string>
+    <string name="str_sms_clean_confirm_delete_all_folders">Você deseja realmente excluir todas as pastas da lista?</string>
+    <string name="str_sms_empty_wipe_title">Nenhuma informação foi selecionada para exclusão</string>
+    <string name="str_sms_empty_wipe_info">Para excluir os dados remotamente por comando SMS, é necessário selecionar as informações a excluir.</string>
+    <string name="str_sms_empty_wipe_yes">Selecionar</string>
+    <string name="str_sms_empty_wipe_no">Cancelar</string>
+    <string name="str_sms_empty_wipe_folder_title">Nenhuma pasta foi selecionada para exclusão</string>
+    <string name="str_sms_empty_wipe_folder_info">Para excluir pastas remotamente, é necessário criar primeiro uma lista de pastas a excluir.</string>
+    <string name="str_sms_empty_wipe_folder_yes">Criar</string>
+    <string name="str_sms_empty_wipe_folder_no">Cancelar</string>
+    <string name="str_pp_locked">Para alterar as configurações da Proteção de Privacidade, desative a ocultação de dados.</string>
+    <string name="str_sim_watch_block_info2">Para ativar o bloqueio para SIM Watch, o Kaspersky Mobile Security deve ser configurado como a tela Inicial padrão.</string>
+    <string name="str_sim_watch_block_info2_ok">OK</string>
+    <string name="str_sim_watch_block_info1">"Para ativar o bloqueio para SIM Watch, o Kaspersky Mobile Security deve ser configurado como a tela Inicial padrão.
+
+Tela inicial padrão atual: %s."</string>
+    <string name="str_sim_watch_block_info1_ok">Instalar</string>
+    <string name="str_sim_watch_block_info1_cancel">Cancelar</string>
+    <string name="str_kms_menu_help">Ajuda</string>
+    <string name="str_kms_menu_passw_recover">Recuperação de código secreto</string>
+    <string name="str_kms_menu_passw_recover_back">Inserir código</string>
+    <string name="str_passw_recovery_title">Opção para recuperação do código secreto</string>
+    <string name="str_passw_recovery_info">"Caso você tenha esquecido o código secreto, especifique o endereço de email para o qual o Kaspersky Mobile Security enviará informações de recuperação do código secreto.
+
+Se a função de recuperação do código secreto for desativada, o código secreto não poderá ser recuperado."</string>
+    <string name="str_passw_recovery_info_email">Endereço de email</string>
+    <string name="str_passw_recovery_start_btn">Ativar</string>
+    <string name="str_passw_recovery_skip_btn">Ignorar</string>
+    <string name="str_passw_recovery_once_header">Recuperação do código secreto</string>
+    <string name="str_passw_recovery_once_info">A opção de recuperação de código secreto será desativada. Para ativá-la novamente, você deve reinstalar o aplicativo.</string>
+    <string name="str_passw_recovery_action_header">Recuperação do código secreto</string>
+    <string name="str_passw_recovery_action_info">"Vá para o site %1$s e insira o endereço de email que você especificou para restaurar o código secreto e o código de identificação do dispositivo: %2$s.
+Será enviada uma mensagem com o código de recuperação para o endereço de email que você especificou. Insira o código no dispositivo."</string>
+    <string name="str_passw_recovery_action_site">http://mobile.kaspersky.com/recover-code</string>
+    <string name="str_passw_recovery_action_go_btn">Ir</string>
+    <string name="str_passw_recovery_action_close_btn">Fechar</string>
+    <string name="str_passw_recovery_no_connection">Não foi possível abrir o site. Verifique a conexão à Internet.</string>
+    <string name="str_passw_recovery_http_error">Erro de conexão: %d</string>
+    <string name="str_passw_recovery_succeeded">Agora, se necessário, já pode recuperar o código secreto em segurança usando o endereço de email especificado.</string>
+    <string name="str_passw_recovery_enter_menu">Insira o código de recuperação</string>
+    <string name="str_passw_recovery_wrong_code">Código de recuperação incorreto.</string>
+    <string name="str_passw_recovery_progress">Aguarde enquanto as informações são enviadas para o servidor...</string>
+    <string name="str_invalid_email">Endereço de email inválido. O endereço contém caracteres não permitidos. Introduza um endereço de email válido.</string>
+    <string name="str_stealth_sms_caption">Enviar comando SMS</string>
+    <string name="str_stealth_sms_title">Enviar comando SMS</string>
+    <string name="str_stealth_sms_subtitle">Envia o comando para a inicialização remota das opções Anti-Roubo e a ocultação de informações para contatos confidenciais</string>
+    <string name="str_additional_settings_caption">Configurações avançadas</string>
+    <string name="str_additional_notifications_enabled_title">Notificações</string>
+    <string name="str_additional_notifications_enabled_subtitle">Exibição das notificações na barra de status sobre como o aplicativo está funcionando</string>
+    <string name="str_additional_sound_enabled_title">Som</string>
+    <string name="str_additional_sound_enabled_subtitle">Notificação sonora sobre os eventos do aplicativo</string>
+    <string name="str_additional_hints_enabled_title">Dicas</string>
+    <string name="str_additional_hints_enabled_subtitle">Exibição das dicas do aplicativo</string>
+    <string name="str_additional_widget_title">Widget</string>
+    <string name="str_additional_widget_subtitle">Exibe o widget da tela inicial</string>
+    <string name="str_additional_change_secret_code_title">Alterar código secreto</string>
+    <string name="str_additional_information_caption">Informações gerais</string>
+    <string name="str_additional_logs_title">Relatórios</string>
+    <string name="str_additional_about_title">Sobre</string>
+    <string name="str_about_title">Sobre</string>
+    <string name="str_app_version">Versão: %s</string>
+    <string name="str_app_description">"O Kaspersky Mobile Security protege seus dados contra vírus e outro malware. O Kaspersky Mobile Security oculta seus contatos confidenciais, o histórico de chamadas e correspondência desses contatos e bloqueia chamadas e SMS indesejados. Em caso de furto ou perda de seu dispositivo, o Kaspersky Mobile Security pode ajudá-lo a localizar o dispositivo usando comandos SMS especiais enquanto protege seus dados armazenados no dispositivo.
+
+Se você tiver questões, entre em contato com a Kaspersky Lab (http://www.kaspersky.com, http://support.kaspersky.com/helpdesk.html).
+
+A assinatura digital é verificada por Crypto-C-2.0, (C) CryptoEx LLX http://www.cryptoex.ru."</string>
+    <string name="str_app_copyright">© 2012 Kaspersky Lab ZAO. Todos os direitos reservados.</string>
+    <string name="str_antispam_mode_title">Modo de Filtro de Chamadas e SMS</string>
+    <string name="str_antispam_mode_subtitle">%s</string>
+    <string name="str_antispam_allow_contacts_title">Permitir Contatos</string>
+    <string name="str_antispam_allow_contacts_subtitle">Todas as chamadas e mensagens SMS recebidas de contatos no livro de endereços do dispositivo</string>
+    <string name="str_antispam_block_non_numeric_title">Bloquear algarismos não numéricos</string>
+    <string name="str_antispam_block_non_numeric_subtitle">Bloqueia chamadas e SMS de entrada de números contendo letras.</string>
+    <string name="str_antispam_settings_title">Filtro de Chamadas e SMS</string>
+    <string name="str_antispam_mode_dialog_title">Modo de Filtro de Chamadas e SMS</string>
+    <string name="str_antispam_mode_dialog_cancel">Cancelar</string>
+    <string name="str_antispam_white_list_title">Contatos permitidos</string>
+    <string name="str_antispam_black_list_title">Contatos bloqueados</string>
+    <string name="str_antispam_white_list_add_button">Adicionar</string>
+    <string name="str_antispam_black_list_add_button">Adicionar</string>
+    <string name="str_antispam_handle_sms_title">SMS de chegada</string>
+    <string name="str_antispam_handle_voice_title">Chamada de entrada</string>
+    <string name="str_antispam_sms_sender">De: &lt;i>%s&lt;/i></string>
+    <string name="str_antispam_sms_content">Texto SMS: &lt;i>%s&lt;/i></string>
+    <string name="str_antispam_voice_sender">De: &lt;i>%s&lt;/i></string>
+    <string name="str_antispam_action_voice_prompt">Selecione uma ação para o número:</string>
+    <string name="str_antispam_action_sms_prompt">Selecione uma ação para o número:</string>
+    <string name="str_antispam_phone_any">-algum número-</string>
+    <string name="str_antispam_sms_any">texto: algum</string>
+    <string name="str_antispam_sms_text">texto: %s</string>
+    <string name="str_antispam_cancel">Cancelar</string>
+    <string name="str_antispam_save">Salvar</string>
+    <string name="str_antispam_select_black_list_item_type_title">Bloquear entrada</string>
+    <string name="str_antispam_select_white_list_item_type_title">Permitir entrada</string>
+    <string name="str_antispam_list_item_title">Configurações</string>
+    <string name="str_antispam_black_list_item_phone_number">Número de telefone bloqueado</string>
+    <string name="str_antispam_black_list_item_text">Texto bloqueado</string>
+    <string name="str_antispam_white_list_item_phone_number">Número de telefone permitido</string>
+    <string name="str_antispam_white_list_item_text">Texto permitido</string>
+    <string name="str_antispam_delete_all_items_title">Você deseja realmente excluir todas as entradas da lista?</string>
+    <string name="str_antispam_delete_all_button_yes">Sim</string>
+    <string name="str_antispam_delete_all_button_no">Não</string>
+    <string name="str_antispam_phone_number_hint">inserir o número</string>
+    <string name="str_antispam_text_hint">inserir o texto</string>
+    <string name="str_main_screen_license_expired_title">Não foi possível validar o programa</string>
+    <string name="str_main_screen_license_expired_text">Para proceder com o aplicativo, certifique-se de que o programa foi comprado da Google Play. Tente validar o programa novamente.</string>
+    <string name="str_main_screen_license_renew_button_title">Renovar</string>
+    <string name="str_antispam_list_item_already_exists">Uma entrada com esses critérios já existe.</string>
+    <string name="str_antispam_list_item_already_exists_title">Entrada existente</string>
+    <string name="str_antispam_list_item_change_button">Alterar</string>
+    <string name="str_antispam_list_item_cancel_button">Cancelar</string>
+    <string name="str_sim_watch_block_enable_subtitle" />
+    <string name="str_activation_region">PT</string>
+    <string name="str_kms_region">PT</string>
+    <string name="str_activation_code">NGERRM5EG1JUS3YNHC1H</string>
+    <string name="str_statistic_activation_code">DC586X6XR923Y373Q3GS</string>
+    <string name="str_statistic_activation_code_upgrade_from_free">M1W496WGD1YMAPZX925J</string>
+    <string name="str_av_info1">Última atualização:</string>
+    <string name="str_av_info2">Registros totais:</string>
+    <string name="str_pp_hint">Ocultação de contatos e histórico relacionado de chamadas e correspondência SMS</string>
+    <string name="str_at_hint">Pesquisa de dispositivo e proteção de informações contra acesso não autorizado</string>
+    <string name="str_as_hint">Bloqueio de chamadas indesejadas e mensagens SMS recebidas com base nas listas de contatos permitidos e bloqueados criadas pelo usuário</string>
+    <string name="str_change_code_enter_recovery_code">Insira o código de recuperação:</string>
+    <string name="str_change_code_enter_new_code">Crie um novo código secreto:</string>
+    <string name="str_change_code_repeat_new_code">Inserir novamente o novo código:</string>
+    <string name="str_change_code_too_short">O código secreto é muito curto.</string>
+    <string name="str_additional_select_command_title">Comando SMS</string>
+    <string name="str_additional_select_command_cancel">Cancelar</string>
+    <string name="str_send_command_block_title">Bloqueio do dispositivo</string>
+    <string name="str_send_command_wipe_title">Limpeza de Dados</string>
+    <string name="str_send_command_find_title">Localização</string>
+    <string name="str_send_command_hide_title">Ocultar informações de contatos confidenciais</string>
+    <string name="str_send_command_enter_target_phone_prompt">O número de telefone recebendo o comando SMS:</string>
+    <string name="str_send_command_enter_code_prompt">Código secreto do aplicativo no dispositivo recebendo o comando SMS:</string>
+    <string name="str_send_command_error_title">Não é possível enviar o comando</string>
+    <string name="str_send_command_error_empty_phone">Inserir o número de telefone para o qual será enviado o comando SMS.</string>
+    <string name="str_send_command_error_empty_code">Insira o código secreto do aplicativo no dispositivo para o qual o comando SMS será enviado.</string>
+    <string name="str_send_command_error_ok">OK</string>
+    <string name="str_send_command_send_button_caption">Enviar</string>
+    <string name="str_send_command_cancel_button_caption">Cancelar</string>
+    <string name="str_eula_title">Contrato de Licença do Usuário Final</string>
+    <string name="str_eula_accept">Aceitar</string>
+    <string name="str_eula_refuse">Recusar</string>
+    <string name="str_notify_kms_started">Aguarde enquanto o Kaspersky Mobile Security é inicializado...</string>
+    <string name="str_notify_scanning_progress">Verificação: %d%%</string>
+    <string name="str_notify_monitor_status">Proteção</string>
+    <string name="str_notify_monitor_full">expandido</string>
+    <string name="str_notify_monitor_recommended">recomendado</string>
+    <string name="str_notify_bases_expired">bancos de dados desatualizados</string>
+    <string name="str_notify_monitor_disabled">desativado</string>
+    <string name="str_license_expired_header_text">Não foi possível validar o programa</string>
+    <string name="str_data_hidden_message">Kaspersky Mobile Security: as informações confidenciais estão ocultas.</string>
+    <string name="str_license_expired_info_caption">Sobre a licença</string>
+    <string name="str_license_expired_info_text_header">Não foi possível validar o programa.</string>
+    <string name="str_license_expired_info_text_body">O Kaspersky Mobile Security está funcionando em modo de funcionalidade limitada. O componente não está disponível.</string>
+    <string name="str_license_expired_info_button_caption">Fechar</string>
+    <string name="str_data_wiped_sms_reply">Kaspersky Mobile Security: dados particulares excluídos do dispositivo.</string>
+    <string name="str_reports_event_title_call_blocked">Chamada de entrada bloqueada</string>
+    <string name="str_reports_event_details_call_blocked">Chamada de entrada de %s bloqueada.</string>
+    <string name="str_reports_event_title_message_blocked">SMS de entrada bloqueado</string>
+    <string name="str_reports_event_details_message_blocked">SMS de entrada %s bloqueado</string>
+    <string name="str_additional_extend_license_title">Renovação da licença</string>
+    <string name="str_additional_extend_license_subtitle" />
+    <string name="str_widget_settings_title">Widget da tela inicial</string>
+    <string name="str_widget_settings_info">O widget da tela Inicial é designado para indicar o status atual da Proteção e da ocultação de informações de contatos confidenciais.</string>
+    <string name="str_widget_settings_enable_title">Ativar widget</string>
+    <string name="str_widget_settings_enable_subtitle">Permissão para adicionar widget à tela Inicial</string>
+    <string name="str_widget_settings_enable_prompt_title">Widget</string>
+    <string name="str_widget_settings_enable_prompt">Recomenda-se o reinício do dispositivo para aplicar as alterações.</string>
+    <string name="str_widget_settings_enable_prompt_ok">OK</string>
+    <string name="str_widget_settings_pp_title">Mostrar status da Proteção de Privacidade</string>
+    <string name="str_widget_settings_pp_subtitle">Permitir a exibição do status de ocultação das informações de contatos confidenciais no widget da tela Inicial</string>
+    <string name="str_subscr_terms_title">Termos da Compra com Um Clique</string>
+    <string name="str_subscr_activate_button">Continuar</string>
+    <string name="str_subscr_progress">Solicitando informações sobre os termos de assinatura...</string>
+    <string name="str_subscr_phone_number_production">+79851855100</string>
+    <string name="str_subscr_phone_number_stage">+79060552903</string>
+    <string name="str_license_type_subscription">Compra com Um Clique</string>
+    <string name="str_subscr_application_activated_title">Aplicativo ativado</string>
+    <string name="str_subscr_application_activated">A Compra com Um Clique do Kaspersky Mobile Security está ativada por 30 dias.</string>
+    <string name="str_subscr_continue_button">Continuar</string>
+    <string name="str_subscr_license_installed">Sobre a licença</string>
+    <string name="str_subscr_cancel_subscription_title">Cancelar Compra com Um Clique</string>
+    <string name="str_subscr_cancel_subscription_subtitle">Renovação automática da licença a cada 30 dias</string>
+    <string name="str_subscr_cancel_subscription_not_activated_subtitle">Compra com Um Clique não ativada</string>
+    <string name="str_subscr_error_service_temporary_unavailable_dialog">A Compra com Um Clique está temporariamente indisponível. Tente novamente ativar a Compra com Um Clique mais tarde ou selecione outra forma para ativar o aplicativo.</string>
+    <string name="str_subscr_error_service_permanently_unavailable_dialog">A Compra com Um Clique não está disponível para o seu operador de rede celular. Selecione outro método de ativação ou insira um cartão SIM para um operador diferente.</string>
+    <string name="str_subscr_error_no_sim">Não é possível ativar a Compra com Um Clique sem um cartão SIM compatível. Insira um cartão SIM compatível e tente novamente.</string>
+    <string name="str_subscr_error_server_code">Não é possível ativar a Compra com Um Clique. Erro de servidor (%d). Tente novamente mais tarde.</string>
+    <string name="str_subscr_confirm_sms_resend_text">Aguardando uma resposta do servidor de ativação. Deseja tentar novamente a ativação da assinatura?</string>
+    <string name="str_subscr_error_title">Não é possível ativar a Compra com Um Clique</string>
+    <string name="str_subscr_error_text">Erro:</string>
+    <string name="str_subscr_repeat_sms_button">Repetir</string>
+    <string name="str_subscr_cancel_subscription_button">Cancelar</string>
+    <string name="str_subscr_error_question">Não é possível ativar o aplicativo: não foi possível enviar uma mensagem SMS para ativar a Compra com Um Clique. Para tentar novamente, clique em \"Repetir\". Para cancelar a ativação da Compra com Um Clique, clique em \"Cancelar\".</string>
+    <string name="str_subscr_waiting_for_subscription_key">Ativando a Compra com Um Clique para o Kaspersky Mobile Security. Esse processo pode demorar até 24 horas. Se o aplicativo não for ativado durante esse período, entre em contato com o Suporte Técnico.</string>
+    <string name="str_subscr_cancel_subscription_dialog_title">Cancelar Compra com Um Clique</string>
+    <string name="str_subscr_cancel_subscription_dialog">"A licença está efetiva somente durante o período de faturação. Após a expiração, você pode reativar a Compra com Um Clique ou selecionar outro método para renovar a licença a partir das configurações do aplicativo.
+
+Cancelar a Compra com Um Clique?"</string>
+    <string name="str_subscr_cancel_button">Não</string>
+    <string name="sms_subscr_confirm_subscription_cancelling_button">Sim</string>
+    <string name="str_antispam_settings_separator_title">Adicional</string>
+    <string name="str_antispam_settings_reports_title">Relatórios</string>
+    <string name="str_antispam_settings_reports_subtitle">Entradas: %d</string>
+    <string name="str_antispam_reports_caption">Log de Filtro de Chamadas e SMS</string>
+    <string name="str_as_reports_menu_deleteall">Limpar</string>
+    <string name="str_scheduled_scan_started">Está decorrendo uma verificação programada do sistema de arquivos...</string>
+    <string name="str_scheduled_update_started">Está decorrendo uma atualização programada do banco de dados de antivírus...</string>
+    <string name="str_empty_sim_watch_title">Configure as configurações necessárias do SIM Watch</string>
+    <string name="str_empty_sim_watch_info">Para ativar o SIM Watch, especifique um número de telefone ou endereço de email para receber um novo número e/ou ativar o Bloqueio do Dispositivo.</string>
+    <string name="str_empty_sim_watch_no">Cancelar</string>
+    <string name="str_empty_sim_watch_yes">Configurar</string>
+    <string name="str_activate_commercial_key_while_subscription_is_on_title">Inserir código de ativação</string>
+    <string name="str_activate_commercial_key_while_subscription_is_on_text">"A Compra com Um Clique para o Kaspersky Mobile Security está atualmente ativada. Renovar a licença com o código de ativação fará com que os dias restantes do período de faturação sejam perdidos. O termo da licença pode ser consultado em \"Sobre a licença\" no menu.
+
+Cancelar a Compra com Um Clique e renovar a licença com o código de ativação?"</string>
+    <string name="str_notication_license_expired_with_html">"A proteção está desativada.
+&lt;b>&lt;font color=#ff8080> Não foi possível validar o programa.&lt;/font>&lt;/b>"</string>
+    <string name="str_activate_subscription_key_while_commercial_is_on_title">Atenção!</string>
+    <string name="str_activate_subscription_key_while_commercial_is_on_text">Sua licença ainda está efetiva. Dias restantes até à expiração: %d. Ativar a Compra com Um Clique fará com que esses dias sejam perdidos. Ativar a Compra com Um Clique?</string>
+    <string name="str_av_scanned_objects_types_dialog_title">Tipo de arquivos para verificar</string>
+    <string name="str_av_scanned_objects_types_dialog_cancel">Cancelar</string>
+    <string name="str_av_virus_found_action_dialog_title">Se a desinfecção falhar</string>
+    <string name="str_av_virus_found_action_dialog_cancel">Cancelar</string>
+    <string name="str_scan_files_title_memory">Verificação de memória</string>
+    <string name="str_scan_results_title_memory">Verificação de memória</string>
+    <string name="str_antispam_item_deny_sms_dialog_caption">Bloquear SMS de entrada</string>
+    <string name="str_antispam_item_deny_calls_dialog_caption">Bloquear chamadas de entrada</string>
+    <string name="str_antispam_item_deny_calls_sms_dialog_caption">Bloquear chamadas e SMS de entrada</string>
+    <string name="str_antispam_item_allow_sms_dialog_caption">Permitir SMS de entrada</string>
+    <string name="str_antispam_item_allow_calls_dialog_caption">Permitir chamadas de entrada</string>
+    <string name="str_antispam_item_allow_calls_sms_dialog_caption">Permitir chamadas e SMS de entrada</string>
+    <string name="str_app_loading">Inicializando o Kaspersky Mobile Security...</string>
+    <string name="str_buy_online_url">http://www.kaspersky.com/gotopartnersite/def76/buy</string>
+    <string name="str_buy_online_url_renew">http://www.kaspersky.com/gotopartnersite/def71/renew?act-serial=%S</string>
+    <string name="str_activation_failed_expired_key">Já foi ativada uma versão de avaliação nesse dispositivo. Não é possível ativá-la novamente.</string>
+    <string name="str_unnamed_contact">Desconhecido</string>
+    <string name="str_pp_missed_calls_text">Chamadas perdidas: %d</string>
+    <string name="str_pp_missed_messages_text">SMS perdido: %d</string>
+    <string name="str_notification_missed_calls_press_prompt">Ver chamadas perdidas</string>
+    <string name="str_notification_missed_messages_press_prompt">Ver SMS perdido</string>
+    <string name="str_updater_failed_no_connection">Não foi possível estabelecer uma conexão ao servidor. Verifique sua conexão à Internet e reinicie a atualização.</string>
+    <string name="str_hint_dialog_title">Dica</string>
+    <string name="str_hint_dialog_disable_hints">Ocultar dicas</string>
+    <string name="str_change_code_title_when_launched_from_additional">Alterar código secreto</string>
+    <string name="str_activation_title_when_launched_from_additional">Renovação da licença</string>
+    <string name="str_subscr_cant_send_sms">Não é possível ativar a Compra com Um Clique. Confirme que tem fundos suficientes na sua conta celular e tente novamente.</string>
+    <string name="str_external_memory_istallation_dialog_text">O Kaspersky Mobile Security não consegue funcionar quando instalado no cartão de memória. Reinstale o aplicativo na memória do dispositivo.</string>
+    <string name="str_external_memory_istallation_dialog_ok">OK</string>
+    <string name="str_select_protection_mode_dialog_title">Modo de proteção</string>
+    <string name="str_select_protection_mode_dialog_btn_cancel">Fechar</string>
+    <string name="str_new_version_available_title">Está disponível uma nova versão do Kaspersky Mobile Security. Você deseja atualizar?</string>
+    <string name="str_new_version_available_info">"Versão atual: %1$s
+Nova versão: %2$s"</string>
+    <string name="str_new_version_available_cancel">Cancelar</string>
+    <string name="str_new_version_available_ok">Atualizar</string>
+    <string name="str_new_version_available_load_update_title">Baixando a nova versão do Kaspersky Mobile Security</string>
+    <string name="str_new_version_available_load_update_info">Bytes baixados: %s</string>
+    <string name="str_new_version_available_load_update_cancel">Cancelando o download da nova versão do Kaspersky Mobile Security...</string>
+    <string name="str_new_version_available_failed">Não é possível atualizar o aplicativo. Verifique o espaço livre no cartão de memória e tente reiniciar a atualização do Kaspersky Mobile Security.</string>
+    <string name="str_enter_secret_code_menu">Inserir código secreto</string>
+    <string name="str_new_version_available_cancel_update_dialog_title">Cancelar atualização da versão?</string>
+    <string name="str_new_version_available_cancel_update_dialog_info">"Você deseja que o Kaspersky Mobile Security deixe de enviar notificações sobre novas atualizações %s e cancelar a atualização? 
+Você pode atualizar a versão mais tarde, iniciando a atualização manualmente."</string>
+    <string name="str_new_version_available_cancel_update_dialog_yes">Cancelar</string>
+    <string name="str_new_version_available_cancel_update_dialog_no">Notificar</string>
+    <string name="str_calllog_activity_title">Importando contatos do histórico de chamadas</string>
+    <string name="str_calllog_header_black_list">Selecione uma chamada para a qual deseja adicionar o contato à lista de contatos bloqueados</string>
+    <string name="str_calllog_header_white_list">Selecione uma chamada para a qual deseja adicionar o contato à lista de contatos permitidos</string>
+    <string name="str_antispam_select_import_src_dialog_title">Selecione o número de telefone que você deseja adicionar</string>
+    <string name="str_import_from_sms_activity_title">Importando contatos de mensagens SMS</string>
+    <string name="str_import_sms_header_black_list">Selecione uma mensagem SMS para a qual deseja adicionar o contato à lista de contatos bloqueados</string>
+    <string name="str_import_sms_header_white_list">Selecione uma mensagem SMS para a qual deseja adicionar o contato à lista de contatos permitidos</string>
+    <string name="str_premium_activated_title">Versão completa do Kaspersky Mobile Security</string>
+    <string name="str_premium_not_activated_title">Versão completa do Kaspersky Mobile Security</string>
+    <string name="str_premium_activated_tex1">Você instalou com êxito a versão completa do Kaspersky Mobile Security com funcionalidades melhoradas.</string>
+    <string name="str_premium_not_activated_text1">Você instalou com êxito a versão completa do Kaspersky Mobile Security com funcionalidades melhoradas.</string>
+    <string name="str_premium_activated_text2">Todas as suas listas de números e configurações de aplicativos são automaticamente importadas da versão Lite para a versão completa do aplicativo.</string>
+    <string name="str_premium_activated_text2_delete_lite">Para iniciar a versão completa do aplicativo corretamente, você deve excluir o Kaspersky Mobile Security Lite.</string>
+    <string name="str_premium_not_activated_text2">Todas as suas listas de números e configurações de aplicativos são automaticamente importadas da versão Lite para a versão completa do aplicativo.</string>
+    <string name="str_main_menu_av_update">Atualizar</string>
+    <string name="str_manage_space_activity_title">Não é possível realizar esta ação</string>
+    <string name="str_manage_space_activity_info">Para excluir o Kaspersky Mobile Security, aceda à janela principal do aplicativo > Configurações avançadas > Desinstalar Kaspersky Mobile Security.</string>
+    <string name="str_manage_space_activity_close_btn">OK</string>
+    <string name="str_uninstall_title">Desinstalar o Kaspersky Mobile Security</string>
+    <string name="str_uninstall_text">Insira o código secreto.</string>
+    <string name="str_uninstall_continue">Próx</string>
+    <string name="str_uninstall_cancel">Cancelar</string>
+    <string name="str_disable_deviceadmin_text">O Kaspersky Mobile Security já não está ativado como Administrador do Dispositivo.</string>
+    <string name="str_disable_deviceadmin_continue">Próx</string>
+    <string name="str_disable_deviceadmin_cancel">Cancelar</string>
+    <string name="str_device_admin_enable_info">Ativar o aplicativo como um Administrador do Dispositivo protege o aplicativo contra acesso não autorizado e permite que o aplicativo bloqueie o dispositivo automaticamente em caso de perda ou roubo.</string>
+    <string name="str_block_device_when_disable_device_admin">O Kaspersky Mobile Security já não está configurado como Administrador do Dispositivo. A Autoproteção está desativada. O aplicativo não pode bloquear o dispositivo através de comando SMS. Para desbloquear, insira o código secreto.</string>
+    <string name="str_intro_screen_title">Bem-vindo!</string>
+    <string name="str_intro_screen_subtitle">Bem-vindo ao Kaspersky Mobile Security:&lt;br> \u0095 &lt;b>Antivírus&lt;/b>. Proteção contra vírus e malware.&lt;br> \u0095 &lt;b>Proteção da privacidade&lt;/b>. Ocultação de contatos confidenciais e histórico relacionado de chamadas e correspondência SMS.&lt;br> \u0095 &lt;b> Filtro de chamadas e SMS&lt;/b>. Bloqueio de chamadas e mensagens SMS indesejadas.&lt;br> \u0095 &lt;b>Proteção da Web&lt;/b>. Proteção online contra sites maliciosos e de phishing.&lt;br> \u0095 &lt;b>Anti-roubo&lt;/b>.Pesquisa do dispositivo e proteção dos dados em caso de perda ou roubo.&lt;br>&lt;br>O Assistente de Instalação irá guiá-lo através do processo de configuração inicial.</string>
+    <string name="str_intro_screen_continue_btn">Próx</string>
+    <string name="str_intro_screen_update_mode_title">Bem-vindo!</string>
+    <string name="str_intro_screen_update_mode_subtitle">Bem-vindo à versão expandida do Kaspersky Mobile Security:&lt;br> \u0095 &lt;b>Antivírus&lt;/b>. Proteção contra vírus e outros programas maliciosos.&lt;br> \u0095 &lt;b>Proteção de privacidade&lt;/b>. Ocultação de contatos confidenciais e histórico de chamadas relacionado, bem como trocas de mensagens SMS.&lt;br> \u0095 &lt;b>Filtro de chamadas e SMS&lt;/b>. Bloqueio de chamadas e mensagens SMS indesejadas.&lt;br> \u0095 &lt;b>Proteção da Web&lt;/b>. Proteção online contra sites maliciosos e de phishing.&lt;br> \u0095 &lt;b>Anti-roubo&lt;/b>. Pesquisa do dispositivo e proteção de dados em caso de perda ou roubo.&lt;br>&lt;br>O Assistente de Configuração irá ajudá-lo a realizar a configuração inicial do aplicativo.</string>
+    <string name="str_intro_screen_update_mode_continue_btn">Próx</string>
+    <string name="str_device_admin_setup_title">Ativar o Administrador do Dispositivo</string>
+    <string name="str_device_admin_setup_subtitle">Para proteger o aplicativo contra exclusão não autorizada, e para bloquear o dispositivo em caso de roubo ou perda, o aplicativo deve ser ativado como Administrador do Dispositivo.&lt;br>&lt;br>Para isso, clique em &lt;b>%s&lt;/b> e na próxima janela ative o aplicativo como Administrador do Dispositivo.</string>
+    <string name="str_device_admin_setup_continue_btn">Próx</string>
+    <string name="str_incompatiple_apps_title">Foram detectados aplicativos incompatíveis com o Kaspersky Mobile Security</string>
+    <string name="str_incompatiple_apps_info">"Para assegurar um funcionamento correto, o Kaspersky Mobile Security deve ser ativado como o único Administrador do Dispositivo. Para isso, clique em \"Desativar\" para remover os direitos de Administrador do Dispositivo de outros aplicativos.
+
+Os seguintes aplicativos estão atualmente ativados como Administradores do Dispositivo:"</string>
+    <string name="str_incompatiple_apps_turn_off_btn">Desativar</string>
+    <string name="str_incompatiple_apps_skip_btn">Ignorar e continuar</string>
+    <string name="str_incompatiple_apps_warning_dialog_title">Ignorar esta etapa?</string>
+    <string name="str_incompatiple_apps_warning_dialog_info">Outros aplicativos definidos como Administradores do Dispositivo podem afetar o funcionamento do Kaspersky Mobile Security.</string>
+    <string name="str_incompatiple_apps_warning_dialog_yes">Ignorar</string>
+    <string name="str_incompatiple_apps_warning_dialog_no">Retornar</string>
+    <string name="str_device_admin_enter_recovery_code_btn">Insira o código de recuperação</string>
+    <string name="str_recovery_code_correct_code_title">Código de recuperação</string>
+    <string name="str_recovery_code_correct_code_info">Insira o código de recuperação para desbloquear o dispositivo:</string>
+    <string name="str_recovery_code_incorrect">Código de recuperação incorreto. Insira o código de recuperação correto.</string>
+    <string name="str_recovery_code_check_btn">Restaurar</string>
+    <string name="str_device_admin_enter_code_btn">Desbloquear</string>
+    <string name="str_device_admin_unlocked_dialog_title">Dispositivo desbloqueado</string>
+    <string name="str_device_admin_unlocked_dialog_info">"O bloqueio de tela do sistema está também desativado. 
+
+Caso tenha usado um bloqueio de tela do sistema (por exemplo, uma senha ou padrão gráfico), restaure o bloqueio nas configurações do dispositivo."</string>
+    <string name="str_device_admin_unlocked_dialog_ok_btn">OK</string>
+    <string name="str_av_additional_protection_hint">A proteção está desativada. Para proteger seus dados, é recomendável selecionar o modo expandido ou recomendado.</string>
+    <string name="str_av_additional_cloud_check_hint">Para que o aplicativo reaja mais rapidamente a novas ameaças, é recomendável ativar o Cloud Security Scan.</string>
+    <string name="str_av_additional_cloud_check_title">Cloud Security Scan</string>
+    <string name="str_av_additional_cloud_check_subtitle_on">Verificação adicional de novos programas através do serviço da nuvem do Kaspersky Security Network &lt;b>ativada&lt;/b></string>
+    <string name="str_av_additional_cloud_check_subtitle_off">Verificação adicional de novos programas através do serviço da nuvem Kaspersky &lt;b>&lt;font color=#ff8080>desativada&lt;/font>&lt;/b></string>
+    <string name="str_av_additional_work_params_caption">Configurações de componente</string>
+    <string name="str_av_additional_protection_params_title">Configurações de proteção</string>
+    <string name="str_main_menu_av_and_cloud_protect">Proteção e Cloud Security Scan</string>
+    <string name="str_main_menu_av_protect_enabled">ativado</string>
+    <string name="str_main_menu_av_protect_enabled_multiple">ativado</string>
+    <string name="str_import_free_settings_prompt">Importando configurações da versão Lite...</string>
+    <string name="str_start_premium_version_btn_caption">Abrir aplicativo</string>
+    <string name="str_delete_free_btn_caption">Excluir versão Lite</string>
+    <string name="str_final_step_title">Obrigado</string>
+    <string name="str_final_step_text1">O Kaspersky Mobile Security está pronto para ser usado.</string>
+    <string name="str_final_step_text2">Todas as suas listas de números e configurações de aplicativos são automaticamente importadas da versão Lite para a versão completa do aplicativo.</string>
+    <string name="str_final_step_text2_delete_lite">Para garantir um funcionamento correto da versão completa do aplicativo, a versão Lite deve ser excluída.</string>
+    <string name="str_additional_remove_app_title">Desinstalar o Kaspersky Mobile Security</string>
+    <string name="str_antivirus_checkbox_apply_to_all_text">Aplicar a tudo</string>
+    <string name="str_antispam_private_number">Contato confidencial</string>
+    <string name="str_reports_as_private_number">\"Contato confidencial\"</string>
+    <string name="antispam_updating_contacts">Aguarde enquanto os contatos são atualizados...</string>
+    <string name="str_wizard_device_admin_workaround_title">Configurar um código de bloqueio da tela</string>
+    <string name="str_wizard_device_admin_workaround_info">"Para que o Anti-Roubo bloqueie seu dispositivo em caso de perda ou roubo, clique em \"Próx.\" e, na janela seguinte, configure um código temporário para bloquear a tela nas configurações do sistemado dispositivo.
+
+Poderá reiniciar esse código no futuro."</string>
+    <string name="str_wizard_device_admin_workaround_info2">"Obrigado. As funções do Anti-Roubo estão funcionando corretamente.
+
+Agora já pode reiniciar o código secreto de bloqueio da tela clicando em \"Reiniciar e continuar\"."</string>
+    <string name="str_wizard_device_admin_workaround_continue_btn">Próx</string>
+    <string name="str_wizard_device_admin_workaround_reset_btn">Reiniciar e continuar</string>
+    <string name="str_sms_block_unsuccess_sms_text">Kaspersky Mobile Security: não foi possível bloquear o dispositivo. O aplicativo não está definido como Administrador do Dispositivo.</string>
+    <string name="str_final_step_app_updated_title">Obrigado</string>
+    <string name="str_final_step_app_updated_text">A nova versão do Kaspersky Mobile Security foi instalada com êxito.</string>
+    <string name="str_about_trademark_notification_title">Notificações de marcas registradas</string>
+    <string name="str_about_trademark_notification_body">"As marcas registradas e marcas de serviços são propriedade exclusiva de seus respetivos proprietários. 
+Android e Google são marcas registradas da Google, Inc."</string>
+    <string name="str_email_service_phone">+447781487156</string>
+    <string name="str_about_show_3rd_code_button">Código de terceiros</string>
+    <string name="str_external_code_title">Código de terceiros</string>
+    <string name="str_external_code_button">Fechar</string>
+    <string name="str_rate_now_button">Fazê-lo agora</string>
+    <string name="str_rate_later_button">Classificar mais tarde</string>
+    <string name="str_rate_close_button">Fechar</string>
+    <string name="str_rate_dont_show">Não exibir novamente</string>
+    <string name="str_rate_instructions">Se você gostou do Kaspersky Mobile Security, classifique-o no Google Play.</string>
+    <string name="str_send_command_info_send_btn">Enviar comando</string>
+    <string name="str_send_command_info_title">Enviar comando SMS</string>
+    <string name="str_send_command_info_text">Você pode executar as funções Anti-roubo remotamente ou ocultar informações de contato no seu ou em qualquer outro dispositivo com o Kaspersky Mobile Security instalado. Você pode fazer isso enviando comandos SMS a partir de qualquer dispositivo. Você pode enviar comandos SMS a partir do aplicativo ou enviar mensagens SMS com texto especial:&lt;br>&lt;br> - lock: [código] - para bloquear o dispositivo;&lt;br> - wipe: [código] - para excluir os dados pessoais selecionados;&lt;br> - fullreset: [código] - para excluir todos os dados;&lt;br> - locate: [código] - para localizar o dispositivo;&lt;br> - hide: [código] - para ocultar informações de contato confidenciais.&lt;br>[código] - esse é o código secreto do aplicativo no dispositivo para o qual o comando é enviado.&lt;br>&lt;br>&lt;b>Atenção!&lt;/b> Os comandos SMS são faturados de acordo com o plano de tarifas celular do dispositivo de onde o comando foi enviado.</string>
+    <string name="str_sms_block_lock_screen_text">Dispositivo bloqueado.</string>
+    <string name="str_reports_event_ap_site_blocked">O site %1$s foi bloqueado. Motivo: %2$s</string>
+    <string name="str_reports_event_av_virus_found">"Ameaça detectada.
+Arquivo infetado: %1$s
+Ameaça: %2$s"</string>
+    <string name="str_reports_event_av_scan_memory_finished">"Verificação da memória concluída.
+Caminho: %1$s
+Arquivos verificados: %2$s
+Ameaças detectadas: %3$d
+Ameaças neutralizadas: %6$d
+Arquivos ignorados: %7$d"</string>
+    <string name="str_reports_event_av_scan_files_finished">"Verificação de arquivos concluída.
+Caminho: %1$s
+Arquivos verificados: %2$s
+Ameaças detectadas: %3$d
+Ameaças neutralizadas: %6$d
+Arquivos ignorados: %7$d"</string>
+    <string name="str_reports_event_av_object_cured">"Arquivo curado.
+Arquivo desinfetado: %s."</string>
+    <string name="str_reports_event_av_object_skipped">"Arquivo ignorado e não verificado.
+Arquivo ignorado: %s."</string>
+    <string name="str_reports_event_av_object_deleted">"Arquivo excluído.
+Arquivo excluído: %s."</string>
+    <string name="str_reports_event_av_object_cant_deleted">"Não é possível excluir a ameaça detectada no arquivo.
+Arquivo infetado: %s."</string>
+    <string name="str_reports_event_av_object_quarantined">"Arquivo colocado na Quarentena.
+Arquivo na Quarentena: %s."</string>
+    <string name="str_reports_event_av_monitor_mode_full">O modo de proteção avançada está ativado.</string>
+    <string name="str_reports_event_av_monitor_mode_recommended">O modo de proteção recomendada está ativado.</string>
+    <string name="str_reports_event_av_monitor_mode_off">A proteção está desativada.</string>
+    <string name="str_reports_event_av_quarantine_failed">"Não é possível colocar o arquivo infetado na Quarentena
+Arquivo infetado: %s."</string>
+    <string name="str_reports_event_update_finish_success">Os bancos de dados de antivírus foram atualizados com êxito do servidor %s.</string>
+    <string name="str_reports_event_update_finish_failed">Falha ao atualizar os bancos de dados de Antivírus do servidor %1$s. Erro: %2$d</string>
+    <string name="str_reports_event_update_no_new_bases">Os bancos de dados do Antivírus estão atualizados. Não é necessário atualizar.</string>
+    <string name="settings_detail_ap_reset_default_dialog_title">Selecionar o navegador padrão</string>
+    <string name="settings_detail_ap_reset_default_dialog_text">"Para ativar a Proteção da Web para verificar sites quando você os visita, configure o navegador Android padrão como seu navegador padrão.
+
+Navegador padrão atual: &lt;b>%s&lt;/b>.
+
+Clique em \"Próximo\" > \"Configurações padrão\" > \"VOLTAR\"."</string>
+    <string name="settings_detail_ap_reset_default_dialog_btn_continue">Próx</string>
+    <string name="settings_detail_ap_select_default_dialog_title">Selecionar o navegador padrão</string>
+    <string name="settings_detail_ap_select_default_dialog_text">"Clique em \"Próx.\". 
+
+Na janela seguinte, selecione a caixa \"Usar como padrão para esta ação\" e selecione o navegador padrão do Android &lt;b>%s&lt;/b>.
+
+Clique em \"VOLTAR\"."</string>
+    <string name="settings_detail_ap_select_default_dialog_btn_continue">Próx</string>
+    <string name="str_reports_header_title">Relatórios:</string>
+    <string name="str_select_reports_dialog_title">Mostrar:</string>
+    <string name="str_select_reports_dialog_btn_cancel">Cancelar</string>
+    <string name="str_additional_reports_title">Relatórios</string>
+    <string name="settings_detail_ap_info_defaultbrowser_not_found">não encontrado</string>
+    <string name="settings_detail_ap_info_currentbrowser_not_set">não configurado</string>
+    <string name="str_antispam_black_list_no_items">Adicione contatos dos quais não deseja receber chamadas e mensagens SMS. Para bloquear chamadas e mensagens SMS desses contatos, selecione \"Contatos bloqueados\" ou o modo \"Padrão\".</string>
+    <string name="str_antispam_white_list_no_items">Adicione contatos dos quais deseja receber chamadas e mensagens SMS. Para receber chamadas e mensagens SMS desses contatos, selecione \"Contatos permitidos\" ou o modo \"Padrão\".</string>
+    <string name="str_av_virus_detected_info1_riskware">Esse aplicativo pode ser usado por criminosos contra seus interesses:</string>
+    <string name="str_av_virus_detected_info1_adware">Esse aplicativo é adware:</string>
+    <string name="str_av_riskware_detected_title">Atenção!</string>
+    <string name="str_av_scan_notify_bad_adware">Esse aplicativo é adware: %1$s. Aplicativo: %2$s.</string>
+    <string name="str_av_scan_notify_bad_riskware">Esse aplicativo pode ser usado por criminosos contra seus interesses: %1$s. Aplicativo: %2$s.</string>
+    <string name="str_pp_hidden_contacts_no_contacts">"Adicione contatos para os quais deseja ocultar informações.
+
+Após isso, você pode ocultar informações para esses contatos com um botão na janela principal do aplicativo."</string>
+    <string name="str_pp_unlocked">As informações para contatos selecionados são agora exibidas. Para ocultá-las, use o botão de seleção na janela principal do aplicativo.</string>
+    <string name="str_dbupdate_internet_connection">"É necessária uma conexão à Internet para atualizar os bancos de dados.
+
+Selecione \"Configurações\" para acessar as configurações de conexão da Internet."</string>
+    <string name="str_send_command_reset_title">Reinicialização completa</string>
+    <string name="str_sms_reset_enable_title">Excluir todos os dados</string>
+    <string name="str_sms_reset_enable_subtitle">"Excluindo todos os dados e restaurando as configurações de fábrica após receber o comando SMS 'fullreset: [código]'"</string>
+    <string name="str_webfilter_blockpage_header">O site foi bloqueado</string>
+    <string name="str_webfilter_blockpage_text">Site verificado e bloqueado pelo Kaspersky Mobile Security.</string>
+    <string name="str_main_menu_ap_enabled">ativado</string>
+    <string name="str_main_menu_ap_disabled">desativado</string>
+    <string name="str_main_menu_ap_info">Proteção contra sites maliciosos e falsos</string>
+    <string name="str_main_menu_ap_open_browser">Abrir navegador</string>
+    <string name="str_main_menu_ap_switching">Ativar Proteção da Web</string>
+    <string name="str_ap_hint">Bloquear sites maliciosos e falsos antes de serem abertos</string>
+    <string name="str_ap_hint2">A Proteção da Web verifica apenas sites no navegador padrão do Android e não efetua verificações em outros navegadores.</string>
+    <string name="str_ap_hint3">"Para que a Proteção da Web verifique todos os sites acessados, é recomendável configurar o navegador padrão do Android como o navegador padrão. Navegador padrão atual: %s.
+
+Se não desejar alterar o navegador padrão, inicie o navegador padrão do Android para usar a rede em segurança."</string>
+    <string name="str_main_menu_ap_title">Proteção da Web</string>
+    <string name="str_main_menu_ap_select_browser">Mudar navegador</string>
+    <string name="str_main_menu_at_send_command">Enviar comando SMS</string>
+    <string name="str_av_additional_check_riskware_title">Adware, discadores automáticos e outros</string>
+    <string name="str_av_additional_check_riskware_subtitle">Detecção de adware e aplicativos que podem ser usados por criminosos para danificar seu dispositivo ou seus dados pessoais</string>
+</resources>

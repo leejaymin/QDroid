@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.tf.ui.PlayableSkillView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.tf.ui.FireButton android:textSize="@dimen/text_large" android:layout_gravity="center_vertical" android:id="@id/play" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FireButton" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <org.tf.ui.FTextView android:textSize="@dimen/text_normal" android:textColor="@color/base" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="score" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RatingBar android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="0.1" android:layout_below="@id/score" android:layout_alignParentRight="true" style="@style/RatingBarSmall" />
+        <org.tf.ui.FTextView android:textSize="@dimen/text_small" android:textColor="@color/base" android:id="@id/notPlayed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="not played" android:layout_above="@id/rating" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</org.tf.ui.PlayableSkillView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/prefs_title_help" android:key="@string/PREFSKEY_HELP" android:summary="@string/prefs_summary_help" />
+    <Preference android:title="@string/prefs_title_support" android:key="@string/PREFSKEY_SUPPORT" android:summary="@string/prefs_summary_support" />
+</PreferenceScreen>

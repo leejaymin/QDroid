@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_color_inactive">#ffe203da</color>
+    <color name="ad_color_active">#ff5ad348</color>
+    <color name="vanilla">#fffff7ee</color>
+    <color name="dark_brown">#ff593a17</color>
+    <color name="transparent">#00000000</color>
+    <color name="semi_transparent">#bb000000</color>
+    <color name="brown">#ff966830</color>
+    <color name="grey">#ffbdb6b6</color>
+    <color name="orange">#ffffcc99</color>
+    <color name="white">#ffffffff</color>
+    <color name="text_setting">#ff00aabc</color>
+    <color name="virtual_goods_button_color_stroke">#ff36366e</color>
+    <color name="virtual_goods_text_color">#ffffffff</color>
+    <color name="virtual_goods_details_text_color">#ff000000</color>
+    <color name="vg_shadow_color">#ff222222</color>
+</resources>

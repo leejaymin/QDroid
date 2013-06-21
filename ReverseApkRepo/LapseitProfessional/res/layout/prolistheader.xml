@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00ffffff" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#fff8b800" android:gravity="center_horizontal" android:id="@id/prolistheadertitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pro_list_header_title" />
+    <TextView android:textSize="10.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/pro_list_header_subtitle" android:layout_below="@id/prolistheadertitle" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxtech.widget.MaxTitleBar android:gravity="center_vertical" android:id="@id/titleBar" android:background="?maxTitleBackground" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/subMark" android:background="@null" android:paddingLeft="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/submark" />
+    <TextView android:textAppearance="@style/MaxTitleTextAppearance" android:ellipsize="marquee" android:id="@id/text" android:paddingLeft="6.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:id="@id/spin" android:background="?maxTitleButtonBackground" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small" />
+    </LinearLayout>
+    <ImageButton android:id="@id/refresh" android:background="?maxTitleButtonBackground" android:layout_width="51.0dip" android:layout_height="fill_parent" android:src="?maxTitleRefreshButton" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/search" android:background="?maxTitleButtonBackground" android:layout_width="51.0dip" android:layout_height="fill_parent" android:src="?maxTitleSearchButton" android:scaleType="fitXY" />
+</com.mxtech.widget.MaxTitleBar>

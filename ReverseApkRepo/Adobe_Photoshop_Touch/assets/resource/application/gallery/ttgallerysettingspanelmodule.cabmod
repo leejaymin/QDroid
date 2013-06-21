@@ -1,0 +1,191 @@
+<ttgallerysettingspanelmodule id="gallerySettingsPanelModule" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="1260" height="934" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="1024" height="768" x="10" y="10" module="gallerySettingsPanelModule">
+        <imageView id="imageView" width="1024" height="50" sizeX="scale" x="0" y="0" image="galleryTopBarBackground" fit="true">
+          <text id="ttboldtextttlargetext" width="162" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/Settings=Settings"/>
+        </imageView>
+        <imageView id="imageView1" width="1024" height="87" sizeX="scale" sizeY="bottom" x="0" y="681" image="galleryInfoDialogClip" fit="true">
+          <button id="button2" width="150" height="40" sizeX="center" x="437" y="26" target="referenceDispatcher" selector="closeSettings" title="$$$/ttgallerysettingspanelmodule/button/title/Close=Close"/>
+        </imageView>
+        <viewStack id="viewStack" width="810" height="681" sizeX="scale" sizeY="scale" x="210" y="0">
+          <view id="chapter0" width="810" height="681" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+            <text id="ttboldtext12ttlargetext" width="347" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/My Account=My Account"/>
+            <viewStack id="viewStack1" width="790" height="600" sizeX="scale" sizeY="scale" x="10" y="50">
+              <view id="chapter" width="790" height="600" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+                <text id="ttboldtext113ttlargetext" width="600" height="25" sizeX="scale" x="65" y="24" text="$$$/ttgallerysettingspanelmodule/text/text/Account=Account"/>
+                <text id="text4" width="600" height="22" sizeX="scale" x="65" y="57" text="$$$/ttgallerysettingspanelmodule/text/text/Access your work anywhere with Adobe#{reg} Creative Cloud.=Access your work anywhere with Adobe#{reg} Creative Cloud."/>
+                <button id="button3" width="230" height="40" x="65" y="100" target="referenceDispatcher" selector="accountGetStarted" title="$$$/ttgallerysettingspanelmodule/button/title/Sign In=Sign In"/>
+                <button id="button9" width="45" height="71" sizeX="right" x="729" y="0" type="tool" image="galleryAdobeBannerClip"/>
+                <view id="view4" width="700" height="150" sizeX="scale" x="65" y="250">
+                  <text id="ttboldtext2ttlargetext" width="700" height="25" sizeX="scale" x="0" y="-1" text="$$$/ttgallerysettingspanelmodule/text/text/Adobe#{reg} Touch Apps=Adobe#{reg} Touch Apps"/>
+                  <button id="button6" width="56" height="56" x="0" y="33" target="referenceDispatcher" selector="ideas" type="tool" image="galleryIdeasClip"/>
+                  <button id="button61" width="56" height="56" x="605" y="33" target="referenceDispatcher" selector="proto" type="tool" image="galleryProtoClip"/>
+                  <button id="button611" width="56" height="56" x="121" y="33" target="referenceDispatcher" selector="debut" type="tool" image="galleryDebutClip"/>
+                  <button id="button612" width="56" height="56" x="242" y="33" target="referenceDispatcher" selector="kuler" type="tool" image="galleryKulerClip"/>
+                  <button id="button6111" width="56" height="56" x="484" y="33" target="referenceDispatcher" selector="collage" type="tool" image="galleryCollageClip"/>
+                  <text id="ttbold8" width="70" height="25" x="477" y="91" text="$$$/ttgallerysettingspanelmodule/text/text/Collage=Collage" small="true" textSize="14" align="center"/>
+                  <text id="ttbold9" width="56" height="25" x="121" y="91" text="$$$/ttgallerysettingspanelmodule/text/text/Debut=Debut" small="true" textSize="14" align="center"/>
+                  <text id="ttbold10" width="56" height="25" x="0" y="91" text="$$$/ttgallerysettingspanelmodule/text/text/Ideas=Ideas" small="true" textSize="14" align="center"/>
+                  <text id="ttbold11" width="56" height="25" x="242" y="91" text="$$$/ttgallerysettingspanelmodule/text/text/Kuler=Kuler" small="true" textSize="14" align="center"/>
+                  <text id="ttbold13" width="56" height="25" x="605" y="91" text="$$$/ttgallerysettingspanelmodule/text/text/Proto=Proto" small="true" textSize="14" align="center"/>
+                  <text id="ttbold12" width="170" height="25" x="305" y="96" text="$$$/ttgallerysettingspanelmodule/text/text/Photoshop Touch=Photoshop Touch" small="true" textSize="14" align="center"/>
+                  <button id="button71" width="56" height="56" x="363" y="33" target="referenceDispatcher" selector="ps_touch" type="tool" image="galleryPSTouchClip"/>
+                </view>
+              </view>
+              <view id="chapter3" width="790" height="600" sizeX="scale" sizeY="scale" mask="true" x="0" y="0">
+                <text id="ttboldtext1131ttlargetext" width="550" height="25" sizeX="scale" x="65" y="24" text="$$$/ttgallerysettingspanelmodule/text/text/Account=Account"/>
+                <text id="text6" width="300" height="22" x="65" y="57" text="$$$/ttgallerysettingspanelmodule/text/text/Adobe ID: EMAIL=Adobe ID: EMAIL"/>
+                <button id="button4" width="230" height="40" x="65" y="100" target="referenceDispatcher" selector="accountSignOut" title="$$$/ttgallerysettingspanelmodule/button/title/Sign Out=Sign Out"/>
+                <ttactiontext id="text7" width="220" height="22" x="65" y="169" text="$$$/ttgallerysettingspanelmodule/text/text/Manage Account=Manage Account" target="referenceDispatcher" selector="accountManageAccount"/>
+                <text id="text61" width="250" height="22" x="400" y="57" text="$$$/ttgallerysettingspanelmodule/text/text/Total Storage: 10% used=Total Storage: 10% used"/>
+                <timeBar id="timeBar" width="230" height="40" mask="true" x="400" y="94" maxValue="100"/>
+                <text id="ttboldtext3" width="230" height="22" x="400" y="105" text="$$$/ttgallerysettingspanelmodule/text/text/4GB of 16 GB=4GB of 16 GB" small="true" align="center"/>
+                <button id="button8" width="45" height="71" sizeX="right" x="729" y="0" type="tool" image="galleryAdobeBannerClip"/>
+                <view id="view3" width="700" height="150" sizeX="scale" x="65" y="250">
+                  <text id="ttboldtext21ttlargetext" width="700" height="25" sizeX="scale" x="0" y="-1" text="$$$/ttgallerysettingspanelmodule/text/text/Adobe#{reg} Touch Apps=Adobe#{reg} Touch Apps"/>
+                  <button id="button62" width="56" height="56" x="0" y="33" target="referenceDispatcher" selector="ideas" type="tool" image="galleryIdeasClip"/>
+                  <button id="button613" width="56" height="56" x="605" y="33" target="referenceDispatcher" selector="proto" type="tool" image="galleryProtoClip"/>
+                  <button id="button6112" width="56" height="56" x="121" y="33" target="referenceDispatcher" selector="debut" type="tool" image="galleryDebutClip"/>
+                  <button id="button6121" width="56" height="56" x="242" y="33" target="referenceDispatcher" selector="kuler" type="tool" image="galleryKulerClip"/>
+                  <button id="button61111" width="56" height="56" x="484" y="33" target="referenceDispatcher" selector="collage" type="tool" image="galleryCollageClip"/>
+                  <text id="ttbold2" width="70" height="25" x="478" y="92" text="$$$/ttgallerysettingspanelmodule/text/text/Collage=Collage" small="true" textSize="14" align="center"/>
+                  <text id="ttbold3" width="56" height="25" x="121" y="92" text="$$$/ttgallerysettingspanelmodule/text/text/Debut=Debut" small="true" textSize="14" align="center"/>
+                  <text id="ttbold4" width="56" height="25" x="0" y="92" text="$$$/ttgallerysettingspanelmodule/text/text/Ideas=Ideas" small="true" textSize="14" align="center"/>
+                  <text id="ttbold5" width="56" height="25" x="242" y="92" text="$$$/ttgallerysettingspanelmodule/text/text/Kuler=Kuler" small="true" textSize="14" align="center"/>
+                  <text id="ttbold6" width="170" height="25" x="306" y="96" text="$$$/ttgallerysettingspanelmodule/text/text/Photoshop Touch=Photoshop Touch" small="true" textSize="14" align="center"/>
+                  <button id="button7" width="56" height="56" x="363" y="33" target="referenceDispatcher" selector="ps_touch" type="tool" image="galleryPSTouchClip"/>
+                  <text id="ttbold7" width="56" height="25" x="605" y="92" text="$$$/ttgallerysettingspanelmodule/text/text/Proto=Proto" small="true" textSize="14" align="center"/>
+                </view>
+              </view>
+            </viewStack>
+          </view>
+          <view id="chapter1" width="810" height="681" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+            <text id="ttalpha" width="365" height="65" sizeX="scale" x="405" y="115" text="$$$/ttgallerysettingspanelmodule/text/text/In order to help us improve Adobe Photoshop Touch, we would like to periodically send anonymous, non-personalized usage data back to Adobe.=In order to help us improve Adobe Photoshop Touch, we would like to periodically send anonymous, non-personalized usage data back to Adobe."/>
+            <text id="ttboldtext11ttlargetext" width="400" height="25" sizeX="scale" x="75" y="74" text="$$$/ttgallerysettingspanelmodule/text/text/Product Improvement Program=Product Improvement Program"/>
+            <ttactiontext id="text1" width="162" height="22" sizeX="scale" x="405" y="179" text="$$$/ttgallerysettingspanelmodule/text/text/Learn More=Learn More" target="referenceDispatcher" selector="usageTrackingLearnMore"/>
+            <text id="ttboldtext111" width="215" height="22" sizeX="scale" x="150" y="114" text="$$$/ttgallerysettingspanelmodule/text/text/Allow=Allow"/>
+            <ttslidecheckbox id="checkBox" width="60" height="30" x="75" y="110" target="referenceDispatcher" selector="usageTracking"/>
+            <text id="ttboldtext1ttlargetext" width="347" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/Preferences=Preferences"/>
+            <text id="ttboldtext114ttlargetext" width="400" height="25" sizeX="scale" x="75" y="407" text="$$$/ttgallerysettingspanelmodule/text/text/Presentation Mode=Presentation Mode"/>
+            <ttslidecheckbox id="checkBox1" width="60" height="30" x="75" y="443" target="referenceDispatcher" selector="presentationMode"/>
+            <text id="ttboldtext1111" width="235" height="22" sizeX="scale" x="150" y="448" text="$$$/ttgallerysettingspanelmodule/text/text/Enable presentation mode=Enable presentation mode"/>
+            <text id="ttalpha3" width="365" height="65" sizeX="scale" x="405" y="449" text="$$$/ttgallerysettingspanelmodule/text/text/Gives visual feedback on where touch events occur, when using an external presentation screen.=Gives visual feedback on where touch events occur, when using an external presentation screen."/>
+            <view id="viewNativePhotoBrowser" width="800" height="80" x="5" y="560">
+              <text id="ttboldtextNativePhotoBrowserTitlettlargetext" width="700" height="25" sizeX="scale" x="70" y="3" text="$$$/ttgallerysettingspanelmodule/text/text/Access Local Photos=Access Local Photos"/>
+              <ttslidecheckbox id="checkBoxNativePhotoBrowser" width="60" height="30" x="70" y="40" target="referenceDispatcher" selector="nativePhotoBrowser"/>
+              <text id="ttboldtextNativePhotoBrowserLabel" width="625" height="22" sizeX="scale" x="145" y="45" text="$$$/ttgallerysettingspanelmodule/text/text/Always use native photo browser=Always use native photo browser"/>
+            </view>
+            <text id="ttboldtext1142ttlargetext" width="400" height="25" sizeX="scale" x="75" y="240" text="$$$/ttgallerysettingspanelmodule/text/text/Maximum Import Resolution=Maximum Import Resolution"/>
+            <text id="ttalpha2" width="365" height="65" sizeX="scale" x="405" y="286" text="$$$/ttgallerysettingspanelmodule/text/text/Sets the maximum pixel dimension limit for an imported image.=Sets the maximum pixel dimension limit for an imported image."/>
+            <ttpopup id="control" width="295" height="40" x="75" y="275" target="referenceDispatcher" selector="maxPixels" panelModule="gallerySettingsPanelModule"/>
+          </view>
+          <view id="chapter2" width="810" height="681" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+            <text id="ttboldtext13ttlargetext" width="347" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/Purchases=Purchases"/>
+          </view>
+          <view id="chapter4" width="810" height="681" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+            <text id="ttboldtext8ttlargetext" width="179" height="25" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/Facebook=Facebook"/>
+            <viewStack id="viewStack11" width="790" height="600" sizeX="scale" sizeY="scale" x="10" y="60">
+              <view id="chapter5" width="790" height="600" sizeX="scale" sizeY="scale" mask="true" x="0" y="0">
+                <text id="ttbold1" width="700" height="22" sizeX="scale" x="65" y="14" text="$$$/ttgallerysettingspanelmodule/text/text/Not Signed In=Not Signed In"/>
+                <button id="button5" width="230" height="40" x="65" y="50" target="referenceDispatcher" selector="facebookLogin" title="$$$/ttgallerysettingspanelmodule/button/title/Sign In=Sign In"/>
+              </view>
+              <view id="chapter31" width="790" height="600" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+                <text id="ttbold" width="300" height="22" x="65" y="14" text="$$$/ttgallerysettingspanelmodule/text/text/Signed In As: EMAIL=Signed In As: EMAIL"/>
+                <button id="button1" width="230" height="40" x="65" y="50" target="referenceDispatcher" selector="facebookLogout" title="$$$/ttgallerysettingspanelmodule/button/title/Sign Out=Sign Out"/>
+              </view>
+            </viewStack>
+          </view>
+          <view id="chapter6" width="810" height="681" sizeX="scale" sizeY="scale" visible="false" mask="true" x="0" y="0">
+            <text id="ttboldtext121ttlargetext" width="347" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/About=About"/>
+            <text id="text2" width="700" height="51" sizeX="scale" x="75" y="185" text="$$$/private/ttgallerysettingspanelmodule/text/text/Adobe, the Adobe logo, and Photoshop are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries.=Adobe, the Adobe logo, and Photoshop are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and/or other countries."/>
+            <text id="ttboldtext112ttlargetext" width="700" height="25" sizeX="scale" x="75" y="75" text="$$$/private/ttgallerysettingspanelmodule/text/text/Adobe#{reg} Photoshop#{reg} Touch=Adobe#{reg} Photoshop#{reg} Touch"/>
+            <text id="text21" width="700" height="22" sizeX="scale" x="75" y="105" text="$$$/ttgallerysettingspanelmodule/text/text/version 1.0 (11111)=version 1.0 (11111)"/>
+            <text id="text22" width="700" height="22" sizeX="scale" x="75" y="145" text="$$$/private/ttgallerysettingspanelmodule/text/text/Copyright #{copy} 2011-12 Adobe Systems Incorporated and its licensors. All rights reserved.=Copyright #{copy} 2011-12 Adobe Systems Incorporated and its licensors. All rights reserved."/>
+            <text id="text3" width="700" height="22" sizeX="scale" x="75" y="239" text="$$$/private/ttgallerysettingspanelmodule/text/text/Notices, terms and conditions pertaining to third party software are located at =Notices, terms and conditions pertaining to third party software are located at "/>
+            <ttactiontext id="text11" width="330" height="22" sizeX="scale" x="75" y="259" text="$$$/ttgallerysettingspanelmodule/text/text/http://www.adobe.com/go/thirdparty=http://www.adobe.com/go/thirdparty" target="referenceDispatcher" selector="thirdParty"/>
+            <text id="text31ttlargetext" width="700" height="23" sizeX="scale" x="75" y="604" text="$$$/ttgallerysettingspanelmodule/text/text/Learn more about us:=Learn more about us:"/>
+            <ttactiontext id="text111" width="330" height="22" sizeX="scale" x="75" y="625" text="$$$/ttgallerysettingspanelmodule/text/text/Facebook Fan Page=Facebook Fan Page" target="referenceDispatcher" selector="facebookPage"/>
+            <ttaboutscrollview id="view2" width="700" height="200" sizeX="scale" x="75" y="379"/>
+            <text id="text321" width="700" height="22" sizeX="scale" x="75" y="279" text="$$$/private/ttgallerysettingspanelmodule/text/text/and incorporated by reference herein.=and incorporated by reference herein."/>
+            <text id="text322" width="700" height="40" sizeX="scale" x="75" y="300" text="$$$/private/ttgallerysettingspanelmodule/text/text/Portions utilize Microsoft Windows Media Technologies. Copyright #{copy}1999-2006 Microsoft Corporation. All rights reserved.=Portions utilize Microsoft Windows Media Technologies. Copyright #{copy}1999-2006 Microsoft Corporation. All rights reserved."/>
+          </view>
+          <view id="chapter7" width="810" height="681" sizeX="scale" sizeY="scale" mask="true" x="0" y="0">
+            <text id="ttboldtext1211ttlargetext" width="347" height="30" sizeX="scale" x="15" y="9" text="$$$/ttgallerysettingspanelmodule/text/text/Help=Help"/>
+            <text id="ttboldtext1121ttlargetext" width="700" height="25" sizeX="scale" x="75" y="74" text="$$$/ttgallerysettingspanelmodule/text/text/Get Help Online=Get Help Online"/>
+            <ttactiontext id="text9" width="420" height="22" sizeX="scale" x="75" y="109" text="$$$/ttgallerysettingspanelmodule/text/text/Forum=Forum" target="referenceDispatcher" selector="visitForum"/>
+            <view id="view234234" width="810" sizeX="scale" x="0" y="230">
+              <text id="ttboldtext1141ttlargetext" width="310" height="25" sizeX="scale" x="75" y="0" text="$$$/ttgallerysettingspanelmodule/text/text/Screen Tips=Screen Tips"/>
+              <text id="ttalpha1" width="520" height="22" sizeX="scale" x="75" y="35" text="$$$/ttgallerysettingspanelmodule/text/text/To re-enable screen tips press #{quot}Reset#{quot}=To re-enable screen tips press #{quot}Reset#{quot}"/>
+              <button id="button" width="230" height="40" x="75" y="77" target="referenceDispatcher" selector="resetScreenTips" title="$$$/ttgallerysettingspanelmodule/button/title/Reset=Reset"/>
+            </view>
+          </view>
+        </viewStack>
+        <decor id="decor" width="20" height="681" sizeY="scale" x="190" y="0" style="vline"/>
+        <ttmedialistcontrol id="control1" width="199" height="300" x="0" y="60" target="referenceDispatcher" selector="changeCategory"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="checkBox" refName="usageTrackingBox"/>
+      <objRef refId="viewStack" refName="viewStack"/>
+      <objRef refId="control1" refName="categoryControl"/>
+      <objRef refId="text21" refName="versionText"/>
+      <objRef refId="viewStack1" refName="accountViewStack"/>
+      <objRef refId="text6" refName="accountEmailText"/>
+      <objRef refId="text61" refName="accountStorageTotalText"/>
+      <objRef refId="timeBar" refName="accountStorageTimeBar"/>
+      <objRef refId="ttboldtext3" refName="accountStorageText"/>
+      <objRef refId="viewStack11" refName="facebookViewStack"/>
+      <objRef refId="ttbold" refName="facebookSignInText"/>
+      <objRef refId="ttalpha" refName="usageTrackingText"/>
+      <objRef refId="checkBox1" refName="presentationMode"/>
+      <objRef refId="view2" refName="aboutScrollView"/>
+      <objRef refId="viewNativePhotoBrowser" refName="nativePhotoBrowserView"/>
+      <objRef refId="checkBoxNativePhotoBrowser" refName="nativePhotoBrowser"/>
+      <objRef refId="view3" refName="appSwitcherView"/>
+      <objRef refId="view4" refName="appSwitcherView1"/>
+      <objRef refId="control" refName="maxPixelPopup"/>
+      <objRef refId="text7" refName="manageAccountText"/>
+      <objRef refId="ttboldtext1121ttlargetext" refName="getHelpOnlineText"/>
+      <objRef refId="text9" refName="visitForumText"/>
+      <objRef refId="view234234" refName="screenTipContainerView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttgallerysettingspanelmodule" superClassName="ttbasepanelmodule" packageName="" codeName="TTGallerySettingsPanelModule"/>
+    <class className="ttslidecheckbox" superClassName="control" packageName="com.adobe.ttpixel.editor.ui" codeName="TTSlideCheckBox">
+      <var name="selected" type="boolean" defaultValue="false" codeName="iSelected"/>
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+    </class>
+    <class className="ttmedialistcontrol" superClassName="control" packageName="com.adobe.ttpixel.media" codeName="TTMediaListControl"/>
+    <class className="ttactiontext" superClassName="text" packageName="" codeName="TTActionText">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="selector" type="string" defaultValue="" codeName="iSelector"/>
+      <var name="enabled" type="boolean" defaultValue="true" codeName="iEnabled"/>
+      <var name="color" type="number" defaultValue="-1" codeName="iColor"/>
+    </class>
+    <class className="ttimagebutton" superClassName="buttonBase" packageName="" codeName="TTImageButton">
+      <var name="imageID" type="string" defaultValue="" codeName="iImageID"/>
+      <var name="hiliteImageID" type="string" defaultValue="" codeName="iHiliteImageID"/>
+    </class>
+    <class className="ttaboutscrollview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTAboutScrollView"/>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+      <var name="unitString" type="string" defaultValue="" codeName="iUnitString"/>
+    </class>
+    <class className="ttpopup" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTPopup">
+      <var name="panelModule" type="object" defaultValue="" codeName="iPanelModule" className="TTBasePanelModule"/>
+    </class>
+  </classes>
+</ttgallerysettingspanelmodule>

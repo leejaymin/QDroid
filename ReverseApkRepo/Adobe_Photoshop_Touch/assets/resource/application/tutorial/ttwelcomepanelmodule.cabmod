@@ -1,0 +1,35 @@
+<ttbasepanelmodule id="welcomePanelModule" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="1032" height="776" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="1010" height="730" sizeX="scale" sizeY="scale" x="10" y="10" module="welcomePanelModule">
+        <ttwelcomepanelview id="view2" width="1010" height="730" sizeX="scale" sizeY="scale" x="0" y="0" titleText="ttboldttlarge" module="welcomePanelModule">
+          <button id="button" width="50" height="50" x="2" y="0" target="view2" selector="closeWelcome" type="tool" image="backButton"/>
+          <text id="ttboldttlarge" width="390" height="22" x="55" y="14" text="$$$/ttwelcomepanelmodule/text/text/Introducing Photoshop Touch=Introducing Photoshop Touch"/>
+        </ttwelcomepanelview>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view2" refName="welcomeView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttslidecheckbox" superClassName="control" packageName="com.adobe.ttpixel.editor.ui" codeName="TTSlideCheckBox">
+      <var name="selected" type="boolean" defaultValue="false" codeName="iSelected"/>
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+    </class>
+    <class className="ttwelcomepanelview" superClassName="view" packageName="com.adobe.ttpixel.tutorial" codeName="TTWelcomePanelView">
+      <var name="titleText" type="object" defaultValue="" codeName="iTitleText" className="CABText"/>
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTBasePanelModule"/>
+    </class>
+  </classes>
+</ttbasepanelmodule>

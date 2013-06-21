@@ -1,0 +1,26 @@
+<ttpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="271" height="251" x="12" y="9" module="module">
+        <button id="button" width="40" height="28" x="11" y="8" toggles="true" type="tool"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="button" refName="button"/>
+      <objRef refId="radioGroup" refName="radioGroup"/>
+    </referenceDispatcher>
+    <radioGroup id="radioGroup" target="module" selector="radioGroup"/>
+  </objects>
+  <classes>
+    <class className="ttpanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTPanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="TTPanelView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+  </classes>
+</ttpanelmodule>

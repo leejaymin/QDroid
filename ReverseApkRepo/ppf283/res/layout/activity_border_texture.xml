@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@drawable/fx_sub_top_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0dip" android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/texture_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_border_texture" android:layout_centerInParent="true" />"
+</RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/texture_picture_original" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/texture_picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/texture_value" android:paddingRight="5.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff404040" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="0.5" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/texture_sub" android:background="@drawable/opacity_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/texture_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/border_texture" android:layout_weight="0.0" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <SeekBar android:id="@id/texture_seekbar" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="22.399994dip" android:max="255" android:progress="127" android:progressDrawable="@drawable/fx_effect_bar" android:thumb="@drawable/fx_effect_bar_button" android:thumbOffset="0.0dip" android:layout_centerInParent="true" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fx_progress_text" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/texture_compare_info" android:paddingRight="5.0dip" android:paddingBottom="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff404040" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="0.5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_concrete" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select1" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_select" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_dirt" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select2" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_daggereo" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select3" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_grungepaper" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select4" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_oldfilm" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select5" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_paper" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select6" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_sack_fx" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select7" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_crack" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select8" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_spray" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select9" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_splash" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select10" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_vintagepaper" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select11" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_watercolor" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select12" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+                            <ImageView android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:src="@drawable/border_texture_filmgrain" android:layout_centerInParent="true" />
+                            <ImageView android:id="@id/texture_select13" android:layout_width="52.139984dip" android:layout_height="52.139984dip" android:layout_centerInParent="true" android:onClick="texture_select_listener" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/fx_sub_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/texture_button_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cancel_switch" android:layout_weight="1.0" android:onClick="texture_button_cancel_listener" />
+                <ImageView android:id="@id/texture_button_sub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fx_sub_bar_on" android:layout_weight="1.0" android:onClick="texture_button_sub_listener" />
+                <ImageView android:id="@id/texture_button_compare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/fx_sub_compare" android:layout_weight="1.0" />
+                <ImageView android:id="@id/texture_button_apply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/apply_switch" android:layout_weight="1.0" android:onClick="texture_button_apply_listener" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/black" />
+    <TextView android:id="@id/empty_text_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

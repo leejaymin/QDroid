@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/lib/com.google.ads">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/menu_bar" android:background="@drawable/left_bg" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageButton android:id="@id/song_from_phone_btn" android:background="@drawable/select_from_phone_normal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:onClick="onClickMenuButton" />
+        <ImageButton android:id="@id/song_from_cloud_btn" android:background="@drawable/cloud_normal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/song_from_phone_btn" android:onClick="onClickMenuButton" />
+        <ImageButton android:id="@id/song_to_play_btn" android:background="@drawable/select_song_normal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/song_from_cloud_btn" android:onClick="onClickMenuButton" />
+        <ImageButton android:id="@id/back_btn" android:background="@drawable/bigback_btn_selector" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:onClick="onClickMenuButton" />
+    </RelativeLayout>
+    <ImageView android:id="@id/fade" android:background="@drawable/vertical_fade" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_toRightOf="@id/menu_bar" />
+    <RelativeLayout android:id="@id/song_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_toRightOf="@id/menu_bar" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/song_to_play_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/song_to_play_header" android:background="@drawable/title_background" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+                <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ff00aabc" android:gravity="center_vertical" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Select song to play" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/song_from_cloud_menu" android:background="@drawable/bg_small" android:layout_width="260.0dip" android:layout_height="50.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/more_categories_btn" android:background="@drawable/lock_btn_selector" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="22.0dip" android:textColor="#ff000000" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="Get more songs" android:layout_toLeftOf="@id/more_categories_btn" />
+            </RelativeLayout>
+            <ExpandableListView android:id="@id/song_to_play_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@drawable/group_indicator_selector" android:layout_below="@id/song_to_play_header" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/song_from_phone_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ff00aabc" android:gravity="center_vertical" android:background="@drawable/title_background" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Select song from phone" />
+            <ListView android:id="@id/song_from_phone_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/song_form_cloud_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="24.0dip" android:textStyle="bold" android:textColor="#ff00aabc" android:gravity="center_vertical" android:id="@id/song_from_cloud_header" android:background="@drawable/title_background" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="Select song from cloud" android:layout_alignParentTop="true" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/loading" android:paddingLeft="35.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="Loading..." android:layout_below="@id/song_from_cloud_header" />
+            <RelativeLayout android:id="@id/song_from_cloud_menu" android:background="@drawable/bg_small" android:layout_width="220.0dip" android:layout_height="50.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:id="@id/favourite_btn_submenu" android:background="@drawable/fav_normal" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_alignParentLeft="true" android:onClick="onClickCloudMenuButton" />
+                <ImageButton android:id="@id/new_btn_submenu" android:background="@drawable/new_normal" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/favourite_btn_submenu" android:onClick="onClickCloudMenuButton" />
+                <ImageButton android:id="@id/feature_btn_submenu" android:background="@drawable/feature_normal" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/new_btn_submenu" android:onClick="onClickCloudMenuButton" />
+                <ImageButton android:id="@id/all_btn_submenu" android:background="@drawable/all_active" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/feature_btn_submenu" android:onClick="onClickCloudMenuButton" />
+            </RelativeLayout>
+            <ExpandableListView android:id="@id/song_from_cloud_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@drawable/group_indicator_selector" android:layout_below="@id/song_from_cloud_header" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/ad_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

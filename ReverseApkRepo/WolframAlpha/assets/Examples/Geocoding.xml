@@ -1,0 +1,7 @@
+<?xml version='1.0'?><example><link ref="PlacesAndGeography">Places &amp; Geography</link><category>Geocoding</category><section-title>
+ <link ref="ZIPCodes">ZIP Codes </link>
+</section-title><caption>locate a ZIP code</caption><input>ZIP 60637</input><caption>get socioeconomic data for a ZIP code</caption><input>ZIP 88201 Native American population</input><section-title>
+ <link ref="Airports">Airport Codes </link>
+</section-title><caption>locate an airport and get information about it</caption><input>Midway Airport</input><caption>specify an airport by its FAA code</caption><input>LAX</input><caption>specify an airport by its ICAO code</caption><input>CYYZ</input><section-title>GeoIP</section-title><caption>look up your IP address and estimate your location</caption><input>Where am I?</input><section-title>
+ <link ref="TelephoneNumbers">Telephone Numbers </link>
+</section-title><caption>find a location for a phone number</caption><input>phone 217-398-0700</input><caption>find the international calling code for a country</caption><input>Japan calling code</input><caption>identify an international calling code</caption><input>country code 55</input></example>

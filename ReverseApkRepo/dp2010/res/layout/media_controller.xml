@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#70000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@android:drawable/divider_horizontal_dark" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/subtitlesync" android:background="@android:color/transparent" android:layout_width="71.0dip" android:layout_height="48.0dip" android:src="@drawable/windowmax" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/prev" style="@style/INIMediaButton.Previous" />
+            <ImageButton android:id="@id/rew" style="@style/INIMediaButton.Rew" />
+            <ImageButton android:id="@id/pause" style="@style/INIMediaButton.Play" />
+            <ImageButton android:id="@id/ffwd" style="@style/INIMediaButton.Ffwd" />
+            <ImageButton android:id="@id/next" style="@style/INIMediaButton.Next" />
+        </LinearLayout>
+        <ImageButton android:id="@id/resize" android:background="@android:color/transparent" android:layout_width="71.0dip" android:layout_height="48.0dip" android:src="@drawable/windowmax" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffeeeeee" android:layout_gravity="center" android:id="@id/time_current" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.0" />
+        <SeekBar android:layout_gravity="center" android:id="@id/mediacontroller_progress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/MySeekBar" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffeeeeee" android:layout_gravity="center" android:id="@id/time" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowRadius="1.0" />
+    </LinearLayout>
+</LinearLayout>

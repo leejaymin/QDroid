@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="dialog_about">false</item>
+    <item type="id" name="about_image">false</item>
+    <item type="id" name="about_text">false</item>
+    <item type="id" name="edit">false</item>
+    <item type="id" name="submitButton">false</item>
+    <item type="id" name="content">false</item>
+</resources>

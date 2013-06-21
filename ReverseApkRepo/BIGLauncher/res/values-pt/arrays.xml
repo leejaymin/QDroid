@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Claro (padrão)</item>
+        <item>Escuro</item>
+        <item>Azul</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automático (padrão)</item>
+        <item>Horizontal</item>
+        <item>Vertical</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Padrão</item>
+        <item>Médio</item>
+        <item>Grande</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Tela inicial</item>
+        <item>Preferências</item>
+    </string-array>
+</resources>

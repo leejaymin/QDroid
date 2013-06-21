@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_bg_share" android:background="@drawable/share_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <Button android:id="@id/btn_share_close" android:background="@drawable/c_dialog_btn_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignRight="@id/img_bg_share" />
+    <EditText android:id="@id/text_share" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:hint="What's on your mind?" android:lines="1" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/text_share">
+        <TextView android:id="@id/tv_share_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="share on" android:layout_centerVertical="true" />
+        <Button android:id="@id/btn_facebook" android:background="@drawable/c_dialog_btn_fb_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tv_share_on" />
+        <Button android:id="@id/btn_twitter" android:background="@drawable/c_dialog_btn_tw_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/btn_facebook" />
+    </RelativeLayout>
+</RelativeLayout>

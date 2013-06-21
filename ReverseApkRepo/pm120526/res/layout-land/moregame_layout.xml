@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_main_land" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:layout_width="240.0dip" android:layout_height="130.0dip" android:layout_marginLeft="52.0dip" android:layout_marginTop="70.0dip" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/tv_confirm_quit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Are you sure you want to quit?" android:layout_below="@id/list" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/relative_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_confirm_quit">
+        <Button android:id="@id/buttonYes" android:background="@drawable/button_yes" android:layout_width="55.0dip" android:layout_height="30.0dip" android:layout_marginLeft="70.0dip" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/buttonAppStore" android:background="@drawable/button_app_store" android:layout_width="75.0dip" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/buttonYes" />
+        <Button android:id="@id/buttonNo" android:background="@drawable/button_no" android:layout_width="55.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/buttonAppStore" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+</RelativeLayout>

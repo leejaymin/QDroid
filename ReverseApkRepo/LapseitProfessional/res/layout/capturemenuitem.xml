@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/capturemenu_button" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/capturemenulabel" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Capture" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/capturemenuitemicon" android:paddingTop="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_above="@id/capturemenulabel" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

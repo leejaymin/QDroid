@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="15.0px" android:paddingRight="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:text="Mr T Soundboard" style="@style/about" />
+    <TextView android:text="" style="@style/about_regular" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="20.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="" style="@style/about_regular" />
+        <TextView android:text="Written By:" style="@style/about_regular" />
+        <TextView android:text="Garrett Neuenkirchen" style="@style/about_regular" />
+        <TextView android:text="January 2009" style="@style/about_regular" />
+        <TextView android:text="" style="@style/about_regular" />
+        <TextView android:text="Full Source Available At:" style="@style/about_regular" />
+        <TextView android:text="http://clearandvalid.com" style="@style/about_regular" />
+        <TextView android:text="" style="@style/about_regular" />
+    </LinearLayout>
+</LinearLayout>

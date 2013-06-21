@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wolfram.android.alpha.view.FlowLayout android:gravity="left|center" android:id="@id/podstate_button_frame" android:paddingLeft="@dimen/pod_header_flowlayout_paddingLeft" android:paddingTop="@dimen/pod_header_flowlayout_paddingTop" android:paddingBottom="@dimen/pod_header_flowlayout_paddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

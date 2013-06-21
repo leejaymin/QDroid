@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="locations">
+        <item>Xujiahui</item>
+        <item>JingAn</item>
+    </string-array>
+    <string-array name="traffic">
+        <item>Low traffic</item>
+        <item>Normal traffic</item>
+        <item>High traffic</item>
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrolling_text" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:isScrollContainer="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/logcat_table" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/checkbox_freeze" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/checkbox_freeze" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_open" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_process_open" android:drawableLeft="@drawable/settings" android:layout_weight="1.0" />
+            <Button android:id="@id/button_search" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_search" android:drawableLeft="@drawable/history" android:layout_weight="1.0" />
+            <Button android:id="@id/button_filter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_filter" android:drawableLeft="@drawable/filter" android:layout_weight="1.0" />
+            <Button android:id="@id/button_savelog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_savelog" android:drawableLeft="@drawable/backup" android:layout_weight="1.0" />
+            <Button android:id="@id/button_loadlog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_loadlog" android:drawableLeft="@drawable/restore" android:layout_weight="1.0" />
+            <Button android:id="@id/button_reset" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/button_reset" android:drawableLeft="@drawable/trashcan" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

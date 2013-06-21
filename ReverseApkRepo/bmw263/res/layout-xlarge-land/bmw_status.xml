@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layoutMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bmw_charging_img" android:padding="10.0dip" android:layout_width="80.0dip" android:layout_height="fill_parent" android:src="@drawable/batt_charging" android:scaleType="fitCenter" />
+        <TableLayout android:paddingLeft="10.0sp" android:paddingTop="2.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:stretchColumns="0,1" android:layout_weight="1.0">
+            <TableRow>
+                <TextView android:id="@id/bmw_status_charging" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/bmw_status_plugged" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="right" android:id="@id/bmw_consumption" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@id/bmw_status_health" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/bmw_status_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="right" android:id="@id/bmw_available" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@id/bmw_status_technology" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:gravity="center" android:id="@id/bmw_status_voltage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </TableRow>
+            <TextView android:id="@id/bmw_estimates" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableLayout>
+    </LinearLayout>
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ccc71.utils.ccc71_list_view android:textSize="12.0sp" android:id="@id/bmw_history_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/bmw_drawings" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ccc71.utils.ccc71_graph_view android:id="@id/bmw_graph1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                <ccc71.utils.ccc71_graph_view android:id="@id/bmw_graph2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:id="@id/previous_history" android:background="@drawable/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/previous" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/next_history" android:background="@drawable/empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/next" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/bmw_graphic_length" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/history_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_history" android:drawableLeft="@drawable/history" android:layout_weight="1.0" />
+        <Button android:id="@id/estimates_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_estimates" android:drawableLeft="@drawable/graphic" android:layout_weight="1.0" />
+        <Button android:id="@id/calibration_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_calibration" android:drawableLeft="@drawable/calibration" android:layout_weight="1.0" />
+        <Button android:id="@id/usage_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_usage" android:drawableLeft="@drawable/usage" android:layout_weight="1.0" />
+        <Button android:id="@id/stats_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_statistics" android:drawableLeft="@drawable/system" android:layout_weight="1.0" />
+        <Button android:id="@id/tests_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_tests" android:drawableLeft="@drawable/system" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

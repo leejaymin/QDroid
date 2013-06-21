@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/assumptionmore_spinner_textview_text" android:textColor="@color/assumptions_row_text_selected_words" android:ellipsize="marquee" android:id="@id/spinner_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="more" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

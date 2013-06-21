@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/set_bracketing_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/set_bracketing_delay_title" android:key="bracketingdelay" android:summary="@string/set_bracketing_delay_summary" />
+    <CheckBoxPreference android:title="@string/set_bracketing_af_title" android:key="bracketing_af" android:summary="@string/set_bracketing_af_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep1_title" android:key="expcomp1" android:summary="@string/set_bracketing_ep1_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep2_title" android:key="expcomp2" android:summary="@string/set_bracketing_ep2_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep3_title" android:key="expcomp3" android:summary="@string/set_bracketing_ep3_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep4_title" android:key="expcomp4" android:summary="@string/set_bracketing_ep4_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep5_title" android:key="expcomp5" android:summary="@string/set_bracketing_ep5_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep6_title" android:key="expcomp6" android:summary="@string/set_bracketing_ep6_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep7_title" android:key="expcomp7" android:summary="@string/set_bracketing_ep7_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep8_title" android:key="expcomp8" android:summary="@string/set_bracketing_ep8_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep9_title" android:key="expcomp9" android:summary="@string/set_bracketing_ep9_summary" />
+    <ListPreference android:title="@string/set_bracketing_ep10_title" android:key="expcomp10" android:summary="@string/set_bracketing_ep10_summary" />
+</PreferenceScreen>

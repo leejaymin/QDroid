@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menuhidecontrols" android:title="@string/app_showhidecontrols" />
+    <item android:id="@id/menusettings" android:title="@string/cam_settings" />
+    <item android:id="@id/menuinfo" android:title="@string/cam_info" />
+</menu>

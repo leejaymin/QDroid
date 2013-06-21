@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">세이베베</string>
+    <string name="app_info">"All rights reserved saybebe in medinbiz
+ Developed by medinbiz ver 1.0.6"</string>
+    <string name="tab_1">홈</string>
+    <string name="tab_2">초음파</string>
+    <string name="tab_3">임신정보</string>
+    <string name="tab_4">초대하기</string>
+    <string name="tab_5">설정</string>
+    <string name="cal_main_kor">출산 예정일</string>
+    <string name="cal_menu1_kor">출산 예정일</string>
+    <string name="cal_menu2_kor">비만도 체크</string>
+    <string name="cal_menu3_kor">아이키 예상</string>
+    <string name="cal_btn_search_kor">검색</string>
+    <string name="cal_btn_again_kor">다시하기</string>
+    <string name="cal_btn_cancel_kor">계산하기</string>
+    <string name="cal_group_label_1_kor">정보입력</string>
+    <string name="cal_group_label_2_kor">측정결과</string>
+    <string name="cm_kor">cm</string>
+    <string name="kg_kor">kg</string>
+    <string name="week_kor">주</string>
+    <string name="height_info_kor">"아이키 예상 측정
+아이 키에 유전이 차지하는 비중은 겨우 20%정도라는 점 잊지 마세요~"</string>
+    <string name="height_label_1_kor">성별</string>
+    <string name="height_label_2_kor">아빠키</string>
+    <string name="height_label_3_kor">엄마키</string>
+    <string name="height_radio_1_kor">남</string>
+    <string name="height_radio_2_kor">여</string>
+    <string name="delivery_info_kor">"출산예정일
+예정일은 환경 요인에 따라 달라질 수 있습니다."</string>
+    <string name="delivery_hint_kor">마지막 생리 시작일</string>
+    <string name="bmi_info_kor">"임산부 비만도 계산
+임신 기간 중에도 체중 증가를 체크하여 건강한 body를 유지하세요."</string>
+    <string name="bmi_label_1_kor">임신 주차</string>
+    <string name="bmi_label_2_kor">산모 신장</string>
+    <string name="bmi_label_3_kor">임신 전 체중</string>
+    <string name="bmi_label_4_kor">현재 체중</string>
+    <string name="imsin_info_1week_kor">1 주</string>
+    <string name="imsin_info_2week_kor">2 주</string>
+    <string name="imsin_info_3week_kor">3 주</string>
+    <string name="imsin_info_4week_kor">4 주</string>
+    <string name="imsin_info1" formatted="false">"%s님은 임신 %d주차 %d일째이십니다.
+출산예정일 : %s
+예정일까지 앞으로 %d일 남았습니다."</string>
+    <string name="imsin_info2" formatted="false">"%s님은 임신 %d주차 %d일째이십니다.
+출산예정일 : %s
+오늘은 출산 예정일입니다."</string>
+    <string name="imsin_info3" formatted="false">"%s님은 육아 %d개월째이십니다.
+출산예정일 : %s
+예정일로부터 %d일 지났습니다."</string>
+    <string name="imsin_info4">"세이베베 홈페이지에 접속하시면
+출산예정일을 등록하실 수 있습니다."</string>
+    <string name="imsin_info5">임신 개월 수와 주차를 선택해 보세요.</string>
+    <string name="imsin_info6">"세이베베 홈페이지에 등록된
+출산예정일을 확인해 주세요.
+(등록된 출산예정일 : %s)"</string>
+    <string name="ultra_main_kor">초음파 사진/동영상</string>
+    <string name="ultra_menu1_kor">초음파 사진</string>
+    <string name="ultra_menu2_kor">초음파 동영상</string>
+    <string name="sos_send_error">SOS 메시지 발송을 위해 등록된 전화번호가 없습니다.</string>
+    <string name="join_info1">"- 세이베베 이용약관 -
+ 제 1장 총 칙
+ 제1조 목 적
+ 이 약관은 세이베베 온라인 및 오프라인 서비스 (이하 서비스)의 이용 및 인터넷 쇼핑몰의 이용함에 있어 회사와 이용자의 권리·의무 및 책임사항을 정하는 것을 목적으로 합니다.
+ 제2조 정 의
+ 본 약관에서 사용되는 주요한 용어의 정의는 다음과 같습니다.
+ (1) 세이베베 : 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 장소(www.saybebe.com)를 말합니다.
+ (2) 이용자 : 이 약관에 따라 회사에서 제공하는 서비스를 받는 회원 및 비회원을 말합니다."</string>
+    <string name="join_info2">"(주)메디엔비즈(이하 회사)가 운영하는 세이베베(Saybebe) 서비스 Saybebe.com은 회원님들의 개인정보를 매우 중요하게 생각하며 회원님께서 제공하여 주신 모든 정보는 철저히 보호하도록 하여 회원님께서 서비스를 안전하게 이용할 수 있도록 하는 것을 제1의 운영원칙으로 삼아 다음과 같이 개인정보취급방침을 명시합니다. 본 개인정보취급방침은 정보통신망이용촉진및정보보호등에관한법률 상의 개인정보보호규정 및 방송통신위원회가 제정한 개인정보보호지침 등의 관련법률을 준수하여 회원님께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위하여 어떠한 조치가 취해지는지 알려드리고 있습니다.
+ 1. 개인정보의 수집범위
+ ① 회사는 적법하고 공정한 수단에 의하여 회원님의 개인정보를 수집하고 있습니다. 1) 회원기본정보: 회원가입(계약성립) 시 요청되는 이름(실명), 주민등록번호, 회원ID, 주소, 연락처, 전자우편(e-Mail), 핸드폰번호 등의 개인정보 및 AB머니 포인트 이용실적, 당사 또는 타사제휴의 상품 또는 서비스 구매 내역, 기타 본 서비스 이용에 관한 일체의 거래 정보
+ 2) 기타매칭정보: 멤버쉽카드 정보, 카드번호 및 개인식별가능정보(바코드번호 등)에 기반하여 매칭된 일체의 자료(동영상, 스틸컷, 출산예정년월일, 아이생년월일, 아이성별, 환자정보, 아이(태아)정보, 진료서비스정보 등 개인 맞춤 서비스를 제공하기 위한 정보, 이벤트나 추가 회원정보 수집을 통해 회원님의 관심분야에 대한 세부화된 항목의 정보
+ ② 수집하는 개인정보는 기본 서비스 및 각종 부가 서비스 제공에 필요한 최소한의 정보만으로 한정되며, 회원님의 기본적 인권을 침해할 우려가 있는 민감한 개인정보(인종, 종교, 사상, 출신지, 본적지, 정치적 성향 및 범죄기록 및 성생활 등)는 수집하지 않습니다."</string>
+    <string name="join_info3">"1. 목 적
+ 세이베베는 고객님들에게 보다 다양한 정보를 제공하고, 서비스의 질을 향상시키기 위하여 당사의 비즈니스 파트너에게 본 활용동의서에 동의한 회원의 개인정보를 제공합니다.
+ 2. 수집 및 활용 관련 정보 
+ 개인정보가 제공되는 비즈니스 파트너 사와 제공 정보, 제공된 정보의 이용목적은 아래와 같습니다.
+ 회원님들 중 개인정보 제3자 제공에 동의하신 회원님들의 정보만이 제공되며, 제공된 정보는 명시된 이용목적을 벗어나 이용되지 않고, 개인정보의 유출 등 사고가 일어나지 않도록 더욱 철저한 보안이 이루어지도록 노력하고 있습니다.
+ 3. 개인정보 제3자 제공 동의 철회
+ - 회원 중 개인정보 제3자 제공을 철회하고 싶은 회원은 이미 제3자에게 제공된 개인정보라 하더라도, 언제든지 열람, 정정, 삭제를 요구할 수 있습니다. 열람, 정정, 삭제 및 정보제공 동의 철회는 전화와 팩스등을 통하여 본인 확인 후 요청할 수 있습니다.
+ - 이미 제공된 회원정보를 철회하는 데는 일정 시간이 소요됩니다. 개인정보 제3자 제공 동의 철회를 요청하시더라도 위와 같은 이유로 마케팅에 활용 될 수 있음을 알려드립니다. 세이베베는 회원님의 소중한 정보를 보호하기 위하여 신속하게 처리되도록 최선의 노력을 다하겠습니다.
+"</string>
+    <string name="logout_ok">로그아웃 되었습니다. 이용해 주셔서 감사합니다.</string>
+    <string name="login_ok">로그인 성공</string>
+    <string name="login_no">로그인에 실패 하였습니다. 아이디와 패스워드를 확인해 주세요.</string>
+    <string name="login_saybebe_yes">세이베베회원 계정으로 동일한 전화번호가 등록되어 있습니다. 세이베베회원 계정으로 로그인해 주세요. 초대회원으로 접속하시면 회원님을 초대하신 분의 영상만 보실 수 있습니다. 초대회원으로도 가입하시겠습니까?</string>
+    <string name="result_err">오류가 발생하였습니다. 잠시 후 다시 시도해 주세요.</string>
+    <string name="ultra_invite_zero">아직 %s님을 초대하신 분이 없습니다. 본인의 영상이 있으신 경우 세이베베회원 계정으로 로그인해 주세요.</string>
+    <string name="first_join">초대회원으로 가입하시면 초대하신 분의 영상을 보실 수 있습니다.</string>
+    <string name="first_invite">연락처에 등록된 가족 또는 친구들을 초대하시면 사랑스런 아기의 영상을 보여주실 수 있습니다.(초대하기 목록을 스크롤해 보세요.)</string>
+    <string name="phone_number_check">전화번호가 올바르지 않습니다.</string>
+    <string name="sms_send_ok">인증번호가 발송되었습니다. 수신된 인증번호를 입력해 주세요.</string>
+    <string name="sms_send_no">잘못된 전화번호 입니다. 확인 후 다시 시도해 주세요.</string>
+    <string name="invite_send_ok">초대메시지를 발송하였습니다. 초대 받으신 분이 접속하시면 초대한 사람 목록에 나타납니다.</string>
+    <string name="certi_number_err">SMS로 수신된 6자리 인증번호를 입력해 주세요.</string>
+    <string name="certi_no">인증에 실패하였습니다. 다시 시도해 주세요.</string>
+    <string name="join_check">모든 항목을 입력해 주세요.</string>
+    <string name="join_email_check">이메일 주소를 정확히 기입해 주세요.</string>
+    <string name="join_ok">가입이 완료 되었습니다.</string>
+    <string name="join_no2">주민번호 오류 입니다.</string>
+    <string name="join_no3">전화번호가 중복되었습니다.</string>
+    <string name="network_err">네트워크가 원활하지 않습니다. 확인 후 다시 시도해주세요.</string>
+    <string name="network">"무선데이터통신을 시작합니다.
+3G망으로 접속하는 경우 사용하고 계신 요금제가 데이터 정액제가 아니거나, 데이터 정액한도를 초과한 경우에는 데이터 요금이 발생할 수 있습니다."</string>
+    <string name="network_again">더이상 보지 않기</string>
+    <string name="cd_txt">"최근 초음파 영상이 없으신 경우, 병원에서 받으신 CD를 컴퓨터에 넣고 로그인해 주세요.
+자동으로 업로드가 완료되면 스마트폰에서도 영상을 보실 수 있습니다."</string>
+    <string name="alert_txt">영상재생에 문제가 있는 경우 스마트폰의 OS를 최신버전으로 업데이트해 주세요</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="yearmonthday">%1$s년 %2$s월 %3$s일</string>
+    <string name="calculator_bmi_result">"현재 비만도 %1$f kg (bmi: %2$s)
+ 임신중 이상적인 체중증가 %3$d kg ~ %4$d kg"</string>
+    <string name="calculator_error">모든 값을 입력해 주세요.</string>
+    <string name="calculator_delivery_date">출산예정일은 %s 입니다.</string>
+    <string name="calculator_delivery_error">날짜를 입력해주세요.</string>
+    <string name="calculator_height">아이 예상키는 %d cm 입니다.</string>
+    <string name="introduce_title">병원 소개</string>
+    <string name="introduce_menu1">병원장 인사말</string>
+    <string name="introduce_menu2">의료진 및 진료안내</string>
+    <string name="introduce_menu3">병원 전경 및 이미지</string>
+    <string name="introduce_menu4">병원 전화번호</string>
+    <string name="introduce_menu5">오시는 길</string>
+    <string name="invite_wait">잠시만 기다려 주세요</string>
+    <string name="invite">친구 초대</string>
+    <string name="invite_login_didnot">로그인 되지 않음</string>
+    <string name="invite_send_fail">발송실패</string>
+    <string name="invite_already_join">이미 가입된 초대회원 입니다</string>
+    <string name="invite_error">알수 없는 오류 입니다</string>
+    <string name="exit_confirm">어플리케이션을 종료 하겠습니까?</string>
+    <string name="network_connect_info">네트워크 접속안내</string>
+    <string name="exit">종료</string>
+    <string name="baby_info_header1">우리아기 이만큼 컸어요!</string>
+    <string name="baby_info_header2">남아 체중: %1$skg 신장: %2$scm</string>
+    <string name="baby_info_header3">여아 체중: %1$skg 신장: %2$scm</string>
+    <string name="pregnancy">임신</string>
+    <string name="childcare">육아</string>
+    <string name="pregnancy_week_title">임신 %d 주차</string>
+    <string name="childcare_month_title">육아 %d 개월</string>
+    <string name="childcare_info">육아 정보</string>
+    <string name="pregnancy_info">임신 정보</string>
+    <string name="week">주차</string>
+    <string name="month">개월</string>
+    <string name="wait">잠시만 기다려주세요.</string>
+    <string name="join_info1_title">이용약관</string>
+    <string name="join_info2_title">개인정보 취급방침</string>
+    <string name="join_info3_title">개인정보 제3자 제공</string>
+    <string name="join">가입</string>
+    <string name="login_idpassword_message">아이디와 비밀번호를 입력해 주세요.</string>
+    <string name="err_login_to_use">로그인 후에 이용해 주시기 바랍니다.</string>
+    <string name="confirm_delete_cache">캐시를 삭제하시겠습니까?</string>
+    <string name="message_cache_deleted">캐시를 삭제하였습니다.</string>
+    <string name="message_getting_location_wait">내 위치 좌표를 가져오고 있습니다. 잠시만 기다려 주세요</string>
+    <string name="message_sms_sent">SMS가 발송되었습니다.</string>
+    <string name="message_sms_sent_fail">발신실패!</string>
+    <string name="message_gps_fail_retry">GPS 수신이 되지 않습니다. 재시도 하시겠습니까?</string>
+    <string name="retry">재시도</string>
+    <string name="message_sos">"위급!! 
+
+ 위치 : %1$s 
+ GPS 좌표 : %2$s , %3$s 오차가 있을수 있음."</string>
+    <string name="message_saved">저장되었습니다.</string>
+    <string name="title_congratulation">축하메시지</string>
+    <string name="title_ultra_photo">%s 님 초음파 사진</string>
+    <string name="title_ultra_movie">%s 님 초음파 동영상</string>
+    <string name="more">더 보기...</string>
+    <string name="message_no_more_photo">더 이상 사진이 없습니다.</string>
+    <string name="user_name">%s 님</string>
+    <string name="err_unregistered_barcode">바코드가 등록되어있지 않습니다. 세이베베 홈페이지에 로그인하셔서 병원에서 발급받으신 바코드번호를 등록해 주세요.</string>
+    <string name="notice">알림</string>
+    <string name="warning">경고</string>
+    <string name="err_no_sdcard">SDCARD가 인식되지 않습니다. 확인하시고 다시 시도해주세요.</string>
+    <string name="err_no_ultra_movie">초음파 동영상이 없습니다.</string>
+    <string name="err_no_ultra_picture">초음파 사진이 없습니다.</string>
+    <string name="err_convert_in_progress">현재 영상이 변환 중에 있습니다. 잠시 후 새로고침을 하시면 모든 영상을 보실 수 있습니다.</string>
+    <string name="err_invite_invitee_cannot_invite">초대회원은 초대하실 수 없습니다. 세이베베회원 계정으로 초대해 주세요.</string>
+    <string name="err_invite_need_phone_cert">초대하기를 위해서는 우선 전화번호 인증절차가 필요합니다.</string>
+    <string name="find_hospital">병원찾기</string>
+    <string name="invite_message_title">가족 또는 친구들을 초대해 보세요. (SMS요금은 세이베베>에서 부담합니다.)</string>
+    <string name="invite_message">초대 메세지</string>
+    <string name="send">보내기</string>
+    <string name="facebook_writing">쓰는 중...</string>
+    <string name="facebook_writing_success">담벼락 작성 성공</string>
+    <string name="facebook_writing_fail">담벼락 작성 실패</string>
+    <string name="facebook_no_message">메시지를 입력하세요.</string>
+    <string name="facebook_hint">함께 올릴 메시지를 남기세요.</string>
+    <string name="invite_title">초대하기</string>
+    <string name="invite_limit">제한하기</string>
+    <string name="invite_clear">해제하기</string>
+    <string name="invite_list">초대한 사람 목록</string>
+    <string name="invite_sent">초대메시지를 발송하였습니다.</string>
+    <string name="phone_number_auth">전화번호 인증</string>
+    <string name="phone_auth_message">본인 휴대전화 번호를 입력해 주세요.</string>
+    <string name="number_auth">번호인증</string>
+    <string name="phone_authcode">본인 휴대전화 확인을 위해 SMS로 인증번호를 보내드립니다.</string>
+    <string name="enter_authcode">인증번호를 입력해 주세요.</string>
+    <string name="authcode_resend">인증번호 재전송</string>
+    <string name="done">완료</string>
+    <string name="setting_join_title">초대회원 가입</string>
+    <string name="setting_join_personal_info">개인정보</string>
+    <string name="setting_join_naaaaame">이 름</string>
+    <string name="setting_join_name">이름</string>
+    <string name="setting_join_resident_number">주민번호</string>
+    <string name="setting_join_phone">휴대번호</string>
+    <string name="setting_join_email">이메일</string>
+    <string name="setting_join_iagree">동의합니다.</string>
+    <string name="setting_join_see_full">전문보기</string>
+    <string name="setting_join_done">가입완료</string>
+    <string name="setting_join_required">는 필수 동의사항입니다.</string>
+    <string name="setting_join_info">가입정보</string>
+    <string name="login">로그인</string>
+    <string name="login_member">세이베베 회원 로그인</string>
+    <string name="auto_login">자동 로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="id">아이디</string>
+    <string name="password">패스워드</string>
+    <string name="password_reenter">패스워드 확인</string>
+    <string name="login_invite">초대회원 로그인</string>
+    <string name="connect">접속</string>
+    <string name="login_message">초대를 받으신 경우 전화번호인증을 받으시면 초대하신 분의 영상을 보실 수 있습니다.</string>
+    <string name="gps_agree">"SOS기능을 사용 하시려면
+위치정보 조회에 동의 하셔야 합니다. 정보는 저장되지 않으며, sms전송시 주소 알림 목적으로만 사용 됩니다."</string>
+    <string name="get_phone_number_auth">전화번호 인증받기</string>
+    <string name="setting">설정</string>
+    <string name="program_info">프로그램 정보</string>
+    <string name="hospital_name">병원명</string>
+    <string name="developer">개발사</string>
+    <string name="medinbiz">(주)메디엔비즈</string>
+    <string name="homepage">홈페이지</string>
+    <string name="homepage_url">www.saybebe.com</string>
+    <string name="email_address">smart@saybebe.com</string>
+    <string name="ask">문의하기</string>
+    <string name="delete_cache">캐시 지우기</string>
+    <string name="delete_cache_message">영상 재생에 문제가 있는 경우 영상을 다시 다운로드 받을 수 있습니다.</string>
+    <string name="delete_cache_button_message">캐시 삭제</string>
+    <string name="copyright">All rights reserved MedinBiz co.,Ltd.</string>
+    <string name="invite_key">초대키</string>
+    <string name="invite_key_7digit">7자리 초대키</string>
+    <string name="sos_request">SOS요청</string>
+    <string name="sos_message">SOS 위급상황시 등록된 전화번호로 GPS위치가 포함된 SMS가 발송됩니다.</string>
+    <string name="register_sos_phonenumber">SOS 전화번호 등록</string>
+    <string name="current_location">현재 위치</string>
+    <string name="sms_send">SMS 발송</string>
+    <string name="sos_phonenumber_register">SOS 전화번호 등록</string>
+    <string name="sos_phonenumber_register_message">SOS 긴급상황 시, 등록된 전화번호호 GPS 위치가 포함된 SMS/MMS가 발송 됩니다.(최대 5개 등록가능)</string>
+    <string name="contact">연락처</string>
+    <string name="save">저장</string>
+    <string name="my_movie">나의 영상</string>
+    <string name="see_my_movie">내 초음파보기</string>
+    <string name="inviter_movie">나를 초대하신 분의 영상</string>
+    <string name="underconstruction">준비중입니다.</string>
+    <string name="main_menu1">임신정보</string>
+    <string name="main_menu2">세이베베 병원찾기</string>
+    <string name="main_menu3">초음파 사진/동영상</string>
+    <string name="main_menu4">계산하기</string>
+    <string name="main_menu5">초대하기(SMS)</string>
+</resources>

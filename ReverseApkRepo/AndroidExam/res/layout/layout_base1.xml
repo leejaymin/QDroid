@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0pt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium" />
+    <TextView android:textSize="5.0pt" android:background="#ff0000ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small" />
+    <TextView android:textSize="20.0pt" android:typeface="serif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Large" />
+</LinearLayout>

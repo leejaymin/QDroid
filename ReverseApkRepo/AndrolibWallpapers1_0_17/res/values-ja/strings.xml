@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androlib壁紙</string>
+    <string name="whatsnew">最新情報</string>
+    <string name="whatsnewhead">"もしこのアプリが気に入ったら、Androidマーケットで是非評価してください！よろしくお願いします
+"</string>
+    <string name="close">閉じる</string>
+    <string name="noWallpaper">条件にあう壁紙が見つかりません</string>
+    <string name="XtoYwallpapersOnZ">%3$s 件中 %1$s から %2$s の壁紙を表示</string>
+    <string name="loadingLastSubmited">最新の壁紙を読込中</string>
+    <string name="loadingTopFavorites">最もお気に入りに追加された壁紙を読込中</string>
+    <string name="loadingMostInstalled">最も使用されている壁紙を読込中</string>
+    <string name="loadingTopRated">評価の高い壁紙を読込中</string>
+    <string name="loadingYourFavs">あなたのお気に入りの壁紙を読込中</string>
+    <string name="loading10Random">ランダムに10 件の壁紙を読込中</string>
+    <string name="loading">読込中...</string>
+    <string name="pleaseWait">しばらくお待ちください...</string>
+    <string name="menuSubmitWall">壁紙を登録する</string>
+    <string name="menuOurOthersApps">その他謹製アプリ</string>
+    <string name="marketNotFound">マーケットが見つかりません</string>
+    <string name="menuQuit">終了</string>
+    <string name="alertTitleQuit">このアプリを終了しますか？</string>
+    <string name="alertTitleSubmit">壁紙を登録する</string>
+    <string name="alertMessageSubmit">壁紙の登録は、 http://wallpapers.androlib.com/ にアクセスしてページ上方メニューの \"submit a wallaper\" をクリックしてください。説明に沿って登録すればこのアプリに反映されます。</string>
+    <string name="searchHint">壁紙を検索</string>
+    <string name="searchEmpty">検索語句が空です</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="canceled">キャンセル</string>
+    <string name="wallGlobalRating">全体評価 :</string>
+    <string name="wallSubmitedBy">登録者 :</string>
+    <string name="wallCategory">カテゴリー :</string>
+    <string name="wallBtnSetThisWall">壁紙に設定</string>
+    <string name="wallBtnDownloadOnSD">SDカードに壁紙をダウンロード</string>
+    <string name="wallAlertTitleAddFav">この壁紙をお気に入りに登録しますか？</string>
+    <string name="wallAlertTitleRemoveFav">この壁紙をお気に入りから削除しますか？</string>
+    <string name="errorWhileDownload">\### エラー ### ダウンロード中にエラーが発生しました。再度試してください。</string>
+    <string name="mailSubject">Android壁紙 - %1$s</string>
+    <string name="mailMessage">"あなたの最適なAndroid用壁紙はこちら！
+
+%1$s
+%2$s
+
+この壁紙はこちらにあります:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">友だちと共有する</string>
+    <string name="wallMenuSetWall">壁紙に設定する</string>
+    <string name="wallMenuSendToFriend">友だちに送信する</string>
+    <string name="wallAlertTitleDownload">この壁紙をダウンロードしますか？</string>
+    <string name="wallAlertMessageDownload">"壁紙はSDカードに保存されます(sdcard/AndroLibWallpapers)。
+SDカードにアクセスできるようにしてください。"</string>
+    <string name="DownloadingPleaseWait">壁紙をダウンロードします。お待ちください...</string>
+    <string name="wallAlertTitleSetWall">壁紙に設定しますか？</string>
+    <string name="ratingDeleted">評価を削除しました</string>
+    <string name="ratingSubmited">評価 %1$s/5 を登録しました</string>
+</resources>

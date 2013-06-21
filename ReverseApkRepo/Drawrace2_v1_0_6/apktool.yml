@@ -1,0 +1,6 @@
+version: 1.4.3
+apkFileName: Drawrace2_v1_0_6.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

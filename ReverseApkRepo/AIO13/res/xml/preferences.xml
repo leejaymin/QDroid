@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preference_advanced_features">
+        <CheckBoxPreference android:title="@string/preference_mediascan_title" android:key="mediascan" android:defaultValue="false" android:summaryOn="@string/preference_mediascan_summary_on" android:summaryOff="@string/preference_mediascan_summary_off" />
+    </PreferenceCategory>
+</PreferenceScreen>

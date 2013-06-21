@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="attr" name="backgroundColor" id="0x7f010000" />
+    <public type="attr" name="primaryTextColor" id="0x7f010001" />
+    <public type="attr" name="secondaryTextColor" id="0x7f010002" />
+    <public type="attr" name="keywords" id="0x7f010003" />
+    <public type="attr" name="refreshInterval" id="0x7f010004" />
+    <public type="drawable" name="icon" id="0x7f020001" />
+    <public type="drawable" name="bheader" id="0x7f020000" />
+    <public type="layout" name="main" id="0x7f030000" />
+    <public type="array" name="bdayStrings" id="0x7f040000" />
+    <public type="string" name="hello" id="0x7f050000" />
+    <public type="string" name="app_name" id="0x7f050001" />
+    <public type="id" name="ad" id="0x7f060000" />
+    <public type="id" name="ivBday" id="0x7f060001" />
+    <public type="id" name="txtChoose" id="0x7f060002" />
+    <public type="id" name="spLanguage" id="0x7f060003" />
+    <public type="id" name="txtBdayText" id="0x7f060004" />
+    <public type="id" name="btnSend" id="0x7f060005" />
+    <public type="id" name="btnStatus" id="0x7f060006" />
+</resources>

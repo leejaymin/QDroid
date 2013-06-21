@@ -1,0 +1,20 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+  <id>air.com.adobe.cc.sync.SyncEngine</id>
+  <versionNumber>1</versionNumber>
+  <platforms>
+    <platform name="Android-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libAdobeSyncEngineBridge.so</nativeLibrary>
+        <initializer>AdobeSyncEngineBridgeInitializer</initializer>
+        <finalizer>AdobeSyncEngineBridgeFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+    <platform name="iPhone-ARM">
+      <applicationDeployment>
+        <nativeLibrary>libAdobeSyncEngineBridge.a</nativeLibrary>
+        <initializer>AdobeSyncEngineBridgeInitializer</initializer>
+        <finalizer>AdobeSyncEngineBridgeFinalizer</finalizer>
+      </applicationDeployment>
+    </platform>
+  </platforms>
+</extension>

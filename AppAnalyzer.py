@@ -3,15 +3,15 @@
 
 ################################################################
 # Author:  Jemin Lee <leejaymin@cnu.ac.kr>
-# Date:  2012-06-20 - 2013-03-13
-# Version: 1.3
+# Date:  2012-06-20 - 2013-06-13
+# Version: 2.0
 ################################################################
-import logging, time
+import logging, time, threading, sys
 import TestingLogger
 import os
 import signal
-import DfineMacro
 import MySQLdb
+import defineStore
 from Utility import diffError
 
 from sys import exit
@@ -20,13 +20,13 @@ from os import mkdir
 
 from subprocess import check_output, Popen, STDOUT
 from xml.sax import make_parser, handler
-import sys
 from ApkAnalyzer import ManifestHandler
 from TestingCodeForm import StaticTestingForm
 from TestingCodeForm import takeSnapshot
 from SoloInterface import SoloInterface
 from TestingToolkit import PerformanceCounter
 from Utility import TimeoutFunctionException, TimeoutFunction
+
 
 ################################################################
 
@@ -46,28 +46,24 @@ run_pid = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash' )
 #################################################################
 
 
-class ApkTest:
+class ApkTest(threading.Thread):
     
-    apk = ''
-    apkInfo = ''
-    pkgName = ''
-    actName = ''
-    currentProgress = 0
-    complteProgress = 0
-    result = {}
-    errorReport = {}
-    
-    def __init__(self, apk, monkeyIteration,testMode):
+    def __init__(self, apk, monkeyIteration,testMode,deviceName, port):
+        #super class call construct
+        super(ApkTest,self).__init__()
+        
         self.apk = apk
         self.monkeyIteration = monkeyIteration
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         self.testMode = testMode
+        self.deviceName = deviceName
+        self.port = port
         
         #Test Mode에 따라서 TCP IP / USB
         if(self.testMode == '1'):
-            self.AdbOverNetwork('adb disconnect 192.168.0.3')
+            self.AdbOverNetwork('adb -s %s disconnect 192.168.0.3'%(self.deviceName))
             time.sleep(1)
-            self.AdbOverNetwork('adb connect 192.168.0.3')
+            self.AdbOverNetwork('adb -s %s connect 192.168.0.3'%(self.deviceName))
             time.sleep(5)
             
         #오류를 기록해줄 로거를 생성 한다. 
@@ -76,11 +72,9 @@ class ApkTest:
         #HTCDesire device_name="12B9WE630015"
         #Galaxy Nexus device_name="0149C7A518014011"
         #Network Wi-Fi="192.168.0.3:5555"
-        self.deviceName= 'HTCNexusOne'
-        self.solo = SoloInterface(device_name='HT0A1P800732')
-        self.soloSecond = SoloInterface(device_name='HT08DP802665', device_port=5553)
+        #self.deviceName= 'HTCNexusOne'
+        self.solo = SoloInterface(device_name=deviceName, device_port=port)
         self.solo.setUp()
-        self.soloSecond.setUp()
             
     def init(self):
         self.loggingInit()
@@ -94,6 +88,8 @@ class ApkTest:
         self.perforResult = {'cpu':0.0,'packet':0,'Networks':0.0}
         self.enviromentResult = {'wifi':False}
         self.startTime = time.time()
+        
+        self.currentProgress = 0
         
         #power conumpstion member
         self.ListOfCurrent = []
@@ -111,11 +107,29 @@ class ApkTest:
         # init Database 
         self.db = MySQLdb.connect(user='root', passwd = 'root', db ='BugHunter')
         self.cursor = self.db.cursor()
+    
+    def setTestingOption(self, option):
+        self.testingOption = option
+        
+    def run(self):
+        
+        if(self.testingOption == defineStore.RUN_APK):
+            self.runApkTests()
+            
+        elif(self.testingOption == defineStore.RUN_APKLIST):
+            pass
+        
+        elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY):
+            pass
+        
+        elif(self.testingOption == defineStore.RUN_PACKAGE):
+            pass 
+        
         
     def runApkTests(self): 
         self.init()
         #monkeyrunner 테스팅 코드를 만드는 부분
-        self.reverseApk()   
+        #self.reverseApk()   
         self.parsingManifestXml() 
         
         #스마트폰의 환경을 설정 한다.
@@ -173,6 +187,22 @@ class ApkTest:
         self.cursor.close()
         
     def loggingInit(self):
+        #Creating Directory with Device Name on ImageStore
+        try:     
+            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s'%(self.deviceName))
+        except AttributeError:
+            print 'tuple object has no attribute split'
+        except OSError:
+            print 'File exists: /root/python_source/AutoTestingModule/ImageStore/%s/'%(self.deviceName)     
+        
+        #Creating Directory with Device Name on TestingResult
+        try:     
+            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(self.deviceName))
+        except AttributeError:
+            print 'tuple object has no attribute split'
+        except OSError:
+            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName)   
+        
         #apk 이름으로 디렉터리를 생성 한다. 
         FileCount = 0
         try:     
@@ -183,7 +213,7 @@ class ApkTest:
         except OSError:
             print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName) +FileName
        
-        #Derectoriy for Image
+        #Directory for Image
         try:     
             mkdir('/root/python_source/AutoTestingModule/ImageStore/%s/%s'%(self.deviceName,FileName))
         except AttributeError:
@@ -204,7 +234,7 @@ class ApkTest:
         self.logfilePath = '/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s(%s).log'%(self.deviceName,FileName,FileName,FileCount)
         
     def InitPerformnaceCounter(self):
-        self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.soloSecond, self.m_logger, self.apk.split('.')[0])
+        self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.m_logger, self.apk.split('.')[0])
         self.perforCounter.startPerforCounter()
     
     def FnishedPerforCounter(self):
@@ -305,8 +335,8 @@ class ApkTest:
             exit(-1)
 
     def testInstall(self): 
-        run('adb uninstall ./apkRepo/%s' % (self.pkgName))
-        self.result['Install'][1] = check_output('adb install ./apkRepo/%s' % (self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
+        run('adb -s %s uninstall ./apkRepo/%s' % (self.deviceName,self.pkgName))
+        self.result['Install'][1] = check_output('adb -s %s install ./apkRepo/%s' % (self.deviceName,self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
         print self.result['Install'][1]
         
         if self.result['Install'][1][-9:-2] == 'Success':
@@ -316,7 +346,7 @@ class ApkTest:
             self.m_logger.error(self.result['Install'][1])
 
     def testReinstall(self):
-        self.result['Reinstall'][1] = check_output('adb install -r ./apkRepo/%s' % (self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
+        self.result['Reinstall'][1] = check_output('adb -s %s install -r ./apkRepo/%s' % (self.deviceName,self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
         print self.result['Reinstall'][1]
         
         if self.result['Reinstall'][1][-9:-2] == 'Success':
@@ -440,7 +470,7 @@ class ApkTest:
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.pkgName,self.monkeyIteration)).lower()
+        self.result['Stress'][1] = run('adb -s %s shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.deviceName,self.pkgName,self.monkeyIteration)).lower()
         #crash인것만 하기 위해서 변경 한다.
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
@@ -473,7 +503,7 @@ class ApkTest:
     def testUninstall(self):
         while True:
             try:
-                self.result['Uninstall'][1] = run('adb uninstall %s' % (self.pkgName))
+                self.result['Uninstall'][1] = run('adb -s %s uninstall %s' % (self.deviceName,self.pkgName))
                 print self.result['Uninstall'][1]
                 
                 if self.result['Uninstall'][1][-9:-2] == 'Success':
@@ -488,7 +518,7 @@ class ApkTest:
     def CurrentSensing(self, mode):
         mTotalPower = 0
         sensingCount = 0
-        data = run('adb shell dmesg -c').splitlines()
+        data = run('adb -s %s shell dmesg -c'%(self.deviceName)).splitlines()
         
         # 1을 정의하는 경우 Current Sensor값을 초기화 시킨다.
         if (mode == 1):
@@ -498,7 +528,7 @@ class ApkTest:
             for i in data:
                 if(i.find('batt:') != -1 and i.find('(') != -1):
                     current = i.split('(')[1].split(' ')[0]
-                    voltage = i.split('mV')[0].split(' ')[4]
+                    voltage = i.split('mV')[0].split(',')[1]
                     power = int(current) * int(voltage) / 1000
                     mTotalPower += power
                     sensingCount +=1
@@ -538,7 +568,7 @@ class ApkTest:
             print 'ADB Over Network Success !'
 
     def AdbReboot(self):
-        out=run_pid("adb shell reboot")
+        out=run_pid("adb -s %s shell reboot"%(self.deviceName))
         time.sleep(1)
         os.kill(out.pid, signal.SIGINT)
                    
@@ -615,13 +645,13 @@ class ApkTest:
             datetime = time.strftime('%Y-%m-%d %H:%M:%S')
             self.cursor.execute("INSERT INTO TestFailedApp VALUES('%s','%s','%s')"%(self.pkgName,datetime,self.apk))
             print ''' mysql failed '''
-            
-
-        
+           
         
 if __name__ == '__main__':
     
-    mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility 5) debug mode")
+    targetInfo = [{'deviceName':'HT0A1P800732','port':5554},{'deviceName':'HT08DP802665','port':5553}]
+    
+    mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility 5) debug mode 6) multi mode")
     envirMode = raw_input("Please choose Environment: 1)TCPIP 2)USB")
     iteration = raw_input('monkey iteration: ')
     if mode == '1':
@@ -630,7 +660,7 @@ if __name__ == '__main__':
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName,iteration,envirMode)
+        p = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5554)
         p.runApkTests()
     elif mode == '2':
         apkName = raw_input('2) Please input apk name? ')
@@ -697,6 +727,20 @@ if __name__ == '__main__':
         p = ApkTest(apkName,iteration,envirMode)
         p.runApkTests()
         
+    elif mode == '6':
+        apkName = raw_input('1) Please input apk name? ')
+        if not isfile('./apkRepo/%s'%(apkName)):
+            print 'ERROR: apk file does not exist:' + apkName
+            exit(-1)
+        
+        th = ApkTest(apkName,iteration,2,'192.168.0.6:5554',5545)
+        th.setTestingOption(defineStore.RUN_APK)
+        th.start()
+        
+        th2 = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5544)
+        th2.setTestingOption(defineStore.RUN_APK)
+        th2.start()
+
     else:
         print 'Please check your chosen mode !'
         

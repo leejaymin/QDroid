@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="1.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/item_image" android:layout_width="80.0sp" android:layout_height="64.0sp" android:scaleType="centerInside" android:layout_weight="99.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="2.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="99.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff7f" android:id="@id/item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/item_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text=" " />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_price_info" android:paddingRight="4.0sp" android:layout_width="80.0sp" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffff7f" android:gravity="right|center" android:id="@id/item_buynow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="99.0" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffcfcf" android:gravity="right" android:id="@id/item_nbid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffcfcf" android:gravity="right" android:id="@id/item_mbid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffcfcf" android:gravity="right" android:id="@id/item_end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

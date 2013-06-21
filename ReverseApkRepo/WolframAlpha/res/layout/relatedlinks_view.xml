@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/relatedlinks_view_mainlinearlayout" android:background="@drawable/button_selector" android:padding="@dimen/relatedlinks_view_linearlayout_relatedlinks_view_mainlinearlayout_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectable="true" android:onClick="clickHandler"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.8">
+        <TextView android:textSize="@dimen/relatedlinks_view_textview_relatedlink_title_textSize" android:textStyle="bold" android:textColor="@color/alpha_orange" android:gravity="bottom" android:id="@id/relatedlink_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" />
+        <TextView android:textSize="@dimen/relatedlinks_view_textview_relatedlink_source_textSize" android:textStyle="italic" android:textColor="@drawable/button_text_selector" android:gravity="top" android:id="@id/relatedlink_source" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/relatedlinks_view_textview_relatedlink_excerpt_textSize" android:textColor="@drawable/button_text_selector" android:id="@id/relatedlink_excerpt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:paddingLeft="@dimen/relatedlinks_view_imageview_arrow_selector_paddingLeft" android:paddingRight="@dimen/relatedlinks_view_imageview_arrow_selector_paddingRight" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow_selector" android:scaleType="center" android:layout_weight="0.2" />
+</LinearLayout>

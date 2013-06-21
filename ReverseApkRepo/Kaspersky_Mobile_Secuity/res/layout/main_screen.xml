@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView01" android:background="@drawable/gradient_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayoutBkg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:id="@id/LinearLayout01" android:background="@drawable/hdr" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/logo" />
+            <LinearLayout android:gravity="right" android:id="@id/HelpBtnLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/helpImg" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_info_30" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LicenseLayout" android:focusable="true" android:visibility="gone" android:addStatesFromChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/LicenseLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <ImageView android:id="@id/LicenseImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ico_license_25_b" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/LicenseLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="18.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/LicenseTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/str_main_screen_license_expired_title" />
+                    <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/LicenseTextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/str_main_screen_license_expired_text" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@id/LicenseRenewButton01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/str_main_screen_license_renew_button_title" android:drawableLeft="@drawable/ico_arrow_go_20" style="@style/KMSButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/CommonLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="left|center" android:id="@id/Separator00" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/AVLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/AVImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_protection_25_a" />
+                <LinearLayout android:orientation="vertical" android:id="@id/AVLayout02" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/AVTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_av_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/AVLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#aaffffff" android:id="@id/AVTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_av_protect" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:layout_gravity="center" android:id="@id/AVExpandIcoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|right|center" android:id="@id/AVExpandImageView01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/ico_arrow_down_18" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/AVLayout04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/LinearLayout03" android:background="@drawable/shadow_up" android:layout_width="fill_parent" android:layout_height="5.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout05" android:background="@drawable/dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:id="@id/avDbInfo" layout="@layout/db_info_panel" />
+                    <Button android:id="@id/AVButton01" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_av_start_scan" android:drawableLeft="@drawable/ico_search_20" style="@style/KMSButton" />
+                    <Button android:id="@id/AVButton03" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_av_update" android:drawableLeft="@drawable/ico_start_update_20" style="@style/KMSButton" />
+                    <Button android:id="@id/AVButton02" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_av_additional" android:drawableLeft="@drawable/ico_options_20" style="@style/KMSButton" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout04" android:background="@drawable/shadow_bottom" android:layout_width="fill_parent" android:layout_height="5.0px" />
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator01" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/PPLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/PPImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_contact_25_a" />
+                <LinearLayout android:orientation="vertical" android:id="@id/PPLayout02" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/PPTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_pp_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/PPLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#aaffffff" android:id="@id/PPTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_pp_info" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:layout_gravity="center" android:id="@id/PPExpandIcoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|right|center" android:id="@id/PPExpandImageView01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/ico_arrow_down_18" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/PPLayout04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:id="@id/LinearLayout06" android:background="@drawable/shadow_up" android:layout_width="fill_parent" android:layout_height="5.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout07" android:background="@drawable/dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_pp_hint" />
+                    <Button android:id="@id/PPButton01" android:paddingRight="2.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_pp_data_shown" style="@style/KMSButton" />
+                    <Button android:id="@id/PPButton02" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_pp_contacts_list" android:drawableLeft="@drawable/ico_contact_20" style="@style/KMSButton" />
+                    <Button android:id="@id/PPButton03" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_pp_options" android:drawableLeft="@drawable/ico_options_20" style="@style/KMSButton" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout08" android:background="@drawable/shadow_bottom" android:layout_width="fill_parent" android:layout_height="5.0px" />
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator02" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/ATLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/ATImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_antithief_25_a" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ATLayout02" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/ATTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_at_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ATLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#aaffffff" android:id="@id/ATTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_at_info" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:layout_gravity="center" android:id="@id/ATExpandIcoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|right|center" android:id="@id/ATExpandImageView01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/ico_arrow_down_18" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ATLayout04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <LinearLayout android:id="@id/LinearLayout09" android:background="@drawable/shadow_up" android:layout_width="fill_parent" android:layout_height="5.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout10" android:background="@drawable/dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_at_hint" />
+                    <Button android:id="@id/ATButton01" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_at_block" android:drawableLeft="@drawable/ico_block_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ATButton02" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_at_delete" android:drawableLeft="@drawable/ico_remove_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ATButton03" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_at_sim" android:drawableLeft="@drawable/ico_sim_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ATButton04" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_at_gps" android:drawableLeft="@drawable/ico_gps_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ATButton05" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_at_send_command" android:drawableLeft="@drawable/ico_arrow_go_20" style="@style/KMSButton" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout11" android:background="@drawable/shadow_bottom" android:layout_width="fill_parent" android:layout_height="5.0px" />
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator03" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/ASLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/ASImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_call_25_a" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ASLayout02" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/ASTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_as_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ASLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#aaffffff" android:id="@id/ASTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_as_info" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:layout_gravity="center" android:id="@id/ASExpandIcoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|right|center" android:id="@id/ASExpandImageView01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/ico_arrow_down_18" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ASLayout04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/LinearLayout12" android:background="@drawable/shadow_up" android:layout_width="fill_parent" android:layout_height="5.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout13" android:background="@drawable/dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_as_hint" />
+                    <Button android:id="@id/ASButton01" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_as_list_type" android:drawableLeft="@drawable/ico_list_both_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ASButton02" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_as_black_list" android:drawableLeft="@drawable/ico_list_black_20" style="@style/KMSButton" />
+                    <Button android:id="@id/ASButton03" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_as_white_list" android:drawableLeft="@drawable/ico_list_white_20" style="@style/KMSButton" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout14" android:background="@drawable/shadow_bottom" android:layout_width="fill_parent" android:layout_height="5.0px" />
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator04" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/APLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/APImageView01" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_content_filter_30" />
+                <LinearLayout android:orientation="vertical" android:id="@id/APLayout02" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="50.0">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/APTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_ap_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/APLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#aaffffff" android:id="@id/APTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_ap_info" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center" android:layout_gravity="center" android:id="@id/APExpandIcoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="top|right|center" android:id="@id/APExpandImageView01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="18.0dip" android:src="@drawable/ico_arrow_down_18" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/APLayout04" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/LinearLayout22" android:background="@drawable/shadow_up" android:layout_width="fill_parent" android:layout_height="5.0px" />
+                <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout23" android:background="@drawable/dark_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_marginTop="5.0dip" android:text="@string/str_ap_hint" style="@style/KMSMainText" />
+                    <TextView android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/str_ap_hint2" style="@style/KMSMainText" />
+                    <TextView android:id="@id/APWarningText" android:layout_marginBottom="10.0dip" android:text="@string/str_ap_hint3" style="@style/KMSMainText" />
+                    <Button android:id="@id/APSelectBrowserButton" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_ap_select_browser" android:drawableLeft="@drawable/ico_select_browser_20" style="@style/KMSButton" />
+                    <Button android:id="@id/APSwitchingButton" android:paddingRight="2.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_ap_switching" style="@style/KMSButton" />
+                    <Button android:id="@id/APOpenBrowserButton" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_main_menu_ap_open_browser" android:drawableLeft="@drawable/ico_open_browser_20" style="@style/KMSButton" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout14" android:background="@drawable/shadow_bottom" android:layout_width="fill_parent" android:layout_height="5.0px" />
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator05" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:id="@id/OTLayout01" android:background="@drawable/component_control_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px">
+                <ImageView android:id="@id/OTImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/ico_addon_25_a" />
+                <LinearLayout android:orientation="vertical" android:id="@id/OTLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="19.0sp" android:typeface="sans" android:textColor="#ffffffff" android:id="@id/OTTextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_main_menu_ot_title" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/OTLayout03" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#aaffffff" android:id="@id/OTTextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/str_main_menu_ot_info" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:gravity="left|center" android:id="@id/Separator05" android:background="@drawable/main_scr_separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sl_color_background" android:layout_width="220.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/sl_status_background" android:layout_width="fill_parent" android:layout_height="25.0dip">
+        <ImageView android:layout_gravity="left|center" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="@dimen/sl_margin_default" android:src="@drawable/sl_logo" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/sl_margin_default">
+        <TextView android:id="@id/sl_post_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/sl_text_normal_bold" />
+        <CheckBox android:id="@id/facebook_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/sl_checkbox_selector" android:text="@string/sl_facebook" style="@style/sl_text_normal_normal" />
+        <CheckBox android:id="@id/twitter_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/sl_margin_default" android:button="@drawable/sl_checkbox_selector" android:text="@string/sl_twitter" style="@style/sl_text_normal_normal" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Optional message:" style="@style/sl_text_normal_normal" />
+        <EditText android:id="@id/message_edittext" android:background="@drawable/sl_dialog_input_background" android:layout_width="fill_parent" android:layout_height="@dimen/sl_clickable_height" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sl_margin_default">
+        <Button android:id="@id/cancel_button" android:background="@drawable/sl_dialog_button_background_selector" android:layout_width="wrap_content" android:layout_height="@dimen/sl_clickable_height" android:layout_marginRight="@dimen/sl_margin_default" android:text="@string/sl_no_thanks" style="@style/sl_text_normal_bold_inverted" />
+        <Button android:id="@id/ok_button" android:background="@drawable/sl_dialog_button_background_selector" android:layout_width="wrap_content" android:layout_height="@dimen/sl_clickable_height" android:layout_marginLeft="@dimen/sl_margin_default" android:text="@string/sl_post" android:layout_weight="1.0" style="@style/sl_text_normal_bold_inverted" />
+    </LinearLayout>
+</LinearLayout>

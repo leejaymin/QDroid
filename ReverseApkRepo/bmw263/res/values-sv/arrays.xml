@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 sekunder</item>
+        <item>30 sekunder</item>
+        <item>60 sekunder</item>
+        <item>2 minuter</item>
+        <item>3 minuter</item>
+        <item>4 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>30 minuter</item>
+        <item>1 timme</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Appnamn</item>
+        <item>Global beräkningar</item>
+        <item>Genomsnitt beräkningar</item>
+        <item>Nuvarande beräkningar</item>
+        <item>Realtid beräkningar</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>Ingen vertikal markering</item>
+        <item>Markering varje timme</item>
+        <item>varje 2 timme</item>
+        <item>varje 3 timme</item>
+        <item>varje 4 timme</item>
+        <item>varje 5 timme</item>
+        <item>varje 6 timme</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Borttagen</item>
+        <item>Realistisk 1</item>
+        <item>Realistisk 2</item>
+        <item>"Svart'och'Vit"</item>
+        <item>Grön/Röd 1</item>
+        <item>Grön/Röd 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC-stil</item>
+        <item>Sense 3-stil</item>
+        <item>Google-stil</item>
+        <item>Glas-stil</item>
+        <item>ICS-stil</item>
+        <item>Transparent HTC-stil</item>
+        <item>Transparent Sense 3-stil</item>
+        <item>Transparent Google-stil</item>
+        <item>Transparent Glas-stil</item>
+        <item>Transparent ICS-stil</item>
+        <item>Dold HTC-stil</item>
+        <item>Dold Sense 3-stil</item>
+        <item>Dold Google-stil</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>Borttagen</item>
+        <item>Ingenting</item>
+        <item>Tillgängligt (%)</item>
+        <item>Användning (%/h)</item>
+        <item>Användning (mA)</item>
+        <item>Användning (mW)</item>
+        <item>Temperatur</item>
+        <item>Volt (mV)</item>
+        <item>Global beräkningar</item>
+        <item>Realtid beräkningar</item>
+        <item>Genomsnitt beräkningar</item>
+        <item>Nuvarande beräkningar</item>
+        <item>Tid sedan (ur)kopplad</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Visa ikon</item>
+        <item>Tillgängligt (%)</item>
+        <item>Användning (%/h)</item>
+        <item>Användning (mA)</item>
+        <item>Användning (mW)</item>
+        <item>Temperatur</item>
+        <item>Volt (mV)</item>
+        <item>Global beräkningar</item>
+        <item>Realtid beräkningar</item>
+        <item>Genomsnitt beräkningar</item>
+        <item>Nuvarande beräkningar</item>
+        <item>Tid sedan (ur)kopplad</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Visade</item>
+        <item>Dolda</item>
+        <item>Raderas</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Tillgängligt (%)</item>
+        <item>Användning (%/h)</item>
+        <item>Användning (mA)</item>
+        <item>Användning (mW)</item>
+        <item>Temperatur</item>
+        <item>Volt (mV)</item>
+        <item>Beräkningar</item>
+    </string-array>
+</resources>

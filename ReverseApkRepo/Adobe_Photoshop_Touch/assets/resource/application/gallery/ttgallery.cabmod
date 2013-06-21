@@ -1,0 +1,131 @@
+<ttgallery id="module" mainObject="view1" refDispatcher="referenceDispatcher" rootResourceHandler="messageHandler2">
+  <windows>
+    <window id="window" width="800" height="400" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttbasecontainerview id="view1" width="791" height="363" sizeX="scale" sizeY="scale" x="3" y="10">
+        <ttacanvasview id="canvasView" width="791" height="363" sizeX="scale" sizeY="scale" x="0" y="0">
+          <ttnavigationview id="mainNavigationView" width="791" height="363" sizeX="scale" sizeY="scale" x="0" y="0">
+            <ttaview id="view99999" width="791" height="363" sizeX="scale" sizeY="scale" x="0" y="0">
+              <ttafillview id="view2" width="791" height="50" sizeX="scale" x="0" y="0" colorvalue="1579032">
+                <ttgallerypathcontrol id="control" width="350" height="40" x="0" y="2" target="referenceDispatcher" selector="updatePath1"/>
+                <ttaview id="buttonContainerView" width="791" height="50" sizeX="right" acceptsMouse="false" x="0" y="0">
+                  <ttaplainbutton id="button4" width="50" height="50" sizeX="right" x="656" y="0" target="referenceDispatcher" selector="startCommentFacebook" type="tool" image="facebookPublishIcon"/>
+                  <ttaplainbutton id="button" width="50" height="50" sizeX="right" x="576" y="0" target="referenceDispatcher" selector="deleteItem" toggles="true" type="tool" image="galleryDeleteButton"/>
+                  <ttabasepanelbutton id="publishList" width="50" height="50" sizeX="right" x="335" y="0" iconID="galleryExportButtonIcon" panelModuleID="baseListPanelModule" target="referenceDispatcher" containerView="view1" positionMode="20"/>
+                  <ttaplainbutton id="button3" width="50" height="50" sizeX="right" x="496" y="0" target="referenceDispatcher" selector="duplicate" toggles="true" type="tool" image="galleryDuplicateClip"/>
+                  <ttaplainbutton id="settingsButton" width="50" height="50" sizeX="right" x="736" y="0" target="referenceDispatcher" selector="settings" type="tool" image="gallerySettingsClip"/>
+                  <ttabasepanelbutton id="cloudList3" width="50" height="50" sizeX="right" x="255" y="0" iconID="syncStateNormalClip" panelModuleID="gallerySyncPanelModule" target="referenceDispatcher" containerView="view1" positionMode="20"/>
+                  <ttabasepanelbutton id="manageFilePanelModule" width="50" height="50" x="416" y="-2" iconID="galleryFolderMenuClip" panelModuleID="baseListPanelModule" target="referenceDispatcher" containerView="view1" positionMode="20"/>
+                </ttaview>
+              </ttafillview>
+              <ttafillview id="view3" width="791" height="53" sizeX="scale" sizeY="bottom" x="0" y="310" colorvalue="1579032">
+                <ttaview id="newButtonContainerView" width="130" height="53" sizeX="center" acceptsMouse="false" x="330.5" y="0">
+                  <ttaplainbutton id="button2" width="50" height="50" sizeX="center" x="0" y="0" target="referenceDispatcher" selector="newBlankImage" type="tool" image="galleryAddButton"/>
+                  <ttaview id="galleryNewProjectAnchor" width="20" height="42" sizeX="center" x="55" y="4"/>
+                  <ttaplainbutton id="galleryAddItemModule" width="50" height="50" sizeX="center" x="80" y="0" target="referenceDispatcher" selector="newMedia" type="tool" image="galleryNewFromExistingClip"/>
+                </ttaview>
+              </ttafillview>
+              <ttaview id="view66" width="791" height="262" sizeX="scale" sizeY="scale" x="0" y="50">
+                <ttnavigationview id="view4" width="791" height="262" sizeX="scale" sizeY="scale" mask="true" x="0" y="0" target="referenceDispatcher">
+                  <ttaview id="view6" width="791" height="262" sizeX="scale" sizeY="scale" x="0" y="0"/>
+                </ttnavigationview>
+              </ttaview>
+              <ttaview id="view5" width="295" height="80" sizeX="scale" sizeY="scale" acceptsMouse="false" x="248" y="83"/>
+            </ttaview>
+          </ttnavigationview>
+        </ttacanvasview>
+      </ttbasecontainerview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view99999" refName="mainView"/>
+      <objRef refId="button4" refName="facebookButton"/>
+      <objRef refId="galleryAddItemModule" refName="addButton"/>
+      <objRef refId="view3" refName="bottomView"/>
+      <objRef refId="button" refName="deleteButton"/>
+      <objRef refId="button3" refName="duplicateButton"/>
+      <objRef refId="buttonRefDispatcher" refName="buttonRefDispatcher"/>
+      <objRef refId="control" refName="galleryPathControl"/>
+      <objRef refId="button2" refName="fromImageButton"/>
+      <objRef refId="view4" refName="navigationView"/>
+      <objRef refId="view5" refName="resourceHandlerView"/>
+      <objRef refId="cloudList3" refName="syncButton"/>
+      <objRef refId="view6" refName="rootResourceView"/>
+      <objRef refId="buttonContainerView" refName="buttonContainerView"/>
+      <objRef refId="view2" refName="topBarView"/>
+      <objRef refId="newButtonContainerView" refName="newButtonContainerView"/>
+      <objRef refId="canvasView" refName="canvasView"/>
+      <objRef refId="mainNavigationView" refName="mainNavigationView"/>
+      <objRef refId="navigationBar" refName="navigationBar"/>
+    </referenceDispatcher>
+    <referenceDispatcher id="buttonRefDispatcher">
+      <objRef refId="button3" refName="duplicateButton"/>
+      <objRef refId="button" refName="deleteButton"/>
+      <objRef refId="settingsButton" refName="settingsButton"/>
+      <objRef refId="publishList" refName="publishButton"/>
+      <objRef refId="cloudList3" refName="cloudButton"/>
+      <objRef refId="manageFilePanelModule" refName="moveButton"/>
+    </referenceDispatcher>
+    <ttsyncresourcehandler id="messageHandler2" gallery="module"/>
+    <tttutorialresourcehandler id="messageHandler" gallery="module"/>
+    <ttwelcomeresourcehandler id="messageHandler1" gallery="module"/>
+  </objects>
+  <classes>
+    <class className="ttgallery" superClassName="module" packageName="com.adobe.ttpixel.gallery" codeName="TTGallery">
+      <var name="refDispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+      <var name="rootResourceHandler" type="object" defaultValue="" codeName="iRootResourceHandler" className="TTGalleryResourceHandler"/>
+    </class>
+    <class className="ttgalleryitemview" superClassName="view" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryItemView">
+      <var name="gallery" type="object" defaultValue="" codeName="iGallery" className="TTGallery"/>
+    </class>
+    <class className="ttgallerytopbarview" superClassName="view" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryTopBarView"/>
+    <class className="ttgallerybottombarview" superClassName="view" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryBottomBarView"/>
+    <class className="ttbasepanelbutton" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelButton">
+      <var name="iconID" type="string" defaultValue="" codeName="iIconID"/>
+      <var name="panelModuleID" type="string" defaultValue="" codeName="iPanelModuleID"/>
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTContainerView"/>
+      <var name="positionMode" type="int" defaultValue="0" codeName="iPositionMode"/>
+      <var name="allowanceSelector" type="string" defaultValue="" codeName="iAllowanceSelector"/>
+    </class>
+    <class className="ttabasepanelbutton" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTABasePanelButton">
+      <var name="iconID" type="string" defaultValue="" codeName="iIconID"/>
+      <var name="panelModuleID" type="string" defaultValue="" codeName="iPanelModuleID"/>
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTContainerView"/>
+      <var name="positionMode" type="int" defaultValue="0" codeName="iPositionMode"/>
+      <var name="allowanceSelector" type="string" defaultValue="" codeName="iAllowanceSelector"/>
+    </class>
+    <class className="ttbasecontainerview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTBaseContainerView">
+      <var name="mainView" type="object" defaultValue="" codeName="iMainView" className="CABView"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+    <class className="ttgallerypathcontrol" superClassName="control" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryPathControl"/>
+    <class className="tttablecontrol" superClassName="control" packageName="com.adobe.tpixel.ui" codeName="TTTableControl"/>
+    <class className="tttextfield" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTTextField"/>
+    <class className="ttgalleryresourcehandler" superClassName="messageHandler" packageName="com.adobe.ttpixel.gallery" codeName="TTGalleryResourceHandler">
+      <var name="gallery" type="object" defaultValue="" codeName="iGallery" className="TTGallery"/>
+    </class>
+    <class className="tttutorialresourcehandler" superClassName="ttgalleryresourcehandler" packageName="com.adobe.ttpixel.gallery" codeName="TTTutorialResourceHandler"/>
+    <class className="ttwelcomeresourcehandler" superClassName="ttgalleryresourcehandler" packageName="com.adobe.ttpixel.gallery" codeName="TTWelcomeResourceHandler"/>
+    <class className="ttnavigationview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTNavigationView">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+    </class>
+    <class className="ttsyncresourcehandler" superClassName="ttgalleryresourcehandler" packageName="com.adobe.ttpixel.gallery" codeName="TTSyncResourceHandler"/>
+    <class className="ttcoloredview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTColoredView">
+      <var name="color" type="uint" defaultValue="0" codeName="iColor"/>
+    </class>
+    <class className="ttacanvasview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTACanvasView"/>
+    <class className="ttaview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTAView"/>
+    <class className="ttafillview" superClassName="ttaview" packageName="com.adobe.ttpixel.ui" codeName="TTAFillView">
+      <var name="colorvalue" type="uint" defaultValue="0" codeName="iColor"/>
+    </class>
+    <class className="ttaplainbutton" superClassName="button" packageName="com.adobe.ttpixel.ui" codeName="TTAPlainButton"/>
+    <class className="ttacontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAControl"/>
+    <class className="ttanavigationbar" superClassName="ttacontrol" packageName="com.adobe.ttpixel.ui" codeName="TTANavigationBar">
+      <var name="navigationView" type="object" defaultValue="" codeName="iNavigationView" className="TTNavigationView"/>
+      <var name="title" type="string" defaultValue="" codeName="iTitle"/>
+    </class>
+  </classes>
+</ttgallery>

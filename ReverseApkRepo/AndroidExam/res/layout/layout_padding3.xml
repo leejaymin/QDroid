@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Upper Text" />
+    <LinearLayout android:background="#ffff0000" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0px">
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Button" />
+    </LinearLayout>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Lower Text" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<module id="module" mainObject="view1">
+  <windows>
+    <window id="window" width="300" height="300" x="0" y="0" initVisible="false">
+      <ttcoachmarkview id="view1" width="280" height="250" sizeX="scale" sizeY="scale" x="10" y="10"/>
+    </window>
+  </windows>
+  <menus/>
+  <objects/>
+  <classes>
+    <class className="ttcoachmarkview" superClassName="view" packageName="com.adobe.ttpixel.tutorial" codeName="TTCoachMarkView"/>
+  </classes>
+</module>

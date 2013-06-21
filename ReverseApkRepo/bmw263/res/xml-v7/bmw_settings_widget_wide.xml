@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/prefs_screen_widget_std" android:summary="@string/prefs_screen_widget_std_summary">
+        <ListPreference android:entries="@array/settings_scale_entries" android:title="@string/prefs_title_widget_scale" android:key="@string/PREFSKEY_WIDGET_SCALE" android:summary="@string/prefs_widget_scale_on" android:defaultValue="0" android:entryValues="@array/settings_scale_values" />
+        <ListPreference android:entries="@array/font_size_entries" android:title="@string/prefs_widget_font_title" android:key="@string/PREFSKEY_WIDGET_FONT_SIZE" android:summary="@string/prefs_widget_font_summary" android:defaultValue="0" android:entryValues="@array/font_size_values" />
+        <ListPreference android:entries="@array/settings_widget_data_entries" android:title="@string/prefs_title_large_widget1" android:key="@string/PREFSKEY_LARGE_WIDGET1" android:summary="@string/prefs_summary_large_widget" android:defaultValue="@string/prefs_large_widget1_default" android:entryValues="@array/settings_widget_data_values" />
+        <ListPreference android:entries="@array/settings_widget_data_entries" android:title="@string/prefs_title_large_widget3" android:key="@string/PREFSKEY_LARGE_WIDGET3" android:summary="@string/prefs_summary_large_widget" android:defaultValue="@string/prefs_large_widget3_default" android:entryValues="@array/settings_widget_data_values" />
+        <ListPreference android:entries="@array/settings_widget_data_entries" android:title="@string/prefs_title_large_widget5" android:key="@string/PREFSKEY_LARGE_WIDGET5" android:summary="@string/prefs_summary_large_widget" android:defaultValue="@string/prefs_large_widget5_default" android:entryValues="@array/settings_widget_data_values" />
+        <ListPreference android:entries="@array/settings_widget_data_entries" android:title="@string/prefs_title_large_widget2" android:key="@string/PREFSKEY_LARGE_WIDGET2" android:summary="@string/prefs_summary_large_widget" android:defaultValue="@string/prefs_large_widget2_default" android:entryValues="@array/settings_widget_data_values" />
+        <ListPreference android:entries="@array/settings_widget_data_entries" android:title="@string/prefs_title_large_widget4" android:key="@string/PREFSKEY_LARGE_WIDGET4" android:summary="@string/prefs_summary_large_widget" android:defaultValue="@string/prefs_large_widget4_default" android:entryValues="@array/settings_widget_data_values" />
+    </PreferenceScreen>
+</PreferenceScreen>

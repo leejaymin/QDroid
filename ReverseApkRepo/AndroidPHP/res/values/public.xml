@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="icon" id="0x7f020000" />
+    <public type="layout" name="dialog_about" id="0x7f030000" />
+    <public type="layout" name="main" id="0x7f030001" />
+    <public type="string" name="app_name" id="0x7f040000" />
+    <public type="id" name="dialog_about" id="0x7f050000" />
+    <public type="id" name="about_image" id="0x7f050001" />
+    <public type="id" name="about_text" id="0x7f050002" />
+    <public type="id" name="edit" id="0x7f050003" />
+    <public type="id" name="submitButton" id="0x7f050004" />
+    <public type="id" name="content" id="0x7f050005" />
+</resources>

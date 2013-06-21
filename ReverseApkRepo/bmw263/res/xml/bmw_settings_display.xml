@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/prefs_screen_display" android:summary="@string/prefs_screen_display_summary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_language_entries" android:title="@string/prefs_title_language" android:key="@string/PREFSKEY_LANGUAGE" android:summary="@string/prefs_summary_language" android:defaultValue="" android:entryValues="@array/settings_language_values" />
+    <CheckBoxPreference android:title="@string/prefs_title_estimates_duration" android:key="@string/PREFSKEY_ESTIMATES_DURATION" android:defaultValue="true" android:summaryOn="@string/prefs_estimates_duration_on" android:summaryOff="@string/prefs_estimates_duration_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_prefer_mA" android:key="@string/PREFSKEY_PREFER_PH_MA" android:defaultValue="true" android:summaryOn="@string/prefs_prefer_mA_on" android:summaryOff="@string/prefs_prefer_mA_off" />
+    <ListPreference android:entries="@array/settings_temperature_entries" android:title="@string/prefs_title_temperature" android:key="@string/PREFSKEY_TEMPERATURE" android:summary="@string/prefs_summary_temperature" android:defaultValue="@string/prefs_temperature_default" android:entryValues="@array/settings_temperature_values" />
+    <EditTextPreference android:title="@string/prefs_title_temp_multi" android:key="@string/PREFSKEY_TEMP_MULTI" android:summary="@string/prefs_summary_temp_multi" android:defaultValue="1" android:inputType="number" />
+    <CheckBoxPreference android:title="@string/prefs_title_dual_graph" android:key="@string/PREFSKEY_DUAL_GRAPH" android:defaultValue="false" android:summaryOn="@string/prefs_dual_graph_on" android:summaryOff="@string/prefs_dual_graph_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_history" android:key="@string/PREFSKEY_SHOW_HISTORY" android:defaultValue="false" android:summaryOn="@string/prefs_show_history_on" android:summaryOff="@string/prefs_show_history_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_estimates" android:key="@string/PREFSKEY_SHOW_ESTIMATES" android:defaultValue="false" android:summaryOn="@string/prefs_show_estimates_on" android:summaryOff="@string/prefs_show_estimates_off" />
+</PreferenceScreen>

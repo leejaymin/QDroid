@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActivityTitle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/activity_title_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/activity_title_gradient</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">32.0sp</item>
+    </style>
+    <style name="ActivityTitleButton">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/activity_title_button_foreground</item>
+        <item name="android:background">@drawable/activity_button_background</item>
+        <item name="android:paddingTop">2.0sp</item>
+        <item name="android:layout_width">60.0sp</item>
+        <item name="android:layout_height">28.0sp</item>
+        <item name="android:layout_marginTop">5.0sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

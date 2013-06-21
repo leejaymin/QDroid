@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>בהיר (ברירת מחדל)</item>
+        <item>שחור</item>
+        <item>כחול</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>אוטומטי (ברירת מחדל)</item>
+        <item>מאוזן</item>
+        <item>מאונך</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>ברירת מחדל</item>
+        <item>גדול</item>
+        <item>גדול מאוד</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>מסך הבית</item>
+        <item>העדפות</item>
+    </string-array>
+</resources>

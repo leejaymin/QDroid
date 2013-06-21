@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pchange_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pchange_layout_phone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:id="@id/pchange_num" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:gravity="center_horizontal" android:id="@id/pchange_change_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change!" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/pchange_layout_gps" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_address" />
+            <EditText android:id="@id/pchange_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="9.0" />
+            <Button android:id="@id/pchange_move_by_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_resolve" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_gps" />
+            <EditText android:id="@id/pchange_lat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="signed|decimal" android:layout_weight="9.0" />
+            <EditText android:id="@id/pchange_lon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="signed|decimal" android:layout_weight="9.0" />
+            <Button android:id="@id/pchange_move_by_gps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_resolve" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@id/pchange_drive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_direction" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/pchange_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_reset" android:layout_weight="1.0" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/pchange_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pchange_relocate" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.maps.MapView android:enabled="true" android:id="@id/pchange_map" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="99.0" android:apiKey="@string/mkey_release" />
+            <LinearLayout android:id="@id/pchange_zoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

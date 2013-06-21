@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Customization">
+        <ListPreference android:entries="@array/bg_names" android:title="Background" android:key="prefBG" android:summary="Set the background image" android:defaultValue="bg_white_stripes" android:entryValues="@array/bg" />
+    </PreferenceCategory>
+</PreferenceScreen>

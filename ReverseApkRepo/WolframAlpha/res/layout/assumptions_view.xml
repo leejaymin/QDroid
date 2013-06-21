@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wolfram.android.alpha.view.AssumptionsView android:orientation="vertical" android:id="@id/assumptions_view" android:paddingTop="@dimen/assumptions_view_AssumptionsView_paddingTop" android:paddingBottom="@dimen/assumptions_view_AssumptionsView_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@color/assumptions_row_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/assumptions_view_ImageView_border_top_assumptions_view_minHeight" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/assumptions_text" android:background="@drawable/assumptions_row_background" android:paddingTop="@dimen/assumptions_view_linearlayout_assumptions_text_paddingTop" android:paddingBottom="@dimen/assumptions_view_linearlayout_assumptions_text_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="assumptionsClickHandler">
+        <LinearLayout android:orientation="vertical" android:id="@id/assumptions_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.9" />
+        <ImageView android:gravity="center_vertical" android:paddingLeft="@dimen/assumptions_view_linearlayout_imageview_arrowselector_paddingLeft" android:paddingRight="@dimen/assumptions_view_linearlayout_imageview_arrowselector_paddingRight" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow_selector" android:scaleType="center" android:layout_weight="0.1" />
+    </LinearLayout>
+    <ImageView android:background="@color/assumptions_row_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/assumptions_view_ImageView_border_bottom_assumptions_view_minHeight" />
+</com.wolfram.android.alpha.view.AssumptionsView>

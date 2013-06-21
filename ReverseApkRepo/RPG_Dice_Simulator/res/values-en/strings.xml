@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RPG Dice</string>
+    <string name="main_title">RPG Dice Simulator</string>
+    <string name="dice_simulator_label">Simulator</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="about_title">About RPG Dice</string>
+    <string name="about_text"><b>RPG Dice</b>" is a simulator of dice role. This aplication is not intented to replace your dice. It is thinked for supplement your role dice, or if you are a lucky player, you can use it to have a extra numbers of dice. Please play fair "</string>
+    <string name="Results"><i><b>Results</b></i></string>
+    <string name="TypeDice">Type:</string>
+    <string name="NumberDice">Numbers:</string>
+    <string name="Shoot">Shoot</string>
+    <string name="DialogOK">Ok</string>
+    <string name="DialogExit">Exit</string>
+    <string name="DialogNumberDiceErrorsTittle">Errors Dices</string>
+    <string name="DialogNumberDiceErrorsMessage"><b>You need enter a number greater than 0</b></string>
+</resources>

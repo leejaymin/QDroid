@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="girl_name">
+        <item>Sexy Girl(80)</item>
+        <item>Qute Girl(120)</item>
+        <item>Nasty Girl(160)</item>
+        <item>Picky Girl(200)</item>
+        <item>Hot Girl(240)</item>
+        <item>Qute Girl(280)</item>
+        <item>Nasty Girl(320)</item>
+        <item>Picky Girl(360)</item>
+        <item>Hot Girl(400)</item>
+        <item>Sexy Girl(440)</item>
+        <item>Qute Girl(480)</item>
+        <item>Nasty Girl(520)</item>
+        <item>Picky Girl(560)</item>
+        <item>Hot Girl(600)</item>
+    </string-array>
+    <string-array name="bingo_per">
+        <item>default</item>
+        <item>default</item>
+        <item>chance +1%</item>
+        <item>chance +1%</item>
+        <item>chance +2%</item>
+        <item>chance +2%</item>
+        <item>chance +2%</item>
+        <item>chance +2%</item>
+        <item>chance +3%</item>
+        <item>chance +3%</item>
+        <item>chance +3%</item>
+        <item>chance +3%</item>
+        <item>chance +4%</item>
+        <item>chance +4%</item>
+    </string-array>
+    <string-array name="mission_list">
+        <item>All sevens</item>
+        <item>Cross seven</item>
+        <item>All cherrys</item>
+        <item>All dices</item>
+        <item>All S bells</item>
+        <item>All bells</item>
+        <item>All reds</item>
+        <item>All greens</item>
+        <item>All blues</item>
+        <item>All water melons</item>
+        <item>All lemons</item>
+        <item>All mangos</item>
+    </string-array>
+    <string-array name="mission_ment">
+        <item>All sevens</item>
+        <item>Cross seven</item>
+        <item>All cherrys</item>
+        <item>All dices</item>
+        <item>All S bells</item>
+        <item>All bells</item>
+        <item>All reds</item>
+        <item>All greens</item>
+        <item>All blues</item>
+        <item>All water melons</item>
+        <item>All lemons</item>
+        <item>All mangos</item>
+    </string-array>
+    <string-array name="time_text">
+        <item>Y</item>
+        <item>M</item>
+        <item>D</item>
+        <item>h</item>
+        <item>m</item>
+        <item>s</item>
+    </string-array>
+</resources>

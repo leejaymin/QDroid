@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:enabled="true" android:id="@id/menu_process_percent" android:visible="true" android:title="@string/menu_process_percent" />
+    <item android:enabled="true" android:id="@id/menu_process_hide" android:visible="true" android:title="@string/menu_process_hide" />
+    <item android:enabled="true" android:id="@id/menu_process_reset" android:visible="true" android:title="@string/menu_process_reset" />
+    <item android:enabled="true" android:id="@id/menu_process_show_hidden" android:visible="true" android:title="@string/menu_process_show_hidden" />
+    <item android:enabled="true" android:id="@id/menu_process_set_level_percent" android:visible="true" android:title="@string/menu_process_set_level_percent">
+        <menu>
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_001" android:visible="true" android:title="0.001%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_005" android:visible="true" android:title="0.005%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_010" android:visible="true" android:title="0.010%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_050" android:visible="true" android:title="0.050%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_100" android:visible="true" android:title="0.100%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_500" android:visible="true" android:title="0.500%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_1" android:visible="true" android:title="1.000%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_5" android:visible="true" android:title="5.000%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_10" android:visible="true" android:title="10.000%" />
+            <item android:enabled="true" android:id="@id/menu_process_set_percent_20" android:visible="true" android:title="20.000%" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/AboutScreenRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="Music Searcher v3.0" android:singleLine="true" />
+    <TextView android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Follow me on twitter:" android:layout_below="@id/TextView01" />
+    <TextView android:autoLink="web" android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="http://twitter.com/evgenodroid" android:singleLine="true" android:layout_below="@id/TextView02" />
+    <RelativeLayout android:id="@id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/TextView03" />
+</RelativeLayout>

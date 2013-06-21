@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="computing_bar_frame_duration">50</integer>
+    <integer name="connecting_bar_frame_duration">50</integer>
+    <integer name="query_fading_duration">1000</integer>
+    <integer name="formula_variable_key">1000</integer>
+    <integer name="results_footer_type_key">2000</integer>
+    <integer name="formula_variable_label_key">3000</integer>
+    <integer name="assumption_choices_key">4000</integer>
+    <integer name="formula_button_labels_key">5000</integer>
+    <integer name="radio_button_states_key">6000</integer>
+    <integer name="deleted_favorite_entry_key">7000</integer>
+</resources>

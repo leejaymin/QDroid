@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androlib Wallpapers</string>
+    <string name="whatsnew">Neuigkeiten!</string>
+    <string name="whatsnewhead">"Wenn dir die Applikation gefällt, vergiss nicht eine Bewertung im Android Market zu vergeben. Danke :)
+"</string>
+    <string name="close">Schließen</string>
+    <string name="noWallpaper">Kein Hintergrundbild für diese Suchanfrage gefunden</string>
+    <string name="XtoYwallpapersOnZ">%1$s bis %2$s Hintergrundbilder von %3$s</string>
+    <string name="loadingLastSubmited">Lade die neuesten Hintergrundbilder</string>
+    <string name="loadingTopFavorites">Lade Topfavoriten</string>
+    <string name="loadingMostInstalled">Lade die am häufigsten installierten Hintergrundbilder</string>
+    <string name="loadingTopRated">Lade die höchst bewerteten Hintergrundbilder</string>
+    <string name="loadingYourFavs">Lade deine Favoriten</string>
+    <string name="loading10Random">Lade 10 zufällige Hintergrundbilder</string>
+    <string name="loading">Laden...</string>
+    <string name="pleaseWait">Bitte Warten...</string>
+    <string name="menuSubmitWall">Hintergrundbilder hochladen</string>
+    <string name="menuOurOthersApps">Unsere weiteren Applikationen</string>
+    <string name="marketNotFound">Market nicht gefunden</string>
+    <string name="menuQuit">Beenden</string>
+    <string name="alertTitleQuit">Applikation beenden?</string>
+    <string name="alertTitleSubmit">Hintergrundbild hochladen</string>
+    <string name="alertMessageSubmit">Um ein Hintergrundbild hochzuladen, öffne http://wallpapers.androlib.com/ in einem Browser und klicke \"Hintergrundbild hochladen\" in der obersten Menüleiste. Folge den Anweisungen dort und dein Bild wird bald zur Verfügung stehen</string>
+    <string name="searchHint">Hintergrundbilder suchen</string>
+    <string name="searchEmpty">Die Suchanfrage ist leer</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="canceled">Abgebrochen</string>
+    <string name="wallGlobalRating">Allgemeine Bewertung:</string>
+    <string name="wallSubmitedBy">Hochgeladen von:</string>
+    <string name="wallCategory">Kategorie:</string>
+    <string name="wallBtnSetThisWall">Hintergrundbild setzen</string>
+    <string name="wallBtnDownloadOnSD">Dieses Hintergrundbild auf die SD Karte speichern?</string>
+    <string name="wallAlertTitleAddFav">Diese Hintergrundbild zu deinen Favoriten hinzufügen?</string>
+    <string name="wallAlertTitleRemoveFav">Dieses Hintergrundbild von deinen Favoriten entfernen?</string>
+    <string name="errorWhileDownload">\### FEHLER ### Es ist ein Fehler während des Downloads geschehen. Bitte nochmals versuchen.</string>
+    <string name="mailSubject">Android Wallpaper - %1$s</string>
+    <string name="mailMessage">"Here is a wallpaper for Android that may interest you !
+
+%1$s
+%2$s
+
+This Wallpaper is available here:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">Mit einem Freund teilen</string>
+    <string name="wallMenuSetWall">Diese Bild als Hintergrundbild setzen</string>
+    <string name="wallMenuSendToFriend">Mit einem Freund teilen</string>
+    <string name="wallAlertTitleDownload">Hintergrundbild herunterladen?</string>
+    <string name="wallAlertMessageDownload">"Das Hintergrundbild wird auf der SD Karte gespeichert. (sdcard/AndroLibWallpapers).
+Die SD Karte muss bereit sein!"</string>
+    <string name="DownloadingPleaseWait">Wallpaper wird heruntergeladen - bitte warten....</string>
+    <string name="wallAlertTitleSetWall">Hintergrundbild setzen?</string>
+    <string name="ratingDeleted">Bewertung gelöscht</string>
+    <string name="ratingSubmited">Bewertung %1$s/5 abgegeben</string>
+    <string name="catLastSubmit">Zuletzt hinzugefügt</string>
+    <string name="catMyFav">Meine Favoriten</string>
+    <string name="catTopRated">Beste Wertung</string>
+    <string name="cat10Random">10 Zufällige</string>
+    <string name="catTopFav">Topfavoriten</string>
+    <string name="catMostInstalled">Häufig genutzt</string>
+</resources>

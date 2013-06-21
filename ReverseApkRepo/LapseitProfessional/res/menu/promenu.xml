@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/menu_pro" android:title="Pro Edition • Conventional Method" android:titleCondensed="Pro Edition • Conventional Method" />
+    <item android:id="@id/menu_proinapp" android:title="Pro Edition • In-App Method" android:titleCondensed="Pro Edition • In-App Method" />
+</menu>

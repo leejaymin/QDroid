@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_scan">Neue Suche</string>
+    <string name="only_open">Zeige aktive Netze</string>
+    <string name="channel">Kanal</string>
+    <string name="level">Level</string>
+    <string name="encryption">Frei/Verschl</string>
+    <string name="auto_scan_mode_off">Automatische Suche deaktiviert</string>
+    <string name="auto_scan_off">Auto Suche Aus.</string>
+    <string name="auto_scan_mode_on">Automatische Suche aktiviert</string>
+    <string name="auto_scan_on">Auto Suche An.</string>
+    <string name="auto_scan_title">Auto Suche in: %d</string>
+    <string name="auto_scan_sec">%d sek</string>
+    <string name="auto_scan_every">Auto Suche alle :</string>
+    <string name="level_view">Signalanzeige</string>
+    <string name="level_graphic">Grafik</string>
+    <string name="level_percent">%</string>
+    <string name="preferences">Einstellungen</string>
+    <string name="about">Über WiFinder</string>
+    <string name="about_description">"Version %s
+
+Copyright 2009-2011 Grzegorz Rekawek &amp; Pawel Brzoza.
+
+WiFinder ein WiFi Netzscanner für Android. Wenn du Fehler findest, Kontaktiere.
+
+www.pgmsoft.com"</string>
+    <string name="visit">Besuche WWW</string>
+    <string name="wifi_off">WiFi deaktiviert</string>
+    <string name="wifi_off_msg">Klicke und aktiviere</string>
+    <string name="wifi_enable_question">WiFi deaktiviert. Willst du jetzt aktivieren?</string>
+    <string name="wifi_enabling">WiFi wird aktiviert</string>
+    <string name="wifi_enabling_msg">Bitte warten...</string>
+    <string name="wifi_enabled">WiFi aktiviert</string>
+    <string name="wifi_enabled_msg">Klicke |Neue Suche| um Netz zu scannen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="scan_msg">Netzsuche, bitte warten...</string>
+    <string name="network_info">Netz : %s</string>
+    <string name="network_signal">Signal Level :</string>
+    <string name="network_encryption">Verschlüsselt :</string>
+    <string name="network_channel">Kanal :</string>
+    <string name="network_ip">IP Adresse :</string>
+    <string name="network_password">Netz Passwort</string>
+    <string name="network_wrong_password">Falsches Passwort, versuch es erneut</string>
+    <string name="network_show_password">Passwort anzeigen</string>
+    <string name="connect">Verbinden</string>
+    <string name="disconnect">Trennen</string>
+    <string name="forget">Löschen</string>
+    <string name="unable_to_connect">Netz Verbindungsfehler</string>
+    <string name="status_idle">Inaktiv</string>
+    <string name="status_obtaining">Verbinden mit IP Adresse für %s</string>
+    <string name="status_connected">Verbunden mit %s</string>
+    <string name="status_failed">Verbinden mit %s fehlgeschlagen</string>
+    <string name="status_disconnected">Keine Verbindung mit %s</string>
+    <string name="status_connecting">Verbinden mit %1$s (Versuch %2$d)</string>
+    <string name="status_disconnecting">Verbindung wird getrennt mit %s</string>
+    <string name="disconnected_info_open">Keine Verbindung, klicke und verbinde - [HIER]</string>
+    <string name="disconnected_info_encrypted">Keine Verbindung - %s</string>
+    <string name="scan_no_result">Kein Resultat !</string>
+    <string name="title_connected">Verbunden mit : %s</string>
+    <string name="title_disconnected">Keine Netzverbindung</string>
+    <string name="notification_connected">WiFinder aktiviert : %s</string>
+    <string name="notification_obtaining">Verbinden mit IP Adresse : %s</string>
+    <string name="notification_disconnecting">Verbindung wird getrennt : %s</string>
+    <string name="notification_forget">Löschen : %s</string>
+    <string name="notification_wifi_on">WiFi aktivieren !</string>
+    <string name="known_networks">Bekannte Netze</string>
+    <string name="scan_list">Suchliste</string>
+    <string name="forget_all">Alle löschen</string>
+    <string name="forget_list_no_entry">Kein Netz !</string>
+    <string name="forget_network_question">Willst du das Netz löschen: %s ?</string>
+    <string name="forget_list_connected">Verbunden mit %s, klicke und lösche</string>
+    <string name="forget_list">Klicke und lösche</string>
+    <string name="network_forget_all_info">Alle löschen !!!</string>
+    <string name="forget_all_network_question">Willst du alle Netze löschen ?!</string>
+    <string name="all_networks">Alle Netze !</string>
+    <string name="exit_question">Programm Schließen, WiFi bleibt aktiv ?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="notification_wifi_off">WiFi deaktiviren !</string>
+</resources>

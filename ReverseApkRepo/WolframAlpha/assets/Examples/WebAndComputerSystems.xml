@@ -1,0 +1,15 @@
+<?xml version='1.0'?><example><category>Web &amp; Computer Systems</category><section-title>
+ <link ref="WebAndInternet">Web &amp; Internet </link>
+</section-title><caption>get information about an IP address</caption><input>18.0.0.1</input><caption>get information about a URL</caption><input>google.com</input><caption>find a port assignment </caption><input>port 80</input><section-title>
+ <link ref="NotableComputers">Notable Computers </link>
+</section-title><caption>get information about a notable computer</caption><input>Apple II</input><caption>ask about a characteristic of a computer</caption><input>How fast was the processor on the Atari 400?</input><section-title>
+ <link ref="DataTransfer">Data Transfer </link>
+</section-title><caption>get information about a data transfer device</caption><input>802.11n wireless network</input><caption>compute a data transfer time</caption><input>data transfer time 10GB, 6Mb/s</input><section-title>RAID</section-title><caption>compute RAID capacities</caption><input>RAID calculator</input><input>RAID5 4 drives 1TB</input><section-title>
+ <link ref="CharacterEncodings">Character Encodings </link>
+</section-title><caption>look up a Unicode character</caption><input>U+00F8</input><caption>specify a range of Unicode characters</caption><input>unicode 8900 to 8915</input><caption>specify a character by name</caption><input>em dash</input><section-title>
+ <link ref="StringProcessing">String Processing </link>
+</section-title><caption>find n-grams in a string</caption><input>n-grams &quot;it was the best of times it was the worst of times&quot;</input><caption>encode a string with the ROT13 substitution cipher</caption><input>ROT13 &quot;A quick brown fox jumps over the lazy dog.&quot;</input><section-title>
+ <link ref="Hashing">Hashing </link>
+</section-title><caption>compute a hash code for a string</caption><input>Adler 32 &quot;inverse cosine&quot;</input><input>MD5 &quot;A quick brown fox jumps over the lazy dog.&quot;</input><section-title>Display Resolution</section-title><caption>get data on a computer display format</caption><input>VGA display</input><caption>compare formats</caption><input>WXGA, QXGA</input><caption>compute display characteristics from pixel count</caption><input>2.5 megapixel 300dpi display</input><section-title>Passwords</section-title><caption>generate a password</caption><input>generate a 12 character password</input><caption>generate a set of passwords</caption><input>generate 5 alphanumeric passwords of length 10</input><section-title>CAPTCHA</section-title><caption>generate a CAPTCHA for specified text</caption><input>CAPTCHA Wolfram Alpha</input><caption>generate a CAPTCHA using random text</caption><input>CAPTCHA</input><section-title>
+ <link ref="NumberBases">Base Conversion </link>
+</section-title><caption>convert between hex, decimal, octal, and binary</caption><input>987 in hex</input><input>354 hex to decimal</input><input>101110000110111011 binary to octal</input><section-title>CIDR</section-title><caption>calculate IP parameters using CIDR notation</caption><input>CIDR calculator</input></example>

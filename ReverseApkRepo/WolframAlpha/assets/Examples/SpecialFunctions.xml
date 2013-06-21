@@ -1,0 +1,9 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Special Functions</category><section-title>
+ <link ref="GammaFunctions">Gamma Functions </link>
+</section-title><caption>compute properties of the Gamma function</caption><input>Gamma(n)</input><caption>simplify expressions involving Gamma</caption><input>Gamma(z)*Gamma(1-z)</input><section-title>Beta Functions</section-title><caption>compute values of the Beta function</caption><input>Beta(5, 4) </input><caption>plot values of the incomplete Beta function</caption><input>plot Beta(x, 2, 3)</input><section-title>Error Functions</section-title><caption>compute values of the error function</caption><input>erf(3)</input><caption>analyze the complementary error function</caption><input>integral representation erfc(z)</input><section-title>
+ <link ref="BesselFunctions">Bessel Functions </link>
+</section-title><caption>plot a Bessel function</caption><input>plot J2(x)</input><caption>integrate a spherical Bessel function</caption><input>integrate spherical Bessel j3(x)</input><section-title>Legendre Polynomials</section-title><caption>compute Legendre P polynomials</caption><input>Legendre P(10,x)</input><caption>plot a Legendre Q polynomial</caption><input>Plot Legendre Q(8,x)</input><section-title>
+ <link ref="EllipticFunctions">Elliptic Functions </link>
+</section-title><caption>plot an elliptic integral</caption><input>Plot Elliptic E(t)</input><caption>compute the Taylor series of nome</caption><input>Series Elliptic Nome Q(m)</input><section-title>
+ <link ref="ZetaFunctions">Zeta Functions </link>
+</section-title><caption>plot the zeta function on the critical line</caption><input>plot zeta(1/2 + i*t)</input><caption>numerically evaluate zeta near one of the nontrivial zeros</caption><input>zeta(1/2 + 14.1347 i)</input><section-title>Spheroidal Functions</section-title><caption>evaluate S1 numerically</caption><input>spheroidal S1(1,0,2.5,1)</input></example>

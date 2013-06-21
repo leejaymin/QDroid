@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/instantmath_view_textview_instantmath_textview_textSize" android:textColor="@color/instantmath_textview_textColor" android:layout_gravity="bottom" android:id="@id/instantmath_textview" android:background="@drawable/rounded_rect_instantmath" android:padding="@dimen/instantmath_view_textview_instantmath_textview_padding" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="InstantMath"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

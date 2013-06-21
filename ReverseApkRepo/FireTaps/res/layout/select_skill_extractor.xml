@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/FlippingPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/extractorFlipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/push_left_in" android:outAnimation="@anim/push_left_out">
+        <org.tf.ui.FTextView android:layout_gravity="top" android:id="@id/extractorHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/extracting_song_fmt" style="@style/HeadText" />
+        <org.tf.ui.FireButton android:layout_gravity="top|center" android:id="@id/extractorPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Play" style="@style/FireButton" />
+    </ViewFlipper>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/extracting_song_text" style="@style/ParagraphText" />
+</LinearLayout>

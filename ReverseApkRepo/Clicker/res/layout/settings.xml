@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0px" android:layout_gravity="center_vertical" android:id="@id/txtSound" android:paddingLeft="3.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound" />
+    <Spinner android:id="@id/spSound" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" />
+    <TextView android:textSize="16.0px" android:id="@id/txtOther" android:paddingLeft="3.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other_options" />
+    <CheckBox android:id="@id/cbHaptic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disable_haptic" />
+    <CheckBox android:id="@id/cbRotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disable_rotation" />
+</LinearLayout>

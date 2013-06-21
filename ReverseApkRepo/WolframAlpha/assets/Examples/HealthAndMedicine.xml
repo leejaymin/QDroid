@@ -1,0 +1,23 @@
+<?xml version='1.0'?><example><category>Health &amp; Medicine</category><section-title>
+ <link ref="HumanBodyMeasurements">Human Body Measurements </link>
+</section-title><caption>compute various body statistics based on height, weight, etc. </caption><input>human, 6ft 2in, 250lb</input><caption>compute body mass index</caption><input>BMI 5'10'', 165lb</input><caption>compute growth charts</caption><input>growth chart female, 10yr, 4'11'', 65lb</input><section-title>Weight Loss</section-title><caption>analyze a weight loss regimen</caption><input>weight loss</input><input>weight loss, current weight 90 kg, weight loss 17 kg, 1500 cal/day</input><section-title>
+ <link ref="PhysicalExercise">Physical Exercise </link>
+</section-title><caption>compute calories burned in exercise</caption><input>running 30min, 6min/mi, 28yo female, 5'6&quot;, 135lb</input><caption>compute maximum and target heart rates</caption><input>heart rate 50yo male, resting hr=60bpm</input><section-title>Blood Alcohol Content</section-title><caption>compute blood alcohol content</caption><input>Am I too drunk to drive?</input><input>BAC 5 drinks, 2 hours, male, 180lb</input><section-title>
+ <link ref="Diseases">Diseases </link>
+</section-title><caption>compute estimated risk of heart disease</caption><input>heart disease risk 50yo male</input><caption>get information about a specified disease</caption><input>colon cancer</input><section-title>
+ <link ref="MortalityData">Mortality Data </link>
+</section-title><caption>compare life expectancies in several countries</caption><input>life expectancy U.S., Sweden, Japan</input><caption>compute life expectancy and survival probabilities</caption><input>life expectancy U.S. female age 30</input><caption>get data on deaths from a specific cause</caption><input>colon cancer deaths</input><section-title>
+ <link ref="MedicalTests">Medical Test Data </link>
+</section-title><caption>get information about a medical test</caption><input>C-reactive protein</input><caption>get information about a test result</caption><input>blood pressure 145/90</input><caption>get gender and age-specific information about a test result</caption><input>creatinine=0.9mg/dL, adult male</input><section-title>
+ <link ref="MedicalComputations">Medical Computations </link>
+</section-title><caption>estimate conception and due dates</caption><input>due date, last period=3/14/09</input><caption>compute mean plasma glucose from HbA1c level</caption><input>HbA1c 8%</input><section-title>
+ <link ref="Vision">Vision </link>
+</section-title><caption>get information about visual acuity</caption><input>20/50 vision</input><caption>get information about an eyeglass prescription</caption><input>OD 1.5 cyl 0.5 x 49</input><section-title>
+ <link ref="Teeth">Teeth </link>
+</section-title><caption>get information about a specified tooth</caption><input>tooth #5</input><caption>get information about a class of teeth</caption><input>canines</input><section-title>
+ <link ref="Drugs">Drugs </link>
+</section-title><caption>specify a drug by brand name</caption><input>Prozac</input><caption>specify a drug by generic name</caption><input>streptomycin</input><caption>get drug interaction information</caption><input>ibuprofen drug interactions</input><section-title>Nuclear Medicine</section-title><caption>compute biological properties of radionuclides</caption><input>effective lifetime of iodine 131</input><input>iodine-123 biological half-life</input><section-title>
+ <link ref="HealthCareStatistics">Health Care Statistics </link>
+</section-title><caption>get an overview of health care costs in a country</caption><input>Canada healthcare expenditures</input><caption>get details of health care costs</caption><input>prescription expenses in Sweden</input><caption>compare health indicators of countries</caption><input>USA vs Cuba medical personnel</input><section-title>Public Health</section-title><caption>get HIV/AIDS statistics</caption><input>United States AIDS fraction</input><input>AIDS deaths Africa</input><section-title>
+ <link ref="Hospitals">Hospitals </link>
+</section-title><caption>get information about a hospital</caption><input>Massachusetts General Hospital</input><caption>compare hospitals</caption><input>Mayo Clinic, Olmsted Medical Center</input></example>

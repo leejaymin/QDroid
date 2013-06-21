@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">Mosaicture</string>
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="logo_mosaicture">logo_mosaicture</string>
+    <string name="mosaicture_main_logo">Mosaicture Main Logo</string>
+    <string name="mosaic_viewer">Mosaic viewer</string>
+    <string name="mosaic_progress_viewer_image">Image view</string>
+    <string name="selected_image_corner">Selected image corner</string>
+    <string name="percent">%</string>
+    <string name="zero_percent">0%</string>
+    <string name="gallery_image_thumb">Gallery Image Thumb</string>
+    <string name="txv_image_selection">Select images that will be used on mosaic generation</string>
+    <string name="btn_take_a_picture">Take a Picture</string>
+    <string name="btn_select_image">Select an image</string>
+    <string name="btn_share">Share via</string>
+    <string name="popup_share_title">Share via</string>
+    <string name="menu_reset">Back</string>
+    <string name="crash_text">Oops! An error occurred. Please, restart the application and try again.</string>
+    <string name="no_mosaics_were_found">No mosaics were found.</string>
+    <string name="progress_saving">Saving</string>
+    <string name="progress_loading">Loading</string>
+    <string name="scanning_photo_library">"SCANNING PHOTO LIBRARY.
+only happens in the first execution"</string>
+    <string name="creating_mosaic">CREATING MOSAIC</string>
+    <string name="wait_mosaic_completion">Please, wait the completion of the current mosaic to start a new mosaic.</string>
+    <string name="failed_to_create_directory">failed to create directory</string>
+    <string name="external_storage_is_unmounted">External storage is not mounted READ/WRITE.</string>
+    <string name="drawing_mosaic_pieces">Drawing mosaic pieces</string>
+    <string name="minimum_of_selected_images">Select at least %d images on the settings tab before generating mosaics.</string>
+    <string name="tab_mosaicture">MOSAICTURE</string>
+    <string name="tab_gallery">GALLERY</string>
+    <string name="tab_settings">SETTINGS</string>
+    <string name="mosaic_size">Mosaic quality</string>
+    <string name="delete_confirmation">Are you sure you want to delete %s ?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="this_item">this item</string>
+    <string name="these_items">these %d items</string>
+    <string name="reading_main_image">Reading main image</string>
+    <string name="last_photos">Last photos</string>
+    <string name="progress_removing">Removing</string>
+    <string name="auth_waiting">Waiting Authentication</string>
+    <string name="access_denied">"The first execution checks for the license of your application.
+Please, connect to the internet and try again."</string>
+    <string name="scan_library_completed">Photo library scanning completed</string>
+    <string name="wait_scanning_completion">Please, wait the completion of the scanning to generate a mosaic.</string>
+    <string name="wait_scanning_completion_settings">Please, wait the completion of the scanning to save your settings.</string>
+    <string name="read_picture_error">Error reading picture file: %s</string>
+    <string name="cropp_title">Crop</string>
+    <string name="folder_preview_picture_description">Folder preview picture.</string>
+    <string name="folder_preview_selected_items_text">Selected images: %d</string>
+    <string name="folder_preview_total_items_text">Total images: %d</string>
+    <string name="folder_view_title">Image selection</string>
+    <string name="settings_not_saved">Please, save your settings to avoid information loss.</string>
+    <string name="help_menu">Help</string>
+    <string name="help_activity_title">Help</string>
+    <string name="help_file_name">help</string>
+</resources>

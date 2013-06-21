@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/set_camera_header"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="@string/set_camera_resolution" android:key="imageresolution" />
+    <com.tequnique.camerax.SeekBarPreference android:max="100" android:text=" %" android:title="@string/set_camera_quality_title" android:key="jpegquality" android:summary="@string/set_camera_quality_summary" android:defaultValue="100" android:dialogMessage="" />
+    <EditTextPreference android:title="@string/set_camera_previewtime_title" android:key="imagepreviewtime" android:summary="@string/set_camera_previewtime_summary" />
+    <CheckBoxPreference android:title="@string/set_camera_gallerypreview_title" android:key="showpreviewingallery" android:summary="@string/set_camera_gallerypreview_summary" />
+    <CheckBoxPreference android:title="@string/set_camera_capture_touch_focus_title" android:key="captureAfterTouchFocus" android:summary="@string/set_camera_capture_touch_focus_summary" />
+    <ListPreference android:entries="@array/capturebtn_labels" android:title="@string/set_camera_capturebutton_mode_title" android:key="capturebtnmode" android:summary="@string/set_camera_capturebutton_mode_summary" android:entryValues="@array/capturebtn_keys" />
+    <CheckBoxPreference android:title="@string/set_camera_exif_title" android:key="manualExifDateFix" android:summary="@string/set_camera_exif_summary" />
+</PreferenceScreen>

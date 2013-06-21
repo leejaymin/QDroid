@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Settings!</string>
+    <string name="app_name">myLocaleSMS</string>
+    <string name="checkBoxTitle">Povoľte Prekladateľského</string>
+    <string name="checkBoxSummary">Umožňuje preklad dostala SMS na súbor jazyka</string>
+    <string name="listTitle">Jazyk</string>
+    <string name="listSummary">Vyberte preferovaný jazyk, na ktoré sa SMS text musí byť prevedený</string>
+    <string name="checkBoxPopup">Povoliť Popup</string>
+    <string name="checkBoxPopupSummary">Umožňuje Popup oznámenia</string>
+    <string name="donate">Donate</string>
+    <string name="donateSummary">Predám víno pre vývojárov</string>
+    <string name="dialog_activity_text" />
+    <string name="messageNotificationTitle">Nová správa</string>
+    <string name="butSent">Poslať</string>
+    <string name="butReply">Odpovedať</string>
+    <string name="butClose">Zavrieť</string>
+    <string name="butCalendar">Calendar</string>
+    <string name="butInbox">Inbox</string>
+    <string name="butBack">Späť</string>
+    <string name="from">Od</string>
+</resources>

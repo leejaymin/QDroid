@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#fff0f0f0" android:id="@id/songfilenametext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Folder" />
+        <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="8.0dip" android:id="@id/savesettingtext" android:visibility="visible" android:layout_width="250.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/newfolderbutton" android:layout_alignParentLeft="true" />
+                <Button android:textSize="11.0dip" android:id="@id/newfolderbutton" android:layout_width="120.0dip" android:layout_height="58.0dip" android:layout_marginRight="2.0dip" android:text="New Folder" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/saverelativelayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:textColor="#ff000000" android:id="@id/songloadlist" android:background="#ff101010" android:layout_width="fill_parent" android:layout_height="fill_parent" android:choiceMode="singleChoice" android:layout_toLeftOf="@id/savebuttons" />
+            <LinearLayout android:orientation="vertical" android:id="@id/savebuttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <Button android:id="@id/deletebutton" android:visibility="invisible" android:layout_width="70.0dip" android:layout_height="58.0dip" android:layout_marginLeft="5.0dip" android:text="Delete" />
+                <Button android:textSize="11.0dip" android:id="@id/saveupbutton" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:text="/\\ Up" />
+                <Button android:textSize="11.0dip" android:id="@id/saveokbutton" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:text="Ok" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

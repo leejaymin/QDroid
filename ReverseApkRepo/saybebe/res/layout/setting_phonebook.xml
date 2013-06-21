@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="462.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="53.299988dip">
+        <RelativeLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="@color/title_text_color" android:gravity="center" android:id="@id/title_bar" android:background="@drawable/bg_title_shape" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sos_phonenumber_register" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/mainbgimg" android:layout_width="320.0dip" android:layout_height="408.59375dip">
+        <TextView android:textColor="@color/bg_comment_text_color" android:padding="13.299988dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.5999756dip" android:text="@string/sos_phonenumber_register_message" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="120.0dip" android:layout_height="26.599976dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_join_name" />
+                    <EditText android:textSize="13.0sp" android:textColor="@color/bg_comment_text_color" android:gravity="center_vertical" android:id="@id/name01" android:background="@null" android:layout_width="83.29999dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="166.6dip" android:layout_height="26.599976dip" android:layout_marginLeft="6.5999756dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" />
+                    <EditText android:textSize="13.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/phone01" android:background="@null" android:layout_width="120.0dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="12" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="120.0dip" android:layout_height="26.599976dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_join_name" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:gravity="center_vertical" android:id="@id/name02" android:background="@null" android:layout_width="83.29999dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="166.6dip" android:layout_height="26.599976dip" android:layout_marginLeft="6.5999756dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/phone02" android:background="@null" android:layout_width="120.0dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="12" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="120.0dip" android:layout_height="26.599976dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_join_name" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:gravity="center_vertical" android:id="@id/name03" android:background="@null" android:layout_width="83.29999dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="166.6dip" android:layout_height="26.599976dip" android:layout_marginLeft="6.5999756dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/phone03" android:background="@null" android:layout_width="120.0dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="12" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="120.0dip" android:layout_height="26.599976dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_join_name" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:gravity="center_vertical" android:id="@id/name04" android:background="@null" android:layout_width="83.29999dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="166.6dip" android:layout_height="26.599976dip" android:layout_marginLeft="6.5999756dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/phone04" android:background="@null" android:layout_width="120.0dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="12" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="120.0dip" android:layout_height="26.599976dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_join_name" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:gravity="center_vertical" android:id="@id/name05" android:background="@null" android:layout_width="83.29999dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="5" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_stroke_shape" android:layout_width="166.6dip" android:layout_height="26.599976dip" android:layout_marginLeft="6.5999756dip">
+                    <TextView android:textColor="@color/bg_comment_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/bg_comment_text_color" android:id="@id/phone05" android:background="@null" android:layout_width="120.0dip" android:layout_height="26.599976dip" android:singleLine="true" android:maxLength="12" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip">
+                <Button android:textSize="20.0dip" android:textColor="@color/button_text_color" android:id="@id/save" android:background="@drawable/btn_defult" android:layout_width="104.599976dip" android:layout_height="40.599976dip" android:text="@string/save" />
+                <Button android:textSize="20.0dip" android:textColor="@color/button_text_color" android:id="@id/cancle" android:background="@drawable/btn_defult" android:layout_width="104.599976dip" android:layout_height="40.599976dip" android:layout_marginLeft="33.299988dip" android:text="@string/cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 seconden</item>
+        <item>30 seconden</item>
+        <item>60 seconden</item>
+        <item>2 minuten</item>
+        <item>3 minuten</item>
+        <item>4 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>30 minuten</item>
+        <item>1 uur</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Applicatie naam</item>
+        <item>Globale schatting</item>
+        <item>Gemiddelde schatting</item>
+        <item>Huidige schatting</item>
+        <item>Real-time schatting</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>Geen verticale markering</item>
+        <item>Markering elk uur</item>
+        <item>elke 2 uur</item>
+        <item>elke 3 uur</item>
+        <item>elke 4 uur</item>
+        <item>elke 5 uur</item>
+        <item>elke 6 uur</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Verwijdert</item>
+        <item>Reeel 1</item>
+        <item>Reeel 2</item>
+        <item>"Zwart'n'Wit"</item>
+        <item>Groen/Rood 1</item>
+        <item>Groen/Rood 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>HTC stijl</item>
+        <item>Sense 3 stijl</item>
+        <item>Google stijl</item>
+        <item>Glas stijl</item>
+        <item>ICS stijl</item>
+        <item>Transparante HTC stijl</item>
+        <item>Transparante Sense 3 stijl</item>
+        <item>Transparente Google stijl</item>
+        <item>Transparante Glas stijl</item>
+        <item>Transparante ICS stijl</item>
+        <item>Verborgen HTC stijl</item>
+        <item>Verborgen Sense 3 stijl</item>
+        <item>Verborgen Google stijl</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>Verwijdert</item>
+        <item>Niets</item>
+        <item>Beschikbaar (%)</item>
+        <item>Gebruik (%/h)</item>
+        <item>Gebruik (mA)</item>
+        <item>Gebruik (mW)</item>
+        <item>Temperatuur</item>
+        <item>Spanning (mV)</item>
+        <item>Globale Schatting</item>
+        <item>Real-time schatting</item>
+        <item>Gemiddelse schatting</item>
+        <item>Huidige schatting</item>
+        <item>Sinds (niet)aangesloten</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Toon Icoon</item>
+        <item>Beschikbaar (%)</item>
+        <item>Gebruik (%/h)</item>
+        <item>Gebruik (mA)</item>
+        <item>Gebruik (mW)</item>
+        <item>Temperatuur</item>
+        <item>Spanning (mV)</item>
+        <item>Globale schatting</item>
+        <item>Huidige schatting</item>
+        <item>Gemiddelde schatting</item>
+        <item>Huidige schatting</item>
+        <item>Sinds (niet)aangesloten</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Weergegeven</item>
+        <item>Verborgen</item>
+        <item>Verwijderd</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Beschikbaar (%)</item>
+        <item>Gebruik (%/h)</item>
+        <item>Gebruik (mA)</item>
+        <item>Gebruik (mW)</item>
+        <item>Temperatuur</item>
+        <item>Spanning (mV)</item>
+        <item>Schattingen</item>
+    </string-array>
+</resources>

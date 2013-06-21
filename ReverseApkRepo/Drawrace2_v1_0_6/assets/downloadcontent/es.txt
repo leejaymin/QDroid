@@ -1,0 +1,41 @@
+DESCARGA Y JUEGA
+%% requiere aproximadamente %% MB de contenido adicional para ejecutarse. Selecciona "Descargar" para empezar. Los tiempos de descarga pueden variar dependiendo de la red y la ubicación. Se recomienda una conexión Wi-Fi.
+ACEPTAR
+MEMORIA INSUFICIENTE
+Se necesitan %% MB para tu juego. Inserta o libera espacio en tu tarjeta de memoria SD para comenzar la descarga.
+DESCARGAR
+SALIR
+NO SE HA DETECTADO NINGUNA CONEXIÓN WI-FI
+Se recomienda usar Wi-Fi para que la descarga sea más rápida. Selecciona "WI-FI" para conectar Wi-Fi y continuar.
+3G NO DISPONIBLE
+Red 3G no disponible. Se recomienda Wi-Fi para una descarga más rápida. Selecciona "WI-FI" para configurar Wi-Fi y continuar o vuelve a intentarlo cuando el servicio esté disponible.
+ERROR EN LA DESCARGA
+Se han guardado los progresos. Vuelve a conectar y vuelve a ejecutar la aplicación para continuar la descarga. (%%)
+DESCARGA INTERRUMPIDA
+REINTENTAR
+Reintento en [x, x-1...] segundos.
+WI-FI
+SÍ
+NO
+DESCARGANDO
+Descarga en progreso...
+ACTUALIZACIONES
+Comprobando actualizaciones...
+3G
+¿Seguro que quieres iniciar la descarga mediante 3G? Las descargas pueden llegar a las 2 horas y puede aplicarse la tarifa de tu proveedor.
+ACTUALIZACIONES DISPONIBLES
+%% requiere una actualización de %% MB. Selecciona "Descargar" para empezar.
+DISPOSITIVO NO COMPATIBLE
+Se produjo un error al descargar el juego. Visita www.eamobile.com/countrygate para elegir tu país y haz clic en el vínculo de asistencia al cliente.
+Pulsa la tecla ATRÁS para configurar la Wi-Fi.
+Pulsa la tecla ATRÁS para usar la 3G.
+Selecciona "3G" para usar la 3G.
+Se necesita una conexión Wi-Fi para descargar el contenido adicional. Activa el Wi-Fi e inténtalo de nuevo.
+ERROR DE SERVIDOR
+Se ha producido un error de servidor. Visita www.eamobile.com/countrygate para seleccionar tu país y pulsa en el enlace de asistencia. (%%)
+calidad de la señal
+%1 MB de %2 MB    %3 kb/s
+UPDATE CHECK
+Checking for content, please wait while contacting server...
+CONEXIÓN 3G
+Debug Test Title

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_game" style="?android:attr/listSeparatorTextViewStyle" />
+    <ListView android:id="@id/existing_players" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="2.0dip">
+        <EditText android:id="@id/new_player_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_new_player" android:capitalize="words" android:layout_weight="1.0" android:inputType="textPersonName|textCapWords" android:imeOptions="actionDone|flagNoExtractUi" />
+        <Button android:layout_gravity="right" android:id="@id/add_new_player_or_start" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableLeft="@drawable/ic_menu_play_clip_small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/existing_sessions" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/existing_sessions" style="?android:attr/listSeparatorTextViewStyle" />
+        <ListView android:id="@id/existing_sessions_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

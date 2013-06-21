@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_refresh_rates">
+        <item>10 secondi</item>
+        <item>30 secondi</item>
+        <item>60 secondi</item>
+        <item>2 minuti</item>
+        <item>3 minuti</item>
+        <item>4 minuti</item>
+        <item>5 minuti</item>
+        <item>10 minuti</item>
+        <item>30 minuti</item>
+        <item>1 ore</item>
+    </string-array>
+    <string-array name="settings_notification_text_entries">
+        <item>Nome applicazione Name</item>
+        <item>Stima globale</item>
+        <item>Stima media</item>
+        <item>Stima corrente</item>
+        <item>Stima tempo reale</item>
+    </string-array>
+    <string-array name="settings_graph_vgrid_type_entries">
+        <item>Nessuna griglia</item>
+        <item>Ogni ora</item>
+        <item>Ogni 2 ore</item>
+        <item>Ogni 3 ore</item>
+        <item>Ogni 4 ore</item>
+        <item>Ogni 5 ore</item>
+        <item>Ogni 6 ore</item>
+    </string-array>
+    <string-array name="settings_widget_icon_entries">
+        <item>Rimossa</item>
+        <item>Realistica 1</item>
+        <item>Realistica 2</item>
+        <item>Bianca e Nera</item>
+        <item>Verde/Rossa 1</item>
+        <item>Verde/Rossa 2</item>
+    </string-array>
+    <string-array name="settings_widget_bg_entries">
+        <item>Stile HTC</item>
+        <item>Stile Sense 3</item>
+        <item>Stile Google</item>
+        <item>Stile Glass</item>
+        <item>Stile ICS</item>
+        <item>Stile HTC trasparente</item>
+        <item>Stile Sense 3 trasparente</item>
+        <item>Stile Google trasparente</item>
+        <item>Stile Glass trasparente</item>
+        <item>Stile ICS trasparente</item>
+        <item>Stile HTC nascosta</item>
+        <item>Stile Sense 3 nascosta</item>
+        <item>Stile Google nascosto</item>
+    </string-array>
+    <string-array name="settings_widget_data_entries">
+        <item>Rimosso</item>
+        <item>Niente</item>
+        <item>Carica residua (%)</item>
+        <item>Utilizzo (%/h)</item>
+        <item>Utilizzo (mA)</item>
+        <item>Utilizzo (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltaggio (mV)</item>
+        <item>Stima Globale</item>
+        <item>Stima tempo reale</item>
+        <item>Stima media</item>
+        <item>Stima corrente</item>
+        <item>Dallo scollegamento</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_widget_data3_entries">
+        <item>Mostra icona</item>
+        <item>Carica residua (%)</item>
+        <item>Utilizzo (%/h)</item>
+        <item>Utilizzo (mA)</item>
+        <item>Utilizzo (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltaggio (mV)</item>
+        <item>Stima Globale</item>
+        <item>Stima tempo reale</item>
+        <item>Stima media</item>
+        <item>Stima corrente</item>
+        <item>Dallo scollegamento</item>
+        <item>Awake since unplugged</item>
+        <item>Screen-on since unplugged</item>
+    </string-array>
+    <string-array name="settings_label_entries">
+        <item>Visualizzati</item>
+        <item>Nascosti</item>
+        <item>Cancellato</item>
+    </string-array>
+    <string-array name="settings_widget_graph_entries">
+        <item>Disponibile (%)</item>
+        <item>Utilizzo (%/h)</item>
+        <item>Utilizzo (mA)</item>
+        <item>Utilizzo (mW)</item>
+        <item>Temperatura</item>
+        <item>Voltaggio (mV)</item>
+        <item>Stima</item>
+    </string-array>
+    <string-array name="settings_widget_graph_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+</resources>

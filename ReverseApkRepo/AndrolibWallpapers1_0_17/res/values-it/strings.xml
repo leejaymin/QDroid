@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Androlib Wallpapers</string>
+    <string name="whatsnew">Novità</string>
+    <string name="whatsnewhead">"Se ti piace questa applicazione non dimenticare di darle un voto nel mercato. Grazie :)
+"</string>
+    <string name="close">Chiudi</string>
+    <string name="noWallpaper">nessun wallpaper trovato per questa ricerca</string>
+    <string name="XtoYwallpapersOnZ">da %1$s a %2$s wallpaper su %3$s</string>
+    <string name="loadingLastSubmited">Caricamento degli ultimi wallpaper inviati</string>
+    <string name="loadingTopFavorites">Caricamento dei preferiti</string>
+    <string name="loadingMostInstalled">Caricamento dei wallpaper più installati</string>
+    <string name="loadingTopRated">Caricamento dei wallpaper più votati</string>
+    <string name="loadingYourFavs">Caricamento dei tuoi wallpaper preferiti</string>
+    <string name="loading10Random">Caricamento di 10 wallpaper casuali</string>
+    <string name="loading">Caricamento...</string>
+    <string name="pleaseWait">Attendere...</string>
+    <string name="menuSubmitWall">Invia wallpaper</string>
+    <string name="menuOurOthersApps">Le nostre altre applicazioni</string>
+    <string name="marketNotFound">Mercato non trovato</string>
+    <string name="menuQuit">Esci</string>
+    <string name="alertTitleQuit">"Uscire dall'applicazione?"</string>
+    <string name="alertTitleSubmit">Invia un wallpaper</string>
+    <string name="alertMessageSubmit">"Per inviare un wallpaper, accedere al sito Web http://wallpapers.androlib.com/ e fare clic su \"submit a wallaper\" sul menu principale della pagina. Seguire le istruzioni e il wallpaper sarà presto disponibile nell'applicazione."</string>
+    <string name="searchHint">Cerca wallpaper</string>
+    <string name="searchEmpty">La ricerca è vuota</string>
+    <string name="yes">Sì</string>
+    <string name="no">No</string>
+    <string name="canceled">Annullato</string>
+    <string name="wallGlobalRating">Voto globale:</string>
+    <string name="wallSubmitedBy">Inviato da:</string>
+    <string name="wallCategory">Categoria:</string>
+    <string name="wallBtnSetThisWall">Imposta il wallpaper</string>
+    <string name="wallBtnDownloadOnSD">Scarica il wallpaper sulla scheda SD</string>
+    <string name="wallAlertTitleAddFav">Aggiungere il wallpaper ai preferiti?</string>
+    <string name="wallAlertTitleRemoveFav">Rimuovere il wallpaper dai preferiti?</string>
+    <string name="errorWhileDownload">\### ERRORE ### Errore durante il download del wallpaper Riprova.</string>
+    <string name="mailSubject">Android Wallpaper - %1$s</string>
+    <string name="mailMessage">"Ecco un wallpaper per Android che potrebbe interessarti.
+
+%1$s
+%2$s
+
+Il wallpaper è disponibile qui:
+%3$s
+
+"</string>
+    <string name="mailAlertTitle">Condividi con un amico</string>
+    <string name="wallMenuSetWall">Imposta il wallpaper sul telefono</string>
+    <string name="wallMenuSendToFriend">Invia a un amico</string>
+    <string name="wallAlertTitleDownload">Scaricare il wallpaper?</string>
+    <string name="wallAlertMessageDownload">"Il wallpaper verrà salvato sulla scheda SD (sdcard/AndroLibWallpapers).
+Accertarsi che la scheda SD sia accessibile"</string>
+    <string name="DownloadingPleaseWait">Download del wallpaper, attendere...</string>
+    <string name="wallAlertTitleSetWall">Impostare il wallpaper?</string>
+    <string name="ratingDeleted">Voto eliminato</string>
+    <string name="ratingSubmited">Voto %1$s/5 inviato</string>
+    <string name="menuLanguage">Lingua</string>
+    <string name="catLastSubmit">Ultimi inviati</string>
+    <string name="catMyFav">Miei preferiti</string>
+    <string name="catTopRated">Più votati</string>
+    <string name="cat10Random">10 casuali</string>
+    <string name="catTopFav">Preferiti</string>
+    <string name="catMostInstalled">Più installati</string>
+    <string name="NoWallDownFound">Nessun wallpaper scaricato trovato</string>
+    <string name="wallBtnDeleteThisWall">Elimina il wallpaper</string>
+    <string name="loadingYourDownloaded">Caricamento dei wallpaper scaricati</string>
+    <string name="menuDownloaded">Scaricati</string>
+</resources>

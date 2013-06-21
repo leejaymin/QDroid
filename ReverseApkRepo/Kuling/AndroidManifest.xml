@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="4" android:versionName="1.1.5" package="com.cocmoc.kulinglite"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/southwest" android:debuggable="false">
+        <activity android:label="@string/set_preferences" android:name=".Preferences">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Kuling">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/kuling_provider" />
+        </receiver>
+        <receiver android:name=".Kuling">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <data android:scheme="Kuling" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/kuling_provider" />
+        </receiver>
+        <receiver android:name=".Kuling">
+            <intent-filter>
+                <action android:name="com.cocmoc.kulinglite.WIDGET_CONTROL" />
+                <data android:scheme="Kuling" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="Kuling" android:name="Graphics" />
+        <activity android:label="Lasta ner Skins" android:name="DownloadThemeActivity" />
+        <activity android:label="Information" android:name="Info" />
+        <activity android:label="Information" android:name="InfoTabs" />
+        <activity android:label="Registrera" android:name="Register" />
+        <activity android:label="Logg" android:name="Logg" />
+        <activity android:label="Välj Tema" android:name="ThemeSelector" />
+        <activity android:label="Välj Väderstation" android:name="StationSelector" />
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.paypal.android.MEP.PayPalActivity" />
+    </application>
+    <uses-sdk android:minSdkVersion="3" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+</manifest>

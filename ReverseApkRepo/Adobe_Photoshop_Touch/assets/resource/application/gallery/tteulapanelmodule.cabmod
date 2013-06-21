@@ -1,0 +1,49 @@
+<ttbasepanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="619" height="458" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="400" height="280" x="15" y="20" module="module" whiteBackground="true">
+        <button id="buttonAccept_ttblue" width="175" height="40" sizeX="right" sizeY="bottom" x="205" y="220" target="referenceDispatcher" selector="selectorAccept" title="$$$/tteulapanelmodule/button/title/Accept=Accept"/>
+        <button id="buttonDecline" width="175" height="40" sizeY="bottom" x="20" y="220" target="referenceDispatcher" selector="selectorDecline" title="$$$/tteulapanelmodule/button/title/Decline=Decline"/>
+        <text id="ttblackttboldttlarge" width="360" height="25" sizeX="scale" x="20" y="19" text="$$$/tteulapanelmodule/text/text/End User License Agreement=End User License Agreement"/>
+        <text id="textDetail_ttblack" width="360" height="75" sizeX="scale" sizeY="bottom" x="20" y="50" text="$$$/tteulapanelmodule/text/text/textDetail=textDetail" small="true"/>
+        <ttactiontext id="actionTextRequired_ttbold" width="360" height="22" sizeX="scale" visible="false" x="20" y="49" text="$$$/tteulapanelmodule/text/text/(Acceptance Required)=(Acceptance Required)" small="true" target="referenceDispatcher" enabled="false" color="16711680"/>
+        <ttactiontext id="actionTextOpp" width="360" height="22" sizeX="scale" sizeY="bottom" x="20" y="169" text="$$$/tteulapanelmodule/text/text/Online Privacy Policy=Online Privacy Policy" small="true" target="referenceDispatcher" selector="selectorOpp"/>
+        <ttactiontext id="actionTextEula" width="360" height="22" sizeX="scale" sizeY="bottom" x="20" y="129" text="$$$/tteulapanelmodule/text/text/End User License Agreement=End User License Agreement" small="true" target="referenceDispatcher" selector="selectorEula"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="ttblackttboldttlarge" refName="textTitle"/>
+      <objRef refId="textDetail_ttblack" refName="textDetail"/>
+      <objRef refId="view1" refName="panelView"/>
+      <objRef refId="buttonDecline" refName="buttonDecline"/>
+      <objRef refId="buttonAccept_ttblue" refName="buttonAccept"/>
+      <objRef refId="actionTextRequired_ttbold" refName="actionTextRequired"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttplainbutton" superClassName="button" packageName="com.adobe.ttpixel.editor.ui" codeName="TTPlainButton"/>
+    <class className="ttpickercontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTPickerControl"/>
+    <class className="ttnumberfield" superClassName="textField" packageName="com.adobe.ttpixel.ui" codeName="TTNumberField">
+      <var name="containerView" type="object" defaultValue="" codeName="iContainerView" className="TTBaseContainerView"/>
+      <var name="parentPanel" type="object" defaultValue="" codeName="iParentPanel" className="TTBasePanelModule"/>
+    </class>
+    <class className="ttactiontext" superClassName="text" packageName="" codeName="TTActionText">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="selector" type="string" defaultValue="" codeName="iSelector"/>
+      <var name="enabled" type="boolean" defaultValue="true" codeName="iEnabled"/>
+      <var name="color" type="number" defaultValue="-1" codeName="iColor"/>
+    </class>
+    <class className="tteulamessagehandler" superClassName="messageHandler" packageName="com.adobe.ttpixel.utils" codeName="TTEulaMessageHandler"/>
+  </classes>
+</ttbasepanelmodule>

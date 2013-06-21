@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>Licht (standaard)</item>
+        <item>Donker</item>
+        <item>Blauw</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>Automatisch (standaard)</item>
+        <item>Horizontaal</item>
+        <item>Verticaal</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>Standaard</item>
+        <item>Groter</item>
+        <item>Grootste</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>Beginscherm</item>
+        <item>Voorkeuren</item>
+    </string-array>
+</resources>

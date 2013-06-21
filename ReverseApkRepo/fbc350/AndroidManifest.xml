@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="350" android:versionName="3.5.0" android:installLocation="auto" package="com.spritefish.fastburstcamera"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name=".platform.FastBurstCameraApplication" android:largeHeap="true">
+        <service android:label="@string/app_name" android:name=".wallpaper.FbcWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/fbcwallpaper" />
+        </service>
+        <receiver android:name=".receivers.NewPictureReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.spritefish.fastburstcamera.newpicture" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activities.RecorderActivity" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Preferences" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activities.MainOptionsActivity" android:screenOrientation="fullSensor" android:immersive="true" />
+        <activity android:name=".activities.BurstListActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" />
+        <activity android:name=".activities.GifSetupActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" />
+        <activity android:name=".activities.MultiExposureActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activities.ViewImageActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" />
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.CommonQuestionsActivity" />
+        <activity android:name=".activities.FaceDetectActivity" />
+        <activity android:theme="@android:style/Theme.Dialog" android:name=".activities.PickRangeActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activities.GifAnimationActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:name=".activities.CollageActivity" android:process=":com.spritefish.fastburstcamera.nonrecord" android:configChanges="keyboardHidden|orientation" />
+    </application>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+    <uses-feature android:name="android.software.live_wallpaper" android:required="false" />	android.software.live_wallpaper
+<uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

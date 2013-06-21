@@ -1,0 +1,28 @@
+<ttmediamanagerpanelmodule id="mediamanagerpanelmodule" view="view1" refDispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="400" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="276" height="248" x="10" y="17" module="mediamanagerpanelmodule">
+        <view id="view2" width="276" height="248" sizeX="scale" sizeY="scale" x="0" y="0"/>
+        <imageView id="mediaManagerShadow" width="5" height="248" sizeX="right" sizeY="scale" acceptsMouse="false" x="274" y="0" image="mediaShadowClip" fit="true"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view2" refName="contentView"/>
+      <objRef refName="curtainControl"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refDispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+    </class>
+    <class className="ttmediamanagerpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.ui" codeName="TTMediaManagerPanelModule"/>
+    <class className="ttmediacurtaincontrol" superClassName="control" packageName="com.adobe.ttpixel.media" codeName="TTMediaCurtainControl"/>
+  </classes>
+</ttmediamanagerpanelmodule>

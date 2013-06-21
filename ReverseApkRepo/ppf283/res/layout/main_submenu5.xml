@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/submenu5" android:background="@drawable/main_camera_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="48.839996dip" android:layout_marginTop="2.0dip">
+            <ImageView android:id="@id/main_border_stamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_border_stamp" android:layout_centerVertical="true" />
+            <TextView android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56.75998dip" android:text="@string/main_border_stamp" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="48.179993dip" android:layout_marginTop="1.5dip">
+            <ImageView android:id="@id/main_border_texture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_border_texture" android:layout_centerVertical="true" />
+            <TextView android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56.75998dip" android:text="@string/main_border_texture" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="47.51999dip">
+            <ImageView android:id="@id/main_border_vignetting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_border_vignett" android:layout_centerVertical="true" />
+            <TextView android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56.75998dip" android:text="@string/main_border_vignetting" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="47.51999dip" android:layout_marginTop="1.0dip">
+            <ImageView android:id="@id/main_border_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_border_border" android:layout_centerVertical="true" />
+            <TextView android:typeface="monospace" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="56.75998dip" android:text="@string/main_border_border" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

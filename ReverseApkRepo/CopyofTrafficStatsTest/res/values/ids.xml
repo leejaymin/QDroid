@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="application_list">false</item>
+    <item type="id" name="loadtrafficstats">false</item>
+    <item type="id" name="socket_test_btn">false</item>
+    <item type="id" name="socket_stop_btn">false</item>
+    <item type="id" name="UidTextEidt">false</item>
+    <item type="id" name="MyUid">false</item>
+    <item type="id" name="MobileRxBytes">false</item>
+    <item type="id" name="MobileRxPackets">false</item>
+    <item type="id" name="MobileTxBytes">false</item>
+    <item type="id" name="MobileTxPackets">false</item>
+    <item type="id" name="TotalRxBytes">false</item>
+    <item type="id" name="TotalRxPackets">false</item>
+    <item type="id" name="TotalTxBytes">false</item>
+    <item type="id" name="TotalTxPackets">false</item>
+    <item type="id" name="package_name">false</item>
+    <item type="id" name="tx_traffic">false</item>
+    <item type="id" name="rx_traffic">false</item>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffcdcdcd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/imageLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/componentLayout">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wizard_language" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/componentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/linearLayout2" android:layout_alignParentRight="true">
+        <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fadeScrollbars="false">
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff000000" android:id="@id/textTextView" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Select configuration:" />
+                <Spinner android:id="@id/spinnerSpinner" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingBottom="7.0px" android:nextFocusDown="@id/nextImageButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/spacerLinearLayout" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/backImageButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?wizardCancelIconSrc" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/nextImageButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?wizardOkIconSrc" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

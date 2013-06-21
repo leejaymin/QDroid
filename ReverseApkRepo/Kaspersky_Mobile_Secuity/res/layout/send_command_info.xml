@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linearLayoutBkg" android:background="@drawable/gradient_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/LinearLayout01" android:background="@drawable/settings_header" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/ViewCaption" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginBottom="0.0dip" android:text="@id/ViewCaption" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right" android:id="@id/LinearLayout21" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/helpImg" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_info_30" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/Separator01" android:background="@drawable/main_scr_separator" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/ContentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/InfoText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@id/ViewCaption" />
+            <Button android:id="@id/Button01" android:layout_marginLeft="25.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="25.0dip" android:text="@string/str_send_command_info_send_btn" android:drawableLeft="@drawable/ico_arrow_go_20" style="@style/KMSButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

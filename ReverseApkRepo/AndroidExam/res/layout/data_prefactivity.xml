@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="나이" android:key="age" android:summary="너 도대체 몇 살이니?" android:defaultValue="19" />
+    <CheckBoxPreference android:title="성별" android:key="male" android:summary="남자면 체크" android:defaultValue="true" />
+</PreferenceScreen>

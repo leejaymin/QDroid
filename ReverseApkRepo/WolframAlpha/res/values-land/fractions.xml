@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="key_width">10.000002%p</fraction>
+    <fraction name="key_height_lower">11.000002%p</fraction>
+    <fraction name="key_height_upper">10.000002%p</fraction>
+    <fraction name="key_gap_vert">-0.25000572%p</fraction>
+    <fraction name="key_gap_horizontal">0.0%p</fraction>
+</resources>

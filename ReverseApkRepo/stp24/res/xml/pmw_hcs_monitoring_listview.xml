@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/settings_sort_by_entries" android:title="@string/prefs_title_sort_by" android:key="@string/PREFSKEY_SORTBY" android:summary="@string/prefs_summary_sort_by" android:defaultValue="@string/prefs_sort_by_default" android:entryValues="@array/settings_sort_by_values" />
+    <CheckBoxPreference android:title="@string/prefs_title_show_excluded" android:key="@string/PREFSKEY_SHOW_EXCLUDED" android:defaultValue="false" android:summaryOn="@string/prefs_show_excluded_on" android:summaryOff="@string/prefs_show_excluded_off" />
+    <CheckBoxPreference android:title="@string/prefs_title_exclude_system" android:key="@string/PREFSKEY_EXCLUDE_SYSTEM" android:defaultValue="true" android:summaryOn="@string/prefs_exclude_system_on" android:summaryOff="@string/prefs_exclude_system_off" />
+    <Preference android:title="@string/prefs_title_reset_exclusion" android:key="@string/PREFSKEY_RESET_EXCLUSION" android:summary="@string/prefs_summary_reset_exclusion" />
+</PreferenceScreen>

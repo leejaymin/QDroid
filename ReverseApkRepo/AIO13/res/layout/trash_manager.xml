@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/custom" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toolbox_item" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#fffff503" android:id="@id/install_total_app_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/toolbox_size" android:singleLine="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#fffff503" android:id="@id/trash_size_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0B" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ListView android:id="@id/processList" android:background="@drawable/ob_bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@xml/action_item_bg" android:cacheColorHint="#00000000" android:divider="@drawable/examination_pane_horizontal_separator" android:dividerHeight="1.0dip" android:layout_weight="0.0" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/titlebar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/installer_update_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/base_long_button_selector" android:padding="9.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/process_toolbar_refresh" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/install_ll" android:background="@drawable/base_long_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/communication_clean_normal" />
+            <TextView android:textColor="#ff53beea" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/toolbox_trash_clean" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/installer_select_ll" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:layout_gravity="center" android:id="@id/installer_select_cb" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:button="@drawable/checkbox" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

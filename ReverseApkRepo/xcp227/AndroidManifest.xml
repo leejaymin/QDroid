@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="52" android:versionName="2.27" package="com.tequnique.camerax"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" required="false" />
+    <application android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:label="@string/app_name" android:icon="@drawable/cameraproicon" android:debuggable="false">
+        <receiver android:name="com.tequnique.camerax.CameraButtonReceiver" android:enabled="true" android:exported="true">
+            <intent-filter android:priority="10000">
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tequnique.camerax.MediaButtonControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:name=".CameraProActivity" android:taskAffinity="android.task.camera" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <action android:name="android.intent.action.PICK" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsViewGeneralActivity" />
+        <activity android:name=".SettingsViewTabActivity" />
+        <activity android:name="SettingsViewAntiShakeActivity" />
+        <activity android:name="SettingsViewBracketingActivity" />
+        <activity android:name="SettingsViewBurstActivity" />
+        <activity android:name="SettingsViewCameraActivity" />
+        <activity android:name="SettingsViewSelfTimerActivity" />
+        <activity android:name="SettingsViewTimeLapseActivity" />
+        <activity android:name="SettingsViewVideoActivity" />
+        <activity android:name="SettingsViewSaveActivity" />
+        <activity android:name=".FileDialog" />
+        <activity android:name="WebuploaderActivity" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:name="InfoViewActivity" />
+        <activity android:name="com.tequnique.camerax.ImagePreviewActivity" android:screenOrientation="landscape" />
+    </application>
+</manifest>

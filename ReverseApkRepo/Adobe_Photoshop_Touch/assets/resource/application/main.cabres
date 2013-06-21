@@ -1,0 +1,704 @@
+<resources>
+	<resource>
+		<xmlResource id="application" url="application.cabapp" />
+		<xmlResource id="mainPrefs" url="main.cabprf" />
+		
+		<stringTableResource id="strings" url="LANGUAGE/application.zstrings" />
+
+		<moduleResource id="gallery" moduleType="none" autoLoad="false" url="gallery/ttgallery.cabmod" />
+		<moduleResource id="galleryListPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerylistpanelmodule.cabmod" />
+		<moduleResource id="galleryInfoDialogPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryinfodialogpanelmodule.cabmod" />
+		<moduleResource id="galleryPublishDialogPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerypublishdialogpanelmodule.cabmod" />
+		<moduleResource id="galleryNewDocumentPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerynewdocumentpanelmodule.cabmod" />
+		<moduleResource id="gallerySettingsPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerysettingspanelmodule.cabmod" />
+		<moduleResource id="omniturePanelModule" moduleType="none" autoLoad="false" url="gallery/ttomniturepanelmodule.cabmod" />
+		<moduleResource id="eulaPanelModule" moduleType="none" autoLoad="false" url="gallery/tteulapanelmodule.cabmod" />
+		<moduleResource id="licenseFailedPanelModule" moduleType="none" autoLoad="false" url="gallery/ttlicensefailedpanelmodule.cabmod" />
+		<moduleResource id="galleryPublishPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerypublishpanelmodule.cabmod" />
+		<moduleResource id="galleryEditTextPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryedittextpanelmodule.cabmod" />
+		<moduleResource id="galleryCloseModelPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryclosemodelpanelmodule.cabmod" />
+		<moduleResource id="galleryCloseNewlyModelPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryclosenewlymodelpanelmodule.cabmod" />
+		<imageResource id="galleryImage" url="gallery/default.jpg" />
+		<moduleResource id="galleryTutorialResourceHandler" moduleType="none" autoLoad="false" url="gallery/ttgallerytutorialresourcehandler.cabmod" />
+		<moduleResource id="gallerySyncEngineResourceHandler" moduleType="none" autoLoad="false" url="gallery/ttgallerysyncengineresourcehandler.cabmod" />
+		<moduleResource id="gallerySyncPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerysyncpanelmodule.cabmod" />
+		<moduleResource id="galleryFolderManagementPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryfoldermanagementpanelmodule.cabmod" />
+		<moduleResource id="galleryReplacePanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryreplacepanelmodule.cabmod" />
+		<moduleResource id="galleryDeleteFolderPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerydeletefolderpanelmodule.cabmod" />
+		<moduleResource id="galleryAutoSyncPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryautosyncpanelmodule.cabmod" />
+		<moduleResource id="galleryHttpdPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgalleryhttpdpanelmodule.cabmod" />
+		<moduleResource id="galleryCloudPanelModule" moduleType="none" autoLoad="false" url="gallery/ttgallerycloudpanelmodule.cabmod" />
+
+		<moduleResource id="galleryMoveFileViewController" moduleType="none" autoLoad="false" url="gallery/ttgallerymovefileviewcontroller.cabmod" />
+		<moduleResource id="galleryFolderViewController" moduleType="none" autoLoad="false" url="gallery/ttgalleryfolderviewcontroller.cabmod" />
+		
+		<moduleResource id="alertPanelModule" moduleType="none" autoLoad="false" url="components/ttalertpanelmodule.cabmod" />
+		
+		<moduleResource id="serviceClientManager" moduleType="none" autoLoad="true" url="media/ttserviceclientmanager.cabmod" />
+		<moduleResource id="mediaCollector" moduleType="none" autoLoad="false" url="media/ttmediacollector.cabmod" />
+		<moduleResource id="mediaPublish" moduleType="none" autoLoad="true" url="media/ttpublish.cabmod" />
+		<moduleResource id="mediaPublishManager" moduleType="none" autoLoad="false" url="media/ttmediapublishmanager.cabmod" />
+		<moduleResource id="mediaManager" moduleType="none" autoLoad="false" url="media/ttmediamanager.cabmod" />
+		<moduleResource id="mediaHandler" moduleType="none" autoLoad="true" url="media/ttmediahandler.cabmod" />
+		<moduleResource id="mediaLoginPanelModule" moduleType="none" autoLoad="false" url="media/ttmedialoginpanelmodule.cabmod" />
+		<moduleResource id="mediaGeneralLoginPanelModule" moduleType="none" autoLoad="false" url="media/ttmediageneralloginpanelmodule.cabmod" />
+		<moduleResource id="googleMediaHandler" moduleType="none" autoLoad="false" url="media/ttgooglemediahandler.cabmod" />
+		<moduleResource id="cameraRollMediaHandler" moduleType="none" autoLoad="false" url="media/ttcamerarollmediahandler.cabmod" />
+		<moduleResource id="commonMediaHandler" moduleType="none" autoLoad="false" url="media/ttcommonmediahandler.cabmod" />
+		<moduleResource id="commentFacebookModule" moduleType="none" autoLoad="false" url="media/ttcommentfacebookmodule.cabmod" />
+		<moduleResource id="commentEditTextPanelModule" moduleType="none" autoLoad="false" url="media/ttcommenttexteditpanelmodule.cabmod" />
+		<moduleResource id="facebookLoginPanelModule" moduleType="none" autoLoad="false" url="media/ttfacebookloginpanelmodule.cabmod" />
+		<moduleResource id="publishFacebookModule" moduleType="none" autoLoad="false" url="media/ttpublishfacebookmodule.cabmod" />
+		<moduleResource id="publishPhotoshopModule" moduleType="none" autoLoad="false" url="media/ttpublishphotoshopmodule.cabmod" />
+		<moduleResource id="publishReplacePanelModule" moduleType="none" autoLoad="false" url="media/ttpublishreplacepanelmodule.cabmod" />
+		<moduleResource id="cameraMediaHandler" moduleType="none" autoLoad="false" url="media/ttcameramediahandler.cabmod" />
+		<moduleResource id="mediaFacebookSettingsPanelModule" moduleType="none" autoLoad="false" url="media/ttmediafacebooksettingspanelmodule.cabmod" />
+		<moduleResource id="searchColorPanelModule" moduleType="none" autoLoad="false" url="media/ttsearchcolorpanelmodule.cabmod" />
+		<moduleResource id="usageRightsPanelModule" moduleType="none" autoLoad="false" url="media/ttusagerightspanelmodule.cabmod" />
+		<moduleResource id="mediaMarketingModule" moduleType="none" autoLoad="false" url="media/ttmediamarketingmodule.cabmod" />
+		
+		<moduleResource id="mediaNavigationController" moduleType="none" autoLoad="false" url="media/ttmedianavigationcontroller.cabmod" />
+		<moduleResource id="mediaFacebookViewController" moduleType="none" autoLoad="false" url="media/ttfacebookviewcontroller.cabmod" />
+		
+		<moduleResource id="converterManager" moduleType="none" autoLoad="false" url="convert/ttconvertermanager.cabmod" />
+		<xmlResource id="conversionPaths" url="convert/conversionPaths.xml" />
+		
+		<moduleResource id="model" moduleType="none" autoLoad="false" url="editor/ttmodel.cabmod" />
+		<moduleResource id="toolManager" moduleType="none" autoLoad="false" url="editor/tttoolmanager.cabmod" />
+		<moduleResource id="imageProcessorManager" moduleType="none" autoLoad="false" url="editor/ttimageprocessormanager.cabmod" />
+
+		<moduleResource id="toolsPanelModule" moduleType="none" autoLoad="false" url="editor/panels/tttoolspanelmodule.cabmod" />
+		<moduleResource id="marqueeTypesPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttmarqueetypespanelmodule.cabmod" />
+		<moduleResource id="lassoTypesPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttlassotypespanelmodule.cabmod" />
+		<moduleResource id="layerInfoPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttlayerinfopanelmodule.cabmod" />
+		<moduleResource id="sliderPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttsliderpanelmodule.cabmod" />
+		<moduleResource id="brushPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttbrushpanelmodule.cabmod" />
+		<moduleResource id="simpleBrushPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttsimplebrushpanelmodule.cabmod" />
+		<moduleResource id="addLayerModule" moduleType="none" autoLoad="false" url="editor/panels/ttaddlayerpanelmodule.cabmod" />
+		<moduleResource id="wheelButtonPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttwheelbuttonpanelmodule.cabmod" />
+		<moduleResource id="toolButtonPanelModule" moduleType="none" autoLoad="false" url="editor/panels/tttoolbuttonpanelmodule.cabmod" />
+		<moduleResource id="toolButtonSubPanelModule" moduleType="none" autoLoad="false" url="editor/panels/tttoolbuttonsubpanelmodule.cabmod" />
+		<moduleResource id="resizeDocumentPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttresizedocumentpanelmodule.cabmod" />
+		<moduleResource id="rotateDocumentPanelModule" moduleType="none" autoLoad="false" url="editor/panels/ttrotateimagepanelmodule.cabmod" />
+		
+		<moduleResource id="toolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/toolsettings.cabmod" />
+		<moduleResource id="selectionToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttselectiontoolsettings.cabmod" />
+		<moduleResource id="shapeSelectionToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttshapeselectiontoolsettings.cabmod" />
+		<moduleResource id="rectShapeSelectionToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttrectshapeselectiontoolsettings.cabmod" />
+		<moduleResource id="magicWandToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttmagicwandtoolsettings.cabmod" />
+		<moduleResource id="brushSelectionToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttbrushselectiontoolsettings.cabmod" />
+		<moduleResource id="scribbleSelectionToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttscribbleselectiontoolsettings.cabmod" />
+		<moduleResource id="brushToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttbrushtoolsettings.cabmod" />
+		<moduleResource id="paintToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttpainttoolsettings.cabmod" />
+		<moduleResource id="effectPaintToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/tteffectpainttoolsettings.cabmod" />
+		<moduleResource id="cloneToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttclonetoolsettings.cabmod" />
+		<moduleResource id="blurToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttblurtoolsettings.cabmod" />
+		<moduleResource id="smudgeToolSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttsmudgetoolsettings.cabmod" />
+		<moduleResource id="stylusSettings" moduleType="none" autoLoad="false" url="editor/toolsettings/ttstylussettings.cabmod" />
+
+		<moduleResource id="colorPanelModule" moduleType="none" autoLoad="false" url="components/colordialog.cabmod" />
+		<moduleResource id="htmlModule" moduleType="none" autoLoad="false" url="components/htmlview.cabmod" />
+		<moduleResource id="baseListPanelModule" moduleType="none" autoLoad="false" url="components/ttbaselistpanelmodule.cabmod" />
+		<moduleResource id="columnListPanelModule" moduleType="none" autoLoad="false" url="components/ttcolumnlistpanelmodule.cabmod" />
+		<moduleResource id="effectsListPanelModule" moduleType="none" autoLoad="false" url="components/tteffectslistpanelmodule.cabmod" />
+
+		<moduleResource id="contrastBrightnessModule" moduleType="none" autoLoad="false" url="components/contrastbrightnessmodule.cabmod" />
+		<moduleResource id="colorBalanceModule" moduleType="none" autoLoad="false" url="components/colorbalancemodule.cabmod" />
+		<moduleResource id="toneCurveModule" moduleType="none" autoLoad="false" url="components/tonecurvemodule.cabmod" />
+		<moduleResource id="intensityModule" moduleType="none" autoLoad="false" url="components/filterintensitymodule.cabmod" />
+		<moduleResource id="levelsModule" moduleType="none" autoLoad="false" url="components/levelsmodule.cabmod" />
+		<moduleResource id="curvesModule" moduleType="none" autoLoad="false" url="components/curvesmodule.cabmod" />
+		<moduleResource id="replaceColorModule" moduleType="none" autoLoad="false" url="components/replacecolormodule.cabmod" />
+		<moduleResource id="transformModule" moduleType="none" autoLoad="false" url="components/transformmodule.cabmod" />
+		<moduleResource id="cropModule" moduleType="none" autoLoad="false" url="components/cropmodule.cabmod" />
+		<moduleResource id="gradientModule" moduleType="none" autoLoad="false" url="components/gradientmodule.cabmod" />
+		<moduleResource id="opacityPanelModule" moduleType="none" autoLoad="false" url="components/opacitypanelmodule.cabmod" />
+		<moduleResource id="mediaManagerPanelModule" moduleType="none" autoLoad="false" url="components/ttmediamanagerpanelmodule.cabmod" />
+		<moduleResource id="featherSelectionModule" moduleType="none" autoLoad="false" url="components/ttfeatherselectionmodule.cabmod" />
+		<moduleResource id="selectionTransformModule" moduleType="none" autoLoad="false" url="components/selectiontransformmodule.cabmod" />
+		<moduleResource id="sizeSelectionModule" moduleType="none" autoLoad="false" url="components/ttsizeselectionmodule.cabmod" />
+		<moduleResource id="mediaPublishManagerPanelModule" moduleType="none" autoLoad="false" url="components/ttmediapublishmanagerpanelmodule.cabmod" />
+		<moduleResource id="numberKeyboardModule" moduleType="none" autoLoad="false" url="components/numberkeyboardmodule.cabmod" />
+		<moduleResource id="refineEdgeModule" moduleType="none" autoLoad="false" url="components/ttrefineedgemodule.cabmod" />
+		<moduleResource id="warpModule" moduleType="none" autoLoad="false" url="components/ttwarpmodule.cabmod" />
+
+		<moduleResource id="dropshadowModule" moduleType="none" autoLoad="false" url="components/dropshadowmodule.cabmod" />
+		<moduleResource id="glowModule" moduleType="none" autoLoad="false" url="components/glowmodule.cabmod" />
+		<moduleResource id="bevelModule" moduleType="none" autoLoad="false" url="components/bevelmodule.cabmod" />
+		<moduleResource id="directionalBlurModule" moduleType="none" autoLoad="false" url="components/directionalblurmodule.cabmod" />
+		<moduleResource id="graphicPenModule" moduleType="none" autoLoad="false" url="components/graphicpenmodule.cabmod" />
+		<moduleResource id="multiGradientMapModule" moduleType="none" autoLoad="false" url="components/multigradientmapmodule.cabmod" />
+		<moduleResource id="oldSepiaModule" moduleType="none" autoLoad="false" url="components/oldsepiamodule.cabmod" />
+		<moduleResource id="thresholdModule" moduleType="none" autoLoad="false" url="components/thresholdmodule.cabmod" />
+		<moduleResource id="posterizeModule" moduleType="none" autoLoad="false" url="components/posterizemodule.cabmod" />
+		<moduleResource id="glassModule" moduleType="none" autoLoad="false" url="components/glassmodule.cabmod" />
+		<moduleResource id="shaderIntensityModule" moduleType="none" autoLoad="false" url="components/shaderintensitymodule.cabmod" />
+		<moduleResource id="charcoalModule" moduleType="none" autoLoad="false" url="components/charcoalmodule.cabmod" />
+		<moduleResource id="grainyNightModule" moduleType="none" autoLoad="false" url="components/grainynightmodule.cabmod" />
+		<moduleResource id="tintModule" moduleType="none" autoLoad="false" url="components/tintmodule.cabmod" />
+		<moduleResource id="dropsModule" moduleType="none" autoLoad="false" url="components/dropsmodule.cabmod" />
+		<moduleResource id="comicModule" moduleType="none" autoLoad="false" url="components/comicmodule.cabmod" />
+		<moduleResource id="scratchModule" moduleType="none" autoLoad="false" url="components/scratchmodule.cabmod" />
+		<moduleResource id="edgesModule" moduleType="none" autoLoad="false" url="components/edgesmodule.cabmod" />
+		<moduleResource id="pencilModule" moduleType="none" autoLoad="false" url="components/pencilmodule.cabmod" />
+		<moduleResource id="acrylicModule" moduleType="none" autoLoad="false" url="components/acrylicmodule.cabmod" />
+		<moduleResource id="lightingModule" moduleType="none" autoLoad="false" url="components/lightingmodule.cabmod" />
+		<moduleResource id="photocopyModule" moduleType="none" autoLoad="false" url="components/photocopymodule.cabmod" />
+		<moduleResource id="aquarellModule" moduleType="none" autoLoad="false" url="components/aquarellmodule.cabmod" />
+		<moduleResource id="softSkinModule" moduleType="none" autoLoad="false" url="components/softskinmodule.cabmod" />
+		<moduleResource id="collageModule" moduleType="none" autoLoad="false" url="components/collagemodule.cabmod" />
+		<moduleResource id="colorizeModule" moduleType="none" autoLoad="false" url="components/colorizemodule.cabmod" />
+
+		<moduleResource id="renderModule" moduleType="none" autoLoad="false" url="components/rendermodule.cabmod" />
+
+		<moduleResource id="cameraModule" moduleType="none" autoLoad="false" url="components/cameramodule.cabmod" />
+		
+		<moduleResource id="textPanel" moduleType="none" autoLoad="false" url="editor/text/tttextpanelmodule.cabmod" />
+
+		<moduleResource id="tutorial" moduleType="none" autoLoad="false" url="tutorial/tutorial.cabmod" />
+		<moduleResource id="tutorialInfoPanelModule" moduleType="none" autoLoad="false" url="tutorial/tutorialinfopanelmodule.cabmod" />
+		<moduleResource id="tutorialClosePanelModule" moduleType="none" autoLoad="false" url="tutorial/tttutorialclosepanelmodule.cabmod" />
+		<xmlResource id="tutorialidmap" url="tutorial/tutorialidmap.xml" />
+		<xmlResource id="tutorialtoc" url="tutorial/tutorialtoc.xml" />
+		
+		<moduleResource id="coachMarks" moduleType="none" autoLoad="false" url="tutorial/coachMarks.cabmod" />
+		<xmlResource id="coachMarksModel" url="tutorial/coachmarks/model.xml" />
+		<xmlResource id="coachMarksGallery" url="tutorial/coachmarks/gallery.xml" />
+		<xmlResource id="coachMarksAddImage" url="tutorial/coachmarks/addimage.xml" />
+		<xmlResource id="coachMarksScribbleSelectToolKeep" url="tutorial/coachmarks/scribbleselecttoolkeep.xml" />
+		<xmlResource id="coachMarksScribbleSelectToolRemove" url="tutorial/coachmarks/scribbleselecttoolremove.xml" />
+		<xmlResource id="coachMarksScribbleSelectToolRefine" url="tutorial/coachmarks/scribbleselecttoolrefine.xml" />
+		<xmlResource id="coachMarksAddImageFromEditor" url="tutorial/coachmarks/addimagefromeditor.xml" />
+		<xmlResource id="coachMarksUploadToCloud" url="tutorial/coachmarks/uploadToCloud.xml" />
+		<xmlResource id="coachMarksGalleryEmptyFolder" url="tutorial/coachmarks/galleryEmptyFolder.xml" />
+		<xmlResource id="coachMarksMoveFile" url="tutorial/coachmarks/moveFile.xml" />
+		<xmlResource id="coachMarksMoveFileSameFolder" url="tutorial/coachmarks/moveFileSameFolder.xml" />
+		<xmlResource id="coachMarksAddTextDroid" url="tutorial/coachmarks/addTextDroid.xml" />
+		<xmlResource id="coachMarksAddTextIOS" url="tutorial/coachmarks/addTextIOS.xml" />
+		<xmlResource id="coachMarksHiddenLayerError" url="tutorial/coachmarks/hiddenlayererror.xml" />
+		<xmlResource id="coachMarksFillNotVisibleError" url="tutorial/coachmarks/fillnotvisibleerror.xml" />
+		<xmlResource id="coachMarksInvisibleSelectionError" url="tutorial/coachmarks/invisibleselectionerror.xml" />
+		
+		<moduleResource id="welcomePanelModule" moduleType="none" autoLoad="false" url="tutorial/ttwelcomepanelmodule.cabmod" />
+		
+		<xmlResource id="gradients" url="gradients.xml" />
+		<xmlResource id="gradientmasks" url="gradientmasks.xml" />
+		<xmlResource id="colorswatches" url="colorswatches.xml" />
+		<xmlResource id="fxbrushing" url="fxbrushing.xml" />
+		
+		<shaderSource id="vertexShader" url="filters/vertex.vsh" />
+		<shaderSource id="transformVertexShader" url="filters/vertexTrans.vsh" />
+		<shaderSource id="saturationShader" url="filters/saturation.fs" />
+		<shaderSource id="temperatureShader" url="filters/temperature.fs" />
+		<shaderSource id="toneCurveShader" url="filters/tonecurve.fs" />
+		<shaderSource id="colorBalanceShader" url="filters/colorbalance.fs" />
+		<shaderSource id="contrastBrightnessShader" url="filters/contrastbrightness.fs" />
+		<shaderSource id="dodgeBurnShader" url="filters/dodgeBurn.fs" />
+		<shaderSource id="aquireShader" url="filters/aquire.fs" />
+		<shaderSource id="autoFixShader" url="filters/autofix.fs" />
+		<shaderSource id="replaceColorShader" url="filters/replacecolor.fs" />
+		<shaderSource id="medianShader" url="filters/median.fs" />
+		<shaderSource id="aquireMatchColorShader" url="filters/colormatchaquire.fs" />
+		<shaderSource id="matchColorShader" url="filters/colormatch.fs" />
+		<shaderSource id="sizeShader" url="filters/size.fs" />
+		<shaderSource id="directionalBlurShader" url="filters/directblur.fs" />
+		<shaderSource id="sharpenShader" url="filters/sharpen.fs" />
+		<shaderSource id="oldSepiaShader" url="filters/oldsepia.fs" />
+		<shaderSource id="graphicPenShader" url="filters/graphicpen.fs" />
+		<shaderSource id="halftoneShader" url="filters/halftone.fs" />
+		<shaderSource id="multiGradientMapShader" url="filters/multigradientmap.fs" />
+		<shaderSource id="thresholdShader" url="filters/threshold.fs" />
+
+		<shaderSource id="thresholdAGALShader" url="filters/thresholdAGAL.fs" />
+
+		<shaderSource id="posterizeShader" url="filters/posterize.fs" />
+		<shaderSource id="glassShader" url="filters/glass.fs" />
+		<shaderSource id="sleepyHollowShader" url="filters/sleepyhollow.fs" />
+		<shaderSource id="sunnyAfternoonShader" url="filters/sunnyAfternoon.fs" />
+		<shaderSource id="oldPhotoCopyShader" url="filters/oldphotocopy.fs" />
+		<shaderSource id="charcoalShader" url="filters/charcoal.fs" />
+		<shaderSource id="pencilShader" url="filters/pencil.fs" />
+		<shaderSource id="monitorShader" url="filters/monitor.fs" />
+		<shaderSource id="grainyNightShader" url="filters/grainynight.fs" />
+		<shaderSource id="moonlightShader" url="filters/moonlight.fs" />
+		<shaderSource id="tintShader" url="filters/tint.fs" />
+		<shaderSource id="comicShader" url="filters/comic.fs" />
+		<shaderSource id="scratchesShader" url="filters/scratches.fs" />
+		<shaderSource id="selStrokeShader" url="filters/selstroke.fs" />
+		<shaderSource id="directionShader" url="filters/direction.fs" />
+		<shaderSource id="lightingShader" url="filters/lighting.fs" />
+		<shaderSource id="aquarellShader" url="filters/aquarell.fs" />
+		<shaderSource id="paletteShader" url="filters/palette.fs" />
+		<shaderSource id="hdrLookShader" url="filters/hdrlook.fs" />
+		<shaderSource id="softLightShader" url="filters/softlight.fs" />
+		<shaderSource id="softSkinShader" url="filters/softskin.fs" />
+		<shaderSource id="colorizeShader" url="filters/colorize.fs" />
+		<shaderSource id="multiplyParticleShader" url="filters/multiplyparticle.fs" />
+
+		<shaderSource id="brushShape" url="filters/brushShape.fs" />
+		
+		<textResource id="aboutText" url="about.txt" />
+
+		<xmlResource id="fontlist" url="textfonts/fontList.xml" />
+		<ttbinaryresource id="MyriadPro-Font" url="textfonts/MyriadPro.swf" />
+		<ttbinaryresource id="MyriadProBld-Font" url="textfonts/MyriadProBld.swf" />
+		<ttbinaryresource id="MyriadProObl-Font" url="textfonts/MyriadProObl.swf" />
+		<ttbinaryresource id="MyriadProBldObl-Font" url="textfonts/MyriadProBldObl.swf" />
+		<ttbinaryresource id="FloodStd-Font" url="textfonts/FloodStd.swf" />
+		<ttbinaryresource id="BansheeStd-Font" url="textfonts/BansheeStd.swf" />
+		<ttbinaryresource id="CottonwoodStdXBd-Font" url="textfonts/CottonwoodStdXBd.swf" />
+		<ttbinaryresource id="FusakaStd-Font" url="textfonts/FusakaStd.swf" />
+		<ttbinaryresource id="JuniperStd-Font" url="textfonts/JuniperStd.swf" />
+		<ttbinaryresource id="MadroneStdXBd-Font" url="textfonts/MadroneStdXBd.swf" />
+		<ttbinaryresource id="PostinoStd-Font" url="textfonts/PostinoStd.swf" />
+		<ttbinaryresource id="ShurikenBoyStdXBd-Font" url="textfonts/ShurikenBoyStdXBd.swf" />
+		<ttbinaryresource id="StrumpfStdBld-Font" url="textfonts/StrumpfStdBld.swf" />
+		<imageResource id="MyriadPro-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_MyriadPro" />
+		<imageResource id="MyriadProBld-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_MyriadProBld" />
+		<imageResource id="MyriadProObl-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_MyriadProObl" />
+		<imageResource id="MyriadProBldObl-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_MyriadProBldObl" />
+		<imageResource id="FloodStd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_FloodStd" />
+		<imageResource id="BansheeStd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_BansheeStd" />
+		<imageResource id="CottonwoodStdXBd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_CottonwoodStdXBd" />
+		<imageResource id="FusakaStd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_FusakaStd" />
+		<imageResource id="JuniperStd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_JuniperStd" />
+		<imageResource id="MadroneStdXBd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_MadroneStdXBd" />
+		<imageResource id="PostinoStd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_PostinoStd" />
+		<imageResource id="ShurikenBoyStdXBd-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_ShurikenBoyStdXBd" />
+		<imageResource id="StrumpfStdBld-Font-img" className="com.adobe.ttpixel.swf.TTFontPreview_StrumpfStdBld" />
+
+		<moduleResource id="debugConsole" moduleType="none" autoLoad="false" url="components/ttdebugpanelmodule.cabmod" />
+	</resource>
+	
+	<resource description="THEME/previewimages.fla">
+		<imageResource id="curvePreviewImage" className="com.adobe.ttpixel.swf.TTCurvesPreview" />
+		<imageResource id="levelPreviewImage" className="com.adobe.ttpixel.swf.TTLevelsPreview" />
+		<imageResource id="brightnessPreviewImage" className="com.adobe.ttpixel.swf.TTContrastBrightnessPreview" />
+		<imageResource id="colorBalancePreviewImage" className="com.adobe.ttpixel.swf.TTColorbalancePreview" />
+		<imageResource id="replaceColorPreviewImage" className="com.adobe.ttpixel.swf.TTReplaceColorPreview" />
+		<imageResource id="saturationPreviewImage" className="com.adobe.ttpixel.swf.TTSaturationPreview" />
+		<imageResource id="shadowHilitePreviewImage" className="com.adobe.ttpixel.swf.TTShadowHilitePreview" />
+		<imageResource id="temperaturePreviewImage" className="com.adobe.ttpixel.swf.TTTemperaturePreview" />
+		<imageResource id="autofixPreviewImage" className="com.adobe.ttpixel.swf.TTAutoFixPreview" />
+		<imageResource id="blackNWhitePreviewImage" className="com.adobe.ttpixel.swf.TTBlackNWhitePreview" />
+		<imageResource id="invertPreviewImage" className="com.adobe.ttpixel.swf.TTInvertPreview" />
+		<imageResource id="denoisePreviewImage" className="com.adobe.ttpixel.swf.TTDenoisePreview" />
+
+		<imageResource id="matchColorPreviewImage" className="com.adobe.ttpixel.swf.TTMatchColorPreview" />
+
+		<imageResource id="fxDodgeBurnPreviewImage" className="com.adobe.ttpixel.swf.TTFXDodgeBurnPreview" />
+		<imageResource id="fxDropshadowPreviewImage" className="com.adobe.ttpixel.swf.TTFXDropShadowPreview" />
+		<imageResource id="fxGlowPreviewImage" className="com.adobe.ttpixel.swf.TTFXGlowPreview" />
+		<imageResource id="fxBevelPreviewImage" className="com.adobe.ttpixel.swf.TTFXBevelPreview" />
+		<imageResource id="fxGaussianBlurPreviewImage" className="com.adobe.ttpixel.swf.TTFXGaussianBlurPreview" />
+		<imageResource id="fxDirectionalBlurPreviewImage" className="com.adobe.ttpixel.swf.TTFXDirectionalBlurPreview" />
+		<imageResource id="fxSharpenPreviewImage" className="com.adobe.ttpixel.swf.TTFXSharpenPreview" />
+		<imageResource id="fxReflectionImage" className="com.adobe.ttpixel.swf.TTFXReflectionPreview" />
+
+		<imageResource id="fxShredImage" className="com.adobe.ttpixel.swf.TTFXShredPreview" />
+		<imageResource id="fxColorizeImage" className="com.adobe.ttpixel.swf.TTFXColorizePreview" />
+
+		<imageResource id="fxHalftoneImage" className="com.adobe.ttpixel.swf.TTFXHalftonePreview" />
+		<imageResource id="fxGraphicPenImage" className="com.adobe.ttpixel.swf.TTFXGraphicPenPreview" />
+		<imageResource id="fxMultiGradientMapImage" className="com.adobe.ttpixel.swf.TTFXMultiGradientMapPreview" />
+		<imageResource id="fxOldSepiaImage" className="com.adobe.ttpixel.swf.TTFXOldSepiaPreview" />
+		<imageResource id="fxMonitorImage" className="com.adobe.ttpixel.swf.TTFXMonitorPreview" />
+		
+		<imageResource id="fxGlassImage" className="com.adobe.ttpixel.swf.TTFXGlassPreview" />
+		<imageResource id="fxPosterizeColorImage" className="com.adobe.ttpixel.swf.TTFXPosterizeColorPreview" />
+		<imageResource id="fxThresholdImage" className="com.adobe.ttpixel.swf.TTFXThresholdPreview" />
+		<imageResource id="fxHollowImage" className="com.adobe.ttpixel.swf.TTFXHollowPreview" />
+		<imageResource id="fxSunnyImage" className="com.adobe.ttpixel.swf.TTFXSunnyPreview" />
+		<imageResource id="fxOldPhotoImage" className="com.adobe.ttpixel.swf.TTFXOldPhotoPreview" />
+		<imageResource id="fxCharcoalImage" className="com.adobe.ttpixel.swf.TTFXCharcoalPreview" />
+		<imageResource id="fxPencilImage" className="com.adobe.ttpixel.swf.TTFXPencilPreview" />
+		<imageResource id="fxGrainyNightImage" className="com.adobe.ttpixel.swf.TTFXGrainyNightPreview" />
+		<imageResource id="fxMoonlightImage" className="com.adobe.ttpixel.swf.TTFXMoonlightPreview" />
+		<imageResource id="fxTintImage" className="com.adobe.ttpixel.swf.TTFXTintPreview" />
+		<imageResource id="fxDropsImage" className="com.adobe.ttpixel.swf.TTFXDropsPreview" />
+		<imageResource id="fxComicImage" className="com.adobe.ttpixel.swf.TTFXComicPreview" />
+		<imageResource id="fxScratchesImage" className="com.adobe.ttpixel.swf.TTFXScratchesPreview" />
+		<imageResource id="fxEdgesImage" className="com.adobe.ttpixel.swf.TTFXEdgesPreview" />
+		<imageResource id="fxAcrylicImage" className="com.adobe.ttpixel.swf.TTFXAcrylPreview" />
+		<imageResource id="fxWatercolorImage" className="com.adobe.ttpixel.swf.TTFXWatercolorPreview" />
+		<imageResource id="fxLightingImage" className="com.adobe.ttpixel.swf.TTFXLightingPreview" />
+		
+		<imageResource id="fxHDRImage" className="com.adobe.ttpixel.swf.TTFXHDRPreview" />
+		<imageResource id="fxSoftlightImage" className="com.adobe.ttpixel.swf.TTFXSoftlightPreview" />
+		<imageResource id="fxSkinImage" className="com.adobe.ttpixel.swf.TTFXSkinPreview" />
+
+			<imageResource id="dirtMap" className="com.adobe.ttpixel.swf.TTDirtMap" />
+		<imageResource id="scratchesMap" className="com.adobe.ttpixel.swf.TTScratchMap" />
+		<imageResource id="charcoalMap" className="com.adobe.ttpixel.swf.TTCharcoalMap" />
+		<imageResource id="dropMap" className="com.adobe.ttpixel.swf.TTDropMap" />
+		<imageResource id="aquarellMap" className="com.adobe.ttpixel.swf.TTAquarellMap" />
+		<imageResource id="tornPaperMap" className="com.adobe.ttpixel.swf.TTTornPaperMap" />
+
+		<imageResource id="brushMap" className="com.adobe.ttpixel.swf.TTBrushMap" />
+		<imageResource id="scratchMap1" className="com.adobe.ttpixel.swf.TTScratchesMetal" />
+		<imageResource id="scratchMap2" className="com.adobe.ttpixel.swf.TTScratchesFloor" />
+		<imageResource id="scratchMap3" className="com.adobe.ttpixel.swf.TTScratchesConcrete" />
+		<imageResource id="scratchMap4" className="com.adobe.ttpixel.swf.TTScratchesCrumble" />
+		
+	</resource>
+	
+	<resource description="THEME/gallery.fla">
+		<imageResource id="galleryBackground" className="com.adobe.ttpixel.swf.TTGalleryBackground" />
+		<imageResource id="galleryTopBarBackground" className="com.adobe.ttpixel.swf.TTGalleryTopBarBackground" />
+		<imageResource id="galleryBottomBarBackground" className="com.adobe.ttpixel.swf.TTGalleryBottomBarBackground" />
+		<imageResource id="galleryInfoDialogClip" className="com.adobe.ttpixel.swf.TTGalleryInfoDialogClip" />
+		<imageResource id="galleryAddButton" className="com.adobe.ttpixel.swf.TTGalleryAddButton" />
+		<imageResource id="galleryListItemClip" className="com.adobe.ttpixel.swf.TTGalleryListItemClip" />
+		<imageResource id="galleryOpenLibraryIcon" className="com.adobe.ttpixel.swf.TTGalleryOpenLibraryIcon" />
+		<imageResource id="galleryBlankIcon" className="com.adobe.ttpixel.swf.TTGalleryBlankIcon" />
+		<imageResource id="galleryCameraIcon" className="com.adobe.ttpixel.swf.TTGalleryCameraIcon" />
+		<imageResource id="galleryDeleteButton" className="com.adobe.ttpixel.swf.TTGalleryDeleteButton" />
+		<imageResource id="galleryFaceDetectionIcon" className="com.adobe.ttpixel.swf.TTFaceDetectionIcon" />
+		<imageResource id="galleryExportButtonIcon" className="com.adobe.ttpixel.swf.TTGalleryExportButtonIcon" />
+		<imageResource id="gallerySettingsClip" className="com.adobe.ttpixel.swf.TTGallerySettingsClip" />
+		<imageResource id="facebookSettingsClip" className="com.adobe.ttpixel.swf.TTFacebookSettingsClip" />
+		<imageResource id="galleryDuplicateClip" className="com.adobe.ttpixel.swf.TTGalleryDuplicateClip" />
+		<imageResource id="galleryPlusClip" className="com.adobe.ttpixel.swf.TTGalleryPlusClip" />
+		<imageResource id="galleryUploadToCloudIcon" className="com.adobe.ttpixel.swf.TTGalleryUploadToCloudIcon" />
+		<imageResource id="galleryCloudWebsiteIcon" className="com.adobe.ttpixel.swf.TTGalleryCloudWebsiteIcon" />
+		<imageResource id="galleryNewFromCloudClip" className="com.adobe.ttpixel.swf.TTGalleryNewFromCloudClip" />
+		<imageResource id="galleryNewFromExistingClip" className="com.adobe.ttpixel.swf.TTGalleryNewFromExistingClip" />
+		<imageResource id="galleryPathControlItemClip" className="com.adobe.ttpixel.swf.TTGalleryPathControlItemClip" />
+		<imageResource id="galleryTutorialIcon" className="com.adobe.ttpixel.swf.TTGalleryTutorialIcon" />
+		<imageResource id="galleryAddFolderButton" className="com.adobe.ttpixel.swf.TTGalleryAddFolderButton" />
+		<imageResource id="galleryFolderMenuClip" className="com.adobe.ttpixel.swf.TTGalleryFolderMenuClip" />
+		<imageResource id="gallerySettingsMyAccountClip" className="com.adobe.ttpixel.swf.TTGallerySettingsMyAccountClip" />
+		<imageResource id="gallerySettingsPreferencesClip" className="com.adobe.ttpixel.swf.TTGallerySettingsPreferencesClip" />
+		<imageResource id="gallerySettingsPurchasesClip" className="com.adobe.ttpixel.swf.TTGallerySettingsPurchasesClip" />
+		<imageResource id="gallerySettingsCloudClip" className="com.adobe.ttpixel.swf.TTGallerySettingsCloudClip" />
+		<imageResource id="gallerySettingsHelpClip" className="com.adobe.ttpixel.swf.TTGallerySettingsHelpClip" />
+		<imageResource id="gallerySettingsAboutClip" className="com.adobe.ttpixel.swf.TTGallerySettingsAboutClip" />
+		<imageResource id="galleryTextBoxDeleteIcon" className="com.adobe.ttpixel.swf.TTGalleryFolderClip" />
+		<imageResource id="galleryFolderClip" className="com.adobe.ttpixel.swf.TTGalleryTextBoxDeleteIcon" />
+		<imageResource id="galleryTutorialTeaserClip" className="com.adobe.ttpixel.swf.TTGalleryTutorialTeaserClip" />
+		<imageResource id="galleryFolderClipCore" className="com.adobe.ttpixel.swf.TTGalleryFolderClipCore" />
+		<imageResource id="galleryFolderClipCore" className="com.adobe.ttpixel.swf.TTGalleryHelpFolderClipCore" />
+		<imageResource id="galleryWelcomeTeaserClip" className="com.adobe.ttpixel.swf.TTGalleryWelcomeTeaserClip" />
+		<imageResource id="galleryWelcomeClipCore" className="com.adobe.ttpixel.swf.TTGalleryWelcomeClipCore" />
+		<imageResource id="galleryImageFolderClip" className="com.adobe.ttpixel.swf.TTGalleryImageFolderClip" />
+		<imageResource id="galleryNumberedButtonClip" className="com.adobe.ttpixel.swf.TTGalleryNumberedButtonClip" />
+		<imageResource id="galleryFolderIconClip" className="com.adobe.ttpixel.swf.TTGalleryFolderIconClip" />
+		<imageResource id="galleryInvalidFileClip" className="com.adobe.ttpixel.swf.TTGalleryInvalidFileClip" />
+
+		<imageResource id="galleryMoveClip" className="com.adobe.ttpixel.swf.TTGalleryMoveClip" />
+		<imageResource id="gallerySyncClip" className="com.adobe.ttpixel.swf.TTGallerySyncClip" />
+		<imageResource id="gallerySyncProgressClip" className="com.adobe.ttpixel.swf.TTGallerySyncProgressClip" />
+		<imageResource id="syncClip" className="com.adobe.ttpixel.swf.TTSyncClip" />
+		<imageResource id="syncActiveClip" className="com.adobe.ttpixel.swf.TTSyncActiveClip" />
+		<imageResource id="galleryInfinitProgressClip" className="com.adobe.ttpixel.swf.TTGalleryInfinitProgressClip" />
+		<imageResource id="galleryNewProgressClip" className="com.adobe.ttpixel.swf.TTGalleryNewProgressClip" />
+		<imageResource id="gallery3DProgressClip" className="com.adobe.ttpixel.swf.TTGallery3DProgressClip" />
+		<imageResource id="tableControlClip" className="com.adobe.ttpixel.swf.TTTableControlClip" />
+		
+		<imageResource id="syncStateInProgressClip" className="com.adobe.ttpixel.swf.TTSyncStateInProgressClip" />
+		<imageResource id="syncStateNormalClip" className="com.adobe.ttpixel.swf.TTSyncStateNormalClip" />
+		<imageResource id="syncStateSyncedClip" className="com.adobe.ttpixel.swf.TTSyncStateSyncedClip" />
+		<imageResource id="syncStateWarningClip" className="com.adobe.ttpixel.swf.TTSyncStateWarningClip" />
+		<imageResource id="syncFileStatusSyncedClip" className="com.adobe.ttpixel.swf.TTSyncFileStatusSyncedClip" />
+		<imageResource id="syncFileStatusErrorClip" className="com.adobe.ttpixel.swf.TTSyncFileStatusErrorClip" />
+		<imageResource id="syncFileStatusProgressQueuedClip" className="com.adobe.ttpixel.swf.TTSyncFileStatusProgressQueuedClip" />
+		
+		<imageResource id="gallerySyncProcessOffClip" className="com.adobe.ttpixel.swf.TTGallerySyncProcessOffClip" />
+		<imageResource id="gallerySyncProcessCompleteClip" className="com.adobe.ttpixel.swf.TTGallerySyncProcessCompleteClip" />
+		<imageResource id="gallerySyncProcessProgressClip" className="com.adobe.ttpixel.swf.TTGallerySyncProcessProgressClip" />
+		<imageResource id="gallerySyncProcessErrorClip" className="com.adobe.ttpixel.swf.TTGallerySyncProcessErrorClip" />
+		
+		<imageResource id="galleryPSComClip" className="com.adobe.ttpixel.swf.TTGalleryPSComClip" />
+		<imageResource id="galleryIdeasClip" className="com.adobe.ttpixel.swf.TTGalleryIdeasClip" />
+		<imageResource id="galleryProtoClip" className="com.adobe.ttpixel.swf.TTGalleryProtoClip" />
+		<imageResource id="galleryDebutClip" className="com.adobe.ttpixel.swf.TTGalleryDebutClip" />
+		<imageResource id="galleryKulerClip" className="com.adobe.ttpixel.swf.TTGalleryKulerClip" />
+		<imageResource id="galleryCollageClip" className="com.adobe.ttpixel.swf.TTGalleryCollageClip" />
+		<imageResource id="galleryPSTouchClip" className="com.adobe.ttpixel.swf.TTGalleryPSTouchClip" />
+		<imageResource id="galleryAdobeBannerClip" className="com.adobe.ttpixel.swf.TTGalleryAdobeBannerClip" />
+		
+		
+		<imageResource id="facebookLoginNormal" className="com.adobe.ttpixel.swf.TTFacebookLoginNormal" />
+		<imageResource id="facebookLoginHilite" className="com.adobe.ttpixel.swf.TTFacebookLoginHilite" />
+		<imageResource id="facebookLogoutNormal" className="com.adobe.ttpixel.swf.TTFacebookLogoutNormal" />
+		<imageResource id="facebookLogoutHilite" className="com.adobe.ttpixel.swf.TTFacebookLogoutHilite" />
+		
+	</resource>
+	
+	<resource description="THEME/media.fla">
+		<imageResource id="multiImageClip" className="com.adobe.ttpixel.swf.TTMultiImageClip" />
+		<imageResource id="multiCommentClip" className="com.adobe.ttpixel.swf.TTMultiCommentClip" />
+		<imageResource id="mediaCancelClip" className="com.adobe.ttpixel.swf.TTMediaCancelClip" />
+		<imageResource id="mediaTabBarControlClip" className="com.adobe.ttpixel.swf.TTMediaTabBarControlClip" />
+		<imageResource id="mediaTabBarControlBackground" className="com.adobe.ttpixel.swf.TTMediaTabBarControlBackground" />
+		<imageResource id="mediaFlickrIcon" className="com.adobe.ttpixel.swf.TTMediaFlickrIcon" />
+		<imageResource id="mediaFolderIconLarge" className="com.adobe.ttpixel.swf.TTMediaFolderIconLarge" />
+		<imageResource id="mediaGenericFileIconLarge" className="com.adobe.ttpixel.swf.TTMediaGenericFileIconLarge" />
+		<imageResource id="cameraRollIcon" className="com.adobe.ttpixel.swf.TTCameraRollIcon" />
+		<imageResource id="facebookPublishIcon" className="com.adobe.ttpixel.swf.TTFacebookPublishIcon" />
+		<imageResource id="facebookPublishIconLg" className="com.adobe.ttpixel.swf.TTFacebookPublishIconLg" />
+		<imageResource id="facebPublishIconOnWhite" className="com.adobe.ttpixel.swf.TTFacebPublishIconOnWhite" />
+		<imageResource id="mediaListItemClip" className="com.adobe.ttpixel.swf.TTMediaListItemClip" />
+		<imageResource id="mediaCreativeCloudClip" className="com.adobe.ttpixel.swf.TTMediaCreativeCloudClip" />
+		<imageResource id="mediaCreativeCloudClipLg" className="com.adobe.ttpixel.swf.TTMediaCreativeCloudClipLg" />
+		<imageResource id="mediaBackgroundClip" className="com.adobe.ttpixel.swf.TTMediaBackgroundClip" />
+		<imageResource id="mediaMailClip" className="com.adobe.ttpixel.swf.TTMediaMailClip" />
+		<imageResource id="mediaPrinterClip" className="com.adobe.ttpixel.swf.TTMediaPrinterClip" />
+		<imageResource id="mediaPhotosClip" className="com.adobe.ttpixel.swf.TTMediaPhotosClip" />
+		<imageResource id="mediaPhotosClipLg" className="com.adobe.ttpixel.swf.TTMediaPhotosClipLg" />
+		<imageResource id="mediaCameraClip" className="com.adobe.ttpixel.swf.TTMediaCameraClip" />
+		<imageResource id="mediaCameraClipLg" className="com.adobe.ttpixel.swf.TTMediaCameraClipLg" />
+		<imageResource id="mediaRefreshClip" className="com.adobe.ttpixel.swf.TTMediaRefreshClip" />
+		<imageResource id="googleIcon" className="com.adobe.ttpixel.swf.TTGoogleIcon" />
+		<imageResource id="mediaLightBulpClip" className="com.adobe.ttpixel.swf.TTMediaLightBulpClip" />
+		<imageResource id="mediaCommentsClip" className="com.adobe.ttpixel.swf.TTMediaCommentsClip" />
+		<imageResource id="mediaCommentsCounterClip" className="com.adobe.ttpixel.swf.TTMediaCommentsCounterClip" />
+		<imageResource id="mediaCurtainClip" className="com.adobe.ttpixel.swf.TTMediaCurtainClip" />
+		<imageResource id="mediaLoginBackground" className="com.adobe.ttpixel.swf.TTMediaLoginBackground" />
+		<imageResource id="mediaProgressBackground" className="com.adobe.ttpixel.swf.TTMediaProgressBackground" />
+		<imageResource id="mediaTextField" className="com.adobe.ttpixel.swf.TTMediaTextField" />
+		<imageResource id="mediaSearchBackground" className="com.adobe.ttpixel.swf.TTMediaSearchBackground" />
+		<imageResource id="poweredByGoogle" className="com.adobe.ttpixel.swf.TTPoweredByGoogle" />
+		<imageResource id="tableControlScrollBarClip" className="com.adobe.ttpixel.swf.TTMediaScrollBarClip" />
+		<imageResource id="searchColorButton" className="com.adobe.ttpixel.swf.TTSearchColorButton" />
+		<imageResource id="searchColorButtonDefault" className="com.adobe.ttpixel.swf.TTSearchColorButtonDefault" />
+		<imageResource id="searchRightsIcon" className="com.adobe.ttpixel.swf.TTSearchRightsIcon" />
+		<imageResource id="mediaShadowClip" className="com.adobe.ttpixel.swf.TTMediaShadowClip" />
+		<imageResource id="mediaErrorBackgroundClip" className="com.adobe.ttpixel.swf.TTMediaErrorBackgroundClip" />
+		<imageResource id="mediaCreativeCloudActiveClip" className="com.adobe.ttpixel.swf.TTMediaCreativeCloudActiveClip" />
+		<imageResource id="mediaITunesClip" className="com.adobe.ttpixel.swf.TTMediaITunesClip" />
+		
+		<imageResource id="closeWindowIcon" className="com.adobe.ttpixel.swf.TTCloseWindowIcon" />
+
+		<imageResource id="cloudMarketingClip" className="com.adobe.ttpixel.swf.TTCloudMarketingClip" />
+		<imageResource id="cloudTitleImage" className="com.adobe.ttpixel.swf.TTCloudTitleImage" />
+
+	</resource>
+	
+	<resource description="THEME/panels.fla">
+		<imageResource id="panelBackground" className="com.adobe.ttpixel.swf.TTPanelBackground" />
+		<imageResource id="panelBackgroundW" className="com.adobe.ttpixel.swf.TTPanelBackgroundW" />
+		<imageResource id="panelButton" className="com.adobe.ttpixel.swf.TTPanelButton" />
+		<imageResource id="layerItem" className="com.adobe.ttpixel.swf.TTLayerItem" />
+		<imageResource id="layerItemLight" className="com.adobe.ttpixel.swf.TTLayerItemLight" />
+		<imageResource id="plainButton" className="com.adobe.ttpixel.swf.TTPlainButton" />
+		<imageResource id="loadingClip" className="com.adobe.ttpixel.swf.TTLoadingClip" />
+		<imageResource id="progressViewClip" className="com.adobe.ttpixel.swf.TTProgressViewClip" />
+		<imageResource id="roundButtonWheel" className="com.adobe.ttpixel.swf.TTRoundButtonWheel" />
+		<imageResource id="roundButtonWheelMain" className="com.adobe.ttpixel.swf.TTRoundButtonWheelMain" />
+		<imageResource id="columnListItemClip" className="com.adobe.ttpixel.swf.TTColumnListItemClip" />
+		<imageResource id="panelListItemClip" className="com.adobe.ttpixel.swf.TTPanelListItemClip" />
+		<imageResource id="panelListItemClipBlack" className="com.adobe.ttpixel.swf.TTPanelListItemClipBlack" />
+		<imageResource id="editorViewInfo" className="com.adobe.ttpixel.swf.TTEditorViewInfo" />
+		<imageResource id="editorViewFrame" className="com.adobe.ttpixel.swf.TTEditorViewFrame" />
+		<imageResource id="gradientStop" className="com.adobe.ttpixel.swf.TTGradientStop" />
+		<imageResource id="gradientPreviewClip" className="com.adobe.ttpixel.swf.TTGradientPreviewClip" />
+		<imageResource id="colorPickerViewBackground" className="com.adobe.ttpixel.swf.TTColorPickerViewBackground" />
+		<imageResource id="colorPickerAddSwatch" className="com.adobe.ttpixel.swf.TTColorPickerAddSwatch" />
+		
+	</resource>
+	
+	<resource description="THEME/toolicons.fla">
+		<imageResource id="toolIconBrush" className="com.adobe.ttpixel.swf.TTToolIconBrush" />
+		<imageResource id="toolIconEffectBrush" className="com.adobe.ttpixel.swf.TTToolIconEffectBrush" />
+		<imageResource id="toolIconEraser" className="com.adobe.ttpixel.swf.TTToolIconEraser" />
+		<imageResource id="toolIconPencil" className="com.adobe.ttpixel.swf.TTToolIconPencil" />
+		<imageResource id="toolIconSpray" className="com.adobe.ttpixel.swf.TTToolIconSpray" />
+		
+		<imageResource id="toolIconSelectionMarquee" className="com.adobe.ttpixel.swf.TTToolIconSelectionMarquee" />
+		<imageResource id="toolIconSelectionRect" className="com.adobe.ttpixel.swf.TTToolIconSelectionRect" />
+		<imageResource id="toolIconSelectionCircle" className="com.adobe.ttpixel.swf.TTToolIconSelectionCircle" />
+		<imageResource id="toolIconSelectionLasso" className="com.adobe.ttpixel.swf.TTToolIconSelectionLasso" />
+		<imageResource id="toolIconSelectionPolyLasso" className="com.adobe.ttpixel.swf.TTToolIconSelectionPolyLasso" />
+		<imageResource id="toolIconMagicWand" className="com.adobe.ttpixel.swf.TTToolIconMagicWand" />
+		<imageResource id="toolIconSelectionBrush" className="com.adobe.ttpixel.swf.TTToolIconSelectionBrush" />
+		<imageResource id="toolIconSelectionFast" className="com.adobe.ttpixel.swf.TTToolIconSelectionFast" />
+		<imageResource id="toolIconScribbleSelection" className="com.adobe.ttpixel.swf.TTToolIconScribbleSelection" />
+		
+		<imageResource id="toolIconHeal" className="com.adobe.ttpixel.swf.TTToolIconHeal" />
+		<imageResource id="toolIconCloneStamp" className="com.adobe.ttpixel.swf.TTToolIconCloneStamp" />
+		<imageResource id="toolIconBlur" className="com.adobe.ttpixel.swf.TTToolIconBlur" />
+		<imageResource id="toolIconSmudge" className="com.adobe.ttpixel.swf.TTToolIconSmudge" />
+		
+		<imageResource id="ttDeselectIcon" className="com.adobe.ttpixel.swf.TTDeselectIcon" />
+		<imageResource id="settingsModeNew" className="com.adobe.ttpixel.swf.TTSettingsModeNew" />
+		<imageResource id="settingsModeAdd" className="com.adobe.ttpixel.swf.TTSettingsModeAdd" />
+		<imageResource id="settingsModeRemove" className="com.adobe.ttpixel.swf.TTSettingsModeRemove" />
+		<imageResource id="settingsTolerance" className="com.adobe.ttpixel.swf.TTSettingsTolerance" />
+		<imageResource id="settingsClear" className="com.adobe.ttpixel.swf.TTSettingsClear" />
+		<imageResource id="settingsInvert" className="com.adobe.ttpixel.swf.TTSettingsInvert" />
+		<imageResource id="settingsFeather" className="com.adobe.ttpixel.swf.TTSettingsFeather" />
+		<imageResource id="settingsRefine" className="com.adobe.ttpixel.swf.TTSettingsRefine" />
+		<imageResource id="settingsAddRefine" className="com.adobe.ttpixel.swf.TTSettingsAddRefine" />
+		<imageResource id="settingsClearRefine" className="com.adobe.ttpixel.swf.TTSettingsClearRefine" />
+		<imageResource id="settingsModify" className="com.adobe.ttpixel.swf.TTSettingsModify" />
+		<imageResource id="settingsLike" className="com.adobe.ttpixel.swf.TTSettingsLike" />
+		<imageResource id="settingsDontLike" className="com.adobe.ttpixel.swf.TTSettingsDontLike" />
+		<imageResource id="settingsSize" className="com.adobe.ttpixel.swf.TTSettingsSize" />
+		<imageResource id="settingsRestart" className="com.adobe.ttpixel.swf.TTSettingsRestart" />
+		<imageResource id="settingsRoundCorner" className="com.adobe.ttpixel.swf.TTSettingsRoundCorner" />
+		
+		<imageResource id="cloneToolTarget" className="com.adobe.ttpixel.swf.TTCloneToolTarget" />
+		
+		<imageResource id="selectionLaser" className="com.adobe.ttpixel.swf.TTSelectionLaser" />
+		<imageResource id="selectionChecker" className="com.adobe.ttpixel.swf.TTSelectionChecker" />
+	</resource>
+	
+	<resource description="THEME/panelicons.fla">
+		<imageResource id="panelIconLayers" className="com.adobe.ttpixel.swf.TTPanelIconLayers" />
+		<imageResource id="panelIconAdd" className="com.adobe.ttpixel.swf.TTPanelIconAdd" />
+		<imageResource id="panelIconDelete" className="com.adobe.ttpixel.swf.TTPanelIconDelete" />
+		<imageResource id="panelIconExtract" className="com.adobe.ttpixel.swf.TTPanelIconExtract" />
+		<imageResource id="panelIconPaste" className="com.adobe.ttpixel.swf.TTPanelIconPaste" />
+		<imageResource id="panelIconCopy" className="com.adobe.ttpixel.swf.TTPanelIconCopy" />
+		<imageResource id="ttpanelIconCopyMerged" className="com.adobe.ttpixel.swf.TTPanelIconCopyMerged" />
+		<imageResource id="panelIconCut" className="com.adobe.ttpixel.swf.TTPanelIconCut" />
+		<imageResource id="panelIconSettings" className="com.adobe.ttpixel.swf.TTPanelIconSettings" />
+		<imageResource id="panelIconAction" className="com.adobe.ttpixel.swf.TTPanelIconAction" />
+		<imageResource id="panelIconUndo" className="com.adobe.ttpixel.swf.TTPanelIconUndo" />
+		<imageResource id="panelIconRedo" className="com.adobe.ttpixel.swf.TTPanelIconRedo" />
+		<imageResource id="panelIconCursor" className="com.adobe.ttpixel.swf.TTPanelIconCursor" />
+		<imageResource id="panelIconSelection" className="com.adobe.ttpixel.swf.TTPanelIconSelection" />
+		<imageResource id="panelIconQuickMask" className="com.adobe.ttpixel.swf.TTPanelIconQuickMask" />
+		<imageResource id="panelIconAdjustments" className="com.adobe.ttpixel.swf.TTPanelIconAdjustments" />
+		<imageResource id="panelIconAccelerometer" className="com.adobe.ttpixel.swf.TTPanelIconAccelerometer" />
+		<imageResource id="panelIconHideAll" className="com.adobe.ttpixel.swf.TTPanelIconHideAll" />
+		<imageResource id="panelIconShowAll" className="com.adobe.ttpixel.swf.TTPanelIconShowAll" />
+		<imageResource id="barButton" className="com.adobe.ttpixel.swf.TTBarButton" />
+		<imageResource id="hideBarIconLeft" className="com.adobe.ttpixel.swf.TTHideBarIconLeft" />
+		<imageResource id="hideBarIconRight" className="com.adobe.ttpixel.swf.TTHideBarIconRight" />
+		<imageResource id="backButton" className="com.adobe.ttpixel.swf.TTBackButton" />
+		<imageResource id="ttOKIcon" className="com.adobe.ttpixel.swf.TTOKIcon" />
+		<imageResource id="ttCancelIcon" className="com.adobe.ttpixel.swf.TTCancelIcon" />
+		<imageResource id="ttCloseSmIcon" className="com.adobe.ttpixel.swf.TTCloseSmIcon" />
+		<imageResource id="ttResetIcon" className="com.adobe.ttpixel.swf.TTResetIcon" />
+		<imageResource id="ttPanelIconTransform" className="com.adobe.ttpixel.swf.TTPanelIconTransform" />
+		<imageResource id="ttPanelIconCrop" className="com.adobe.ttpixel.swf.TTPanelIconCrop" />
+		<imageResource id="ttPanelIconSizeImage" className="com.adobe.ttpixel.swf.TTPanelIconSizeImage" />
+		<imageResource id="ttPanelIconSelectAlpha" className="com.adobe.ttpixel.swf.TTPanelIconSelectAlpha" />
+		<imageResource id="ttPanelIconText" className="com.adobe.ttpixel.swf.TTPanelIconText" />
+		<imageResource id="ttPanelIconItalic" className="com.adobe.ttpixel.swf.TTPanelIconItalic" />
+		<imageResource id="ttPanelIconBold" className="com.adobe.ttpixel.swf.TTPanelIconBold" />
+		<imageResource id="ttKeyboardIcon" className="com.adobe.ttpixel.swf.TTKeyboardIcon" />
+		<imageResource id="ttRotationIcon" className="com.adobe.ttpixel.swf.TTRotationIcon" />
+		<imageResource id="ttSkewXIcon" className="com.adobe.ttpixel.swf.TTSkewXIcon" />
+		<imageResource id="ttSkewYIcon" className="com.adobe.ttpixel.swf.TTSkewYIcon" />
+		<imageResource id="ttShowExtendedIcon" className="com.adobe.ttpixel.swf.TTShowExtendedIcon" />
+		<imageResource id="ttHideExtendedIcon" className="com.adobe.ttpixel.swf.TTHideExtendedIcon" />
+		<imageResource id="ttFlipXIcon" className="com.adobe.ttpixel.swf.TTFlipXIcon" />
+		<imageResource id="ttFlipYIcon" className="com.adobe.ttpixel.swf.TTFlipYIcon" />
+		<imageResource id="ttLockAspectRatioIcon" className="com.adobe.ttpixel.swf.TTLockAspectRatioIcon" />
+		<imageResource id="ttFreeAspectRatioIcon" className="com.adobe.ttpixel.swf.TTFreeAspectRatioIcon" />
+		<imageResource id="ttAspectRatioOnIcon" className="com.adobe.ttpixel.swf.TTAspectRatioOnIcon" />
+		<imageResource id="ttAspectRatioOffIcon" className="com.adobe.ttpixel.swf.TTAspectRatioOffIcon" />
+		<imageResource id="ttSnapOnIcon" className="com.adobe.ttpixel.swf.TTSnapOnIcon" />
+		<imageResource id="ttSnapOffIcon" className="com.adobe.ttpixel.swf.TTSnapOffIcon" />
+		
+		<imageResource id="ttPaintbucketIcon" className="com.adobe.ttpixel.swf.TTPaintbucketIcon" />
+		<imageResource id="ttWarpIcon" className="com.adobe.ttpixel.swf.TTWarpIcon" />
+		<imageResource id="ttSmallScaleIcon" className="com.adobe.ttpixel.swf.TTSmallScaleIcon" />
+		<imageResource id="ttSmallRotateIcon" className="com.adobe.ttpixel.swf.TTSmallRotateIcon" />
+		<imageResource id="ttSmallRightArrowIcon" className="com.adobe.ttpixel.swf.TTSmallRightArrowIcon" />
+		<imageResource id="ttSmallUpArrowIcon" className="com.adobe.ttpixel.swf.TTSmallUpArrowIcon" />
+		<imageResource id="ttFxIcon" className="com.adobe.ttpixel.swf.TTFxIcon" />
+		<imageResource id="ttEffectDetails" className="com.adobe.ttpixel.swf.TTEffectDetails" />
+
+		<imageResource id="ttSpotPlainIcon" className="com.adobe.ttpixel.swf.TTSpotPlainIcon" />
+		<imageResource id="ttSpotRotateIcon" className="com.adobe.ttpixel.swf.TTSpotRotateIcon" />
+		<imageResource id="ttSpotScaleIcon" className="com.adobe.ttpixel.swf.TTSpotScaleIcon" />
+		<imageResource id="ttSpotMoveRightIcon" className="com.adobe.ttpixel.swf.TTSpotMoveRightIcon" />
+		<imageResource id="ttSpotMoveUpIcon" className="com.adobe.ttpixel.swf.TTSpotMoveUpIcon" />
+		<imageResource id="ttSpotSkewXIcon" className="com.adobe.ttpixel.swf.TTSpotSkewXIcon" />
+		<imageResource id="ttSpotSkewYIcon" className="com.adobe.ttpixel.swf.TTSpotSkewYIcon" />
+		
+		<imageResource id="ttSpotLightBulbIcon" className="com.adobe.ttpixel.swf.TTSpotLightBulbIcon" />
+		<imageResource id="ttSpotTargetIcon" className="com.adobe.ttpixel.swf.TTSpotTargetIcon" />
+		
+		<imageResource id="ttWrenchIcon" className="com.adobe.ttpixel.swf.TTWrenchIcon" />
+
+		<imageResource id="panelIconGradient" className="com.adobe.ttpixel.swf.TTPanelIconGradient" />
+		<imageResource id="panelIconGradientMask" className="com.adobe.ttpixel.swf.TTPanelIconGradientMask" />
+		<imageResource id="panelIconGradientLinear" className="com.adobe.ttpixel.swf.TTPanelIconGradientLinear" />
+		<imageResource id="panelIconGradientRadial" className="com.adobe.ttpixel.swf.TTPanelIconGradientRadial" />
+		<imageResource id="panelIconGradientReverse" className="com.adobe.ttpixel.swf.TTPanelIconGradientReverse" />
+		<imageResource id="panelIconGradientEditor" className="com.adobe.ttpixel.swf.TTPanelIconGradientEditor" />
+		
+		<imageResource id="ttPanelIconRGB" className="com.adobe.ttpixel.swf.TTPanelIconRGB" />
+		<imageResource id="ttPanelIconHSB" className="com.adobe.ttpixel.swf.TTPanelIconHSB" />
+		<imageResource id="ttRotateSwitcherIcon" className="com.adobe.ttpixel.swf.TTRotateSwitcherIcon" />
+		<imageResource id="ttSkewSwitcherIcon" className="com.adobe.ttpixel.swf.TTSkewSwitcherIcon" />
+		
+		<imageResource id="panelIconQualityHigh" className="com.adobe.ttpixel.swf.TTPanelIconQualityHigh" />
+		<imageResource id="panelIconQualityMedium" className="com.adobe.ttpixel.swf.TTPanelIconQualityMedium" />
+		<imageResource id="panelIconQualityLow" className="com.adobe.ttpixel.swf.TTPanelIconQualityLow" />
+
+		<imageResource id="ttColorPaletteIcon" className="com.adobe.ttpixel.swf.TTColorPaletteIcon" />
+		<imageResource id="ttPatternIcon" className="com.adobe.ttpixel.swf.TTPatternIcon" />
+		<imageResource id="ttBrushModeIcon" className="com.adobe.ttpixel.swf.TTBrushModeIcon" />
+
+		<imageResource id="ttFlashAutoIcon" className="com.adobe.ttpixel.swf.TTFlashAutoIcon" />
+		<imageResource id="ttFlashOffIcon" className="com.adobe.ttpixel.swf.TTFlashOffIcon" />
+		<imageResource id="ttFlashOnIcon" className="com.adobe.ttpixel.swf.TTFlashOnIcon" />
+		<imageResource id="ttCameraRotateIcon" className="com.adobe.ttpixel.swf.TTCameraRotateIcon" />
+		<imageResource id="ttCameraMinusZoomIcon" className="com.adobe.ttpixel.swf.TTCameraMinusZoomIcon" />
+		<imageResource id="ttCameraPlusZoomIcon" className="com.adobe.ttpixel.swf.TTCameraPlusZoomIcon" />
+		<imageResource id="ttCameraShotIcon" className="com.adobe.ttpixel.swf.TTCameraShotIcon" />
+		<imageResource id="ttCameraFillIcon" className="com.adobe.ttpixel.swf.TTCameraFillIcon" />
+
+		<imageResource id="ttPanelIconStylus" className="com.adobe.ttpixel.swf.TTPanelIconStylus" />
+
+		<imageResource id="ttWarningIcon" className="com.adobe.ttpixel.swf.TTWarningIcon" />
+		<imageResource id="ttNudgeIcon" className="com.adobe.ttpixel.swf.TTNudgeEastIcon" />
+		<imageResource id="ttNudgeToggleIcon" className="com.adobe.ttpixel.swf.TTNudgeToggleIcon" />
+
+		
+	</resource>
+	
+	<resource description="THEME/tutorial.fla">
+		<imageResource id="ttTutorialClip" className="com.adobe.ttpixel.swf.TTTutorialClip" />
+		<imageResource id="ttTutorialTip" className="com.adobe.ttpixel.swf.TTTutorialTip" />
+		<imageResource id="ttTutorialImage" className="com.adobe.ttpixel.swf.TTTutorialImage" />
+		<imageResource id="ttTutorialBrowserItem" className="com.adobe.ttpixel.swf.TTTutorialBrowserItem" />
+		<imageResource id="ttTutorialAddPerson" className="com.adobe.ttpixel.swf.TTTutorialAddPerson" />
+		<imageResource id="ttTutorialBlur" className="com.adobe.ttpixel.swf.TTTutorialBlur" />
+		<imageResource id="ttTutorialCameraFill" className="com.adobe.ttpixel.swf.TTTutorialCameraFill" />
+		<imageResource id="ttTutorialChangeColor" className="com.adobe.ttpixel.swf.TTTutorialChangeColor" />
+		<imageResource id="ttTutorialClone" className="com.adobe.ttpixel.swf.TTTutorialClone" />
+		<imageResource id="ttTutorialDropShadow" className="com.adobe.ttpixel.swf.TTTutorialDropShadow" />
+		<imageResource id="ttTutorialFade" className="com.adobe.ttpixel.swf.TTTutorialFade" />
+		<imageResource id="ttTutorialPaintEffects" className="com.adobe.ttpixel.swf.TTTutorialPaintEffects" />
+		<imageResource id="ttTutorialPainting" className="com.adobe.ttpixel.swf.TTTutorialPainting" />
+		<imageResource id="ttTutorialPencilSketch" className="com.adobe.ttpixel.swf.TTTutorialPencilSketch" />
+		<imageResource id="ttTutorialSepia" className="com.adobe.ttpixel.swf.TTTutorialSepia" />
+		<imageResource id="ttTutorialStroke" className="com.adobe.ttpixel.swf.TTTutorialStroke" />
+		<imageResource id="ttTutorialTransform" className="com.adobe.ttpixel.swf.TTTutorialTransform" />
+		<imageResource id="ttTutorialLayer" className="com.adobe.ttpixel.swf.TTTutorialLayer" />
+		<imageResource id="ttTutorialTiltShift" className="com.adobe.ttpixel.swf.TTTutorialTiltShift" />
+	</resource>
+	
+	<resource description="THEME/coachmarks.fla">
+		<imageResource id="ttCoachMark" className="com.adobe.ttpixel.swf.TTCoachMark" />
+		<imageResource id="ttCoachMarkUndo" className="com.adobe.ttpixel.swf.TTCoachMarkUndo" />
+		<imageResource id="ttCoachMarkTransform" className="com.adobe.ttpixel.swf.TTCoachMarkTransform" />
+		<imageResource id="ttCoachMarkTools" className="com.adobe.ttpixel.swf.TTCoachMarkTools" />
+		<imageResource id="ttCoachMarkLayers" className="com.adobe.ttpixel.swf.TTCoachMarkLayers" />
+	</resource>
+	
+	<resource description="THEME/welcome.fla">
+		<imageResource id="ttWelcomeClip" className="com.adobe.ttpixel.swf.TTWelcomeClip" />
+	</resource>
+	
+	<resource description="THEME/splash.fla">
+		<imageResource id="ttScrollTextClip" className="com.adobe.ttpixel.swf.TTScrollTextClip" />
+	</resource>
+	<resource description="THEME/cursor.fla">
+		<imageResource id="ttCursorClip" className="com.adobe.ttpixel.swf.TTCursorClip" />
+		<imageResource id="ttCursorClipClick" className="com.adobe.ttpixel.swf.TTCursorClipClick" />
+		<imageResource id="ttCursorCross" className="com.adobe.ttpixel.swf.TTCursorCross" />
+		<imageResource id="ttCursorPointer" className="com.adobe.ttpixel.swf.TTCursorPointer" />
+		<imageResource id="ttCursorPickColor" className="com.adobe.ttpixel.swf.TTCursorPickColor" />
+		<imageResource id="ttCursorMove" className="com.adobe.ttpixel.swf.TTCursorMove" />
+		<imageResource id="ttCursorRotate" className="com.adobe.ttpixel.swf.TTCursorRotate" />
+		<imageResource id="ttCursorScale" className="com.adobe.ttpixel.swf.TTCursorScale" />
+	</resource>
+</resources>

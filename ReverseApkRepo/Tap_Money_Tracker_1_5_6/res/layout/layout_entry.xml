@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_overview" android:background="@color/title" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_allmonths" android:background="@drawable/calender" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:id="@id/btn_new" android:background="@drawable/add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_overview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Overview" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:id="@id/tv_today" android:background="@color/caption" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Today" />
+    <ListView android:id="@id/lv_today" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/caption" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_addNew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Add New" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Balance" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

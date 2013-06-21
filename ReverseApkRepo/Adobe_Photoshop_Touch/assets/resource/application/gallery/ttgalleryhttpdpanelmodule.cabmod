@@ -1,0 +1,40 @@
+<ttgalleryhttpdpanelmodule id="module" view="httpdPanelView" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="600" height="600" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="httpdPanelView" width="470" height="359" sizeX="scale" sizeY="scale" x="63" y="31" module="module" whiteBackground="true">
+        <button id="finish_ttblue" width="280" height="40" sizeX="center" sizeY="bottom" x="95" y="274" target="module" selector="selectorFinish" title="$$$/ttgalleryhttpdpanelmodule/button/title/Finish=Finish"/>
+        <text id="headline_ttblack_ttbold" width="350" height="38" sizeX="scale" x="60" y="44" text="$$$/ttgalleryhttpdpanelmodule/text/text/Web Server Mode=Web Server Mode" align="center"/>
+        <text id="text1_ttblack" width="350" height="55" sizeX="scale" x="60" y="86" text="$$$/ttgalleryhttpdpanelmodule/text/text/The device is now in Web Server Mode. Click Finish to end Web Server Mode and resume normal operation.=The device is now in Web Server Mode. Click Finish to end Web Server Mode and resume normal operation."/>
+        <label id="label_ttblack" width="102" height="20" sizeX="scale" x="60" y="144" title="$$$/ttgalleryhttpdpanelmodule/label/title/URL=URL"/>
+        <text id="textUrl_ttblack" width="242" height="20" sizeX="right" x="168" y="144"/>
+        <label id="label2_ttblack" width="102" height="20" x="60" y="167" title="$$$/ttgalleryhttpdpanelmodule/label/title/Bonjour=Bonjour"/>
+        <text id="textBonjour_ttblack" width="242" height="20" x="168" y="167"/>
+        <label id="label3_ttblack" width="102" height="20" x="60" y="190" title="$$$/ttgalleryhttpdpanelmodule/label/title/Username=Username"/>
+        <text id="textUsername_ttblack" width="242" height="20" x="168" y="190"/>
+        <label id="label4_ttblack" width="102" height="20" x="60" y="213" title="$$$/ttgalleryhttpdpanelmodule/label/title/Password=Password"/>
+        <text id="textPassword_ttblack" width="242" height="20" x="168" y="213"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="textUrl_ttblack" refName="textUrl"/>
+      <objRef refId="textBonjour_ttblack" refName="textBonjour"/>
+      <objRef refId="textUsername_ttblack" refName="textUsername"/>
+      <objRef refId="textPassword_ttblack" refName="textPassword"/>
+      <objRef refId="finish_ttblue" refName="buttonFinish"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttgalleryhttpdpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.gallery.ui" codeName="TTGalleryHttpdPanelModule"/>
+  </classes>
+</ttgalleryhttpdpanelmodule>

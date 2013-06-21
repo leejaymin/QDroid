@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mid_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff767c88" android:gravity="center_vertical" android:id="@id/tv_related_apps_prompt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" />
+    <ListView android:id="@id/lv_related_apps" android:background="@drawable/th_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="#ffcaced3" android:dividerHeight="0.5dip" />
+</LinearLayout>

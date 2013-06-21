@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/panel_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/title_bar_portrait" android:paddingLeft="10.0px" android:paddingTop="5.0px" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock32" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/caption_color" android:gravity="center_vertical" android:id="@id/tv_during" android:paddingLeft="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Alert Setting" />
+                </LinearLayout>
+                <RelativeLayout android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_alert_name" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Name" />
+                    <EditText android:id="@id/edt_alert_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_alert_name" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_date" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Begin Date" android:layout_below="@id/edt_alert_name" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2009-7-31 (Fri)" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/edt_alert_name" android:layout_alignLeft="@id/edt_alert_name" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_due" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Due Date" android:layout_below="@id/btn_date" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_due" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No Due Date" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/btn_date" android:layout_alignLeft="@id/edt_alert_name" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_repeat" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Repeat" android:layout_below="@id/btn_due" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_repeat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No Repeat" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/btn_due" android:layout_alignLeft="@id/edt_alert_name" />
+                    <CheckBox android:id="@id/ckb_active" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Active" android:layout_below="@id/btn_repeat" android:layout_alignLeft="@id/edt_alert_name" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/panel_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/title_bar_portrait" android:paddingLeft="10.0px" android:paddingTop="5.0px" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blog" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/caption_color" android:gravity="center_vertical" android:id="@id/tv_during" android:paddingLeft="5.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Transaction Template" />
+                </LinearLayout>
+                <RelativeLayout android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_mode" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Mode" />
+                    <Spinner android:id="@id/spn_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_mode" android:layout_alignParentRight="true" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_category" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Category" android:layout_below="@id/spn_mode" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Food" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/spn_mode" android:layout_alignLeft="@id/spn_mode" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_account" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Account" android:layout_below="@id/btn_category" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cash" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/btn_category" android:layout_alignLeft="@id/spn_mode" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_amount" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Amount" android:layout_below="@id/btn_account" />
+                    <EditText android:id="@id/edt_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/btn_account" android:layout_alignLeft="@id/spn_mode" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_currency" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Currency" android:layout_below="@id/edt_amount" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_currency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TWD" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/edt_amount" android:layout_alignLeft="@id/edt_amount" />
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_group" android:paddingTop="12.0px" android:layout_width="80.0px" android:layout_height="wrap_content" android:text="Group" android:layout_below="@id/btn_currency" />
+                    <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/btn_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Personal" android:drawableRight="@drawable/expander_ic_minimized" android:layout_below="@id/btn_currency" android:layout_alignLeft="@id/btn_currency" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:background="@color/caption" android:paddingLeft="3.0px" android:paddingTop="3.0px" android:paddingRight="3.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16.0sp" android:id="@id/btn_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_save" android:layout_weight="1.0" />
+        <Button android:textSize="16.0sp" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

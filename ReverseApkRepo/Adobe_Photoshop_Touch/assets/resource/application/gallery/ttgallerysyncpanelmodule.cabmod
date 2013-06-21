@@ -1,0 +1,91 @@
+<ttgallerysyncpanelmodule id="module" view="view1" refdispatcher="referenceDispatcher">
+  <windows>
+    <window id="window" width="600" height="600" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view1" width="311" height="327" x="120" y="63" module="module" whiteBackground="true">
+        <ttcoloredview id="viewbackground" width="311" height="327" sizeX="scale" sizeY="scale" x="0" y="0" color="15724527">
+          <decor id="decorttblack" width="311" height="18" sizeX="scale" x="0" y="51" style="hline"/>
+          <text id="text1ttblack" width="201" height="22" sizeX="scale" x="20" y="75" text="$$$/ttgallerysyncpanelmodule/text/text/Sync files=Sync files"/>
+          <ttslidecheckbox id="control" width="60" height="30" x="236" y="70" target="module" selector="enableSync" isRound="true"/>
+          <ttactiontext id="ttblackttalpha" width="105" height="22" sizeX="scale" x="162" y="248" color="0"/>
+          <decor id="decorttblack1" width="311" height="18" sizeX="scale" x="0" y="223" style="hline"/>
+          <viewStack id="viewStack" width="311" height="57" sizeX="scale" x="0" y="169">
+            <view id="chapter" width="311" height="57" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+              <text id="textttblack" width="271" height="22" sizeX="scale" x="20" y="17" text="$$$/ttgallerysyncpanelmodule/text/text/All files synced=All files synced"/>
+            </view>
+            <view id="chapter1" width="311" height="57" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+              <text id="textttblack1" width="280" height="44" sizeX="scale" x="20" y="13" textSize="14"/>
+            </view>
+            <view id="chapter2" width="311" height="57" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+              <text id="textttblack2ttbold" width="280" height="31" sizeX="scale" x="20" y="11" small="true" textSize="11"/>
+              <ttactiontext id="textttboldttunderline" width="95" height="18" x="20" y="36" text="$$$/ttgallerysyncpanelmodule/text/text/Learn More=Learn More" textSize="12" target="module" selector="goToPermanentlyDelete"/>
+            </view>
+            <view id="chapter3" width="311" height="57" sizeX="scale" sizeY="scale" visible="false" x="0" y="0">
+              <text id="textttblack2" width="97" height="22" x="60" y="17" text="$$$/ttgallerysyncpanelmodule/text/text/Sync process:=Sync process:"/>
+              <imageView id="imageView1" width="16" height="16" x="30" y="21" image="gallerySyncProcessProgressClip" fit="true" constrain="true"/>
+              <text id="text1ttalphattblack" width="137" height="22" sizeX="scale" x="160" y="18" text="$$$/ttgallerysyncpanelmodule/text/text/Off=Off"/>
+            </view>
+            <view id="chapter4" width="311" height="57" sizeX="scale" sizeY="scale" x="0" y="0">
+              <text id="textttblack222" width="97" height="22" x="60" y="17" text="$$$/ttgallerysyncpanelmodule/text/text/Sync process:=Sync process:"/>
+              <imageView id="imageView122" width="16" height="16" x="28" y="21" image="gallerySyncProcessErrorClip" fit="true" constrain="true"/>
+              <text id="text1ttalphattblack22" width="66" height="22" sizeX="scale" x="155" y="18" text="$$$/ttgallerysyncpanelmodule/text/text/Paused - =Paused - "/>
+              <ttactiontext id="text" width="90" height="22" x="217" y="18" text="$$$/ttgallerysyncpanelmodule/text/text/Storage full=Storage full" target="module" selector="goToPermanentlyDelete" color="16711680"/>
+            </view>
+          </viewStack>
+          <ttcoloredview id="view2" width="310" height="59" x="0" y="0" color="16777215">
+            <text id="textttboldttlargettblack" width="279" height="22" x="20" y="20" text="$$$/ttgallerysyncpanelmodule/text/text/Adobe Creative Cloud=Adobe Creative Cloud"/>
+          </ttcoloredview>
+          <decor id="decorttblack2" width="310" height="18" x="0" y="156" style="hline"/>
+          <decor id="decor1ttblack" width="310" height="18" x="0" y="104" style="hline"/>
+          <button id="button" width="271" height="22" x="28" y="128" target="module" selector="wifiOnlySync" toggles="true" type="checkBox" title="$$$/ttgallerysyncpanelmodule/button/title/Only sync when wi-fi is enabled=Only sync when wi-fi is enabled"/>
+          <timeBar id="timeBarttwhite" width="235" height="30" mask="true" x="60" y="271">
+            <text id="text1ttblack1ttalpha" width="235" height="22" x="0" y="8" textSize="10" align="center"/>
+          </timeBar>
+          <imageView id="imageView" width="20" height="20" x="28" y="248" image="syncStateNormalClip" fit="true" constrain="true"/>
+          <text id="textttblack3" width="97" height="22" x="60" y="248" text="$$$/ttgallerysyncpanelmodule/text/text/Storage level:=Storage level:"/>
+        </ttcoloredview>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="control" refName="syncOnButton"/>
+      <objRef refId="textttblack" refName="statusText"/>
+      <objRef refId="ttblackttalpha" refName="accountStorageTotalText"/>
+      <objRef refId="viewStack" refName="viewStack"/>
+      <objRef refId="textttblack1" refName="statusText2"/>
+      <objRef refId="textttblack2ttbold" refName="statusText3"/>
+      <objRef refId="timeBarttwhite" refName="quotaTimeBar"/>
+      <objRef refId="text1ttblack1ttalpha" refName="quotaTimeBarText"/>
+      <objRef refId="imageView" refName="cloudIconImageView"/>
+      <objRef refId="button" refName="wifiOnlyButton"/>
+      <objRef refId="text1ttalphattblack" refName="syncStatusText"/>
+      <objRef refId="imageView1" refName="processImageView"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttalertpanelmodule" superClassName="ttbasepanelmodule" packageName="" codeName="TTAlertPanelModule"/>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttgallerysyncpanelmodule" superClassName="ttbasepanelmodule" packageName="com.adobe.ttpixel.gallery" codeName="TTGallerySyncPanelModule"/>
+    <class className="ttslidecheckbox" superClassName="control" packageName="com.adobe.ttpixel.editor.ui" codeName="TTSlideCheckBox">
+      <var name="selected" type="boolean" defaultValue="false" codeName="iSelected"/>
+      <var name="isRound" type="boolean" defaultValue="false" codeName="iIsRound"/>
+    </class>
+    <class className="ttactiontext" superClassName="text" packageName="" codeName="TTActionText">
+      <var name="target" type="object" defaultValue="" codeName="iTarget" className="CABObject"/>
+      <var name="selector" type="string" defaultValue="" codeName="iSelector"/>
+      <var name="enabled" type="boolean" defaultValue="true" codeName="iEnabled"/>
+      <var name="color" type="number" defaultValue="-1" codeName="iColor"/>
+    </class>
+    <class className="ttcoloredview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTColoredView">
+      <var name="color" type="uint" defaultValue="0" codeName="iColor"/>
+    </class>
+  </classes>
+</ttgallerysyncpanelmodule>

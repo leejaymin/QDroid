@@ -1,0 +1,101 @@
+html,body
+{height:100%;
+ margin: 0;
+ padding: 0; 
+ border: 0;
+}
+
+body
+{
+width:100%;
+min-height:100%;
+margin:0;
+padding:0px;
+color:#00241D;
+font:normal 12px arial;
+background:#FFF;
+line-height:1.5;
+word-wrap: break-word;
+-webkit-text-size-adjust: none;
+
+
+}
+
+form{margin:0}
+table,input,select{font:normal 100% tahoma}
+img{border:0;margin:0; max-width: 100%;}
+table{ width:auto; border-collapse: collapse;border-spacing: 0;}
+.relatedtopics{width:350}
+a{color:#00241D}
+
+#content table{width:100%}
+
+.instable table{width:0%}
+
+.t,tr.t td{vertical-align:top;margin-left:4px}
+.m{vertical-align:middle}
+.b,tr.b td{vertical-align:bottom}
+tr.t td td,tr.b td td{vertical-align:auto}
+.l{text-align:left}
+.c{text-align:center}
+.r{text-align:right}
+.vc{vertical-align:center}
+
+.nobr{white-space:nowrap}
+
+.rel{position:relative}
+.abs{position:absolute}
+.fl{float:left}
+.fr{float:right}
+.cl{clear:both}
+
+.w100{width:100%}
+.h100{height:100%}
+
+big,.big{font-size:125%}
+small,.small{font-size:95%}
+.micro{color:#DDD;font:normal 9px tahoma}
+
+h1, h2, h3, h4, h5, h6{ font-weight: normal; }
+p{line-height:1.3;margin:0 0 0.7em 0}
+
+.z{border:1px solid red}
+
+.h1px{height:1px;font-size:1px;line-height:1px}
+
+/* style for content */
+/*.header{background:#007363 left top no-repeat;padding:0 12px 0 15px}
+*/
+.header{
+    font-family: arial, helvetica, sans-serif,"Verdana", verdana;
+	background-color: #007162;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#03A58E), to(#007162));
+    border-bottom: 1px solid #666;
+    color: #ffffff;
+    display: block;
+    font-size: 20pt;
+    font-weight: bold;
+    font-style: normal;
+    padding:0 12px 0 15px;
+	text-decoration: none;
+	}
+.footer{
+	background:inherit right top no-repeat;
+	padding:0 12px 0 15px;
+	border-color: #007360;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #B2D5CF;	
+	}
+
+.titles{background:#FBF9E6;padding:4px 15px}
+
+.white{color:#FFF;text-decoration:none}
+.grey{color:#8F8F90;text-decoration:none;font-size:8pt}
+
+.icon1{width:21px;height:21px;margin-left:4px;vertical-align:middle}}
+.icon2{width:26px;height:28px;margin-right:12px}
+.icon3{width:11px;height:11px;margin-right:6px;vertical-align:middle}
+
+.brd{border:solid 1px #5D8F8A;background:#FEFCEE;width:140px;padding:4px 8px;margin:2px 2px 0 0}
+a.free{text-decoration:none}

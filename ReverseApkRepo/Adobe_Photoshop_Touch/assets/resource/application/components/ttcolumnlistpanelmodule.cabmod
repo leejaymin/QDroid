@@ -1,0 +1,33 @@
+<ttcolumnlistpanelmodule id="module" view="view2" refdispatcher="referenceDispatcher" listView="columnListPanelView">
+  <windows>
+    <window id="window" width="490" height="430" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttpanelview id="view2" width="430" height="320" sizeX="right" x="40" y="10" module="module" whiteBackground="true">
+        <ttcolumnlistpanelview id="columnListPanelView" width="409" height="270" sizeX="scale" sizeY="scale" x="10" y="40" module="module"/>
+        <text id="ttblack" width="390" height="30" sizeX="scale" x="20" y="10" text="$$$/ttcolumnlistpanelmodule/text/text/Adjustments=Adjustments" textSize="18" align="left"/>
+      </ttpanelview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="ttblack" refName="titleText"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="ttbasepanelmodule" superClassName="module" packageName="com.adobe.ttpixel.ui" codeName="TTBasePanelModule">
+      <var name="view" type="object" defaultValue="" codeName="iView" className="CABView"/>
+      <var name="refdispatcher" type="object" defaultValue="" codeName="iRefDispatcher" className="CABReferenceDispatcher"/>
+    </class>
+    <class className="ttpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTPanelModule"/>
+      <var name="whiteBackground" type="boolean" defaultValue="false" codeName="iWhiteBackground"/>
+    </class>
+    <class className="ttcolumnlistpanelmodule" superClassName="ttbasepanelmodule" packageName="" codeName="TTColumnListPanelModule">
+      <var name="listView" type="object" defaultValue="" codeName="iListView" className="TTBaseListPanelView"/>
+    </class>
+    <class className="ttbaselistpanelview" superClassName="ttpanelview" packageName="com.adobe.ttpixel.ui" codeName="TTBaseListPanelView"/>
+    <class className="ttcolumnlistpanelview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTColumnListPanelView">
+      <var name="module" type="object" defaultValue="" codeName="iModule" className="TTColumnListPanelModule"/>
+    </class>
+  </classes>
+</ttcolumnlistpanelmodule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/search" android:nextFocusRight="@id/list" android:nextFocusDown="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="68.0dip" android:hint="@string/search" android:maxLines="1" android:lines="1" android:inputType="text">
+        <requestFocus />
+    </EditText>
+    <name.kunes.android.widget.AccessibleListView android:id="@id/list" android:nextFocusLeft="@id/search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?listDividerColor" android:dividerHeight="2.0dip" />
+</LinearLayout>

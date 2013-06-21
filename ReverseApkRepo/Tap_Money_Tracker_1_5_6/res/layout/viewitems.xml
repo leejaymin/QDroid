@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/caption_blue_bright" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/text_white" android:gravity="center" android:id="@id/tv_during" android:background="@color/background_list_header" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2009-07-01 to 2009-07-31" />
+    <ListView android:id="@id/lv_report" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

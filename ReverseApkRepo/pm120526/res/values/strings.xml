@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admob_content">"AdMob is one of the world's largest
+ mobile advertising networks, offering
+ solutions for discovery, branding and
+ monetization on the mobile web.
+
+ Website: admob.com
+
+ Ads have been filtered for childrens
+ safe viewing, however maybe you don't
+ like some ads in a game for kids. If so,
+ you consider to buy our ads-free key
+ application to remove Ads in all of
+ apps/games published by us.
+"</string>
+    <string name="airpush_content">"No more ads in the game but there is
+ one ad a day in the phone's notication
+ bar. Your kids are free to play without
+ any unknown ads. If you don't like
+ some ads in your notication bar, consider
+ to buy our ads-free key to remove key
+ from all of apps/games published by us.
+ Founded in Los Angeles by mobile
+ advertising veterans, Airpush is the
+ first mobile ad network based on push
+ notifications. They're ads appear in
+ the notification tray of Android devices,
+ where they can be viewed at the user's
+ convenience rather than while using an
+ app.
+ Website: airpush.com"</string>
+    <string name="noad_content">"No more ads in all of game published by
+ RubyCell.All you need to do is just install
+ our Ads-free key application and you will
+ forget about ads in all kids game
+ published by us: Kids TV, Kids Song, The
+ Best Jigsaw Puzzle, Coloring Game,
+ The best shape kid puzzle, ABC flash
+ card etc..
+ Open the \"Ads-Free Key\" application
+ to show the game list.(comming soon)
+ Have fun with our best quality game. If
+ you think one of game from us is not
+ the best, email us and we will fix it in
+ 2 business days.
+ Thank you for your support."</string>
+    <string name="moblicx_content">"Mobclix ad are fillted and therefore make
+ sure your kids can not see any adult/dating
+ ads in the game.
+
+ Website: mobclix.com"</string>
+    <string name="download_info">Do you want to download this file?</string>
+    <string name="dir_apk">/rubycellapk</string>
+    <string name="lose_internet">No internet connection!Please check again</string>
+    <string name="lose_sdcard">Please insert sdcard to continue downloading process!</string>
+    <string name="warning">Warning!</string>
+    <string name="hello">Hello World, GameActivity!</string>
+    <string name="app_name">Pianist - Piano Master</string>
+    <string name="dir_cache">/cachemoregamev2</string>
+    <string name="activity_actionmanagertest">Action Manager Test</string>
+    <string name="activity_actionstest">Actions Test</string>
+    <string name="activity_atlastest">Atlas Test</string>
+    <string name="activity_box2dtest">Box2D Test</string>
+    <string name="activity_clickandmovetest">Click And Move Test</string>
+    <string name="activity_cocosnodetest">Cocos Node Test</string>
+    <string name="activity_drawprimitivestest">Draw Primitives Test</string>
+    <string name="activity_easeactionstest">Ease Actions Test</string>
+    <string name="activity_effectsadvancedtest">Advanced Effects</string>
+    <string name="activity_effectstest">Effects Test</string>
+    <string name="activity_jbox2dtest">JBox2D Test</string>
+    <string name="activity_menutest">Menu Test</string>
+    <string name="activity_motionstreaktest">Motion Streak Test</string>
+    <string name="activity_particletest">Particle Test</string>
+    <string name="activity_schedulertest">Scheduler Test</string>
+    <string name="activity_tilemaptest">Tile Map Test</string>
+    <string name="activity_scenetest">Scene Test</string>
+    <string name="activity_soundenginetest">SoundEngine Test</string>
+    <string name="activity_spritestest">Sprites Test</string>
+    <string name="activity_transitionstest">Transitions Test</string>
+    <string name="activity_rotateworldtest">Rotate World Test</string>
+    <string name="activity_parallaxtest">Parallax Test</string>
+    <string name="location_submit">market</string>
+    <string name="android_500_rubys">com.rubycell.piano.ruby1</string>
+    <string name="android_1500_rubys">com.rubycell.piano.ruby2</string>
+    <string name="android_1500_rubys_dev">android.test.purchased</string>
+    <string name="android_500_rubys_dev">android.test.canceled</string>
+    <string name="welcome">Welcome to the Sample store!</string>
+    <string name="billing_not_supported_title">"Can't make purchases"</string>
+    <string name="billing_not_supported_message">"The Market billing service is not available at this time. You can continue to use this app but you won't be able to make purchases."</string>
+    <string name="cannot_connect_title">"Can't connect to Market"</string>
+    <string name="cannot_connect_message">"This app cannot connect to Market. Your version of Market may be out of date. You can continue to use this app but you won't be able to make purchases."</string>
+    <string name="restoring_transactions">Restoring transactions</string>
+    <string name="learn_more">Learn more</string>
+    <string name="buy">Buy</string>
+    <string name="record_path">/Pianist HD Master/record/</string>
+    <string name="download_path">/Pianist HD Master/download/</string>
+    <string name="record_replay_path">/Pianist HD Master/replay/</string>
+    <string name="favourite_path">/Pianist HD Master/favourite/</string>
+    <string name="sound_path">/Pianist HD Master/sound/</string>
+    <string name="download_from_cloud_path">http://23.21.188.188/pianisthd/files/</string>
+    <string name="upload_path">http://23.21.188.188/pianisthd/files/upload.php</string>
+    <string name="update_path">http://23.21.188.188/pianisthd/files/update_song.php</string>
+    <string name="delete_path">http://23.21.188.188/pianisthd/files/delete_song.php</string>
+    <string name="database">rubycell</string>
+    <string name="upload_status">Facebook uploader: your status will be uploaded.</string>
+    <string name="upload_err">Facebook Error: cannot post your status, check your facebook permission or network connection.</string>
+    <string name="facebook_key">3463463673</string>
+    <string name="love_this_app">Love this app?Please tap here to comment about it</string>
+    <string name="like_this_app">Love this app?Like and folow us on Facebook and Twitter</string>
+    <string name="send_mail">Have question or feedback? Send mail to us</string>
+    <string name="icoloring_star">iColoring Star</string>
+    <string name="coloring_princess">Coloring Princess</string>
+    <string name="color_bus">Memory Game</string>
+    <string name="color_grid">Color Grid</string>
+    <string name="snake">Puzzle-Pop: Fairy</string>
+    <string name="box_princess">Box Princess</string>
+</resources>

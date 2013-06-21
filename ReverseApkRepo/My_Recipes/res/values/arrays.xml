@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="measurements">
+        <item>Cup</item>
+        <item>Gallon</item>
+        <item>Large</item>
+        <item>Ounce</item>
+        <item>Package</item>
+        <item>Pint</item>
+        <item>Pound</item>
+        <item>Quart</item>
+        <item>Small</item>
+        <item>Tablespoon</item>
+        <item>Teaspoon</item>
+    </string-array>
+    <string-array name="bg_names">
+        <item>White Stripes</item>
+        <item>Black Stripes</item>
+        <item>Red Stripes</item>
+        <item>Purple Dots</item>
+        <item>Purple Burst</item>
+        <item>Notebook</item>
+    </string-array>
+    <string-array name="bg">
+        <item>bg_white_stripes</item>
+        <item>bg_black_stripes</item>
+        <item>bg_red_stripes</item>
+        <item>bg_purple_dots</item>
+        <item>bg_purple_burst</item>
+        <item>bg_notebook</item>
+    </string-array>
+    <string-array name="recipe_categories">
+        <item>All</item>
+        <item>Appetizers and Snacks</item>
+        <item>Bread</item>
+        <item>Breakfast and Brunch</item>
+        <item>Desserts</item>
+        <item>Drinks</item>
+        <item>Main Dish</item>
+        <item>Salad</item>
+        <item>Side Dish</item>
+        <item>Soups, Stews and Chili</item>
+    </string-array>
+</resources>

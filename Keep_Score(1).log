@@ -1,0 +1,3762 @@
+[ 2012-09-16 06:26:00,925 ][ INFO ] Reversing Activity / BoradCast / Service List
+
+[ 2012-09-16 06:26:00,925 ][ INFO ] .Setup
+
+[ 2012-09-16 06:26:00,925 ][ INFO ] .Game
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] pacakge name: com.elsdoerfer.keepscore
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] Total Activity: 2
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] Total Service: 0
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] Total BroadCast: 0
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] completeProgress: 2
+
+[ 2012-09-16 06:26:00,926 ][ INFO ] ======== complete parsing xml ===========
+
+[ 2012-09-16 06:26:02,436 ][ ERROR ] 555 KB/s (41574 bytes in 0.073s)
+	pkg: /data/local/tmp/Keep_Score.apk
+Failure [INSTALL_FAILED_ALREADY_EXISTS]
+
+
+[ 2012-09-16 06:26:04,324 ][ INFO ] 507 KB/s (41574 bytes in 0.079s)
+	pkg: /data/local/tmp/Keep_Score.apk
+Success
+
+
+[ 2012-09-16 06:26:11,003 ][ INFO ] ====== Starting Activity Testing:.Setup =======
+
+[ 2012-09-16 06:26:11,003 ][ INFO ] ======== Progress: 2/1 =========
+
+[ 2012-09-16 06:26:13,073 ][ INFO ] Starting: Intent { cmp=com.elsdoerfer.keepscore/.Setup }
+Status: ok
+Activity: com.elsdoerfer.keepscore/.Setup
+ThisTime: 419
+TotalTime: 419
+Complete
+
+
+[ 2012-09-16 06:28:58,798 ][ INFO ] :monkey: seed=0 count=3000
+:allowpackage: com.elsdoerfer.keepscore
+:includecategory: android.intent.category.launcher
+:includecategory: android.intent.category.monkey
+// selecting main activities from category android.intent.category.launcher
+//   + using main activity com.elsdoerfer.keepscore.setup (from package com.elsdoerfer.keepscore)
+// selecting main activities from category android.intent.category.monkey
+// seeded: 0
+// event percentages:
+//   0: 20.0%
+//   1: 20.0%
+//   2: 20.0%
+//   3: 0.0%
+//   4: 20.0%
+//   5: 0.0%
+//   6: 0.0%
+//   7: 0.0%
+//   8: 20.0%
+:switch: #intent;action=android.intent.action.main;category=android.intent.category.launcher;launchflags=0x10000000;component=com.elsdoerfer.keepscore/.setup;end
+    // allowing start of intent { act=android.intent.action.main cat=[android.intent.category.launcher] cmp=com.elsdoerfer.keepscore/.setup } in package com.elsdoerfer.keepscore
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 13    // keycode_6
+:sendkey (action_up): 13    // keycode_6
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=149.0 y=663.0
+:sending pointer action_move x=156.0 y=665.0
+:sending pointer action_up x=156.0 y=665.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=452.0 y=530.0
+:sending pointer action_up x=452.0 y=530.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 105    // keycode_button_r2
+:sendkey (action_up): 105    // keycode_button_r2
+sleeping for 200 milliseconds
+:sending pointer action_down x=295.0 y=422.0
+:sending pointer action_up x=295.0 y=422.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=282.0 y=459.0
+:sending pointer action_move x=284.0 y=468.0
+:sending pointer action_up x=284.0 y=468.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=234.0 y=582.0
+:sending pointer action_up x=234.0 y=582.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=380.0 y=9.0
+:sending pointer action_up x=380.0 y=9.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_down x=334.0 y=676.0
+:sending pointer action_up x=334.0 y=676.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 80    // keycode_focus
+:sendkey (action_up): 80    // keycode_focus
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=325.0 y=293.0
+:sending pointer action_move x=321.0 y=286.0
+:sending pointer action_move x=321.0 y=292.0
+:sending pointer action_move x=314.0 y=297.0
+:sending pointer action_move x=320.0 y=290.0
+:sending pointer action_move x=325.0 y=293.0
+:sending pointer action_up x=325.0 y=293.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_down x=111.0 y=100.0
+:sending pointer action_move x=109.0 y=105.0
+:sending pointer action_move x=113.0 y=105.0
+:sending pointer action_move x=117.0 y=113.0
+:sending pointer action_move x=113.0 y=112.0
+:sending pointer action_up x=113.0 y=112.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 39    // keycode_k
+:sendkey (action_up): 39    // keycode_k
+sleeping for 200 milliseconds
+:sending pointer action_down x=231.0 y=144.0
+:sending pointer action_up x=231.0 y=144.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 57    // keycode_alt_left
+:sendkey (action_up): 57    // keycode_alt_left
+sleeping for 200 milliseconds
+:sending pointer action_down x=294.0 y=602.0
+:sending pointer action_up x=294.0 y=602.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=175.0 y=156.0
+:sending pointer action_up x=175.0 y=156.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=4.0 y=3.0
+    //[calendar_time:2012-09-16 22:24:59.401  system_uptime:77493]
+    // sending event #100
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=4.0 y=-4.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 77    // keycode_at
+:sendkey (action_up): 77    // keycode_at
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_down x=382.0 y=463.0
+:sending pointer action_move x=380.0 y=471.0
+:sending pointer action_move x=373.0 y=471.0
+:sending pointer action_move x=380.0 y=476.0
+:sending pointer action_move x=383.0 y=471.0
+:sending pointer action_move x=387.0 y=462.0
+:sending pointer action_move x=395.0 y=467.0
+:sending pointer action_up x=395.0 y=467.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=352.0 y=19.0
+:sending pointer action_up x=352.0 y=19.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=164.0 y=221.0
+:sending pointer action_move x=164.0 y=221.0
+:sending pointer action_move x=173.0 y=226.0
+:sending pointer action_up x=173.0 y=226.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 63    // keycode_sym
+:sendkey (action_up): 63    // keycode_sym
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_down x=269.0 y=693.0
+:sending pointer action_up x=269.0 y=693.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 83    // keycode_notification
+:sendkey (action_up): 83    // keycode_notification
+sleeping for 200 milliseconds
+:sendkey (action_down): 32    // keycode_d
+:sendkey (action_up): 32    // keycode_d
+sleeping for 200 milliseconds
+:sending pointer action_down x=402.0 y=465.0
+:sending pointer action_move x=401.0 y=468.0
+:sending pointer action_move x=402.0 y=465.0
+:sending pointer action_move x=405.0 y=472.0
+:sending pointer action_move x=413.0 y=471.0
+:sending pointer action_move x=418.0 y=464.0
+:sending pointer action_move x=421.0 y=467.0
+:sending pointer action_move x=418.0 y=468.0
+:sending pointer action_move x=418.0 y=474.0
+:sending pointer action_move x=422.0 y=478.0
+:sending pointer action_up x=422.0 y=478.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_down x=176.0 y=472.0
+:sending pointer action_move x=184.0 y=471.0
+:sending pointer action_move x=185.0 y=465.0
+:sending pointer action_move x=182.0 y=459.0
+:sending pointer action_move x=190.0 y=457.0
+:sending pointer action_up x=190.0 y=457.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=413.0 y=22.0
+:sending pointer action_up x=413.0 y=22.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-2.0
+    //[calendar_time:2012-09-16 22:25:03.522  system_uptime:81611]
+    // sending event #200
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=4.0 y=641.0
+:sending pointer action_move x=11.0 y=633.0
+:sending pointer action_move x=12.0 y=638.0
+:sending pointer action_move x=12.0 y=647.0
+:sending pointer action_move x=11.0 y=656.0
+:sending pointer action_move x=11.0 y=648.0
+:sending pointer action_move x=16.0 y=643.0
+:sending pointer action_move x=20.0 y=647.0
+:sending pointer action_move x=22.0 y=652.0
+:sending pointer action_move x=20.0 y=644.0
+:sending pointer action_up x=20.0 y=644.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 101    // keycode_button_z
+:sendkey (action_up): 101    // keycode_button_z
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_down x=298.0 y=344.0
+:sending pointer action_up x=298.0 y=344.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=206.0 y=614.0
+:sending pointer action_up x=206.0 y=614.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=138.0 y=775.0
+:sending pointer action_move x=135.0 y=776.0
+:sending pointer action_move x=137.0 y=771.0
+:sending pointer action_move x=144.0 y=762.0
+:sending pointer action_move x=153.0 y=755.0
+:sending pointer action_move x=147.0 y=750.0
+:sending pointer action_move x=148.0 y=751.0
+:sending pointer action_move x=141.0 y=747.0
+:sending pointer action_move x=138.0 y=755.0
+:sending pointer action_up x=138.0 y=755.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=434.0 y=364.0
+:sending pointer action_up x=434.0 y=364.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 33    // keycode_e
+:sendkey (action_up): 33    // keycode_e
+sleeping for 200 milliseconds
+:sendkey (action_down): 85    // keycode_playpause
+:sendkey (action_up): 85    // keycode_playpause
+sleeping for 200 milliseconds
+:sending pointer action_down x=331.0 y=476.0
+:sending pointer action_move x=323.0 y=472.0
+:sending pointer action_up x=323.0 y=472.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=324.0 y=330.0
+:sending pointer action_move x=315.0 y=330.0
+:sending pointer action_move x=318.0 y=324.0
+:sending pointer action_move x=319.0 y=320.0
+:sending pointer action_up x=319.0 y=320.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_down x=346.0 y=652.0
+:sending pointer action_move x=344.0 y=648.0
+:sending pointer action_move x=347.0 y=656.0
+:sending pointer action_move x=340.0 y=660.0
+:sending pointer action_up x=340.0 y=660.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 97    // keycode_button_b
+:sendkey (action_up): 97    // keycode_button_b
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=275.0 y=298.0
+:sending pointer action_move x=277.0 y=293.0
+:sending pointer action_move x=285.0 y=293.0
+    //[calendar_time:2012-09-16 22:25:08.503  system_uptime:86592]
+    // sending event #300
+:sending pointer action_move x=281.0 y=288.0
+:sending pointer action_move x=275.0 y=282.0
+:sending pointer action_move x=277.0 y=275.0
+:sending pointer action_move x=280.0 y=279.0
+:sending pointer action_up x=280.0 y=279.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=404.0 y=28.0
+:sending pointer action_move x=407.0 y=19.0
+:sending pointer action_move x=412.0 y=24.0
+:sending pointer action_move x=404.0 y=28.0
+:sending pointer action_up x=404.0 y=28.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=438.0 y=438.0
+:sending pointer action_up x=438.0 y=438.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=86.0 y=500.0
+:sending pointer action_up x=86.0 y=500.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=163.0 y=648.0
+:sending pointer action_up x=163.0 y=648.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_down x=407.0 y=539.0
+:sending pointer action_move x=404.0 y=535.0
+:sending pointer action_move x=395.0 y=527.0
+:sending pointer action_move x=388.0 y=519.0
+:sending pointer action_move x=392.0 y=511.0
+:sending pointer action_move x=393.0 y=511.0
+:sending pointer action_move x=391.0 y=510.0
+:sending pointer action_move x=386.0 y=510.0
+:sending pointer action_up x=386.0 y=510.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=92.0 y=722.0
+:sending pointer action_up x=92.0 y=722.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=256.0 y=482.0
+:sending pointer action_move x=261.0 y=483.0
+:sending pointer action_move x=258.0 y=483.0
+:sending pointer action_move x=265.0 y=486.0
+:sending pointer action_move x=273.0 y=490.0
+:sending pointer action_move x=267.0 y=481.0
+:sending pointer action_move x=265.0 y=474.0
+:sending pointer action_move x=266.0 y=471.0
+:sending pointer action_up x=266.0 y=471.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 56    // keycode_period
+:sendkey (action_up): 56    // keycode_period
+sleeping for 200 milliseconds
+:sending pointer action_down x=338.0 y=32.0
+:sending pointer action_move x=330.0 y=24.0
+:sending pointer action_move x=324.0 y=31.0
+:sending pointer action_move x=319.0 y=31.0
+:sending pointer action_move x=324.0 y=30.0
+:sending pointer action_move x=330.0 y=35.0
+:sending pointer action_move x=332.0 y=36.0
+:sending pointer action_move x=330.0 y=35.0
+:sending pointer action_move x=329.0 y=30.0
+:sending pointer action_move x=329.0 y=34.0
+:sending pointer action_up x=329.0 y=34.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=474.0 y=625.0
+:sending pointer action_up x=474.0 y=625.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=343.0 y=157.0
+:sending pointer action_up x=343.0 y=157.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 49    // keycode_u
+:sendkey (action_up): 49    // keycode_u
+sleeping for 200 milliseconds
+:sending pointer action_down x=422.0 y=697.0
+:sending pointer action_move x=427.0 y=703.0
+:sending pointer action_move x=420.0 y=701.0
+:sending pointer action_move x=419.0 y=701.0
+:sending pointer action_move x=412.0 y=702.0
+:sending pointer action_up x=412.0 y=702.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 66    // keycode_enter
+:sendkey (action_up): 66    // keycode_enter
+sleeping for 200 milliseconds
+:sending pointer action_down x=191.0 y=785.0
+:sending pointer action_move x=192.0 y=790.0
+:sending pointer action_up x=192.0 y=790.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+    //[calendar_time:2012-09-16 22:25:15.208  system_uptime:93296]
+    // sending event #400
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_down x=129.0 y=251.0
+:sending pointer action_up x=129.0 y=251.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=222.0 y=720.0
+:sending pointer action_move x=223.0 y=728.0
+:sending pointer action_move x=224.0 y=725.0
+:sending pointer action_move x=222.0 y=718.0
+:sending pointer action_move x=220.0 y=727.0
+:sending pointer action_move x=228.0 y=727.0
+:sending pointer action_up x=228.0 y=727.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=384.0 y=344.0
+:sending pointer action_move x=388.0 y=344.0
+:sending pointer action_up x=388.0 y=344.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 70    // keycode_equals
+:sendkey (action_up): 70    // keycode_equals
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=0.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_down x=59.0 y=491.0
+:sending pointer action_up x=59.0 y=491.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=120.0 y=204.0
+:sending pointer action_move x=115.0 y=213.0
+:sending pointer action_move x=116.0 y=219.0
+:sending pointer action_move x=124.0 y=218.0
+:sending pointer action_move x=127.0 y=225.0
+:sending pointer action_move x=123.0 y=229.0
+:sending pointer action_move x=124.0 y=229.0
+:sending pointer action_move x=122.0 y=226.0
+:sending pointer action_move x=127.0 y=227.0
+:sending pointer action_move x=119.0 y=219.0
+:sending pointer action_up x=119.0 y=219.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_down x=378.0 y=423.0
+:sending pointer action_up x=378.0 y=423.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 22    // keycode_dpad_right
+:sendkey (action_up): 22    // keycode_dpad_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 78    // keycode_num
+:sendkey (action_up): 78    // keycode_num
+sleeping for 200 milliseconds
+:sendkey (action_down): 17    // keycode_star
+:sendkey (action_up): 17    // keycode_star
+sleeping for 200 milliseconds
+:sendkey (action_down): 29    // keycode_a
+    //[calendar_time:2012-09-16 22:25:19.707  system_uptime:97797]
+    // sending event #500
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 38    // keycode_j
+:sendkey (action_up): 38    // keycode_j
+sleeping for 200 milliseconds
+:sending pointer action_down x=289.0 y=51.0
+:sending pointer action_move x=289.0 y=59.0
+:sending pointer action_move x=296.0 y=61.0
+:sending pointer action_move x=296.0 y=58.0
+:sending pointer action_move x=298.0 y=49.0
+:sending pointer action_move x=304.0 y=43.0
+:sending pointer action_move x=300.0 y=42.0
+:sending pointer action_move x=305.0 y=39.0
+:sending pointer action_move x=296.0 y=41.0
+:sending pointer action_up x=296.0 y=41.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=311.0 y=425.0
+:sending pointer action_up x=311.0 y=425.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sendkey (action_down): 10    // keycode_3
+:sendkey (action_up): 10    // keycode_3
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=-3.0 y=0.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=com.android.launcher/.launcher } in package com.android.launcher
+sleeping for 200 milliseconds
+:sending pointer action_down x=87.0 y=682.0
+:sending pointer action_up x=87.0 y=682.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=383.0 y=236.0
+:sending pointer action_move x=392.0 y=239.0
+:sending pointer action_move x=384.0 y=230.0
+:sending pointer action_move x=386.0 y=232.0
+:sending pointer action_move x=378.0 y=240.0
+:sending pointer action_move x=383.0 y=238.0
+:sending pointer action_move x=382.0 y=246.0
+:sending pointer action_move x=382.0 y=254.0
+:sending pointer action_up x=382.0 y=254.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=41.0 y=454.0
+:sending pointer action_move x=44.0 y=453.0
+:sending pointer action_move x=43.0 y=459.0
+:sending pointer action_move x=47.0 y=464.0
+:sending pointer action_move x=46.0 y=464.0
+:sending pointer action_move x=42.0 y=471.0
+:sending pointer action_move x=42.0 y=473.0
+:sending pointer action_move x=46.0 y=471.0
+:sending pointer action_move x=49.0 y=477.0
+:sending pointer action_up x=49.0 y=477.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=35.0 y=568.0
+:sending pointer action_up x=35.0 y=568.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=457.0 y=698.0
+:sending pointer action_up x=457.0 y=698.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=43.0 y=254.0
+:sending pointer action_move x=40.0 y=260.0
+:sending pointer action_up x=40.0 y=260.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 79    // keycode_headsethook
+:sendkey (action_up): 79    // keycode_headsethook
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=81.0 y=671.0
+:sending pointer action_move x=86.0 y=662.0
+:sending pointer action_move x=79.0 y=671.0
+:sending pointer action_move x=85.0 y=670.0
+:sending pointer action_up x=85.0 y=670.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=218.0 y=109.0
+:sending pointer action_up x=218.0 y=109.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 96    // keycode_button_a
+:sendkey (action_up): 96    // keycode_button_a
+sleeping for 200 milliseconds
+:sending pointer action_down x=255.0 y=734.0
+:sending pointer action_up x=255.0 y=734.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=345.0 y=29.0
+:sending pointer action_up x=345.0 y=29.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=0.0 y=3.0
+    //[calendar_time:2012-09-16 22:25:26.078  system_uptime:104166]
+    // sending event #600
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=56.0 y=713.0
+:sending pointer action_up x=56.0 y=713.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=430.0 y=83.0
+:sending pointer action_move x=439.0 y=85.0
+:sending pointer action_move x=447.0 y=92.0
+:sending pointer action_move x=447.0 y=83.0
+:sending pointer action_up x=447.0 y=83.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=265.0 y=613.0
+:sending pointer action_up x=265.0 y=613.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 25    // keycode_volume_down
+:sendkey (action_up): 25    // keycode_volume_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=52.0 y=260.0
+:sending pointer action_move x=45.0 y=268.0
+:sending pointer action_move x=44.0 y=265.0
+:sending pointer action_move x=44.0 y=261.0
+:sending pointer action_move x=50.0 y=261.0
+:sending pointer action_move x=55.0 y=266.0
+:sending pointer action_move x=62.0 y=258.0
+:sending pointer action_move x=62.0 y=267.0
+:sending pointer action_move x=56.0 y=274.0
+:sending pointer action_up x=56.0 y=274.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=80.0 y=616.0
+:sending pointer action_up x=80.0 y=616.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=446.0 y=370.0
+:sending pointer action_move x=448.0 y=367.0
+:sending pointer action_move x=440.0 y=367.0
+:sending pointer action_move x=434.0 y=372.0
+:sending pointer action_move x=436.0 y=377.0
+:sending pointer action_move x=437.0 y=382.0
+:sending pointer action_move x=442.0 y=374.0
+:sending pointer action_move x=446.0 y=373.0
+:sending pointer action_move x=438.0 y=373.0
+:sending pointer action_up x=438.0 y=373.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 48    // keycode_t
+:sendkey (action_up): 48    // keycode_t
+sleeping for 200 milliseconds
+:sending pointer action_down x=274.0 y=173.0
+:sending pointer action_up x=274.0 y=173.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+    //[calendar_time:2012-09-16 22:25:32.012  system_uptime:110100]
+    // sending event #700
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=81.0 y=519.0
+:sending pointer action_up x=81.0 y=519.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=353.0 y=337.0
+:sending pointer action_up x=353.0 y=337.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=287.0 y=709.0
+:sending pointer action_up x=287.0 y=709.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=307.0 y=209.0
+:sending pointer action_move x=298.0 y=201.0
+:sending pointer action_move x=307.0 y=200.0
+:sending pointer action_move x=300.0 y=194.0
+:sending pointer action_move x=295.0 y=202.0
+:sending pointer action_move x=293.0 y=202.0
+:sending pointer action_move x=289.0 y=200.0
+:sending pointer action_move x=298.0 y=206.0
+:sending pointer action_move x=303.0 y=211.0
+:sending pointer action_up x=303.0 y=211.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=423.0 y=742.0
+:sending pointer action_up x=423.0 y=742.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sendkey (action_down): 60    // keycode_shift_right
+:sendkey (action_up): 60    // keycode_shift_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=386.0 y=277.0
+:sending pointer action_up x=386.0 y=277.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 77    // keycode_at
+:sendkey (action_up): 77    // keycode_at
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-3.0 y=2.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sendkey (action_down): 1    // keycode_soft_left
+:sendkey (action_up): 1    // keycode_soft_left
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_down x=394.0 y=168.0
+:sending pointer action_up x=394.0 y=168.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=2.0
+    //[calendar_time:2012-09-16 22:25:36.030  system_uptime:114117]
+    // sending event #800
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sendkey (action_down): 47    // keycode_s
+:sendkey (action_up): 47    // keycode_s
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=339.0 y=718.0
+:sending pointer action_up x=339.0 y=718.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sending pointer action_down x=245.0 y=273.0
+:sending pointer action_move x=252.0 y=265.0
+:sending pointer action_up x=252.0 y=265.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=274.0 y=38.0
+:sending pointer action_up x=274.0 y=38.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_down x=448.0 y=634.0
+:sending pointer action_move x=442.0 y=635.0
+:sending pointer action_move x=447.0 y=642.0
+:sending pointer action_move x=445.0 y=645.0
+:sending pointer action_move x=446.0 y=642.0
+:sending pointer action_move x=437.0 y=642.0
+:sending pointer action_move x=432.0 y=645.0
+:sending pointer action_move x=440.0 y=646.0
+:sending pointer action_up x=440.0 y=646.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 35    // keycode_g
+:sendkey (action_up): 35    // keycode_g
+sleeping for 200 milliseconds
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sending pointer action_down x=170.0 y=395.0
+:sending pointer action_move x=175.0 y=388.0
+:sending pointer action_move x=171.0 y=382.0
+:sending pointer action_move x=171.0 y=373.0
+:sending pointer action_move x=173.0 y=373.0
+:sending pointer action_move x=171.0 y=377.0
+:sending pointer action_move x=179.0 y=373.0
+:sending pointer action_move x=186.0 y=368.0
+:sending pointer action_move x=194.0 y=363.0
+:sending pointer action_up x=194.0 y=363.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=7.0 y=9.0
+:sending pointer action_move x=11.0 y=3.0
+:sending pointer action_up x=11.0 y=3.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_down x=430.0 y=544.0
+:sending pointer action_up x=430.0 y=544.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=299.0 y=390.0
+:sending pointer action_up x=299.0 y=390.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=217.0 y=799.0
+:sending pointer action_move x=225.0 y=795.0
+:sending pointer action_move x=216.0 y=3.0
+:sending pointer action_move x=215.0 y=-2.0
+:sending pointer action_up x=215.0 y=-2.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 101    // keycode_button_z
+:sendkey (action_up): 101    // keycode_button_z
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=254.0 y=324.0
+:sending pointer action_move x=256.0 y=326.0
+:sending pointer action_move x=265.0 y=318.0
+:sending pointer action_move x=263.0 y=326.0
+:sending pointer action_move x=267.0 y=321.0
+:sending pointer action_move x=261.0 y=322.0
+:sending pointer action_up x=261.0 y=322.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=1.0 y=1.0
+    //[calendar_time:2012-09-16 22:25:41.764  system_uptime:119852]
+    // sending event #900
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_down x=25.0 y=239.0
+:sending pointer action_up x=25.0 y=239.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=452.0 y=378.0
+:sending pointer action_move x=457.0 y=383.0
+:sending pointer action_up x=457.0 y=383.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 106    // keycode_button_thumbl
+:sendkey (action_up): 106    // keycode_button_thumbl
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=6.0 y=507.0
+:sending pointer action_up x=6.0 y=507.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=237.0 y=0.0
+:sending pointer action_move x=234.0 y=6.0
+:sending pointer action_move x=228.0 y=14.0
+:sending pointer action_move x=220.0 y=6.0
+:sending pointer action_up x=220.0 y=6.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 37    // keycode_i
+:sendkey (action_up): 37    // keycode_i
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=com.android.launcher/.launcher } in package com.android.launcher
+sleeping for 200 milliseconds
+:sending pointer action_down x=179.0 y=90.0
+:sending pointer action_move x=177.0 y=90.0
+:sending pointer action_move x=170.0 y=87.0
+:sending pointer action_move x=172.0 y=88.0
+:sending pointer action_move x=163.0 y=87.0
+:sending pointer action_move x=165.0 y=86.0
+:sending pointer action_move x=168.0 y=93.0
+:sending pointer action_move x=172.0 y=88.0
+:sending pointer action_move x=171.0 y=83.0
+:sending pointer action_move x=168.0 y=79.0
+:sending pointer action_up x=168.0 y=79.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 67    // keycode_del
+:sendkey (action_up): 67    // keycode_del
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=434.0 y=356.0
+:sending pointer action_move x=441.0 y=347.0
+:sending pointer action_move x=446.0 y=353.0
+:sending pointer action_up x=446.0 y=353.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=254.0 y=87.0
+:sending pointer action_move x=252.0 y=79.0
+:sending pointer action_move x=251.0 y=74.0
+:sending pointer action_move x=257.0 y=69.0
+:sending pointer action_move x=252.0 y=74.0
+:sending pointer action_move x=247.0 y=71.0
+:sending pointer action_move x=239.0 y=64.0
+:sending pointer action_move x=246.0 y=56.0
+:sending pointer action_move x=248.0 y=58.0
+:sending pointer action_up x=248.0 y=58.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=271.0 y=251.0
+:sending pointer action_up x=271.0 y=251.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=109.0 y=741.0
+:sending pointer action_move x=116.0 y=750.0
+:sending pointer action_move x=116.0 y=749.0
+:sending pointer action_move x=123.0 y=742.0
+:sending pointer action_move x=114.0 y=736.0
+:sending pointer action_move x=119.0 y=743.0
+:sending pointer action_move x=114.0 y=746.0
+:sending pointer action_move x=114.0 y=740.0
+:sending pointer action_move x=123.0 y=734.0
+:sending pointer action_up x=123.0 y=734.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 38    // keycode_j
+:sendkey (action_up): 38    // keycode_j
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=327.0 y=673.0
+:sending pointer action_up x=327.0 y=673.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=364.0 y=334.0
+:sending pointer action_up x=364.0 y=334.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 40    // keycode_l
+:sendkey (action_up): 40    // keycode_l
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=439.0 y=727.0
+:sending pointer action_move x=432.0 y=736.0
+:sending pointer action_up x=432.0 y=736.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=56.0 y=40.0
+:sending pointer action_up x=56.0 y=40.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=119.0 y=361.0
+:sending pointer action_move x=119.0 y=358.0
+    //[calendar_time:2012-09-16 22:25:49.832  system_uptime:127921]
+    // sending event #1000
+:sending pointer action_move x=120.0 y=350.0
+:sending pointer action_up x=120.0 y=350.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 72    // keycode_right_bracket
+:sendkey (action_up): 72    // keycode_right_bracket
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_down x=44.0 y=165.0
+:sending pointer action_up x=44.0 y=165.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 41    // keycode_m
+:sendkey (action_up): 41    // keycode_m
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_down x=365.0 y=257.0
+:sending pointer action_move x=365.0 y=257.0
+:sending pointer action_move x=364.0 y=250.0
+:sending pointer action_move x=369.0 y=245.0
+:sending pointer action_move x=363.0 y=239.0
+:sending pointer action_up x=363.0 y=239.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 12    // keycode_5
+:sendkey (action_up): 12    // keycode_5
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=com.android.launcher/.launcher } in package com.android.launcher
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_down x=421.0 y=351.0
+:sending pointer action_move x=412.0 y=356.0
+:sending pointer action_move x=413.0 y=353.0
+:sending pointer action_move x=413.0 y=357.0
+:sending pointer action_move x=404.0 y=350.0
+:sending pointer action_move x=396.0 y=344.0
+:sending pointer action_move x=395.0 y=338.0
+:sending pointer action_move x=404.0 y=329.0
+:sending pointer action_move x=407.0 y=320.0
+:sending pointer action_move x=404.0 y=320.0
+:sending pointer action_up x=404.0 y=320.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=431.0 y=421.0
+:sending pointer action_move x=439.0 y=418.0
+:sending pointer action_move x=437.0 y=419.0
+:sending pointer action_move x=446.0 y=419.0
+:sending pointer action_up x=446.0 y=419.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=com.android.launcher/.launcher } in package com.android.launcher
+sleeping for 200 milliseconds
+:sending pointer action_down x=28.0 y=432.0
+:sending pointer action_up x=28.0 y=432.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+    //[calendar_time:2012-09-16 22:25:54.723  system_uptime:132813]
+    // sending event #1100
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:25:54.927  system_uptime:133016]
+    // sending event #1100
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-5.0 y=3.0
+:sendkey (action_down): 16    // keycode_9
+:sendkey (action_up): 16    // keycode_9
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_down x=103.0 y=514.0
+:sending pointer action_up x=103.0 y=514.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=409.0 y=446.0
+:sending pointer action_move x=408.0 y=450.0
+:sending pointer action_move x=412.0 y=448.0
+:sending pointer action_move x=404.0 y=450.0
+:sending pointer action_move x=401.0 y=446.0
+:sending pointer action_up x=401.0 y=446.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 58    // keycode_alt_right
+:sendkey (action_up): 58    // keycode_alt_right
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=184.0 y=53.0
+:sending pointer action_move x=189.0 y=51.0
+:sending pointer action_move x=195.0 y=59.0
+:sending pointer action_move x=193.0 y=66.0
+:sending pointer action_up x=193.0 y=66.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 84    // keycode_search
+:sendkey (action_up): 84    // keycode_search
+sleeping for 200 milliseconds
+:sendkey (action_down): 31    // keycode_c
+:sendkey (action_up): 31    // keycode_c
+sleeping for 200 milliseconds
+:sendkey (action_down): 106    // keycode_button_thumbl
+:sendkey (action_up): 106    // keycode_button_thumbl
+sleeping for 200 milliseconds
+:sending pointer action_down x=124.0 y=634.0
+:sending pointer action_up x=124.0 y=634.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=307.0 y=448.0
+:sending pointer action_move x=307.0 y=441.0
+:sending pointer action_move x=310.0 y=450.0
+:sending pointer action_up x=310.0 y=450.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+:sending pointer action_down x=316.0 y=187.0
+:sending pointer action_up x=316.0 y=187.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_down x=396.0 y=586.0
+:sending pointer action_up x=396.0 y=586.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=24.0 y=653.0
+:sending pointer action_up x=24.0 y=653.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=3.0 y=2.0
+    //[calendar_time:2012-09-16 22:26:00.308  system_uptime:138395]
+    // sending event #1200
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_down x=207.0 y=718.0
+:sending pointer action_up x=207.0 y=718.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=207.0 y=82.0
+:sending pointer action_up x=207.0 y=82.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=4.0 y=-5.0
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 45    // keycode_q
+:sendkey (action_up): 45    // keycode_q
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 21    // keycode_dpad_left
+:sendkey (action_up): 21    // keycode_dpad_left
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=427.0 y=243.0
+:sending pointer action_up x=427.0 y=243.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 98    // keycode_button_c
+:sendkey (action_up): 98    // keycode_button_c
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=323.0 y=712.0
+:sending pointer action_up x=323.0 y=712.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=12.0 y=142.0
+:sending pointer action_move x=4.0 y=150.0
+:sending pointer action_up x=4.0 y=150.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=1.0 y=-3.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 98    // keycode_button_c
+:sendkey (action_up): 98    // keycode_button_c
+sleeping for 200 milliseconds
+:sendkey (action_down): 99    // keycode_button_x
+:sendkey (action_up): 99    // keycode_button_x
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 24    // keycode_volume_up
+:sendkey (action_up): 24    // keycode_volume_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 64    // keycode_explorer
+:sendkey (action_up): 64    // keycode_explorer
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 17    // keycode_star
+:sendkey (action_up): 17    // keycode_star
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-5.0 y=3.0
+    //[calendar_time:2012-09-16 22:26:07.536  system_uptime:145623]
+    // sending event #1300
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_down x=131.0 y=394.0
+:sending pointer action_up x=131.0 y=394.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_down x=209.0 y=92.0
+:sending pointer action_move x=207.0 y=96.0
+:sending pointer action_move x=209.0 y=103.0
+:sending pointer action_move x=206.0 y=102.0
+:sending pointer action_move x=204.0 y=93.0
+:sending pointer action_move x=210.0 y=94.0
+:sending pointer action_up x=210.0 y=94.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=400.0 y=719.0
+:sending pointer action_up x=400.0 y=719.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 43    // keycode_o
+:sendkey (action_up): 43    // keycode_o
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_down x=414.0 y=616.0
+:sending pointer action_up x=414.0 y=616.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=396.0 y=680.0
+:sending pointer action_up x=396.0 y=680.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=39.0 y=147.0
+:sending pointer action_up x=39.0 y=147.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=452.0 y=681.0
+:sending pointer action_move x=449.0 y=680.0
+:sending pointer action_move x=456.0 y=687.0
+:sending pointer action_move x=463.0 y=696.0
+:sending pointer action_move x=468.0 y=690.0
+:sending pointer action_move x=465.0 y=693.0
+:sending pointer action_move x=474.0 y=685.0
+:sending pointer action_move x=467.0 y=690.0
+:sending pointer action_move x=461.0 y=699.0
+:sending pointer action_move x=461.0 y=702.0
+:sending pointer action_up x=461.0 y=702.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=423.0 y=620.0
+:sending pointer action_up x=423.0 y=620.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=3.0 y=-2.0
+:sendkey (action_down): 40    // keycode_l
+:sendkey (action_up): 40    // keycode_l
+sleeping for 200 milliseconds
+:sending pointer action_down x=438.0 y=524.0
+:sending pointer action_move x=435.0 y=533.0
+:sending pointer action_up x=435.0 y=533.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=251.0 y=120.0
+:sending pointer action_move x=252.0 y=127.0
+:sending pointer action_move x=243.0 y=135.0
+:sending pointer action_up x=243.0 y=135.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=419.0 y=486.0
+:sending pointer action_move x=418.0 y=484.0
+:sending pointer action_move x=427.0 y=478.0
+:sending pointer action_move x=433.0 y=477.0
+:sending pointer action_move x=433.0 y=480.0
+:sending pointer action_move x=430.0 y=472.0
+:sending pointer action_up x=430.0 y=472.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=48.0 y=556.0
+:sending pointer action_up x=48.0 y=556.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=39.0 y=663.0
+:sending pointer action_move x=35.0 y=671.0
+:sending pointer action_up x=35.0 y=671.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=237.0 y=546.0
+:sending pointer action_up x=237.0 y=546.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=322.0 y=420.0
+:sending pointer action_move x=313.0 y=416.0
+:sending pointer action_move x=313.0 y=424.0
+:sending pointer action_move x=322.0 y=417.0
+:sending pointer action_move x=328.0 y=426.0
+:sending pointer action_move x=330.0 y=430.0
+:sending pointer action_move x=332.0 y=422.0
+:sending pointer action_move x=332.0 y=422.0
+:sending pointer action_up x=332.0 y=422.0
+    //[calendar_time:2012-09-16 22:26:12.855  system_uptime:150943]
+    // sending event #1400
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:26:13.056  system_uptime:151145]
+    // sending event #1400
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_down x=202.0 y=725.0
+:sending pointer action_move x=193.0 y=729.0
+:sending pointer action_move x=199.0 y=726.0
+:sending pointer action_move x=203.0 y=725.0
+:sending pointer action_move x=203.0 y=729.0
+:sending pointer action_move x=202.0 y=720.0
+:sending pointer action_up x=202.0 y=720.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 51    // keycode_w
+:sendkey (action_up): 51    // keycode_w
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=199.0 y=772.0
+:sending pointer action_up x=199.0 y=772.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_down x=17.0 y=396.0
+:sending pointer action_move x=20.0 y=392.0
+:sending pointer action_move x=14.0 y=399.0
+:sending pointer action_move x=21.0 y=397.0
+:sending pointer action_move x=19.0 y=394.0
+:sending pointer action_move x=21.0 y=386.0
+:sending pointer action_move x=30.0 y=388.0
+:sending pointer action_up x=30.0 y=388.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 69    // keycode_minus
+:sendkey (action_up): 69    // keycode_minus
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_down x=218.0 y=485.0
+:sending pointer action_up x=218.0 y=485.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=456.0 y=638.0
+:sending pointer action_move x=465.0 y=633.0
+:sending pointer action_move x=474.0 y=638.0
+:sending pointer action_move x=473.0 y=632.0
+:sending pointer action_move x=475.0 y=635.0
+:sending pointer action_move x=469.0 y=626.0
+:sending pointer action_move x=461.0 y=621.0
+:sending pointer action_move x=468.0 y=620.0
+:sending pointer action_up x=468.0 y=620.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_down x=300.0 y=36.0
+:sending pointer action_move x=309.0 y=32.0
+:sending pointer action_move x=315.0 y=35.0
+:sending pointer action_move x=324.0 y=37.0
+:sending pointer action_move x=321.0 y=31.0
+:sending pointer action_move x=315.0 y=30.0
+:sending pointer action_move x=315.0 y=33.0
+:sending pointer action_up x=315.0 y=33.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=465.0 y=30.0
+:sending pointer action_up x=465.0 y=30.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=416.0 y=288.0
+:sending pointer action_up x=416.0 y=288.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=442.0 y=290.0
+:sending pointer action_move x=443.0 y=283.0
+    //[calendar_time:2012-09-16 22:26:18.254  system_uptime:156354]
+    // sending event #1500
+:sending pointer action_move x=443.0 y=274.0
+:sending pointer action_move x=438.0 y=273.0
+:sending pointer action_move x=447.0 y=266.0
+:sending pointer action_move x=456.0 y=268.0
+:sending pointer action_move x=450.0 y=265.0
+:sending pointer action_move x=452.0 y=263.0
+:sending pointer action_move x=452.0 y=256.0
+:sending pointer action_move x=452.0 y=251.0
+:sending pointer action_up x=452.0 y=251.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 11    // keycode_4
+:sendkey (action_up): 11    // keycode_4
+sleeping for 200 milliseconds
+:sendkey (action_down): 70    // keycode_equals
+:sendkey (action_up): 70    // keycode_equals
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+sleeping for 200 milliseconds
+:sending pointer action_down x=301.0 y=609.0
+:sending pointer action_move x=299.0 y=609.0
+:sending pointer action_move x=290.0 y=607.0
+:sending pointer action_move x=297.0 y=614.0
+:sending pointer action_move x=298.0 y=610.0
+:sending pointer action_move x=301.0 y=612.0
+:sending pointer action_move x=309.0 y=609.0
+:sending pointer action_up x=309.0 y=609.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=180.0 y=74.0
+:sending pointer action_up x=180.0 y=74.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 106    // keycode_button_thumbl
+:sendkey (action_up): 106    // keycode_button_thumbl
+sleeping for 200 milliseconds
+:sending pointer action_down x=180.0 y=17.0
+:sending pointer action_up x=180.0 y=17.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=2.0 y=3.0
+:sendkey (action_down): 24    // keycode_volume_up
+:sendkey (action_up): 24    // keycode_volume_up
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_down x=159.0 y=174.0
+:sending pointer action_move x=166.0 y=183.0
+:sending pointer action_move x=175.0 y=183.0
+:sending pointer action_move x=179.0 y=176.0
+:sending pointer action_move x=184.0 y=182.0
+:sending pointer action_move x=191.0 y=185.0
+:sending pointer action_up x=191.0 y=185.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 98    // keycode_button_c
+:sendkey (action_up): 98    // keycode_button_c
+sleeping for 200 milliseconds
+:sending pointer action_down x=155.0 y=251.0
+:sending pointer action_up x=155.0 y=251.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=175.0 y=768.0
+:sending pointer action_move x=176.0 y=773.0
+:sending pointer action_move x=170.0 y=771.0
+:sending pointer action_move x=168.0 y=769.0
+:sending pointer action_move x=174.0 y=778.0
+:sending pointer action_move x=179.0 y=786.0
+:sending pointer action_move x=179.0 y=785.0
+:sending pointer action_move x=180.0 y=783.0
+:sending pointer action_move x=180.0 y=790.0
+:sending pointer action_move x=177.0 y=787.0
+:sending pointer action_up x=177.0 y=787.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=110.0 y=228.0
+:sending pointer action_up x=110.0 y=228.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=168.0 y=22.0
+:sending pointer action_up x=168.0 y=22.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=84.0 y=627.0
+:sending pointer action_move x=84.0 y=630.0
+:sending pointer action_move x=88.0 y=627.0
+:sending pointer action_move x=85.0 y=628.0
+:sending pointer action_move x=78.0 y=628.0
+:sending pointer action_move x=75.0 y=620.0
+:sending pointer action_move x=80.0 y=618.0
+:sending pointer action_move x=81.0 y=619.0
+:sending pointer action_up x=81.0 y=619.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=366.0 y=383.0
+:sending pointer action_up x=366.0 y=383.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_down x=450.0 y=185.0
+:sending pointer action_move x=454.0 y=187.0
+    //[calendar_time:2012-09-16 22:26:24.331  system_uptime:162419]
+    // sending event #1600
+:sending pointer action_move x=452.0 y=191.0
+:sending pointer action_move x=444.0 y=193.0
+:sending pointer action_move x=440.0 y=185.0
+:sending pointer action_move x=447.0 y=181.0
+:sending pointer action_up x=447.0 y=181.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_down x=112.0 y=575.0
+:sending pointer action_move x=109.0 y=579.0
+:sending pointer action_move x=105.0 y=578.0
+:sending pointer action_move x=114.0 y=575.0
+:sending pointer action_move x=122.0 y=584.0
+:sending pointer action_move x=126.0 y=584.0
+:sending pointer action_move x=122.0 y=591.0
+:sending pointer action_move x=117.0 y=588.0
+:sending pointer action_up x=117.0 y=588.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 31    // keycode_c
+:sendkey (action_up): 31    // keycode_c
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_down x=180.0 y=757.0
+:sending pointer action_move x=189.0 y=751.0
+:sending pointer action_move x=198.0 y=751.0
+:sending pointer action_up x=198.0 y=751.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 102    // keycode_button_l1
+:sendkey (action_up): 102    // keycode_button_l1
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 20    // keycode_dpad_down
+:sendkey (action_up): 20    // keycode_dpad_down
+sleeping for 200 milliseconds
+:sending pointer action_down x=413.0 y=308.0
+:sending pointer action_move x=422.0 y=314.0
+:sending pointer action_move x=424.0 y=315.0
+:sending pointer action_move x=432.0 y=307.0
+:sending pointer action_move x=433.0 y=313.0
+:sending pointer action_move x=442.0 y=316.0
+:sending pointer action_up x=442.0 y=316.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_down x=448.0 y=734.0
+:sending pointer action_move x=452.0 y=743.0
+:sending pointer action_move x=451.0 y=741.0
+:sending pointer action_move x=448.0 y=744.0
+:sending pointer action_up x=448.0 y=744.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 68    // keycode_grave
+:sendkey (action_up): 68    // keycode_grave
+sleeping for 200 milliseconds
+:sendkey (action_down): 65    // keycode_envelope
+:sendkey (action_up): 65    // keycode_envelope
+sleeping for 200 milliseconds
+:sendkey (action_down): 9    // keycode_2
+:sendkey (action_up): 9    // keycode_2
+sleeping for 200 milliseconds
+:sending pointer action_down x=310.0 y=454.0
+:sending pointer action_move x=310.0 y=452.0
+:sending pointer action_move x=303.0 y=446.0
+:sending pointer action_up x=303.0 y=446.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 40    // keycode_l
+:sendkey (action_up): 40    // keycode_l
+sleeping for 200 milliseconds
+:sendkey (action_down): 83    // keycode_notification
+:sendkey (action_up): 83    // keycode_notification
+sleeping for 200 milliseconds
+:sending pointer action_down x=411.0 y=601.0
+:sending pointer action_up x=411.0 y=601.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=402.0 y=44.0
+:sending pointer action_up x=402.0 y=44.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=395.0 y=570.0
+:sending pointer action_move x=387.0 y=566.0
+:sending pointer action_up x=387.0 y=566.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=288.0 y=384.0
+:sending pointer action_move x=292.0 y=393.0
+:sending pointer action_move x=299.0 y=393.0
+:sending pointer action_move x=308.0 y=398.0
+:sending pointer action_move x=309.0 y=398.0
+:sending pointer action_up x=309.0 y=398.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 90    // keycode_forward
+    //[calendar_time:2012-09-16 22:26:30.726  system_uptime:168816]
+    // sending event #1700
+:sendkey (action_up): 90    // keycode_forward
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_down x=344.0 y=481.0
+:sending pointer action_move x=347.0 y=481.0
+:sending pointer action_move x=342.0 y=488.0
+:sending pointer action_move x=342.0 y=492.0
+:sending pointer action_move x=351.0 y=483.0
+:sending pointer action_move x=358.0 y=476.0
+:sending pointer action_move x=357.0 y=474.0
+:sending pointer action_up x=357.0 y=474.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 55    // keycode_comma
+:sendkey (action_up): 55    // keycode_comma
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_down x=92.0 y=759.0
+:sending pointer action_up x=92.0 y=759.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 51    // keycode_w
+:sendkey (action_up): 51    // keycode_w
+sleeping for 200 milliseconds
+:sending pointer action_down x=336.0 y=131.0
+:sending pointer action_move x=338.0 y=136.0
+:sending pointer action_move x=339.0 y=133.0
+:sending pointer action_move x=341.0 y=136.0
+:sending pointer action_move x=338.0 y=137.0
+:sending pointer action_move x=338.0 y=136.0
+:sending pointer action_move x=332.0 y=129.0
+:sending pointer action_move x=323.0 y=134.0
+:sending pointer action_move x=327.0 y=131.0
+:sending pointer action_up x=327.0 y=131.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 46    // keycode_r
+:sendkey (action_up): 46    // keycode_r
+sleeping for 200 milliseconds
+:sendkey (action_down): 3    // keycode_home
+:sendkey (action_up): 3    // keycode_home
+    // rejecting start of intent { act=android.intent.action.main cat=[android.intent.category.home] cmp=com.android.launcher/.launcher } in package com.android.launcher
+sleeping for 200 milliseconds
+:sending pointer action_down x=87.0 y=655.0
+:sending pointer action_up x=87.0 y=655.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=268.0 y=350.0
+:sending pointer action_move x=263.0 y=346.0
+:sending pointer action_move x=261.0 y=355.0
+:sending pointer action_move x=270.0 y=356.0
+:sending pointer action_up x=270.0 y=356.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=404.0 y=277.0
+:sending pointer action_move x=402.0 y=284.0
+:sending pointer action_up x=402.0 y=284.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=288.0 y=487.0
+:sending pointer action_up x=288.0 y=487.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 58    // keycode_alt_right
+:sendkey (action_up): 58    // keycode_alt_right
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=364.0 y=700.0
+    //[calendar_time:2012-09-16 22:26:35.619  system_uptime:173709]
+    // sending event #1800
+:sending pointer action_move x=371.0 y=700.0
+:sending pointer action_up x=371.0 y=700.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=298.0 y=359.0
+:sending pointer action_move x=303.0 y=358.0
+:sending pointer action_move x=294.0 y=358.0
+:sending pointer action_move x=301.0 y=358.0
+:sending pointer action_move x=295.0 y=349.0
+:sending pointer action_up x=295.0 y=349.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=132.0 y=219.0
+:sending pointer action_up x=132.0 y=219.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 9    // keycode_2
+:sendkey (action_up): 9    // keycode_2
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=3.0 y=2.0
+:sendkey (action_down): 84    // keycode_search
+:sendkey (action_up): 84    // keycode_search
+sleeping for 200 milliseconds
+:sendkey (action_down): 107    // keycode_button_thumbr
+:sendkey (action_up): 107    // keycode_button_thumbr
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_down x=420.0 y=648.0
+:sending pointer action_move x=421.0 y=651.0
+:sending pointer action_up x=421.0 y=651.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 74    // keycode_semicolon
+:sendkey (action_up): 74    // keycode_semicolon
+sleeping for 200 milliseconds
+:sending pointer action_down x=165.0 y=26.0
+:sending pointer action_move x=156.0 y=32.0
+:sending pointer action_move x=155.0 y=23.0
+:sending pointer action_move x=159.0 y=17.0
+:sending pointer action_move x=153.0 y=18.0
+:sending pointer action_move x=150.0 y=25.0
+:sending pointer action_move x=159.0 y=24.0
+:sending pointer action_move x=161.0 y=32.0
+:sending pointer action_up x=161.0 y=32.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 2    // keycode_soft_right
+:sendkey (action_up): 2    // keycode_soft_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=55.0 y=647.0
+:sending pointer action_up x=55.0 y=647.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=397.0 y=548.0
+:sending pointer action_up x=397.0 y=548.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 75    // keycode_apostrophe
+:sendkey (action_up): 75    // keycode_apostrophe
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=2.0 y=1.0
+    //[calendar_time:2012-09-16 22:26:41.544  system_uptime:179632]
+    // sending event #1900
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=0.0 y=4.0
+:sendkey (action_down): 58    // keycode_alt_right
+:sendkey (action_up): 58    // keycode_alt_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=299.0 y=544.0
+:sending pointer action_up x=299.0 y=544.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=278.0 y=461.0
+:sending pointer action_move x=283.0 y=465.0
+:sending pointer action_move x=289.0 y=463.0
+:sending pointer action_move x=296.0 y=472.0
+:sending pointer action_move x=301.0 y=480.0
+:sending pointer action_move x=304.0 y=477.0
+:sending pointer action_move x=299.0 y=486.0
+:sending pointer action_move x=292.0 y=488.0
+:sending pointer action_up x=292.0 y=488.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=106.0 y=366.0
+:sending pointer action_move x=107.0 y=358.0
+:sending pointer action_move x=102.0 y=352.0
+:sending pointer action_move x=101.0 y=354.0
+:sending pointer action_move x=100.0 y=351.0
+:sending pointer action_move x=109.0 y=359.0
+:sending pointer action_move x=101.0 y=351.0
+:sending pointer action_move x=103.0 y=351.0
+:sending pointer action_up x=103.0 y=351.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=283.0 y=607.0
+:sending pointer action_up x=283.0 y=607.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=48.0 y=434.0
+:sending pointer action_move x=53.0 y=441.0
+:sending pointer action_move x=62.0 y=443.0
+:sending pointer action_up x=62.0 y=443.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_down x=69.0 y=219.0
+:sending pointer action_move x=61.0 y=210.0
+:sending pointer action_up x=61.0 y=210.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=447.0 y=205.0
+:sending pointer action_move x=456.0 y=203.0
+:sending pointer action_move x=465.0 y=198.0
+:sending pointer action_move x=474.0 y=190.0
+:sending pointer action_up x=474.0 y=190.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=-4.0
+:sendkey (action_down): 88    // keycode_previoussong
+:sendkey (action_up): 88    // keycode_previoussong
+sleeping for 200 milliseconds
+:sendkey (action_down): 68    // keycode_grave
+:sendkey (action_up): 68    // keycode_grave
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 92    // keycode_page_up
+:sendkey (action_up): 92    // keycode_page_up
+    //[calendar_time:2012-09-16 22:26:46.214  system_uptime:184303]
+    // sending event #2000
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:26:46.422  system_uptime:184511]
+    // sending event #2000
+:sending pointer action_down x=199.0 y=76.0
+:sending pointer action_up x=199.0 y=76.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=217.0 y=580.0
+:sending pointer action_move x=212.0 y=583.0
+:sending pointer action_up x=212.0 y=583.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=-4.0 y=2.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_down x=354.0 y=571.0
+:sending pointer action_up x=354.0 y=571.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=127.0 y=191.0
+:sending pointer action_up x=127.0 y=191.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=407.0 y=768.0
+:sending pointer action_up x=407.0 y=768.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 31    // keycode_c
+:sendkey (action_up): 31    // keycode_c
+sleeping for 200 milliseconds
+:sending pointer action_down x=472.0 y=287.0
+:sending pointer action_move x=466.0 y=279.0
+:sending pointer action_up x=466.0 y=279.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=351.0 y=518.0
+:sending pointer action_up x=351.0 y=518.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 37    // keycode_i
+:sendkey (action_up): 37    // keycode_i
+sleeping for 200 milliseconds
+:sending pointer action_down x=259.0 y=80.0
+:sending pointer action_move x=261.0 y=77.0
+:sending pointer action_up x=261.0 y=77.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=371.0 y=714.0
+:sending pointer action_up x=371.0 y=714.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=415.0 y=739.0
+:sending pointer action_up x=415.0 y=739.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=96.0 y=198.0
+:sending pointer action_up x=96.0 y=198.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=391.0 y=106.0
+:sending pointer action_up x=391.0 y=106.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 59    // keycode_shift_left
+:sendkey (action_up): 59    // keycode_shift_left
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_down x=177.0 y=287.0
+:sending pointer action_up x=177.0 y=287.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=47.0 y=158.0
+:sending pointer action_move x=43.0 y=149.0
+:sending pointer action_move x=49.0 y=158.0
+:sending pointer action_move x=54.0 y=167.0
+:sending pointer action_move x=62.0 y=168.0
+:sending pointer action_move x=60.0 y=162.0
+:sending pointer action_move x=65.0 y=162.0
+:sending pointer action_up x=65.0 y=162.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 90    // keycode_forward
+:sendkey (action_up): 90    // keycode_forward
+sleeping for 200 milliseconds
+:sendkey (action_down): 58    // keycode_alt_right
+:sendkey (action_up): 58    // keycode_alt_right
+sleeping for 200 milliseconds
+:sending pointer action_down x=228.0 y=590.0
+:sending pointer action_up x=228.0 y=590.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=18.0 y=129.0
+:sending pointer action_move x=26.0 y=130.0
+:sending pointer action_up x=26.0 y=130.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=191.0 y=558.0
+:sending pointer action_move x=188.0 y=563.0
+:sending pointer action_move x=191.0 y=572.0
+:sending pointer action_up x=191.0 y=572.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=197.0 y=488.0
+:sending pointer action_up x=197.0 y=488.0
+    //[calendar_time:2012-09-16 22:26:54.083  system_uptime:192179]
+    // sending event #2100
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:26:54.293  system_uptime:192383]
+    // sending event #2100
+:sending pointer action_down x=445.0 y=7.0
+:sending pointer action_up x=445.0 y=7.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=407.0 y=674.0
+:sending pointer action_up x=407.0 y=674.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 8    // keycode_1
+:sendkey (action_up): 8    // keycode_1
+sleeping for 200 milliseconds
+:sendkey (action_down): 105    // keycode_button_r2
+:sendkey (action_up): 105    // keycode_button_r2
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=0.0 y=1.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=2.0 y=-1.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_down x=302.0 y=589.0
+:sending pointer action_move x=306.0 y=597.0
+:sending pointer action_move x=300.0 y=594.0
+:sending pointer action_move x=303.0 y=592.0
+:sending pointer action_move x=311.0 y=591.0
+:sending pointer action_move x=303.0 y=592.0
+:sending pointer action_move x=297.0 y=594.0
+:sending pointer action_move x=297.0 y=592.0
+:sending pointer action_move x=305.0 y=600.0
+:sending pointer action_move x=301.0 y=593.0
+:sending pointer action_up x=301.0 y=593.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_down x=142.0 y=333.0
+:sending pointer action_up x=142.0 y=333.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=104.0 y=16.0
+:sending pointer action_up x=104.0 y=16.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=52.0 y=508.0
+:sending pointer action_move x=44.0 y=509.0
+:sending pointer action_up x=44.0 y=509.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=1.0 y=-1.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=2.0 y=-3.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_down x=292.0 y=188.0
+:sending pointer action_up x=292.0 y=188.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-5.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_down x=220.0 y=420.0
+:sending pointer action_up x=220.0 y=420.0
+    //[calendar_time:2012-09-16 22:26:58.859  system_uptime:196947]
+    // sending event #2200
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:26:59.060  system_uptime:197151]
+    // sending event #2200
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=1.0 y=-5.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=410.0 y=570.0
+:sending pointer action_move x=412.0 y=561.0
+:sending pointer action_move x=415.0 y=553.0
+:sending pointer action_move x=411.0 y=555.0
+:sending pointer action_move x=406.0 y=560.0
+:sending pointer action_move x=412.0 y=564.0
+:sending pointer action_move x=404.0 y=560.0
+:sending pointer action_up x=404.0 y=560.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=264.0 y=700.0
+:sending pointer action_up x=264.0 y=700.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=145.0 y=635.0
+:sending pointer action_move x=137.0 y=633.0
+:sending pointer action_move x=140.0 y=630.0
+:sending pointer action_move x=140.0 y=639.0
+:sending pointer action_up x=140.0 y=639.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 64    // keycode_explorer
+:sendkey (action_up): 64    // keycode_explorer
+sleeping for 200 milliseconds
+:sending pointer action_down x=92.0 y=158.0
+:sending pointer action_move x=84.0 y=157.0
+:sending pointer action_move x=87.0 y=148.0
+:sending pointer action_move x=78.0 y=152.0
+:sending pointer action_move x=83.0 y=148.0
+:sending pointer action_move x=90.0 y=148.0
+:sending pointer action_move x=97.0 y=148.0
+:sending pointer action_move x=97.0 y=148.0
+:sending pointer action_move x=102.0 y=148.0
+:sending pointer action_up x=102.0 y=148.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 103    // keycode_button_r1
+:sendkey (action_up): 103    // keycode_button_r1
+sleeping for 200 milliseconds
+:sending pointer action_down x=431.0 y=249.0
+:sending pointer action_up x=431.0 y=249.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_down x=453.0 y=156.0
+:sending pointer action_up x=453.0 y=156.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=112.0 y=480.0
+:sending pointer action_up x=112.0 y=480.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 15    // keycode_8
+:sendkey (action_up): 15    // keycode_8
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=106.0 y=100.0
+:sending pointer action_up x=106.0 y=100.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=396.0 y=648.0
+:sending pointer action_move x=396.0 y=654.0
+:sending pointer action_up x=396.0 y=654.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_down x=454.0 y=610.0
+:sending pointer action_move x=462.0 y=617.0
+:sending pointer action_move x=469.0 y=613.0
+:sending pointer action_move x=460.0 y=614.0
+:sending pointer action_move x=452.0 y=608.0
+:sending pointer action_move x=459.0 y=606.0
+:sending pointer action_up x=459.0 y=606.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=157.0 y=466.0
+:sending pointer action_move x=161.0 y=471.0
+:sending pointer action_move x=163.0 y=477.0
+:sending pointer action_move x=158.0 y=471.0
+:sending pointer action_move x=153.0 y=464.0
+:sending pointer action_move x=148.0 y=464.0
+:sending pointer action_move x=143.0 y=462.0
+:sending pointer action_move x=143.0 y=457.0
+:sending pointer action_up x=143.0 y=457.0
+    //[calendar_time:2012-09-16 22:27:04.036  system_uptime:202124]
+    // sending event #2300
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:27:04.237  system_uptime:202326]
+    // sending event #2300
+:sending pointer action_down x=462.0 y=426.0
+:sending pointer action_move x=463.0 y=417.0
+:sending pointer action_move x=457.0 y=410.0
+:sending pointer action_move x=459.0 y=415.0
+:sending pointer action_move x=450.0 y=423.0
+:sending pointer action_move x=447.0 y=430.0
+:sending pointer action_move x=453.0 y=430.0
+:sending pointer action_move x=462.0 y=423.0
+:sending pointer action_move x=453.0 y=427.0
+:sending pointer action_move x=445.0 y=421.0
+:sending pointer action_up x=445.0 y=421.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=381.0 y=67.0
+:sending pointer action_move x=377.0 y=64.0
+:sending pointer action_move x=381.0 y=58.0
+:sending pointer action_move x=382.0 y=52.0
+:sending pointer action_move x=382.0 y=46.0
+:sending pointer action_move x=378.0 y=44.0
+:sending pointer action_move x=374.0 y=44.0
+:sending pointer action_move x=378.0 y=53.0
+:sending pointer action_up x=378.0 y=53.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_down x=49.0 y=35.0
+:sending pointer action_up x=49.0 y=35.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=236.0 y=492.0
+:sending pointer action_move x=244.0 y=492.0
+:sending pointer action_move x=251.0 y=483.0
+:sending pointer action_move x=256.0 y=483.0
+:sending pointer action_move x=255.0 y=485.0
+:sending pointer action_move x=250.0 y=489.0
+:sending pointer action_move x=252.0 y=485.0
+:sending pointer action_move x=254.0 y=491.0
+:sending pointer action_move x=256.0 y=487.0
+:sending pointer action_move x=262.0 y=487.0
+:sending pointer action_up x=262.0 y=487.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=2.0 y=-2.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-3.0 y=-2.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 18    // keycode_pound
+:sendkey (action_up): 18    // keycode_pound
+sleeping for 200 milliseconds
+:sending pointer action_down x=219.0 y=505.0
+:sending pointer action_move x=217.0 y=505.0
+:sending pointer action_move x=212.0 y=501.0
+:sending pointer action_move x=204.0 y=503.0
+:sending pointer action_up x=204.0 y=503.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=39.0 y=678.0
+:sending pointer action_up x=39.0 y=678.0
+    //[calendar_time:2012-09-16 22:27:07.641  system_uptime:205733]
+    // sending event #2400
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:27:07.847  system_uptime:205935]
+    // sending event #2400
+:sending pointer action_down x=87.0 y=597.0
+:sending pointer action_move x=78.0 y=600.0
+:sending pointer action_up x=78.0 y=600.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=71.0 y=775.0
+:sending pointer action_up x=71.0 y=775.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 101    // keycode_button_z
+:sendkey (action_up): 101    // keycode_button_z
+sleeping for 200 milliseconds
+:sending pointer action_down x=154.0 y=798.0
+:sending pointer action_up x=154.0 y=798.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 24    // keycode_volume_up
+:sendkey (action_up): 24    // keycode_volume_up
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_down x=387.0 y=593.0
+:sending pointer action_move x=393.0 y=595.0
+:sending pointer action_up x=393.0 y=595.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=415.0 y=395.0
+:sending pointer action_up x=415.0 y=395.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 19    // keycode_dpad_up
+:sendkey (action_up): 19    // keycode_dpad_up
+sleeping for 200 milliseconds
+:sending pointer action_down x=136.0 y=241.0
+:sending pointer action_move x=135.0 y=245.0
+:sending pointer action_move x=127.0 y=236.0
+:sending pointer action_move x=131.0 y=232.0
+:sending pointer action_up x=131.0 y=232.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 78    // keycode_num
+:sendkey (action_up): 78    // keycode_num
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 31    // keycode_c
+:sendkey (action_up): 31    // keycode_c
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 48    // keycode_t
+:sendkey (action_up): 48    // keycode_t
+sleeping for 200 milliseconds
+:sendkey (action_down): 56    // keycode_period
+:sendkey (action_up): 56    // keycode_period
+sleeping for 200 milliseconds
+:sending pointer action_down x=165.0 y=629.0
+:sending pointer action_move x=165.0 y=638.0
+:sending pointer action_move x=171.0 y=638.0
+:sending pointer action_up x=171.0 y=638.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=79.0 y=798.0
+:sending pointer action_up x=79.0 y=798.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=361.0 y=788.0
+:sending pointer action_move x=355.0 y=797.0
+:sending pointer action_move x=360.0 y=789.0
+:sending pointer action_move x=354.0 y=789.0
+:sending pointer action_move x=353.0 y=789.0
+:sending pointer action_up x=353.0 y=789.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=377.0 y=111.0
+:sending pointer action_up x=377.0 y=111.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=199.0 y=366.0
+:sending pointer action_up x=199.0 y=366.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=478.0 y=200.0
+:sending pointer action_up x=478.0 y=200.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-4.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sendkey (action_down): 29    // keycode_a
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+    //[calendar_time:2012-09-16 22:27:15.313  system_uptime:213401]
+    // sending event #2500
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=3.0 y=-3.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 107    // keycode_button_thumbr
+:sendkey (action_up): 107    // keycode_button_thumbr
+sleeping for 200 milliseconds
+:sendkey (action_down): 8    // keycode_1
+:sendkey (action_up): 8    // keycode_1
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 69    // keycode_minus
+:sendkey (action_up): 69    // keycode_minus
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=2.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=-1.0 y=4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_move x=3.0 y=3.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=304.0 y=466.0
+:sending pointer action_move x=309.0 y=466.0
+:sending pointer action_move x=311.0 y=457.0
+:sending pointer action_move x=315.0 y=460.0
+:sending pointer action_move x=307.0 y=459.0
+:sending pointer action_move x=313.0 y=465.0
+:sending pointer action_move x=317.0 y=472.0
+:sending pointer action_move x=321.0 y=480.0
+:sending pointer action_move x=316.0 y=476.0
+:sending pointer action_up x=316.0 y=476.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=0.0 y=0.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-3.0 y=4.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=3.0 y=-5.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 78    // keycode_num
+:sendkey (action_up): 78    // keycode_num
+sleeping for 200 milliseconds
+:sending pointer action_down x=299.0 y=303.0
+:sending pointer action_move x=294.0 y=300.0
+:sending pointer action_move x=299.0 y=307.0
+:sending pointer action_move x=303.0 y=314.0
+:sending pointer action_move x=303.0 y=306.0
+:sending pointer action_move x=301.0 y=307.0
+:sending pointer action_move x=309.0 y=306.0
+:sending pointer action_up x=309.0 y=306.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 109    // keycode_button_select
+:sendkey (action_up): 109    // keycode_button_select
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=-3.0 y=2.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-1.0 y=-1.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sendkey (action_down): 28    // keycode_clear
+:sendkey (action_up): 28    // keycode_clear
+sleeping for 200 milliseconds
+:sending pointer action_down x=318.0 y=300.0
+:sending pointer action_move x=325.0 y=307.0
+:sending pointer action_move x=316.0 y=299.0
+:sending pointer action_move x=316.0 y=300.0
+:sending pointer action_move x=311.0 y=300.0
+:sending pointer action_move x=316.0 y=305.0
+:sending pointer action_move x=314.0 y=300.0
+    //[calendar_time:2012-09-16 22:27:19.857  system_uptime:217946]
+    // sending event #2600
+:sending pointer action_move x=317.0 y=300.0
+:sending pointer action_up x=317.0 y=300.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 94    // keycode_pictsymbols
+:sendkey (action_up): 94    // keycode_pictsymbols
+sleeping for 200 milliseconds
+:sending pointer action_down x=289.0 y=733.0
+:sending pointer action_up x=289.0 y=733.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=259.0 y=61.0
+:sending pointer action_up x=259.0 y=61.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_down x=59.0 y=284.0
+:sending pointer action_up x=59.0 y=284.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=191.0 y=518.0
+:sending pointer action_up x=191.0 y=518.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 9    // keycode_2
+:sendkey (action_up): 9    // keycode_2
+sleeping for 200 milliseconds
+:sending pointer action_down x=82.0 y=411.0
+:sending pointer action_move x=85.0 y=416.0
+:sending pointer action_move x=86.0 y=421.0
+:sending pointer action_move x=88.0 y=413.0
+:sending pointer action_move x=96.0 y=413.0
+:sending pointer action_move x=101.0 y=409.0
+:sending pointer action_move x=99.0 y=411.0
+:sending pointer action_move x=94.0 y=403.0
+:sending pointer action_move x=99.0 y=402.0
+:sending pointer action_move x=100.0 y=394.0
+:sending pointer action_up x=100.0 y=394.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=2.0 y=2.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-5.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=4.0 y=3.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=-4.0 y=4.0
+:sending pointer action_move x=-4.0 y=4.0
+:sendkey (action_down): 29    // keycode_a
+:sendkey (action_up): 29    // keycode_a
+sleeping for 200 milliseconds
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=4.0 y=2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_down x=76.0 y=166.0
+:sending pointer action_move x=69.0 y=162.0
+:sending pointer action_move x=77.0 y=162.0
+:sending pointer action_move x=78.0 y=163.0
+:sending pointer action_move x=71.0 y=155.0
+:sending pointer action_up x=71.0 y=155.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=387.0 y=790.0
+:sending pointer action_up x=387.0 y=790.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=118.0 y=615.0
+:sending pointer action_up x=118.0 y=615.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 101    // keycode_button_z
+:sendkey (action_up): 101    // keycode_button_z
+sleeping for 200 milliseconds
+:sending pointer action_down x=305.0 y=188.0
+:sending pointer action_move x=313.0 y=184.0
+:sending pointer action_move x=304.0 y=179.0
+:sending pointer action_move x=312.0 y=181.0
+:sending pointer action_move x=317.0 y=187.0
+:sending pointer action_move x=318.0 y=189.0
+:sending pointer action_move x=312.0 y=181.0
+:sending pointer action_move x=320.0 y=181.0
+:sending pointer action_move x=314.0 y=186.0
+:sending pointer action_move x=316.0 y=179.0
+:sending pointer action_up x=316.0 y=179.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 91    // keycode_mute
+:sendkey (action_up): 91    // keycode_mute
+sleeping for 200 milliseconds
+:sending pointer action_down x=17.0 y=413.0
+:sending pointer action_up x=17.0 y=413.0
+    //[calendar_time:2012-09-16 22:27:24.368  system_uptime:222456]
+    // sending event #2700
+sleeping for 200 milliseconds
+    //[calendar_time:2012-09-16 22:27:24.570  system_uptime:222658]
+    // sending event #2700
+:sending pointer action_down x=225.0 y=306.0
+:sending pointer action_up x=225.0 y=306.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=347.0 y=29.0
+:sending pointer action_move x=347.0 y=25.0
+:sending pointer action_move x=348.0 y=29.0
+:sending pointer action_move x=352.0 y=27.0
+:sending pointer action_move x=353.0 y=25.0
+:sending pointer action_move x=362.0 y=25.0
+:sending pointer action_up x=362.0 y=25.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=384.0 y=609.0
+:sending pointer action_up x=384.0 y=609.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=88.0 y=561.0
+:sending pointer action_up x=88.0 y=561.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=3.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-2.0 y=0.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-2.0 y=1.0
+:sending pointer action_move x=0.0 y=3.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=2.0 y=-4.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 4    // keycode_back
+:sendkey (action_up): 4    // keycode_back
+sleeping for 200 milliseconds
+:sending pointer action_down x=70.0 y=452.0
+:sending pointer action_up x=70.0 y=452.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 105    // keycode_button_r2
+:sendkey (action_up): 105    // keycode_button_r2
+sleeping for 200 milliseconds
+:sendkey (action_down): 76    // keycode_slash
+:sendkey (action_up): 76    // keycode_slash
+sleeping for 200 milliseconds
+:sending pointer action_move x=1.0 y=0.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=3.0 y=1.0
+:sending pointer action_move x=-2.0 y=4.0
+:sending pointer action_move x=-5.0 y=4.0
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=2.0 y=3.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=1.0 y=1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-2.0
+:sending pointer action_move x=1.0 y=-4.0
+:sending pointer action_move x=-3.0 y=1.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=0.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sendkey (action_down): 80    // keycode_focus
+:sendkey (action_up): 80    // keycode_focus
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=1.0 y=3.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=0.0 y=4.0
+:sending pointer action_move x=-1.0 y=2.0
+:sending pointer action_down x=0.0 y=0.0
+:sending pointer action_up x=0.0 y=0.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sending pointer action_down x=207.0 y=49.0
+:sending pointer action_move x=215.0 y=46.0
+:sending pointer action_move x=219.0 y=40.0
+:sending pointer action_move x=211.0 y=36.0
+:sending pointer action_move x=217.0 y=30.0
+:sending pointer action_up x=217.0 y=30.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=415.0 y=32.0
+:sending pointer action_up x=415.0 y=32.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=3.0 y=4.0
+    //[calendar_time:2012-09-16 22:27:29.031  system_uptime:227119]
+    // sending event #2800
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-2.0 y=-4.0
+:sending pointer action_move x=4.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-5.0
+:sending pointer action_move x=4.0 y=0.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_down x=48.0 y=376.0
+:sending pointer action_move x=46.0 y=367.0
+:sending pointer action_move x=42.0 y=369.0
+:sending pointer action_move x=40.0 y=373.0
+:sending pointer action_up x=40.0 y=373.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 37    // keycode_i
+:sendkey (action_up): 37    // keycode_i
+sleeping for 200 milliseconds
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_down x=208.0 y=304.0
+:sending pointer action_up x=208.0 y=304.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 62    // keycode_space
+:sendkey (action_up): 62    // keycode_space
+sleeping for 200 milliseconds
+:sending pointer action_down x=200.0 y=73.0
+:sending pointer action_up x=200.0 y=73.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 44    // keycode_p
+:sendkey (action_up): 44    // keycode_p
+sleeping for 200 milliseconds
+:sending pointer action_down x=335.0 y=412.0
+:sending pointer action_move x=328.0 y=410.0
+:sending pointer action_move x=323.0 y=410.0
+:sending pointer action_move x=318.0 y=413.0
+:sending pointer action_move x=318.0 y=419.0
+:sending pointer action_move x=326.0 y=410.0
+:sending pointer action_move x=319.0 y=417.0
+:sending pointer action_move x=318.0 y=423.0
+:sending pointer action_move x=312.0 y=430.0
+:sending pointer action_move x=309.0 y=425.0
+:sending pointer action_up x=309.0 y=425.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=86.0 y=265.0
+:sending pointer action_up x=86.0 y=265.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=1.0 y=2.0
+:sending pointer action_move x=-5.0 y=-1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=0.0 y=2.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_down x=455.0 y=136.0
+:sending pointer action_up x=455.0 y=136.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 54    // keycode_z
+:sendkey (action_up): 54    // keycode_z
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=4.0
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-4.0 y=1.0
+:sending pointer action_move x=3.0 y=4.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sending pointer action_move x=2.0 y=1.0
+:sending pointer action_move x=-1.0 y=1.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=3.0 y=-4.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=-5.0 y=3.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=0.0 y=0.0
+:sendkey (action_down): 85    // keycode_playpause
+:sendkey (action_up): 85    // keycode_playpause
+sleeping for 200 milliseconds
+:sending pointer action_down x=213.0 y=594.0
+:sending pointer action_move x=204.0 y=596.0
+:sending pointer action_move x=213.0 y=592.0
+:sending pointer action_move x=204.0 y=589.0
+:sending pointer action_move x=200.0 y=595.0
+:sending pointer action_move x=193.0 y=595.0
+:sending pointer action_move x=192.0 y=589.0
+:sending pointer action_move x=199.0 y=582.0
+:sending pointer action_up x=199.0 y=582.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=3.0 y=4.0
+:sending pointer action_move x=3.0 y=0.0
+:sending pointer action_move x=3.0 y=-1.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=-2.0 y=-3.0
+:sending pointer action_move x=1.0 y=4.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-4.0 y=1.0
+    //[calendar_time:2012-09-16 22:27:33.520  system_uptime:231609]
+    // sending event #2900
+:sending pointer action_down x=239.0 y=97.0
+:sending pointer action_up x=239.0 y=97.0
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=2.0 y=4.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=-4.0 y=0.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=2.0 y=-5.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-3.0 y=-5.0
+:sending pointer action_move x=0.0 y=-2.0
+:sending pointer action_move x=-4.0 y=2.0
+:sending pointer action_move x=-2.0 y=-5.0
+:sending pointer action_move x=4.0 y=-4.0
+:sending pointer action_move x=3.0 y=3.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=4.0 y=-2.0
+:sending pointer action_move x=-1.0 y=-2.0
+:sending pointer action_move x=1.0 y=-3.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 75    // keycode_apostrophe
+:sendkey (action_up): 75    // keycode_apostrophe
+sleeping for 200 milliseconds
+:sending pointer action_move x=-3.0 y=-3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=2.0 y=0.0
+:sending pointer action_move x=3.0 y=-3.0
+:sending pointer action_move x=3.0 y=-2.0
+:sending pointer action_move x=4.0 y=1.0
+:sending pointer action_move x=-3.0 y=-1.0
+:sending pointer action_move x=-4.0 y=-1.0
+:sending pointer action_move x=-2.0 y=3.0
+:sending pointer action_move x=0.0 y=-5.0
+:sending pointer action_move x=-5.0 y=4.0
+:sending pointer action_move x=-3.0 y=-4.0
+:sending pointer action_move x=-5.0 y=-3.0
+:sending pointer action_move x=-5.0 y=-4.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-1.0 y=0.0
+:sending pointer action_move x=-5.0 y=1.0
+:sending pointer action_move x=-4.0 y=-2.0
+:sending pointer action_down x=355.0 y=752.0
+:sending pointer action_move x=357.0 y=749.0
+:sending pointer action_move x=357.0 y=751.0
+:sending pointer action_move x=364.0 y=744.0
+:sending pointer action_move x=367.0 y=746.0
+:sending pointer action_move x=367.0 y=751.0
+:sending pointer action_move x=365.0 y=757.0
+:sending pointer action_move x=363.0 y=748.0
+:sending pointer action_move x=362.0 y=753.0
+:sending pointer action_up x=362.0 y=753.0
+sleeping for 200 milliseconds
+:sendkey (action_down): 38    // keycode_j
+:sendkey (action_up): 38    // keycode_j
+sleeping for 200 milliseconds
+:sendkey (action_down): 23    // keycode_dpad_center
+:sendkey (action_up): 23    // keycode_dpad_center
+sleeping for 200 milliseconds
+:sendkey (action_down): 71    // keycode_left_bracket
+:sendkey (action_up): 71    // keycode_left_bracket
+sleeping for 200 milliseconds
+:sending pointer action_move x=-5.0 y=2.0
+:sending pointer action_move x=4.0 y=-3.0
+:sending pointer action_move x=-2.0 y=-2.0
+:sending pointer action_move x=1.0 y=-3.0
+:sending pointer action_move x=1.0 y=-2.0
+:sending pointer action_move x=3.0 y=2.0
+:sending pointer action_move x=1.0 y=-5.0
+:sending pointer action_move x=-1.0 y=-4.0
+:sending pointer action_move x=-4.0 y=3.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-3.0 y=0.0
+:sending pointer action_move x=-2.0 y=-1.0
+:sending pointer action_move x=-2.0 y=2.0
+:sending pointer action_move x=-1.0 y=3.0
+:sending pointer action_move x=0.0 y=-1.0
+:sending pointer action_move x=-1.0 y=-3.0
+:sending pointer action_move x=4.0 y=-5.0
+:sending pointer action_move x=0.0 y=-4.0
+:sending pointer action_move x=-5.0 y=0.0
+:sending pointer action_move x=-4.0 y=-3.0
+:sendkey (action_down): 82    // keycode_menu
+:sendkey (action_up): 82    // keycode_menu
+sleeping for 200 milliseconds
+:sendkey (action_down): 93    // keycode_page_down
+:sendkey (action_up): 93    // keycode_page_down
+sleeping for 200 milliseconds
+:sendkey (action_down): 86    // keycode_stop
+:sendkey (action_up): 86    // keycode_stop
+sleeping for 200 milliseconds
+:sending pointer action_down x=262.0 y=94.0
+:sending pointer action_move x=259.0 y=95.0
+:sending pointer action_move x=257.0 y=100.0
+:sending pointer action_move x=256.0 y=103.0
+:sending pointer action_move x=256.0 y=101.0
+:sending pointer action_move x=252.0 y=96.0
+:sending pointer action_move x=250.0 y=96.0
+:sending pointer action_up x=250.0 y=96.0
+sleeping for 200 milliseconds
+:sending pointer action_down x=392.0 y=270.0
+:sending pointer action_move x=384.0 y=278.0
+:sending pointer action_move x=377.0 y=282.0
+:sending pointer action_move x=380.0 y=288.0
+events injected: 3000
+:dropped: keys=0 pointers=35 trackballs=0 flips=0
+## network stats: elapsed time=165015ms (0ms mobile, 0ms wifi, 165015ms not connected)
+// monkey finished
+
+
+[ 2012-09-16 06:29:19,841 ][ INFO ] ====== finished Activity Testing:.Setup =======
+
+[ 2012-09-16 06:29:19,841 ][ INFO ] ====== Starting Activity Testing:.Game =======
+
+[ 2012-09-16 06:29:19,841 ][ INFO ] ======== Progress: 2/2 =========
+
+[ 2012-09-16 06:29:25,844 ][ ERROR ] Failed: Not response for call.. and then we killed process pid:20190
+
+[ 2012-09-16 06:29:25,844 ][ ERROR ] com.elsdoerfer.keepscore.Game
+
+[ 2012-09-16 06:29:46,885 ][ INFO ] ====== finished Activity Testing:.Game =======
+
+[ 2012-09-16 06:29:48,070 ][ INFO ] Success
+
+
+[ 2012-09-16 06:29:56,077 ][ INFO ] ===================|| summary ||===================
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] App: Keep_Score.apk
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] version: 1.1.0
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] Testing Duration Time: 228.300149
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] Install: False
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] Reinstall: True
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] Uninstall: True
+
+[ 2012-09-16 06:29:56,078 ][ INFO ] Failed Activity: 2(1):  .Game
+
+[ 2012-09-16 06:29:56,079 ][ INFO ] Failed BroadCast: 0(0): 
+
+[ 2012-09-16 06:29:56,079 ][ INFO ] Failed Service: 0(0): 
+
+[ 2012-09-16 06:29:56,079 ][ INFO ] moneky error: 0
+
+[ 2012-09-16 06:29:56,079 ][ INFO ] No overlap moneky error: 0
+
+[ 2012-09-16 06:29:56,079 ][ INFO ] Network Condition: False
+
+[ 2012-09-16 06:29:56,237 ][ INFO ] CPU Average Usage: 52.000000
+total packet amount: 0
+total Networks: 0.000000MByte
+
+

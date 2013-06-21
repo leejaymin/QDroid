@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page_transition_list">
+        <item>Aucun</item>
+        <item>Glisser</item>
+        <item>Recouvrir</item>
+        <item>Affaiblir</item>
+    </string-array>
+    <string-array name="slideshow_transition_list">
+        <item>Aucun</item>
+        <item>Glisser</item>
+        <item>Recouvrir</item>
+        <item>Affaiblir</item>
+        <item>Au hasard</item>
+    </string-array>
+    <string-array name="file_sort_type">
+        <item>Nom de fichier(Numérique,Ascendant)</item>
+        <item>Nom de fichier(Chaîne,Ascendant)</item>
+        <item>Date(Ascendant)</item>
+        <item>Taille de fichier(Ascendant)</item>
+        <item>Nom de fichier(Numérique,Descendant)</item>
+        <item>Nom de fichier(Chaîne,Descendant)</item>
+        <item>Date(Descendant)</item>
+        <item>Taille de fichier(Descendant)</item>
+    </string-array>
+    <string-array name="view_mode_list">
+        <item>Liste</item>
+        <item>Détails</item>
+        <item>Vignettes</item>
+    </string-array>
+    <string-array name="behavior_list">
+        <item>Lister tous les fichiers</item>
+        <item>Visualiser contenu</item>
+    </string-array>
+    <string-array name="pageinfo_list">
+        <item>Aucun</item>
+        <item>Page</item>
+        <item>Nom de fichier</item>
+        <item>Titre de livre</item>
+    </string-array>
+    <string-array name="change_page_method">
+        <item>Gauche &amp;amp; Droite</item>
+        <item>Haut &amp;amp; Bas</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Petite</item>
+        <item>Moyenne</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="effect_array">
+        <item>Aucun</item>
+        <item>Ombré</item>
+        <item>Enfoncé</item>
+        <item>Encadré</item>
+    </string-array>
+    <string-array name="background_array">
+        <item>Aucune</item>
+        <item>Style 1</item>
+        <item>Style 2</item>
+        <item>Style 3</item>
+        <item>Style 4</item>
+        <item>Style 5</item>
+    </string-array>
+</resources>

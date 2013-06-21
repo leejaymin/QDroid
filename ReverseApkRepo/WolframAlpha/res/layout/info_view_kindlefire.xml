@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/info_view_linearlayout" android:background="@drawable/white_rounded_rect" android:padding="@dimen/info_view_linearlayout_info_view_linearlayout_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/black" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/info_links_text" android:background="@drawable/white_toprounded_rect" android:padding="@dimen/info_view_textview_info_links_text_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info_links_label" />
+    <ImageView android:id="@id/info_image" android:background="@drawable/white_toprounded_rect" android:padding="@dimen/info_view_imageview_info_image_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" android:adjustViewBounds="true" />
+    <include layout="@layout/black_1_px_horizontal_line" />
+    <FrameLayout android:background="@drawable/gray_bottomrounded_rect" android:paddingLeft="@dimen/info_view_framelayout_paddingLeft" android:paddingTop="@dimen/info_view_framelayout_paddingTop" android:paddingRight="@dimen/info_view_framelayout_paddingRight" android:paddingBottom="@dimen/info_view_framelayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.wolfram.android.alpha.view.FlowLayout android:id="@id/info_buttons_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

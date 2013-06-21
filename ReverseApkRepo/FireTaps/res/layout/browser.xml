@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/page_flipper" android:background="@drawable/browser_background" style="@style/PageFlipper"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <org.tf.ui.FTextView android:id="@id/head" android:text="Song browser" style="@style/HeadText" />
+        <org.tf.ui.NotFocusableListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_weight="1.0" style="@style/ListView" />
+        <com.mobclix.android.sdk.MobclixMMABannerXLAdView android:layout_gravity="bottom" android:id="@id/banner_adview" android:layout_width="320.0dip" android:layout_height="50.0dip" />
+    </LinearLayout>
+    <ViewStub android:visibility="invisible" android:layout="@layout/browser_loader" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</ViewFlipper>

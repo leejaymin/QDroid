@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="capture_ads_title">Support Lapse It going Professional</string>
+    <string name="capture_ads_message">"This feature is only available for professional users !
+
+You can be one of them now, it will just take a minute !"</string>
+    <string name="capture_ads_moreinfo">More info</string>
+    <string name="capture_ads_continue240p">Continue as 240P</string>
+    <string name="capture_ads_continuerear">Use rear camera</string>
+    <string name="faq_string">" "<Data>" &lt;b>&lt;font color=#ffba00>What is this application?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Lapse It make it easy to capture astonishing time-lapse videos right in your Android-powered device.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>What happens when I receive a call or other app comes to front?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>When you receive an important event like this, Android pauses the running app until you finish talking or coming back to it, when that happens, your capturing project is PAUSED, then when you return you can continue capturing.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Where the video files are stored?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Your videos are stored in a folder named &lt;b>rendered&lt;/b>, you can find it inside your &lt;b>output folder&lt;/b>.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>How to use the Stop-Motion mode?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>In the Capture View, before starting capturing, tap the second menu button from top to botton ( Usually Every XX secs ) and select Stop-Motion, doing that you can take your pictures manually.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>I purchased the Pro version using in-app billing but it didn't changed anything !&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Sometimes Google can delay the confirmation response, so if it don't change automatically, try restarting the app and if it doesn't work force close and clear the application cache, after that it should work, otherwise contact us.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Which are the rendering modes?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>You can render your video in different formats like MP4, MOV or FLV, in different resolutions and with different frame rates, this gives you more control over the results you want.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>I'm receiving the 'Video cannot be played' message when I try to watch my video !&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Android video codecs sometimes vary in different devices, you will have to use a 3rd party video player like Rock Player.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Are there any restrictions in how long it can capture?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>From the application perspective there are no restrictions, however, battery and disk space are limited.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Which resolutions are available?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>In the Pro version you can render videos up to 1080p. Other resolutions available are 720p, 480p, 360p, 240p. In the free version only 240p is available. If you liked the app, please support us purchasing the Pro version.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>How can I disable the camera shutter sound?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>The shutter sound is disabled by default in Lapse It, unfortunately for privacy policy reasons, in some non-rooted phones it will not work. It you want to disable it you will probably have to root it.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>The In-app Billing payment will be kept when I uninstall the app or change my device? It will work out of 3g areas?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>The answer is yes for both questions, your payment will be stored in your Google Account, and everytime that you open the app from a fresh install it will check your previous orders in your Google account and will enable the options automatically, after activated the app will work in Professional mode anywhere.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>Where are captured files stored?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>In your sdcard/LapseIt directory.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>How can I delete captured files?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>Tap on List captured button and select the item that will be deleted and click delete and confirm.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>What are the limitations of free version?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>You can just capture at 240p.&lt;/font>&lt;br>&lt;br> &lt;b>&lt;font color=#ffba00>How can I save battery and capture for a longer time?&lt;/b>&lt;/font>&lt;br> &lt;font color=#efefef>If you can't have a power source attached to your device during the capture, the best practice is to close all the other applications, disable GPS and WiFi and reduce the screen brightness to the lowest level.&lt;/font>&lt;br>&lt;br> "</Data>" "</string>
+    <string name="dialog_outofmemory_title">Out of Memory Error</string>
+    <string name="dialog_outofmemory_message_capture">"Sorry, there's not enough memory to capture using the current settings, please use a lower resolution or close some opened apps and try again, if the error persists please contact us.
+
+Thanks !"</string>
+    <string name="dialog_outofmemory_message_render">"Sorry, there's not enough memory to render using the current settings, please use a lower resolution or close some opened apps and try again, if the error persists please contact us.
+
+Thanks !"</string>
+    <string name="dialog_rate_title">Enjoying Lapse It?</string>
+    <string name="dialog_rate_message">"Knowing that Lapse It worth for it's users will give us an extra boost to keep coming with new features !
+
+Would you like to give some stars to Lapse It?"</string>
+    <string name="dialog_rate_done">No</string>
+    <string name="dialog_rate_later">Later</string>
+    <string name="dialog_rate_now">Yeah !</string>
+    <string name="dialog_general_ok">Ok</string>
+    <string name="dialog_connerror_title">Connection error</string>
+    <string name="dialog_connerror_message">"It was not possible to establish a connection to the server !
+
+Please check your signal, otherwise our server may be full, please try again later !"</string>
+    <string name="toast_camera_error">Error initializing Camera, try closing all Camera apps or rebooting your device</string>
+    <string name="info_ads_title">Lapse It Pro Features</string>
+    <string name="info_ads_first">• Full Sensor Capture</string>
+    <string name="info_ads_sec">• Render up to 1080p</string>
+    <string name="info_ads_third">• Sound Tracks</string>
+    <string name="info_ads_fourth">• And more ...</string>
+    <string name="soundtrack_noinfo">No ID3 tags available</string>
+    <string name="dialog_nofiletitle">Sound Track error</string>
+    <string name="dialog_nofilemusic">Could not retrieve the specified music, please try a different file manager !</string>
+    <string name="dialog_reswarning_title">Resolution warning</string>
+    <string name="dialog_reswarning_message">"Hi, just a reminder that in this mode you will capture and render images at 1920x1080.
+
+That's still a heavy task for most devices, so take in consideration your device model and your needs, depending on many factors it may not work.
+
+Thanks for using Lapse It Pro!"</string>
+    <string name="zip_process">Zip file is being processed</string>
+    <string name="capture_frame">Frame</string>
+    <string name="capture_frames">Frames</string>
+    <string name="capture_capturing">Capturing</string>
+    <string name="capture_set">Set</string>
+    <string name="capture_manual">Stop Motion</string>
+    <string name="tutorial_dialog_title">Lapse It Professional</string>
+    <string name="tutorial_dialog_message">Capture in Full Definition and more with Lapse It Pro, interested in more details?</string>
+    <string name="tutorial_dialog_yes">Yes, please</string>
+    <string name="tutorial_dialog_no">No, thanks</string>
+    <string name="description_resolution_full">" "<Data> &lt;b>&lt;font color=#efefef>Determine the capture resolution&lt;/font>&lt;br>&lt;br> Usually users will capture their images with the highest resolution as possible, but we provide a range from a lower to the highest one so it can attend your needs&lt;br>&lt;br> &lt;font color=#eaeaea>Lower resolutions&lt;/font> are good for capturing for longer times or for scenes that requiere fast interval between the shots ( as the system takes less time to process de image ), also they are ok if you will display only in mobile devices&lt;br>&lt;br> &lt;font color=#eaeaea>Higher resolutions&lt;/font> provide a more accurate image quality, bigger video size and requires mode disk space and rendering time&lt;br>&lt;br> &lt;font color=#eaeaea>Full Sensor&lt;/font> was add specially for those who want to capture in their devices but render in their computers, you still can render it using Lapse It, but it will be scaled to 720P&lt;br>&lt;br> </Data>" "</string>
+    <string name="description_resolution_lite">" "<Data>&lt;b>&lt;font color=#efefef>Determine the capture resolution&lt;/font>&lt;br>&lt;br> &lt;font color=#AAAAAA>Usually users will capture their images with the highest resolution as possible, but we provide a range from a lower to the highest one so it can attend your needs&lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>Lower resolutions&lt;/font> &lt;font color=#AAAAAA> are good for capturing for longer times and for displaying in mobile devices&lt;br>&lt;br>&lt;/font> &lt;font color=#eaeaea>Higher resolutions&lt;/font> &lt;font color=#AAAAAA> provide a more accurate image quality and requires mode disk space and rendering time&lt;br>&lt;br>&lt;/font> &lt;font color=#efefef>Lite version&lt;/font>&lt;br> &lt;font color=#AAAAAA>We provide a free lite version of this app for testing purposes, in this version you can only capture time-lapses in a lower resolution&lt;br>&lt;br>&lt;/font> &lt;font color=#ffba00>If you like the app and think that it worth to pay for the developer work, tap this text get more information about the professional version.&lt;/font>&lt;/font> </Data>" "</string>
+    <string name="description_timescale">" "<Data> &lt;b>&lt;font color=#efefef>Determine the time scale for the capture&lt;/font>&lt;br>&lt;br> This parameter will be used together with the \"Frame Interval\" to determine the timing between the pictures </Data>" "</string>
+    <string name="description_limitmode">" "<Data> &lt;b>&lt;font color=#efefef>Limit by Frame&lt;/font>&lt;br> In this mode you can determine the number of frames that will be captured, when it reach the number indicated, the capture will stop automatically.&lt;br>&lt;br> &lt;font color=#efefef>Limit by Time&lt;/font>&lt;br> In this mode you can determine a maximum length of time to capture, when it reach the time indicated, the capture will stop automatically.&lt;br>&lt;br> &lt;font color=#efefef>Limit by User&lt;/font>&lt;br> In this mode the capture will last until the user click on the stop button. </Data>" "</string>
+    <string name="description_geolocation">" "<Data> &lt;b>&lt;font color=#efefef>Determine if the application should request the geolocation information&lt;/font>&lt;br>&lt;br> With geolocation activated your project will have a map resource to track where your started and ended your time-lapse with the frames in between&lt;br>&lt;br> This is useful in moving situations like a driving lapse or a free camera lapse </Data>" "</string>
+    <string name="description_encoder">" "<Data> &lt;b>&lt;font color=#efefef>Determine the encoder used for rendering the project&lt;/font>&lt;br>&lt;br> &lt;font color=#ff5400>Note that using a codec other than MP4 will cause the video to be unplayable in some devices using the Android player&lt;br>&lt;br>&lt;/font>&lt;/b>If you are receiving the message &lt;b>&lt;font color=#efefef size=7>This video cannot be played&lt;/b>&lt;/font> you should try using a third party video player like &lt;b>Rock Player&lt;/b> </Data>" "</string>
+    <string name="description_quality">" "<Data> &lt;b>&lt;font color=#efefef>Determine the quality of the rendered video&lt;/font>&lt;br>&lt;br> A higher quality means more bitrate levels and a bigger file&lt;/b> </Data>" "</string>
+    <string name="description_framespersecond">" "<Data> &lt;b>&lt;font color=#efefef>Determine the frame rate of the rendered video&lt;/font>&lt;br>&lt;br> The frame-rate is very important in time-lapse videos, it will make your video slower or faster depending on what you want to archive&lt;br>&lt;br> You can render multiple times with different frame-rates to see which is better in that situation&lt;/b> </Data>" "</string>
+    <string name="description_shutter">" "<Data>" &lt;b>&lt;font color=#efefef>Determine the camera shutter sound when capturing&lt;/font>&lt;br>&lt;br> If you don't want to hear the shutter noise when capturing, you can set this option as disabled.&lt;br>&lt;br> &lt;font color=#ff5400>If this option is set as disabled and you still hear the shutter you will need an alternative method for disabling it.&lt;br>&lt;br>&lt;/font> &lt;font color=#777777>Some phones have a security policy restriction about taking pictures silently, and in these cases the developer can't do much for that, but you can !&lt;br>&lt;br> If your phone is rooted, in the folder /system/media/audio/ui/ you will find a sound file named camera_click.ogg, you should simple rename this file to camera_click.old and the camera shutter sound will be gone. &lt;/font>&lt;/b> "</Data>" "</string>
+    <string name="description_dim">" "<Data> &lt;b>&lt;font color=#efefef>Level of brightness during capture&lt;/font>&lt;br>&lt;br> At capture time the screen will be dimmed to preserve battery, here you can choose what will be the level of the screen brightness&lt;/b> </Data>" "</string>
+    <string name="description_full_version">" "<Data>" &lt;b>&lt;font color=#eaeaea>Lapse It&lt;/font> was developed to provide you a easy way to create astonishing time-lapses right on your mobile device. We made an effort to provide a professional user interface designed for both aesthetics and usability&lt;br>&lt;br> We continue working in the project and we will continue to bring new features and better performance for the app.&lt;br>&lt;br> &lt;font color=#ffba00>If you like this apk and think that it is useful and worth a contribution for the developers work, tap the Lapse It Pro logo below to buy the &lt;b>Professional Version&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>If you prefer to use the In-App Billing please press MENU key and select that option&lt;/b>&lt;br>&lt;br>&lt;/font> Remember that when you buy an application you are supporting it's further development, and that your feedback in Android Market is also very important, so don't forget to give some stars for &lt;font color=#eaeaea>Lapse It&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>Thank you&lt;/font>&lt;/b>&lt;br> "</Data>" "</string>
+    <string name="description_full_inapp_version">" "<Data>" &lt;b>&lt;font color=#eaeaea>Lapse It&lt;/font> was developed to provide you a easy way to create astonishing time-lapses right on your mobile device. We made an effort to provide a professional user interface designed for both aesthetics and usability&lt;br>&lt;br> We continue working in the project and we will continue to bring new features and better performance for the app.&lt;br>&lt;br> &lt;font color=#ffba00>If you like this apk and think that it is useful and worth a contribution for the developers work, tap the Lapse It Pro logo below to buy the &lt;b>Professional Version&lt;/b>&lt;br>&lt;br>&lt;/font> &lt;font color=#00aeff>If you're facing any issue with the In-App Billing or you prefer to buy the app using the conventional method, please press MENU key and select that option&lt;/b>&lt;br>&lt;br>&lt;/font> Remember that when you buy an application you are supporting it's further development, and that your feedback in Android Market is also very important, so don't forget to give some stars for &lt;font color=#eaeaea>Lapse It&lt;/font>&lt;br>&lt;br> &lt;font color=#eaeaea>Thank you&lt;/font>&lt;/b>&lt;br> "</Data>" "</string>
+    <string name="settingsitem_capture_header">Capture settings</string>
+    <string name="settingsitem_capture_interval">Frame interval</string>
+    <string name="settingsitem_capture_timescale">Time scale</string>
+    <string name="settingsitem_capture_limitmode">Limit mode</string>
+    <string name="settingsitem_capture_limitvalue"><Data>Limit value </Data></string>
+    <string name="settingsitem_capture_delay"><Data>Initial delay &lt;small>&lt;font size=1>&lt;i>in Millisecs&lt;/i>&lt;/font>&lt;/small> </Data></string>
+    <string name="settingsitem_capture_resolution">Resolution</string>
+    <string name="settingsitem_capture_dim">Brightness level</string>
+    <string name="settingsitem_capture_shutter">Shutter sound</string>
+    <string name="settingsitem_capture_schedule">Schedule</string>
+    <string name="settingsitem_capture_directory">Output folder</string>
+    <string name="settingsitem_render_header">Render settings</string>
+    <string name="settingsitem_render_encoder">Encoder</string>
+    <string name="settingsitem_render_quality">Quality</string>
+    <string name="settingsitem_render_fps">Frames per second</string>
+    <string name="settingsitem_other_header">About Lapse It</string>
+    <string name="settingsitem_other_tutorial">Time Lapse Video Tutorial</string>
+    <string name="settingsitem_other_buy">Purchase Lapse It Pro</string>
+    <string name="settingsitem_other_rate">Like It? Give some stars</string>
+    <string name="settingsitem_other_share">Recommend to your friends</string>
+    <string name="settingsitem_other_feedback">Send us a feedback</string>
+    <string name="settingsitem_other_faq">Frequently asked questions</string>
+    <string name="settingsitem_detail_yes">Yes</string>
+    <string name="settingsitem_detail_no">No</string>
+    <string name="settingsitem_detail_enabled">Enabled</string>
+    <string name="settingsitem_detail_disabled">Disabled</string>
+    <string name="settingsitem_detail_fullsensor">Full Sensor</string>
+    <string name="settingsitem_detail_1080p">1080p</string>
+    <string name="settingsitem_detail_720p">720p</string>
+    <string name="settingsitem_detail_480p">480p</string>
+    <string name="settingsitem_detail_360p">360p</string>
+    <string name="settingsitem_detail_240p">240p</string>
+    <string name="settingsitem_detail_minutes">Minutes</string>
+    <string name="settingsitem_detail_seconds">Seconds</string>
+    <string name="settingsitem_detail_frames">Frames</string>
+    <string name="settingsitem_detail_timer">Timer</string>
+    <string name="settingsitem_detail_user">User</string>
+    <string name="settingsitem_detail_mp4">MP4</string>
+    <string name="settingsitem_detail_mov">MOV</string>
+    <string name="settingsitem_detail_flv">FLV</string>
+    <string name="settingsitem_detail_low">Low</string>
+    <string name="settingsitem_detail_medium">Medium</string>
+    <string name="settingsitem_detail_high">High</string>
+    <string name="settingsitem_detail_very_high">Very High</string>
+    <string name="settings_other_none">none</string>
+    <string name="app_name">Lapse It Pro</string>
+    <string name="app_description">Time Lapse for Android</string>
+    <string name="btn_startcapture">New Capture</string>
+    <string name="btn_listcaptured">Gallery</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_proversion">Become a Pro</string>
+    <string name="pref_capturevery">Capture every</string>
+    <string name="view_start">Start</string>
+    <string name="view_faq">Frequently asked questions</string>
+    <string name="view_fullversion">Support Lapse It • Go Professional</string>
+    <string name="view_capture">Capture</string>
+    <string name="view_preview">Preview</string>
+    <string name="view_list">Captured Lapses</string>
+    <string name="view_settings">Settings</string>
+    <string name="view_player">Player</string>
+    <string name="view_info">Details</string>
+    <string name="view_trim">Trimmer</string>
+    <string name="view_effect">Effects</string>
+    <string name="view_render">Render</string>
+    <string name="view_project">Project</string>
+    <string name="view_schedule">Schedule your capture</string>
+    <string name="view_remote">Browse your project remotely</string>
+    <string name="view_upload">Lapse It Gallery</string>
+    <string name="preview_loop">Loop</string>
+    <string name="preview_rendersequence">Image Sequence</string>
+    <string name="preview_rendervideo">Video</string>
+    <string name="preview_render">Render</string>
+    <string name="effectssaturation">Saturation</string>
+    <string name="search_hint">Search Time-Lapses</string>
+    <string name="error_sdcard_notfound">"The output folder couldn't be found, make sure that it's acessible and not mounted in your computer"</string>
+    <string name="error_capture">Something went wrong, error message is</string>
+    <string name="dialog_lowbattery">Your battery level is low</string>
+    <string name="dialog_cancelcapturetitle">Capture is running</string>
+    <string name="dialog_cancelcapturemessage">You want to cancel and go to home screen?</string>
+    <string name="dialog_deleteprojecttitle">Confirm exclusion</string>
+    <string name="dialog_deleteprojectmessage">Your really want to delete this project permanently?</string>
+    <string name="dialog_deleterenderedtitle">Confirm exclusion</string>
+    <string name="dialog_deleterenderedmessage">Your really want to delete this movie permanently?</string>
+    <string name="dialog_cancelscheduletitle">Confirm cancel</string>
+    <string name="dialog_cancelschedulemessage">Your really want to cancel this schedule?</string>
+    <string name="dialog_defaulttitle">Default settings</string>
+    <string name="dialog_defaultmessage">Change this value to default?</string>
+    <string name="dialog_warningoutputtitle">Advanced setting warning</string>
+    <string name="dialog_warningoutputmessage">"Please make sure to use a valid path for the new folder
+
+THIS CHANGE WILL ONLY AFFECT PROJECTS CREATED AFTER YOUR CONFIRMATION"</string>
+    <string name="dialog_foldermessage">Project Folder</string>
+    <string name="schedulenostartmessage">Please select the starting date first</string>
+    <string name="scheduleendandstart">The ending date needs to be after the start</string>
+    <string name="restoringtransactions">Restoring transactions</string>
+    <string name="projectportraitoptions">Use portrait mode for more options</string>
+    <string name="dialog_quickrendertitle">Quick render with these settings?</string>
+    <string name="dialog_quickrendermessage">"Encoder: @encoder@
+Quality: @quality@
+FPS: @fps@"</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_continue">Continue</string>
+    <string name="dialog_understand">I understand</string>
+    <string name="dialog_default">Use Default</string>
+    <string name="dialog_set">Set</string>
+    <string name="schedule_schedule">Schedule</string>
+    <string name="schedule_capture">Schedule capture</string>
+    <string name="schedule_noschedule">"You don't have any scheduled capture"</string>
+    <string name="not_set">Not set</string>
+    <string name="start_at">Start at</string>
+    <string name="end_at">End at</string>
+    <string name="new_schedule">New schedule</string>
+    <string name="home_visitus">Visit us at www.lapseit.com</string>
+    <string name="home_thanks">Thanks for supporting us</string>
+    <string name="content_title">My Time Lapse</string>
+    <string name="content_desc">Captured with Lapse It</string>
+    <string name="list_mygallery">My Gallery</string>
+    <string name="list_lapseitgallery">Lapse It Gallery</string>
+    <string name="list_displayingproject">Displaying XXX Lapse It project</string>
+    <string name="list_displayingprojects">Displaying XXX Lapse It projects</string>
+    <string name="list_nopersonalprojects">No personal projects yet</string>
+    <string name="gallery_sortingby">Sorting by</string>
+    <string name="gallery_sortby">Sort By</string>
+    <string name="gallery_lapsesfrom">Lapses from XXX</string>
+    <string name="gallery_fetchinguser">Fetching XXX projects</string>
+    <string name="gallery_displayingproject">Displaying XXX Projects</string>
+    <string name="gallery_displayingprojects">Displaying XXX Projects</string>
+    <string name="gallery_votes">votes</string>
+    <string name="gallery_vote">vote</string>
+    <string name="gallery_mode_best">Best Rated</string>
+    <string name="gallery_mode_view">Most Viewed</string>
+    <string name="gallery_mode_time">Recently Added</string>
+    <string name="gallery_mode_user">From User</string>
+    <string name="list_framecaptured">frame captured</string>
+    <string name="list_framescaptured">frames captured</string>
+    <string name="list_noframescaptured">No frames captured</string>
+    <string name="list_videorendered">video rendered</string>
+    <string name="list_videosrendered">videos rendered</string>
+    <string name="list_framespersecond">frames per second</string>
+    <string name="list_project">Project</string>
+    <string name="list_video">Video</string>
+    <string name="list_hideallvideos">Hide all rendered videos</string>
+    <string name="list_showallvideos">Show all rendered videos</string>
+    <string name="menu_capture">Capture</string>
+    <string name="menu_everysecs">Every XXX secs</string>
+    <string name="menu_everymins">Every XXX mins</string>
+    <string name="menu_pause">Pause</string>
+    <string name="menu_cancel">Cancel</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_more">More</string>
+    <string name="menu_fullsensor">Full Sensor</string>
+    <string name="menu_autofocus">Auto-Focus</string>
+    <string name="menu_focus_mode">Focus Mode</string>
+    <string name="menu_coloreffects">Color Effects</string>
+    <string name="menu_scenemode">Scene Mode</string>
+    <string name="menu_whitebalance">White Balance</string>
+    <string name="gallery_fetching">Fetching Projects</string>
+    <string name="project_info">Info</string>
+    <string name="project_trim">Trim</string>
+    <string name="project_effects">Effects</string>
+    <string name="project_soundtrack">Music</string>
+    <string name="project_render">Render</string>
+    <string name="info_loop">Loop</string>
+    <string name="info_flipx">Flip X</string>
+    <string name="info_flipy">Flip Y</string>
+    <string name="info_backwards">Backwards</string>
+    <string name="info_framesin">frames in</string>
+    <string name="info_using">at RESXXX using MBXXX mb</string>
+    <string name="trim_startframe">Start frame</string>
+    <string name="trim_endframe">End frame</string>
+    <string name="trim_trim">Trim</string>
+    <string name="soundtrack_add">Add Music</string>
+    <string name="soundtrack_remove">Remove Music</string>
+    <string name="soundtrack_pro">Go Professional</string>
+    <string name="soundtrack_analyze">Analyze Music</string>
+    <string name="soundtrack_selecttitle">Select a MP3 music</string>
+    <string name="soundtrack_analyze_message">Analyzing Music ...</string>
+    <string name="soundtrack_notrack">No Music selected</string>
+    <string name="soundtrack_clipduration">Clip Duration</string>
+    <string name="soundtrack_musicduration">Music Duration</string>
+    <string name="soundtrack_range">Track Range</string>
+    <string name="soundtrack_sample">Sample</string>
+    <string name="soundtrack_sample_notrack">No Track Added</string>
+    <string name="soundtrack_info">"This just added feature allow you to insert a sound track in your time lapse clip, isn't that awesome?"</string>
+    <string name="soundtrack_infolite">"We are constantly improving and adding new features to Lapse It, so please support our work purchasing the Professional version.
+
+Thanks !"</string>
+    <string name="soundtrack_infopro">Select the music and swipe the sound bar to move the start position.</string>
+    <string name="render_rendername">Render name ...</string>
+    <string name="render_renderbutton">Render</string>
+    <string name="render_format">Format</string>
+    <string name="render_fps">Frame rate</string>
+    <string name="render_resolution">Resolution</string>
+    <string name="render_quality">Quality</string>
+    <string name="render_effect">Effect</string>
+    <string name="render_duration">Duration</string>
+    <string name="render_range">Range from</string>
+    <string name="render_rangeto">to</string>
+    <string name="quick_details">"View
+Details"</string>
+    <string name="quick_showrendered">"Show
+Rendered"</string>
+    <string name="quick_hiderendered">"Hide
+Rendered"</string>
+    <string name="quick_notrendered">"Not
+Rendered"</string>
+    <string name="quick_watch">"Watch
+Video"</string>
+    <string name="quick_deleteproject">"Delete
+Project"</string>
+    <string name="quick_zipsend">"Zip and
+Send"</string>
+    <string name="quick_lapseitgallery">"Lapse It
+Gallery"</string>
+    <string name="quick_shareonline">"Share
+Online"</string>
+    <string name="quick_deleterendered">"Delete
+Rendered"</string>
+    <string name="quick_projectrating">"Project
+Rating"</string>
+    <string name="quick_socialshare">"Social
+Share"</string>
+    <string name="quick_userlist">"User
+List"</string>
+    <string name="menu_contextplay">Play</string>
+    <string name="menu_contextpublish">Publish</string>
+    <string name="menu_contextclose">Close</string>
+    <string name="menu_contextnonnative">Non-native</string>
+    <string name="menu_renderingsuccess">Rendering was successful</string>
+    <string name="pro_header">Lapse It Professional Edition</string>
+    <string name="pro_list_header_title">Become a Lapse It Professional</string>
+    <string name="pro_list_header_subtitle">You will have access to the following features and more</string>
+    <string name="pro_first_title">High Definition</string>
+    <string name="pro_first_desc">Capture using your camera maximum resolution and render in Full High Definition up to 1080p</string>
+    <string name="pro_sec_title">Enchanting effects</string>
+    <string name="pro_sec_desc">Your videos will look even more amazing with our awesome built-in filters, including the famous Tilt-Shift effect and more</string>
+    <string name="pro_third_title">Sound Tracks</string>
+    <string name="pro_third_desc">Set your clips on another level with this stunning feature, you can use any of your library songs as a sound track</string>
+    <string name="pro_fourth_title">Unlimited features without ads</string>
+    <string name="pro_fourth_desc">Use your criativity without limitations with Lapse It Pro, you will have access to all features and without any kind of advertising</string>
+    <string name="pro_fifth_title">Access to future updates</string>
+    <string name="pro_fifth_desc">Supporting Lapse It for just U$ 1,99 will help us to keep adding new features and will get you all our future updates for free</string>
+    <string name="settingsitem_detail_millisecs">Milliseconds</string>
+    <string name="menu_everymilli">Every XXX msecs</string>
+    <string name="menu_flashmode">Flash Mode</string>
+    <string name="start_timelapsefor">timelapse for Android</string>
+    <string name="start_goprofessional">Go Professional Now</string>
+    <string name="start_proedition">Professional Edition</string>
+    <string name="quick_dismissdialog">"Dismiss
+Dialog"</string>
+    <string name="capture_captureresolution">Capture Resolution</string>
+</resources>

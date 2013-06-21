@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.5.1" build="21328" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="com/adobe/omniture/Tracer" mod="1324383217000" signatureChecksum="801451338" >
+        <def id="com.adobe.omniture:Tracer" /> 
+        <dep id="trace" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="com/adobe/omniture/AppMeasurementWrapperNativeCalls" mod="1323708167000" signatureChecksum="2396865292" >
+        <def id="com.adobe.omniture:AppMeasurementWrapperNativeCalls" /> 
+        <dep id="Date" type="e" /> 
+        <dep id="Math" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="com.adobe.omniture:Tracer" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_3e7b2aed657bf9476d74389159bd3b7f0af844199e969bf1edc2b86a4e48f53b_flash_display_Sprite" mod="1324384608540" signatureChecksum="137329481" >
+        <def id="_3e7b2aed657bf9476d74389159bd3b7f0af844199e969bf1edc2b86a4e48f53b_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="400fc359d6391fb0ea61542e88ccd21ff6e092e32a509fba2aba58f420d6ce95"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

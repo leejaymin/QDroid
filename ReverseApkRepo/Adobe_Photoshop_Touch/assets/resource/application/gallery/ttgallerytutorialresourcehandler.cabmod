@@ -1,0 +1,34 @@
+<module id="module" mainObject="referenceDispatcher">
+  <windows>
+    <window id="window" width="300" height="300" layer="3" type="tool" addToWindowMenu="true" x="0" y="0" initVisible="false">
+      <ttaview id="view1" width="276" height="262" sizeX="scale" sizeY="scale" acceptsMouse="false" x="10" y="10">
+        <ttatablecontrol id="control" width="276" height="262" sizeX="scale" sizeY="scale" x="0" y="0" selector="tableControl" itemWidth="256" itemHeight="256" itemTopOffset="30" itemLeftOffset="0" itemSpace="0" rowLeftOffsetRelative="30"/>
+      </ttaview>
+    </window>
+  </windows>
+  <menus/>
+  <objects>
+    <referenceDispatcher id="referenceDispatcher">
+      <objRef refId="view1" refName="mainView"/>
+      <objRef refId="control" refName="tableControl2"/>
+    </referenceDispatcher>
+  </objects>
+  <classes>
+    <class className="tttablecontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTTableControl"/>
+    <class className="ttdefaultnavigationhandler" superClassName="messageHandler" packageName="com.adobe.ttpixel.utils" codeName="TTDefaultNavigationHandler">
+      <var name="navigationView" type="object" defaultValue="" codeName="iNavigationView" className="TTNavigationView"/>
+      <var name="tableControl" type="object" defaultValue="" codeName="iTableControl" className="TTTableControl"/>
+      <var name="delegate" type="object" defaultValue="" codeName="iDelegate" className="TTNavigationDelegate"/>
+    </class>
+    <class className="ttaview" superClassName="view" packageName="com.adobe.ttpixel.ui" codeName="TTAView"/>
+    <class className="ttacontrol" superClassName="control" packageName="com.adobe.ttpixel.ui" codeName="TTAControl"/>
+    <class className="ttatablecontrol" superClassName="ttacontrol" packageName="com.adobe.ttpixel.ui" codeName="TTATableControl">
+      <var name="itemWidth" type="number" defaultValue="0" codeName="iItemWidth"/>
+      <var name="itemHeight" type="number" defaultValue="0" codeName="iItemHeight"/>
+      <var name="itemTopOffset" type="number" defaultValue="20" codeName="iItemTopOffset"/>
+      <var name="itemLeftOffset" type="number" defaultValue="20" codeName="iItemLeftOffset"/>
+      <var name="itemSpace" type="number" defaultValue="20" codeName="iItemSpace"/>
+      <var name="rowLeftOffsetRelative" type="number" defaultValue="0" codeName="iRowLeftOffsetRelative"/>
+    </class>
+  </classes>
+</module>

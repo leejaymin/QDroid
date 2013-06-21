@@ -1,0 +1,147 @@
+.hyperlinktemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+	     text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+.namedhyperlinktemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+		  text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+.directhyperlinktemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+		  text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+
+.englishcrossreferencetemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+		  text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+
+ .crossreferencetemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+		  text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+
+.crossreferencetemplatewithheadingtext
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+		  text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }
+.htmllinkonlytemplate
+{
+	display: inline;
+	font-family: "Arial", verdana, arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: #0000FF;
+	background-color: inherit;
+	vertical-align: baseline;
+	text-decoration: ;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	font-weight: bold;
+	   
+.buttonhypertextcharacterhtmlonly .htmllinkonlytemplate
+{
+	display: inline;
+	font-family: "Arial", verdana, arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: #0000FF;
+	background-color: inherit;
+	vertical-align: baseline;
+	text-decoration: ;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	font-weight: bold;
+}       
+
+.hypertextcharacterhtmlonly .htmllinkonlytemplate
+{
+	display: inline;
+	font-family: "Arial", verdana, arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: #0000FF;
+	background-color: inherit;
+	vertical-align: baseline;
+	text-decoration: ;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	font-weight: normal;
+}
+.pageonlyhyperlinktemplate
+{
+		  display: inline;
+        font-family: "Arial", verdana, arial, helvetica, sans-serif;
+        font-size: 9pt;
+        color: #0000FF;
+        background-color: inherit;
+        vertical-align: baseline;
+	     text-decoration: underline;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        padding-left: 0pt;
+        padding-right: 0pt;
+       }

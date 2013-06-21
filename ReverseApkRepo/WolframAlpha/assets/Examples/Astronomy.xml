@@ -1,0 +1,25 @@
+<?xml version='1.0'?><example><category>Astronomy</category><section-title>Star Charts</section-title><caption>generate a star chart</caption><input>star chart</input><caption>generate a star chart for a specified location</caption><input>star chart Baltimore</input><input>Lowell Observatory sky map</input><section-title>
+ <link ref="AstronomicalEvents">Astronomical Events </link>
+</section-title><caption>compute the date and properties of an eclipse</caption><input>next solar eclipse</input><caption>get information about a meteor shower</caption><input>Leonids</input><section-title>
+ <link ref="SolarSystem">Solar System </link>
+</section-title><caption>compute the location of a planet on a specified date</caption><input>Venus 14 Jan 2001</input><caption>do computations with properties of planets, moons, etc.</caption><input>(mass Phobos+Deimos) / (mass Mars)</input><caption>compute location and other properties of a comet</caption><input>Halley's comet</input><section-title>
+ <link ref="Stars">Stars </link>
+</section-title><caption>compute location and get properties of a star</caption><input>Rigel</input><caption>compare several stars</caption><input>alpha Centauri A, beta Centauri, gamma Centauri</input><caption>do computations with star properties</caption><input>mass Proxima Centauri / Sun</input><section-title>
+ <link ref="Exoplanets">Exoplanets </link>
+</section-title><caption>get information about an exoplanet</caption><input>Upsilon Andromedae b</input><caption>do computations using properties of exoplanets</caption><input>mass Iota Draconis b / Jupiter</input><section-title>
+ <link ref="Galaxies">Galaxies </link>
+</section-title><caption>compute location and get properties of a galaxy</caption><input>Andromeda Galaxy</input><caption>get a property of a galaxy</caption><input>How far is NGC 4603 from Earth?</input><section-title>
+ <link ref="StarClusters">Star Clusters </link>
+</section-title><caption>compute location and get properties of a star cluster</caption><input>M2</input><caption>locate a cluster at a specified time</caption><input>Double Cluster 11:30 tonight</input><section-title>
+ <link ref="Nebulae">Nebulae </link>
+</section-title><caption>compute location and get properties of a nebula</caption><input>Orion Nebula</input><caption>compare nebulae</caption><input>M43 vs IC 1871</input><section-title>Astronomical Radio Sources</section-title><caption>look up objects by name</caption><input>Sagittarius A*</input><caption>look up objects by catalog number</caption><input>3C273</input><section-title>
+ <link ref="Astrophysics">Astrophysics </link>
+</section-title><caption>compute the orbital period of a massive body orbiting another</caption><input>Kepler's third law, 4 solar masses, 5 Earth masses, 2.5 AU</input><caption>compute cosmological properties of the universe</caption><input>1 billion years after the big bang</input><section-title>
+ <link ref="AstronomicalObservatories">Observatories &amp; Telescopes </link>
+</section-title><caption>get information about an observatory</caption><input>Greenwich Observatory</input><caption>compute telescope properties</caption><input>telescope magnifying power</input><section-title>
+ <link ref="Satellites">Satellites </link>
+</section-title><caption>get information about a satellite</caption><input>International Space Station</input><caption>compare satellites</caption><input>Echostar 1, Echostar 2</input><section-title>
+ <link ref="SpaceProbes">Space Probes </link>
+</section-title><caption>get information about a space probe</caption><input>Voyager 1</input><caption>compare space probes</caption><input>Pioneer 10, Pioneer 11</input><section-title>
+ <link ref="ApolloMissions">Apollo Missions </link>
+</section-title><caption>get information about an Apollo space mission</caption><input>Apollo 11</input><caption>compare Apollo missions</caption><input>Apollo 11, Apollo 12, Apollo 17</input></example>

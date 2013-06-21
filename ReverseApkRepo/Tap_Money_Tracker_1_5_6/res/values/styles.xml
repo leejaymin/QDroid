@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinerHeight">
+        <item name="android:layout_height">48.0px</item>
+    </style>
+    <style name="FunctionAreaGray">
+        <item name="android:background">@color/background_function_area_gray</item>
+    </style>
+    <style name="listStyleGary">
+        <item name="android:textColor">@drawable/list_view_text_dark</item>
+        <item name="android:background">@drawable/list_view_selector_gray</item>
+    </style>
+    <style name="listStyleGreen">
+        <item name="android:textColor">@drawable/list_view_text_dark</item>
+        <item name="android:background">@drawable/list_view_selector_green</item>
+    </style>
+    <style name="listStyleBlue">
+        <item name="android:textColor">@drawable/list_view_text_dark</item>
+        <item name="android:background">@drawable/list_view_selector_blue</item>
+    </style>
+    <style name="listviewStyle">
+        <item name="android:textColor">@drawable/list_view_text_dark</item>
+        <item name="android:background">@drawable/list_view_selector_gray</item>
+    </style>
+    <style name="listviewStyleYellow" parent="@style/listviewStyle">
+        <item name="android:textColor">@drawable/list_view_text_dark</item>
+        <item name="android:background">@drawable/list_view_selector_blue</item>
+    </style>
+    <style name="PMTTheme" parent="@android:style/Theme">
+        <item name="itemForegroundColor">@drawable/list_view_text_black</item>
+        <item name="itemBackgroundColor">@drawable/list_view_selector_gray</item>
+        <item name="itemParentBackgroundColor">@drawable/list_view_parent_selector_gray</item>
+        <item name="itemHeaderBackgroundColor">@color/background_list_header_gray</item>
+        <item name="itemBackgroundColor1">@color/background_list_item1_gray</item>
+        <item name="itemBackgroundColor2">@color/background_list_item2_gray</item>
+        <item name="itemBackgroundColor3">@color/background_list_item3_gray</item>
+        <item name="itemTextColor">?itemForegroundColor</item>
+        <item name="itemTextSecondaryColor">@drawable/list_view_text_dark</item>
+        <item name="spinerLayoutHeight">@style/SpinerHeight</item>
+        <item name="backgroundFunctionArea">@color/background_function_area_gray</item>
+        <item name="backgroundListArea">@color/background_list_area_gray</item>
+    </style>
+    <style name="PMTTheme.Gray" parent="@style/PMTTheme" />
+    <style name="PMTTheme.Blue" parent="@style/PMTTheme">
+        <item name="itemForegroundColor">@drawable/list_view_text_black</item>
+        <item name="itemBackgroundColor">@drawable/list_view_selector_blue</item>
+        <item name="itemParentBackgroundColor">@drawable/list_view_parent_selector_blue</item>
+        <item name="itemHeaderBackgroundColor">@color/background_list_header_blue</item>
+        <item name="itemBackgroundColor1">@color/background_list_item1_blue</item>
+        <item name="itemBackgroundColor2">@color/background_list_item2_blue</item>
+        <item name="itemBackgroundColor3">@color/background_list_item3_blue</item>
+        <item name="itemTextColor">?itemForegroundColor</item>
+        <item name="itemTextSecondaryColor">@drawable/list_view_text_dark</item>
+        <item name="backgroundFunctionArea">@color/background_function_area_blue</item>
+        <item name="backgroundListArea">@color/background_list_area_blue</item>
+    </style>
+    <style name="PMTTheme.Green" parent="@style/PMTTheme">
+        <item name="itemForegroundColor">@drawable/list_view_text_black</item>
+        <item name="itemBackgroundColor">@drawable/list_view_selector_green</item>
+        <item name="itemParentBackgroundColor">@drawable/list_view_parent_selector_green</item>
+        <item name="itemHeaderBackgroundColor">@color/background_list_header_green</item>
+        <item name="itemBackgroundColor1">@color/background_list_item1_green</item>
+        <item name="itemBackgroundColor2">@color/background_list_item2_green</item>
+        <item name="itemBackgroundColor3">@color/background_list_item3_green</item>
+        <item name="itemTextColor">?itemForegroundColor</item>
+        <item name="itemTextSecondaryColor">@drawable/list_view_text_dark</item>
+        <item name="backgroundFunctionArea">@color/background_function_area_green</item>
+        <item name="backgroundListArea">@color/background_list_area_green</item>
+    </style>
+    <style name="PMTTheme.Yellow" parent="@style/PMTTheme">
+        <item name="itemForegroundColor">@drawable/list_view_text_black</item>
+        <item name="itemBackgroundColor">@drawable/list_view_selector_yellow</item>
+        <item name="itemParentBackgroundColor">@drawable/list_view_parent_selector_yellow</item>
+        <item name="itemHeaderBackgroundColor">@color/background_list_header_yellow</item>
+        <item name="itemBackgroundColor1">@color/background_list_item1_yellow</item>
+        <item name="itemBackgroundColor2">@color/background_list_item2_yellow</item>
+        <item name="itemBackgroundColor3">@color/background_list_item3_yellow</item>
+        <item name="itemTextColor">?itemForegroundColor</item>
+        <item name="itemTextSecondaryColor">@drawable/list_view_text_dark</item>
+        <item name="backgroundFunctionArea">@color/background_function_area_yellow</item>
+        <item name="backgroundListArea">@color/background_list_area_yellow</item>
+    </style>
+</resources>

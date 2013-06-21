@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/buddy_selected" android:layout_width="16.0px" android:layout_height="16.0px" android:src="@drawable/icon_check" android:scaleType="centerInside" />
+    <ImageView android:id="@id/buddy_avatar" android:layout_width="24.0px" android:layout_height="24.0px" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0px" android:id="@id/buddy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0px" android:gravity="right" android:id="@id/buddy_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0px" android:gravity="bottom|left|center" android:id="@id/buddy_city" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0px" android:gravity="bottom|right|center" android:id="@id/buddy_distance" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0px" android:gravity="bottom|right|center" android:id="@id/buddy_atime" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/buddy_delete" android:layout_width="24.0px" android:layout_height="24.0px" android:src="@drawable/icon_delete" android:scaleType="centerInside" />
+</LinearLayout>

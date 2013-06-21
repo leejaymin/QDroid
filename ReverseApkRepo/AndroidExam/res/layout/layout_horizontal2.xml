@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0pt" android:textStyle="italic" android:textColor="#ffff0000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/insa" />
+    <TextView android:textSize="20.0sp" android:background="#ff0000ff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/anyoung" />
+    <TextView android:textSize="5.0mm" android:typeface="serif" android:textColor="#8000ff00" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Good Morning" />
+</LinearLayout>

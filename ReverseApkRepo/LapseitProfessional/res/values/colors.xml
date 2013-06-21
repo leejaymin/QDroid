@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="listgroupnormal">#ff333333</color>
+    <color name="listgrouppressed">#ff444444</color>
+    <color name="listchildnormal">#ff525252</color>
+    <color name="listchildpressed">#ff555555</color>
+    <color name="dividercolor">#ff33ff00</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="renderfile">#ff333333</color>
+    <color name="renderfilehint">#ff666666</color>
+    <color name="mainbackground">#ff1b1b1b</color>
+</resources>

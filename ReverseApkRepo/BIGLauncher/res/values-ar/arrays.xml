@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preferencesThemeEntries">
+        <item>(فاتح (الافتراضي</item>
+        <item>داكن</item>
+        <item>أزرق</item>
+    </string-array>
+    <string-array name="preferencesScreenOrientationEntries">
+        <item>(أوتوماتيكي (الافتراضي</item>
+        <item>أفقي</item>
+        <item>عمودي</item>
+    </string-array>
+    <string-array name="preferencesTextSizeEntries">
+        <item>الافتراضي</item>
+        <item>أكبر</item>
+        <item>الأكبر</item>
+    </string-array>
+    <string-array name="wizardFinishEntries">
+        <item>الشاشة الرئيسية</item>
+        <item>تفضيلات</item>
+    </string-array>
+</resources>

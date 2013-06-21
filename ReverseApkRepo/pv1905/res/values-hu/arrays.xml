@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="page_transition_list">
+        <item>Nincs</item>
+        <item>Slide</item>
+        <item>Cover</item>
+        <item>Fade in</item>
+    </string-array>
+    <string-array name="slideshow_transition_list">
+        <item>Nincs</item>
+        <item>Slide</item>
+        <item>Cover</item>
+        <item>Fade in</item>
+        <item>Véletlen</item>
+    </string-array>
+    <string-array name="file_sort_type">
+        <item>Fájlnév(Numerikus,Növekvő)</item>
+        <item>Fájlnév(Karakter,Növekvő)</item>
+        <item>Dátum(Növekvő)</item>
+        <item>Fájlméret(Növekvő)</item>
+        <item>Fájlnév(Numerikus,Csökkenő)</item>
+        <item>Fájlnév(Karakter,Csökkenő)</item>
+        <item>Dátum(Csökkenő)</item>
+        <item>Fájlméret(Csökkenő)</item>
+    </string-array>
+    <string-array name="view_mode_list">
+        <item>Lista</item>
+        <item>Részletek</item>
+        <item>Előnézet</item>
+    </string-array>
+    <string-array name="behavior_list">
+        <item>Fájllista</item>
+        <item>Tartalomnézet</item>
+    </string-array>
+    <string-array name="pageinfo_list">
+        <item>Nincs</item>
+        <item>Oldal</item>
+        <item>Fájlnév</item>
+        <item>Könyvcím</item>
+    </string-array>
+    <string-array name="change_page_method">
+        <item>Balra &amp;amp; Jobbra</item>
+        <item>Fel &amp;amp; Le</item>
+    </string-array>
+    <string-array name="font_size_list">
+        <item>Kicsi</item>
+        <item>Közepes</item>
+        <item>Nagy</item>
+    </string-array>
+</resources>

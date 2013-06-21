@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout500" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:text="File already exists! Do you wish to overwrite?   " />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <Button android:id="@id/overwriteNo" android:layout_width="120.0dip" android:layout_height="60.0dip" android:text="NO" />
+        <Button android:id="@id/overwriteYes" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="YES" />
+    </LinearLayout>
+</LinearLayout>

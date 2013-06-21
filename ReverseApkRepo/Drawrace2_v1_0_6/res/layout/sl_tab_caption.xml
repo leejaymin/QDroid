@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:ellipsize="marquee" android:gravity="center" android:id="@id/sl_tab" android:background="@drawable/sl_tab_default_right_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" style="@style/sl_text_big_bold_inverted"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

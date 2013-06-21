@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs">
+        <ListPreference android:entries="@array/filenameTexts" android:title="@string/photoresolution" android:key="resolutionPref" android:summary="@string/photoresolutiontext" android:defaultValue="1x1" android:entryValues="@array/filenameValues" />
+        <PreferenceScreen android:title="@string/shooting" android:summary="@string/shootingdesc">
+            <ListPreference android:entries="@array/delayPrefKeys" android:title="@string/delay_between_shots" android:key="delayPref" android:summary="@string/delaytext" android:defaultValue="-1" android:entryValues="@array/delayPrefValues" />
+            <CheckBoxPreference android:title="@string/singleclick" android:key="clickshot" android:summary="@string/singleclickdesc" android:defaultValue="false" />
+            <ListPreference android:entries="@array/shootmodePrefKeys" android:title="@string/shootmode" android:key="shootmodePref" android:summary="@string/shootmodedesc" android:defaultValue="cont" android:entryValues="@array/shootmodePrefValues" />
+            <ListPreference android:entries="@array/screenclickPrefKeys" android:title="@string/touchaction" android:key="screenclickPref" android:summary="@string/touchactiondesc" android:defaultValue="Nothing" android:entryValues="@array/screenclickPrefValues" />
+            <CheckBoxPreference android:title="@string/blinkscreen" android:key="blinkScreen" android:summary="@string/blinkscreendesc" android:defaultValue="true" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/storelocation" android:summary="@string/storelocationdesc">
+            <ListPreference android:entries="@array/locationtypePrefKeys" android:title="@string/storelocation" android:key="locationtype" android:summary="@string/storelocationdesc2" android:defaultValue="default" android:entryValues="@array/locationtypePrefValues" />
+            <EditTextPreference android:title="@string/storelocation" android:key="customlocation" android:summary="@string/customlocation" android:defaultValue="" />
+            <EditTextPreference android:title="@string/label" android:key="labelprefix" android:summary="@string/labeldesc" android:defaultValue="" />
+            <CheckBoxPreference android:title="@string/addsubfordate" android:key="datesubfolder" android:summary="@string/addsubfordatedesc" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/showlabel" android:key="showlabel" android:summary="When set, the current label is visible on the main screen. Clicking the label will edit it." android:defaultValue="false" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/advanced" android:summary="@string/advanceddesc">
+            <CheckBoxPreference android:title="@string/mediascan" android:key="mediascanner" android:summary="@string/mediascandesc" android:defaultValue="false" />
+            <CheckBoxPreference android:title="@string/highres" android:key="highres" android:summary="@string/highresdesc" android:defaultValue="false" />
+            <ListPreference android:entries="@array/memoryPrefKeys" android:title="@string/membuf" android:key="memoryPref" android:summary="@string/membufdesc" android:defaultValue="-100" android:entryValues="@array/memoryPrefValues" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

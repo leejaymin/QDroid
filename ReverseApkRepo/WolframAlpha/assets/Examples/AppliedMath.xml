@@ -1,0 +1,5 @@
+<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Applied Mathematics</category><section-title>
+ <link ref="Optimization">Optimization </link>
+</section-title><caption>minimize or maximize a function</caption><input>maximize x(1-x)e^x</input><caption>minimize or maximize a function of several variables</caption><input>maximize 5 + 3x - 4y - x^2 + x y - y^2</input><caption>minimize or maximize a function subject to a constraint</caption><input>maximize e^x sin y on x^2+y^2=1</input><section-title>Numerical Integration</section-title><caption>numerically integrate functions that cannot be integrated symbolically</caption><input>integrate sin(cos x) from x=0 to 1</input><input>integrate sqrt( (1+x^2)/(1+x^4) ) dx, x=0..1</input><section-title>
+ <link ref="DynamicalSystems">Dynamical Systems </link>
+</section-title><caption>analyze the logistic map</caption><input>logistic map r=3.569935</input><caption>analyze the Lotka-Volterra predator-prey model </caption><input>predator-prey model</input></example>

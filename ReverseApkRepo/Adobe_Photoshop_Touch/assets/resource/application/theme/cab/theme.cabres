@@ -1,0 +1,185 @@
+<resources>
+	<resource>
+		<xmlResource id="theme">
+			<tttheme smallFontSize="11" normalFontSize="13" largeFontSize="14" disabledFontAlpha="0.3" hiliteFontAlpha="0.95" selectedFontAlpha="0.95" darkTheme="true" hiliteColor="1174C7" fontHeight="22">
+				<ttwindowtheme dockHorizMargin="2"
+									dockVertMargin="2"
+									dockHorizFinalMargin="2"
+									dockVertFinalMargin="2"
+									tabLeftOffset="0"
+									tabRightOffset="18"
+									tabHorizOffset="-1"
+									tabTopOffset="8"
+									tabHeight="20"
+									tabContentVertOffset="5"
+									tabWidthAddSpace="20"
+									tabWidthImageSpace="20"
+									tabWidthCloseSpace="15" />
+									
+				<ttmenutheme	barLeftOffset="10"
+									titleWidthSpace="20"
+									menuVertOffset="5"
+									itemWidthSpace="80"
+									itemHeight="40"
+									dividerItemHeight="20" />
+									 
+				<ttbuttontheme />
+				<ttcolorfieldtheme />
+				<ttpopuptheme />
+				<ttscrollbartheme buttonSize="19" thumbMargin="8" thumbOffset="19" />
+				<ttslidertheme thumbMargin="25" />
+				<tttextfieldtheme />
+				<ttlistcontroltheme />
+				<ttswitchbartheme />
+				<ttsplitviewtheme />
+				<ttaccordionPaneltheme titleHeight="19" />
+				<ttdecorviewtheme />
+				<ttdecortheme	labelHiliteFontAlpha="0.95"
+									labelDisabledFontAlpha="0.3"
+									textSmallFontAlpha="0.95"
+									textLargeFontAlpha="0.95" />
+									
+				<ttdragpalettetheme vertSectionOffset="2"
+										 sectionContainerTopOffset="28"
+										 sectionContainerBottomOffset="4"
+										 tabExtraHorizSpace="40"
+										 tabLeftOffset="0"
+										 tabExtraWidth="20"
+										 tabHeight="16"
+										 tabVertOffset="12"
+										 tabHorizOffset="-1" />
+										 
+				<ttmenubuttontheme />
+				<tttimebartheme timeBarMargin="1" />
+			</tttheme>
+		</xmlResource>		
+	</resource>
+	
+	<resource>
+		<xmlResource id="transitions">
+			<defaultTransitions>
+				<alphaViewTransition transitionName="toolwindowtransition" duration="125" /> 
+				<wipeViewTransition transitionName="menutransition" duration="100" /> 
+				<alphaViewTransition transitionName="dialogtransition" duration="130" />
+				<alphaViewTransition transitionName="viewstacktransition" duration="130" />
+				<alphaViewTransition transitionName="dragpalettetransition" duration="130" />
+				<viewRectTransition transitionName="viewastabtransition" duration="200" />
+				<alphaViewTransition transitionName="tabswitchtransition" duration="130" />
+				<multiMoveTransition transitionName="accordiontransition" duration="200" />
+			</defaultTransitions>
+		</xmlResource>		
+	</resource>
+	
+	<resource description="window.fla">
+		<imageResource id="workspace" className="com.adobe.ttpixel.swf.Workspace" />
+		<imageResource id="documentWindow" className="com.adobe.ttpixel.swf.DocWindow" />
+		<imageResource id="toolWindow" className="com.adobe.ttpixel.swf.ToolWindow" />
+		<imageResource id="menuWindow" className="com.adobe.ttpixel.swf.MenuWindow" />
+		<imageResource id="dragPalette" className="com.adobe.ttpixel.swf.DragPalette" />
+		<imageResource id="dragPaletteTab" className="com.adobe.ttpixel.swf.DragPaletteTab" />
+		<imageResource id="dragPaletteSection" className="com.adobe.ttpixel.swf.DragPaletteSection" />
+		<imageResource id="windowTab" className="com.adobe.ttpixel.swf.WindowTab" />
+		<imageResource id="windowTabPane" className="com.adobe.ttpixel.swf.WindowTabPane" />
+		<imageResource id="toolTip" className="com.adobe.ttpixel.swf.ToolTip" />
+		<imageResource id="plainWindow" className="com.adobe.ttpixel.swf.PlainWindow" />
+	</resource>
+	
+	<resource description="menu.fla">
+		<imageResource id="menuBarBackground" className="com.adobe.ttpixel.swf.MenuBarBackground" />
+		<imageResource id="menuBarItem" className="com.adobe.ttpixel.swf.MenuBarItem" />
+		<imageResource id="menuItem" className="com.adobe.ttpixel.swf.MenuItem" />
+	</resource>
+	
+	<resource description="icons.fla">
+		<imageResource id="warningIcon" className="com.adobe.ttpixel.swf.WarningIcon" />
+		<imageResource id="infoIcon" className="com.adobe.ttpixel.swf.InfoIcon" />
+		<imageResource id="errorIcon" className="com.adobe.ttpixel.swf.ErrorIcon" />
+		<imageResource id="nocolor" className="com.adobe.ttpixel.swf.NoColor" />
+		<imageResource id="genericFileIcon" className="com.adobe.ttpixel.swf.GenericFileIcon" />
+		<imageResource id="genericFolderIcon" className="com.adobe.ttpixel.swf.GenericFolderIcon" />
+		<imageResource id="cabParsecIcon" className="com.adobe.ttpixel.swf.ParsecIcon" />
+
+		<imageResource id="colorStripIcon" className="com.adobe.ttpixel.swf.ColorStripIcon" />
+		<imageResource id="colorWheelIcon" className="com.adobe.ttpixel.swf.ColorWheelIcon" />
+		<imageResource id="sliderIcon" className="com.adobe.ttpixel.swf.SliderIcon" />
+		<imageResource id="swatchGridIcon" className="com.adobe.ttpixel.swf.SwatchGridIcon" />
+		<imageResource id="colorPickerSpyGlass" className="com.adobe.ttpixel.swf.ColorPickerSpyGlass" />
+		<imageResource id="colorRGBIcon" className="com.adobe.ttpixel.swf.ColorRGBIcon" />
+		<imageResource id="colorRIcon" className="com.adobe.ttpixel.swf.ColorRIcon" />
+		<imageResource id="colorGIcon" className="com.adobe.ttpixel.swf.ColorGIcon" />
+		<imageResource id="colorBIcon" className="com.adobe.ttpixel.swf.ColorBIcon" />
+	</resource>
+	
+	<resource description="controls.fla">
+		<imageResource id="pushButton" className="com.adobe.ttpixel.swf.PushButton" />
+		<imageResource id="pushButtonBlue" className="com.adobe.ttpixel.swf.PushButtonBlue" />
+		<imageResource id="checkBox" className="com.adobe.ttpixel.swf.CheckBox" />
+		<imageResource id="radio" className="com.adobe.ttpixel.swf.Radio" />
+		<imageResource id="toolButton" className="com.adobe.ttpixel.swf.ToolButton" />
+		<imageResource id="menuButton" className="com.adobe.ttpixel.swf.MenuButton" />
+		<imageResource id="popup" className="com.adobe.ttpixel.swf.Popup" />
+		<imageResource id="popupWhite" className="com.adobe.ttpixel.swf.PopupWhite" />
+		<imageResource id="scrollBar" className="com.adobe.ttpixel.swf.ScrollBar" />
+		<imageResource id="colorfield" className="com.adobe.ttpixel.swf.ColorField" />
+		<imageResource id="slider" className="com.adobe.ttpixel.swf.Slider" />
+		<imageResource id="textField" className="com.adobe.ttpixel.swf.TextFieldClip" />
+		<imageResource id="switchBar" className="com.adobe.ttpixel.swf.SwitchBar" />
+		<imageResource id="linkMessageArrow" className="com.adobe.ttpixel.swf.LinkMessageArrow" />
+		<imageResource id="timeBar" className="com.adobe.ttpixel.swf.TimeBar" />
+		<imageResource id="buttonMargin" className="com.adobe.ttpixel.swf.ButtonMargin" />
+		<imageResource id="slideCheckBox" className="com.adobe.ttpixel.swf.SlideCheckBox" />
+		<imageResource id="numberField" className="com.adobe.ttpixel.swf.NumberFieldClip" />
+		<imageResource id="numberFieldBlack" className="com.adobe.ttpixel.swf.NumberFieldClipBlack" />
+		<imageResource id="angleControl" className="com.adobe.ttpixel.swf.TTAngleControlClip" />
+		<imageResource id="angleControlTicks" className="com.adobe.ttpixel.swf.TTAngleControlTicks" />
+	</resource>
+	
+	<resource description="listcontrol.fla">
+		<imageResource id="listControl" className="com.adobe.ttpixel.swf.ListControl" />
+		<imageResource id="listControlRow" className="com.adobe.ttpixel.swf.ListControlRow" />
+		<imageResource id="listControlItem" className="com.adobe.ttpixel.swf.ListControlItem" />
+		<imageResource id="listControlCheck" className="com.adobe.ttpixel.swf.ListControlCheck" />
+		<imageResource id="listControlRadio" className="com.adobe.ttpixel.swf.ListControlRadio" />
+		<imageResource id="listControlBar" className="com.adobe.ttpixel.swf.ListControlBar" />
+		<imageResource id="listControlBarBack" className="com.adobe.ttpixel.swf.ListControlBarBack" />
+	</resource>
+	
+	<resource description="views.fla">
+		<imageResource id="label" className="com.adobe.ttpixel.swf.LabelClip" />
+		<imageResource id="labelBlack" className="com.adobe.ttpixel.swf.LabelClipBlack" />
+		<imageResource id="textClip" className="com.adobe.ttpixel.swf.TextClip" />
+		<imageResource id="textClipBlack" className="com.adobe.ttpixel.swf.TextClipBlack" />
+		<imageResource id="splitView" className="com.adobe.ttpixel.swf.SplitView" />
+		<imageResource id="decorHLine" className="com.adobe.ttpixel.swf.DecorHLine" />
+		<imageResource id="decorHLineBlack" className="com.adobe.ttpixel.swf.DecorHLineBlack" />
+		<imageResource id="decorVLine" className="com.adobe.ttpixel.swf.DecorVLine" />
+		<imageResource id="decorVLineBlack" className="com.adobe.ttpixel.swf.DecorVLineBlack" />
+		<imageResource id="decorBox" className="com.adobe.ttpixel.swf.DecorBox" />
+		<imageResource id="decorBoxBlack" className="com.adobe.ttpixel.swf.DecorBoxBlack" />
+		<imageResource id="accordionPanel" className="com.adobe.ttpixel.swf.AccordionPanel" />
+		<imageResource id="swatchView" className="com.adobe.ttpixel.swf.SwatchView" />
+		<imageResource id="brushViewDecoration" className="com.adobe.ttpixel.swf.BrushViewDecoration" />
+		<imageResource id="brushViewSizeDecoration" className="com.adobe.ttpixel.swf.BrushViewSizeDecoration" />
+		<imageResource id="brushViewSoftnessDecoration" className="com.adobe.ttpixel.swf.BrushViewSoftnessDecoration" />
+		<imageResource id="colorPreviewDecoration" className="com.adobe.ttpixel.swf.SwatchPreviewDecoration" />
+	</resource>
+	
+	<resource description="cursor.fla">
+		<imageResource id="waitCursor" className="com.adobe.ttpixel.swf.WaitCursor" frameRate="50" autoStart="true" />
+		<imageResource id="splitSizeHCursor" className="com.adobe.ttpixel.swf.SplitSizeHCursor" />
+		<imageResource id="splitSizeVCursor" className="com.adobe.ttpixel.swf.SplitSizeVCursor" />
+		<imageResource id="crossCursor" className="com.adobe.ttpixel.swf.CrossCursor" />
+		<imageResource id="dragCursor" className="com.adobe.ttpixel.swf.DragCursor" />
+		<imageResource id="dragCursorCopy" className="com.adobe.ttpixel.swf.DragCursorCopy" />
+		<imageResource id="dragCursorNone" className="com.adobe.ttpixel.swf.DragCursorNone" />
+		<imageResource id="dragCursorLink" className="com.adobe.ttpixel.swf.DragCursorLink" />
+		<imageResource id="beamCursor" className="com.adobe.ttpixel.swf.BeamCursor" />
+	</resource>
+	
+	<resource description="touchCursor.fla">
+		<imageResource id="CABTouchCursor" className="com.adobe.ttpixel.swf.CABTouchCursor" />
+		<imageResource id="CABMobileKeyboardClip" className="com.adobe.ttpixel.swf.CABMobileKeyboardClip" />
+		<imageResource id="CABMobileKeyboardKey" className="com.adobe.ttpixel.swf.CABMobileKeyboardKey" />
+	</resource>
+	
+</resources>

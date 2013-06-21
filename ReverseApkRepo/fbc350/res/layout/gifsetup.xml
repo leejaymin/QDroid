@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/headertext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_gif_animation" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/imageView1" android:layout_width="150.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_exposure" android:layout_below="@id/headertext" android:layout_centerHorizontal="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectpictures" android:layout_below="@id/imageView1" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/selectPicturesButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectdotdot" android:layout_below="@id/textView1" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:text="@string/dummytext" android:layout_toRightOf="@id/selectPicturesButton" android:layout_alignBaseline="@id/selectPicturesButton" android:layout_alignBottom="@id/selectPicturesButton" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quality" android:layout_below="@id/selectPicturesButton" android:layout_alignParentLeft="true" />
+        <Spinner android:id="@id/qualitySpinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textView2" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/size" android:layout_below="@id/qualitySpinner" android:layout_alignParentLeft="true" />
+        <Spinner android:id="@id/spinner2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textView3" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/framerate" android:layout_below="@id/spinner2" android:layout_alignParentLeft="true" />
+        <Spinner android:id="@id/spinner3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textView4" android:layout_alignParentLeft="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timestretch" android:layout_below="@id/spinner3" android:layout_alignParentLeft="true" />
+        <Spinner android:entries="@array/timestretchPrefKeys" android:id="@id/spinner4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/textView5" android:layout_alignParentLeft="true" />
+        <Button android:id="@id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/createAnimation" android:layout_below="@id/spinner4" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>

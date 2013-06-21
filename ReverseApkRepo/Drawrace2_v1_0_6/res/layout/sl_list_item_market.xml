@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:background="@drawable/sl_selector_list_item" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_vertical" android:id="@id/sl_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_margin="@dimen/sl_margin_default" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <TextView android:ellipsize="marquee" android:id="@id/sl_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" style="@style/sl_text_large_bold" />
+        <TextView android:ellipsize="marquee" android:id="@id/sl_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" style="@style/sl_text_normal_normal" />
+    </LinearLayout>"
+<TextView android:ellipsize="marquee" android:layout_gravity="right|center" android:id="@id/sl_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" style="@style/sl_text_normal_normal" />
+</LinearLayout>

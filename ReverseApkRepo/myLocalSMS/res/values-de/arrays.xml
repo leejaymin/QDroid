@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>Chinese</item>
+        <item>Czech</item>
+        <item>Croatian</item>
+        <item>Danish</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>Filipino</item>
+        <item>Finnish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Indonesian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Italian</item>
+        <item>Polish</item>
+        <item>Portugese</item>
+        <item>Russian</item>
+        <item>Slovak</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="languageValues">
+        <item>zh</item>
+        <item>cs</item>
+        <item>hr</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>tl</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>id</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>it</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>es</item>
+    </string-array>
+</resources>
