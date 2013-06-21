@@ -1,0 +1,10 @@
+'''
+Created on 2013. 6. 12.
+
+@author: root
+'''
+
+RUN_APK = 0
+RUN_PACKAGE =1
+RUN_APKLIST = 2
+RUN_DISPLAYCOMPATIBILITY =3
