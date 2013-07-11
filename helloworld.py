@@ -72,6 +72,9 @@ if __name__ == '__main__':
     targetInfo = [{'deviceName':'HT0A1P800732','port':5554},{'deviceName':'HT08DP802665','port':5553}]
     print targetInfo[0]['deviceName']
     print targetInfo[0]['port']
+    
+    power = 1.1
+    print 'powwer: %f'%(power)
 
 
 

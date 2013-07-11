@@ -61,9 +61,9 @@ class ApkTest(threading.Thread):
         
         #Test Mode에 따라서 TCP IP / USB
         if(self.testMode == '1'):
-            self.AdbOverNetwork('adb -s %s disconnect 192.168.0.3'%(self.deviceName))
+            self.AdbOverNetwork('adb disconnect 192.168.0.3')
             time.sleep(1)
-            self.AdbOverNetwork('adb -s %s connect 192.168.0.3'%(self.deviceName))
+            self.AdbOverNetwork('adb connect 192.168.0.3')
             time.sleep(5)
             
         #오류를 기록해줄 로거를 생성 한다. 
@@ -99,8 +99,8 @@ class ApkTest(threading.Thread):
         self.mAvePower = 0.0
         
         #Device Screen Unlock
-        self.solo.event_controller.drag_start(50, 600)
-        self.solo.event_controller.drag_end(380, 600)
+        self.solo.event_controller.drag_start(50, 580)
+        self.solo.event_controller.drag_end(400, 580)
         # mode number 1은 current senssing의 초기화 이다.
         self.CurrentSensing(1)
         
@@ -129,7 +129,7 @@ class ApkTest(threading.Thread):
     def runApkTests(self): 
         self.init()
         #monkeyrunner 테스팅 코드를 만드는 부분
-        #self.reverseApk()   
+        self.reverseApk()   
         self.parsingManifestXml() 
         
         #스마트폰의 환경을 설정 한다.
@@ -599,7 +599,7 @@ class ApkTest(threading.Thread):
         print 'monkey error: %d'%(self.errorReport['monkey'][0])
         print 'No overlap monkey error: %d'%(self.errorReport['monkey'][1])
         print "Network Condition: %s"%(self.enviromentResult['wifi'])
-        print "Total Current: %d"%(self.mTotalCurrent)
+        print "Average Power Consumption: %f"%(self.mAvePower)
         print "Power List: %s"%(self.ListOfPower)
         print self.perforCounter.loadPerforResult()
         
@@ -617,7 +617,7 @@ class ApkTest(threading.Thread):
         self.m_logger.info('monkey error: %d'%(self.errorReport['monkey'][0]))
         self.m_logger.info('No overlap monkey error: %d'%(self.errorReport['monkey'][1]))
         self.m_logger.info('Network Condition: %s'%(self.enviromentResult['wifi']))
-        self.m_logger.info('Total Current: %d'%(self.mTotalCurrent))
+        self.m_logger.info('Average Power Consumption: %f'%(self.mAvePower))
         self.m_logger.info('Power List: %s'%(self.ListOfPower))
         self.m_logger.info(self.perforCounter.loadPerforResult())
         
@@ -649,7 +649,7 @@ class ApkTest(threading.Thread):
         
 if __name__ == '__main__':
     
-    targetInfo = [{'deviceName':'HT0A1P800732','port':5554},{'deviceName':'HT08DP802665','port':5553}]
+    targetInfo = [{'deviceName':'HT0A1P800732','port':5545},{'deviceName':'HT08DP802665','port':5544}]
     
     mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility 5) debug mode 6) multi mode")
     envirMode = raw_input("Please choose Environment: 1)TCPIP 2)USB")
@@ -660,14 +660,14 @@ if __name__ == '__main__':
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5554)
+        p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
         p.runApkTests()
     elif mode == '2':
         apkName = raw_input('2) Please input apk name? ')
         if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName,iteration,envirMode)
+        p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
         p.runPackageTests()
     elif mode == '3':
         try:
@@ -678,7 +678,7 @@ if __name__ == '__main__':
             for apkName in apkList:
                 if(apkName.find('.') != -1):
                     print 'Test App:'+apkName
-                    p = ApkTest(apkName,iteration,envirMode)
+                    p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
                     p.runApkTests()
                 else:
                     print 'Apk name format error: '+apkName
@@ -733,11 +733,11 @@ if __name__ == '__main__':
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
         
-        th = ApkTest(apkName,iteration,2,'192.168.0.6:5554',5545)
+        th = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5545)
         th.setTestingOption(defineStore.RUN_APK)
         th.start()
         
-        th2 = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5544)
+        th2 = ApkTest(apkName,iteration,2,'192.168.0.6:5554',5544)
         th2.setTestingOption(defineStore.RUN_APK)
         th2.start()
 

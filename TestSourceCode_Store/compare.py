@@ -12,8 +12,8 @@ from scipy import sum, average
 
 def main():
     
-    file1 = '../ImageStore/splashDesire.png'
-    file2 = "../ImageStore/splash_Resize.png"
+    file1 = '../ImageStore/com.viewpagerindicator.sample.SampleTabsDefault_NexusOne.png'
+    file2 = "../ImageStore/com.viewpagerindicator.sample.SampleTabsDefault_Resize.png"
     
     # read images as 2D arrays (convert to grayscale for simplicity)
     img1 = to_grayscale(imread(file1).astype(float))

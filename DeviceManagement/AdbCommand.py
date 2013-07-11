@@ -26,15 +26,15 @@ class AdbCommand():
     def executeCommand(self, cmd):
         try:
             #command 실행이 오래 걸릴 경우, 타임아웃을 발생 시키기 위함이다.
-            #timemer = TimeoutFunction(5)
-            #timemer.timeStart()
+            timemer = TimeoutFunction(5)
+            timemer.timeStart()
             
             self.out = run(cmd)
             res = self.out.stdout.read()
             self.out.stdout.close()
             print res
             #timeout을 정지 시킨다. 
-            #timemer.timeEnd()
+            timemer.timeEnd()
             return res
         except TimeoutFunctionException:
             self.out.kill
