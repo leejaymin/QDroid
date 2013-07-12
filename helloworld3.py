@@ -35,7 +35,6 @@ def diffError(argX, argY):
     result = sameRate / dividedNum *100
     return result
 
-
 def dmsgThread():
     mTotalCurrent = 0
     mTotalPower = 0
@@ -109,7 +108,6 @@ if __name__ == '__main__':
 #   dmsgThread()
 #   time.sleep(1)
     InitPerformnaceCounter()
-
 
 '''    
     for x in range(3):

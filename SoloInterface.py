@@ -47,7 +47,8 @@ class SoloInterface():
         self.tree_nodes_list = None
         
         # object of View Controller 
-        self.event_controller = EventController(self.m_logger, self.device_name)
+        # This code changed by jaynux. // monkey_server_port = device_port 
+        self.event_controller = EventController(self.m_logger, self.device_name, monkey_server_port=device_port)
         # init event controller
         self.event_controller.open()
 

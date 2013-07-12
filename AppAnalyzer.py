@@ -660,7 +660,7 @@ if __name__ == '__main__':
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
+        p = ApkTest(apkName,iteration,envirMode,'HT0A1P800732',5545)
         p.runApkTests()
     elif mode == '2':
         apkName = raw_input('2) Please input apk name? ')
@@ -728,18 +728,24 @@ if __name__ == '__main__':
         p.runApkTests()
         
     elif mode == '6':
-        apkName = raw_input('1) Please input apk name? ')
-        if not isfile('./apkRepo/%s'%(apkName)):
-            print 'ERROR: apk file does not exist:' + apkName
-            exit(-1)
-        
-        th = ApkTest(apkName,iteration,2,'192.168.0.3:5555',5545)
-        th.setTestingOption(defineStore.RUN_APK)
-        th.start()
-        
-        th2 = ApkTest(apkName,iteration,2,'192.168.0.6:5554',5544)
-        th2.setTestingOption(defineStore.RUN_APK)
-        th2.start()
+        while True:
+            
+            apkName = raw_input('1) Please input apk name? ')
+            print targetInfo
+            targetNumber = raw_input('2) target number?')
+            
+            if not isfile('./apkRepo/%s'%(apkName)):
+                print 'ERROR: apk file does not exist:' + apkName
+                exit(-1)
+            
+            # At this point, process is devided by fork() to two process
+            pid = os.fork()
+            if pid ==0 :
+#                th = ApkTest(apkName,iteration,2,targetInfo[int(targetNumber)]['deviceName'],targetInfo[int(targetNumber)]['port'])
+#                th.setTestingOption(defineStore.RUN_APK)
+#                th.start()
+                p = ApkTest(apkName,iteration,2,targetInfo[int(targetNumber)]['deviceName'],targetInfo[int(targetNumber)]['port'])
+                p.runApkTests()
 
     else:
         print 'Please check your chosen mode !'
