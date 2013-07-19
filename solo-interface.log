@@ -98444,3 +98444,845 @@
 
 [ 2013-07-10 22:55:52,920 ][ ERROR ] Please check whether your device or emulator is running?
 
+[ 2013-07-11 23:09:43,111 ][ ERROR ] Failed to check whether device has IWindowService: other errors
+
+[ 2013-07-12 01:03:57,008 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-12 01:03:59,064 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-12 01:03:59,064 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-12 01:03:59,064 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-12 01:03:59,065 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-14 19:35:43,920 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-14 19:35:43,940 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-14 19:35:43,941 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-14 19:35:43,941 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-14 19:36:03,544 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-14 19:36:03,545 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-14 19:36:03,545 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:03,545 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,297 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,298 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,298 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,298 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,298 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,298 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,299 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,300 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,300 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,300 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,300 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,300 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,301 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,301 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:13,301 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,312 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,313 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 19:36:19,314 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-14 23:38:02,777 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-14 23:38:02,778 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-14 23:38:02,778 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-14 23:38:02,779 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-15 05:49:02,895 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-15 05:49:02,895 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-15 05:49:02,896 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-15 05:49:02,896 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-15 05:49:18,882 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 05:49:18,882 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 05:49:18,882 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:49:18,882 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,588 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:14,589 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,596 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,596 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,596 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,597 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,598 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:20,598 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,606 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,607 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:50:26,608 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,035 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,035 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,035 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,036 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,037 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,037 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:51:29,037 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:14,397 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-15 05:55:14,397 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-15 05:55:14,398 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-15 05:55:14,398 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-15 05:55:31,306 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 05:55:31,306 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 05:55:31,307 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:31,307 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,479 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:35,480 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,490 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,490 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,490 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,490 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,490 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,491 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,492 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,492 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:41,492 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,500 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,501 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:47,502 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,513 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,513 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,514 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:53,515 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,839 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:55:57,840 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,252 ][ ERROR ] [EventSender] Failed to send event `type BugOnline`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,253 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,253 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,253 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,253 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,253 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 05:56:08,598 ][ ERROR ] [EventSender] Failed to send event `quit`: [Int or String expected] 
+
+[ 2013-07-15 06:04:06,407 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-15 06:04:06,407 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-15 06:04:06,408 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-15 06:04:06,408 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-15 06:04:22,475 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 06:04:22,476 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 06:04:22,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:22,476 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,057 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,057 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,057 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,058 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:32,059 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,062 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,063 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:38,064 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,069 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:44,070 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,125 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,126 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:04:57,127 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,258 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:06,259 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,672 ][ ERROR ] [EventSender] Failed to send event `type BugOnline`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,672 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,672 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,672 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,673 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:05:15,976 ][ ERROR ] [EventSender] Failed to send event `quit`: [Int or String expected] 
+
+[ 2013-07-15 06:06:49,100 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [Int or String expected] 
+
+[ 2013-07-15 06:06:49,100 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [Int or String expected] 
+
+[ 2013-07-15 06:06:49,101 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [Int or String expected] 
+
+[ 2013-07-15 06:06:49,101 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [Int or String expected] 
+
+[ 2013-07-15 06:07:08,287 ][ ERROR ] [EventSender] Failed to send event `press dpad_down`: [Int or String expected] 
+
+[ 2013-07-15 06:07:08,287 ][ ERROR ] [EventSender] Failed to send event `press enter`: [Int or String expected] 
+
+[ 2013-07-15 06:07:08,287 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:08,287 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,900 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,901 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,902 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+
+[ 2013-07-15 06:07:17,902 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
+

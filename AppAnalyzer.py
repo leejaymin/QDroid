@@ -11,7 +11,9 @@ import TestingLogger
 import os
 import signal
 import MySQLdb
+import multiprocessing
 import defineStore
+import wx
 from Utility import diffError
 
 from sys import exit
@@ -26,6 +28,7 @@ from TestingCodeForm import takeSnapshot
 from SoloInterface import SoloInterface
 from TestingToolkit import PerformanceCounter
 from Utility import TimeoutFunctionException, TimeoutFunction
+from mercurial.commands import update
 
 
 ################################################################
@@ -45,13 +48,209 @@ run_pid = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash' )
 #Popen은 출력 결과를 하위 프로세스를 나타내는 객체로 반환하게 된다. 
 #################################################################
 
+class Dispatcher:
+    """
+    The Dispatcher class manages the task and result queues.
+    """
+    def __init__(self):
+        """
+        Initialise the Dispatcher.
+        """
+        self.taskQueue = multiprocessing.Queue()
+        self.resultQueue = multiprocessing.Queue()
 
-class ApkTest(threading.Thread):
+    def putTask(self, task):
+        """
+        Put a task on the task queue.
+        """
+        self.taskQueue.put(task)
+
+    def getTask(self):
+        """
+        Get a task from the task queue.
+        """
+        return self.taskQueue.get()
+
+    def putResult(self, output):
+        """
+        Put a result on the result queue.
+        """
+        self.resultQueue.put(output)
+
+    def getResult(self):
+        """
+        Get a result from the result queue.
+        """
+        return self.resultQueue.get()
     
-    def __init__(self, apk, monkeyIteration,testMode,deviceName, port):
-        #super class call construct
-        super(ApkTest,self).__init__()
+
+class ApkTestApp(wx.App):
+    def __init__(self,apkName, monkey, envirMode, devicename, port):
+        """
+        Initialise the App.
+        """
+        self.apkName = apkName
+        self.monkey = monkey
+        self.envirMode = envirMode
+        self.devicename = devicename
+        self.port = port 
+       
+        wx.App.__init__(self)
+    def OnInit(self):
+        self.frame = ApkTest(self.apkName,self.monkey,self.envirMode,self.devicename,self.port)
+        self.SetTopWindow(self.frame)
+        print "start OnInit"
+        self.frame.Show(True)
+        return True
+
+
+class ApkTestFrame(wx.Frame):
+
+    def __init__(self,dispatcher):
         
+        #--------------- GUI Init ---------------
+        wx.Frame.__init__(self, None, -1, 'Automated Testing framework', wx.Point(700, 500), wx.Size(700, 450))
+
+        # Create the panel, sizer and controls
+        self.panel = wx.Panel(self, wx.ID_ANY)
+        self.sizer = wx.GridBagSizer(5, 5)
+
+        self.start_bt = wx.Button(self.panel, wx.ID_ANY, "Start")
+        self.Bind(wx.EVT_BUTTON, self.OnStart, self.start_bt)
+        self.start_bt.SetDefault()
+        self.start_bt.SetToolTipString('Start the execution of tasks')
+        self.start_bt.ToolTip.Enable(True)
+
+        self.stop_bt = wx.Button(self.panel, wx.ID_ANY, "Stop")
+        self.Bind(wx.EVT_BUTTON, self.OnStop, self.stop_bt)
+        self.stop_bt.SetToolTipString('Stop the execution of tasks')
+        self.stop_bt.ToolTip.Enable(True)
+
+        self.output_tc = wx.TextCtrl(self.panel, wx.ID_ANY, style=wx.TE_MULTILINE|wx.TE_READONLY)
+
+        self.prog_st = wx.StaticText(self.panel, wx.ID_ANY, 'Complete:')
+
+        self.count = 0
+        self.prog_gg = wx.Gauge(self.panel, id=wx.ID_ANY, range=100, size=(-1, 15))
+        self.prog_gg.SetBezelFace(3)
+        self.prog_gg.SetShadowWidth(3)
+
+        # Add the controls to the sizer
+        self.sizer.Add(self.start_bt, (0, 0), flag=wx.ALIGN_CENTER|wx.LEFT|wx.TOP, border=5)
+        self.sizer.Add(self.stop_bt, (0, 1), flag=wx.ALIGN_CENTER|wx.TOP|wx.RIGHT, border=5)
+        self.sizer.Add(self.output_tc, (1, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_st, (2, 0), (1, 2), flag=wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_gg, (3, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=5)
+        self.sizer.AddGrowableCol(0)
+        self.sizer.AddGrowableCol(1)
+        self.sizer.AddGrowableRow(1)
+
+        self.panel.SetSizer(self.sizer)
+
+        self.Bind(wx.EVT_CLOSE, self.OnClose)
+
+        self.output_tc.AppendText('Number of processes =')
+        self.output_tc.AppendText('\n')
+        
+        self.dispatcher = dispatcher
+        
+        process = multiprocessing.Process(target=ApkTestFrame.worker, args=(self.dispatcher,self.update,))
+        process.start()
+        
+    def OnStart(self, event):
+        """
+        Start the execution of tasks by the processes.
+        """
+        
+    def OnStop(self, event):
+        pass
+    
+    def OnClose(self, event):
+
+        self.Destroy()
+
+    def update(self,output):
+        """
+        Get and print the results from one completed task.
+        """
+        nowTime = time.time()
+        #self.prog_st.SetLabel('Complete: %2d / %2d  Time Elapsed: %s ' % (self.currentProgress, self.completeProgress, 
+        #                                                                                time.strftime('%H:%M:%S', time.gmtime(nowTime - self.startTime)))) 
+        self.output_tc.AppendText('push button\n')
+        self.count += output
+        self.prog_gg.SetValue(self.count)
+        
+        # Give the user an opportunity to interact
+        wx.YieldIfNeeded()
+        
+    def worker(cls, dispatcher,update):
+        """
+        Progress update 
+        """
+        while True:
+            if dispatcher.resultQueue.empty() == False :
+                #int(dispatcher.getResult)
+                update(10)
+                time.sleep(1)
+    
+    # The worker must not require any existing object for execution!
+    worker = classmethod(worker)
+               
+class ApkTest(multiprocessing.Process, wx.Frame):
+    
+    def __init__(self, apk, monkeyIteration,testMode,deviceName, port, dispatcher):
+        #super class call construct
+        multiprocessing.Process.__init__(self)
+    
+        #--------------- GUI Init ---------------
+        wx.Frame.__init__(self, None, -1, 'Automated Testing framework', wx.Point(700, 500), wx.Size(700, 450))
+
+        # Create the panel, sizer and controls
+        self.panel = wx.Panel(self, wx.ID_ANY)
+        self.sizer = wx.GridBagSizer(5, 5)
+
+        self.start_bt = wx.Button(self.panel, wx.ID_ANY, "Start")
+        self.Bind(wx.EVT_BUTTON, self.OnStart, self.start_bt)
+        self.start_bt.SetDefault()
+        self.start_bt.SetToolTipString('Start the execution of tasks')
+        self.start_bt.ToolTip.Enable(True)
+
+        self.stop_bt = wx.Button(self.panel, wx.ID_ANY, "Stop")
+        self.Bind(wx.EVT_BUTTON, self.OnStop, self.stop_bt)
+        self.stop_bt.SetToolTipString('Stop the execution of tasks')
+        self.stop_bt.ToolTip.Enable(True)
+
+        self.output_tc = wx.TextCtrl(self.panel, wx.ID_ANY, style=wx.TE_MULTILINE|wx.TE_READONLY)
+
+        self.prog_st = wx.StaticText(self.panel, wx.ID_ANY, 'Complete:')
+
+        self.count = 0
+        self.prog_gg = wx.Gauge(self.panel, id=wx.ID_ANY, range=100, size=(-1, 15))
+        self.prog_gg.SetBezelFace(3)
+        self.prog_gg.SetShadowWidth(3)
+
+        # Add the controls to the sizer
+        self.sizer.Add(self.start_bt, (0, 0), flag=wx.ALIGN_CENTER|wx.LEFT|wx.TOP, border=5)
+        self.sizer.Add(self.stop_bt, (0, 1), flag=wx.ALIGN_CENTER|wx.TOP|wx.RIGHT, border=5)
+        self.sizer.Add(self.output_tc, (1, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_st, (2, 0), (1, 2), flag=wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_gg, (3, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=5)
+        self.sizer.AddGrowableCol(0)
+        self.sizer.AddGrowableCol(1)
+        self.sizer.AddGrowableRow(1)
+
+        self.panel.SetSizer(self.sizer)
+
+        self.Bind(wx.EVT_CLOSE, self.OnClose)
+
+        self.output_tc.AppendText('Number of processes =')
+        self.output_tc.AppendText('\n')
+        
+        # shared memory
+        self.dispatcher = dispatcher
+        
+    
+        #--------------- automated testing init ---------------
         self.apk = apk
         self.monkeyIteration = monkeyIteration
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
@@ -75,6 +274,11 @@ class ApkTest(threading.Thread):
         #self.deviceName= 'HTCNexusOne'
         self.solo = SoloInterface(device_name=deviceName, device_port=port)
         self.solo.setUp()
+        
+        #progress info
+        self.currentProgress = 0
+        self.completeProgress = 0
+        self.startTime = 0
             
     def init(self):
         self.loggingInit()
@@ -88,9 +292,7 @@ class ApkTest(threading.Thread):
         self.perforResult = {'cpu':0.0,'packet':0,'Networks':0.0}
         self.enviromentResult = {'wifi':False}
         self.startTime = time.time()
-        
-        self.currentProgress = 0
-        
+             
         #power conumpstion member
         self.ListOfCurrent = []
         self.ListOfVoltage = []
@@ -108,24 +310,57 @@ class ApkTest(threading.Thread):
         self.db = MySQLdb.connect(user='root', passwd = 'root', db ='BugHunter')
         self.cursor = self.db.cursor()
     
+    def setUpdate(self,resfunc):
+        self.resfunc = resfunc
+    
     def setTestingOption(self, option):
         self.testingOption = option
-        
+
     def run(self):
-        
+        # class process mode
         if(self.testingOption == defineStore.RUN_APK):
+            print 'RUN APK Mode'
             self.runApkTests()
             
         elif(self.testingOption == defineStore.RUN_APKLIST):
-            pass
-        
+            print 'RUN APK List'
+            self.dispatcher.putResult(10)
+            
         elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY):
-            pass
+            print 'RUN Display Compatibility'
         
         elif(self.testingOption == defineStore.RUN_PACKAGE):
-            pass 
+            print 'RUN Package' 
+    
+    def OnStart(self, event):
+        """
+        Start the execution of tasks by the processes.
+        """
+        #self.setTestingOption(defineStore.RUN_APK)
+        #self.run()
+
+    
+    def OnStop(self, event):
+        pass
+    
+    def OnClose(self, event):
+
+        self.Destroy()
+
+    def update(self,output):
+        """
+        Get and print the results from one completed task.
+        """
+        nowTime = time.time()
+        #self.prog_st.SetLabel('Complete: %2d / %2d  Time Elapsed: %s ' % (self.currentProgress, self.completeProgress, 
+        #                                                                                time.strftime('%H:%M:%S', time.gmtime(nowTime - self.startTime)))) 
+        self.output_tc.AppendText('push button\n')
+        self.count += output
+        self.prog_gg.SetValue(self.count)
         
-        
+        # Give the user an opportunity to interact
+        wx.YieldIfNeeded()
+            
     def runApkTests(self): 
         self.init()
         #monkeyrunner 테스팅 코드를 만드는 부분
@@ -289,19 +524,19 @@ class ApkTest(threading.Thread):
             self.m_logger.info(service)
         
         #최종적으로 수행해야할 목록을 출력하기 위
-        self.complteProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
+        self.completeProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
         print 'pacakge name: %s'%(self.pkgName)
         print 'Total Activity: %d'%(self.numberOfActivity)
         print 'Total Service: %d'%(self.numberOfBroadCast)
         print 'Total BroadCast: %d'%(self.numberOfService)
-        print 'completeProgress: %d'%(self.complteProgress)
+        print 'completeProgress: %d'%(self.completeProgress)
         print '======== complete parsing xml ==========='
         
         self.m_logger.info('pacakge name: %s'%(self.pkgName))
         self.m_logger.info('Total Activity: %d'%(self.numberOfActivity))
         self.m_logger.info('Total Service: %d'%(self.numberOfBroadCast))
         self.m_logger.info('Total BroadCast: %d'%(self.numberOfService))
-        self.m_logger.info('completeProgress: %d'%(self.complteProgress))
+        self.m_logger.info('completeProgress: %d'%(self.completeProgress))
         self.m_logger.info('======== complete parsing xml ===========')
          
     def GenerateTestingScript(self):
@@ -359,9 +594,10 @@ class ApkTest(threading.Thread):
         for activity in self.activityList:
             self.currentProgress += 1
             print '====== Starting Activity Testing:'+activity+' ======='    
-            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
+            self.resfunc(100/self.completeProgress)
             self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
-            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
             #snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
             
@@ -396,9 +632,10 @@ class ApkTest(threading.Thread):
         for broadCast in self.receiverList:
             self.currentProgress += 1
             print '=============Start testBroadCast:'+broadCast+'============='  
-            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
+            self.resfunc(100/self.completeProgress)
             self.m_logger.info('=============Start testBroadCast:'+broadCast+'=============')
-            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             
             self.result['BroadCast'][1] = self.solo.device.adb_console.sendBroadcastIntent(broadCast)
             if self.result['BroadCast'][1].find('completed') == -1:
@@ -419,9 +656,10 @@ class ApkTest(threading.Thread):
         for service in self.serviceList:
             self.currentProgress += 1
             print '=============Start testService:'+service+'=============' 
-            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
+            self.resfunc(100/self.completeProgress)
             self.m_logger.info('=============Start testService:'+service+'=============')
-            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             
             self.result['Service'][1] = self.solo.device.adb_console.startService(service)
             if self.result['Service'][1].find('Starting') == -1:
@@ -443,9 +681,10 @@ class ApkTest(threading.Thread):
         for activity in self.activityList:
             self.currentProgress += 1
             print '====== Starting Activity Testing:'+activity+' ======='    
-            print '======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress)
+            print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
+            self.resfunc(100/self.completeProgress)
             self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
-            self.m_logger.info('======== Progress: %d/%d ========='%(self.complteProgress,self.currentProgress))
+            self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))    
                             
