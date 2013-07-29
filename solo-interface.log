@@ -99286,3 +99286,57 @@
 
 [ 2013-07-15 06:07:17,902 ][ ERROR ] [EventSender] Failed to send event `press back`: [Int or String expected] 
 
+[ 2013-07-19 01:34:48,382 ][ ERROR ] Failed to check whether device has IWindowService: other errors
+
+[ 2013-07-24 22:51:45,327 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:58:32,889 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:58:34,919 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:58:34,919 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:58:34,919 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:58:34,919 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:06,160 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:59:06,160 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,179 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,180 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:08,180 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:26,176 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:59:28,195 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:28,195 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:28,195 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:28,195 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:47,439 ][ ERROR ] Please check whether your device or emulator is running?
+
+[ 2013-07-28 07:59:49,459 ][ ERROR ] [EventSender] Failed to send event `touch down 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:49,459 ][ ERROR ] [EventSender] Failed to send event `touch move 50 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:49,459 ][ ERROR ] [EventSender] Failed to send event `touch move 400 580`: [[Errno 111] 연결이 거부됨] 
+
+[ 2013-07-28 07:59:49,459 ][ ERROR ] [EventSender] Failed to send event `touch up 400 580`: [[Errno 111] 연결이 거부됨] 
+

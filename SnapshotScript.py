@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/HTCNexusOne/WargmesWOPR/com.unity3d.player.UnityPlayerActivity','png')
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/emulator-5554/AndroidPHP/AndroidPHP','png')

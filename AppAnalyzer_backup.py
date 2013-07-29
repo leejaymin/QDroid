@@ -48,8 +48,44 @@ run_pid = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash' )
 #Popen은 출력 결과를 하위 프로세스를 나타내는 객체로 반환하게 된다. 
 #################################################################
 
+class Dispatcher:
+    """
+    The Dispatcher class manages the task and result queues.
+    """
+    def __init__(self):
+        """
+        Initialise the Dispatcher.
+        """
+        self.taskQueue = multiprocessing.Queue()
+        self.resultQueue = multiprocessing.Queue()
+
+    def putTask(self, task):
+        """
+        Put a task on the task queue.
+        """
+        self.taskQueue.put(task)
+
+    def getTask(self):
+        """
+        Get a task from the task queue.
+        """
+        return self.taskQueue.get()
+
+    def putResult(self, output):
+        """
+        Put a result on the result queue.
+        """
+        self.resultQueue.put(output)
+
+    def getResult(self):
+        """
+        Get a result from the result queue.
+        """
+        return self.resultQueue.get()
+    
+
 class ApkTestApp(wx.App):
-    def __init__(self,apkName, monkey, envirMode, devicename, port, testingMode):
+    def __init__(self,apkName, monkey, envirMode, devicename, port):
         """
         Initialise the App.
         """
@@ -58,19 +94,111 @@ class ApkTestApp(wx.App):
         self.envirMode = envirMode
         self.devicename = devicename
         self.port = port 
-        self.testingMode = testingMode
+       
         wx.App.__init__(self)
-        
     def OnInit(self):
-        self.frame = ApkTest(self.apkName,self.monkey,self.envirMode,self.devicename,self.port, self.testingMode)
+        self.frame = ApkTest(self.apkName,self.monkey,self.envirMode,self.devicename,self.port)
         self.SetTopWindow(self.frame)
         print "start OnInit"
         self.frame.Show(True)
         return True
-          
+
+
+class ApkTestFrame(wx.Frame):
+
+    def __init__(self,dispatcher):
+        
+        #--------------- GUI Init ---------------
+        wx.Frame.__init__(self, None, -1, 'Automated Testing framework', wx.Point(700, 500), wx.Size(700, 450))
+
+        # Create the panel, sizer and controls
+        self.panel = wx.Panel(self, wx.ID_ANY)
+        self.sizer = wx.GridBagSizer(5, 5)
+
+        self.start_bt = wx.Button(self.panel, wx.ID_ANY, "Start")
+        self.Bind(wx.EVT_BUTTON, self.OnStart, self.start_bt)
+        self.start_bt.SetDefault()
+        self.start_bt.SetToolTipString('Start the execution of tasks')
+        self.start_bt.ToolTip.Enable(True)
+
+        self.stop_bt = wx.Button(self.panel, wx.ID_ANY, "Stop")
+        self.Bind(wx.EVT_BUTTON, self.OnStop, self.stop_bt)
+        self.stop_bt.SetToolTipString('Stop the execution of tasks')
+        self.stop_bt.ToolTip.Enable(True)
+
+        self.output_tc = wx.TextCtrl(self.panel, wx.ID_ANY, style=wx.TE_MULTILINE|wx.TE_READONLY)
+
+        self.prog_st = wx.StaticText(self.panel, wx.ID_ANY, 'Complete:')
+
+        self.count = 0
+        self.prog_gg = wx.Gauge(self.panel, id=wx.ID_ANY, range=100, size=(-1, 15))
+        self.prog_gg.SetBezelFace(3)
+        self.prog_gg.SetShadowWidth(3)
+
+        # Add the controls to the sizer
+        self.sizer.Add(self.start_bt, (0, 0), flag=wx.ALIGN_CENTER|wx.LEFT|wx.TOP, border=5)
+        self.sizer.Add(self.stop_bt, (0, 1), flag=wx.ALIGN_CENTER|wx.TOP|wx.RIGHT, border=5)
+        self.sizer.Add(self.output_tc, (1, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_st, (2, 0), (1, 2), flag=wx.LEFT|wx.RIGHT, border=5)
+        self.sizer.Add(self.prog_gg, (3, 0), (1, 2), flag=wx.EXPAND|wx.LEFT|wx.RIGHT|wx.BOTTOM, border=5)
+        self.sizer.AddGrowableCol(0)
+        self.sizer.AddGrowableCol(1)
+        self.sizer.AddGrowableRow(1)
+
+        self.panel.SetSizer(self.sizer)
+
+        self.Bind(wx.EVT_CLOSE, self.OnClose)
+
+        self.output_tc.AppendText('Number of processes =')
+        self.output_tc.AppendText('\n')
+        
+        self.dispatcher = dispatcher
+        
+        process = multiprocessing.Process(target=ApkTestFrame.worker, args=(self.dispatcher,self.update,))
+        process.start()
+        
+    def OnStart(self, event):
+        """
+        Start the execution of tasks by the processes.
+        """
+        
+    def OnStop(self, event):
+        pass
+    
+    def OnClose(self, event):
+
+        self.Destroy()
+
+    def update(self,output):
+        """
+        Get and print the results from one completed task.
+        """
+        nowTime = time.time()
+        #self.prog_st.SetLabel('Complete: %2d / %2d  Time Elapsed: %s ' % (self.currentProgress, self.completeProgress, 
+        #                                                                                time.strftime('%H:%M:%S', time.gmtime(nowTime - self.startTime)))) 
+        self.output_tc.AppendText('push button\n')
+        self.count += output
+        self.prog_gg.SetValue(self.count)
+        
+        # Give the user an opportunity to interact
+        wx.YieldIfNeeded()
+        
+    def worker(cls, dispatcher,update):
+        """
+        Progress update 
+        """
+        while True:
+            if dispatcher.resultQueue.empty() == False :
+                #int(dispatcher.getResult)
+                update(10)
+                time.sleep(1)
+    
+    # The worker must not require any existing object for execution!
+    worker = classmethod(worker)
+               
 class ApkTest(multiprocessing.Process, wx.Frame):
     
-    def __init__(self, apk, monkeyIteration,envirMode,deviceName, port,testingMode):
+    def __init__(self, apk, monkeyIteration,testMode,deviceName, port):
         #super class call construct
         multiprocessing.Process.__init__(self)
     
@@ -115,20 +243,18 @@ class ApkTest(multiprocessing.Process, wx.Frame):
 
         self.Bind(wx.EVT_CLOSE, self.OnClose)
 
-        self.output_tc.AppendText('Starting Testing !\n')
+        self.output_tc.AppendText('Number of processes =')
+        self.output_tc.AppendText('\n')
     
         #--------------- automated testing init ---------------
         self.apk = apk
         self.monkeyIteration = monkeyIteration
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
-        self.testMode = envirMode
+        self.testMode = testMode
         self.deviceName = deviceName
         self.port = port
-        self.testingOption = testingMode
-            
-    def init(self):
         
-        # set up Testing Connection Mode / USB or TCP/IP
+        #Test Mode에 따라서 TCP IP / USB
         if(self.testMode == '1'):
             self.AdbOverNetwork('adb disconnect 192.168.0.3')
             time.sleep(1)
@@ -142,14 +268,15 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #Galaxy Nexus device_name="0149C7A518014011"
         #Network Wi-Fi="192.168.0.3:5555"
         #self.deviceName= 'HTCNexusOne'
-        self.solo = SoloInterface(device_name=self.deviceName, device_port=self.port)
+        self.solo = SoloInterface(device_name=deviceName, device_port=port)
         self.solo.setUp()
         
         #progress info
         self.currentProgress = 0
         self.completeProgress = 0
         self.startTime = 0
-        
+            
+    def init(self):
         self.loggingInit()
         #isupper()의 경우 그냥 대문자인지 판단하는 거이다.
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
@@ -193,26 +320,10 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             
         elif(self.testingOption == defineStore.RUN_APKLIST):
             print 'RUN APK List'
+            self.dispatcher.putResult(10)
             
-        elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY_APK):
-            print 'RUN Compativlity apk'
-            self.runCompatibility()
-        
-        elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST):
-            print 'RUN Compativlity apklist'
-            f = open('./apkList', 'r')
-            listData = f.read()
-            apkList = listData.split('\n')
-            #apkList에 있는 app만큼 반복하면서 실행 한다.
-            for apkName in apkList:
-                if(apkName.find('.') != -1):
-                    self.output_tc.AppendText('Test App:'+apkName+'\n')
-                    self.apk = apkName
-                    self.runCompatibility()
-                    
-                    #reboot and unlock screen
-                    #self.AdbReboot()
-                    #time.sleep(60)
+        elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY):
+            print 'RUN Display Compatibility'
         
         elif(self.testingOption == defineStore.RUN_PACKAGE):
             print 'RUN Package' 
@@ -221,6 +332,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         """
         Start the execution of tasks by the processes.
         """
+        self.setTestingOption(defineStore.RUN_APK)
         self.run()
 
     
@@ -238,6 +350,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         nowTime = time.time()
         #self.prog_st.SetLabel('Complete: %2d / %2d  Time Elapsed: %s ' % (self.currentProgress, self.completeProgress, 
         #                                                                                time.strftime('%H:%M:%S', time.gmtime(nowTime - self.startTime)))) 
+        self.output_tc.AppendText('push button\n')
         self.count += output
         self.prog_gg.SetValue(self.count)
         
@@ -368,12 +481,10 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             print 
     
     def reverseApk(self):
-        self.output_tc.AppendText('Start Reversing APK file \n')
         try:
             run('./apktool d -f ./apkRepo/%s ./ReverseApkRepo/%s' % (self.apk, (self.apk).split('.')[0]))
         except (RuntimeError):
             return 'invalid literal for float(): 0.000000MByte'
-        self.output_tc.AppendText('End Reversing APK file \n')
         
     def parsingManifestXml(self):
         #f = open('./ReverseApkRepo/%s/AndroidManifest.xml'% (self.apk).split('.')[0])
@@ -480,7 +591,6 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             self.currentProgress += 1
             print '====== Starting Activity Testing:'+activity+' ======='    
             print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
-            self.output_tc.AppendText('====== Starting Activity Testing:'+activity+' =======\n')
             self.update(100/self.completeProgress)
             self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
             self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
@@ -578,7 +688,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
                 #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
-                snapshot = takeSnapshot.takeSnapshot(self.deviceName, self.apk.split('.')[0], activity.split('.')[1])
+                snapshot = takeSnapshot.takeSnapshot(self.deviceName, self.apk.split('.')[0], activity)
                 snapshot.DeviceTakeSnapshot()
                 
             else:
@@ -590,8 +700,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             #정리 한다.
             self.solo.event_controller.singleBack()
             print '====== finished Activity Testing:'+activity+' ======='
-            self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
-             
+            self.m_logger.info('====== finished Activity Testing:'+activity+' =======') 
                                                 
     def testStress(self):
         overlapError = False
@@ -775,31 +884,32 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
 if __name__ == '__main__':
     
-    # to detect testing mode, it parse the argument from argv
-    print sys.argv
-    mode = int(sys.argv[1])
-    apkName = sys.argv[2]
-    envirMode = int(sys.argv[3])
-    iteration = int(sys.argv[4])
-    deviceName = sys.argv[5]
-    port = int(sys.argv[6])
-    Network= sys.argv[7]
+    targetInfo = [{'deviceName':'HT0A1P800732','port':5545},{'deviceName':'HT08DP802665','port':5544}]
     
-    if mode == defineStore.RUN_APK:
+    mode = raw_input("Please choose mode: 1)apk 2)package 3)more apk 4)Display compatibility 5) debug mode 6) multi mode")
+    envirMode = raw_input("Please choose Environment: 1)TCPIP 2)USB")
+    iteration = raw_input('monkey iteration: ')
+    if mode == '1':
+        apkName = raw_input('1) Please input apk name? ')
+        print targetInfo
+        targetNumber = raw_input('2) target number?')
+        
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+        p = ApkTestApp(apkName,iteration,2,targetInfo[int(targetNumber)]['deviceName'],targetInfo[int(targetNumber)]['port'])
+        #p = ApkTest(apkName,iteration,envirMode,'HT0A1P800732',5545)
+        #p.runApkTests()
         p.MainLoop()
         
-    elif mode == defineStore.RUN_PACKAGE:
+    elif mode == '2':
+        apkName = raw_input('2) Please input apk name? ')
         if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
-        p.MainLoop()
-        
-    elif mode == defineStore.RUN_APKLIST:
+        p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
+        p.runPackageTests()
+    elif mode == '3':
         try:
             f = open('./apkList', 'r')
             listData = f.read()
@@ -808,8 +918,8 @@ if __name__ == '__main__':
             for apkName in apkList:
                 if(apkName.find('.') != -1):
                     print 'Test App:'+apkName
-                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
-                    p.MainLoop()
+                    p = ApkTest(apkName,iteration,envirMode,'192.168.0.3:5555',5545)
+                    p.runApkTests()
                 else:
                     print 'Apk name format error: '+apkName
                     break;
@@ -822,35 +932,60 @@ if __name__ == '__main__':
         except (IOError):
             print 'ERROR: Failed open file: apkList.txt'
             exit(-1)
-            
-    elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APK:
+    elif mode == '4':
         try:
-            if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
+            innerMode = raw_input('1) one 2) more')
+            if innerMode == '1':
+                apkName = raw_input('2) Please input apk name? ')
+                if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
+                    print 'ERROR: apk file does not exist:' + apkName
+                    exit(-1)
+                p = ApkTest(apkName,10,envirMode)
+                p.runCompatibility()
+            elif innerMode == '2':
+                f = open('./apkList', 'r')
+                listData = f.read()
+                apkList = listData.split('\n')
+                #apkList에 있는 app만큼 반복하면서 실행 한다.
+                for apkName in apkList:
+                    if(apkName.find('.') != -1):
+                        print 'Test App:'+apkName
+                        p = ApkTest(apkName,10,envirMode)
+                        p.runCompatibility()
+                    else:
+                        print 'Apk name format error: '+apkName
+                f.close()
+        except (IOError):
+            print 'ERROR: Failed open file: apkList.txt'
+            exit(-1)
+            
+    elif mode == '5':
+        apkName = raw_input('1) Please input apk name? ')
+        if not isfile('./apkRepo/%s'%(apkName)):
+            print 'ERROR: apk file does not exist:' + apkName
+            exit(-1)
+        p = ApkTest(apkName,iteration,envirMode)
+        p.runApkTests()
+        
+    elif mode == '6':
+        while True:
+            
+            apkName = raw_input('1) Please input apk name? ')
+            print targetInfo
+            targetNumber = raw_input('2) target number?')
+            
+            if not isfile('./apkRepo/%s'%(apkName)):
                 print 'ERROR: apk file does not exist:' + apkName
                 exit(-1)
-            p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
-            p.MainLoop()
             
-        except (IOError):
-            print 'ERROR: Failed open file: apkList.txt'
-            exit(-1)
-    elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST:
-        try:
-            f = open('./apkList', 'r')
-            listData = f.read()
-            apkList = listData.split('\n')
-            #apkList에 있는 app만큼 반복하면서 실행 한다.
-            for apkName in apkList:
-                if(apkName.find('.') != -1):
-                    print 'Test App:'+apkName
-                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
-                    p.MainLoop()
-                else:
-                    print 'Apk name format error: '+apkName
-            f.close()
-        except (IOError):
-            print 'ERROR: Failed open file: apkList.txt'
-            exit(-1)
+            # At this point, process is devided by fork() to two process
+            pid = os.fork()
+            if pid ==0 :
+#                th = ApkTest(apkName,iteration,2,targetInfo[int(targetNumber)]['deviceName'],targetInfo[int(targetNumber)]['port'])
+#                th.setTestingOption(defineStore.RUN_APK)
+#                th.start()
+                p = ApkTest(apkName,iteration,2,targetInfo[int(targetNumber)]['deviceName'],targetInfo[int(targetNumber)]['port'])
+                p.runApkTests()
 
     else:
         print 'Please check your chosen mode !'
