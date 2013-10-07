@@ -1,4 +1,4 @@
-#Fri Jul 26 05:17:23 PDT 2013
+#Tue Sep 24 00:11:03 PDT 2013
 eclipse.preferences.version=1
 encoding//ApkAnalyzer/ManifestHandler.py=euc-kr
 encoding//DeviceManagement/AdbCommand.py=utf-8
@@ -19,3 +19,4 @@ encoding/aniPython.py=euc-kr
 encoding/helloworld.py=euc-kr
 encoding/helloworld2.py=euc-kr
 encoding/helloworld3.py=euc-kr
+encoding/mongil.py=euc-kr

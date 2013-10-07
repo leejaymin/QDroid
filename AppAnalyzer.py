@@ -209,7 +209,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                     self.output_tc.AppendText('Test App:'+apkName+'\n')
                     self.apk = apkName
                     self.runCompatibility()
-                    
+                    time.sleep(2)
                     #reboot and unlock screen
                     #self.AdbReboot()
                     #time.sleep(60)

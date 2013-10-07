@@ -19,19 +19,19 @@ if __name__ == '__main__':
     validCount = 0
   
     
-    image_src = '../ImageStore/splashGlaxyNexus.png'
+    image_src = '/root/Android_Application_source/recomended/0.png'
 #   first_image = "../ImageStore/GameActivityGalaxyNexus.png"
 #    image_src = '../TestingResult/HTCDesire/Air_Hockey_1_1_1/MultitouchTestActivity'
 #    first_image = "../TestingResult/GalaxyNexus/Digger/splash.png"
-
-#    imSrc = Image.open(image_src)
-    grayImage = Image.open(image_src)
-    out = grayImage.resize((480,800))
+    
+    imSrc = Image.open(image_src)
+#    grayImage = Image.open(image_src)
+    out = imSrc.resize((1280,720))
     
 #    diff_out = ImageChops.difference(imSrc, grayImage)
 #    diff_out.show()
 #    diff_out.getbox()
 #    print diff_out.histogram()
-    out.save('../ImageStore/splash_Resize.png','PNG')
+    out.save('/root/Android_Application_source/recomended/0_r.png','PNG')
     
    

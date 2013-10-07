@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/emulator-5554/AndroidPHP/AndroidPHP','png')
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/emulator-5556/BIGLauncher/kunes','png')
