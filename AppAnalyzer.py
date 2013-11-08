@@ -188,18 +188,18 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def run(self):
         # class process mode
         if(self.testingOption == defineStore.RUN_APK):
-            print 'RUN APK Mode'
+            self.output_tc.AppendText('RUN APK Mode\n')
             self.runApkTests()
             
         elif(self.testingOption == defineStore.RUN_APKLIST):
-            print 'RUN APK List'
+            self.output_tc.AppendText('RUN APK List\n')
             
         elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY_APK):
-            print 'RUN Compativlity apk'
+            self.output_tc.AppendText('RUN Compativlity apk\n')
             self.runCompatibility()
         
         elif(self.testingOption == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST):
-            print 'RUN Compativlity apklist'
+            self.output_tc.AppendText('RUN Compativlity apklist\n')
             f = open('./apkList', 'r')
             listData = f.read()
             apkList = listData.split('\n')
@@ -215,7 +215,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                     #time.sleep(60)
         
         elif(self.testingOption == defineStore.RUN_PACKAGE):
-            print 'RUN Package' 
+            self.output_tc.AppendText('RUN Package\n') 
     
     def OnStart(self, event):
         """
@@ -235,7 +235,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         """
         Get and print the results from one completed task.
         """
-        nowTime = time.time()
+        currentTime = time.time()
         #self.prog_st.SetLabel('Complete: %2d / %2d  Time Elapsed: %s ' % (self.currentProgress, self.completeProgress, 
         #                                                                                time.strftime('%H:%M:%S', time.gmtime(nowTime - self.startTime)))) 
         self.count += output
@@ -309,17 +309,17 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         try:     
             mkdir('/root/python_source/AutoTestingModule/ImageStore/%s'%(self.deviceName))
         except AttributeError:
-            print 'tuple object has no attribute split'
+            self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/ImageStore/%s/'%(self.deviceName)     
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.deviceName))     
         
         #Creating Directory with Device Name on TestingResult
         try:     
             mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(self.deviceName))
         except AttributeError:
-            print 'tuple object has no attribute split'
+            self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName)   
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.deviceName))   
         
         #apk 이름으로 디렉터리를 생성 한다. 
         FileCount = 0
@@ -327,17 +327,17 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             FileName = self.apk.split('.')[0]
             mkdir('/root/python_source/AutoTestingModule/TestingResult/%s/%s'%(self.deviceName,FileName))
         except AttributeError:
-            print 'tuple object has no attribute split'
+            self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/TestingResult/%s/'%(self.deviceName) +FileName
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.deviceName) +FileName)
        
         #Directory for Image
         try:     
             mkdir('/root/python_source/AutoTestingModule/ImageStore/%s/%s'%(self.deviceName,FileName))
         except AttributeError:
-            print 'tuple object has no attribute split'
+            self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            print 'File exists: /root/python_source/AutoTestingModule/ImageStore/%s/'%(self.deviceName) +FileName    
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.deviceName) +FileName)    
             
         while True:   
             if path.isfile("./TestingResult/%s/%s/%s(%s).log" %(self.deviceName,FileName,FileName,FileCount)):
@@ -399,30 +399,21 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #파싱 결과를 출력 한다.
         self.m_logger.info("Reversing Activity / BoradCast / Service List")
         for activity in self.activityList:
-            print activity
-            self.m_logger.info(activity)
+            self.debugingMessage(activity)
         for receiver in self.receiverList:
-            print receiver
-            self.m_logger.info(receiver)
+            self.debugingMessage(receiver)
         for service in self.serviceList:
-            print service
-            self.m_logger.info(service)
+            self.debugingMessage(service)
         
-        #최종적으로 수행해야할 목록을 출력하기 위
-        self.completeProgress = self.numberOfActivity+self.numberOfBroadCast+self.numberOfService
-        print 'pacakge name: %s'%(self.pkgName)
-        print 'Total Activity: %d'%(self.numberOfActivity)
-        print 'Total Service: %d'%(self.numberOfBroadCast)
-        print 'Total BroadCast: %d'%(self.numberOfService)
-        print 'completeProgress: %d'%(self.completeProgress)
-        print '======== complete parsing xml ==========='
-        
-        self.m_logger.info('pacakge name: %s'%(self.pkgName))
-        self.m_logger.info('Total Activity: %d'%(self.numberOfActivity))
-        self.m_logger.info('Total Service: %d'%(self.numberOfBroadCast))
-        self.m_logger.info('Total BroadCast: %d'%(self.numberOfService))
-        self.m_logger.info('completeProgress: %d'%(self.completeProgress))
-        self.m_logger.info('======== complete parsing xml ===========')
+        #최종적으로 수행해야할 목록을 출력
+        #completeProgress는 현재 Activity 숫자로 설정.
+        self.completeProgress = self.numberOfActivity
+        self.debugingMessage('pacakge name: %s'%(self.pkgName))
+        self.debugingMessage('Total Activity: %d'%(self.numberOfActivity))
+        self.debugingMessage('Total Service: %d'%(self.numberOfBroadCast))
+        self.debugingMessage('Total BroadCast: %d'%(self.numberOfService))
+        self.debugingMessage('completeProgress: %d'%(self.completeProgress))
+        self.debugingMessage('======== complete parsing xml ===========')
          
     def GenerateTestingScript(self):
         #읽고 쓰고 이며 기존 파일을 삭제 한다. 
@@ -457,7 +448,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def testInstall(self): 
         run('adb -s %s uninstall ./apkRepo/%s' % (self.deviceName,self.pkgName))
         self.result['Install'][1] = check_output('adb -s %s install ./apkRepo/%s' % (self.deviceName,self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
-        print self.result['Install'][1]
+        self.output_tc.AppendText(self.result['Install'][1])
         
         if self.result['Install'][1][-9:-2] == 'Success':
             self.result['Install'][0] = True
@@ -467,7 +458,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
 
     def testReinstall(self):
         self.result['Reinstall'][1] = check_output('adb -s %s install -r ./apkRepo/%s' % (self.deviceName,self.apk), shell=True, stderr=STDOUT, executable='/bin/bash')
-        print self.result['Reinstall'][1]
+        self.output_tc.AppendText(self.result['Reinstall'][1])
         
         if self.result['Reinstall'][1][-9:-2] == 'Success':
             self.result['Reinstall'][0] = True
@@ -478,12 +469,10 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def testActivity(self):
         for activity in self.activityList:
             self.currentProgress += 1
-            print '====== Starting Activity Testing:'+activity+' ======='    
-            print '======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress)
-            self.output_tc.AppendText('====== Starting Activity Testing:'+activity+' =======\n')
+            
+            self.debugingMessage('====== Starting Activity Testing:'+activity+' =======')    
+            self.debugingMessage('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             self.update(100/self.completeProgress)
-            self.m_logger.info('====== Starting Activity Testing:'+activity+' =======')
-            self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
             #snapshot = takeSnapshot.takeSnapshot(self.apk.split('.')[0], activity)
             
@@ -511,8 +500,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.errorReport['activity'][1] += 1 
             #정리 한다.
             self.solo.event_controller.twentyBack()
-            print '====== finished Activity Testing:'+activity+' ======='
-            self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
+            self.debugingMessage('====== finished Activity Testing:'+activity+' =======')
                                               
     def testBroadCast(self):
         for broadCast in self.receiverList:
@@ -603,7 +591,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #self.result['Stress'][0] = self.result['Stress'][1].find('crash:') == -1
         
 #       print self.result['Stress'][1]
-        print '========== monkey test !!! ========='
+        self.output_tc.AppendText('========== monkey test !!! =========\n')
         #실제 monkey 에러만을 구분하여 나눠 준다.
         #이 부분에서 monkey 자체가 뻗어서 죽는 경우에도 monkeyError를 초기화 해줘야 한다.
         #if self.result['Stress'][1].find('crash:') != -1:
@@ -665,7 +653,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                     self.ListOfPower.append(power)
                     
         except ValueError:
-            print 'invalid literal'
+            self.output_tc.AppendText('invalid literal\n')
         
         #calculate average power consumption
         self.mAvePower = (mTotalPower * 1.0) / sensingCount
@@ -687,17 +675,23 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             timemer.timeEnd()
         except TimeoutFunctionException:
             os.kill(out.pid, signal.SIGINT)
-            print 'ADB over network command Failed.. killed process pid:%s'%(out.pid)
+            self.output_tc.AppendText('ADB over network command Failed.. killed process pid:%s\n'%(out.pid))
             return 
         else: 
             #정상적으로 adb가 connection 되었는지를 확인 한다.
-            print 'ADB Over Network Success !'
+            self.output_tc.AppendText('ADB Over Network Success !\n')
 
     def AdbReboot(self):
         out=run_pid("adb -s %s shell reboot"%(self.deviceName))
         time.sleep(1)
         os.kill(out.pid, signal.SIGINT)
-                   
+     
+    # This method is in charge of message processing
+    def debugingMessage(self, msg):
+        print msg
+        self.output_tc.AppendText(msg+'\n')
+        self.m_logger.info(msg)
+                      
     def summary(self):
         #테스팅 종료 시간이다.
         self.EndTime = time.time()
@@ -710,42 +704,24 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
         # calculate TestingTime and Translate fomal time
         self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))      
-               
-        #마지막으로 실패한 Activity와 monkey에 의한 error를 출력 한다.
-        print '===================|| summary ||==================='
-        print 'App: %s'%(self.apk)
-        print 'version: %s'%(self.version)
-        print 'Testing Duration Time: %s'%(self.testingTime)
-        print 'Install: %s'%self.result['Install'][0]
-        print 'Reinstall: %s'%self.result['Reinstall'][0]
-        print 'Uninstall: %s'%self.result['Uninstall'][0] 
-        print 'Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0])
-        print 'Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0])
-        print 'Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0])
-        print 'monkey error: %d'%(self.errorReport['monkey'][0])
-        print 'No overlap monkey error: %d'%(self.errorReport['monkey'][1])
-        print "Network Condition: %s"%(self.enviromentResult['wifi'])
-        print "Average Power Consumption: %f"%(self.mAvePower)
-        print "Power List: %s"%(self.ListOfPower)
-        print self.perforCounter.loadPerforResult()
         
         #마지막으로 로그에 기록을 해준다.
-        self.m_logger.info('===================|| summary ||===================')
-        self.m_logger.info('App: %s'%(self.apk))
-        self.m_logger.info('version: %s'%(self.version))
-        self.m_logger.info('Testing Duration Time: %s'%(self.testingTime))
-        self.m_logger.info('Install: %s'%self.result['Install'][0])
-        self.m_logger.info('Reinstall: %s'%self.result['Reinstall'][0])
-        self.m_logger.info('Uninstall: %s'%self.result['Uninstall'][0])
-        self.m_logger.info('Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0]))
-        self.m_logger.info('Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0]))
-        self.m_logger.info('Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0]))
-        self.m_logger.info('monkey error: %d'%(self.errorReport['monkey'][0]))
-        self.m_logger.info('No overlap monkey error: %d'%(self.errorReport['monkey'][1]))
-        self.m_logger.info('Network Condition: %s'%(self.enviromentResult['wifi']))
-        self.m_logger.info('Average Power Consumption: %f'%(self.mAvePower))
-        self.m_logger.info('Power List: %s'%(self.ListOfPower))
-        self.m_logger.info(self.perforCounter.loadPerforResult())
+        self.debugingMessage('===================|| summary ||===================')
+        self.debugingMessage('App: %s'%(self.apk))
+        self.debugingMessage('version: %s'%(self.version))
+        self.debugingMessage('Testing Duration Time: %s'%(self.testingTime))
+        self.debugingMessage('Install: %s'%self.result['Install'][0])
+        self.debugingMessage('Reinstall: %s'%self.result['Reinstall'][0])
+        self.debugingMessage('Uninstall: %s'%self.result['Uninstall'][0])
+        self.debugingMessage('Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0]))
+        self.debugingMessage('Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0]))
+        self.debugingMessage('Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0]))
+        self.debugingMessage('monkey error: %d'%(self.errorReport['monkey'][0]))
+        self.debugingMessage('No overlap monkey error: %d'%(self.errorReport['monkey'][1]))
+        self.debugingMessage('Network Condition: %s'%(self.enviromentResult['wifi']))
+        self.debugingMessage('Average Power Consumption: %f'%(self.mAvePower))
+        self.debugingMessage('Power List: %s'%(self.ListOfPower))
+        self.debugingMessage(self.perforCounter.loadPerforResult())
         
         #마지막으로 Database에 기록을 한다. 
 
@@ -770,7 +746,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         except MySQLdb.Error:   
             datetime = time.strftime('%Y-%m-%d %H:%M:%S')
             self.cursor.execute("INSERT INTO TestFailedApp VALUES('%s','%s','%s')"%(self.pkgName,datetime,self.apk))
-            print ''' mysql failed '''
+            self.output_tc.AppendText(' mysql failed \n')
            
         
 if __name__ == '__main__':
