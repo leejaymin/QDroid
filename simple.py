@@ -8,6 +8,7 @@ import wx
 import os
 import defineStore
 import subprocess
+import traceback
 
 import sys
 from AppAnalyzer import ApkTest, ApkTestApp
@@ -234,10 +235,8 @@ class ThumbnailCtrlDemo(wx.Frame):
         self.Bind(wx.EVT_BUTTON, self.OnSetDirectory, self.dirbutton)
         self.Bind(wx.EVT_BUTTON, self.OnFunctionalRun, self.functionalTestBtn)
         self.Bind(wx.EVT_BUTTON, self.OnScreenRun, self.ScreenTestBtn)
+        self.Bind(wx.EVT_BUTTON, self.OnMonkeyRun, self.monkeyBtn)
         
-     
-
-
         self.SetMinSize((300, 630))
         self.CenterOnScreen()
 
@@ -406,7 +405,33 @@ class ThumbnailCtrlDemo(wx.Frame):
         print command 
         
         subprocess.Popen(command, shell=True, executable='/bin/bash')
+    
+    def OnMonkeyRun(self, event):
         
+        monkey = self.textmonkey.GetValue()
+       
+        if self.textTargetIP.IsEmpty() == False:
+            TargetIP = self.textTargetIP.GetValue()
+        else :
+            TargetIP = 'None'
+        
+        testingAPK = self.textTestingApk.GetValue()
+        mode = defineStore.RUN_MONKEY_MODE
+   
+        print monkey
+        print self.deviceName
+        print self.port
+        print TargetIP
+        print self.testingConnectionMode
+        
+        command = './AppAnalyzer.py '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
+        print command 
+        
+        p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
+        err = p.stderr.read()
+        print err
+        self.ExceptioMssage(err)
+    
     def OnFunctionalRun(self, event):
         
         monkey = self.textmonkey.GetValue()
@@ -510,8 +535,37 @@ class ThumbnailCtrlDemo(wx.Frame):
             self.textTargetIP.Enable(True)
             self.textTargetIP.SetValue('192.168.')
             self.testingConnectionMode = defineStore.TCPIP_MODE
-     
-        
+            
+    #for the handling Exception
+    def ExceptionHook (self, exctype, value, trace):
+        """Handler for all unhandled exceptions
+        @param exctype: Exception Type
+        @param value: Error Value
+        @param trace: Trace back info
+        """
+        # Format the traceback
+        exc = traceback.format_exception(exctype, value, trace)
+        ftrace = "".join(exc)
+        app = wx.GetApp()
+        if app:
+            msg = "An unexpected error has occurred: %s" % ftrace
+            wx.MessageBox(msg, app.GetAppName(),
+            style=wx.ICON_ERROR|wx.OK)
+            app.Exit()
+        else:
+            sys.stderr.write(ftrace)
+            
+    def ExceptioMssage (self, err):
+        """Handler for all unhandled exceptions
+        @param err: Exception description from returning another process
+        """
+        app = wx.GetApp()
+        if app:
+            msg = "An unexpected error has occurred: %s" % err
+            wx.MessageBox(msg, app.GetAppName(),
+            style=wx.ICON_ERROR|wx.OK)
+            app.Exit()
+           
 
 #---------------------------------------------------------------------------
 
