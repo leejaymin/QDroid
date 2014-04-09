@@ -1,14 +1,8 @@
-import Image
+
+from PIL import Image
 #import ImageChops
-import numpy as np
-import ImageChops
-
-def ImageLoad(self):
-    pass
-
-def ImageDiff(self):
-    pass
-   
+#import numpy as np
+#import ImageChops
 
 if __name__ == '__main__':
     srcList = []
@@ -19,12 +13,12 @@ if __name__ == '__main__':
     validCount = 0
   
     
-    image_src = '/root/Android_Application_source/recomended/0.png'
-#   first_image = "../ImageStore/GameActivityGalaxyNexus.png"
+#    image_src = '/root/Android_Application_source/recomended/0.png'
+    first_image = "../ImageStore/GameActivityGalaxyNexus.png"
 #    image_src = '../TestingResult/HTCDesire/Air_Hockey_1_1_1/MultitouchTestActivity'
 #    first_image = "../TestingResult/GalaxyNexus/Digger/splash.png"
     
-    imSrc = Image.open(image_src)
+    imSrc = Image.open(first_image)
 #    grayImage = Image.open(image_src)
     out = imSrc.resize((1280,720))
     

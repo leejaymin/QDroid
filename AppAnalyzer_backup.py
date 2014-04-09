@@ -198,7 +198,7 @@ class ApkTestFrame(wx.Frame):
                
 class ApkTest(multiprocessing.Process, wx.Frame):
     
-    def __init__(self, apk, monkeyIteration,testMode,deviceName, port):
+    def __init__(self, apk, numberOfevents,testMode,deviceName, port):
         #super class call construct
         multiprocessing.Process.__init__(self)
     
@@ -248,7 +248,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     
         #--------------- automated testing init ---------------
         self.apk = apk
-        self.monkeyIteration = monkeyIteration
+        self.monkeyIteration = numberOfevents
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         self.testMode = testMode
         self.deviceName = deviceName

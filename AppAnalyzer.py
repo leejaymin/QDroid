@@ -70,7 +70,7 @@ class ApkTestApp(wx.App):
           
 class ApkTest(multiprocessing.Process, wx.Frame):
     
-    def __init__(self, apk, monkeyIteration,envirMode,deviceName, port,testingMode):
+    def __init__(self, apk, numberOfevents,envirMode,deviceName, port,testingMode):
         #super class call construct
         multiprocessing.Process.__init__(self)
     
@@ -119,7 +119,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     
         #--------------- automated testing init ---------------
         self.apk = apk
-        self.monkeyIteration = monkeyIteration
+        self.numberOfevents = numberOfevents
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         self.testMode = envirMode
         self.deviceName = deviceName
@@ -215,8 +215,24 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                     #time.sleep(60)
         
         elif(self.testingOption == defineStore.RUN_PACKAGE):
-            self.output_tc.AppendText('RUN Package\n') 
-    
+            self.output_tc.AppendText('RUN Package\n')
+
+            
+        elif(self.testingOption == defineStore.RUN_MONKEY_MODE):
+            self.output_tc.AppendText('RUN Original Monkey Testing\n')
+            f = open('./apkList_monkey', 'r')
+            listData = f.read()
+            apkList = listData.split('\n')
+            #Extracting name of app and testing iteration from a file.
+            for apkName in apkList:
+                apkName.split(' ')
+                self.apk = apkName[0]
+                self.iterationOfTesting = apkName[1]
+                
+                self.output_tc.AppendText('Test App:'+apkName[0]+'\n')
+                self.output_tc.AppendText('Iteration:'+apkName[1]+'\n')    
+                #self.runApkTests()
+                                    
     def OnStart(self, event):
         """
         Start the execution of tasks by the processes.
@@ -584,7 +600,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def testStress(self):
         overlapError = False
              
-        self.result['Stress'][1] = run('adb -s %s shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.deviceName,self.pkgName,self.monkeyIteration)).lower()
+        self.result['Stress'][1] = run('adb -s %s shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.deviceName,self.pkgName,self.numberOfevents)).lower()
         #crash인것만 하기 위해서 변경 한다.
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
@@ -741,7 +757,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
               ,self.errorReport['monkey'][0],self.errorReport['monkey'][1],self.enviromentResult['wifi']
               ,self.perforResult['cpu'],self.perforResult['Networks'],self.perforResult['packet']
               ,self.mAvePower,self.logfileName,self.logfilePath,
-              datetime,int(self.monkeyIteration)))
+              datetime,int(self.numberOfevents)))
                                 
         except MySQLdb.Error:   
             datetime = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -827,6 +843,24 @@ if __name__ == '__main__':
         except (IOError):
             print 'ERROR: Failed open file: apkList.txt'
             exit(-1)
+            
+    elif mode == defineStore.RUN_MONKEY_MODE:
+        try:
+            f = open('./apkList_monkey', 'r')
+            listData = f.read()
+            apkList = listData.split('\n')
+            #apkList에 있는 app만큼 반복하면서 실행 한다.
+            for apkName in apkList:
+                if(apkName.find('.') != -1):
+                    print 'Test App:'+apkName
+                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+                    p.MainLoop()
+                else:
+                    print 'Apk name format error: '+apkName
+            f.close()
+        except (IOError):
+            print 'ERROR: Failed open file: apkList.txt'
+            exit(-1)   
 
     else:
         print 'Please check your chosen mode !'
