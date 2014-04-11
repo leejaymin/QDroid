@@ -429,8 +429,10 @@ class ThumbnailCtrlDemo(wx.Frame):
         
         p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
         err = p.stderr.read()
-        print err
-        self.ExceptioMssage(err)
+        if err != '':
+            self.ExceptioMssage(err)
+        else :
+            return True
     
     def OnFunctionalRun(self, event):
         
@@ -561,7 +563,7 @@ class ThumbnailCtrlDemo(wx.Frame):
         """
         app = wx.GetApp()
         if app:
-            msg = "An unexpected error has occurred: %s" % err
+            msg = "An unexpected error has occurred:\n%s" % err
             wx.MessageBox(msg, app.GetAppName(),
             style=wx.ICON_ERROR|wx.OK)
             app.Exit()

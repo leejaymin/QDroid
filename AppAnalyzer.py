@@ -125,6 +125,11 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.deviceName = deviceName
         self.port = port
         self.testingOption = testingMode
+        
+        #------------- redirect text -----------------
+        redir = RedirectText(self.output_tc)
+        sys.stdout = redir
+        sys.sterr = redir
             
     def init(self):
         
@@ -220,18 +225,26 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             
         elif(self.testingOption == defineStore.RUN_MONKEY_MODE):
             self.output_tc.AppendText('RUN Original Monkey Testing\n')
-            f = open('./apkList_monkey', 'r')
-            listData = f.read()
-            apkList = listData.split('\n')
-            #Extracting name of app and testing iteration from a file.
-            for apkName in apkList:
-                apkName.split(' ')
-                self.apk = apkName[0]
-                self.iterationOfTesting = apkName[1]
-                
-                self.output_tc.AppendText('Test App:'+apkName[0]+'\n')
-                self.output_tc.AppendText('Iteration:'+apkName[1]+'\n')    
-                #self.runApkTests()
+            try:
+                f = open('./apkList_monkey', 'r')
+                listData = f.read()
+                apkList = listData.split('\n')
+                #Extracting name of app and testing iteration from a file.
+                for apkName in apkList:
+                    apkName = apkName.split(' ')
+                    self.apk = apkName[0]
+                    self.iterationOfTesting = apkName[1]
+                    
+                    self.output_tc.AppendText('Test App:'+apkName[0]+'\n')
+                    self.output_tc.AppendText('Iteration:'+apkName[1]+'\n')    
+                    #self.runApkTests()
+            except IOError as e:
+                print '%s\n' % e
+                print 'ERROR: Failed open apk file:' + self.apk
+                exit(-1)
+            except IndexError as e:
+                print '%s\n' % e
+                print 'IndexError'
                                     
     def OnStart(self, event):
         """
@@ -763,8 +776,14 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             datetime = time.strftime('%Y-%m-%d %H:%M:%S')
             self.cursor.execute("INSERT INTO TestFailedApp VALUES('%s','%s','%s')"%(self.pkgName,datetime,self.apk))
             self.output_tc.AppendText(' mysql failed \n')
+
+class RedirectText(object):
+    def __init__(self,aWxTextCtrl):
+        self.out=aWxTextCtrl
+
+    def write(self,string):
+        self.out.WriteText(string)
            
-        
 if __name__ == '__main__':
     
     # to detect testing mode, it parse the argument from argv
@@ -845,19 +864,11 @@ if __name__ == '__main__':
             exit(-1)
             
     elif mode == defineStore.RUN_MONKEY_MODE:
-        try:
-            f = open('./apkList_monkey', 'r')
-            listData = f.read()
-            apkList = listData.split('\n')
-            #apkList에 있는 app만큼 반복하면서 실행 한다.
-            for apkName in apkList:
-                if(apkName.find('.') != -1):
-                    print 'Test App:'+apkName
-                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
-                    p.MainLoop()
-                else:
-                    print 'Apk name format error: '+apkName
-            f.close()
+        try:      
+            
+            p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+            p.MainLoop()
+            
         except (IOError):
             print 'ERROR: Failed open file: apkList.txt'
             exit(-1)   

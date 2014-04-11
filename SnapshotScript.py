@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/HT0A1P800732/wordpress_r394/ViewPostActivity','png')
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/HT0A1P800732/HighwayRacing/Start','png')
