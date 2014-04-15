@@ -14,6 +14,7 @@ import MySQLdb
 import multiprocessing
 import defineStore
 import wx
+import traceback
 from Utility import diffError
 
 from sys import exit
@@ -29,6 +30,8 @@ from SoloInterface import SoloInterface
 from TestingToolkit import PerformanceCounter
 from Utility import TimeoutFunctionException, TimeoutFunction
 from mercurial.commands import update
+from traceback import print_stack
+from scipy.stats.stats import stderr
 
 
 ################################################################
@@ -49,10 +52,11 @@ run_pid = lambda cmd: Popen(cmd, shell=True, executable='/bin/bash' )
 #################################################################
 
 class ApkTestApp(wx.App):
-    def __init__(self,apkName, monkey, envirMode, devicename, port, testingMode):
+    def __init__(self,testingProjectName,apkName, monkey, envirMode, devicename, port, testingMode):
         """
         Initialise the App.
         """
+        self.testingProjectName = testingProjectName
         self.apkName = apkName
         self.monkey = monkey
         self.envirMode = envirMode
@@ -62,7 +66,7 @@ class ApkTestApp(wx.App):
         wx.App.__init__(self)
         
     def OnInit(self):
-        self.frame = ApkTest(self.apkName,self.monkey,self.envirMode,self.devicename,self.port, self.testingMode)
+        self.frame = ApkTest(self.testingProjectName,self.apkName,self.monkey,self.envirMode,self.devicename,self.port, self.testingMode)
         self.SetTopWindow(self.frame)
         print "start OnInit"
         self.frame.Show(True)
@@ -70,7 +74,7 @@ class ApkTestApp(wx.App):
           
 class ApkTest(multiprocessing.Process, wx.Frame):
     
-    def __init__(self, apk, numberOfevents,envirMode,deviceName, port,testingMode):
+    def __init__(self,testingProjectName, apk, numberOfevents,envirMode,deviceName, port,testingMode):
         #super class call construct
         multiprocessing.Process.__init__(self)
     
@@ -118,6 +122,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.output_tc.AppendText('Starting Testing !\n')
     
         #--------------- automated testing init ---------------
+        self.testingProjectName = testingProjectName
         self.apk = apk
         self.numberOfevents = numberOfevents
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
@@ -233,13 +238,16 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 for apkName in apkList:
                     apkName = apkName.split(' ')
                     self.apk = apkName[0]
-                    self.iterationOfTesting = apkName[1]
+                    self.iterationOfTesting = int(apkName[1])
                     
                     self.output_tc.AppendText('Test App:'+apkName[0]+'\n')
                     self.output_tc.AppendText('Iteration:'+apkName[1]+'\n')    
-                    #self.runApkTests()
+                    self.runDebug()
+                    wx.Yield()
+                    
             except IOError as e:
                 print '%s\n' % e
+                print print_stack
                 print 'ERROR: Failed open apk file:' + self.apk
                 exit(-1)
             except IndexError as e:
@@ -290,6 +298,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.testBroadCast()
         self.testService()
         self.testUninstall()
+        self.FnishedPerforCounter()  
+        self.preparingResult(defineStore.RUN_APK)
         self.summary()
         self.finished()
     
@@ -302,9 +312,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
         self.InitPerformnaceCounter()
         self.testActivity()
-        self.testBroadCast()
-        self.testService()
-
+        self.FnishedPerforCounter()
+        self.preparingResult(defineStore.RUN_PACKAGE)  
         self.summary()
         self.finished()
     
@@ -321,9 +330,23 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
     def runDebug(self):
         self.init()
+        wx.Yield()
         self.reverseApk()
+        wx.Yield()
         self.parsingManifestXml()
-           
+        wx.Yield()
+        self.testInstall()
+        wx.Yield()
+        self.tesOriginalMonkey()
+        wx.Yield()
+        self.testUninstall()
+        wx.Yield()
+        self.preparingResult(defineStore.RUN_MONKEY_MODE)  
+        wx.Yield()
+        self.summary()
+        wx.Yield()
+        self.finished()
+                   
     def enviromentControl(self):
         for permission in self.permissionList:
             if permission.find('android.permission.INTERNET') != -1:
@@ -336,49 +359,49 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def loggingInit(self):
         #Creating Directory with Device Name on ImageStore
         try:     
-            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s'%(self.deviceName))
+            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s'%(self.testingProjectName))
         except AttributeError:
             self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.deviceName))     
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.testingProjectName))     
         
         #Creating Directory with Device Name on TestingResult
         try:     
-            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(self.deviceName))
+            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s'%(self.testingProjectName))
         except AttributeError:
             self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.deviceName))   
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.testingProjectName))   
         
         #apk 이름으로 디렉터리를 생성 한다. 
         FileCount = 0
         try:     
             FileName = self.apk.split('.')[0]
-            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s/%s'%(self.deviceName,FileName))
+            mkdir('/root/python_source/AutoTestingModule/TestingResult/%s/%s'%(self.testingProjectName,FileName))
         except AttributeError:
             self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.deviceName) +FileName)
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/TestingResult/%s/\n'%(self.testingProjectName) +FileName)
        
         #Directory for Image
         try:     
-            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s/%s'%(self.deviceName,FileName))
+            mkdir('/root/python_source/AutoTestingModule/ImageStore/%s/%s'%(self.testingProjectName,FileName))
         except AttributeError:
             self.output_tc.AppendText('tuple object has no attribute split\n')
         except OSError:
-            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.deviceName) +FileName)    
+            self.output_tc.AppendText('File exists: /root/python_source/AutoTestingModule/ImageStore/%s/\n'%(self.testingProjectName) +FileName)    
             
         while True:   
-            if path.isfile("./TestingResult/%s/%s/%s(%s).log" %(self.deviceName,FileName,FileName,FileCount)):
+            if path.isfile("./TestingResult/%s/%s/%s(%s).log" %(self.testingProjectName,FileName,FileName,FileCount)):
                 FileCount += 1
             else:
                 break;               
            
-        self.m_logger = TestingLogger.InitLog("./TestingResult/%s/%s/%s(%s).log"%(self.deviceName, FileName, FileName, FileCount), logging.getLogger("%s"%self.apk))
+        self.m_logger = TestingLogger.InitLog("./TestingResult/%s/%s/%s(%s).log"%(self.testingProjectName, FileName, FileName, FileCount), logging.getLogger("%s"%self.apk))
         
         #log file naming 
         self.logfileName = '%s(%s).log'%(FileName, FileCount)
-        self.logfilePath = '/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s(%s).log'%(self.deviceName,FileName,FileName,FileCount)
+        self.logfilePath = '/root/python_source/AutoTestingModule/TestingResult/%s/%s/%s(%s).log'%(self.testingProjectName,FileName,FileName,FileCount)
         
     def InitPerformnaceCounter(self):
         self.perforCounter = PerformanceCounter.PerformanceCounter(self.solo, self.m_logger, self.apk.split('.')[0])
@@ -393,8 +416,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             self.perforResult['cpu'] = float(performanceData.split(' ')[3].split('\n')[0])
             self.perforResult['packet'] = int(performanceData.split(' ')[6].split('\n')[0])
             self.perforResult['Networks'] = float(performanceData.split(' ')[8].split('\n')[0])
-        except ValueError :
-            print 
+        except ValueError as e:
+            print '%s'%e 
     
     def reverseApk(self):
         self.output_tc.AppendText('Start Reversing APK file \n')
@@ -520,7 +543,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
                 #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
-                self.testStress()
+                self.testStress(0)
             else:
                 self.m_logger.error(self.result['Activity'][1])
                 self.m_logger.error(self.pkgName+activity)
@@ -530,7 +553,14 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             #정리 한다.
             self.solo.event_controller.twentyBack()
             self.debugingMessage('====== finished Activity Testing:'+activity+' =======')
-                                              
+            
+    def tesOriginalMonkey(self):
+        
+        # testing using seed.
+        seed=0
+        for seed in range(self.iterationOfTesting) :
+            self.testStress(seed)
+                                                       
     def testBroadCast(self):
         for broadCast in self.receiverList:
             self.currentProgress += 1
@@ -595,7 +625,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.result['Activity'][0] = True
                 self.m_logger.info(self.result['Activity'][1])
                 #스크린 샷을 찍는다. apk이름과 activity이름을 전달 한다.
-                snapshot = takeSnapshot.takeSnapshot(self.deviceName, self.apk.split('.')[0], activity.split('.')[1])
+                snapshot = takeSnapshot.takeSnapshot(self.testingProjectName, self.deviceName, self.apk.split('.')[0], activity.split('.')[1])
                 snapshot.DeviceTakeSnapshot()
                 
             else:
@@ -610,10 +640,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
              
                                                 
-    def testStress(self):
+    def testStress(self,seed):
         overlapError = False
-             
-        self.result['Stress'][1] = run('adb -s %s shell monkey --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.deviceName,self.pkgName,self.numberOfevents)).lower()
+        self.result['Stress'][1] = run('adb -s %s shell monkey -s %d --kill-process-after-error --throttle 200 --pct-touch 20 --pct-motion 20 --pct-trackball 20 --pct-majornav 20 --pct-anyevent 20 -p %s -v -v %s' %(self.deviceName,seed,self.pkgName,self.numberOfevents)).lower()
         #crash인것만 하기 위해서 변경 한다.
         self.result['Stress'][0] = all( self.result['Stress'][1].find(err) == -1  for err in (' aborted',' crashed', ' failed', 'exception') )
         # all함수의 의미는 리스트의 항목들이 모두 True인지를 검사하는 기능을 담당한다.
@@ -717,23 +746,42 @@ class ApkTest(multiprocessing.Process, wx.Frame):
      
     # This method is in charge of message processing
     def debugingMessage(self, msg):
-        print msg
+        #print msg
         self.output_tc.AppendText(msg+'\n')
         self.m_logger.info(msg)
-                      
+             
+    def preparingResult(self,mode):
+        
+        if mode == defineStore.RUN_APK:
+            #테스팅 종료 시간이다.
+            self.EndTime = time.time()
+            #대기 시간이 필요할 경우, current senssing을 위해서 기다린다.
+            self.TimeToUp()
+            #current Sensing값을 얻어온다.
+            self.CurrentSensing(0)
+            
+            # calculate TestingTime and Translate fomal time
+            self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))   
+            self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
+        elif mode == defineStore.RUN_PACKAGE:
+            pass
+        elif mode == defineStore.RUN_APKLIST:
+            pass
+                   
+        elif (mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APK or mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST or mode == defineStore.RUN_MONKEY_MODE):
+            
+            #performance Counter
+            self.perforCounter = ''
+            #테스팅 종료 시간이다.
+            self.EndTime = time.time()   
+            # calculate TestingTime and Translate fomal time
+            self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))   
+            self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
+            
+
+        
     def summary(self):
-        #테스팅 종료 시간이다.
-        self.EndTime = time.time()
-        #대기 시간이 필요할 경우, current senssing을 위해서 기다린다.
-        self.TimeToUp()
-        #current Sensing값을 얻어온다.
-        self.CurrentSensing(0)
-        #성능 계측기를 정지 시킨다. 
-        self.FnishedPerforCounter()
-        
-        # calculate TestingTime and Translate fomal time
-        self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))      
-        
+
         #마지막으로 로그에 기록을 해준다.
         self.debugingMessage('===================|| summary ||===================')
         self.debugingMessage('App: %s'%(self.apk))
@@ -750,11 +798,12 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.debugingMessage('Network Condition: %s'%(self.enviromentResult['wifi']))
         self.debugingMessage('Average Power Consumption: %f'%(self.mAvePower))
         self.debugingMessage('Power List: %s'%(self.ListOfPower))
-        self.debugingMessage(self.perforCounter.loadPerforResult())
+        if self.perforCounter == '':
+            pass
+        else:
+            self.debugingMessage(self.perforCounter.loadPerforResult())
         
         #마지막으로 Database에 기록을 한다. 
-
-        datetime = time.strftime('%Y-%m-%d %H:%M:%S')  
         try:
             self.cursor.execute('''INSERT INTO TestingResult VALUES(
             '%s','%s','%s','%s','%s'
@@ -764,13 +813,13 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             ,'%f','%f','%d'
             ,'%f','%s','%s'
             ,'%s','%d')'''
-            %(self.deviceName,self.pkgName,self.apk, self.version,self.testingTime,
+            %(self.testingProjectName,self.pkgName,self.apk, self.version,self.testingTime,
               self.result['Install'][0],self.result['Reinstall'][0],self.result['Uninstall'][0]
               ,self.errorReport['activity'][1],self.errorReport['broadcast'][1],self.errorReport['service'][1]
               ,self.errorReport['monkey'][0],self.errorReport['monkey'][1],self.enviromentResult['wifi']
               ,self.perforResult['cpu'],self.perforResult['Networks'],self.perforResult['packet']
               ,self.mAvePower,self.logfileName,self.logfilePath,
-              datetime,int(self.numberOfevents)))
+              self.datetime,int(self.numberOfevents)))
                                 
         except MySQLdb.Error:   
             datetime = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -788,26 +837,27 @@ if __name__ == '__main__':
     
     # to detect testing mode, it parse the argument from argv
     print sys.argv
-    mode = int(sys.argv[1])
-    apkName = sys.argv[2]
-    envirMode = int(sys.argv[3])
-    iteration = int(sys.argv[4])
-    deviceName = sys.argv[5]
-    port = int(sys.argv[6])
-    Network= sys.argv[7]
+    testingProjectName = sys.argv[1]
+    mode = int(sys.argv[2])
+    apkName = sys.argv[3]
+    envirMode = int(sys.argv[4])
+    iteration = int(sys.argv[5])
+    deviceName = sys.argv[6]
+    port = int(sys.argv[7])
+    Network= sys.argv[8]
     
     if mode == defineStore.RUN_APK:
         if not isfile('./apkRepo/%s'%(apkName)):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+        p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
         p.MainLoop()
         
     elif mode == defineStore.RUN_PACKAGE:
         if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
             print 'ERROR: apk file does not exist:' + apkName
             exit(-1)
-        p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+        p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
         p.MainLoop()
         
     elif mode == defineStore.RUN_APKLIST:
@@ -819,7 +869,7 @@ if __name__ == '__main__':
             for apkName in apkList:
                 if(apkName.find('.') != -1):
                     print 'Test App:'+apkName
-                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+                    p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
                     p.MainLoop()
                 else:
                     print 'Apk name format error: '+apkName
@@ -839,7 +889,7 @@ if __name__ == '__main__':
             if not isdir('./ReverseApkRepo/%s'%(apkName.split('.')[0])):
                 print 'ERROR: apk file does not exist:' + apkName
                 exit(-1)
-            p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+            p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
             p.MainLoop()
             
         except (IOError):
@@ -854,7 +904,7 @@ if __name__ == '__main__':
             for apkName in apkList:
                 if(apkName.find('.') != -1):
                     print 'Test App:'+apkName
-                    p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+                    p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
                     p.MainLoop()
                 else:
                     print 'Apk name format error: '+apkName
@@ -865,8 +915,7 @@ if __name__ == '__main__':
             
     elif mode == defineStore.RUN_MONKEY_MODE:
         try:      
-            
-            p = ApkTestApp(apkName,iteration,envirMode,deviceName,port,mode)
+            p = ApkTestApp(testingProjectName,apkName,iteration,envirMode,deviceName,port,mode)
             p.MainLoop()
             
         except (IOError):

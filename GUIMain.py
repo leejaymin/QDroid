@@ -177,9 +177,11 @@ class ThumbnailCtrlDemo(wx.Frame):
         self.customsizer_staticbox = wx.StaticBox(self.panel, -1, "Testing Modes")
         self.optionsizer_staticbox = wx.StaticBox(self.panel, -1, "Extra Options")
         self.dirsizer_staticbox = wx.StaticBox(self.panel, -1, "Functional Buttons")
+        self.testingProjectsizer_staticbox = wx.StaticBox(self.panel, -1, "Testing Project")
         
         
         # set up the Button
+        self.loadTestingProjectBtn = wx.Button(self.panel, -1, "Load Testing Project")
         self.dirbutton = wx.Button(self.panel, -1, "Changing APK")
         self.functionalTestBtn = wx.Button(self.panel,-1, "Functional Test")
         self.ScreenTestBtn = wx.Button(self.panel,-1, "Screen Test")
@@ -199,6 +201,8 @@ class ThumbnailCtrlDemo(wx.Frame):
         self.radio_tcpIp = wx.RadioButton(self.panel, -1, "TCP/IP mode")
 
         #set up  the textCtrl and Button
+        self.staticTestingProject = wx.StaticText(self.panel, -1, "Testing Project Name")
+        self.testingProjecTxCtl = wx.TextCtrl(self.panel,-1,"")
         
         self.staticTestingApk = wx.StaticText(self.panel, -1, "testing apk")
         self.textTestingApk = wx.TextCtrl(self.panel,-1,"apkList.txt")
@@ -232,6 +236,7 @@ class ThumbnailCtrlDemo(wx.Frame):
         self.Bind(wx.EVT_RADIOBUTTON, self.OnChangeTestingMode, self.radio_tcpIp)
         self.Bind(wx.EVT_RADIOBUTTON, self.OnChangeTestingMode, self.radio_usb)
         
+        self.Bind(wx.EVT_BUTTON, self.OnLoadTestingProject, self.loadTestingProjectBtn)
         self.Bind(wx.EVT_BUTTON, self.OnSetDirectory, self.dirbutton)
         self.Bind(wx.EVT_BUTTON, self.OnFunctionalRun, self.functionalTestBtn)
         self.Bind(wx.EVT_BUTTON, self.OnScreenRun, self.ScreenTestBtn)
@@ -255,6 +260,8 @@ class ThumbnailCtrlDemo(wx.Frame):
         self.testingConnectionMode = defineStore.USB_MODE
         
         boldFont = wx.Font(8, wx.DEFAULT, wx.NORMAL, wx.BOLD, 0, "")
+        
+        self.loadTestingProjectBtn.SetFont(boldFont)
         self.dirbutton.SetFont(boldFont)
         self.functionalTestBtn.SetFont(boldFont)
         self.ScreenTestBtn.SetFont(boldFont)
@@ -274,12 +281,19 @@ class ThumbnailCtrlDemo(wx.Frame):
         customsizer = wx.StaticBoxSizer(self.customsizer_staticbox, wx.VERTICAL)
         thumbsizer = wx.StaticBoxSizer(self.thumbsizer_staticbox, wx.VERTICAL)
         radiosizer = wx.BoxSizer(wx.VERTICAL)
+        
+        TestingProjectsizer = wx.StaticBoxSizer(self.testingProjectsizer_staticbox, wx.HORIZONTAL)
+        TestingProjectsizer.Add(self.staticTestingProject, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
+        TestingProjectsizer.Add(self.testingProjecTxCtl, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
+        TestingProjectsizer.Add(self.loadTestingProjectBtn, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
+        
         dirsizer = wx.StaticBoxSizer(self.dirsizer_staticbox, wx.HORIZONTAL)
         dirsizer.Add(self.dirbutton, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
         dirsizer.Add(self.functionalTestBtn, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
         dirsizer.Add(self.ScreenTestBtn, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
         dirsizer.Add(self.monkeyBtn, 0, wx.LEFT|wx.BOTTOM|wx.ALIGN_CENTER_VERTICAL|wx.ADJUST_MINSIZE, 3)
         
+        splitsizer.Add(TestingProjectsizer, 0, wx.EXPAND|wx.TOP|wx.LEFT, 5)
         splitsizer.Add(dirsizer, 0, wx.EXPAND|wx.TOP|wx.LEFT, 5)
         radiosizer.Add(self.radio_device_1, 0, wx.LEFT|wx.TOP|wx.ADJUST_MINSIZE, 3)
         radiosizer.Add(self.radio_device_2, 0, wx.LEFT|wx.TOP|wx.ADJUST_MINSIZE, 3)
@@ -361,8 +375,19 @@ class ThumbnailCtrlDemo(wx.Frame):
         dlg.SetFont(wx.Font(8, wx.NORMAL, wx.NORMAL, wx.NORMAL, False))
         dlg.ShowModal()
         dlg.Destroy()
-
-
+    
+    def OnLoadTestingProject(self, event):
+        dlg = wx.FileDialog(self, "Choose a Project",
+                   defaultDir=os.getcwd()+'/TestingResult',
+                   style=wx.FD_OPEN)
+        # If the user selects OK, then we process the dialog's data.
+        # This is done by getting the path data from the dialog - BEFORE
+        # we destroy it. 
+        if dlg.ShowModal() == wx.ID_OK:
+            name = dlg.GetFilename()
+            print "OnSetDirectory: directory changed to: %s\n"%name
+            self.testingProjecTxCtl.SetValue(name)
+            
     def OnSetDirectory(self, event):
 
         dlg = wx.FileDialog(self, "Choose a file with Testing",
@@ -408,29 +433,12 @@ class ThumbnailCtrlDemo(wx.Frame):
     
     def OnMonkeyRun(self, event):
         
-        monkey = self.textmonkey.GetValue()
-       
-        if self.textTargetIP.IsEmpty() == False:
-            TargetIP = self.textTargetIP.GetValue()
-        else :
-            TargetIP = 'None'
-        
-        testingAPK = self.textTestingApk.GetValue()
-        mode = defineStore.RUN_MONKEY_MODE
-   
-        print monkey
-        print self.deviceName
-        print self.port
-        print TargetIP
-        print self.testingConnectionMode
-        
-        command = './AppAnalyzer.py '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
-        print command 
-        
+        command = self.PreparingTesting(defineStore.RUN_MONKEY_MODE)
+              
         p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
         err = p.stderr.read()
         if err != '':
-            self.ExceptioMssage(err)
+            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
         else :
             return True
     
@@ -538,6 +546,50 @@ class ThumbnailCtrlDemo(wx.Frame):
             self.textTargetIP.SetValue('192.168.')
             self.testingConnectionMode = defineStore.TCPIP_MODE
             
+    def PreparingTesting(self, mode):
+        
+        if mode == defineStore.RUN_APK:
+            pass
+        elif mode == defineStore.RUN_PACKAGE:
+            pass
+        elif mode == defineStore.RUN_APKLIST:
+            pass
+        elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APK:
+            pass
+        elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST:
+            pass
+        elif mode == defineStore.RUN_MONKEY_MODE:
+            #checking project name
+            if self.testingProjecTxCtl.IsEmpty() == True:
+                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing Porject Name for Testing\n")
+                return
+            else:
+                testingProjectName = self.testingProjecTxCtl.GetValue()
+            #checking monkey option
+            if self.textmonkey.IsEmpty() == True:
+                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing the number of events for Monkey\n")
+                return
+            else:
+                monkey = self.textmonkey.GetValue()
+            
+            #checking IP
+            if self.textTargetIP.IsEmpty() == False:
+                TargetIP = self.textTargetIP.GetValue()
+            else :
+                TargetIP = 'None'
+            
+            #checking APK name
+            if self.textTestingApk.IsEmpty() == True:
+                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing apk name \n")
+                return
+            else:
+                testingAPK = self.textTestingApk.GetValue()
+            
+            command = './AppAnalyzer.py '+testingProjectName+' '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
+            print command
+            return command
+            
+        
     #for the handling Exception
     def ExceptionHook (self, exctype, value, trace):
         """Handler for all unhandled exceptions
@@ -557,16 +609,22 @@ class ThumbnailCtrlDemo(wx.Frame):
         else:
             sys.stderr.write(ftrace)
             
-    def ExceptioMssage (self, err):
+    def ExceptioMssage (self, mode, err):
         """Handler for all unhandled exceptions
         @param err: Exception description from returning another process
         """
         app = wx.GetApp()
         if app:
-            msg = "An unexpected error has occurred:\n%s" % err
-            wx.MessageBox(msg, app.GetAppName(),
-            style=wx.ICON_ERROR|wx.OK)
-            app.Exit()
+            if mode == defineStore.CRITICAL_ERROR:
+                msg = "An unexpected error has occurred:\n%s" % err
+                wx.MessageBox(msg, app.GetAppName(),
+                style=wx.ICON_ERROR|wx.OK)
+                app.Exit()
+            elif mode == defineStore.ORDINARY_ERROR:
+                msg = "%s" % err
+                wx.MessageBox(msg, app.GetAppName(),
+                style=wx.ICON_ERROR|wx.OK)
+                return
            
 
 #---------------------------------------------------------------------------
