@@ -407,29 +407,14 @@ class ThumbnailCtrlDemo(wx.Frame):
         
     def OnScreenRun(self,event):
         
-        monkey = self.textmonkey.GetValue()
-       
-        if self.textTargetIP.IsEmpty() == False:
-            TargetIP = self.textTargetIP.GetValue()
+        command = self.PreparingTesting(defineStore.RUN_DISPLAYCOMPATIBILITY_APK)
+              
+        p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
+        err = p.stderr.read()
+        if err != '':
+            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
         else :
-            TargetIP = 'None'
-        
-        testingAPK = self.textTestingApk.GetValue()
-        if testingAPK.split('.')[1] == 'txt':
-            mode = defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST
-        else:
-            mode = defineStore.RUN_DISPLAYCOMPATIBILITY_APK
-   
-        print monkey
-        print self.deviceName
-        print self.port
-        print TargetIP
-        print self.testingConnectionMode
-        
-        command = './AppAnalyzer.py '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
-        print command 
-        
-        subprocess.Popen(command, shell=True, executable='/bin/bash')
+            return True
     
     def OnMonkeyRun(self, event):
         
@@ -444,29 +429,13 @@ class ThumbnailCtrlDemo(wx.Frame):
     
     def OnFunctionalRun(self, event):
         
-        monkey = self.textmonkey.GetValue()
-       
-        if self.textTargetIP.IsEmpty() == False:
-            TargetIP = self.textTargetIP.GetValue()
+        command = self.PreparingTesting(defineStore.RUN_APK)    
+        p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
+        err = p.stderr.read()
+        if err != '':
+            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
         else :
-            TargetIP = 'None'
-        
-        testingAPK = self.textTestingApk.GetValue()
-        if testingAPK.split('.')[1] == 'txt':
-            mode = defineStore.RUN_APKLIST
-        else:
-            mode = defineStore.RUN_APK
-   
-        print monkey
-        print self.deviceName
-        print self.port
-        print TargetIP
-        print self.testingConnectionMode
-        
-        command = './AppAnalyzer.py '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
-        print command 
-        
-        subprocess.Popen(command, shell=True, executable='/bin/bash')
+            return True
         
         #dispatcher = Dispatcher()
         #f = ApkTestFrame(dispatcher)
@@ -548,47 +517,52 @@ class ThumbnailCtrlDemo(wx.Frame):
             
     def PreparingTesting(self, mode):
         
-        if mode == defineStore.RUN_APK:
-            pass
-        elif mode == defineStore.RUN_PACKAGE:
-            pass
-        elif mode == defineStore.RUN_APKLIST:
-            pass
-        elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APK:
-            pass
-        elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST:
-            pass
-        elif mode == defineStore.RUN_MONKEY_MODE:
-            #checking project name
-            if self.testingProjecTxCtl.IsEmpty() == True:
-                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing Porject Name for Testing\n")
-                return
+        #common routine
+        #checking project name
+        if self.testingProjecTxCtl.IsEmpty() == True:
+            self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing Porject Name for Testing\n")
+            return
+        else:
+            testingProjectName = self.testingProjecTxCtl.GetValue()
+        #checking monkey option
+        if self.textmonkey.IsEmpty() == True:
+            self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing the number of events for Monkey\n")
+            return
+        else:
+            monkey = self.textmonkey.GetValue()
+        
+        #checking IP
+        if self.textTargetIP.IsEmpty() == False:
+            TargetIP = self.textTargetIP.GetValue()
+        else :
+            TargetIP = 'None'
+        
+        #checking APK name
+        if self.textTestingApk.IsEmpty() == True:
+            self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing apk name \n")
+            return
+        else:
+            testingAPK = self.textTestingApk.GetValue()
+        
+        if mode == defineStore.RUN_APK or mode == defineStore.RUN_APKLIST:  
+            if testingAPK.split('.')[1] == 'txt':
+                mode = defineStore.RUN_APKLIST
             else:
-                testingProjectName = self.testingProjecTxCtl.GetValue()
-            #checking monkey option
-            if self.textmonkey.IsEmpty() == True:
-                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing the number of events for Monkey\n")
-                return
+                mode = defineStore.RUN_APK
+
+        elif mode == defineStore.RUN_PACKAGE or mode == defineStore.RUN_MONKEY_MODE:
+            pass
+
+        elif mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APK or mode == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST:
+            if testingAPK.split('.')[1] == 'txt':
+                mode = defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST
             else:
-                monkey = self.textmonkey.GetValue()
-            
-            #checking IP
-            if self.textTargetIP.IsEmpty() == False:
-                TargetIP = self.textTargetIP.GetValue()
-            else :
-                TargetIP = 'None'
-            
-            #checking APK name
-            if self.textTestingApk.IsEmpty() == True:
-                self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing apk name \n")
-                return
-            else:
-                testingAPK = self.textTestingApk.GetValue()
-            
-            command = './AppAnalyzer.py '+testingProjectName+' '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
-            print command
-            return command
-            
+                mode = defineStore.RUN_DISPLAYCOMPATIBILITY_APK
+        
+        #finally, returning command we made
+        command = './AppAnalyzer.py '+testingProjectName+' '+str(mode)+' '+testingAPK+' '+str(self.testingConnectionMode)+' '+str(monkey)+' '+self.deviceName+' '+str(self.port)+' '+TargetIP
+        print command
+        return command
         
     #for the handling Exception
     def ExceptionHook (self, exctype, value, trace):

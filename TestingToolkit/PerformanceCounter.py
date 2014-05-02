@@ -27,7 +27,7 @@ from SoloInterface import SoloInterface
 class PerformanceCounter():
     
     def __init__(self, solo, m_Logger, apkName):
-        #장치 제어 객체
+        #장치 제어   
         self.solo = solo
         #로그 객체
         self.m_Logger = m_Logger
