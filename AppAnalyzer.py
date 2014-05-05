@@ -18,6 +18,7 @@ import traceback
 from Utility import diffError
 
 from sys import exit
+
 from os import path
 from os import mkdir
 
@@ -157,7 +158,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #self.DEVICE= 'HTCNexusOne'
         self.solo = SoloInterface(device_name=self.DEVICE, device_port=self.MONKEY_PORT)
         self.solo.setUp()
-        
+        self.MONKEY_SEED = 0
         #progress info
         self.currentProgress = 0
         self.completeProgress = 0
@@ -168,15 +169,19 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #결국 아래의 의미는 dir햇을때 나오는 수많은 맴버 매서드들 중에서 'testInstall', 'testReinstall', 'testStress', 'testUninstall'만을
         #가려 내어서 사전으로 생성하는 기능을 한다.
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
-        #서머리를 위해서 사용하는 변수들의 정의
+        # variable for summary
         self.testingResult = {'activity':['',0]}
         self.errorReport = {'activity':['',0],'broadcast':['',0],'service':['',0],'monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'packet':0,'Networks':0.0}
         self.enviromentResult = {'wifi':False}
         self.startTime = time.time()
+        
+        # variable for coverage
+        self.CoveredActivities = []
+        self.numberOfCoveredActivities = 0
              
-        #power conumpstion member
+        # variable for power conumpstion
         self.ListOfCurrent = []
         self.ListOfVoltage = []
         self.ListOfPower = []
@@ -222,8 +227,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                         self.runApkTests()
                         time.sleep(2)
                         #reboot and unlock screen
-                        #self.AdbReboot()
-                        #time.sleep(60)
+                        self.AdbReboot()
+                        time.sleep(60)
                     elif APK_NAME[2] == 'done':
                         print self.APK_NAME + ' was already done for testing'
                     else :
@@ -629,7 +634,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.testingResult['activity'][0] += ' '+activity
                 self.testingResult['activity'][1] += 1
                 #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
-                self.testStress(0,defineStore.ACTIVITY_BASED_MONKEY)
+                self.testStress(self.MONKEY_SEED,defineStore.ACTIVITY_BASED_MONKEY)
             else:
                 print self.result['Activity'][1]
                 self.m_logger.error(self.result['Activity'][1])
@@ -645,9 +650,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     def tesOriginalMonkey(self):
         
         # testing using seed.
-        seed=0
-        for seed in range(self.iterationOfTesting) :
-            self.testStress(seed,defineStore.UNMODIFIED_MONKEY)
+        MONKEY_SEED=0
+        for MONKEY_SEED in range(self.iterationOfTesting) :
+            self.testStress(MONKEY_SEED,defineStore.UNMODIFIED_MONKEY)
                                                        
     def testBroadCast(self):
         for broadCast in self.receiverList:
@@ -751,19 +756,24 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         #이 부분에서 monkey 자체가 뻗어서 죽는 경우에도 monkeyError를 초기화 해줘야 한다.
         #if self.result['Stress'][1].find('crash:') != -1:
         #    monkeyError = self.result['Stress'][1].split('crash:')
-        
+     
+        # finding covered activities for Monkey
+        monkeyResult = self.result['Stress'][1].split('\n')
+        for lineOfLog in monkeyResult:
+            if (lineOfLog.find('allowing') != -1):
+                self.CoveredActivities.append(lineOfLog)
+
         if(self.result['Stress'][0] == True):
             self.m_logger.info(self.result['Stress'][1])
         else:
-            self.m_logger.error(self.result['Stress'][1])
-            #에러가 발생하면 무조건 카운팅 해준다. 
+            self.m_logger.error(self.result['Stress'][1])            
+            # unconditionally, counting crash bug for Monkey
             self.errorReport['monkey'][0] += 1     
-            #같은 에러인지를 판별해주는 루틴이다.
+            # removing equivalance bug
             for preError in self.errorList:
                 if diffError(preError,self.result['Stress'][1]) >= 80: 
                     overlapError = True
                     break
-            
             if overlapError == False:
                 self.errorReport['monkey'][1] += 1
                 #현재 에러를 반영 시켜 준다.         
@@ -849,30 +859,28 @@ class ApkTest(multiprocessing.Process, wx.Frame):
              
     def preparingResult(self,RUN_MODE):
         
+        #테스팅 종료 시간이다.
+        self.EndTime = time.time()   
+        # calculate TestingTime and Translate fomal time
+        self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))   
+        self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
+        # refining activity coverage
+        self.CoveredActivities = list(set(self.CoveredActivities))
+        print 'Covered Activities using by Monkey'
+        for activity in self.CoveredActivities:
+            self.debugingMessage(activity)
+        self.numberOfCoveredActivities = len(self.CoveredActivities)
+        
         if RUN_MODE == defineStore.RUN_APK or RUN_MODE == defineStore.RUN_PACKAGE or RUN_MODE == defineStore.RUN_APKLIST:
-            #테스팅 종료 시간이다.
-            self.EndTime = time.time()
             #대기 시간이 필요할 경우, current senssing을 위해서 기다린다.
             self.TimeToUp()
             #current Sensing값을 얻어온다.
             self.CurrentSensing(0)
-            
-            # calculate TestingTime and Translate fomal time
-            self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))   
-            self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
-                   
-        elif (RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APK or RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST or RUN_MODE == defineStore.RUN_MONKEY_MODE):
-            
+                            
+        elif (RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APK or RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST or RUN_MODE == defineStore.RUN_MONKEY_MODE):   
             #performance Counter
             self.perforCounter = ''
-            #테스팅 종료 시간이다.
-            self.EndTime = time.time()   
-            # calculate TestingTime and Translate fomal time
-            self.testingTime = time.strftime('%H:%M:%S',time.gmtime(self.EndTime - self.startTime))   
-            self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
-            
-
-        
+    
     def summary(self):
 
         #마지막으로 로그에 기록을 해준다.
@@ -887,6 +895,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.debugingMessage('Failed Activity: %d(%d): %s'%(self.numberOfActivity, self.errorReport['activity'][1], self.errorReport['activity'][0]))
         self.debugingMessage('Failed BroadCast: %d(%d): %s'%(self.numberOfBroadCast,self.errorReport['broadcast'][1],self.errorReport['broadcast'][0]))
         self.debugingMessage('Failed Service: %d(%d): %s'%(self.numberOfService,self.errorReport['service'][1],self.errorReport['service'][0]))
+        self.debugingMessage('Covered Activities: %d(%d)'%(self.numberOfActivity, self.numberOfCoveredActivities))
         self.debugingMessage('monkey error: %d'%(self.errorReport['monkey'][0]))
         self.debugingMessage('No overlap monkey error: %d'%(self.errorReport['monkey'][1]))
         self.debugingMessage('IP_FOR_REMOTE_ADB Condition: %s'%(self.enviromentResult['wifi']))
