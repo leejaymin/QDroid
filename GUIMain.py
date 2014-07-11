@@ -9,6 +9,7 @@ import os
 import defineStore
 import subprocess
 import traceback
+import pickle
 
 import sys
 from AppAnalyzer import ApkTest, ApkTestApp
@@ -171,6 +172,26 @@ class ThumbnailCtrlDemo(wx.Frame):
         # this information is target deivce for testing.
         self.targetInfo = [{'deviceName':'HT0A1P800732','port':5545},{'deviceName':'HT08DP802665','port':5544}]
        
+        # preference dic for pickle
+        
+        f = open ('preference.txt','w')
+        
+        preferenceDic = {'testingProjectName':'TestProject_NexusOne', 
+                         'deviceName':'HT0A1P800732',
+                         'port':5545,
+                         'testingMode':0,
+                         'testingApk':'apkList',
+                         'TargetIP':'192.168.0.3:5555',
+                         'MonkeyEvent':1000,
+                         'MonkeySeed':0}
+        
+        pickle.dump(preferenceDic,f)
+        f.close
+        f = open ('preference.txt')
+        
+        x = pickle.load(f)
+        print x
+        
         
         # set up the static Box
         self.thumbsizer_staticbox = wx.StaticBox(self.panel, -1, "Target Devices")

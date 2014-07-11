@@ -3,7 +3,7 @@
 
 ################################################################
 # Author:  Jemin Lee <leejaymin@cnu.ac.kr>
-# Date:  2012-06-20 - 2013-06-13
+# Date:  2012-06-20 - 2014-07-13
 # Version: 2.0
 ################################################################
 import logging, time, threading, sys
@@ -203,6 +203,34 @@ class ApkTest(multiprocessing.Process, wx.Frame):
     
     def setTestingOption(self, option):
         self.RUN_MODE = option
+        
+    def parsingApkList(self, fileName):
+        self.testingTargetAPK = []
+        self.iterationOfTestingList = []
+        try:
+            f = open('./'+fileName,'r')
+            listData = f.read()
+            apkList = listData.split('\n')
+            # Analysing APK List
+            for lineOfdata in apkList:
+                lineOfdata = lineOfdata.split(' ')
+                if lineOfdata[2] == 'do':
+                    print 'Test App: '+lineOfdata[0]
+                    print "Test Interation: "+lineOfdata[1]
+                    self.testingTargetAPK.append(lineOfdata[0])
+                    self.iterationOfTestingList.append(int(lineOfdata[1]))
+                    wx.Yield()
+                else :
+                    print lineOfdata[0]+' '+lineOfdata[2]
+                wx.Yield()
+            f.close()
+            # returning list of testing app
+        except (IOError):
+            print 'ERROR: Failed open file: apkList.txt'
+            exit(-1)
+        except IndexError as e:
+            print '%s\n' % e
+            print 'IndexError'
 
     def run(self):
         # class process RUN_MODE
@@ -212,32 +240,14 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             
         elif(self.RUN_MODE == defineStore.RUN_APKLIST):
             self.output_tc.AppendText('RUN APK List\n')
-            try:
-                f = open('./apkList', 'r')
-                listData = f.read()
-                apkList = listData.split('\n')
-                #apkList에 있는 app만큼 반복하면서 실행 한다.
-                for APK_NAME in apkList:
-                    APK_NAME = APK_NAME.split(' ')
-                    self.APK_NAME = APK_NAME[0]
-                    self.iterationOfTesting = int(APK_NAME[1])
-                    if APK_NAME[2] == 'do':
-                        self.output_tc.AppendText('Test App:'+self.APK_NAME+'\n')
-                        wx.Yield()
-                        self.runApkTests()
-                        time.sleep(2)
-                        #reboot and unlock screen
-                        self.AdbReboot()
-                        time.sleep(60)
-                    elif APK_NAME[2] == 'done':
-                        print self.APK_NAME + ' was already done for testing'
-                    else :
-                        print 'worried: input format is incorrect for testing'
-                    wx.Yield()
-                f.close()
-            except (IOError):
-                print 'ERROR: Failed open file: apkList.txt'
-                exit(-1)
+            self.parsingApkList(self.APK_NAME)   
+            for index in range(len(self.testingTargetAPK)):
+                self.APK_NAME = self.testingTargetAPK[index]
+                self.iterationOfTesting = self.iterationOfTestingList[index]
+                self.runApkTests()
+                time.sleep(2)
+                self.AdbReboot()
+                time.sleep(60)
             
         elif(self.RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APK):
             self.output_tc.AppendText('RUN Compativlity APK_NAME\n')
@@ -245,58 +255,30 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
         elif(self.RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST):
             self.output_tc.AppendText('RUN Compativlity apklist\n')
-            f = open('./apkList', 'r')
-            listData = f.read()
-            apkList = listData.split('\n')
-            #apkList에 있는 app만큼 반복하면서 실행 한다.
-            for APK_NAME in apkList:
-                APK_NAME = APK_NAME.split(' ')
-                self.APK_NAME = APK_NAME[0]
-                self.iterationOfTesting = int(APK_NAME[1])
-                if APK_NAME[2] == 'do':
-                    self.output_tc.AppendText('Test App:'+self.APK_NAME+'\n')
-                    wx.Yield()
-                    self.runCompatibility()
-                    time.sleep(2)
-                    #reboot and unlock screen
-                    self.AdbReboot()
-                    time.sleep(60)
-                elif APK_NAME[2] == 'done':
-                    print self.APK_NAME + ' was already done for testing'
-                else :
-                    print 'worried: input format is incorrect for testing'
-                wx.Yield()
-            f.close()
-                                 
+            self.parsingApkList(self.APK_NAME)   
+            for index in range(len(self.testingTargetAPK)):
+                self.APK_NAME = self.testingTargetAPK[index]
+                self.iterationOfTesting = self.iterationOfTestingList[index]
+                self.runCompatibility()
+                time.sleep(2)
+                self.AdbReboot()
+                time.sleep(60)
+                                  
         elif(self.RUN_MODE == defineStore.RUN_PACKAGE):
             self.output_tc.AppendText('RUN Package\n')
             self.runPackageTests()
             
         elif(self.RUN_MODE == defineStore.RUN_MONKEY_MODE):
             self.output_tc.AppendText('RUN Original Monkey Apk\n')
-            try:
-                f = open('./apkList_monkey', 'r')
-                listData = f.read()
-                apkList = listData.split('\n')
-                #Extracting name of app and testing EVENT_COUNT_MONKEY from a file.
-                for APK_NAME in apkList:
-                    APK_NAME = APK_NAME.split(' ')
-                    self.APK_NAME = APK_NAME[0]
-                    self.iterationOfTesting = int(APK_NAME[1])
-                    
-                    self.output_tc.AppendText('Test App:'+APK_NAME[0]+'\n')
-                    self.output_tc.AppendText('Iteration:'+APK_NAME[1]+'\n')    
-                    self.runMonkeyApk()
-                    wx.Yield()
-                    
-            except IOError as e:
-                print '%s\n' % e
-                print print_stack
-                print 'ERROR: Failed open APK_NAME file:' + self.APK_NAME
-                exit(-1)
-            except IndexError as e:
-                print '%s\n' % e
-                print 'IndexError'
+            self.parsingApkList(self.APK_NAME)   
+            for index in range(len(self.testingTargetAPK)):
+                self.APK_NAME = self.testingTargetAPK[index]
+                self.iterationOfTesting = self.iterationOfTestingList[index]   
+                self.runMonkeyApk()
+                time.sleep(2)
+                self.AdbReboot()
+                time.sleep(60)
+
         elif(self.RUN_MODE == defineStore.RUN_MONKEY_PACKAGE):
             self.output_tc.AppendText('RUN Original Monkey Apk\n')
             try:
@@ -311,7 +293,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                     
                     self.output_tc.AppendText('Test App:'+APK_NAME[0]+'\n')
                     self.output_tc.AppendText('Iteration:'+APK_NAME[1]+'\n')    
-                    self.runMonkeyApk()
+                    self.runMonkeyPackage()
                     wx.Yield()
                     
             except IOError as e:
@@ -423,11 +405,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         wx.Yield()
         self.parsingManifestXml()
         wx.Yield()
-        self.testInstall()
-        wx.Yield()
         self.tesOriginalMonkey()
-        wx.Yield()
-        self.testUninstall()
         wx.Yield()
         self.preparingResult(defineStore.RUN_MONKEY_MODE)  
         wx.Yield()
