@@ -7,7 +7,7 @@ try:
     #voltage = i.split('mV')[0].split(',')[1]
     #power = int(current) * int(voltage) / 1000
     #print power
-    f = open('./wordpress_r394(abm28000_api11).log', 'r')
+    f = open('./MosaicturePhotoMosaic(0).log', 'r')
     commandList = []
     listData = f.read()
     apkList = listData.split('\n')

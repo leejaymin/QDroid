@@ -452,11 +452,11 @@ class ThumbnailCtrlDemo(wx.Frame):
         
         command = self.PreparingTesting(defineStore.RUN_APK)    
         p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
-        err = p.stderr.read()
-        if err != '':
-            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
-        else :
-            return True
+        #err = p.stderr.read()
+        #if err != '':
+        #    self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
+        #else :
+        #    return True
         
         #dispatcher = Dispatcher()
         #f = ApkTestFrame(dispatcher)
@@ -514,8 +514,6 @@ class ThumbnailCtrlDemo(wx.Frame):
             self.textPortName.Enable(False)
             
         elif pos == 2:
-            self.deviceName = self.textDeviceName.GetValue()
-            self.port = self.textPortName.GetValue()
             self.textDeviceName.Enable(True)
             self.textPortName.Enable(True)
             
@@ -539,6 +537,12 @@ class ThumbnailCtrlDemo(wx.Frame):
     def PreparingTesting(self, mode):
         
         #common routine
+        
+        #radio_device_3
+        if self.radio_device_3.IsEnabled() == True:
+            self.deviceName = self.textDeviceName.GetValue()
+            self.port = self.textPortName.GetValue()
+        
         #checking project name
         if self.testingProjecTxCtl.IsEmpty() == True:
             self.ExceptioMssage(defineStore.ORDINARY_ERROR,"Missing Porject Name for Testing\n")
