@@ -431,22 +431,14 @@ class ThumbnailCtrlDemo(wx.Frame):
         command = self.PreparingTesting(defineStore.RUN_DISPLAYCOMPATIBILITY_APK)
               
         p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
-        err = p.stderr.read()
-        if err != '':
-            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
-        else :
-            return True
+
     
     def OnMonkeyRun(self, event):
         
         command = self.PreparingTesting(defineStore.RUN_MONKEY_MODE)
               
         p = subprocess.Popen(command, shell=True, executable='/bin/bash', stderr = subprocess.PIPE)
-        err = p.stderr.read()
-        if err != '':
-            self.ExceptioMssage(defineStore.CRITICAL_ERROR,err)
-        else :
-            return True
+
     
     def OnFunctionalRun(self, event):
         

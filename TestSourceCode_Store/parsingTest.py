@@ -23,5 +23,15 @@ try:
     commandList = list(set(commandList))
     for activity in commandList:
         print activity 
+    
+    for activity in commandList:
+        if activity.find('.view.Eula'.lower()) > 0:
+            commandList.remove(activity)
+            
+
+            print '.view.eule is removed'
+    for activity in commandList:
+        print activity     
+            
 except ValueError:
     print 'invalid literal'

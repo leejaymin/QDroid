@@ -171,6 +171,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.result = dict((i[4:], [False, ''])  for i in dir(ApkTest)  if i[0:4] == 'test' and len(i) > 4 and  i[4].isupper())
         # variable for summary
         self.testingResult = {'activity':['',0]}
+        self.CoveredActivitiesByActivityManager = []
         self.errorReport = {'activity':['',0],'broadcast':['',0],'service':['',0],'monkey':[0,0]}
         self.errorList = [' ']
         self.perforResult = {'cpu':0.0,'packet':0,'Networks':0.0}
@@ -609,6 +610,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.result['Activity'][0] = True
                 print self.result['Activity'][1]
                 self.m_logger.info(self.result['Activity'][1])
+                self.CoveredActivitiesByActivityManager.append(activity) # inserting activity into list.
                 self.testingResult['activity'][0] += ' '+activity
                 self.testingResult['activity'][1] += 1
                 #엑티비티가 오류가 업을 때만 실행해 monkey 테스팅을 실행해 준다.
@@ -844,10 +846,28 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.datetime = time.strftime('%Y-%m-%d %H:%M:%S')
         # refining activity coverage
         self.CoveredActivities = list(set(self.CoveredActivities))
-        print 'Covered Activities using by Monkey'
+        self.debugingMessage('Covered Activities using by Monkey')
         for activity in self.CoveredActivities:
             self.debugingMessage(activity)
+        
+        self.debugingMessage('Covered Activities using by Activity Manager')
+        for activity in self.CoveredActivitiesByActivityManager:
+            self.debugingMessage(activity)
+        
+        self.debugingMessage('Comparing with Monkey and Activity manager results to make non-duplicated activities')
+        for AmActivity in self.CoveredActivitiesByActivityManager:
+            for MonkeyedActivity in self.CoveredActivities:    
+                partialActivity = MonkeyedActivity.split('/.')[1].split(' ')[0] # Extracting word from activity
+                if AmActivity.lower().find(partialActivity.lower()) > 0:
+                    self.CoveredActivities.remove(MonkeyedActivity)
+                    self.debugingMessage('removing '+MonkeyedActivity+' from CoveredActivities By monkey')
+                    break
+                
+        # after removing activities duplicated, The number of Covered Activity is calculated. 
         self.numberOfCoveredActivities = len(self.CoveredActivities)
+        self.debugingMessage('Remaning activites form monekeyed List')
+        for activity in self.CoveredActivities:
+            self.debugingMessage(activity)
         
         if RUN_MODE == defineStore.RUN_APK or RUN_MODE == defineStore.RUN_PACKAGE or RUN_MODE == defineStore.RUN_APKLIST:
             #대기 시간이 필요할 경우, current senssing을 위해서 기다린다.
