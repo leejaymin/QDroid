@@ -14,6 +14,7 @@ import logging, time
 import TestingLogger
 from Utility import diffError
 
+import os
 from sys import exit
 from os import path
 from subprocess import check_output, Popen, STDOUT
@@ -54,11 +55,14 @@ class PerformanceCounter():
     def loadPerforResult(self):
         try:
             self.solo.pullFile('/mnt/sdcard/%s.log'%(self.apkName),'/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
-            #remove this file
+            #remove file in smartphone
             self.solo.shell('rm /mnt/sdcard/%s.log'%(self.apkName))
             
             f = file('/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
             performanceReuslt = f.read()
+            # remove file in local
+            os.remove('/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
+            
             return performanceReuslt
         except IOError:
             print 'No such file or directory: /root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName)

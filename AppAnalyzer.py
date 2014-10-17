@@ -82,7 +82,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         multiprocessing.Process.__init__(self)
     
         #--------------- GUI Init ---------------
-        wx.Frame.__init__(self, None, -1, 'Automated Testing framework', wx.Point(700, 500), wx.Size(700, 450))
+        wx.Frame.__init__(self, None, -1, 'Automated Testing framework '+DEVICE, wx.Point(700, 500), wx.Size(700, 450))
 
         # Create the panel, sizer and controls
         self.panel = wx.Panel(self, wx.ID_ANY)
@@ -144,9 +144,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
         # set up Testing Connection Mode / USB or TCP/IP
         if(self.USB_TCPIP_MODE == 1):
-            self.AdbOverNetwork('adb disconnect 192.168.0.3')
+            self.AdbOverNetwork('adb disconnect '+self.IP_FOR_REMOTE_ADB)
             time.sleep(1)
-            self.AdbOverNetwork('adb connect 192.168.0.3')
+            self.AdbOverNetwork('adb connect '+self.IP_FOR_REMOTE_ADB)
             time.sleep(5)
             
         #오류를 기록해줄 로거를 생성 한다. 
@@ -235,6 +235,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
 
     def run(self):
         # class process RUN_MODE
+        
         if(self.RUN_MODE == defineStore.RUN_APK):
             self.output_tc.AppendText('RUN APK Mode\n')
             self.runApkTests()
@@ -957,6 +958,9 @@ if __name__ == '__main__':
         # for a Monkey testing 
     #     RUN_MONKEY_MODE = 5
     #     RUN_MONKEY_PACKAGE = 6
+    # DEVICE = 192.168.0.3:5555
+    # IP_FOR_REMOTE_ADB = 192.168.0.3
+    
     
     p.ShowFrame(ApkTest(TESTING_PROJECT_NAME = sys.argv[1],
                RUN_MODE = int(sys.argv[2]),
