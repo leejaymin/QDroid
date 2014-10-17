@@ -254,6 +254,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             self.output_tc.AppendText('RUN Compativlity APK_NAME\n')
             self.runCompatibility()
         
+        # removing adbreboot, it is because this testing is based on emulator
         elif(self.RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST):
             self.output_tc.AppendText('RUN Compativlity apklist\n')
             self.parsingApkList(self.APK_NAME)   
@@ -261,9 +262,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.APK_NAME = self.testingTargetAPK[index]
                 self.iterationOfTesting = self.iterationOfTestingList[index]
                 self.runCompatibility()
-                time.sleep(2)
-                self.AdbReboot()
-                time.sleep(60)
+                time.sleep(1)
+                
                                   
         elif(self.RUN_MODE == defineStore.RUN_PACKAGE):
             self.output_tc.AppendText('RUN Package\n')
@@ -623,7 +623,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.errorReport['activity'][0] += ' '+activity 
                 self.errorReport['activity'][1] += 1 
             #정리 한다.
-            command = 'adb -s %s shell am force-stop %s' %(self.DEVICE,self.pkgName,)
+            command = 'adb -s %s shell am force-stop %s' %(self.DEVICE,self.pkgName)
             print run(command)
             self.debugingMessage('====== finished Activity Testing:'+activity+' =======')
             
@@ -682,7 +682,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             print '=============Finished testService'+service+'=============' 
             self.m_logger.info('=============Finished testService'+service+'=============')
         
-    #Display의 compatibility를 테스팅 하는 코드 이다.
+    #Resolution Testing 
     def DisplayCompatibility(self):
         for activity in self.activityList:
             self.currentProgress += 1
@@ -693,6 +693,8 @@ class ApkTest(multiprocessing.Process, wx.Frame):
             self.m_logger.info('======== Progress: %d/%d ========='%(self.completeProgress,self.currentProgress))
             
             self.result['Activity'][1] = self.solo.startActivity(component='%s/%s'% (self.pkgName,activity))    
+            # Wating for page lode
+            
                             
             if self.result['Activity'][1][0:5] == 'Start' and self.result['Activity'][1].find('Error') == -1: 
                 self.result['Activity'][0] = True
@@ -710,10 +712,11 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.errorReport['activity'][0] += ' '+activity 
                 self.errorReport['activity'][1] += 1 
             #정리 한다.
-            self.solo.event_controller.singleBack()
+            command = 'adb -s %s shell am force-stop %s' %(self.DEVICE,self.pkgName)
+            print run(command)
             print '====== finished Activity Testing:'+activity+' ======='
             self.m_logger.info('====== finished Activity Testing:'+activity+' =======')
-             
+            time.sleep(5)
                                                 
     def testStress(self,seed,RUN_MODE):
         overlapError = False
@@ -939,13 +942,25 @@ if __name__ == '__main__':
     
     # to detect testing RUN_MODE, it parse the argument from argv
     print sys.argv
+    APK_NAME = sys.argv[3].split('.')[0]
    
     # create wx.App object    
     p = ApkTestApp()
     # create Frame object
+    # Emulator_WVGA800 2 apkList 0 1 emulator-5554 5545 emulator-5554
+    # RUN MODE
+    #     RUN_APK = 0
+    #     RUN_PACKAGE =1
+    #     RUN_APKLIST = 2
+    #     RUN_DISPLAYCOMPATIBILITY_APK =3
+    #     RUN_DISPLAYCOMPATIBILITY_APKLIST = 4
+        # for a Monkey testing 
+    #     RUN_MONKEY_MODE = 5
+    #     RUN_MONKEY_PACKAGE = 6
+    
     p.ShowFrame(ApkTest(TESTING_PROJECT_NAME = sys.argv[1],
                RUN_MODE = int(sys.argv[2]),
-               APK_NAME = sys.argv[3] ,
+               APK_NAME = APK_NAME,
                USB_TCPIP_MODE = int(sys.argv[4]),
                EVENT_COUNT_MONKEY = int(sys.argv[5]),
                DEVICE = sys.argv[6],

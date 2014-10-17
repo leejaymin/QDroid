@@ -11,4 +11,4 @@ if not device:
         
 
 result = device.takeSnapshot()
-result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/HT0A1P800732/HighwayRacing/Start','png')
+result.writeToFile('/root/python_source/AutoTestingModule/ImageStore/Emulator_4.0_480x800/Drawrace2_v1_0_6/scoreloop','png')

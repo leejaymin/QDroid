@@ -54,6 +54,9 @@ class PerformanceCounter():
     def loadPerforResult(self):
         try:
             self.solo.pullFile('/mnt/sdcard/%s.log'%(self.apkName),'/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
+            #remove this file
+            self.solo.shell('rm /mnt/sdcard/%s.log'%(self.apkName))
+            
             f = file('/root/python_source/AutoTestingModule/TestingResult/%sPerfor.log'%(self.apkName))
             performanceReuslt = f.read()
             return performanceReuslt

@@ -1,4 +1,4 @@
-
+import sys
 from PIL import Image
 #import ImageChops
 #import numpy as np
@@ -11,7 +11,7 @@ if __name__ == '__main__':
     avgColorRate = 0.0
     sumColorRate = 0
     validCount = 0
-  
+
     
 #    image_src = '/root/Android_Application_source/recomended/0.png'
     first_image = "../ImageStore/GameActivityGalaxyNexus.png"
@@ -19,6 +19,8 @@ if __name__ == '__main__':
 #    first_image = "../TestingResult/GalaxyNexus/Digger/splash.png"
     
     imSrc = Image.open(first_image)
+    a = imSrc.size
+    print a[0]
 #    grayImage = Image.open(image_src)
     out = imSrc.resize((1280,720))
     
