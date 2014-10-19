@@ -136,9 +136,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         
         self.StaticTestingForm = StaticTestingForm.StaticTestingForm()
         #------------- redirect text -----------------
-        redir = RedirectText(self.output_tc)
-        sys.stdout = redir
-        sys.sterr = redir
+        #redir = RedirectText(self.output_tc)
+        #sys.stdout = redir
+        #sys.sterr = redir
             
     def init(self):
         
@@ -199,6 +199,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.db = MySQLdb.connect(user='root', passwd = 'root', db ='BugHunter')
         self.cursor = self.db.cursor()
     
+        # print app
+        print self.APK_NAME
+        
     def setUpdate(self,resfunc):
         self.resfunc = resfunc
     
@@ -858,20 +861,21 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         for activity in self.CoveredActivitiesByActivityManager:
             self.debugingMessage(activity)
         
-        self.debugingMessage('Comparing with Monkey and Activity manager results to make non-duplicated activities')
-        for AmActivity in self.CoveredActivitiesByActivityManager:
-            for MonkeyedActivity in self.CoveredActivities:    
-                partialActivity = MonkeyedActivity.split('/.')[1].split(' ')[0] # Extracting word from activity
-                if AmActivity.lower().find(partialActivity.lower()) > 0:
-                    self.CoveredActivities.remove(MonkeyedActivity)
-                    self.debugingMessage('removing '+MonkeyedActivity+' from CoveredActivities By monkey')
-                    break
+        #this section is not correct
+        #self.debugingMessage('Comparing with Monkey and Activity manager results to make non-duplicated activities')
+        #for AmActivity in self.CoveredActivitiesByActivityManager:
+        #    for MonkeyedActivity in self.CoveredActivities:    
+        #        partialActivity = MonkeyedActivity.split('/.')[1].split(' ')[0] # Extracting word from activity
+        #        if AmActivity.lower().find(partialActivity.lower()) > 0:
+        #            self.CoveredActivities.remove(MonkeyedActivity)
+        #            self.debugingMessage('removing '+MonkeyedActivity+' from CoveredActivities By monkey')
+        #            break
                 
-        # after removing activities duplicated, The number of Covered Activity is calculated. 
-        self.numberOfCoveredActivities = len(self.CoveredActivities)
-        self.debugingMessage('Remaning activites form monekeyed List')
-        for activity in self.CoveredActivities:
-            self.debugingMessage(activity)
+        #after removing activities duplicated, The number of Covered Activity is calculated. 
+        #self.numberOfCoveredActivities = len(self.CoveredActivities)
+        #self.debugingMessage('Remaning activites form monekeyed List')
+        #for activity in self.CoveredActivities:
+        #    self.debugingMessage(activity)
         
         if RUN_MODE == defineStore.RUN_APK or RUN_MODE == defineStore.RUN_PACKAGE or RUN_MODE == defineStore.RUN_APKLIST:
             #대기 시간이 필요할 경우, current senssing을 위해서 기다린다.
