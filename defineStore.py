@@ -26,3 +26,32 @@ ORDINARY_ERROR = 1
 #Monket mode
 UNMODIFIED_MONKEY = 0
 ACTIVITY_BASED_MONKEY = 1
+
+#SQL
+columnName = ''' (
+                projectName,
+                packageName,
+                appName,
+                version,
+                testingTime,
+                install,
+                reinstall,
+                uninstall,
+                failedActivityCount,
+                failedBroadcastCount,
+                failedServiceCount,
+                monkey,
+                noOverlapMonkey,
+                networkCondition,
+                cpuAveUsage,
+                networkAveusage,
+                networkAvePacket,
+                PowerAve,
+                logfileName,
+                logfilePath,
+                Time,
+                testingLevel
+            )
+            '''           
+
+            

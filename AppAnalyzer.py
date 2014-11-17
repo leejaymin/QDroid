@@ -885,7 +885,12 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                             
         elif (RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APK or RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APKLIST or RUN_MODE == defineStore.RUN_MONKEY_MODE):   
             #performance Counter
-            self.perforCounter = ''
+            try:
+                self.perforResult['cpu'] = 0.0
+                self.perforResult['packet'] = 0
+                self.perforResult['Networks'] = 0.0
+            except ValueError as e:
+                print '%s'%e 
     
     def summary(self):
 
@@ -907,28 +912,31 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         self.debugingMessage('IP_FOR_REMOTE_ADB Condition: %s'%(self.enviromentResult['wifi']))
         self.debugingMessage('Average Power Consumption: %f'%(self.mAvePower))
         self.debugingMessage('Power List: %s'%(self.ListOfPower))
-        if self.perforCounter == '':
-            pass
-        else:
-            self.debugingMessage(self.perforCounter.loadPerforResult())
-        
+        self.debugingMessage('CPU Util: %f'%(self.perforResult['cpu']))
+        self.debugingMessage('number of packets: %d'%(self.perforResult['packet']))
+        self.debugingMessage('amount of traffic: %f'%(self.perforResult['Networks']))
+                             
         #마지막으로 Database에 기록을 한다. 
         try:
-            self.cursor.execute('''INSERT INTO TestingResult VALUES(
+            values = ''' (
             '%s','%s','%s','%s','%s'
             ,'%s','%s','%s'
             ,'%d','%d','%d'
             ,'%d','%d','%s'
             ,'%f','%f','%d'
             ,'%f','%s','%s'
-            ,'%s','%d')'''
-            %(self.TESTING_PROJECT_NAME,self.pkgName,self.APK_NAME, self.version,self.testingTime,
+            ,'%s','%d')'''%(self.TESTING_PROJECT_NAME,self.pkgName,self.APK_NAME, self.version,self.testingTime,
               self.result['Install'][0],self.result['Reinstall'][0],self.result['Uninstall'][0]
               ,self.errorReport['activity'][1],self.errorReport['broadcast'][1],self.errorReport['service'][1]
               ,self.errorReport['monkey'][0],self.errorReport['monkey'][1],self.enviromentResult['wifi']
               ,self.perforResult['cpu'],self.perforResult['Networks'],self.perforResult['packet']
               ,self.mAvePower,self.logfileName,self.logfilePath,
-              self.datetime,int(self.EVENT_COUNT_MONKEY)))
+              self.datetime,int(self.EVENT_COUNT_MONKEY))
+            
+            query = 'INSERT INTO TestingResult'+ defineStore.columnName + 'VALUES'+values
+            
+            
+            self.cursor.execute(query)
                                 
         except MySQLdb.Error as e:   
             print e
