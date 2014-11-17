@@ -20,8 +20,13 @@ IMAGENAME = 4
 ROOTDIRECTORY = './ImageStore'
 
 # configuration value
-ManhattanThreshold = 60
-Zerothreshold = 0.7
+ManhattanThreshold = 24
+Zerothreshold = 0.33
+
+# fault count
+allViolation = 0
+mViolation = 0
+zViolation = 0
 
 # How to use
     # depth: two directory / files
@@ -30,6 +35,11 @@ def main():
      
     file1 = './ImageStore/com.viewpagerindicator.sample.SampleTabsDefault_NexusOne.png'
     file2 = "./ImageStore/com.viewpagerindicator.sample.SampleTabsDefault_Resize.png"
+    
+    allViolationList = []
+    ManhattanViolationList = []
+    ZeroManhattanList = []
+    
 
     #first_path = raw_input("first path")
     #second_path = raw_input("second path")
@@ -57,7 +67,11 @@ def main():
         print 'Do not going to test, you have to fix some errors'
         return -1
     DirectoryCompare(rootPath1, rootPath2, FirstDirectoryList, SecondDirectorylist)
-              
+    print '-------------------------------------------------'
+    print '-------------------------------------------------'
+    print 'number of allviolations: ',allViolation
+    print 'number of mViolations: ',mViolation
+    print 'number of zViolations: ',zViolation
 
 def DirectoryCompare (rootPath1, rootPath2, directoryFileList1, directoryFileList2):
     NumberOfTesting = 1
@@ -105,7 +119,7 @@ def checkDirectoryList (directoryList1, directoryList2):
                 break
             #this directory is not matched to any element in second list.            
             if count == numberOfelementsOfList1:
-                print 'First Directory do not have a %s \n' % directoryFile1
+                print 'First Directory do not have a %s \n' % directoryFile2
                 result = False
             count += 1
     
@@ -178,6 +192,7 @@ def FileCompare (NumberOfTesting, filelist1, filelist2):
     return int(Count)
             
 def ImageCompare (file1, file2):
+    global allViolation, zViolation, mViolation
     # read images as 2D arrays (convert to grayscale for simplicity)
     img1 = to_grayscale(imread(file1).astype(float))
     img2 = to_grayscale(imread(file2).astype(float))
@@ -185,18 +200,20 @@ def ImageCompare (file1, file2):
     # compare
     n_m, n_0 = compare_images(img1, img2)
     
-    if (n_m/img1.size) >= ManhattanThreshold:
-        print 'Manhattan: violation: ',(n_m/img1.size)
-    else:
-        print "Manhattan norm:", n_m, "/ per pixel:", n_m/img1.size
+    if (n_m/img1.size) >= ManhattanThreshold and (n_0*1.0/img1.size) >= Zerothreshold:
         
-    if (n_0*1.0/img1.size) >= Zerothreshold:
-        print 'Zero: violation: ',(n_m/img1.size)
-    else:
-        print "Zero norm:", n_0, "/ per pixel:", n_0*1.0/img1.size, "\n"
-    
-        
-  
+        allViolation += 1
+        print 'all violation'
+    elif (n_m/img1.size) >= ManhattanThreshold:
+        mViolation += 1
+        print 'Manhattan: violation'
+    elif (n_0*1.0/img1.size) >= Zerothreshold:
+        zViolation += 1
+        print 'Zero: violation'
+
+    print "Manhattan norm:", n_m, "/ per pixel:", n_m/img1.size
+    print "Zero norm:", n_0, "/ per pixel:", n_0*1.0/img1.size, "\n"
+            
 def helper_reszie(splitedfilepath2, width, height):
     imPath = ROOTDIRECTORY+'/'+splitedfilepath2[PROJECTNAME]+'/'+splitedfilepath2[APPNAME]+'/'+splitedfilepath2[IMAGENAME]
     
@@ -218,7 +235,11 @@ def compare_images(img1, img2):
     # calculate the difference and its norms
     diff = img1 - img2  # elementwise for scipy arrays
     m_norm = sum(abs(diff))  # Manhattan norm
-    z_norm = norm(diff.ravel(), 0)  # Zero norm
+    try:
+        z_norm = norm(diff.ravel(), 0)  # Zero norm
+    except ValueError:
+        print 'valueError'
+        return (0, 0)
     return (m_norm, z_norm)
 
 def to_grayscale(arr):
