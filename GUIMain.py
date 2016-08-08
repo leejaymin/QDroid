@@ -26,8 +26,6 @@ try:
 except ImportError: # if it's not there locally, try the wxPython lib.
     import wx.lib.agw.thumbnailctrl as TC
 
-import images
-
 class MyFrame(wx.Frame):
     """
     This is MyFrame.  It just shows a few controls on a wxPanel,
@@ -150,8 +148,7 @@ class ThumbnailCtrlDemo(wx.Frame):
 
         wx.Frame.__init__(self, parent)
 
-        self.SetIcon(images.Mondrian.GetIcon())
-        self.SetTitle("Automated Testing Framework ;-)")
+        self.SetTitle("QDroid")
 
         self.statusbar = self.CreateStatusBar(2, wx.ST_SIZEGRIP)
         self.statusbar.SetStatusWidths([-2, -1])

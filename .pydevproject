@@ -7,7 +7,7 @@
 <path>/AutoTestingModule/src</path>
 </pydev_pathproperty>
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.7</pydev_property>
-<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">monkeyrunner-wrapper</pydev_property>
+<pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_EXTERNAL_SOURCE_PATH">
 <path>/usr/local/lib/python2.7/dist-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg</path>
 <path>/root/Android_Application_tools/android-sdk-linux/tools/lib</path>
