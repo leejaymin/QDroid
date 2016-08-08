@@ -145,9 +145,9 @@ class ApkTest(multiprocessing.Process, wx.Frame):
         # set up Testing Connection Mode / USB or TCP/IP
         if(self.USB_TCPIP_MODE == 1):
             self.AdbOverNetwork('adb disconnect '+self.IP_FOR_REMOTE_ADB)
-            time.sleep(1)
+            time.sleep(2)
             self.AdbOverNetwork('adb connect '+self.IP_FOR_REMOTE_ADB)
-            time.sleep(5)
+            time.sleep(15)
             
         #오류를 기록해줄 로거를 생성 한다. 
         #Nexus one device name="HT0A1P800732" Buy lab
@@ -252,7 +252,7 @@ class ApkTest(multiprocessing.Process, wx.Frame):
                 self.runApkTests()
                 time.sleep(2)
                 self.AdbReboot()
-                time.sleep(60)
+                time.sleep(70)
             
         elif(self.RUN_MODE == defineStore.RUN_DISPLAYCOMPATIBILITY_APK):
             self.output_tc.AppendText('RUN Compativlity APK_NAME\n')
