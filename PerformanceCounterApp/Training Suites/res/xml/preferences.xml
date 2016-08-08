@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory
+	android:title="cpu training">
+  <EditTextPreference
+  	android:key="cpu_intervanl_time_preference"
+  	android:title="interval"
+  	android:summary="cpu load tset interval"
+  	android:defaultValue="1000"
+  />
+  <CheckBoxPreference android:defaultValue="false" 
+						android:key="cpu_max_mode" 
+						android:title="CPU Usage MaxMode" 
+						android:summary="cpu usage max mode on/off">
+  </CheckBoxPreference>
+	
+   </PreferenceCategory>
+    <PreferenceCategory
+	android:title="wifi training">
+    <EditTextPreference
+  	android:key="wifi_start_time_preference"
+  	android:title="start time"
+  	android:summary="start interval time"
+  	android:defaultValue="100"
+    />
+    <EditTextPreference
+  	android:key="wifi_intervanl_time_preference"
+  	android:title="interval"
+  	android:summary="Decline interval"
+  	android:defaultValue="10"
+    />
+   <CheckBoxPreference android:defaultValue="false" 
+						android:key="wifi_packet_mode_fixed" 
+						android:title="Packet Rate Fixed" 
+						android:summary="Packet Rate Fixed mode on/off">
+  </CheckBoxPreference>   
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+	android:title="display training">
+  <EditTextPreference
+  	android:key="display_starting_brightness"
+  	android:title="Brightness Level"
+  	android:summary="Starting Brightness Level"
+  	android:defaultValue="255"
+  />
+   <EditTextPreference
+  	android:key="display_brightness_Interval"
+  	android:title="Level Interval"
+  	android:summary="Brightness Level Interval"
+  	android:defaultValue="10"
+  />
+   </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="introduce">Training Suites Version : 1.0</string>
+    <string name="app_name">Training Suites</string>
+    <string name="app_title">Training Suites 1.0</string>
+	<string name="bar_title">Training Suites run</string>
+	<string name="notify_text">Running in background</string>
+	<string name="options_text">Options</string>
+	<string name="db_text">DB open</string>
+	
+
+	<string name="cpu_training_text">Training cpu</string>
+	<string name="led_training_text">Training led</string>
+</resources>
