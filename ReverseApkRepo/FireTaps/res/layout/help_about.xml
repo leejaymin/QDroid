@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" style="@style/FlippingPage"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.tf.ui.FTextView android:text="About" style="@style/HeadText" />
-    <org.tf.ui.FireButton android:background="@null" android:layout_marginBottom="@dimen/view_padding" android:text="@string/app_name_version" style="@style/NormalText" />
-    <TextView android:textSize="@dimen/text_medium" android:text="@string/about" style="@style/ParagraphText" />
-</LinearLayout>

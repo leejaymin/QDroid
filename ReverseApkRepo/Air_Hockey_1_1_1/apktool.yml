@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: Air_Hockey_1_1_1.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

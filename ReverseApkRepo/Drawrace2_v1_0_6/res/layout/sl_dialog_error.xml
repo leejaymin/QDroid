@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sl_dialog_error_layout" android:background="@drawable/sl_dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/sl_margin_default"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:gravity="center_horizontal" android:id="@id/sl_title" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/sl_text_large_bold_inverted" />
-    <TextView android:layout_gravity="center_vertical" android:id="@id/sl_error_message" android:padding="@dimen/sl_margin_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="[message]" style="@style/sl_text_normal_normal_inverted" />
-    <Button android:layout_gravity="center_horizontal" android:id="@id/sl_button_ok" android:background="@drawable/sl_dialog_button_background_selector" android:layout_width="fill_parent" android:layout_height="@dimen/sl_clickable_height" android:layout_margin="@dimen/sl_margin_default" android:text="@string/sl_ok" style="@style/sl_text_big_bold_inverted" />
-</LinearLayout>

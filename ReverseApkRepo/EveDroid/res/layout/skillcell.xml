@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/skillCell" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="20.0px" android:textStyle="bold" android:gravity="center" android:id="@id/txtGroupName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/skillCell" />
-    <TextView android:textStyle="bold" android:id="@id/txtCellName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/skillCell" />
-    <TextView android:id="@id/txtCellPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtCellName" />
-    <TextView android:id="@id/txtCellRank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:layout_below="@id/txtCellName" android:layout_alignParentRight="true" />
-</RelativeLayout>

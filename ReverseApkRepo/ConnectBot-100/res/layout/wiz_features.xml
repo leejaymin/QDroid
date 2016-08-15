@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Helpful hints" />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="When you have multiple sessions open, you can 'pan' between them by swiping your finger left-to-right or right-to-left over the screen." />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Use the volume up/down buttons to change font size for a console." />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Long-press on your Android desktop to create direct shortcuts to frequently-used SSH hosts." />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Slide your finger up/down on the right-half of the terminal screen to look at the scrollback history.  Slide up/down on the left-half to send the page up/down keys." />
-</LinearLayout>

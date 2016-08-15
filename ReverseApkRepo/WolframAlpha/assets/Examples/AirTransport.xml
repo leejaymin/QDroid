@@ -1,9 +1,0 @@
-<?xml version='1.0'?><example><link ref="Transportation">Transportation</link><category>Air Transport</category><section-title>Air Transport Statistics</section-title><caption>get data on air transport per country</caption><input>China air transport</input><section-title>
- <link ref="Airports">Airports </link>
-</section-title><caption>locate an airport and get information about it</caption><input>Midway Airport</input><caption>specify an airport by its FAA code</caption><input>LAX</input><caption>compare several airports</caption><input>JFK, LGA, EWR</input><section-title>
- <link ref="Airlines">Airlines </link>
-</section-title><caption>get information about an airline</caption><input>US Airways</input><caption>do computations on airline data</caption><input>average daily passengers United / Delta</input><section-title>
- <link ref="FlightData">Flight Data </link>
-</section-title><caption>get data for a specified flight</caption><input>Southwest flight 276</input><caption>find flights with a specified route</caption><input>flights from LAX to NYC</input><section-title>
- <link ref="Aircraft">Aircraft </link>
-</section-title><caption>get information about a type of aircraft</caption><input>F-14 Tomcat</input><caption>compare several aircraft</caption><input>Boeing 747, Boeing 767</input><caption>do computations with aircraft properties</caption><input>wingspan B-29 Superfortress / B-17 Flying Fortress</input></example>

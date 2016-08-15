@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/menu_move_system" android:title="@string/menu_move_system" />
-    <item android:id="@id/menu_move_user" android:title="@string/menu_move_user" />
-    <item android:id="@id/menu_move_sd" android:title="@string/menu_move_sd" />
-</menu>

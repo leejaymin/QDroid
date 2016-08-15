@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/ico_info_39_light" android:id="@id/itemHelp" android:title="@string/str_kms_menu_help" />
-    <item android:icon="@drawable/ico_password_recovery_39_light" android:id="@id/itemRecover" android:title="@string/str_kms_menu_passw_recover" />
-    <item android:icon="@drawable/ico_password_recovery_39_light" android:id="@id/itemEnterSecretCode" android:title="@string/str_enter_secret_code_menu" />
-</menu>

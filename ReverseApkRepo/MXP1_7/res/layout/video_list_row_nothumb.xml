@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.mxtech.widget.ListRow android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="@drawable/btn_check"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/thumb" style="?listPrimaryTextAppearance" />
-    <TextView android:textAppearance="?listSecondaryTextAppearance" android:id="@id/secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
-</com.mxtech.widget.ListRow>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.wolfram.android.alpha.keyboard.WAKeyboardPairView android:orientation="vertical" android:id="@id/keyboard_pair_view" android:background="@drawable/keyboard_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.wolfram.android.alpha.keyboard.WAUpperKeyboardView android:id="@id/upper_keyboard" android:paddingBottom="@dimen/keyboards_view_land_WAUpperKeyboardView_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keyTextSize="@dimen/key_key_text_size_upper" android:labelTextSize="@dimen/key_label_text_size_upper" />
-    <ImageView android:id="@id/keyboard_separator" android:background="@color/keyboard_separator" android:layout_width="fill_parent" android:layout_height="2.0px" android:maxHeight="2.0px" android:minHeight="2.0px" />
-    <com.wolfram.android.alpha.keyboard.WALowerKeyboardView android:id="@id/lower_keyboard" android:paddingTop="@dimen/keyboards_view_land_WALowerKeyboardView_paddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keyTextSize="@dimen/key_key_text_size_lower" android:labelTextSize="@dimen/key_label_text_size_lower" />
-</com.wolfram.android.alpha.keyboard.WAKeyboardPairView>

@@ -1,40 +1,0 @@
-﻿<html>
-<head>
-<style type="text/css">
-body { font-size: 0.9em; color:%(secondary_text_color); line-height:130%25; }
-h4 { font-size: 1.1em; color:%(primary_text_color); font-weight:bold; border-bottom:1px solid %(line_color); padding-bottom:0.17em; margin-bottom:0.6em;}
-h2 { color:%(primary_text_color); }
-.title { font-size: 1.4em; color:%(primary_text_color); }
-</style>
-</head>
-<body link="%(secondary_text_color)" vlink="%(secondary_text_color)" style="padding-top:0.8em;">
-
-<h2>%(label) %(version)</h2>
-© 2011–2012 J2 Interactive. All rights reserved.
-<p>
-<div>
-   <%licensed
-   <img src="ic_licensed.png" width="12px" height="12px" style="vertical-align:baseline"/>
-   <span>%(license_statement)</span>
-    %>
-    
-   <%not_licensed
-   <img src="ic_not_licensed.png" width="14px" height="12px" style="vertical-align:baseline"/>
-   <span>%(license_statement)</span>
-    %>
-</div>
-</p>
-<%free <br/> %>
-<h4>%(support)</h4>
-%(support_content)
-<p>
-<b>%(home)</b> - <a href="%(home_url)">%(home_url)</a><br/>
-<b>%(forum)</b> - <a href="%(forum_url)">%(forum_url)</a><br/>
-<b>%(translation_project)</b> - <a href="http://crowdin.net/project/mx-video-player/invite">http://crowdin.net/project/mx-video-player/invite</a><br/>
-</p>
-
-<h4>%(thanks_to)</h4><!-- <b>Masoud Ahmadi</b> - %(graphic_design).<br/> -->%(translators)</p>%(thanks_to_all)
-<p>
-
-<h4>%(open_source_license)</h4>%(open_source_license_content)</body>
-</html>

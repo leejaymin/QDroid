@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="Run on startup" android:key="runOnStartup" android:summary="Have the profiling service start when your phone starts" />
-    <CheckBoxPreference android:title="Send logs" android:key="sendPermission" android:summary="Send back power traces to the PowerTutor team" />
-</PreferenceScreen>

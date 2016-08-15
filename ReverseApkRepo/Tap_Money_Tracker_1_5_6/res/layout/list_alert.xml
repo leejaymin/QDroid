@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:layout_weight="1.0">
-        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tv_alert_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="So-net ADSL" />
-        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/tv_repeat" android:paddingLeft="8.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="25th of every month" />
-    </LinearLayout>
-    <CheckBox android:layout_gravity="center" android:id="@id/ckb_alert" android:padding="5.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" />
-</LinearLayout>

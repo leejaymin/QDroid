@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@drawable/background" android:layout_width="400.0dip" android:layout_height="120.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:text="New Folder Name" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="fill_parent">
-        <EditText android:id="@id/newfoldertext" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
-        <Button android:id="@id/newfolderokbutton" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:text="OK" />
-    </LinearLayout>
-</LinearLayout>

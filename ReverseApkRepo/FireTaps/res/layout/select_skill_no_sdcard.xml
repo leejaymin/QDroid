@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" style="@style/FlippingPage"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.tf.ui.FTextView android:id="@id/head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No sdcard" style="@style/HeadText" />
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin" android:text="@string/no_sdcard" style="@style/ParagraphText" />
-    <org.tf.ui.TextButton android:id="@id/check_sdcard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Continue" style="@style/TextButton" />
-</LinearLayout>

@@ -1,7 +1,0 @@
-<?xml version='1.0'?><example><category>Sports</category><section-title>
- <link ref="MajorLeagueBaseball">Major League Baseball </link>
-</section-title><caption>get information about a major league baseball team</caption><input>San Francisco Giants</input><caption>compare baseball teams</caption><input>New York Yankees, Boston Red Sox</input><caption>request a team statistic</caption><input>St. Louis Cardinals hits</input><section-title>
- <link ref="NationalFootballLeague">National Football League </link>
-</section-title><caption>get information about an NFL team</caption><input>New England Patriots</input><caption>compare several teams</caption><input>Chicago Bears, Green Bay Packers, Minnesota Vikings</input><caption>compare a statistic for multiple teams</caption><input>passing touchdowns Dallas Cowboys, Denver Broncos</input><section-title>
- <link ref="OlympicGames">Olympic Games </link>
-</section-title><caption>get information about Olympic medals</caption><input>Olympic gold medals</input><caption>find medals won by an athlete</caption><input>How many medals has Michael Phelps won?</input><caption>find medals by sport</caption><input>Olympics medalists from Norway in alpine skiing</input></example>

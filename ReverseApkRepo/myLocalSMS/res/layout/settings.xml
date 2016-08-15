@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:dividerHeight="15.0px" android:key="first_preferencescreen"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res/com.andfreek.myLocale.activity.ui">
-    <CheckBoxPreference android:title="@string/checkBoxTitle" android:key="enable_translation" android:summary="@string/checkBoxSummary" />
-    <ListPreference android:entries="@array/languages" android:title="@string/listTitle" android:key="languagelist" android:summary="@string/listSummary" android:dependency="enable_translation" android:entryValues="@array/languageValues" />
-    <CheckBoxPreference android:checked="true" android:title="@string/checkBoxPopup" android:key="enable_popup" android:summary="@string/checkBoxPopupSummary" />
-    <PreferenceScreen android:title="@string/donate" android:key="donate" android:summary="@string/donateSummary" />
-</PreferenceScreen>

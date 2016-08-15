@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="titlescreen_link_spacing">25.0dip</dimen>
-    <dimen name="demo_titlescreen_link_spacing">20.0dip</dimen>
-    <dimen name="two_player_instructions_text_size">14.0sp</dimen>
-    <dimen name="demo_sales_text_size">16.0sp</dimen>
-    <dimen name="demo_sales_spacing">18.0dip</dimen>
-</resources>

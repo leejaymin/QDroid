@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="id" name="DatePicker">false</item>
-    <item type="id" name="Button">false</item>
-    <item type="id" name="changedate">false</item>
-    <item type="id" name="today">false</item>
-</resources>

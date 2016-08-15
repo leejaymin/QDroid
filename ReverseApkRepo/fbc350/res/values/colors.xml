@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="black">#ff000000</color>
-    <color name="greydark">#ff303030</color>
-    <color name="greymed">#ff606060</color>
-    <color name="greylight">#ff909090</color>
-</resources>

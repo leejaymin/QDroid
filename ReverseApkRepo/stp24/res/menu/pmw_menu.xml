@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:icon="@drawable/toolbox" android:id="@id/menu_toolbox" android:orderInCategory="1" android:title="@string/menu_activities" android:alphabeticShortcut="s" android:showAsAction="ifRoom" />
-    <item android:icon="@drawable/settings" android:id="@id/menu_settings" android:orderInCategory="2" android:title="@string/menu_settings" android:alphabeticShortcut="s" android:showAsAction="ifRoom" />
-    <item android:icon="@drawable/norecording" android:id="@id/menu_record" android:orderInCategory="3" android:title="@string/button_record" android:alphabeticShortcut="r" android:showAsAction="ifRoom" />
-    <item android:icon="@drawable/recording" android:id="@id/menu_stoprecord" android:orderInCategory="4" android:title="@string/button_recording" android:alphabeticShortcut="r" android:showAsAction="ifRoom" />
-</menu>

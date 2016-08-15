@@ -1,5 +1,0 @@
-<?xml version='1.0'?><example><link ref="HealthAndMedicine">Health &amp; Medicine</link><category>Health Care Statistics</category><section-title>
- <link ref="HealthCareExpenses">Health Care Expenses </link>
-</section-title><caption>get an overview of health care costs in a country</caption><input>Canada healthcare expenditures</input><caption>get details of health care costs</caption><input>prescription expenses in Sweden</input><caption>compare the health care expenditures of countries</caption><input>home health care UK vs US</input><section-title>
- <link ref="HealthIndicators">Health Indicators </link>
-</section-title><caption>compare health indicators of countries</caption><input>USA vs Cuba medical personnel</input><caption>look up a particular statistic for a country</caption><input>Nigeria MCV immunization 2000</input><caption>get statistics for a group of countries</caption><input>Africa underweight children</input></example>

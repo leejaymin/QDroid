@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.mxtech.widget.ListRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorMultiple"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/mode" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
-    <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/ext" android:paddingLeft="6.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/mode" android:layout_centerVertical="true" />
-</com.mxtech.widget.ListRow>

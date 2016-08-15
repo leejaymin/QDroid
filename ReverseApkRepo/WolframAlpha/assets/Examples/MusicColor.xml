@@ -1,5 +1,0 @@
-<?xml version='1.0'?><example><category>Music, Color, ...</category><section-title>
- <link ref="Music">Music </link>
-</section-title><caption>compute the frequency and other properties of a musical note</caption><input>F#  </input><caption>identify an interval</caption><input>C, Eb</input><caption>get information about a chord</caption><input>C major 7th chord</input><section-title>
- <link ref="Colors">Colors </link>
-</section-title><caption>compute properties of a named color</caption><input>chartreuse</input><caption>add two or more colors</caption><input>cyan + yellow</input><caption>compute the blackbody radiation color for a temperature</caption><input>3000 K</input></example>

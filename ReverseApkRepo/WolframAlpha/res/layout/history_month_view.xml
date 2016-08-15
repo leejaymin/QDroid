@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/history_month_view_textview_history_month_textSize" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@id/history_month" android:background="@drawable/button_selector" android:paddingLeft="@dimen/history_month_view_textview_history_month_paddingLeft" android:paddingTop="@dimen/history_month_view_textview_history_month_paddingTop" android:paddingRight="@dimen/history_month_view_textview_history_month_paddingRight" android:paddingBottom="@dimen/history_month_view_textview_history_month_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/arrow_selector" android:layout_centerVertical="true" android:onClick="monthClickHandler" />
-    <include layout="@layout/gray_1_px_horizontal_line" />
-</LinearLayout>

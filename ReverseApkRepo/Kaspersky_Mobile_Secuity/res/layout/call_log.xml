@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/linearLayoutBkg" android:background="@drawable/gradient_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/ViewCaption" android:background="@drawable/settings_header" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@id/ViewCaption" />
-    <TextView android:id="@id/Separator01" android:background="@drawable/main_scr_separator" android:layout_width="fill_parent" android:layout_height="1.0px" />
-    <TextView android:textColor="#ffffffff" android:id="@id/callLogHeader" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" android:lineSpacingMultiplier="1.2" />
-    <TextView android:gravity="left|center" android:id="@id/Separator01" android:background="@drawable/gradient_separator" android:layout_width="fill_parent" android:layout_height="1.0px" />
-    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@drawable/gradient_separator" android:dividerHeight="1.0dip" />
-</LinearLayout>

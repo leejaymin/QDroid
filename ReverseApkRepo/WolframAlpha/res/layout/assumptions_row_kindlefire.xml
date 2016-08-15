@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/assumptions_row_kindlefire_textview_textSize" android:textColor="@drawable/assumptions_row_text_colors" android:gravity="center_vertical" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/assumptions_row_textview_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/assumptions_row_textview_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

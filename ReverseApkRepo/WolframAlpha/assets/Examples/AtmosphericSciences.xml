@@ -1,7 +1,0 @@
-<?xml version='1.0'?><example><link ref="EarthSciences">Earth Sciences</link><category>Atmospheric Sciences</category><section-title>Standard Atmosphere</section-title><caption>compute atmospheric properties for a given elevation</caption><input>atmosphere 40000ft</input><input>sound speed at 100,000ft</input><section-title>Atmospheric Composition</section-title><caption>get data on the composition of the atmosphere</caption><input>atmosphere of Earth</input><section-title>
- <link ref="AtmosphericThermodynamics">Atmospheric Thermodynamics </link>
-</section-title><caption>compute properties of moist air</caption><input>moist air drybulb 72F, wetbulb 66F, pressure 29inHg</input><caption>compute saturation vapor pressure</caption><input>saturation vapor pressure 30C</input><section-title>
- <link ref="Clouds">Clouds </link>
-</section-title><caption>get information about a type of cloud</caption><input>cirrus</input><caption>compute cloud base height</caption><input>cloud base height</input><section-title>
- <link ref="CarbonFootprints">Carbon Footprints </link>
-</section-title><caption>compute the carbon dioxide cost of heating a house</caption><input>carbon footprint gas 15000 Btu/h</input><caption>find carbon dioxide equivalents of chemicals</caption><input>global warming potential of methane</input></example>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="crash_activity">CrashActivity</string>
-    <string name="anr_activity">AnrActivity</string>
-    <string name="anr">ANR</string>
-</resources>

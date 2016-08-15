@@ -1,5 +1,0 @@
-<resources>
-	<resource libraryUrl="LANGUAGE/fonts.swf">
-		<fontResource id="cabUIFont" className="CABUIFont" />
-	</resource>
-</resources>

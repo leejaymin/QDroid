@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: Electrum_Drum_MachineSampler_v4_6_1.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

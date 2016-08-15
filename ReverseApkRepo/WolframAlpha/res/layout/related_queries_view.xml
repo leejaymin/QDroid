@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:id="@id/related_queries_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/related_queries_view_textview_relatedqueries_textSize" android:textColor="@color/relatedqueries_title" android:gravity="left|center" android:background="@drawable/relatedqueriestitle_gradient" android:padding="@dimen/related_queries_view_textview_relatedqueries_label" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/relatedqueries_label" />
-        <include layout="@layout/podtitle_bottom_line" />
-    </LinearLayout>
-    <TableLayout android:gravity="center" android:orientation="vertical" android:id="@id/relatedqueries_panel_table" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/related_queries_view_tablelayout_relatedqueries_panel_table_marginTop" android:layout_marginBottom="@dimen/related_queries_view_tablelayout_relatedqueries_panel_table_marginBottom" />
-</LinearLayout>

@@ -1,1 +1,0 @@
-<?xml version='1.0'?><example><link ref="UnitsMeasures">Units &amp; Measures</link><category>Steel Sheets</category><section-title>Steel Sheets</section-title><caption>look up a sheet metal gauge</caption><input>#15 steel sheet</input><caption>compute using a property of a gauge</caption><input>thickness of steel gauge #11 in mm</input></example>

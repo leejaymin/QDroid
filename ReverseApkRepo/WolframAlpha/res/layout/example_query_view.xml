@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/example_query_view_textview_textSize" android:textColor="@color/examples_query" android:gravity="center_vertical" android:id="@id/query_text" android:background="@drawable/examples_button_selector" android:paddingLeft="@dimen/example_query_view_textview_paddingLeft" android:paddingTop="@dimen/example_query_view_textview_paddingTop" android:paddingBottom="@dimen/example_query_view_textview_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:onClick="exampleQueryClickHandler"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

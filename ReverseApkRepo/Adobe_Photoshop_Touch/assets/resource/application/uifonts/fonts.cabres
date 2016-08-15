@@ -1,5 +1,0 @@
-<resources>
-	<resource description="LANGUAGE/fonts.fla">
-		<stringTableResource url="LANGUAGE/font.zstrings" />
-	</resource>
-</resources>

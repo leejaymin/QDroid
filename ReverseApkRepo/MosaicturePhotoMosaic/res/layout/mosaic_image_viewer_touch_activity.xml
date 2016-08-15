@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_gravity="top|left|center" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.mosaicture.zoom.ImageZoomViewTouch android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
-    <com.markupartist.android.widget.ActionBar android:id="@id/actionbarViewer" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ActionBarViewer" />
-</FrameLayout>

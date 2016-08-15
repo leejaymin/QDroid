@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@id/layout_root" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <SeekBar android:id="@id/starttime_progress" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="0.0dip" android:layout_height="30.0dip" android:progressDrawable="@drawable/progress_horizontal" android:layout_weight="1.0" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
-    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center" android:id="@id/starttime_textview" android:layout_width="60.0dip" android:layout_height="wrap_content" android:text="00:00:00" />
-</LinearLayout>

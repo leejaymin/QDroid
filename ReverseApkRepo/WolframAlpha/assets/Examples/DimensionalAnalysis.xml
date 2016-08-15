@@ -1,5 +1,0 @@
-<?xml version='1.0'?><example><link ref="UnitsMeasures">Units &amp; Measures</link><category>Dimensional Analysis</category><section-title>
- <link ref="PhysicalQuantities">Physical Quantities </link>
-</section-title><caption>get information about a physical quantity</caption><input>mass density</input><input>energy</input><input>reluctivity</input><input>logarithmic sound pressure level</input><section-title>Dimensional Analysis</section-title><caption>compare physical quantities and compute dimensionless combinations</caption><input>force, mass, acceleration</input><input>energy, momentum</input><input>energy, time, length, density</input><input>mass density, length, dynamic viscosity</input><section-title>
- <link ref="DimensionlessNumbers">Dimensionless Numbers </link>
-</section-title><caption>compute a dimensionless number</caption><input>Reynolds number</input><input>Eckert number</input><input>Arrhenius number 300C, 84kJ/mol</input></example>

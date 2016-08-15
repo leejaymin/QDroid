@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="@string/prefs_autokill_widget" android:key="@string/PREFSKEY_AUTOKILL_WIDGET" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
-    <CheckBoxPreference android:title="@string/prefs_autokill_notif" android:key="@string/PREFSKEY_AUTOKILL_NOTIF" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
-    <CheckBoxPreference android:title="@string/prefs_autokill_screen_off" android:key="@string/PREFSKEY_AUTOKILL_SCREENOFF" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
-    <CheckBoxPreference android:title="@string/prefs_autokill_screen_on" android:key="@string/PREFSKEY_AUTOKILL_SCREENON" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
-    <CheckBoxPreference android:title="@string/prefs_autokill_low_memory" android:key="@string/PREFSKEY_AUTOKILL_LOWMEMORY" android:defaultValue="false" android:summaryOn="@string/prefs_autokill_on" android:summaryOff="@string/prefs_autokill_off" />
-</PreferenceScreen>

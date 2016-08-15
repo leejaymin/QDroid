@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:background="?backgroundFunctionArea" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <Spinner android:id="@id/sp_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:layout_marginRight="2.0px" android:layout_marginBottom="0.0px" />
-    </LinearLayout>
-    <ListView android:id="@id/lv_report" android:background="?backgroundListArea" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
-</LinearLayout>

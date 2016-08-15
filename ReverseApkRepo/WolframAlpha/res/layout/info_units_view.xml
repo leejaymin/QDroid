@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/info_units_view_textview_units_view_textSize" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="left" android:paddingLeft="@dimen/info_units_view_textview_units_view_paddingLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/units_view_label" />
-    <ImageView android:id="@id/units_image" android:background="@drawable/white_rounded_rect" android:paddingLeft="@dimen/info_units_view_imageview_units_image_paddingLeft" android:paddingTop="@dimen/info_units_view_imageview_units_image_paddingTop" android:paddingRight="@dimen/info_units_view_imageview_units_image_paddingRight" android:paddingBottom="@dimen/info_units_view_imageview_units_image_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitStart" />
-</LinearLayout>

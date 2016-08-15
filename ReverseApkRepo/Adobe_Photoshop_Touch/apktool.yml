@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: Adobe_Photoshop_Touch.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

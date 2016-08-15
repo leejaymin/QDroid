@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/sl_challenge_settings_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <TextView android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/stake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/sl_text_large_bold_inverted" />
-        <TextView android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/sl_text_normal_normal_inverted" />
-    </LinearLayout>
-</FrameLayout>

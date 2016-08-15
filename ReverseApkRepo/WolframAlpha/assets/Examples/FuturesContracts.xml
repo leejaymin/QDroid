@@ -1,1 +1,0 @@
-<?xml version='1.0'?><example><link ref="MoneyAndFinance">Money &amp; Finance</link><category>Futures Contracts</category><section-title>Futures Contracts</section-title><caption>get information about a futures contract</caption><input>soybean futures</input><caption>specify a commodity by ticker symbol</caption><input>CBOT:ZO</input></example>

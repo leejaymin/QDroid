@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<style name="NobgDialog" parent="@android:style/Theme.Dialog">
-    <item name="android:windowBackground"> @color/no_back </item>
-</style>

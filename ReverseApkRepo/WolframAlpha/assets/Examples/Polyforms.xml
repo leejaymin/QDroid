@@ -1,1 +1,0 @@
-<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Polyforms</category><section-title>Polyforms</section-title><caption>get information about a class of polyforms</caption><input>polyominoes</input><input>polykites</input><caption>specify the order of the polyforms</caption><input>hexiamonds</input><input>polycairos of order 7</input></example>

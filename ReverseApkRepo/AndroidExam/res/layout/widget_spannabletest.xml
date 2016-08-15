@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditText android:id="@id/edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="-Italic-Red-Under-" />
-    <TextView android:textSize="15.0pt" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" android:text="SmallBlueBig" />
-    <TextView android:textSize="10.0pt" android:textColorLink="#ffffff00" android:linksClickable="true" android:id="@id/textlink" android:layout_width="fill_parent" android:layout_height="wrap_content" android:bufferType="spannable" android:text="이름 : 김상형. 프로필 보기. 연락처 수소문하기" />
-</LinearLayout>

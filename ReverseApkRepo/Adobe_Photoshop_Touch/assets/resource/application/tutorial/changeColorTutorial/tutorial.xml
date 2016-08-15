@@ -1,8 +1,0 @@
-<tutorial>
-	<step text="$$$/Tutorial/Tap the tool bar and scroll to the Magic Wand tool.=Tap the tool bar and scroll to the Magic Wand tool." tipid="magicWandTool" tiptext="$$$/Tutorial/Magic Wand tool=Magic Wand tool"/>
-	<step text="$$$/Tutorial/Tap Tolerance. Increase tolerance to 50% to prevent edge artifacts.=Tap Tolerance. Increase tolerance to 50% to prevent edge artifacts." tipid="None" tiptext="$$$/Tutorial/To type numbers instead of using a slider, tap the number field to display a number keypad. Enter the numbers and tap the checkmark to complete.=To type numbers instead of using a slider, tap the number field to display a number keypad. Enter the numbers and tap the checkmark to complete."/>
-	<step text="$$$/Tutorial/Tap the red area of the sign to select it.=Tap the red area of the sign to select it." />
-	<step text="$$$/Tutorial/Tap the Add to Selection icon. Tap the areas inside the #{quot}O#{quot} and #{quot}P#{quot} to add them to the selection.=Tap the Add to Selection icon. Tap the areas inside the #{quot}O#{quot} and #{quot}P#{quot} to add them to the selection." tipid="plusSelectionModeButton" tiptext="$$$/Tutorial/Add to Selection=Add to Selection"/>
-	<step text="$$$/Tutorial/Tap Adjustments > Color Balance. Enter Red:-100, Green:-100, Blue:100. Tap Apply.=Tap Adjustments > Color Balance. Enter Red=-100, Green=-100, Blue=100. Tap Apply." tipid="enhanceMenuButton" tiptext="$$$/Tutorial/Color Balance=Color Balance"/>
-	<step text="$$$/Tutorial/Tap Select > Deselect.=Tap Select > Deselect." tipid="selectMenuButton" tiptext="$$$/Tutorial/Deselect=Deselect"/>
-</tutorial>

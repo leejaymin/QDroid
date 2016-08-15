@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView android:textSize="@dimen/empty_search_results_view_textview_textSize" android:textStyle="italic" android:textColor="@color/examples_caption" android:paddingLeft="@dimen/empty_search_results_view_textview_paddingLeft" android:paddingTop="@dimen/empty_search_results_view_textview_paddingTop" android:paddingRight="@dimen/empty_search_results_view_textview_paddingRight" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

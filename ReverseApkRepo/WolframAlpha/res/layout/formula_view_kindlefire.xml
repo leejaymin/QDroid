@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/formula_view_linearlayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:background="@color/formula_view_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/formula_view_imageview_topborder_minHeight" />
-    <TextView android:textSize="@dimen/formula_view_textview_formula_text_textSize" android:textColor="@drawable/button_text_selector" android:gravity="center_vertical" android:id="@id/formula_text" android:background="@drawable/formula_view_background" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/formula_view_textview_formula_text_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/formula_view_textview_formula_text_paddingBottom" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change input values" android:drawableRight="@drawable/arrow_selector" android:layout_centerVertical="true" android:onClick="formulaClickHandler" />
-    <ImageView android:background="@color/formula_view_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/formula_view_imageview_bottomborder_minHeight" />
-</LinearLayout>

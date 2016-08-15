@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: backport_android_bluetooth.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

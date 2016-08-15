@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@id/menu_others" android:title="Others apps" />
-    <item android:id="@id/menu_top_app" android:title="Recommend list" />
-    <item android:id="@id/menu_about" android:title="About" />
-</menu>

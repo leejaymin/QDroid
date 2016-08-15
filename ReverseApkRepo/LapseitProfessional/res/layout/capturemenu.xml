@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/capturemenu_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:id="@id/capturemenu_firstitem" android:layout_width="100.0px" android:layout_height="64.0px" android:layout_weight="1.0" layout="@layout/capturemenuitem" />
-    <include android:id="@id/capturemenu_seconditem" android:layout_width="100.0px" android:layout_height="64.0px" android:layout_weight="1.0" layout="@layout/capturemenuitem" />
-    <include android:id="@id/capturemenu_thirditem" android:layout_width="100.0px" android:layout_height="64.0px" android:layout_weight="1.0" layout="@layout/capturemenuitem" />
-    <include android:id="@id/capturemenu_forthitem" android:layout_width="100.0px" android:layout_height="64.0px" android:layout_weight="1.0" layout="@layout/capturemenuitem" />
-    <include android:id="@id/capturemenu_fifthitem" android:layout_width="100.0px" android:layout_height="64.0px" android:layout_weight="1.0" layout="@layout/capturemenuitem" />
-</LinearLayout>

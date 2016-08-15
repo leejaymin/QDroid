@@ -1,7 +1,0 @@
-<?xml version='1.0'?><example><category>Physics, Chemistry, Materials</category><section-title>
- <link ref="Physics">Physics </link>
-</section-title><caption>do an Ohm's law calculation</caption><input>12A, 110V</input><caption>get information about a particle</caption><input>top antiquark</input><caption>get information about isotopes</caption><input>U-235, U-238</input><section-title>
- <link ref="Chemistry">Chemistry </link>
-</section-title><caption>get information about a chemical element</caption><input>carbon</input><caption>get information about chemical compounds</caption><input>methanol, ethanol, isopropanol</input><caption>compute properties of a quantity of a chemical</caption><input>100mL lauric acid</input><section-title>
- <link ref="Materials">Materials </link>
-</section-title><caption>get information about a type of wood</caption><input>white pine wood</input><caption>get information about minerals</caption><input>hematite, magnetite, chromite</input></example>

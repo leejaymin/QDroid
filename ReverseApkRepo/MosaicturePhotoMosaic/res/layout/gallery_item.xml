@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="54.0dip" android:layout_height="54.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/thumbImage" android:padding="3.0dip" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="centerCrop" android:contentDescription="@string/gallery_image_thumb" />
-    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/thumbImageSelectedCorner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_selected_corner" android:contentDescription="@string/selected_image_corner" />
-</FrameLayout>

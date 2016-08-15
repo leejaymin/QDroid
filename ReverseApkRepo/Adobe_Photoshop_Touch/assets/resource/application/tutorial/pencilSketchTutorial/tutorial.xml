@@ -1,6 +1,0 @@
-<tutorial>
-	<step text="$$$/Tutorial/Duplicate the first layer image.=Duplicate the first layer image." tipid="addLayerButton" tiptext="$$$/Tutorial/Duplicate layer=Duplicate layer"/>
-	<step text="$$$/Tutorial/Tap Effects > Artistic > Pencil.=Tap Effects > Artistic > Pencil." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Select Pencil Effect=Select Pencil Effect"/>
-	<step text="$$$/Tutorial/Set the threshold to 50%. Tap Apply.=Set the threshold to 50%. Tap Apply."/>
-	<step text="$$$/Tutorial/Tap Layer Properties. Set Blend Mode to Overlay. Tap the image to dismiss dialog box.=Tap Layer Properties. Set Blend Mode to Overlay. Tap the image to dismiss dialog box." tipid="layerPropertiesButton" tiptext="$$$/Tutorial/Tap layer properties=Tap layer properties"/>
-</tutorial>

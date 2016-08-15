@@ -1,6 +1,0 @@
-<coachmarks>
-	<mark text="$$$/Coachmarks/Undo & redo=Undo & redo" image="ttCoachMarkUndo" tipid="redoButton" />
-	<mark text="$$$/Coachmarks/Move & transform=Move & transform" image="ttCoachMarkTransform" tipid="transformButton" />
-	<mark text="$$$/Coachmarks/Select a tool=Select a tool" image="ttCoachMarkTools" tipid="toolWheel" />
-	<mark text="$$$/Coachmarks/Manage layers=Manage layers" image="ttCoachMarkLayers" tipid="layerPropertiesButton" />
-</coachmarks>

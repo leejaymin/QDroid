@@ -1,9 +1,0 @@
-<?xml version='1.0'?><example><category>Education</category><section-title>
- <link ref="Universities">Universities </link>
-</section-title><caption>get information about a college or university</caption><input>New York University</input><caption>compare universities</caption><input>Harvard University, Princeton University</input><section-title>
- <link ref="SchoolDistricts">School Districts </link>
-</section-title><caption>get information about a US public school district</caption><input>Andover Unified School District 385</input><caption>request a specific property of a school district</caption><input>Mars Area School District total teachers</input><section-title>
- <link ref="USPublicSchools">US Public Schools </link>
-</section-title><caption>get information about a US public school</caption><input>Hilo High School</input><caption>get demographic data for a US public school</caption><input>how many 10th graders in Forks High School</input><section-title>
- <link ref="StandardizedTests">Standardized Tests </link>
-</section-title><caption>analyze an SAT score</caption><input>SAT 1750</input><caption>get ACT scores for a specified state</caption><input>ACT scores in New Mexico</input></example>

@@ -1,7 +1,0 @@
-<?xml version='1.0'?><example><link ref="TechnologicalWorld">Technological World</link><category>Communications</category><section-title>
- <link ref="BroadcastStations">Broadcast Stations </link>
-</section-title><caption>get data about a broadcast station</caption><input>WBBM-TV</input><caption>find local radio stations by frequency</caption><input>AM 580</input><section-title>
- <link ref="FrequencyAllocations">Frequency Allocations </link>
-</section-title><caption>find allocations for a given frequency</caption><input>frequency allocations 900MHz</input><caption>get data for a radio band</caption><input>UHF</input><section-title>
- <link ref="TelecommunicationsStatistics">Telecommunications Statistics </link>
-</section-title><caption>get telecommunications data for a country</caption><input>telecommunications in Malaysia</input><caption>get data for a class of countries</caption><input>internet users in South America</input><section-title>Morse Code</section-title><caption>translate a string into Morse code</caption><input>Morse code &quot;Wolfram Alpha&quot;</input><caption>translate from Morse code</caption><input>Morse code - . .-.. . --. .-. .- .--. ....</input></example>

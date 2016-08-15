@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<preference-headers
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <header android:icon="@drawable/ic_menu_list" android:title="@string/cfg_list" android:fragment="com.mxtech.videoplayer.ActivityPreferences$VideoListFragment" />
-    <header android:icon="@drawable/ic_menu_slideshow" android:title="@string/cfg_player" android:fragment="com.mxtech.videoplayer.ActivityPreferences$VideoPlayerFragment" />
-    <header android:icon="@drawable/ic_menu_manage" android:title="@string/decoder" android:fragment="com.mxtech.videoplayer.ActivityPreferences$DecoderFragment" />
-    <header android:icon="@drawable/ic_menu_start_conversation" android:title="@string/subtitle" android:fragment="com.mxtech.videoplayer.ActivityPreferences$SubtitleFragment" />
-    <header android:icon="@drawable/ic_menu_mark" android:title="@string/cfg_general" android:fragment="com.mxtech.videoplayer.ActivityPreferences$GeneralFragment" />
-</preference-headers>

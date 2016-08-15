@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: Kaspersky_Mobile_Secuity.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

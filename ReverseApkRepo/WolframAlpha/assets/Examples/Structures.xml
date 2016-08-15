@@ -1,9 +1,0 @@
-<?xml version='1.0'?><example><link ref="Engineering">Engineering</link><category>Structures</category><section-title>
- <link ref="Buildings">Buildings </link>
-</section-title><caption>get information about a building</caption><input>Eiffel Tower</input><caption>compare several buildings</caption><input>Empire State Building, Chrysler Building</input><caption>do computations with building properties</caption><input>height CN Tower / Merchandise Mart</input><section-title>
- <link ref="Dams">Dams </link>
-</section-title><caption>get information about a dam</caption><input>La Esmeralda Dam</input><caption>compare several dams</caption><input>Grand Coulee Dam, Glen Canyon Dam, Mica Dam</input><caption>do computations with dam properties</caption><input>length Three Gorges Dam / Hoover Dam</input><section-title>
- <link ref="Bridges">Bridges </link>
-</section-title><caption>get information about a bridge</caption><input>Golden Gate Bridge</input><caption>compare several bridges</caption><input>Bosphorus Bridge, Forth Road Bridge</input><caption>do computations with bridge properties</caption><input>length George Washington Bridge / Brooklyn Bridge</input><section-title>
- <link ref="Tunnels">Tunnels </link>
-</section-title><caption>get information about a tunnel</caption><input>Laerdal tunnel</input><caption>compare several tunnels</caption><input>Moffat tunnel, Riola tunnel, Otai tunnel</input><caption>do computations with tunnel properties</caption><input>length Seikan tunnel / Aki tunnel</input></example>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.wolfram.android.alpha.keyboard.WAKeyboardPairView_kindlefire android:orientation="vertical" android:id="@id/keyboard_pair_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.wolfram.android.alpha.keyboard.WAUpperKeyboardView_kindlefire android:id="@id/upper_keyboard" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keyTextSize="@dimen/key_key_text_size_upper" android:labelTextSize="@dimen/key_label_text_size_upper" />
-    <com.wolfram.android.alpha.keyboard.WALowerKeyboardView_kindlefire android:id="@id/lower_keyboard" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:keyTextSize="@dimen/key_key_text_size_lower" android:labelTextSize="@dimen/key_label_text_size_lower" />
-</com.wolfram.android.alpha.keyboard.WAKeyboardPairView_kindlefire>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/podtitle_top_line" />
-    <TextView android:textSize="@dimen/history_day_view_kindlefire_textview_date_header_textSize" android:textColor="@color/podtitle_text" android:id="@id/date_header" android:background="@drawable/podtitle_gradient" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/history_day_view_textview_date_header_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/history_day_view_textview_date_header_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <include layout="@layout/podtitle_bottom_line" />
-</LinearLayout>

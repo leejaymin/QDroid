@@ -1,3 +1,0 @@
-<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Number Theoretic Functions</category><section-title>Functions</section-title><caption>get information about a number-theoretic function</caption><input>Euler phi</input><input>sigma_2(n)</input><caption>do computations with number-theoretic functions</caption><input>mu(30)</input><input>phi(110)</input><section-title>
- <link ref="SpecialFunctions">Special Functions </link>
-</section-title><caption>plot the zeta function on the critical line</caption><input>plot zeta(1/2 + i*t)</input><caption>simplify expressions involving Gamma</caption><input>Gamma(z)*Gamma(1-z)</input></example>

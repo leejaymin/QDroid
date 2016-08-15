@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/activity_markers_title" android:summary="@string/activity_markers_summary"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="@string/prefs_markers_title" android:key="@string/PREFSKEY_MARKERS" android:defaultValue="true" android:summaryOn="@string/prefs_markers_on" android:summaryOff="@string/prefs_markers_off" />
-    <CheckBoxPreference android:title="@string/prefs_auto_markers_title" android:key="@string/PREFSKEY_MARKERS_AUTO" android:dependency="@string/PREFSKEY_MARKERS" android:defaultValue="false" android:summaryOn="@string/prefs_auto_markers_on" android:summaryOff="@string/prefs_auto_markers_off" />
-    <CheckBoxPreference android:title="@string/prefs_auto_battery_markers_title" android:key="@string/PREFSKEY_MARKERS_BAT" android:dependency="@string/PREFSKEY_MARKERS" android:defaultValue="false" android:summaryOn="@string/prefs_auto_battery_markers_on" android:summaryOff="@string/prefs_auto_markers_off" />
-    <CheckBoxPreference android:title="@string/prefs_auto_markers_plug_title" android:key="@string/PREFSKEY_MARKERS_PLUG" android:dependency="@string/PREFSKEY_MARKERS" android:defaultValue="false" android:summaryOn="@string/prefs_auto_markers_plug_on" android:summaryOff="@string/prefs_auto_markers_plug_off" />
-</PreferenceScreen>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="30.0px" android:textColor="#ff00ff00" android:gravity="bottom|right|center" android:layout_gravity="center_horizontal" android:background="#ffff0000" android:layout_width="200.0px" android:layout_height="100.0px" android:text="정렬 테스트" />
-</LinearLayout>

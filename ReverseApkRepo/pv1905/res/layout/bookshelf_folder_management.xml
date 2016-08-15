@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/ScanButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/scan_folder" />
-    <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/SaveButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/add_folder" />
-    <ImageView android:id="@id/ImageView03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@android:drawable/divider_horizontal_dark" android:scaleType="fitXY" />
-    <ListView android:id="@id/ListView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" />
-</LinearLayout>

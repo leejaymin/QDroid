@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout style="@style/MenuLinearLayout"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <org.tf.ui.FireButton android:id="@id/scan" android:text="@string/reload_songs" style="@style/MenuButton" />
-</LinearLayout>

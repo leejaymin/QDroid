@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:background="@drawable/sl_dialog_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:padding="@dimen/sl_margin_default" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/sl_icon_scoreloop" />
-    <TextView android:layout_gravity="center_vertical" android:id="@id/message" android:padding="@dimen/sl_margin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/sl_text_normal_normal_inverted" />
-</LinearLayout>

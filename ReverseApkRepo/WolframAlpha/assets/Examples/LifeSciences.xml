@@ -1,9 +1,0 @@
-<?xml version='1.0'?><example><category>Life Sciences</category><section-title>
- <link ref="AnimalsPlants">Animals &amp; Plants </link>
-</section-title><caption>get information about a species</caption><input>musk rose</input><caption>compare multiple species</caption><input>puma, lion, red fox</input><caption>get information about higher taxa</caption><input>Lepidoptera</input><section-title>
- <link ref="Paleontology">Paleontology </link>
-</section-title><caption>get information about a type of dinosaur</caption><input>triceratops</input><caption>compare multiple dinosaurs</caption><input>brachiosaurus, struthiomimus</input><caption>get information about dinosaur taxa</caption><input>saurischia</input><section-title>
- <link ref="GenomicsAndMolecularBiology">Genomics &amp; Molecular Biology </link>
-</section-title><caption>translate a DNA base sequence and find occurrences in the human genome</caption><input>AAGCTAGCTAGC</input><caption>analyze a gene and locate it on a chromosome</caption><input>scnn1a</input><caption>analyze a protein</caption><input>myoglobin</input><section-title>
- <link ref="MetabolicPathways">Metabolic Pathways </link>
-</section-title><caption>visualize a metabolic pathway</caption><input>TCA cycle</input><input>glycogen degradation pathway</input></example>

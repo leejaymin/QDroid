@@ -1,9 +1,0 @@
-<tutorial>
-	<step text="$$$/Tutorial/Create a text layer.=Create a text layer." tipid="wrenchMenuButton" tiptext="$$$/Tutorial/Add Text=Add Text"/>
-	<step text="$$$/Tutorial/Tap the keyboard icon to enter or change the text.=Tap the keyboard icon to enter or change the text."/>
-	<step text="$$$/Tutorial/Tap and scroll to change the typeface.=Tap and scroll to change the typeface."/>
-	<step text="$$$/Tutorial/Tap Color dot. Touch rainbow gradient to select new color.=Tap Color dot. Touch rainbow gradient to select new color." tipid="textPanelColorField" tiptext="$$$/Tutorial/Change color=Change color"/>
-	<step text="$$$/Tutorial/Drag on the handles to resize and move the text as desired. Tap OK.=Drag on the handles to resize and move the text as desired. Tap OK."/>
-	<step text="$$$/Tutorial/Tap Effects > Basic > Drop Shadow.=Tap Effects > Basic > Drop Shadow." tipid="effectsMenuButton" tiptext="$$$/Tutorial/Drop Shadow effect=Drop Shadow effect"/>
-	<step text="$$$/Tutorial/Adjust settings to your taste. Tap Apply.=Adjust settings to your taste. Tap Apply."/>	
-</tutorial>

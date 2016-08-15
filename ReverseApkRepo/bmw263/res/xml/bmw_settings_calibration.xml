@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/prefs_screen_calibration" android:summary="@string/prefs_screen_calibration_summary"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditTextPreference android:title="@string/prefs_title_capacity" android:key="@string/PREFSKEY_CAPACITY" android:summary="@string/prefs_summary_capacity" android:defaultValue="1500" android:inputType="numberSigned" />
-    <EditTextPreference android:title="@string/prefs_charger_title" android:key="@string/PREFSKEY_CHARGER" android:summary="@string/prefs_charger_summary" android:defaultValue="-1" android:inputType="number" />
-    <CheckBoxPreference android:title="@string/prefs_usb_fast_charge_title" android:key="@string/PREFSKEY_FAST_CHARGE" android:defaultValue="false" android:summaryOn="@string/prefs_usb_fast_charge_on" android:summaryOff="@string/prefs_usb_fast_charge_off" />
-    <CheckBoxPreference android:title="@string/prefs_percent_mV_title" android:key="@string/PREFSKEY_PERCENTMV" android:defaultValue="false" android:summaryOn="@string/prefs_percent_mV_on" android:summaryOff="@string/prefs_percent_mV_off" />
-</PreferenceScreen>

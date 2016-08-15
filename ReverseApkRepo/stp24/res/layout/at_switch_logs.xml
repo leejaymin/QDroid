@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:id="@id/button_loadlog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_loadlog" android:drawableLeft="@drawable/folder" />
-    <Button android:id="@id/button_logcat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_logcat" android:drawableLeft="@drawable/history" />
-    <Button android:id="@id/button_kmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/button_kmsg" android:drawableLeft="@drawable/android_gold" />
-</LinearLayout>

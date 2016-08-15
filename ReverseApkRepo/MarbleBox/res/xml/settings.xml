@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/pref_cat_interface_title" android:key="@string/pref_cat_interface_key">
-        <CheckBoxPreference android:title="@string/pref_vibrate_title" android:key="@string/pref_vibrate_key" android:defaultValue="true" android:summaryOn="@string/pref_vibrate_summary_on" android:summaryOff="@string/pref_vibrate_summary_off" />
-        <CheckBoxPreference android:title="@string/pref_sfx_title" android:key="@string/pref_sfx_key" android:defaultValue="true" android:summaryOn="@string/pref_sfx_summary_on" android:summaryOff="@string/pref_sfx_summary_off" />
-    </PreferenceCategory>
-</PreferenceScreen>

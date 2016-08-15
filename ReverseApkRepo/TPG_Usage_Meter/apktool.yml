@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: TPG_Usage_Meter.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

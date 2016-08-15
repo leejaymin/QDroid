@@ -1,7 +1,0 @@
-<resourceFiles>
-	<resourceFile url="application/main.cabres" />
-	<resourceFile url="cab/framework/cab.cabres" />
-	
-	<resourceFile url="application/THEME/cab/theme.cabres" />
-	<resourceFile url="application/uifonts/fonts.cabres" />
-</resourceFiles>

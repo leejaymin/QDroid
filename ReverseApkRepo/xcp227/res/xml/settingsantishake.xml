@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/set_as_header"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListPreference android:entries="@array/antishake_labels" android:title="@string/set_as_sensitivity_title" android:key="antishakesensitivity" android:summary="@string/set_as_sensitivity_summary" android:entryValues="@array/antishake_keys" />
-</PreferenceScreen>

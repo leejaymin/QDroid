@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingTop="@dimen/two_line_list_item_relativelayout_paddingTop" android:paddingBottom="@dimen/two_line_list_item_relativelayout_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textAppearance="?android:textAppearanceLargeInverse" android:id="@id/list_item_line_1" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingRight="@dimen/margin_right_entire_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/two_line_list_item_list_item_line_1_layout_marginLeft" android:layout_marginTop="@dimen/two_line_list_item_list_item_line_1_layout_marginTop" />
-    <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:id="@id/list_item_line_2" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingRight="@dimen/margin_right_entire_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/list_item_line_1" android:layout_alignLeft="@id/list_item_line_1" />
-</RelativeLayout>

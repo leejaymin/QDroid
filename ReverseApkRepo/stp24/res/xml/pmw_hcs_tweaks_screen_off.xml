@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListPreference android:title="@string/prefs_cpu_sleep_governor" android:key="@string/PREFSKEY_CPU_SLEEP_GOV" android:summary="@string/prefs_cpu_sleep_governor_summary" android:defaultValue="" />
-    <ListPreference android:title="@string/prefs_cpu_min_freq" android:key="@string/PREFSKEY_CPU_MIN_FREQ" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
-    <ListPreference android:title="@string/prefs_title_cpu_phone" android:key="@string/PREFSKEY_CPU_MIN_CALL" android:summary="@string/prefs_cpu_min_freq_on" android:defaultValue="0" />
-</PreferenceScreen>

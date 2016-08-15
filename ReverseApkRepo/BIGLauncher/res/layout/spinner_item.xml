@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<name.kunes.android.widget.AccessibleListItem android:textAppearance="?android:textAppearanceMedium" android:textColor="?buttonColor" android:gravity="center_vertical" android:id="@id/listEntryTextView" android:background="?buttonBackgroundSrc" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:minHeight="68.0dip" android:text="@string/applicationName"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

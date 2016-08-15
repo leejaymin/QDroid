@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.wolfram.android.alpha.view.SubpodView android:id="@id/subpod_view" android:paddingLeft="@dimen/subpod_subpodview_paddingLeft" android:paddingTop="@dimen/subpod_subpodview_paddingTop" android:paddingRight="@dimen/subpod_subpodview_paddingRight" android:paddingBottom="@dimen/subpod_subpodview_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</HorizontalScrollView>

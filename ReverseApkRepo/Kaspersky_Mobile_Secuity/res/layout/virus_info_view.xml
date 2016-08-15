@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="#ffffffff" android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/str_av_virus_detected_info1" />
-    <TextView android:textColor="#ffffffff" android:id="@id/ObjectType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:maxLines="3" />
-    <CheckBox android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/applyToAllCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:button="@drawable/checkbox" android:text="@string/str_antivirus_checkbox_apply_to_all_text" />
-    <TextView android:gravity="left|center" android:id="@id/Separator01" android:background="@drawable/gradient_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
-</LinearLayout>

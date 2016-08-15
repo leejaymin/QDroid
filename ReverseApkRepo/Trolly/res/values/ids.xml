@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="id" name="dialog_confirm_prompt">false</item>
-    <item type="id" name="edit">false</item>
-    <item type="id" name="item">false</item>
-    <item type="id" name="btn_add">false</item>
-    <item type="id" name="textbox">false</item>
-</resources>

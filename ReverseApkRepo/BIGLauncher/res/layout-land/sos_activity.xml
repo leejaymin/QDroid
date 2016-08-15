@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_weight="0.45">
-        <Button android:textSize="60.0dip" android:textColor="#ffff0000" android:id="@id/sosCallButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="5" android:drawableBottom="?sosCallIconSrc" android:layout_weight="0.5" android:contentDescription="@string/sosCall" />
-        <Button android:textSize="60.0dip" android:textColor="#ffff0000" android:id="@id/sosSmsButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="5" android:drawableBottom="?sosSendMessageIconSrc" android:layout_weight="0.5" android:contentDescription="@string/sosMessageSend" />
-    </LinearLayout>
-    <Button android:textSize="60.0dip" android:id="@id/sosCancelButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sosCancel" android:drawableLeft="?sosCancelIconSrc" android:layout_weight="0.55" />
-</LinearLayout>

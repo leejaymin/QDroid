@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.wolfram.android.alpha.view.AssumptionsView_docked_input android:orientation="vertical" android:id="@id/assumptions_view" android:paddingTop="4.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:background="@color/assumptions_row_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="1.0px" />
-    <LinearLayout android:orientation="horizontal" android:id="@id/assumptions_text" android:background="@drawable/assumptions_row_background" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="assumptionsClickHandler">
-        <LinearLayout android:orientation="vertical" android:id="@id/assumptions_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.9" />
-    </LinearLayout>
-    <ImageView android:background="@color/assumptions_row_top_and_bottom_lines" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="1.0px" />
-</com.wolfram.android.alpha.view.AssumptionsView_docked_input>

@@ -1,6 +1,0 @@
-version: 1.4.3
-apkFileName: Mr_T_SoundboardFree.apk
-isFrameworkApk: false
-usesFramework:
-  ids:
-  - 1

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RatingBar android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rating="3.0" android:stepSize="0.2" />
-    <TextView android:id="@id/ratetext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Now Rate : 3" />
-    <RatingBar android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rating="2.0" android:isIndicator="true" />
-    <RatingBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="4" android:rating="2.5" style="?android:attr/ratingBarStyleIndicator" />
-    <RatingBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="10" android:rating="7.0" style="?android:attr/ratingBarStyleSmall" />
-</LinearLayout>

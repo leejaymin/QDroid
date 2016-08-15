@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="Total power" android:key="showTotalPower" android:summary="Show total power consumption" />
-    <ListPreference android:entries="@array/xaxis" android:title="Set history size" android:key="viewNumValues_s" android:summary="Change how many data points are displayed" android:defaultValue="60" android:dialogTitle="Set number of data points" android:entryValues="@array/xaxis_secs_str" />
-</PreferenceScreen>

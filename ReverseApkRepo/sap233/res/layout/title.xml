@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="43.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:gravity="center" android:id="@id/btn_title_left_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/title_button_text" />
-    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/title_text" />
-    <Button android:gravity="center" android:id="@id/btn_title_right_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/title_button_text" />
-</RelativeLayout>

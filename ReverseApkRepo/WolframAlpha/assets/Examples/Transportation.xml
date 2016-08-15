@@ -1,7 +1,0 @@
-<?xml version='1.0'?><example><category>Transportation</category><section-title>
- <link ref="RoadTransport">Road Transport </link>
-</section-title><caption>get data on road lengths for a given country</caption><input>total length of all roads in Spain</input><caption>get data on vehicles in use</caption><input>autos in use per road length in the UK</input><caption>get traffic data for a specified country</caption><input>motorcycle traffic in Germany</input><caption>get data on road accidents</caption><input>annual deaths from auto accidents in the Czech Republic</input><caption>get gasoline price data</caption><input>price of gasoline in Dallas</input><section-title>
- <link ref="AirTransport">Air Transport </link>
-</section-title><caption>locate an airport and get information about it</caption><input>Midway Airport</input><caption>do computations on airline data</caption><input>average daily passengers United / Delta</input><caption>compare several aircraft</caption><input>Boeing 747, Boeing 767</input><caption>get data for a specified flight</caption><input>Southwest flight 276</input><section-title>Rail Transport</section-title><caption>get data on rail transport per country</caption><input>United Kingdom rail transport</input><section-title>
- <link ref="Tides">Tides </link>
-</section-title><caption>get current tide information</caption><input>tides Seattle</input><caption>get a tide forecast</caption><input>tides Oahu tomorrow</input></example>

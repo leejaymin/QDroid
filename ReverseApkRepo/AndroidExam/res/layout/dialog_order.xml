@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:padding="5.0pt" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="제품" />
-    <EditText android:id="@id/product" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="수량" />
-    <EditText android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numeric="integer" />
-    <CheckBox android:id="@id/paymethod" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="착불 결제" />
-</LinearLayout>

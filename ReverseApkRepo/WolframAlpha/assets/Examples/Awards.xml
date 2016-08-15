@@ -1,5 +1,0 @@
-<?xml version='1.0'?><example><link ref="CultureMedia">Culture &amp; Media</link><category>Awards</category><section-title>
- <link ref="NobelPrize">Nobel Prize </link>
-</section-title><caption>get information about a Nobel Prize</caption><input>1980 Nobel Prize in Chemistry</input><input>Nobel Prize 1930</input><caption>find a group of Nobel Prize winners</caption><input>Nobel Prize winners from France</input><section-title>
- <link ref="AcademyAwards">Academy Awards </link>
-</section-title><caption>get information about an Academy Award</caption><input>Oscar for best actress 1958</input><caption>find awards won by a given individual</caption><input>Academy Awards won by Meryl Streep</input><caption>find nominations for a given film</caption><input>Academy Award nominations Gaslight</input></example>

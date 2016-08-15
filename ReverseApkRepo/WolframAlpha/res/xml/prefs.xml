@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <CheckBoxPreference android:title="@string/prefs_location_label" android:key="location" android:summary="@string/prefs_location_sublabel" />
-    <ListPreference android:entries="@array/location_interval_names" android:title="@string/prefs_location_interval_label" android:key="location_interval" android:summary="@string/prefs_location_interval_sublabel" android:entryValues="@array/location_interval_values" />
-    <CheckBoxPreference android:title="@string/use_keyboard_label" android:key="keyboard" />
-    <ListPreference android:entries="@array/unit_names" android:title="@string/prefs_units_label" android:key="units" android:summary="@string/prefs_units_sublabel" android:entryValues="@array/unit_values" />
-    <ListPreference android:entries="@array/font_size_names" android:title="@string/prefs_font_size_label" android:key="font_size" android:summary="@string/prefs_font_size_sublabel" android:entryValues="@array/font_size_values" />
-</PreferenceScreen>

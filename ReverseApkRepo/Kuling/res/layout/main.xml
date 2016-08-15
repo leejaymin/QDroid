@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/KulingLayout" android:background="@null" android:padding="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_gravity="left" android:id="@id/widget_textviewSpeed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" style="@style/Text_Top.Main" />
-    <TextView android:id="@id/widget_textviewtag1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Text_WindSpeedLabel" android:layout_toRightOf="@id/widget_textviewSpeed" android:layout_alignBaseline="@id/widget_textviewSpeed" style="@style/Text_Top.Tag" />
-    <ImageView android:id="@id/widget_direction" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@null" android:layout_toRightOf="@id/widget_textviewtag1" android:layout_alignTop="@id/SurfWidgetLayout" />
-    <TextView android:id="@id/widget_textviewUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Text_LastUpdated" android:layout_below="@id/widget_textviewSpeed" style="@style/Text_Bottom.Update" />
-    <TextView android:id="@id/widget_textviewStation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Text_WeatherStation" android:layout_below="@id/widget_textviewUpdate" style="@style/Text_Bottom.Station" />
-</RelativeLayout>

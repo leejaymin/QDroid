@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/main" android:background="#aa000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res/stericson.busybox.donate">
-    <RelativeLayout android:background="@drawable/roundedborder_black_translucent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <ProgressBar android:id="@id/progress" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="10.0dip" android:layout_centerVertical="true" />
-        <stericson.busybox.donate.custom.FontableTextView android:textColor="#ffffffff" android:id="@id/header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/progress" android:layout_centerVertical="true" />
-    </RelativeLayout>
-</RelativeLayout>

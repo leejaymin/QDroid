@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.scoreloop.client.android.ui.framework.TabView android:orientation="horizontal" android:id="@id/sl_tabs_segments" android:layout_width="fill_parent" android:layout_height="wrap_content" android_layout_gravity="center" />
-    <FrameLayout android:id="@id/sl_tabs_body" android:background="@drawable/sl_screen_background" android:padding="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-</LinearLayout>

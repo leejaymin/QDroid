@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/list_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:id="@id/song_author" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="5.0dip" android:text="Author" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
-    <TextView android:textSize="19.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/song_name" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="5.0dip" android:text="Name" android:layout_below="@id/song_author" android:layout_alignParentLeft="true" />
-    <ImageView android:id="@id/hand_side" android:background="@drawable/right_hand" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
-</RelativeLayout>

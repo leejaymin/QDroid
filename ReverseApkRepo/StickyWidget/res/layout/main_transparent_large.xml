@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@drawable/sticky_transparent_large" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/sticky_contents" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@id/sticky_contents" />
-</LinearLayout>

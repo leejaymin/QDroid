@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/full_container" android:background="@drawable/interfacebackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="vertical" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/demo_sales_text_size" android:gravity="center" android:id="@id/multitouch_test_instructions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multitouch_test_instructions" />
-        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff00ff00" android:gravity="center" android:id="@id/multitouch_detected" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multitouch_detected" />
-        <Button android:id="@id/next" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/next" style="@style/button" />
-    </LinearLayout>
-</RelativeLayout>

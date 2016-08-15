@@ -1,5 +1,0 @@
-<?xml version='1.0'?><example><link ref="Math">Mathematics</link><category>Topology</category><section-title>
- <link ref="RealIntervals">Real Intervals </link>
-</section-title><caption>compute properties of an interval of real numbers</caption><input>[3,8)</input><caption>compare intervals</caption><input>intervals [0,1), (1,oo)</input><section-title>
- <link ref="KnotTheory">Knot Theory </link>
-</section-title><caption>compute properties of a knot</caption><input>trefoil</input><caption>specify a knot using Alexander-Briggs notation</caption><input>8_1 knot</input><caption>compare several knots</caption><input>Stevedore knot, figure eight knot</input><section-title>Homotopy Groups of Spheres</section-title><caption>compute homotopy groups of a sphere</caption><input>homotopy 3-sphere</input><caption>compute a specified homotopy group</caption><input>pi_5(S^2)</input><input>pi_719(S^700)</input></example>

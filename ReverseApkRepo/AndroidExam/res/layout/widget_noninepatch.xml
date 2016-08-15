@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <Button android:background="@drawable/cloud" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <Button android:background="@drawable/cloud" android:layout_width="200.0px" android:layout_height="100.0px" />
-    <Button android:textSize="10.0pt" android:background="@drawable/ribbon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ribbon" />
-    <Button android:textSize="10.0pt" android:background="@drawable/ribbon" android:layout_width="250.0px" android:layout_height="100.0px" android:text="ribbon" />
-</LinearLayout>

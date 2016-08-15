@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Button android:textSize="@dimen/info_link_button_kindlefire_button_textSize" android:textColor="@color/button_foreground" android:background="@drawable/podstate_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:onClick="infoLinkClickHandler"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

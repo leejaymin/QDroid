@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="ok">Ok</string>
-    <string name="no_thanks">Ne može</string>
-    <string name="push_notifications">Prosljeđene obavijesti</string>
-    <string name="would_you_like_to_receive_push_from">Želite li primati obavijesti aplikacije</string>
-    <string name="logged_in_with_facebook_comments">Uspješno ste spojeni sa Facebook komentarima</string>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/query_input" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/query_text_view_top_gap" android:layout_width="fill_parent" android:layout_height="@dimen/query_input_view_query_text_view_top_gap" />
-    <com.wolfram.android.alpha.view.QueryInputView android:textColor="@android:color/black" android:id="@id/query_text_view" android:paddingLeft="@dimen/query_input_queryinputview_query_text_view_paddingLeft" android:paddingRight="@dimen/margin_right_entire_app" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:maxLength="200" android:drawableRight="@drawable/wolfram_alpha_equals" android:drawablePadding="@dimen/query_input_queryinputview_query_text_view_drawablePadding" android:windowSoftInputMode="stateVisible|adjustPan" android:imeOptions="actionGo" />
-</LinearLayout>

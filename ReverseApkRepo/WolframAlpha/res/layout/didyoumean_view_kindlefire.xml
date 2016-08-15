@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/podtitle_top_line" />
-    <TextView android:textSize="@dimen/didyoumean_view_textview_didyoumean_label_textSize" android:textColor="@color/podtitle_text" android:gravity="left|center" android:background="@drawable/podtitle_gradient" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/didyoumean_view_textview_didyoumean_label_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/didyoumean_view_textview_didyoumean_label_paddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/didyoumean_label" />
-    <include layout="@layout/podtitle_bottom_line" />
-    <TextView android:textSize="@dimen/didyoumean_view_textview_didyoumean_text_textSize" android:textStyle="bold" android:textColor="@color/alpha_red" android:gravity="left|center" android:id="@id/didyoumean_text" android:background="@drawable/button_selector" android:paddingLeft="@dimen/margin_left_entire_app" android:paddingTop="@dimen/didyoumean_view_textview_didyoumean_text_paddingTop" android:paddingRight="@dimen/margin_right_entire_app" android:paddingBottom="@dimen/didyoumean_view_textview_didyoumean_text_paddingBottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="didYouMeanClickHandler" />
-</LinearLayout>

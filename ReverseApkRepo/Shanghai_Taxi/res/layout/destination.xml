@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:padding="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Show this sentence to the taxi driver. It means &quot;I want to go to ...&quot;" android:lines="2" android:lineSpacingExtra="10.0px" />
-    <TextView android:textSize="30.0px" android:gravity="center_horizontal" android:id="@id/chineseText" android:padding="15.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>
